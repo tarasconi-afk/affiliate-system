@@ -1,0 +1,93 @@
+---
+// Header profissional com navegação
+---
+
+<header class="site-header">
+  <div class="header-container">
+    <div class="logo">
+      <a href="/">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">ToolCompare</span>
+      </a>
+    </div>
+    <nav class="nav">
+      <a href="/">Comparações</a>
+      <a href="/#metodologia">Metodologia</a>
+    </nav>
+  </div>
+  <div class="tagline">Decisões de compra baseadas em dados</div>
+</header>
+
+<style>
+  .site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 3rem;
+  }
+
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #111827;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+
+  .logo-icon {
+    font-size: 1.5rem;
+  }
+
+  .nav {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav a {
+    color: #4b5563;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+
+  .nav a:hover {
+    color: #2563eb;
+  }
+
+  .tagline {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem 1rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    .header-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem 1.5rem;
+    }
+
+    .nav {
+      gap: 1.5rem;
+    }
+
+    .tagline {
+      padding-bottom: 0.75rem;
+    }
+  }
+</style>

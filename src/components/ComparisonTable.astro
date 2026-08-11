@@ -10,61 +10,146 @@ interface Props {
 const { dimensions, label1, label2 } = Astro.props;
 ---
 
-<table class="comparison-table">
-  <thead>
-    <tr>
-      <th>Dimensão</th>
-      <th>{label1}</th>
-      <th>{label2}</th>
-    </tr>
-  </thead>
-  <tbody>
-    {dimensions.map(dim => (
+<div class="comparison-wrapper">
+  <table class="comparison-table">
+    <thead>
       <tr>
-        <td class="dimension-label">{dim.label}</td>
-        <td class:list={{'winner': dim.winner === 1}}>
-          {'brand1' in dim ? dim.brand1 : dim.option1}
-          {dim.winner === 1 && <span class="winner-badge">✓</span>}
-        </td>
-        <td class:list={{'winner': dim.winner === 2}}>
-          {'brand2' in dim ? dim.brand2 : dim.option2}
-          {dim.winner === 2 && <span class="winner-badge">✓</span>}
-        </td>
+        <th class="criterion-header">Critério</th>
+        <th class="brand-header">{label1}</th>
+        <th class="brand-header">{label2}</th>
       </tr>
-    ))}
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      {dimensions.map(dim => (
+        <tr>
+          <th class="dimension-label">{dim.label}</th>
+          <td class:list={{'winner': dim.winner === 1}}>
+            <span class="cell-content">
+              {'brand1' in dim ? dim.brand1 : dim.option1}
+              {dim.winner === 1 && <span class="winner-badge" aria-label="Vantagem">✓</span>}
+            </span>
+          </td>
+          <td class:list={{'winner': dim.winner === 2}}>
+            <span class="cell-content">
+              {'brand2' in dim ? dim.brand2 : dim.option2}
+              {dim.winner === 2 && <span class="winner-badge" aria-label="Vantagem">✓</span>}
+            </span>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
 <style>
+  .comparison-wrapper {
+    margin: 2.5rem 0;
+    overflow-x: auto;
+  }
+
   .comparison-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 2rem 0;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
   }
 
-  .comparison-table th,
-  .comparison-table td {
-    padding: 0.75rem 1rem;
-    border: 1px solid #e5e7eb;
-    text-align: left;
+  .comparison-table thead tr {
+    background: linear-gradient(to bottom, #f9fafb, #f3f4f6);
   }
 
   .comparison-table th {
-    background-color: #f9fafb;
+    padding: 1rem 1.25rem;
+    text-align: left;
     font-weight: 600;
+    color: #111827;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  .criterion-header {
+    width: 35%;
+  }
+
+  .brand-header {
+    width: 32.5%;
+  }
+
+  .comparison-table tbody tr {
+    border-bottom: 1px solid #f3f4f6;
+  }
+
+  .comparison-table tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  .comparison-table tbody tr:nth-child(even) {
+    background-color: #fafbfc;
+  }
+
+  .comparison-table td,
+  .comparison-table tbody th {
+    padding: 1rem 1.25rem;
+    vertical-align: top;
   }
 
   .dimension-label {
-    font-weight: 500;
+    font-weight: 600;
+    color: #374151;
+    text-align: left;
+    background-color: #f9fafb;
+  }
+
+  .cell-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    line-height: 1.6;
+  }
+
+  .comparison-table td {
+    color: #1f2937;
   }
 
   .winner {
-    background-color: #f0fdf4;
-    font-weight: 500;
+    background-color: #f0fdf4 !important;
+    border-left: 3px solid #16a34a;
   }
 
   .winner-badge {
     color: #16a34a;
-    margin-left: 0.5rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 768px) {
+    .comparison-table th,
+    .comparison-table td {
+      padding: 0.875rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .criterion-header {
+      width: 40%;
+    }
+
+    .brand-header {
+      width: 30%;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .comparison-wrapper {
+      margin-left: -1rem;
+      margin-right: -1rem;
+    }
+
+    .comparison-table {
+      border-radius: 0;
+      border-left: none;
+      border-right: none;
+    }
   }
 </style>

@@ -11,15 +11,21 @@ const { evidenceIds, evidences } = Astro.props;
 const referencedEvidences = evidenceIds
   .map(id => evidences.find(ev => ev.id === id))
   .filter(Boolean) as Evidence[];
+
+// Converter IDs para números sequenciais
+const getRefNumber = (evId: string) => {
+  const allIds = evidences.map(e => e.id);
+  return allIds.indexOf(evId) + 1;
+};
 ---
 
 {referencedEvidences.length > 0 && (
   <sup class="evidence-refs">
     {referencedEvidences.map((ev, idx) => (
       <Fragment>
-        {idx > 0 && ', '}
+        {idx > 0 && ','}
         <a href={`#${ev.id}`} title={ev.claim}>
-          {ev.id}
+          [{getRefNumber(ev.id)}]
         </a>
       </Fragment>
     ))}
@@ -28,13 +34,15 @@ const referencedEvidences = evidenceIds
 
 <style>
   .evidence-refs {
-    margin-left: 0.25rem;
+    margin-left: 0.125rem;
+    font-weight: normal;
   }
 
   .evidence-refs a {
     color: #2563eb;
     text-decoration: none;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
+    margin-left: 0.125rem;
   }
 
   .evidence-refs a:hover {

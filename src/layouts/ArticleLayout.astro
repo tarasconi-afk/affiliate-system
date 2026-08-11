@@ -26,44 +26,105 @@ const { pageSpec } = Astro.props;
     <BreadcrumbSchema breadcrumbs={pageSpec.metadata.breadcrumbs} currentSlug={pageSpec.slug} />
   </Fragment>
 
-  <article>
+  <article class="article-content">
     <!-- Breadcrumbs -->
-    <nav class="breadcrumbs">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
       {pageSpec.metadata.breadcrumbs.map((crumb, idx) => (
         <Fragment>
-          {idx > 0 && <span class="separator">/</span>}
+          {idx > 0 && <span class="separator">›</span>}
           {crumb.url ? (
             <a href={crumb.url}>{crumb.name}</a>
           ) : (
-            <span>{crumb.name}</span>
+            <span class="current">{crumb.name}</span>
           )}
         </Fragment>
       ))}
     </nav>
 
+    <!-- Categoria -->
+    <div class="article-category">
+      {pageSpec.type === 'model_review' && 'ANÁLISE DE PRODUTO'}
+      {pageSpec.type === 'brand_compare' && 'COMPARAÇÃO DE MARCAS'}
+      {pageSpec.type === 'decision_compare' && 'GUIA DE DECISÃO'}
+    </div>
+
     <!-- Hero -->
-    <header class="hero">
-      <h1>{pageSpec.hero.heading}</h1>
-      <p class="subheading">{pageSpec.hero.subheading}</p>
+    <header class="article-header">
+      <div class="article-header-content">
+        <h1>{pageSpec.hero.heading}</h1>
+        <p class="article-subtitle">{pageSpec.hero.subheading}</p>
+      </div>
+      {pageSpec.type === 'model_review' && pageSpec.slug === 'parafusadeira-dewalt-dcd777-vale-a-pena' && (
+        <div class="article-visual">
+          <img
+            src="/images/product-dewalt.svg"
+            alt="Ilustração de parafusadeira DeWalt"
+            width="300"
+            height="225"
+          />
+        </div>
+      )}
+      {pageSpec.type === 'brand_compare' && (
+        <div class="article-visual">
+          <img
+            src="/images/comparison-brands.svg"
+            alt="Comparação entre marcas Bosch e Makita"
+            width="300"
+            height="225"
+          />
+        </div>
+      )}
+      {pageSpec.type === 'decision_compare' && (
+        <div class="article-visual">
+          <img
+            src="/images/comparison-voltage.svg"
+            alt="Comparação entre voltagens 12V e 18V"
+            width="300"
+            height="225"
+          />
+        </div>
+      )}
     </header>
 
     <!-- Model Review -->
     {pageSpec.type === 'model_review' && (
       <section class="model-review">
-        <div class="product-info">
-          <h2>Produto</h2>
-          <p><strong>Nome:</strong> {pageSpec.product.name}</p>
-          <p><strong>Marca:</strong> {pageSpec.product.brand}</p>
-          {pageSpec.product.model && <p><strong>Modelo:</strong> {pageSpec.product.model}</p>}
-          {pageSpec.product.category && <p><strong>Categoria:</strong> {pageSpec.product.category}</p>}
+        <div class="quick-answer">
+          <h2>Resposta curta</h2>
+          <p>
+            A DeWalt DCD777 é uma parafusadeira/furadeira brushless 18V (20V MAX) com mandril de 13mm,
+            adequada para uso doméstico e semiprofissional em materiais leves a médios.
+          </p>
         </div>
 
-        <h2>Especificações</h2>
+        <div class="key-specs">
+          <h2>Principais dados</h2>
+          <div class="specs-grid">
+            <div class="spec-card">
+              <div class="spec-label">Motor</div>
+              <div class="spec-value">Brushless</div>
+            </div>
+            <div class="spec-card">
+              <div class="spec-label">Tensão</div>
+              <div class="spec-value">18V (20V MAX)</div>
+            </div>
+            <div class="spec-card">
+              <div class="spec-label">Mandril</div>
+              <div class="spec-value">13 mm</div>
+            </div>
+            <div class="spec-card">
+              <div class="spec-label">Velocidades</div>
+              <div class="spec-value">2 marchas</div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Especificações completas</h2>
         <table class="specs-table">
           <tbody>
             {pageSpec.specs.map(spec => (
               <tr class:list={{'highlight': spec.highlight}}>
-                <td class="spec-label">{spec.label}</td>
+                <th class="spec-label">{spec.label}</th>
                 <td class="spec-value">
                   {spec.value}
                   <Sources evidenceIds={spec.evidenceIds} evidences={pageSpec.evidences} />
@@ -146,12 +207,14 @@ const { pageSpec } = Astro.props;
 
         {pageSpec.verdict && (
           <section class="verdict">
-            <h2>Conclusão</h2>
-            <p>
-              <strong>{pageSpec.verdict.summary}</strong>
-              {pageSpec.verdict.evidenceIds && <Sources evidenceIds={pageSpec.verdict.evidenceIds} evidences={pageSpec.evidences} />}
-            </p>
-            <p>{pageSpec.verdict.recommendation}</p>
+            <h2>Qual escolher?</h2>
+            <div class="verdict-content">
+              <p class="verdict-summary">
+                <strong>{pageSpec.verdict.summary}</strong>
+                {pageSpec.verdict.evidenceIds && <Sources evidenceIds={pageSpec.verdict.evidenceIds} evidences={pageSpec.evidences} />}
+              </p>
+              <p class="verdict-recommendation">{pageSpec.verdict.recommendation}</p>
+            </div>
           </section>
         )}
 
@@ -201,12 +264,14 @@ const { pageSpec } = Astro.props;
 
         {pageSpec.verdict && (
           <section class="verdict">
-            <h2>Conclusão</h2>
-            <p>
-              <strong>{pageSpec.verdict.summary}</strong>
-              {pageSpec.verdict.evidenceIds && <Sources evidenceIds={pageSpec.verdict.evidenceIds} evidences={pageSpec.evidences} />}
-            </p>
-            <p>{pageSpec.verdict.recommendation}</p>
+            <h2>Qual escolher?</h2>
+            <div class="verdict-content">
+              <p class="verdict-summary">
+                <strong>{pageSpec.verdict.summary}</strong>
+                {pageSpec.verdict.evidenceIds && <Sources evidenceIds={pageSpec.verdict.evidenceIds} evidences={pageSpec.evidences} />}
+              </p>
+              <p class="verdict-recommendation">{pageSpec.verdict.recommendation}</p>
+            </div>
           </section>
         )}
 
@@ -245,75 +310,220 @@ const { pageSpec } = Astro.props;
 </BaseLayout>
 
 <style>
+  .article-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
   .breadcrumbs {
     margin-bottom: 1.5rem;
     font-size: 0.875rem;
-    color: #6b7280;
+    color: #9ca3af;
   }
 
   .breadcrumbs .separator {
     margin: 0 0.5rem;
+    color: #d1d5db;
   }
 
-  .hero {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid #e5e7eb;
-  }
-
-  .subheading {
-    font-size: 1.125rem;
+  .breadcrumbs a {
     color: #6b7280;
-    margin-top: 0.5rem;
+    transition: color 0.2s;
   }
 
-  .product-info {
-    background-color: #f9fafb;
-    padding: 1.5rem;
+  .breadcrumbs a:hover {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .breadcrumbs .current {
+    color: #4b5563;
+  }
+
+  .article-category {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #2563eb;
+    background: #eff6ff;
+    padding: 0.375rem 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+  }
+
+  .article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .article-header-content {
+    flex: 1;
+  }
+
+  .article-header h1 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .article-subtitle {
+    font-size: 1.25rem;
+    color: #6b7280;
+    margin-top: 0.75rem;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .article-visual {
+    flex-shrink: 0;
+  }
+
+  .article-visual img {
+    display: block;
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
-    margin-bottom: 2rem;
+  }
+
+  .quick-answer {
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    border: 1px solid #bfdbfe;
+  }
+
+  .quick-answer h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: #1e40af;
+    margin-bottom: 1rem;
+  }
+
+  .quick-answer p {
+    color: #1e3a8a;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .key-specs {
+    margin-bottom: 3rem;
+  }
+
+  .key-specs h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .spec-card {
+    background: #f9fafb;
+    padding: 1.25rem;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+  }
+
+  .spec-card .spec-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  .spec-card .spec-value {
+    font-size: 1.125rem;
+    color: #111827;
+    font-weight: 600;
   }
 
   .specs-table {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     border-collapse: collapse;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
   }
 
-  .specs-table tr {
-    border-bottom: 1px solid #e5e7eb;
+  .specs-table tbody tr {
+    border-bottom: 1px solid #f3f4f6;
+  }
+
+  .specs-table tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  .specs-table tbody tr:nth-child(even) {
+    background-color: #fafbfc;
   }
 
   .specs-table tr.highlight {
-    background-color: #fef3c7;
+    background-color: #fef3c7 !important;
   }
 
+  .specs-table th,
   .specs-table td {
-    padding: 0.75rem 1rem;
+    padding: 1rem 1.25rem;
+    text-align: left;
   }
 
-  .spec-label {
+  .specs-table .spec-label {
     font-weight: 600;
-    width: 40%;
+    width: 35%;
+    color: #374151;
   }
 
-  .spec-value {
-    width: 60%;
+  .specs-table .spec-value {
+    width: 65%;
+    color: #1f2937;
   }
 
   .pros-cons {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    margin: 2rem 0;
+    margin: 3rem 0;
+  }
+
+  .pros,
+  .cons {
+    padding: 1.75rem;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+  }
+
+  .pros {
+    background: #f0fdf4;
+    border-left: 3px solid #16a34a;
+  }
+
+  .cons {
+    background: #fef2f2;
+    border-left: 3px solid #dc2626;
   }
 
   .pros h3 {
     color: #16a34a;
+    margin-top: 0;
   }
 
   .cons h3 {
     color: #dc2626;
+    margin-top: 0;
   }
 
   .brands-intro,
@@ -321,46 +531,84 @@ const { pageSpec } = Astro.props;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    margin: 2rem 0;
+    margin: 3rem 0;
   }
 
   .brand,
   .option {
-    padding: 1.5rem;
+    padding: 2rem;
     background-color: #f9fafb;
-    border-radius: 8px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+  }
+
+  .brand h2,
+  .option h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
   }
 
   .verdict {
-    margin: 2rem 0;
-    padding: 1.5rem;
-    background-color: #eff6ff;
+    margin: 3rem 0;
+    padding: 2.5rem;
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
     border-left: 4px solid #2563eb;
-    border-radius: 4px;
+    border-radius: 12px;
+    border: 1px solid #bfdbfe;
+  }
+
+  .verdict h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #1e40af;
+  }
+
+  .verdict-summary {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #1e3a8a;
+  }
+
+  .verdict-recommendation {
+    color: #1e3a8a;
+    line-height: 1.7;
   }
 
   .faq {
-    margin: 2rem 0;
+    margin: 3rem 0;
+  }
+
+  .faq h2 {
+    margin-bottom: 1.5rem;
   }
 
   .faq-item {
     margin-bottom: 1.5rem;
-    padding: 1rem;
-    background-color: #f9fafb;
-    border-radius: 6px;
+    padding: 1.75rem;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
   }
 
   .faq-item h3 {
     margin-top: 0;
     font-size: 1.125rem;
+    color: #111827;
+    margin-bottom: 0.75rem;
+  }
+
+  .faq-item p {
+    margin-bottom: 0;
+    color: #4b5563;
   }
 
   .monetization {
-    margin-top: 3rem;
-    padding: 2rem;
+    margin-top: 4rem;
+    padding: 2.5rem;
     background-color: #f9fafb;
-    border-radius: 8px;
+    border-radius: 12px;
     text-align: center;
+    border: 1px solid #e5e7eb;
   }
 
   .cta-button {
@@ -368,20 +616,83 @@ const { pageSpec } = Astro.props;
     padding: 1rem 2rem;
     background-color: #2563eb;
     color: white;
-    border-radius: 6px;
+    border-radius: 8px;
     font-weight: 600;
     text-decoration: none;
-    transition: background-color 0.2s;
+    transition: all 0.2s;
   }
 
   .cta-button:hover {
     background-color: #1d4ed8;
     text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
   }
 
   .disclaimer {
     margin-top: 1rem;
     font-size: 0.875rem;
     color: #6b7280;
+  }
+
+  @media (max-width: 768px) {
+    .article-header {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .article-visual {
+      align-self: center;
+    }
+
+    .article-visual img {
+      max-width: 250px;
+    }
+
+    .pros-cons,
+    .brands-intro,
+    .options-intro {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .specs-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .specs-table {
+      font-size: 0.9rem;
+    }
+
+    .specs-table th,
+    .specs-table td {
+      padding: 0.875rem 1rem;
+    }
+
+    .quick-answer,
+    .verdict {
+      padding: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .specs-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .specs-table .spec-label,
+    .specs-table .spec-value {
+      display: block;
+      width: 100%;
+    }
+
+    .specs-table .spec-label {
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .specs-table .spec-value {
+      padding-top: 0.5rem;
+    }
   }
 </style>

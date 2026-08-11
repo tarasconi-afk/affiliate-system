@@ -8,44 +8,40 @@ interface Props {
 const { evidences } = Astro.props;
 
 const evidenceTypeLabels: Record<string, string> = {
-  'SPEC': 'Especificação',
-  'DERIVED': 'Derivado',
+  'SPEC': 'Dados oficiais',
+  'DERIVED': 'Análise derivada',
   'OBSERVATION': 'Observação',
   'MEASUREMENT': 'Medição'
 };
 ---
 
 <section class="evidence-list">
-  <h2>Evidências</h2>
+  <h2>Fontes e evidências</h2>
   <div class="evidences">
-    {evidences.map(ev => (
+    {evidences.map((ev, index) => (
       <div class="evidence-item" id={ev.id}>
         <div class="evidence-header">
+          <span class="evidence-number">[{index + 1}]</span>
           <span class="evidence-type">{evidenceTypeLabels[ev.evidence_type]}</span>
-          <span class="evidence-id">#{ev.id}</span>
         </div>
         <p class="evidence-claim">{ev.claim}</p>
-        <div class="evidence-source">
-          <strong>Fonte:</strong>
-          {ev.source_url ? (
-            <a href={ev.source_url} target="_blank" rel="noopener noreferrer">
-              {ev.source_name}
-            </a>
-          ) : (
-            <span>{ev.source_name}</span>
-          )}
-        </div>
-        <div class="evidence-meta">
-          <span>Acessado em: {new Date(ev.accessed_at).toLocaleDateString('pt-BR')}</span>
+        <div class="evidence-meta-info">
+          <div class="evidence-source">
+            {ev.source_url ? (
+              <a href={ev.source_url} target="_blank" rel="noopener noreferrer">
+                {ev.source_name}
+              </a>
+            ) : (
+              <span>{ev.source_name}</span>
+            )}
+          </div>
+          <div class="evidence-date">
+            Acessado em {new Date(ev.accessed_at).toLocaleDateString('pt-BR')}
+          </div>
         </div>
         {ev.notes && (
           <div class="evidence-notes">
-            <strong>Notas:</strong> {ev.notes}
-          </div>
-        )}
-        {ev.derived_from && ev.derived_from.length > 0 && (
-          <div class="evidence-derived">
-            <strong>Derivado de:</strong> {ev.derived_from.map(id => `#${id}`).join(', ')}
+            {ev.notes}
           </div>
         )}
       </div>
@@ -55,79 +51,108 @@ const evidenceTypeLabels: Record<string, string> = {
 
 <style>
   .evidence-list {
-    margin: 3rem 0;
-    padding: 2rem;
-    background-color: #f9fafb;
-    border-radius: 8px;
+    margin: 4rem 0 2rem;
+    padding: 2.5rem;
+    background-color: #fafbfc;
+    border-radius: 12px;
+    border-top: 3px solid #e5e7eb;
   }
 
   .evidence-list h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 0;
     font-size: 1.5rem;
+    color: #111827;
   }
 
   .evidences {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 
   .evidence-item {
     background: white;
     padding: 1.5rem;
-    border-radius: 6px;
-    border-left: 4px solid #3b82f6;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
   }
 
   .evidence-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 0.75rem;
     margin-bottom: 0.75rem;
+  }
+
+  .evidence-number {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 0.95rem;
   }
 
   .evidence-type {
     display: inline-block;
-    padding: 0.25rem 0.75rem;
-    background-color: #dbeafe;
-    color: #1e40af;
+    padding: 0.25rem 0.625rem;
+    background-color: #f3f4f6;
+    color: #4b5563;
     border-radius: 4px;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     font-weight: 500;
-  }
-
-  .evidence-id {
-    font-family: monospace;
-    color: #6b7280;
-    font-size: 0.875rem;
   }
 
   .evidence-claim {
-    font-weight: 500;
-    margin-bottom: 0.75rem;
-    color: #111827;
+    margin-bottom: 0.875rem;
+    color: #1f2937;
+    line-height: 1.6;
+    font-size: 0.95rem;
   }
 
-  .evidence-source,
-  .evidence-meta,
-  .evidence-notes,
-  .evidence-derived {
+  .evidence-meta-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #f3f4f6;
+  }
+
+  .evidence-source {
     font-size: 0.875rem;
     color: #4b5563;
-    margin-top: 0.5rem;
   }
 
   .evidence-source a {
     color: #2563eb;
     text-decoration: none;
+    font-weight: 500;
   }
 
   .evidence-source a:hover {
     text-decoration: underline;
   }
 
+  .evidence-date {
+    font-size: 0.8rem;
+    color: #9ca3af;
+  }
+
   .evidence-notes {
-    font-style: italic;
-    color: #6b7280;
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+    background: #fef3c7;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    color: #92400e;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 768px) {
+    .evidence-list {
+      padding: 1.75rem;
+    }
+
+    .evidence-item {
+      padding: 1.25rem;
+    }
   }
 </style>
