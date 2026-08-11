@@ -46,24 +46,7 @@ const pages = [
       </div>
     </div>
     <div class="hero-visual">
-      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <!-- Parafusadeira estilizada -->
-        <g transform="translate(50, 60)">
-          <!-- Corpo principal -->
-          <rect x="20" y="30" width="80" height="50" rx="4" fill="#2563eb" opacity="0.9"/>
-          <!-- Mandril -->
-          <rect x="95" y="45" width="30" height="20" rx="2" fill="#1e40af"/>
-          <circle cx="125" cy="55" r="8" fill="#374151"/>
-          <!-- Gatilho -->
-          <path d="M 40 80 Q 30 90 35 100 L 45 100 Q 50 90 45 80 Z" fill="#1e40af" opacity="0.8"/>
-          <!-- Bateria -->
-          <rect x="15" y="80" width="35" height="45" rx="3" fill="#f59e0b"/>
-          <rect x="20" y="85" width="25" height="8" rx="1" fill="#374151" opacity="0.3"/>
-          <!-- Detalhes -->
-          <circle cx="70" cy="50" r="3" fill="#ffffff" opacity="0.4"/>
-          <line x1="60" y1="55" x2="85" y2="55" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
-        </g>
-      </svg>
+      <img src="/images/dewalt-dcd777.webp" alt="DeWalt DCD777 - Parafusadeira/Furadeira 20V MAX" loading="eager" width="600" height="400" />
     </div>
   </div>
 
@@ -110,19 +93,20 @@ const pages = [
   <style>
     .hero {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 4rem;
       align-items: center;
       margin-bottom: 5rem;
-      padding: 3rem 0;
+      padding: 2rem 0 3rem;
     }
 
     .hero-content h1 {
-      font-size: 2.75rem;
-      line-height: 1.2;
+      font-size: 2.5rem;
+      line-height: 1.15;
       margin-top: 0;
-      margin-bottom: 1.25rem;
+      margin-bottom: 1rem;
       color: #111827;
+      font-weight: 700;
     }
 
     .hero-subtitle {
@@ -176,10 +160,21 @@ const pages = [
       align-items: center;
     }
 
-    .hero-visual svg {
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    .hero-visual img {
       width: 100%;
-      max-width: 300px;
+      max-width: 450px;
       height: auto;
+      object-fit: contain;
     }
 
     .content-cards {
@@ -204,11 +199,12 @@ const pages = [
       border: 1px solid #e5e7eb;
       border-radius: 12px;
       padding: 2rem;
-      transition: all 0.2s;
+      transition: all 0.25s ease;
       display: flex;
       flex-direction: column;
       text-decoration: none;
       color: inherit;
+      height: 100%;
     }
 
     .card:hover {
@@ -329,8 +325,12 @@ const pages = [
         font-size: 1.125rem;
       }
 
-      .hero-visual svg {
-        max-width: 200px;
+      .hero-visual {
+        padding: 1.5rem;
+      }
+
+      .hero-visual img {
+        max-width: 100%;
       }
 
       .content-cards h2,
