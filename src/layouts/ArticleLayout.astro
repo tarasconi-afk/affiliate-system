@@ -1,0 +1,387 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import SEOHead from '../components/seo/SEOHead.astro';
+import ArticleSchema from '../components/seo/ArticleSchema.astro';
+import BreadcrumbSchema from '../components/seo/BreadcrumbSchema.astro';
+import ComparisonTable from '../components/ComparisonTable.astro';
+import EvidenceList from '../components/EvidenceList.astro';
+import Sources from '../components/Sources.astro';
+import type { PageSpec } from '../lib/types';
+
+interface Props {
+  pageSpec: PageSpec;
+}
+
+const { pageSpec } = Astro.props;
+---
+
+<BaseLayout title={pageSpec.metadata.title}>
+  <Fragment slot="head">
+    <SEOHead metadata={pageSpec.metadata} slug={pageSpec.slug} />
+    <ArticleSchema
+      metadata={pageSpec.metadata}
+      slug={pageSpec.slug}
+      product={pageSpec.type === 'model_review' ? pageSpec.product : undefined}
+    />
+    <BreadcrumbSchema breadcrumbs={pageSpec.metadata.breadcrumbs} currentSlug={pageSpec.slug} />
+  </Fragment>
+
+  <article>
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+      {pageSpec.metadata.breadcrumbs.map((crumb, idx) => (
+        <Fragment>
+          {idx > 0 && <span class="separator">/</span>}
+          {crumb.url ? (
+            <a href={crumb.url}>{crumb.name}</a>
+          ) : (
+            <span>{crumb.name}</span>
+          )}
+        </Fragment>
+      ))}
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+      <h1>{pageSpec.hero.heading}</h1>
+      <p class="subheading">{pageSpec.hero.subheading}</p>
+    </header>
+
+    <!-- Model Review -->
+    {pageSpec.type === 'model_review' && (
+      <section class="model-review">
+        <div class="product-info">
+          <h2>Produto</h2>
+          <p><strong>Nome:</strong> {pageSpec.product.name}</p>
+          <p><strong>Marca:</strong> {pageSpec.product.brand}</p>
+          {pageSpec.product.model && <p><strong>Modelo:</strong> {pageSpec.product.model}</p>}
+          {pageSpec.product.category && <p><strong>Categoria:</strong> {pageSpec.product.category}</p>}
+        </div>
+
+        <h2>Especificações</h2>
+        <table class="specs-table">
+          <tbody>
+            {pageSpec.specs.map(spec => (
+              <tr class:list={{'highlight': spec.highlight}}>
+                <td class="spec-label">{spec.label}</td>
+                <td class="spec-value">
+                  {spec.value}
+                  <Sources evidenceIds={spec.evidenceIds} evidences={pageSpec.evidences} />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        {pageSpec.prosCons && (
+          <div class="pros-cons">
+            <div class="pros">
+              <h3>Pontos Positivos</h3>
+              <ul>
+                {pageSpec.prosCons.pros.map(pro => (
+                  <li>
+                    {pro.text}
+                    {pro.evidenceIds && <Sources evidenceIds={pro.evidenceIds} evidences={pageSpec.evidences} />}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div class="cons">
+              <h3>Pontos Negativos</h3>
+              <ul>
+                {pageSpec.prosCons.cons.map(con => (
+                  <li>
+                    {con.text}
+                    {con.evidenceIds && <Sources evidenceIds={con.evidenceIds} evidences={pageSpec.evidences} />}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        )}
+
+        {pageSpec.faq && pageSpec.faq.length > 0 && (
+          <section class="faq">
+            <h2>Perguntas Frequentes</h2>
+            {pageSpec.faq.map(item => (
+              <div class="faq-item">
+                <h3>{item.question}</h3>
+                <p>
+                  {item.answer}
+                  {item.evidenceIds && <Sources evidenceIds={item.evidenceIds} evidences={pageSpec.evidences} />}
+                </p>
+              </div>
+            ))}
+          </section>
+        )}
+      </section>
+    )}
+
+    <!-- Brand Compare -->
+    {pageSpec.type === 'brand_compare' && (
+      <section class="brand-compare">
+        <div class="brands-intro">
+          <div class="brand">
+            <h2>{pageSpec.brands[0].name}</h2>
+            <p>
+              {pageSpec.brands[0].summary}
+              {pageSpec.brands[0].evidenceIds && <Sources evidenceIds={pageSpec.brands[0].evidenceIds} evidences={pageSpec.evidences} />}
+            </p>
+          </div>
+          <div class="brand">
+            <h2>{pageSpec.brands[1].name}</h2>
+            <p>
+              {pageSpec.brands[1].summary}
+              {pageSpec.brands[1].evidenceIds && <Sources evidenceIds={pageSpec.brands[1].evidenceIds} evidences={pageSpec.evidences} />}
+            </p>
+          </div>
+        </div>
+
+        <h2>Comparação</h2>
+        <ComparisonTable
+          dimensions={pageSpec.comparison.dimensions}
+          label1={pageSpec.brands[0].name}
+          label2={pageSpec.brands[1].name}
+        />
+
+        {pageSpec.verdict && (
+          <section class="verdict">
+            <h2>Conclusão</h2>
+            <p>
+              <strong>{pageSpec.verdict.summary}</strong>
+              {pageSpec.verdict.evidenceIds && <Sources evidenceIds={pageSpec.verdict.evidenceIds} evidences={pageSpec.evidences} />}
+            </p>
+            <p>{pageSpec.verdict.recommendation}</p>
+          </section>
+        )}
+
+        {pageSpec.faq && pageSpec.faq.length > 0 && (
+          <section class="faq">
+            <h2>Perguntas Frequentes</h2>
+            {pageSpec.faq.map(item => (
+              <div class="faq-item">
+                <h3>{item.question}</h3>
+                <p>
+                  {item.answer}
+                  {item.evidenceIds && <Sources evidenceIds={item.evidenceIds} evidences={pageSpec.evidences} />}
+                </p>
+              </div>
+            ))}
+          </section>
+        )}
+      </section>
+    )}
+
+    <!-- Decision Compare -->
+    {pageSpec.type === 'decision_compare' && (
+      <section class="decision-compare">
+        <div class="options-intro">
+          <div class="option">
+            <h2>{pageSpec.options[0].name}</h2>
+            <p>
+              {pageSpec.options[0].description}
+              {pageSpec.options[0].evidenceIds && <Sources evidenceIds={pageSpec.options[0].evidenceIds} evidences={pageSpec.evidences} />}
+            </p>
+          </div>
+          <div class="option">
+            <h2>{pageSpec.options[1].name}</h2>
+            <p>
+              {pageSpec.options[1].description}
+              {pageSpec.options[1].evidenceIds && <Sources evidenceIds={pageSpec.options[1].evidenceIds} evidences={pageSpec.evidences} />}
+            </p>
+          </div>
+        </div>
+
+        <h2>Comparação</h2>
+        <ComparisonTable
+          dimensions={pageSpec.comparison.dimensions}
+          label1={pageSpec.options[0].name}
+          label2={pageSpec.options[1].name}
+        />
+
+        {pageSpec.verdict && (
+          <section class="verdict">
+            <h2>Conclusão</h2>
+            <p>
+              <strong>{pageSpec.verdict.summary}</strong>
+              {pageSpec.verdict.evidenceIds && <Sources evidenceIds={pageSpec.verdict.evidenceIds} evidences={pageSpec.evidences} />}
+            </p>
+            <p>{pageSpec.verdict.recommendation}</p>
+          </section>
+        )}
+
+        {pageSpec.faq && pageSpec.faq.length > 0 && (
+          <section class="faq">
+            <h2>Perguntas Frequentes</h2>
+            {pageSpec.faq.map(item => (
+              <div class="faq-item">
+                <h3>{item.question}</h3>
+                <p>
+                  {item.answer}
+                  {item.evidenceIds && <Sources evidenceIds={item.evidenceIds} evidences={pageSpec.evidences} />}
+                </p>
+              </div>
+            ))}
+          </section>
+        )}
+      </section>
+    )}
+
+    <!-- Evidence List (sempre presente) -->
+    <EvidenceList evidences={pageSpec.evidences} />
+
+    <!-- Monetization (opcional) -->
+    {pageSpec.monetization?.affiliateUrl && (
+      <section class="monetization">
+        <a href={pageSpec.monetization.affiliateUrl} class="cta-button" target="_blank" rel="noopener noreferrer">
+          {pageSpec.monetization.ctaText || 'Ver opções de compra'}
+        </a>
+        {pageSpec.monetization.disclaimer && (
+          <p class="disclaimer">{pageSpec.monetization.disclaimer}</p>
+        )}
+      </section>
+    )}
+  </article>
+</BaseLayout>
+
+<style>
+  .breadcrumbs {
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+
+  .breadcrumbs .separator {
+    margin: 0 0.5rem;
+  }
+
+  .hero {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  .subheading {
+    font-size: 1.125rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+  }
+
+  .product-info {
+    background-color: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+
+  .specs-table {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-collapse: collapse;
+  }
+
+  .specs-table tr {
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .specs-table tr.highlight {
+    background-color: #fef3c7;
+  }
+
+  .specs-table td {
+    padding: 0.75rem 1rem;
+  }
+
+  .spec-label {
+    font-weight: 600;
+    width: 40%;
+  }
+
+  .spec-value {
+    width: 60%;
+  }
+
+  .pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .pros h3 {
+    color: #16a34a;
+  }
+
+  .cons h3 {
+    color: #dc2626;
+  }
+
+  .brands-intro,
+  .options-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .brand,
+  .option {
+    padding: 1.5rem;
+    background-color: #f9fafb;
+    border-radius: 8px;
+  }
+
+  .verdict {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #eff6ff;
+    border-left: 4px solid #2563eb;
+    border-radius: 4px;
+  }
+
+  .faq {
+    margin: 2rem 0;
+  }
+
+  .faq-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f9fafb;
+    border-radius: 6px;
+  }
+
+  .faq-item h3 {
+    margin-top: 0;
+    font-size: 1.125rem;
+  }
+
+  .monetization {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+
+  .cta-button:hover {
+    background-color: #1d4ed8;
+    text-decoration: none;
+  }
+
+  .disclaimer {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+</style>

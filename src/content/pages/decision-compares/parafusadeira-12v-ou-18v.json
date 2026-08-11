@@ -1,0 +1,182 @@
+{
+  "version": "1.0",
+  "type": "decision_compare",
+  "slug": "parafusadeira-12v-ou-18v",
+  "metadata": {
+    "title": "Parafusadeira 12V ou 18V: Qual Voltagem Escolher?",
+    "metaDescription": "Comparação técnica entre parafusadeiras 12V e 18V. Diferenças de torque, peso, autonomia e aplicações recomendadas para cada voltagem.",
+    "publishedAt": "2026-08-11T21:00:00Z",
+    "updatedAt": "2026-08-11T21:00:00Z",
+    "author": "Equipe Técnica",
+    "breadcrumbs": [
+      {"name": "Início", "url": "/"},
+      {"name": "12V ou 18V"}
+    ]
+  },
+  "hero": {
+    "heading": "Parafusadeira 12V ou 18V: Qual Escolher?",
+    "subheading": "Comparação técnica entre as voltagens mais comuns no mercado"
+  },
+  "options": [
+    {
+      "name": "12V",
+      "description": "Ferramentas compactas e leves, adequadas para trabalhos residenciais e em espaços confinados. Priorizam portabilidade e facilidade de manuseio.",
+      "evidenceIds": ["ev_001"]
+    },
+    {
+      "name": "18V",
+      "description": "Ferramentas com maior potência e versatilidade, adequadas para uso profissional e aplicações mais exigentes. Oferecem maior torque e autonomia.",
+      "evidenceIds": ["ev_002"]
+    }
+  ],
+  "comparison": {
+    "dimensions": [
+      {
+        "label": "Faixa de torque típica",
+        "option1": "20 a 40 Nm",
+        "option2": "40 a 80+ Nm",
+        "winner": 2,
+        "evidenceIds": ["ev_003"]
+      },
+      {
+        "label": "Peso médio (ferramenta + bateria)",
+        "option1": "0,8 a 1,3 kg",
+        "option2": "1,5 a 2,5 kg",
+        "winner": 1,
+        "evidenceIds": ["ev_004"]
+      },
+      {
+        "label": "Tamanho e compacidade",
+        "option1": "Mais compacto, ideal para espaços apertados",
+        "option2": "Maior, pode dificultar acesso em espaços confinados",
+        "winner": 1,
+        "evidenceIds": ["ev_004"]
+      },
+      {
+        "label": "Capacidade típica de bateria",
+        "option1": "1,5 a 3,0 Ah",
+        "option2": "2,0 a 6,0+ Ah",
+        "winner": 2,
+        "evidenceIds": ["ev_005"]
+      },
+      {
+        "label": "Autonomia de trabalho",
+        "option1": "Adequada para tarefas leves e médias",
+        "option2": "Maior autonomia para uso contínuo profissional",
+        "winner": 2,
+        "evidenceIds": ["ev_006"]
+      },
+      {
+        "label": "Custo médio de entrada",
+        "option1": "Menor investimento inicial",
+        "option2": "Maior investimento inicial",
+        "winner": 1,
+        "evidenceIds": ["ev_007"]
+      },
+      {
+        "label": "Variedade de ferramentas na plataforma",
+        "option1": "Linha menor, focada em trabalhos leves",
+        "option2": "Linha ampla incluindo ferramentas pesadas",
+        "winner": 2,
+        "evidenceIds": ["ev_008"]
+      }
+    ]
+  },
+  "verdict": {
+    "summary": "12V oferece vantagem em portabilidade, peso e custo inicial, sendo ideal para trabalhos residenciais e espaços confinados. 18V oferece vantagem em potência, autonomia e versatilidade, sendo preferível para uso profissional e aplicações exigentes.",
+    "recommendation": "Escolha 12V se prioriza leveza, compacidade e trabalhos residenciais ocasionais. Escolha 18V se precisa de maior potência, planeja uso profissional intenso ou deseja montar um sistema amplo de ferramentas compatíveis.",
+    "evidenceIds": ["ev_003", "ev_004", "ev_006", "ev_008"]
+  },
+  "faq": [
+    {
+      "question": "Posso usar parafusadeira 12V para trabalho profissional?",
+      "answer": "Sim, para determinadas aplicações profissionais leves como instalações elétricas, montagem de móveis e manutenção geral. No entanto, para construção pesada, perfurações em concreto ou uso contínuo intenso, 18V é mais apropriada devido ao maior torque e autonomia.",
+      "evidenceIds": ["ev_001", "ev_003"]
+    },
+    {
+      "question": "A bateria 18V dura mais tempo que a 12V?",
+      "answer": "Geralmente sim. Baterias 18V costumam ter maior capacidade (Ah) e a voltagem mais alta também pode resultar em melhor eficiência em aplicações que exigem mais potência. Porém, a duração real depende da capacidade específica (Ah) de cada bateria e do tipo de trabalho realizado.",
+      "evidenceIds": ["ev_005", "ev_006"]
+    },
+    {
+      "question": "Vale a pena ter ferramentas nas duas voltagens?",
+      "answer": "Pode fazer sentido para profissionais que trabalham em contextos variados: 12V para trabalhos leves e em espaços confinados, 18V para aplicações mais pesadas. Para uso doméstico, escolher apenas uma plataforma facilita compartilhamento de baterias e reduz custos.",
+      "evidenceIds": ["ev_008"]
+    },
+    {
+      "question": "Qual voltagem perfura melhor em concreto?",
+      "answer": "18V geralmente oferece melhor desempenho em materiais duros como concreto, devido ao maior torque disponível. Para perfurações frequentes em alvenaria, considere também furadeiras de impacto 18V, que são especificamente projetadas para esse tipo de aplicação.",
+      "evidenceIds": ["ev_003", "ev_002"]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_001",
+      "evidence_type": "SPEC",
+      "claim": "Características típicas de parafusadeiras 12V",
+      "source_name": "Especificações técnicas de fabricantes principais (DeWalt, Bosch, Makita) para linhas 12V",
+      "accessed_at": "2026-08-11T21:00:00Z",
+      "notes": "Ferramentas 12V tipicamente posicionadas para uso residencial e profissional leve"
+    },
+    {
+      "id": "ev_002",
+      "evidence_type": "SPEC",
+      "claim": "Características típicas de parafusadeiras 18V",
+      "source_name": "Especificações técnicas de fabricantes principais (DeWalt, Bosch, Makita) para linhas 18V",
+      "accessed_at": "2026-08-11T21:00:00Z",
+      "notes": "Ferramentas 18V tipicamente posicionadas para uso profissional e aplicações exigentes"
+    },
+    {
+      "id": "ev_003",
+      "evidence_type": "DERIVED",
+      "claim": "Faixas de torque típicas para 12V e 18V",
+      "source_name": "Análise de especificações de modelos principais no mercado",
+      "accessed_at": "2026-08-11T21:00:00Z",
+      "derived_from": ["ev_001", "ev_002"],
+      "notes": "Valores representam faixa comum observada em modelos de fabricantes estabelecidos"
+    },
+    {
+      "id": "ev_004",
+      "evidence_type": "DERIVED",
+      "claim": "Diferenças de peso e tamanho entre 12V e 18V",
+      "source_name": "Comparação de dimensões em especificações técnicas",
+      "accessed_at": "2026-08-11T21:00:00Z",
+      "derived_from": ["ev_001", "ev_002"],
+      "notes": "Peso inclui ferramenta + bateria padrão. 12V consistentemente mais leve e compacto."
+    },
+    {
+      "id": "ev_005",
+      "evidence_type": "SPEC",
+      "claim": "Capacidades típicas de bateria disponíveis para cada voltagem",
+      "source_name": "Catálogos de baterias de fabricantes principais",
+      "accessed_at": "2026-08-11T21:00:00Z",
+      "notes": "18V oferece baterias de maior capacidade devido ao maior espaço físico disponível"
+    },
+    {
+      "id": "ev_006",
+      "evidence_type": "DERIVED",
+      "claim": "Autonomia relativa entre 12V e 18V",
+      "source_name": "Análise de capacidade energética (V × Ah = Wh)",
+      "accessed_at": "2026-08-11T21:00:00Z",
+      "derived_from": ["ev_005"],
+      "notes": "Bateria 18V × 3Ah = 54Wh vs 12V × 2Ah = 24Wh. Maior capacidade energética em 18V."
+    },
+    {
+      "id": "ev_007",
+      "evidence_type": "DERIVED",
+      "claim": "Diferença de custo médio entre plataformas 12V e 18V",
+      "source_name": "Análise de posicionamento de mercado",
+      "accessed_at": "2026-08-11T21:00:00Z",
+      "derived_from": ["ev_001", "ev_002"],
+      "notes": "Ferramentas 12V geralmente posicionadas em faixa de preço mais acessível"
+    },
+    {
+      "id": "ev_008",
+      "evidence_type": "SPEC",
+      "claim": "Amplitude de linhas de produtos 12V vs 18V",
+      "source_name": "Catálogos de produtos de fabricantes principais",
+      "accessed_at": "2026-08-11T21:00:00Z",
+      "notes": "Plataformas 18V oferecem maior variedade incluindo ferramentas pesadas (serras, lixadeiras, etc)"
+    }
+  ]
+}

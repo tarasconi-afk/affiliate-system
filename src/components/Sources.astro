@@ -1,0 +1,43 @@
+---
+import type { Evidence } from '../lib/types';
+
+interface Props {
+  evidenceIds: string[];
+  evidences: Evidence[];
+}
+
+const { evidenceIds, evidences } = Astro.props;
+
+const referencedEvidences = evidenceIds
+  .map(id => evidences.find(ev => ev.id === id))
+  .filter(Boolean) as Evidence[];
+---
+
+{referencedEvidences.length > 0 && (
+  <sup class="evidence-refs">
+    {referencedEvidences.map((ev, idx) => (
+      <Fragment>
+        {idx > 0 && ', '}
+        <a href={`#${ev.id}`} title={ev.claim}>
+          {ev.id}
+        </a>
+      </Fragment>
+    ))}
+  </sup>
+)}
+
+<style>
+  .evidence-refs {
+    margin-left: 0.25rem;
+  }
+
+  .evidence-refs a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.75rem;
+  }
+
+  .evidence-refs a:hover {
+    text-decoration: underline;
+  }
+</style>

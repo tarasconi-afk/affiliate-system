@@ -1,0 +1,41 @@
+---
+import type { PageMetadata, Product } from '../../lib/types';
+import { buildCanonical } from '../../lib/seoHelpers';
+
+interface Props {
+  metadata: PageMetadata;
+  slug: string;
+  product?: Product;
+}
+
+const { metadata, slug, product } = Astro.props;
+const canonical = buildCanonical(slug);
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": metadata.title,
+  "description": metadata.metaDescription,
+  "url": canonical,
+  "datePublished": metadata.publishedAt,
+  "dateModified": metadata.updatedAt,
+  ...(metadata.author && {
+    "author": {
+      "@type": "Person",
+      "name": metadata.author
+    }
+  }),
+  ...(product && {
+    "about": {
+      "@type": "Product",
+      "name": product.name,
+      "brand": {
+        "@type": "Brand",
+        "name": product.brand
+      }
+    }
+  })
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

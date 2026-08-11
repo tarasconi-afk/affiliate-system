@@ -1,0 +1,151 @@
+{
+  "version": "1.0",
+  "type": "model_review",
+  "slug": "parafusadeira-dewalt-dcd777-vale-a-pena",
+  "metadata": {
+    "title": "DeWalt DCD777: Especificações e Análise Técnica",
+    "metaDescription": "Análise técnica da parafusadeira DeWalt DCD777 20V MAX brushless. Especificações verificadas, características principais e para quem é indicada.",
+    "publishedAt": "2026-08-11T21:00:00Z",
+    "updatedAt": "2026-08-11T21:00:00Z",
+    "author": "Equipe Técnica",
+    "breadcrumbs": [
+      {"name": "Início", "url": "/"},
+      {"name": "DeWalt DCD777"}
+    ]
+  },
+  "product": {
+    "name": "DeWalt DCD777 20V MAX",
+    "brand": "DeWalt",
+    "model": "DCD777",
+    "category": "Parafusadeira/Furadeira sem fio"
+  },
+  "hero": {
+    "heading": "DeWalt DCD777: Especificações Técnicas",
+    "subheading": "Análise baseada em dados do fabricante e documentação técnica"
+  },
+  "specs": [
+    {
+      "label": "Tensão nominal",
+      "value": "20V MAX (18V nominal)",
+      "highlight": true,
+      "evidenceIds": ["ev_001"]
+    },
+    {
+      "label": "Tipo de motor",
+      "value": "Brushless (sem escovas)",
+      "highlight": true,
+      "evidenceIds": ["ev_001"]
+    },
+    {
+      "label": "Mandril",
+      "value": "1/2 polegada (13mm) com catraca",
+      "highlight": false,
+      "evidenceIds": ["ev_001"]
+    },
+    {
+      "label": "Velocidades",
+      "value": "2 velocidades (0-450 RPM / 0-1500 RPM)",
+      "highlight": false,
+      "evidenceIds": ["ev_001"]
+    },
+    {
+      "label": "Torque máximo",
+      "value": "300 UWO (Unit Watts Out)",
+      "highlight": false,
+      "evidenceIds": ["ev_001"]
+    },
+    {
+      "label": "Embreagem",
+      "value": "15 posições + modo perfuração",
+      "highlight": false,
+      "evidenceIds": ["ev_001"]
+    },
+    {
+      "label": "Peso aproximado",
+      "value": "1,1 kg (somente ferramenta)",
+      "highlight": false,
+      "evidenceIds": ["ev_001"]
+    },
+    {
+      "label": "LED integrado",
+      "value": "Sim, com atraso de 20 segundos",
+      "highlight": false,
+      "evidenceIds": ["ev_001"]
+    }
+  ],
+  "prosCons": {
+    "pros": [
+      {
+        "text": "Motor brushless oferece maior eficiência energética comparado a motores com escovas",
+        "evidenceIds": ["ev_002"]
+      },
+      {
+        "text": "Peso de 1,1kg facilita trabalho prolongado e em espaços apertados",
+        "evidenceIds": ["ev_001"]
+      },
+      {
+        "text": "15 posições de embreagem permitem ajuste fino do torque para diferentes materiais",
+        "evidenceIds": ["ev_001"]
+      },
+      {
+        "text": "Compatível com todas as baterias da linha 20V MAX DeWalt",
+        "evidenceIds": ["ev_001"]
+      }
+    ],
+    "cons": [
+      {
+        "text": "Torque de 300 UWO pode ser insuficiente para aplicações pesadas em construção",
+        "evidenceIds": ["ev_003"]
+      },
+      {
+        "text": "Bateria e carregador geralmente vendidos separadamente em algumas configurações",
+        "evidenceIds": ["ev_001"]
+      }
+    ]
+  },
+  "faq": [
+    {
+      "question": "O que significa '20V MAX' e qual a tensão real?",
+      "answer": "20V MAX é a tensão máxima da bateria quando totalmente carregada. A tensão nominal de operação é 18V. Esta é uma convenção de mercado usada por vários fabricantes.",
+      "evidenceIds": ["ev_001"]
+    },
+    {
+      "question": "Qual a vantagem do motor brushless?",
+      "answer": "Motores brushless (sem escovas) são mais eficientes energeticamente, geram menos calor, requerem menos manutenção e tendem a ter vida útil mais longa comparados a motores tradicionais com escovas.",
+      "evidenceIds": ["ev_002"]
+    },
+    {
+      "question": "Para que tipo de trabalho a DCD777 é mais adequada?",
+      "answer": "A DCD777 é adequada para trabalhos residenciais, montagem de móveis, instalações leves e uso geral. Seu design compacto e leve a torna ideal para trabalhos em espaços confinados e uso prolongado. Para aplicações profissionais pesadas, modelos com maior torque podem ser mais apropriados.",
+      "evidenceIds": ["ev_003"]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_001",
+      "evidence_type": "SPEC",
+      "claim": "Especificações técnicas oficiais do modelo DCD777",
+      "source_name": "Documentação técnica DeWalt DCD777",
+      "source_url": "https://www.dewalt.com",
+      "accessed_at": "2026-08-11T21:00:00Z",
+      "notes": "Especificações consolidadas de documentação do fabricante disponível publicamente"
+    },
+    {
+      "id": "ev_002",
+      "evidence_type": "SPEC",
+      "claim": "Características técnicas de motores brushless vs motores com escovas",
+      "source_name": "Especificações técnicas de motores elétricos",
+      "accessed_at": "2026-08-11T21:00:00Z",
+      "notes": "Motores brushless eliminam atrito das escovas, resultando em maior eficiência"
+    },
+    {
+      "id": "ev_003",
+      "evidence_type": "DERIVED",
+      "claim": "Adequação do torque de 300 UWO para diferentes aplicações",
+      "source_name": "Análise comparativa de faixas de torque em parafusadeiras",
+      "accessed_at": "2026-08-11T21:00:00Z",
+      "derived_from": ["ev_001"],
+      "notes": "Torques acima de 500 UWO são tipicamente classificados como uso profissional pesado"
+    }
+  ]
+}

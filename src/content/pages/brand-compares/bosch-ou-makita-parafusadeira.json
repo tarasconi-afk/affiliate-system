@@ -1,0 +1,148 @@
+{
+  "version": "1.0",
+  "type": "brand_compare",
+  "slug": "bosch-ou-makita-parafusadeira",
+  "metadata": {
+    "title": "Bosch ou Makita: Qual Marca de Parafusadeira Escolher?",
+    "metaDescription": "Comparação técnica entre parafusadeiras Bosch e Makita. Diferenças de garantia, linha de produtos, compatibilidade de baterias e posicionamento de mercado.",
+    "publishedAt": "2026-08-11T21:00:00Z",
+    "updatedAt": "2026-08-11T21:00:00Z",
+    "author": "Equipe Técnica",
+    "breadcrumbs": [
+      {"name": "Início", "url": "/"},
+      {"name": "Bosch ou Makita"}
+    ]
+  },
+  "hero": {
+    "heading": "Bosch ou Makita: Qual Marca Escolher?",
+    "subheading": "Comparação de características, garantia e posicionamento das marcas"
+  },
+  "brands": [
+    {
+      "name": "Bosch",
+      "summary": "Fabricante alemão com linhas diferenciadas: azul profissional e verde uso doméstico. Presente no mercado brasileiro com ampla rede de assistência técnica.",
+      "evidenceIds": ["ev_001"]
+    },
+    {
+      "name": "Makita",
+      "summary": "Fabricante japonês focado principalmente em ferramentas profissionais. Reconhecida pela extensa linha de produtos compatíveis com mesmo sistema de bateria.",
+      "evidenceIds": ["ev_002"]
+    }
+  ],
+  "comparison": {
+    "dimensions": [
+      {
+        "label": "Segmentação de linhas",
+        "brand1": "Duas linhas distintas: profissional (azul) e doméstica (verde)",
+        "brand2": "Foco principal em linha profissional (azul-petróleo)",
+        "winner": 0,
+        "evidenceIds": ["ev_001", "ev_002"]
+      },
+      {
+        "label": "Garantia padrão no Brasil",
+        "brand1": "3 meses legal + extensões variáveis por linha",
+        "brand2": "3 meses legal + extensões variáveis por linha",
+        "winner": 0,
+        "evidenceIds": ["ev_003"]
+      },
+      {
+        "label": "Sistema de bateria 18V",
+        "brand1": "Linha azul 18V compatível entre produtos profissionais",
+        "brand2": "Sistema LXT 18V com compatibilidade em centenas de produtos",
+        "winner": 2,
+        "evidenceIds": ["ev_004", "ev_005"]
+      },
+      {
+        "label": "Disponibilidade no Brasil",
+        "brand1": "Ampla rede de lojas e assistências técnicas",
+        "brand2": "Boa disponibilidade em lojas especializadas",
+        "winner": 0,
+        "evidenceIds": ["ev_001", "ev_002"]
+      },
+      {
+        "label": "Posicionamento de preço (linha profissional)",
+        "brand1": "Intermediário a premium",
+        "brand2": "Intermediário a premium",
+        "winner": 0,
+        "evidenceIds": ["ev_006"]
+      }
+    ]
+  },
+  "verdict": {
+    "summary": "Ambas são marcas consolidadas com produtos de qualidade. Bosch oferece opções para uso doméstico e profissional através de linhas separadas. Makita foca em ferramentas profissionais com vantagem na amplitude do sistema de bateria compartilhada.",
+    "recommendation": "Escolha Bosch se precisa de opções tanto para uso doméstico quanto profissional, ou se valoriza ampla rede de assistência. Escolha Makita se já possui ou planeja construir um conjunto grande de ferramentas profissionais no mesmo sistema de bateria.",
+    "evidenceIds": ["ev_001", "ev_002", "ev_004", "ev_005"]
+  },
+  "faq": [
+    {
+      "question": "Qual marca é mais confiável?",
+      "answer": "Ambas são fabricantes tradicionais com reputação estabelecida globalmente. Bosch é alemã com mais de 130 anos de história. Makita é japonesa com mais de 100 anos. A confiabilidade depende mais do modelo específico e cuidados de uso do que da marca em si.",
+      "evidenceIds": ["ev_001", "ev_002"]
+    },
+    {
+      "question": "Posso usar baterias Bosch em ferramentas Makita?",
+      "answer": "Não. Cada fabricante utiliza sistema proprietário de bateria. Baterias Bosch funcionam apenas em ferramentas Bosch da mesma linha e voltagem. O mesmo vale para Makita.",
+      "evidenceIds": ["ev_004", "ev_005"]
+    },
+    {
+      "question": "Qual marca tem mais opções de ferramentas sem fio?",
+      "answer": "Makita possui uma das maiores linhas de ferramentas compatíveis com o sistema LXT 18V, incluindo mais de 200 produtos diferentes. Bosch também oferece linha ampla, mas dividida entre as linhas verde e azul.",
+      "evidenceIds": ["ev_005"]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_001",
+      "evidence_type": "SPEC",
+      "claim": "Informações sobre a marca Bosch e suas linhas de produtos",
+      "source_name": "Documentação institucional Bosch",
+      "source_url": "https://www.bosch.com.br",
+      "accessed_at": "2026-08-11T21:00:00Z",
+      "notes": "Bosch divide produtos em linha profissional (azul) e doméstica (verde)"
+    },
+    {
+      "id": "ev_002",
+      "evidence_type": "SPEC",
+      "claim": "Informações sobre a marca Makita e seu posicionamento",
+      "source_name": "Documentação institucional Makita",
+      "source_url": "https://www.makita.com.br",
+      "accessed_at": "2026-08-11T21:00:00Z",
+      "notes": "Makita foca principalmente em ferramentas profissionais"
+    },
+    {
+      "id": "ev_003",
+      "evidence_type": "SPEC",
+      "claim": "Garantia legal mínima no Brasil para ferramentas elétricas",
+      "source_name": "Código de Defesa do Consumidor - Lei 8.078/1990",
+      "accessed_at": "2026-08-11T21:00:00Z",
+      "notes": "Garantia legal mínima de 90 dias (3 meses) para produtos duráveis. Garantias adicionais são oferecidas pelos fabricantes."
+    },
+    {
+      "id": "ev_004",
+      "evidence_type": "SPEC",
+      "claim": "Sistema de bateria da linha profissional Bosch 18V",
+      "source_name": "Especificações técnicas Bosch Professional 18V",
+      "source_url": "https://www.bosch-professional.com",
+      "accessed_at": "2026-08-11T21:00:00Z",
+      "notes": "Baterias 18V Bosch Professional compatíveis dentro da mesma linha"
+    },
+    {
+      "id": "ev_005",
+      "evidence_type": "SPEC",
+      "claim": "Sistema de bateria Makita LXT 18V",
+      "source_name": "Especificações técnicas Makita LXT",
+      "source_url": "https://www.makita.com.br",
+      "accessed_at": "2026-08-11T21:00:00Z",
+      "notes": "Sistema LXT oferece compatibilidade em mais de 200 ferramentas diferentes"
+    },
+    {
+      "id": "ev_006",
+      "evidence_type": "DERIVED",
+      "claim": "Posicionamento de preço similar entre as marcas na linha profissional",
+      "source_name": "Análise de posicionamento de mercado",
+      "accessed_at": "2026-08-11T21:00:00Z",
+      "derived_from": ["ev_001", "ev_002"],
+      "notes": "Ambas marcas competem no segmento intermediário a premium de ferramentas profissionais"
+    }
+  ]
+}

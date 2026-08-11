@@ -1,0 +1,133 @@
+---
+import type { Evidence } from '../lib/types';
+
+interface Props {
+  evidences: Evidence[];
+}
+
+const { evidences } = Astro.props;
+
+const evidenceTypeLabels: Record<string, string> = {
+  'SPEC': 'Especificação',
+  'DERIVED': 'Derivado',
+  'OBSERVATION': 'Observação',
+  'MEASUREMENT': 'Medição'
+};
+---
+
+<section class="evidence-list">
+  <h2>Evidências</h2>
+  <div class="evidences">
+    {evidences.map(ev => (
+      <div class="evidence-item" id={ev.id}>
+        <div class="evidence-header">
+          <span class="evidence-type">{evidenceTypeLabels[ev.evidence_type]}</span>
+          <span class="evidence-id">#{ev.id}</span>
+        </div>
+        <p class="evidence-claim">{ev.claim}</p>
+        <div class="evidence-source">
+          <strong>Fonte:</strong>
+          {ev.source_url ? (
+            <a href={ev.source_url} target="_blank" rel="noopener noreferrer">
+              {ev.source_name}
+            </a>
+          ) : (
+            <span>{ev.source_name}</span>
+          )}
+        </div>
+        <div class="evidence-meta">
+          <span>Acessado em: {new Date(ev.accessed_at).toLocaleDateString('pt-BR')}</span>
+        </div>
+        {ev.notes && (
+          <div class="evidence-notes">
+            <strong>Notas:</strong> {ev.notes}
+          </div>
+        )}
+        {ev.derived_from && ev.derived_from.length > 0 && (
+          <div class="evidence-derived">
+            <strong>Derivado de:</strong> {ev.derived_from.map(id => `#${id}`).join(', ')}
+          </div>
+        )}
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .evidence-list {
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: #f9fafb;
+    border-radius: 8px;
+  }
+
+  .evidence-list h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .evidences {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .evidence-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-left: 4px solid #3b82f6;
+  }
+
+  .evidence-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .evidence-type {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: #dbeafe;
+    color: #1e40af;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .evidence-id {
+    font-family: monospace;
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+
+  .evidence-claim {
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    color: #111827;
+  }
+
+  .evidence-source,
+  .evidence-meta,
+  .evidence-notes,
+  .evidence-derived {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-top: 0.5rem;
+  }
+
+  .evidence-source a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .evidence-source a:hover {
+    text-decoration: underline;
+  }
+
+  .evidence-notes {
+    font-style: italic;
+    color: #6b7280;
+  }
+</style>

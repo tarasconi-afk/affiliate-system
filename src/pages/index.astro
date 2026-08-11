@@ -1,0 +1,271 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pages = [
+  {
+    title: 'DeWalt DCD777: Especificações Técnicas',
+    description: 'Análise técnica da parafusadeira DeWalt DCD777 20V MAX brushless com especificações verificadas.',
+    url: '/parafusadeira-dewalt-dcd777-vale-a-pena/',
+    type: 'Análise de Produto'
+  },
+  {
+    title: 'Bosch ou Makita: Qual Marca Escolher?',
+    description: 'Comparação técnica entre as marcas: garantia, linhas de produto e compatibilidade de baterias.',
+    url: '/bosch-ou-makita-parafusadeira/',
+    type: 'Comparação de Marcas'
+  },
+  {
+    title: 'Parafusadeira 12V ou 18V: Qual Escolher?',
+    description: 'Comparação entre voltagens: diferenças de torque, peso, autonomia e aplicações recomendadas.',
+    url: '/parafusadeira-12v-ou-18v/',
+    type: 'Decisão Técnica'
+  }
+];
+---
+
+<BaseLayout title="Escolha a ferramenta certa com dados, não propaganda">
+  <Fragment slot="head">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Comparações e análises de ferramentas elétricas baseadas em especificações técnicas e dados verificáveis." />
+    <link rel="canonical" href="https://example.com/" />
+  </Fragment>
+
+  <header class="site-header">
+    <h1>Escolha a ferramenta certa com dados, não propaganda</h1>
+    <p class="lead">
+      Comparações e análises de ferramentas elétricas baseadas em especificações técnicas,
+      documentação de fabricantes e dados verificáveis.
+    </p>
+  </header>
+
+  <section class="content-cards">
+    <h2>Conteúdo Disponível</h2>
+    <div class="cards-grid">
+      {pages.map(page => (
+        <article class="card">
+          <span class="card-type">{page.type}</span>
+          <h3><a href={page.url}>{page.title}</a></h3>
+          <p>{page.description}</p>
+          <a href={page.url} class="card-link">Ler análise →</a>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="methodology">
+    <h2>Nossa Metodologia</h2>
+    <div class="methodology-content">
+      <h3>Como produzimos nosso conteúdo</h3>
+      <ul>
+        <li>
+          <strong>Baseado em especificações:</strong> Utilizamos dados técnicos de documentação oficial
+          dos fabricantes, manuais de produto e especificações publicadas.
+        </li>
+        <li>
+          <strong>Transparência sobre fontes:</strong> Cada afirmação factual relevante aponta para sua
+          fonte de evidência. Você pode verificar de onde vem cada informação.
+        </li>
+        <li>
+          <strong>Não afirmamos testes que não fizemos:</strong> Não reivindicamos ter testado fisicamente
+          produtos quando isso não aconteceu. Conclusões derivadas são claramente marcadas e baseadas em
+          especificações documentadas.
+        </li>
+        <li>
+          <strong>Sem ratings arbitrários:</strong> Não atribuímos pontuações ou estrelas sem metodologia
+          clara. Comparações são baseadas em características mensuráveis e documentadas.
+        </li>
+        <li>
+          <strong>Informação útil para decisão:</strong> Nosso objetivo é fornecer dados técnicos relevantes
+          que ajudem você a tomar decisões informadas de compra.
+        </li>
+      </ul>
+
+      <h3>Tipos de evidência utilizados</h3>
+      <dl class="evidence-types">
+        <dt>SPEC</dt>
+        <dd>Especificações técnicas de fabricantes e documentação oficial</dd>
+
+        <dt>DERIVED</dt>
+        <dd>Conclusões derivadas de outras evidências através de análise técnica</dd>
+
+        <dt>OBSERVATION</dt>
+        <dd>Observações diretas de características verificáveis (quando aplicável)</dd>
+
+        <dt>MEASUREMENT</dt>
+        <dd>Medições realizadas conforme metodologia descrita (quando aplicável)</dd>
+      </dl>
+
+      <p class="methodology-note">
+        <strong>Importante:</strong> Este site está em fase experimental. O conteúdo é produzido com base
+        em pesquisa técnica e busca ser útil, mas não substitui consulta a profissionais ou testes pessoais
+        antes de decisões de compra importantes.
+      </p>
+    </div>
+  </section>
+
+  <style>
+    .site-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid #e5e7eb;
+    }
+
+    .site-header h1 {
+      margin-bottom: 1rem;
+      color: #111827;
+    }
+
+    .lead {
+      font-size: 1.25rem;
+      color: #4b5563;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .content-cards {
+      margin-bottom: 4rem;
+    }
+
+    .content-cards h2 {
+      margin-bottom: 2rem;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: box-shadow 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-type {
+      display: inline-block;
+      font-size: 0.875rem;
+      color: #2563eb;
+      background: #dbeafe;
+      padding: 0.25rem 0.75rem;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    .card h3 {
+      margin-top: 0.5rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+
+    .card h3 a {
+      color: #111827;
+      text-decoration: none;
+    }
+
+    .card h3 a:hover {
+      color: #2563eb;
+    }
+
+    .card p {
+      color: #4b5563;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .card-link {
+      color: #2563eb;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .card-link:hover {
+      text-decoration: underline;
+    }
+
+    .methodology {
+      background: #f9fafb;
+      padding: 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .methodology h2 {
+      margin-top: 0;
+    }
+
+    .methodology h3 {
+      color: #374151;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .methodology ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .methodology li {
+      padding-left: 1.5rem;
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    .methodology li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: #2563eb;
+      font-weight: bold;
+    }
+
+    .evidence-types {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 6px;
+      border-left: 4px solid #2563eb;
+    }
+
+    .evidence-types dt {
+      font-family: monospace;
+      font-weight: 600;
+      color: #1e40af;
+      background: #dbeafe;
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border-radius: 3px;
+      margin-bottom: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .evidence-types dt:first-child {
+      margin-top: 0;
+    }
+
+    .evidence-types dd {
+      margin-left: 0;
+      color: #4b5563;
+      margin-bottom: 0.5rem;
+    }
+
+    .methodology-note {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+  </style>
+</BaseLayout>
