@@ -1,51 +1,15 @@
 ---
 import type { Evidence } from '../lib/types';
-
-interface Props {
-  evidenceIds: string[];
-  evidences: Evidence[];
-}
-
+interface Props { evidenceIds: string[]; evidences: Evidence[]; }
 const { evidenceIds, evidences } = Astro.props;
-
-const referencedEvidences = evidenceIds
-  .map(id => evidences.find(ev => ev.id === id))
-  .filter(Boolean) as Evidence[];
-
-// Converter IDs para números sequenciais
-const getRefNumber = (evId: string) => {
-  const allIds = evidences.map(e => e.id);
-  return allIds.indexOf(evId) + 1;
-};
+const referenced = evidenceIds.map(id => evidences.find(ev => ev.id === id)).filter(Boolean) as Evidence[];
+const numberFor = (id: string) => evidences.findIndex(ev => ev.id === id) + 1;
 ---
 
-{referencedEvidences.length > 0 && (
-  <sup class="evidence-refs">
-    {referencedEvidences.map((ev, idx) => (
-      <Fragment>
-        {idx > 0 && ','}
-        <a href={`#${ev.id}`} title={ev.claim}>
-          [{getRefNumber(ev.id)}]
-        </a>
-      </Fragment>
-    ))}
-  </sup>
-)}
+{referenced.length > 0 && <sup class="evidence-refs">{referenced.map((ev, index) => <Fragment>{index > 0 && ','}<a href={`#${ev.id}`} title={ev.claim}>[{numberFor(ev.id)}]</a></Fragment>)}</sup>}
 
 <style>
-  .evidence-refs {
-    margin-left: 0.125rem;
-    font-weight: normal;
-  }
-
-  .evidence-refs a {
-    color: #2563eb;
-    text-decoration: none;
-    font-size: 0.8rem;
-    margin-left: 0.125rem;
-  }
-
-  .evidence-refs a:hover {
-    text-decoration: underline;
-  }
+  .evidence-refs { margin-left: .2rem; font-weight: 700; white-space: nowrap; }
+  .evidence-refs a { color: var(--amber-dark); text-decoration: none; font-size: .72rem; }
+  .evidence-refs a:hover { text-decoration: underline; }
 </style>

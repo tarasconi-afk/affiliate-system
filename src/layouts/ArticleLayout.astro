@@ -8,811 +8,272 @@ import EvidenceList from '../components/EvidenceList.astro';
 import Sources from '../components/Sources.astro';
 import type { PageSpec } from '../lib/types';
 
-interface Props {
-  pageSpec: PageSpec;
-}
-
+interface Props { pageSpec: PageSpec; }
 const { pageSpec } = Astro.props;
+const updatedLabel = new Date(pageSpec.metadata.updatedAt).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
 ---
 
 <BaseLayout title={pageSpec.metadata.title}>
   <Fragment slot="head">
     <SEOHead metadata={pageSpec.metadata} slug={pageSpec.slug} />
-    <ArticleSchema
-      metadata={pageSpec.metadata}
-      slug={pageSpec.slug}
-      product={pageSpec.type === 'model_review' ? pageSpec.product : undefined}
-    />
+    <ArticleSchema metadata={pageSpec.metadata} slug={pageSpec.slug} product={pageSpec.type === 'model_review' ? pageSpec.product : undefined} />
     <BreadcrumbSchema breadcrumbs={pageSpec.metadata.breadcrumbs} currentSlug={pageSpec.slug} />
   </Fragment>
 
-  <article class="article-content">
-    <!-- Breadcrumbs -->
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-      {pageSpec.metadata.breadcrumbs.map((crumb, idx) => (
-        <Fragment>
-          {idx > 0 && <span class="separator">›</span>}
-          {crumb.url ? (
-            <a href={crumb.url}>{crumb.name}</a>
-          ) : (
-            <span class="current">{crumb.name}</span>
-          )}
-        </Fragment>
-      ))}
-    </nav>
-
-    <!-- Categoria -->
-    <div class="article-category">
-      {pageSpec.type === 'model_review' && 'ANÁLISE DE PRODUTO'}
-      {pageSpec.type === 'brand_compare' && 'COMPARAÇÃO DE MARCAS'}
-      {pageSpec.type === 'decision_compare' && 'GUIA DE DECISÃO'}
+  <article class="article-shell">
+    <div class="article-topline">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        {pageSpec.metadata.breadcrumbs.map((crumb, idx) => (
+          <Fragment>
+            {idx > 0 && <span aria-hidden="true">/</span>}
+            {crumb.url ? <a href={crumb.url}>{crumb.name}</a> : <span>{crumb.name}</span>}
+          </Fragment>
+        ))}
+      </nav>
+      <span class="updated">Atualizado em {updatedLabel}</span>
     </div>
 
-    <!-- Hero -->
-    <header class="article-header">
-      <div class="article-header-content">
+    <header class="article-hero">
+      <div class="hero-copy">
+        <p class="article-category">
+          {pageSpec.type === 'model_review' && 'ANÁLISE DE MODELO'}
+          {pageSpec.type === 'brand_compare' && 'COMPARAÇÃO DE MARCAS'}
+          {pageSpec.type === 'decision_compare' && 'GUIA DE DECISÃO'}
+        </p>
         <h1>{pageSpec.hero.heading}</h1>
         <p class="article-subtitle">{pageSpec.hero.subheading}</p>
+        <div class="method-note">
+          <strong>Como esta análise foi feita</strong>
+          <span>Usamos especificações e documentação pública. Quando não há teste prático, isso é informado explicitamente.</span>
+        </div>
       </div>
-      {pageSpec.type === 'model_review' && pageSpec.slug === 'parafusadeira-dewalt-dcd777-vale-a-pena' && (
-        <div class="article-visual">
-          <img
-            src="/images/dewalt-20v-cc.jpg"
-            alt="DeWalt 20V cordless drill"
-            width="500"
-            height="333"
-            loading="eager"
-          />
-          <p class="image-disclaimer">
-            Imagem ilustrativa de uma ferramenta DeWalt 20V. O modelo analisado neste guia é a DCD7771D2-BR.
-          </p>
-          <p class="image-credit">Foto: TaurusEmerald / <a href="https://commons.wikimedia.org/wiki/File:DeWalt_20_Volt_Max_Cordless_Drill.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> / CC BY-SA 4.0</p>
-        </div>
+
+      {pageSpec.type === 'model_review' && (
+        <figure class="article-figure">
+          <img src="/images/dewalt-20v-cc-1600.webp" alt="Ferramenta DeWalt 20V usada como imagem editorial ilustrativa" width="1400" height="1400" loading="eager" />
+          <figcaption><strong>Imagem ilustrativa.</strong> A foto mostra uma ferramenta DeWalt 20V; o modelo analisado é a DCD7771D2-BR. TaurusEmerald / Wikimedia Commons / CC BY-SA 4.0.</figcaption>
+        </figure>
       )}
+
       {pageSpec.type === 'brand_compare' && (
-        <div class="article-visual brands-visual">
-          <img
-            src="/images/bosch-makita-cc.jpg"
-            alt="Bosch and Makita power tools comparison"
-            width="500"
-            height="333"
-            loading="eager"
-          />
-          <p class="image-credit">Foto: Hendrikp111 / <a href="https://commons.wikimedia.org/wiki/File:Akutrell_Makita_ja_Bosch.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> / CC BY-SA 4.0</p>
-        </div>
+        <figure class="article-figure brand-figure">
+          <img src="/images/bosch-makita-cc-1600.webp" alt="Ferramentas Bosch e Makita reunidas em uma comparação editorial" width="1600" height="739" loading="eager" />
+          <span class="figure-label" aria-hidden="true">BOSCH / MAKITA</span>
+          <figcaption>Foto: Hendrikp111 / Wikimedia Commons / CC BY-SA 4.0.</figcaption>
+        </figure>
       )}
+
       {pageSpec.type === 'decision_compare' && (
-        <div class="article-visual voltage-visual">
-          <div class="voltage-example">
-            <img
-              src="/images/bosch-12v-cc.jpg"
-              alt="Bosch 12V impact driver - compact tool example"
-              width="280"
-              height="187"
-              loading="eager"
-            />
-            <p class="voltage-label">Exemplo 12V</p>
-            <p class="image-credit-small">Foto: Charles & Hudson / Wikimedia Commons / CC BY-SA 2.0</p>
-          </div>
-          <div class="voltage-example">
-            <img
-              src="/images/makita-lxt-18v-cc.jpg"
-              alt="Makita LXT 18V drill - powerful tool example"
-              width="280"
-              height="187"
-              loading="eager"
-            />
-            <p class="voltage-label">Exemplo 18V</p>
-            <p class="image-credit-small">Foto: Santeri Viinamäki / Wikimedia Commons / CC BY-SA 4.0</p>
-          </div>
-        </div>
+        <figure class="article-figure voltage-figure">
+          <div class="voltage-image"><img src="/images/bosch-12v-cc-1600.webp" alt="Exemplo visual de ferramenta Bosch 12V" width="1600" height="1071" loading="eager" /><b>12V</b></div>
+          <div class="voltage-image"><img src="/images/makita-lxt-18v-cc-1600.webp" alt="Exemplo visual de ferramenta Makita 18V" width="1200" height="1600" loading="eager" /><b>18V</b></div>
+          <figcaption>Exemplos visuais das categorias, não uma comparação direta entre esses dois modelos. Charles & Hudson / CC BY-SA 2.0; Santeri Viinamäki / CC BY-SA 4.0.</figcaption>
+        </figure>
       )}
     </header>
 
-    <!-- Model Review -->
-    {pageSpec.type === 'model_review' && (
-      <section class="model-review">
-        <div class="quick-answer">
-          <h2>Veredito rápido</h2>
-          <p>
-            A DeWalt DCD777 (modelo DCD7771D2-BR) é uma parafusadeira/furadeira brushless 18V (20V MAX) com mandril de 13mm,
-            adequada para uso doméstico e semiprofissional em materiais leves a médios.
-          </p>
-        </div>
+    <div class="article-body">
+      {pageSpec.type === 'model_review' && (
+        <section class="model-review">
+          <aside class="quick-answer" aria-labelledby="veredito-rapido">
+            <p class="block-label">RESPOSTA CURTA</p>
+            <h2 id="veredito-rapido">Veredito rápido</h2>
+            <p>A DCD7771D2-BR combina motor brushless, torque máximo informado de 65 Nm, duas faixas de rotação e mandril de 13 mm. O kit brasileiro inclui duas baterias de 2 Ah e carregador bivolt. É uma opção coerente para quem procura uma furadeira/parafusadeira compacta sem função impacto.</p>
+          </aside>
 
-        <div class="thirty-seconds">
-          <h2>Em 30 segundos</h2>
-          <div class="thirty-grid">
-            <div class="thirty-item">
-              <div class="thirty-label">Motor</div>
-              <div class="thirty-value">Brushless</div>
-            </div>
-            <div class="thirty-item">
-              <div class="thirty-label">Tensão</div>
-              <div class="thirty-value">18V (20V MAX)</div>
-            </div>
-            <div class="thirty-item">
-              <div class="thirty-label">Mandril</div>
-              <div class="thirty-value">13 mm</div>
-            </div>
-            <div class="thirty-item">
-              <div class="thirty-label">Velocidades</div>
-              <div class="thirty-value">2 marchas</div>
-            </div>
-          </div>
-        </div>
-
-        <h2>Especificações completas</h2>
-        <table class="specs-table">
-          <tbody>
-            {pageSpec.specs.map(spec => (
-              <tr class:list={{'highlight': spec.highlight}}>
-                <th class="spec-label">{spec.label}</th>
-                <td class="spec-value">
-                  {spec.value}
-                  <Sources evidenceIds={spec.evidenceIds} evidences={pageSpec.evidences} />
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-
-        {pageSpec.prosCons && (
-          <div class="pros-cons">
-            <div class="pros">
-              <h3>Pontos Positivos</h3>
-              <ul>
-                {pageSpec.prosCons.pros.map(pro => (
-                  <li>
-                    {pro.text}
-                    {pro.evidenceIds && <Sources evidenceIds={pro.evidenceIds} evidences={pageSpec.evidences} />}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div class="cons">
-              <h3>Pontos Negativos</h3>
-              <ul>
-                {pageSpec.prosCons.cons.map(con => (
-                  <li>
-                    {con.text}
-                    {con.evidenceIds && <Sources evidenceIds={con.evidenceIds} evidences={pageSpec.evidences} />}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        )}
-
-        {pageSpec.faq && pageSpec.faq.length > 0 && (
-          <section class="faq">
-            <h2>Perguntas Frequentes</h2>
-            {pageSpec.faq.map(item => (
-              <div class="faq-item">
-                <h3>{item.question}</h3>
-                <p>
-                  {item.answer}
-                  {item.evidenceIds && <Sources evidenceIds={item.evidenceIds} evidences={pageSpec.evidences} />}
-                </p>
-              </div>
-            ))}
-          </section>
-        )}
-      </section>
-    )}
-
-    <!-- Brand Compare -->
-    {pageSpec.type === 'brand_compare' && (
-      <section class="brand-compare">
-        <div class="decision-box">
-          <h2>Qual faz mais sentido para você?</h2>
-          <div class="decision-columns">
-            <div class="decision-column">
-              <h3>{pageSpec.brands[0].name} faz mais sentido se</h3>
-              <p>
-                {pageSpec.brands[0].summary}
-                {pageSpec.brands[0].evidenceIds && <Sources evidenceIds={pageSpec.brands[0].evidenceIds} evidences={pageSpec.evidences} />}
-              </p>
-            </div>
-            <div class="decision-column">
-              <h3>{pageSpec.brands[1].name} faz mais sentido se</h3>
-              <p>
-                {pageSpec.brands[1].summary}
-                {pageSpec.brands[1].evidenceIds && <Sources evidenceIds={pageSpec.brands[1].evidenceIds} evidences={pageSpec.evidences} />}
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <h2>Comparação</h2>
-        <ComparisonTable
-          dimensions={pageSpec.comparison.dimensions}
-          label1={pageSpec.brands[0].name}
-          label2={pageSpec.brands[1].name}
-        />
-
-        {pageSpec.verdict && (
-          <section class="verdict">
-            <h2>Qual escolher?</h2>
-            <div class="verdict-content">
-              <p class="verdict-summary">
-                <strong>{pageSpec.verdict.summary}</strong>
-                {pageSpec.verdict.evidenceIds && <Sources evidenceIds={pageSpec.verdict.evidenceIds} evidences={pageSpec.evidences} />}
-              </p>
-              <p class="verdict-recommendation">{pageSpec.verdict.recommendation}</p>
+          <section class="fact-strip" aria-labelledby="trinta-segundos">
+            <div class="fact-strip-heading"><span>FC / DADOS</span><h2 id="trinta-segundos">Em 30 segundos</h2></div>
+            <div class="facts">
+              <div><span>Torque</span><strong>65 Nm</strong></div>
+              <div><span>Rotação</span><strong>0–500 / 0–1.750 RPM</strong></div>
+              <div><span>Mandril</span><strong>13 mm</strong></div>
+              <div><span>Motor</span><strong>Brushless</strong></div>
             </div>
           </section>
-        )}
 
-        {pageSpec.faq && pageSpec.faq.length > 0 && (
-          <section class="faq">
-            <h2>Perguntas Frequentes</h2>
-            {pageSpec.faq.map(item => (
-              <div class="faq-item">
-                <h3>{item.question}</h3>
-                <p>
-                  {item.answer}
-                  {item.evidenceIds && <Sources evidenceIds={item.evidenceIds} evidences={pageSpec.evidences} />}
-                </p>
-              </div>
-            ))}
-          </section>
-        )}
-      </section>
-    )}
-
-    <!-- Decision Compare -->
-    {pageSpec.type === 'decision_compare' && (
-      <section class="decision-compare">
-        <div class="decision-box">
-          <h2>Escolha em 10 segundos</h2>
-          <div class="decision-columns">
-            <div class="decision-column">
-              <h3>Escolha {pageSpec.options[0].name} se</h3>
-              <p>
-                {pageSpec.options[0].description}
-                {pageSpec.options[0].evidenceIds && <Sources evidenceIds={pageSpec.options[0].evidenceIds} evidences={pageSpec.evidences} />}
-              </p>
-            </div>
-            <div class="decision-column">
-              <h3>Escolha {pageSpec.options[1].name} se</h3>
-              <p>
-                {pageSpec.options[1].description}
-                {pageSpec.options[1].evidenceIds && <Sources evidenceIds={pageSpec.options[1].evidenceIds} evidences={pageSpec.evidences} />}
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <h2>Comparação</h2>
-        <ComparisonTable
-          dimensions={pageSpec.comparison.dimensions}
-          label1={pageSpec.options[0].name}
-          label2={pageSpec.options[1].name}
-        />
-
-        {pageSpec.verdict && (
-          <section class="verdict">
-            <h2>Qual escolher?</h2>
-            <div class="verdict-content">
-              <p class="verdict-summary">
-                <strong>{pageSpec.verdict.summary}</strong>
-                {pageSpec.verdict.evidenceIds && <Sources evidenceIds={pageSpec.verdict.evidenceIds} evidences={pageSpec.evidences} />}
-              </p>
-              <p class="verdict-recommendation">{pageSpec.verdict.recommendation}</p>
+          <section class="content-section">
+            <h2>Especificações verificadas</h2>
+            <div class="table-scroll">
+              <table class="specs-table">
+                <tbody>
+                  {pageSpec.specs.map(spec => (
+                    <tr class:list={{ highlight: spec.highlight }}>
+                      <th>{spec.label}</th>
+                      <td>{spec.value}<Sources evidenceIds={spec.evidenceIds} evidences={pageSpec.evidences} /></td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </section>
-        )}
 
-        {pageSpec.faq && pageSpec.faq.length > 0 && (
-          <section class="faq">
-            <h2>Perguntas Frequentes</h2>
-            {pageSpec.faq.map(item => (
-              <div class="faq-item">
-                <h3>{item.question}</h3>
-                <p>
-                  {item.answer}
-                  {item.evidenceIds && <Sources evidenceIds={item.evidenceIds} evidences={pageSpec.evidences} />}
-                </p>
-              </div>
-            ))}
+          {pageSpec.prosCons && (
+            <section class="content-section pros-cons">
+              <div class="pros"><p class="block-label">PONTOS A FAVOR</p><h2>Onde faz sentido</h2><ul>{pageSpec.prosCons.pros.map(item => <li>{item.text}{item.evidenceIds && <Sources evidenceIds={item.evidenceIds} evidences={pageSpec.evidences} />}</li>)}</ul></div>
+              <div class="cons"><p class="block-label">ATENÇÃO</p><h2>O que considerar</h2><ul>{pageSpec.prosCons.cons.map(item => <li>{item.text}{item.evidenceIds && <Sources evidenceIds={item.evidenceIds} evidences={pageSpec.evidences} />}</li>)}</ul></div>
+            </section>
+          )}
+
+          {pageSpec.faq && pageSpec.faq.length > 0 && (
+            <section class="faq content-section"><h2>Perguntas frequentes</h2>{pageSpec.faq.map(item => <div class="faq-item"><h3>{item.question}</h3><p>{item.answer}{item.evidenceIds && <Sources evidenceIds={item.evidenceIds} evidences={pageSpec.evidences} />}</p></div>)}</section>
+          )}
+        </section>
+      )}
+
+      {pageSpec.type === 'brand_compare' && (
+        <section class="brand-compare">
+          <section class="decision-box" aria-labelledby="qual-marca">
+            <p class="block-label">RESPOSTA PRIMEIRO</p>
+            <h2 id="qual-marca">Qual faz mais sentido para você?</h2>
+            <div class="decision-columns">
+              <div><span class="decision-name">{pageSpec.brands[0].name}</span><p>{pageSpec.brands[0].summary}{pageSpec.brands[0].evidenceIds && <Sources evidenceIds={pageSpec.brands[0].evidenceIds} evidences={pageSpec.evidences} />}</p></div>
+              <div><span class="decision-name">{pageSpec.brands[1].name}</span><p>{pageSpec.brands[1].summary}{pageSpec.brands[1].evidenceIds && <Sources evidenceIds={pageSpec.brands[1].evidenceIds} evidences={pageSpec.evidences} />}</p></div>
+            </div>
           </section>
-        )}
-      </section>
-    )}
 
-    <!-- Evidence List (sempre presente) -->
-    <EvidenceList evidences={pageSpec.evidences} />
+          <section class="content-section"><h2>Comparação por critério</h2><ComparisonTable dimensions={pageSpec.comparison.dimensions} label1={pageSpec.brands[0].name} label2={pageSpec.brands[1].name} /></section>
 
-    <!-- Monetization (opcional) -->
-    {pageSpec.monetization?.affiliateUrl && (
-      <section class="monetization">
-        <a href={pageSpec.monetization.affiliateUrl} class="cta-button" target="_blank" rel="noopener noreferrer">
-          {pageSpec.monetization.ctaText || 'Ver opções de compra'}
-        </a>
-        {pageSpec.monetization.disclaimer && (
-          <p class="disclaimer">{pageSpec.monetization.disclaimer}</p>
-        )}
-      </section>
-    )}
+          {pageSpec.verdict && <section class="verdict content-section"><p class="block-label">LEITURA EDITORIAL</p><h2>Como decidir</h2><p class="verdict-summary">{pageSpec.verdict.summary}{pageSpec.verdict.evidenceIds && <Sources evidenceIds={pageSpec.verdict.evidenceIds} evidences={pageSpec.evidences} />}</p><p>{pageSpec.verdict.recommendation}</p></section>}
+
+          {pageSpec.faq && pageSpec.faq.length > 0 && <section class="faq content-section"><h2>Perguntas frequentes</h2>{pageSpec.faq.map(item => <div class="faq-item"><h3>{item.question}</h3><p>{item.answer}{item.evidenceIds && <Sources evidenceIds={item.evidenceIds} evidences={pageSpec.evidences} />}</p></div>)}</section>}
+        </section>
+      )}
+
+      {pageSpec.type === 'decision_compare' && (
+        <section class="decision-compare">
+          <section class="decision-box" aria-labelledby="escolha-rapida">
+            <p class="block-label">DECISÃO RÁPIDA</p>
+            <h2 id="escolha-rapida">Escolha em 10 segundos</h2>
+            <div class="decision-columns">
+              <div><span class="decision-name">12V</span><p>{pageSpec.options[0].description}{pageSpec.options[0].evidenceIds && <Sources evidenceIds={pageSpec.options[0].evidenceIds} evidences={pageSpec.evidences} />}</p></div>
+              <div><span class="decision-name">18V</span><p>{pageSpec.options[1].description}{pageSpec.options[1].evidenceIds && <Sources evidenceIds={pageSpec.options[1].evidenceIds} evidences={pageSpec.evidences} />}</p></div>
+            </div>
+          </section>
+
+          <section class="content-section"><h2>Comparação por critério</h2><ComparisonTable dimensions={pageSpec.comparison.dimensions} label1={pageSpec.options[0].name} label2={pageSpec.options[1].name} /></section>
+
+          {pageSpec.verdict && <section class="verdict content-section"><p class="block-label">LEITURA EDITORIAL</p><h2>Como decidir</h2><p class="verdict-summary">{pageSpec.verdict.summary}{pageSpec.verdict.evidenceIds && <Sources evidenceIds={pageSpec.verdict.evidenceIds} evidences={pageSpec.evidences} />}</p><p>{pageSpec.verdict.recommendation}</p></section>}
+
+          {pageSpec.faq && pageSpec.faq.length > 0 && <section class="faq content-section"><h2>Perguntas frequentes</h2>{pageSpec.faq.map(item => <div class="faq-item"><h3>{item.question}</h3><p>{item.answer}{item.evidenceIds && <Sources evidenceIds={item.evidenceIds} evidences={pageSpec.evidences} />}</p></div>)}</section>}
+        </section>
+      )}
+
+      <EvidenceList evidences={pageSpec.evidences} />
+
+      {pageSpec.monetization?.affiliateUrl && <section class="monetization"><a href={pageSpec.monetization.affiliateUrl} target="_blank" rel="noopener noreferrer">{pageSpec.monetization.ctaText || 'Ver opções de compra'}</a>{pageSpec.monetization.disclaimer && <p>{pageSpec.monetization.disclaimer}</p>}</section>}
+    </div>
   </article>
 </BaseLayout>
 
 <style>
-  .article-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .breadcrumbs {
-    margin-bottom: 1.5rem;
-    font-size: 0.875rem;
-    color: #9ca3af;
-  }
-
-  .breadcrumbs .separator {
-    margin: 0 0.5rem;
-    color: #d1d5db;
-  }
-
-  .breadcrumbs a {
-    color: #6b7280;
-    transition: color 0.2s;
-  }
-
-  .breadcrumbs a:hover {
-    color: #2563eb;
-    text-decoration: none;
-  }
-
-  .breadcrumbs .current {
-    color: #4b5563;
-  }
-
-  .article-category {
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #2563eb;
-    background: #eff6ff;
-    padding: 0.375rem 0.75rem;
-    border-radius: 4px;
-    margin-bottom: 1.5rem;
-    letter-spacing: 0.05em;
-  }
-
-  .article-header {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 3rem;
-    align-items: start;
-    margin-bottom: 3rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid #e5e7eb;
-  }
-
-  .article-header-content {
-    flex: 1;
-  }
-
-  .article-header h1 {
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    line-height: 1.15;
-  }
-
-  .article-subtitle {
-    font-size: 1.125rem;
-    color: #4b5563;
-    margin-top: 0.75rem;
-    line-height: 1.6;
-    max-width: 100%;
-  }
-
-  .article-visual {
-    flex-shrink: 0;
-  }
-
-  .article-visual img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    border: 1px solid #e5e7eb;
-  }
-
-  .image-disclaimer {
-    font-size: 0.875rem;
-    color: #4b5563;
-    margin: 0.75rem 0 0.25rem;
-    padding: 0.75rem;
-    background: #fef3c7;
-    border-radius: 4px;
-    border-left: 3px solid #fbbf24;
-  }
-
-  .image-credit {
-    font-size: 0.75rem;
-    color: #9ca3af;
-    margin-top: 0.5rem;
-  }
-
-  .image-credit a {
-    color: #6b7280;
-    text-decoration: underline;
-  }
-
-  .image-credit-small {
-    font-size: 0.7rem;
-    color: #9ca3af;
-    margin-top: 0.35rem;
-  }
-
-  .brands-visual {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  .brands-visual img {
-    width: 100%;
-    height: auto;
-  }
-
-  .voltage-visual {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-  }
-
-  .voltage-example {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .voltage-example img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-  }
-
-  .voltage-label {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: #374151;
-    margin: 0.5rem 0 0.25rem;
-  }
-
-  .quick-answer {
-    background: #1e293b;
-    padding: 2.5rem;
-    border-radius: 8px;
-    margin-bottom: 3rem;
-    border-left: 4px solid #fbbf24;
-  }
-
-  .quick-answer h2 {
-    margin-top: 0;
-    font-size: 1.375rem;
-    color: #fbbf24;
-    margin-bottom: 1.25rem;
-    font-weight: 700;
-  }
-
-  .quick-answer p {
-    color: #e2e8f0;
-    font-size: 1.05rem;
-    line-height: 1.7;
-    margin: 0;
-    max-width: 100%;
-  }
-
-  .thirty-seconds {
-    margin-bottom: 3rem;
-    padding: 2rem;
-    background: #f9fafb;
-    border-radius: 8px;
-    border: 1px solid #e5e7eb;
-  }
-
-  .thirty-seconds h2 {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-  }
-
-  .thirty-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-  }
-
-  .thirty-item {
-    background: #ffffff;
-    padding: 1.25rem;
-    border-radius: 6px;
-    border: 1px solid #e5e7eb;
-  }
-
-  .thirty-label {
-    font-size: 0.8rem;
-    color: #6b7280;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .thirty-value {
-    font-size: 1.125rem;
-    color: #111827;
-    font-weight: 700;
-  }
-
-  .specs-table {
-    width: 100%;
-    margin-bottom: 3rem;
-    border-collapse: collapse;
-    background: white;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  .specs-table tbody tr {
-    border-bottom: 1px solid #f3f4f6;
-  }
-
-  .specs-table tbody tr:last-child {
-    border-bottom: none;
-  }
-
-  .specs-table tbody tr:nth-child(even) {
-    background-color: #fafbfc;
-  }
-
-  .specs-table tr.highlight {
-    background-color: #fef3c7 !important;
-  }
-
-  .specs-table th,
-  .specs-table td {
-    padding: 1rem 1.25rem;
-    text-align: left;
-  }
-
-  .specs-table .spec-label {
-    font-weight: 600;
-    width: 35%;
-    color: #374151;
-  }
-
-  .specs-table .spec-value {
-    width: 65%;
-    color: #1f2937;
-  }
-
-  .pros-cons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin: 3rem 0;
-  }
-
-  .pros,
-  .cons {
-    padding: 1.75rem;
-    border-radius: 8px;
-    border: 1px solid #e5e7eb;
-  }
-
-  .pros {
-    background: #f0fdf4;
-    border-left: 3px solid #16a34a;
-  }
-
-  .cons {
-    background: #fef2f2;
-    border-left: 3px solid #dc2626;
-  }
-
-  .pros h3 {
-    color: #16a34a;
-    margin-top: 0;
-  }
-
-  .cons h3 {
-    color: #dc2626;
-    margin-top: 0;
-  }
-
-  .decision-box {
-    margin: 3rem 0;
-    padding: 2.5rem;
-    background: #f9fafb;
-    border-radius: 8px;
-    border: 1px solid #e5e7eb;
-  }
-
-  .decision-box h2 {
-    margin-top: 0;
-    margin-bottom: 2rem;
-    font-size: 1.75rem;
-    color: #111827;
-  }
-
-  .decision-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-
-  .decision-column {
-    padding: 2rem;
-    background-color: #ffffff;
-    border-radius: 8px;
-    border: 2px solid #e5e7eb;
-  }
-
-  .decision-column h3 {
-    margin-top: 0;
-    font-size: 1.25rem;
-    color: #1e293b;
-    margin-bottom: 1rem;
-  }
-
-  .decision-column p {
-    color: #4b5563;
-    line-height: 1.7;
-  }
-
-  .verdict {
-    margin: 3rem 0;
-    padding: 2.5rem;
-    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-    border-left: 4px solid #2563eb;
-    border-radius: 12px;
-    border: 1px solid #bfdbfe;
-  }
-
-  .verdict h2 {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-    color: #1e40af;
-  }
-
-  .verdict-summary {
-    font-size: 1.125rem;
-    line-height: 1.7;
-    color: #1e3a8a;
-  }
-
-  .verdict-recommendation {
-    color: #1e3a8a;
-    line-height: 1.7;
-  }
-
-  .faq {
-    margin: 3rem 0;
-  }
-
-  .faq h2 {
-    margin-bottom: 1.5rem;
-  }
-
-  .faq-item {
-    margin-bottom: 1.5rem;
-    padding: 1.75rem;
-    background-color: white;
-    border-radius: 8px;
-    border: 1px solid #e5e7eb;
-  }
-
-  .faq-item h3 {
-    margin-top: 0;
-    font-size: 1.125rem;
-    color: #111827;
-    margin-bottom: 0.75rem;
-  }
-
-  .faq-item p {
-    margin-bottom: 0;
-    color: #4b5563;
-  }
-
-  .monetization {
-    margin-top: 4rem;
-    padding: 2.5rem;
-    background-color: #f9fafb;
-    border-radius: 12px;
-    text-align: center;
-    border: 1px solid #e5e7eb;
-  }
-
-  .cta-button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: #2563eb;
-    color: white;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.2s;
-  }
-
-  .cta-button:hover {
-    background-color: #1d4ed8;
-    text-decoration: none;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
-  }
-
-  .disclaimer {
-    margin-top: 1rem;
-    font-size: 0.875rem;
-    color: #6b7280;
-  }
-
-  @media (max-width: 768px) {
-    .article-header {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-
-    .article-visual {
-      align-self: center;
-    }
-
-    .voltage-visual {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-
-    .pros-cons,
-    .decision-columns {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-
-    .thirty-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
-    }
-
-    .specs-table {
-      font-size: 0.9rem;
-    }
-
-    .specs-table th,
-    .specs-table td {
-      padding: 0.875rem 1rem;
-    }
-
-    .quick-answer,
-    .verdict,
-    .decision-box {
-      padding: 1.75rem;
-    }
+  .article-shell { max-width: var(--max); margin: 0 auto; padding: 1.4rem 1.5rem 0; }
+  .article-topline { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .8rem 0 1.1rem; border-bottom: 1px solid var(--line); font-size: .72rem; color: var(--steel); }
+  .breadcrumbs { display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; }
+  .breadcrumbs a { color: var(--steel); text-decoration: none; }
+  .breadcrumbs a:hover { color: var(--ink); }
+  .updated { white-space: nowrap; text-transform: uppercase; letter-spacing: .06em; font-weight: 700; }
+
+  .article-hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 4rem; align-items: center; padding: 3.5rem 0 3rem; border-bottom: 2px solid var(--ink); }
+  .article-category, .block-label { margin: 0 0 1rem; color: var(--amber-dark); font-size: .66rem; font-weight: 900; letter-spacing: .15em; }
+  .article-hero h1 { margin: 0; font-size: clamp(2.4rem, 4.7vw, 4.6rem); max-width: 13ch; }
+  .article-subtitle { font-size: 1.06rem; line-height: 1.65; max-width: 54ch; margin: 1.25rem 0 0; }
+  .method-note { margin-top: 1.6rem; padding-left: 1rem; border-left: 3px solid var(--amber); display: grid; gap: .2rem; max-width: 55ch; }
+  .method-note strong { font-size: .78rem; }
+  .method-note span { color: var(--muted); font-size: .76rem; line-height: 1.5; }
+
+  .article-figure { margin: 0; position: relative; }
+  .article-figure img { width: 100%; max-height: 500px; aspect-ratio: 1.08 / 1; object-fit: cover; object-position: 50% 52%; display: block; filter: saturate(.9) contrast(1.04); }
+  .article-figure figcaption { margin-top: .6rem; color: var(--steel); font-size: .65rem; line-height: 1.45; }
+  .figure-label { position: absolute; left: 0; bottom: 2rem; background: var(--ink); color: var(--paper); border-left: 5px solid var(--amber); padding: .55rem .7rem; font: 850 .68rem/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .1em; }
+  .brand-figure img { aspect-ratio: 1.35 / 1; }
+
+  .voltage-figure { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+  .voltage-image { position: relative; overflow: hidden; background: var(--ink); }
+  .voltage-image img { aspect-ratio: 1 / 1; height: 100%; }
+  .voltage-image b { position: absolute; left: .65rem; bottom: .65rem; background: var(--amber); color: var(--ink); padding: .45rem .55rem; font: 900 .75rem/1 ui-monospace, SFMono-Regular, Menlo, monospace; }
+  .voltage-figure figcaption { grid-column: 1 / -1; }
+
+  .article-body { max-width: 920px; margin: 0 auto; padding-top: 3rem; }
+  .content-section { margin: 4rem 0; }
+  .content-section > h2, .faq > h2 { margin: 0 0 1.4rem; padding-bottom: .8rem; border-bottom: 1px solid var(--line); }
+
+  .quick-answer { margin: 0 0 3.5rem; background: var(--ink); color: var(--paper); padding: 2.2rem 2.4rem; border-top: 5px solid var(--amber); }
+  .quick-answer .block-label { color: var(--amber); }
+  .quick-answer h2 { color: var(--paper); margin: 0 0 .8rem; font-size: 1.75rem; }
+  .quick-answer p { color: #d5d7d6; margin: 0; font-size: 1.02rem; line-height: 1.7; }
+
+  .fact-strip { margin: 3.5rem 0 4rem; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--line); }
+  .fact-strip-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--line); }
+  .fact-strip-heading span { color: var(--steel); font: 800 .65rem/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .09em; }
+  .fact-strip h2 { margin: 0; font-size: 1.35rem; }
+  .facts { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .facts > div { padding: 1.2rem 1rem 1.35rem 0; }
+  .facts > div + div { border-left: 1px solid var(--line); padding-left: 1rem; }
+  .facts span { display: block; color: var(--steel); font-size: .68rem; text-transform: uppercase; letter-spacing: .08em; margin-bottom: .35rem; }
+  .facts strong { display: block; font-size: .96rem; line-height: 1.3; }
+
+  .table-scroll { overflow-x: auto; }
+  .specs-table { width: 100%; min-width: 560px; border-collapse: collapse; background: transparent; }
+  .specs-table tr { border-bottom: 1px solid var(--line); }
+  .specs-table tr:first-child { border-top: 2px solid var(--ink); }
+  .specs-table th, .specs-table td { padding: 1rem .75rem; text-align: left; vertical-align: top; }
+  .specs-table th { width: 34%; color: var(--steel); font-size: .78rem; text-transform: uppercase; letter-spacing: .05em; }
+  .specs-table td { font-weight: 650; color: var(--ink); }
+  .specs-table tr.highlight td { color: var(--amber-dark); }
+
+  .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--line); }
+  .pros-cons > div { padding: 2rem 2rem 2rem 0; }
+  .pros-cons > div + div { border-left: 1px solid var(--line); padding-left: 2rem; padding-right: 0; }
+  .pros-cons h2 { border: 0; padding: 0; margin: 0 0 1rem; font-size: 1.55rem; }
+  .pros-cons ul { margin: 0; padding-left: 1.15rem; }
+  .pros-cons li { margin: 0 0 .8rem; color: var(--muted); }
+
+  .decision-box { margin: 0 0 4rem; border-top: 5px solid var(--amber); background: var(--paper-deep); padding: 2.25rem; }
+  .decision-box h2 { margin: 0 0 1.5rem; font-size: clamp(1.6rem, 3vw, 2.35rem); }
+  .decision-columns { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
+  .decision-columns > div { padding: 1.5rem 1.6rem 0 0; }
+  .decision-columns > div + div { border-left: 1px solid var(--line); padding-left: 1.6rem; padding-right: 0; }
+  .decision-name { display: inline-block; font-weight: 900; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink); margin-bottom: .55rem; }
+  .decision-columns p { margin: 0; line-height: 1.7; }
+
+  .verdict { background: var(--ink-soft); color: var(--paper); padding: 2.25rem; border-left: 5px solid var(--amber); }
+  .verdict .block-label { color: var(--amber); }
+  .verdict h2 { color: var(--paper); border-color: #4d5358; }
+  .verdict p { color: #c8ccce; }
+  .verdict-summary { color: var(--paper) !important; font-weight: 650; font-size: 1.05rem; }
+
+  .faq-item { padding: 1.35rem 0 1.5rem; border-top: 1px solid var(--line); }
+  .faq-item:last-child { border-bottom: 1px solid var(--line); }
+  .faq-item h3 { margin: 0 0 .55rem; font-size: 1.08rem; letter-spacing: -.015em; }
+  .faq-item p { margin: 0; line-height: 1.7; }
+
+  .monetization { margin: 4rem 0; padding: 1.5rem; border: 1px solid var(--line); }
+  .monetization a { display: inline-block; background: var(--ink); color: var(--paper); padding: .8rem 1rem; text-decoration: none; font-weight: 800; }
+
+  @media (max-width: 900px) {
+    .article-hero { grid-template-columns: 1fr; gap: 2rem; padding-top: 2.5rem; }
+    .article-hero h1 { max-width: 17ch; }
+    .article-figure { max-width: 720px; }
+  }
+
+  @media (max-width: 700px) {
+    .article-shell { padding: 1rem 1rem 0; }
+    .article-topline { align-items: flex-start; flex-direction: column; gap: .5rem; }
+    .article-hero { padding: 2rem 0 2.25rem; }
+    .article-hero h1 { font-size: clamp(2.25rem, 12vw, 3.3rem); }
+    .article-body { padding-top: 2.25rem; }
+    .facts { grid-template-columns: 1fr 1fr; }
+    .facts > div:nth-child(3) { border-left: 0; border-top: 1px solid var(--line); }
+    .facts > div:nth-child(4) { border-top: 1px solid var(--line); }
+    .pros-cons, .decision-columns { grid-template-columns: 1fr; }
+    .pros-cons > div + div, .decision-columns > div + div { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; }
+    .quick-answer, .decision-box, .verdict { padding: 1.6rem; }
   }
 
   @media (max-width: 480px) {
-    .thirty-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .specs-table .spec-label,
-    .specs-table .spec-value {
-      display: block;
-      width: 100%;
-    }
-
-    .specs-table .spec-label {
-      padding-bottom: 0.25rem;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    .specs-table .spec-value {
-      padding-top: 0.5rem;
-    }
+    .voltage-figure { grid-template-columns: 1fr; }
+    .voltage-figure figcaption { grid-column: auto; }
+    .facts { grid-template-columns: 1fr; }
+    .facts > div + div { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; }
   }
 </style>

@@ -3,149 +3,174 @@
   "type": "model_review",
   "slug": "parafusadeira-dewalt-dcd777-vale-a-pena",
   "metadata": {
-    "title": "DeWalt DCD777: Especificações e Análise Técnica",
-    "metaDescription": "Análise técnica da parafusadeira DeWalt DCD777 20V MAX brushless. Especificações verificadas, características principais e para quem é indicada.",
+    "title": "DeWalt DCD777 vale a pena? Análise da DCD7771D2-BR",
+    "metaDescription": "Análise técnica da DeWalt DCD7771D2-BR com ficha oficial brasileira: 65 Nm, motor brushless, duas velocidades, mandril de 13 mm e conteúdo do kit.",
     "publishedAt": "2026-08-11T21:00:00Z",
-    "updatedAt": "2026-08-11T21:00:00Z",
-    "author": "Equipe Técnica",
+    "updatedAt": "2026-08-12T13:40:00Z",
+    "author": "Ferramenta Clara",
     "breadcrumbs": [
-      {"name": "Início", "url": "/"},
-      {"name": "DeWalt DCD777"}
+      {
+        "name": "Início",
+        "url": "/"
+      },
+      {
+        "name": "DeWalt DCD777"
+      }
     ]
   },
   "product": {
-    "name": "DeWalt DCD777 20V MAX",
+    "name": "DeWalt DCD7771D2-BR",
     "brand": "DeWalt",
-    "model": "DCD777",
+    "model": "DCD7771D2-BR",
     "category": "Parafusadeira/Furadeira sem fio"
   },
   "hero": {
     "heading": "DeWalt DCD777 vale a pena? Análise técnica da DCD7771D2-BR",
-    "subheading": "Análise baseada em dados do fabricante e documentação técnica"
+    "subheading": "Ficha oficial brasileira, pontos fortes e limites — sem alegar teste prático."
   },
   "specs": [
     {
-      "label": "Tensão nominal",
-      "value": "20V MAX (18V nominal)",
+      "label": "Tensão da plataforma",
+      "value": "20V MAX*",
       "highlight": true,
-      "evidenceIds": ["ev_001"]
+      "evidenceIds": [
+        "ev_001"
+      ]
     },
     {
       "label": "Tipo de motor",
-      "value": "Brushless (sem escovas)",
+      "value": "Brushless (sem escovas de carvão)",
       "highlight": true,
-      "evidenceIds": ["ev_001"]
+      "evidenceIds": [
+        "ev_001"
+      ]
     },
     {
       "label": "Mandril",
-      "value": "1/2 polegada (13mm) com catraca",
+      "value": "1/2 pol. (13 mm), ajuste rápido",
       "highlight": false,
-      "evidenceIds": ["ev_001"]
+      "evidenceIds": [
+        "ev_001"
+      ]
     },
     {
       "label": "Velocidades",
-      "value": "2 velocidades (0-450 RPM / 0-1500 RPM)",
-      "highlight": false,
-      "evidenceIds": ["ev_001"]
+      "value": "2 faixas: 0–500 / 0–1.750 RPM",
+      "highlight": true,
+      "evidenceIds": [
+        "ev_001"
+      ]
     },
     {
       "label": "Torque máximo",
-      "value": "300 UWO (Unit Watts Out)",
-      "highlight": false,
-      "evidenceIds": ["ev_001"]
+      "value": "65 Nm",
+      "highlight": true,
+      "evidenceIds": [
+        "ev_001"
+      ]
     },
     {
       "label": "Embreagem",
-      "value": "15 posições + modo perfuração",
+      "value": "15 posições",
       "highlight": false,
-      "evidenceIds": ["ev_001"]
-    },
-    {
-      "label": "Peso aproximado",
-      "value": "1,1 kg (somente ferramenta)",
-      "highlight": false,
-      "evidenceIds": ["ev_001"]
+      "evidenceIds": [
+        "ev_001"
+      ]
     },
     {
       "label": "LED integrado",
-      "value": "Sim, com atraso de 20 segundos",
+      "value": "Sim",
       "highlight": false,
-      "evidenceIds": ["ev_001"]
+      "evidenceIds": [
+        "ev_001"
+      ]
+    },
+    {
+      "label": "Kit DCD7771D2-BR",
+      "value": "2 baterias 2,0 Ah + carregador bivolt + item de transporte",
+      "highlight": false,
+      "evidenceIds": [
+        "ev_001"
+      ]
     }
   ],
   "prosCons": {
     "pros": [
       {
-        "text": "Motor brushless oferece maior eficiência energética comparado a motores com escovas",
-        "evidenceIds": ["ev_002"]
+        "text": "Motor brushless e construção descrita pela DeWalt como leve e compacta.",
+        "evidenceIds": [
+          "ev_001"
+        ]
       },
       {
-        "text": "Peso de 1,1kg facilita trabalho prolongado e em espaços apertados",
-        "evidenceIds": ["ev_001"]
+        "text": "65 Nm e duas faixas de rotação (0–500 / 0–1.750 RPM) dão uma ficha versátil para fixação e perfuração.",
+        "evidenceIds": [
+          "ev_001"
+        ]
       },
       {
-        "text": "15 posições de embreagem permitem ajuste fino do torque para diferentes materiais",
-        "evidenceIds": ["ev_001"]
-      },
-      {
-        "text": "Compatível com todas as baterias da linha 20V MAX DeWalt",
-        "evidenceIds": ["ev_001"]
+        "text": "O kit brasileiro DCD7771D2-BR inclui duas baterias de 2,0 Ah e carregador bivolt.",
+        "evidenceIds": [
+          "ev_001"
+        ]
       }
     ],
     "cons": [
       {
-        "text": "Torque de 300 UWO pode ser insuficiente para aplicações pesadas em construção",
-        "evidenceIds": ["ev_003"]
+        "text": "A ficha oficial deste modelo não lista função impacto; para alvenaria frequente, vale comparar com uma furadeira/parafusadeira de impacto.",
+        "evidenceIds": [
+          "ev_002"
+        ]
       },
       {
-        "text": "Bateria e carregador geralmente vendidos separadamente em algumas configurações",
-        "evidenceIds": ["ev_001"]
+        "text": "A ficha técnica não substitui medições independentes de autonomia, ergonomia ou desempenho em uso real."
       }
     ]
   },
   "faq": [
     {
-      "question": "O que significa '20V MAX' e qual a tensão real?",
-      "answer": "20V MAX é a tensão máxima da bateria quando totalmente carregada. A tensão nominal de operação é 18V. Esta é uma convenção de mercado usada por vários fabricantes.",
-      "evidenceIds": ["ev_001"]
+      "question": "Qual é o torque e a rotação da DCD7771D2-BR?",
+      "answer": "A página brasileira da DeWalt informa torque máximo de 65 Nm e duas faixas de velocidade: 0–500 e 0–1.750 RPM.",
+      "evidenceIds": [
+        "ev_001"
+      ]
     },
     {
-      "question": "Qual a vantagem do motor brushless?",
-      "answer": "Motores brushless (sem escovas) são mais eficientes energeticamente, geram menos calor, requerem menos manutenção e tendem a ter vida útil mais longa comparados a motores tradicionais com escovas.",
-      "evidenceIds": ["ev_002"]
+      "question": "O kit DCD7771D2-BR vem com bateria e carregador?",
+      "answer": "Sim. A configuração brasileira listada pela DeWalt inclui duas baterias de 2,0 Ah, carregador bivolt e item de transporte.",
+      "evidenceIds": [
+        "ev_001"
+      ]
     },
     {
-      "question": "Para que tipo de trabalho a DCD777 é mais adequada?",
-      "answer": "A DCD777 é adequada para trabalhos residenciais, montagem de móveis, instalações leves e uso geral. Seu design compacto e leve a torna ideal para trabalhos em espaços confinados e uso prolongado. Para aplicações profissionais pesadas, modelos com maior torque podem ser mais apropriados.",
-      "evidenceIds": ["ev_003"]
+      "question": "A DCD777 tem função impacto?",
+      "answer": "A ficha oficial consultada apresenta a DCD7771D2-BR como furadeira/parafusadeira e não lista função impacto. Se o foco for perfuração frequente em alvenaria, compare também modelos que tragam impacto explicitamente na ficha.",
+      "evidenceIds": [
+        "ev_002"
+      ]
     }
   ],
   "evidences": [
     {
       "id": "ev_001",
       "evidence_type": "SPEC",
-      "claim": "Especificações técnicas oficiais do modelo DCD777",
-      "source_name": "Documentação técnica DeWalt DCD777",
-      "source_url": "https://www.dewalt.com",
-      "accessed_at": "2026-08-11T21:00:00Z",
-      "notes": "Especificações consolidadas de documentação do fabricante disponível publicamente"
+      "claim": "Especificações e conteúdo do kit brasileiro DeWalt DCD7771D2-BR: brushless, 65 Nm, 0–500 / 0–1.750 RPM, mandril 13 mm, 15 posições, LED, duas baterias 2 Ah e carregador bivolt.",
+      "source_name": "DeWalt Brasil — DCD7771D2-BR",
+      "source_url": "https://www.dewalt.com.br/pt-br/produto/dcd7771d2-br/parafusadeirafuradeira-12-13mm-20v-max",
+      "accessed_at": "2026-08-12T13:40:00Z",
+      "notes": "Fonte primária brasileira usada para os dados do modelo e do kit."
     },
     {
       "id": "ev_002",
-      "evidence_type": "SPEC",
-      "claim": "Características técnicas de motores brushless vs motores com escovas",
-      "source_name": "Especificações técnicas de motores elétricos",
-      "accessed_at": "2026-08-11T21:00:00Z",
-      "notes": "Motores brushless eliminam atrito das escovas, resultando em maior eficiência"
-    },
-    {
-      "id": "ev_003",
       "evidence_type": "DERIVED",
-      "claim": "Adequação do torque de 300 UWO para diferentes aplicações",
-      "source_name": "Análise comparativa de faixas de torque em parafusadeiras",
-      "accessed_at": "2026-08-11T21:00:00Z",
-      "derived_from": ["ev_001"],
-      "notes": "Torques acima de 500 UWO são tipicamente classificados como uso profissional pesado"
+      "claim": "A ficha do DCD7771D2-BR não lista função impacto; a recomendação de comparar modelos de impacto para alvenaria é uma interpretação editorial do tipo de produto e dos recursos declarados.",
+      "source_name": "Leitura da ficha oficial DeWalt DCD7771D2-BR",
+      "source_url": "https://www.dewalt.com.br/pt-br/produto/dcd7771d2-br/parafusadeirafuradeira-12-13mm-20v-max",
+      "accessed_at": "2026-08-12T13:40:00Z",
+      "derived_from": [
+        "ev_001"
+      ],
+      "notes": "Não é alegação de teste prático."
     }
   ]
 }

@@ -1,40 +1,18 @@
 ---
 import type { ComparisonDimension, DecisionDimension } from '../lib/types';
-
-interface Props {
-  dimensions: ComparisonDimension[] | DecisionDimension[];
-  label1: string;
-  label2: string;
-}
-
+interface Props { dimensions: ComparisonDimension[] | DecisionDimension[]; label1: string; label2: string; }
 const { dimensions, label1, label2 } = Astro.props;
 ---
 
-<div class="comparison-wrapper">
+<div class="comparison-wrapper" tabindex="0" aria-label="Tabela comparativa com rolagem horizontal em telas pequenas">
   <table class="comparison-table">
-    <thead>
-      <tr>
-        <th class="criterion-header">Critério</th>
-        <th class="brand-header">{label1}</th>
-        <th class="brand-header">{label2}</th>
-      </tr>
-    </thead>
+    <thead><tr><th>Critério</th><th>{label1}</th><th>{label2}</th></tr></thead>
     <tbody>
       {dimensions.map(dim => (
         <tr>
-          <th class="dimension-label">{dim.label}</th>
-          <td class:list={{'winner': dim.winner === 1}}>
-            <span class="cell-content">
-              {'brand1' in dim ? dim.brand1 : dim.option1}
-              {dim.winner === 1 && <span class="winner-badge" aria-label="Vantagem">✓</span>}
-            </span>
-          </td>
-          <td class:list={{'winner': dim.winner === 2}}>
-            <span class="cell-content">
-              {'brand2' in dim ? dim.brand2 : dim.option2}
-              {dim.winner === 2 && <span class="winner-badge" aria-label="Vantagem">✓</span>}
-            </span>
-          </td>
+          <th>{dim.label}</th>
+          <td class:list={{ winner: dim.winner === 1 }}><span>{'brand1' in dim ? dim.brand1 : dim.option1}</span>{dim.winner === 1 && <b aria-label="Vantagem neste critério">Vantagem</b>}</td>
+          <td class:list={{ winner: dim.winner === 2 }}><span>{'brand2' in dim ? dim.brand2 : dim.option2}</span>{dim.winner === 2 && <b aria-label="Vantagem neste critério">Vantagem</b>}</td>
         </tr>
       ))}
     </tbody>
@@ -42,114 +20,15 @@ const { dimensions, label1, label2 } = Astro.props;
 </div>
 
 <style>
-  .comparison-wrapper {
-    margin: 2.5rem 0;
-    overflow-x: auto;
-  }
-
-  .comparison-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  .comparison-table thead tr {
-    background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
-  }
-
-  .comparison-table th {
-    padding: 1.125rem 1.25rem;
-    text-align: left;
-    font-weight: 600;
-    color: #111827;
-    border-bottom: 2px solid #d1d5db;
-  }
-
-  .criterion-header {
-    width: 35%;
-  }
-
-  .brand-header {
-    width: 32.5%;
-  }
-
-  .comparison-table tbody tr {
-    border-bottom: 1px solid #f3f4f6;
-  }
-
-  .comparison-table tbody tr:last-child {
-    border-bottom: none;
-  }
-
-  .comparison-table tbody tr:nth-child(even) {
-    background-color: #fafbfc;
-  }
-
-  .comparison-table td,
-  .comparison-table tbody th {
-    padding: 1rem 1.25rem;
-    vertical-align: top;
-  }
-
-  .dimension-label {
-    font-weight: 600;
-    color: #374151;
-    text-align: left;
-    background-color: #f9fafb;
-  }
-
-  .cell-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
-    line-height: 1.6;
-  }
-
-  .comparison-table td {
-    color: #1f2937;
-  }
-
-  .winner {
-    background-color: #f0fdf4 !important;
-    border-left: 3px solid #16a34a;
-  }
-
-  .winner-badge {
-    color: #16a34a;
-    font-weight: 700;
-    font-size: 1.125rem;
-    flex-shrink: 0;
-  }
-
-  @media (max-width: 768px) {
-    .comparison-table th,
-    .comparison-table td {
-      padding: 0.875rem 1rem;
-      font-size: 0.9rem;
-    }
-
-    .criterion-header {
-      width: 40%;
-    }
-
-    .brand-header {
-      width: 30%;
-    }
-  }
-
-  @media (max-width: 640px) {
-    .comparison-wrapper {
-      margin-left: -1rem;
-      margin-right: -1rem;
-    }
-
-    .comparison-table {
-      border-radius: 0;
-      border-left: none;
-      border-right: none;
-    }
-  }
+  .comparison-wrapper { overflow-x: auto; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--line); }
+  .comparison-table { width: 100%; min-width: 690px; border-collapse: collapse; }
+  .comparison-table th, .comparison-table td { padding: 1rem .9rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+  .comparison-table thead th { background: var(--ink); color: var(--paper); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; }
+  .comparison-table thead th:first-child { color: var(--amber); }
+  .comparison-table tbody th { width: 28%; font-size: .78rem; color: var(--steel); text-transform: uppercase; letter-spacing: .035em; }
+  .comparison-table td { width: 36%; color: var(--ink); line-height: 1.55; }
+  .comparison-table tbody tr:nth-child(even) { background: rgba(255,255,255,.28); }
+  .comparison-table td b { display: block; width: max-content; margin-top: .45rem; color: var(--amber-dark); font-size: .62rem; text-transform: uppercase; letter-spacing: .08em; border-bottom: 2px solid var(--amber); }
+  .comparison-table td.winner { box-shadow: inset 3px 0 0 var(--amber); }
+  @media (max-width: 700px) { .comparison-wrapper { margin-right: -1rem; padding-right: 1rem; } }
 </style>

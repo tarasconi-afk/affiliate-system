@@ -1,510 +1,208 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
-const pages = [
-  {
-    title: 'DeWalt DCD777 vale a pena?',
-    description: 'Especificações técnicas, características e análise baseada em dados do fabricante.',
-    url: '/parafusadeira-dewalt-dcd777-vale-a-pena/',
-    type: 'Análise de modelo',
-    category: 'ANÁLISE DE PRODUTO'
-  },
-  {
-    title: 'Bosch ou Makita?',
-    description: 'Comparação técnica entre as marcas: garantia, linhas de produto e compatibilidade.',
-    url: '/bosch-ou-makita-parafusadeira/',
-    type: 'Comparação de marcas',
-    category: 'COMPARAÇÃO DE MARCAS'
-  },
-  {
-    title: '12V ou 18V?',
-    description: 'Diferenças de torque, peso, autonomia e quando escolher cada voltagem.',
-    url: '/parafusadeira-12v-ou-18v/',
-    type: 'Guia de decisão',
-    category: 'GUIA DE DECISÃO'
-  }
-];
+import { SITE } from '../lib/site';
 ---
 
 <BaseLayout title="Ferramenta Clara — Dados claros para escolher melhor">
   <Fragment slot="head">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex, nofollow" />
-    <meta name="description" content="Comparações e guias de ferramentas baseados em especificações verificáveis e fontes abertas." />
+    <title>Ferramenta Clara — Dados claros para escolher melhor</title>
+    <meta name="description" content={SITE.description} />
+    {SITE.prelaunch && <meta name="robots" content="noindex, nofollow" />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="canonical" href="https://example.com/" />
+    <link rel="canonical" href={`${SITE.url}/`} />
+    <meta property="og:title" content="Ferramenta Clara — Dados claros para escolher melhor" />
+    <meta property="og:description" content={SITE.description} />
+    <meta property="og:url" content={`${SITE.url}/`} />
+    <meta property="og:type" content="website" />
   </Fragment>
 
-  <div class="hero">
-    <div class="hero-content">
-      <div class="eyebrow">GUIAS INDEPENDENTES DE FERRAMENTAS</div>
-      <h1>Escolha a ferramenta certa com dados, não propaganda</h1>
-      <p class="hero-subtitle">
-        Comparações técnicas e guias de decisão baseados em especificações verificáveis e fontes abertas.
-      </p>
-      <div class="hero-ctas">
-        <a href="#comparacoes" class="cta-primary">Ver comparações</a>
-        <a href="#metodologia" class="cta-secondary">Como analisamos</a>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="kicker">GUIAS INDEPENDENTES DE FERRAMENTAS</p>
+        <h1 id="hero-title">Escolha a ferramenta certa <span>com dados, não propaganda.</span></h1>
+        <p class="lead">Comparações técnicas e guias de decisão baseados em especificações verificáveis e fontes abertas.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#comparacoes">Ver comparações</a>
+          <a class="button button-ghost" href="#metodologia">Como analisamos</a>
+        </div>
+        <p class="trust-line">Especificações oficiais <b>·</b> Comparações objetivas <b>·</b> Fontes verificáveis</p>
       </div>
-      <div class="hero-trust">
-        Especificações oficiais · Comparações objetivas · Fontes verificáveis
-      </div>
+
+      <figure class="hero-figure">
+        <div class="figure-index" aria-hidden="true">FC / 01</div>
+        <img src="/images/dewalt-20v-cc-1600.webp" alt="Ferramenta DeWalt 20V sobre bancada" width="1400" height="1400" loading="eager" />
+        <figcaption>Imagem editorial ilustrativa. Foto: TaurusEmerald / Wikimedia Commons / CC BY-SA 4.0.</figcaption>
+      </figure>
     </div>
-    <div class="hero-visual">
-      <img src="/images/dewalt-20v-cc.jpg" alt="Exemplo de furadeira/parafusadeira DeWalt 20V" loading="eager" width="1200" height="800" />
-      <p class="image-credit">Foto: TaurusEmerald / <a href="https://commons.wikimedia.org/wiki/File:DeWalt_20_Volt_Max_Cordless_Drill.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> / CC BY-SA 4.0</p>
+  </section>
+
+  <div class="principles" aria-label="Princípios editoriais">
+    <div class="principles-inner">
+      <div><span>01</span><strong>Dados oficiais</strong><small>Especificações e documentação do fabricante.</small></div>
+      <div><span>02</span><strong>Comparações objetivas</strong><small>Diferenças que mudam a decisão de compra.</small></div>
+      <div><span>03</span><strong>Fontes verificáveis</strong><small>Evidências abertas para você conferir.</small></div>
     </div>
   </div>
 
-  <section id="comparacoes" class="content-cards">
-    <h2>Análises em destaque</h2>
-    <div class="featured-card">
-      <div class="featured-image">
-        <img src="/images/dewalt-20v-cc.jpg" alt="DeWalt DCD777 analysis" loading="lazy" width="500" height="333" />
-        <p class="image-credit-small">Foto: TaurusEmerald / Wikimedia Commons / CC BY-SA 4.0</p>
+  <section id="comparacoes" class="editorial-section">
+    <div class="section-heading">
+      <div>
+        <p class="section-kicker">CADERNO DE COMPARAÇÕES</p>
+        <h2>Análises em destaque</h2>
       </div>
-      <div class="featured-content">
-        <span class="card-category">ANÁLISE DE PRODUTO</span>
-        <h3>DeWalt DCD777 vale a pena?</h3>
-        <p>Especificações técnicas, características e análise baseada em dados do fabricante.</p>
-        <a href="/parafusadeira-dewalt-dcd777-vale-a-pena/" class="card-cta">Ler análise completa →</a>
-      </div>
+      <p>Três formatos diferentes para testar a mesma promessa: ajudar a decidir com menos ruído e mais evidência.</p>
     </div>
-    <div class="secondary-cards">
-      <a href="/bosch-ou-makita-parafusadeira/" class="card-compact">
-        <div class="card-compact-image">
-          <img src="/images/bosch-makita-cc.jpg" alt="Bosch vs Makita comparison" loading="lazy" width="300" height="200" />
-          <p class="image-credit-compact">Foto: Hendrikp111 / Wikimedia Commons / CC BY-SA 4.0</p>
-        </div>
-        <div class="card-compact-content">
-          <span class="card-category">COMPARAÇÃO DE MARCAS</span>
-          <h3>Bosch ou Makita?</h3>
-          <p>Comparação técnica entre as marcas: garantia, linhas de produto e compatibilidade.</p>
-        </div>
+
+    <article class="lead-story">
+      <a class="lead-image" href="/parafusadeira-dewalt-dcd777-vale-a-pena/" aria-label="Abrir análise da DeWalt DCD777">
+        <img src="/images/dewalt-20v-cc-1600.webp" alt="Ferramenta DeWalt 20V usada como imagem ilustrativa da análise DCD777" width="1400" height="1400" loading="lazy" />
       </a>
-      <a href="/parafusadeira-12v-ou-18v/" class="card-compact">
-        <div class="card-compact-image">
-          <img src="/images/bosch-12v-cc.jpg" alt="12V vs 18V decision guide" loading="lazy" width="300" height="200" />
-          <p class="image-credit-compact">Foto: Charles & Hudson / Wikimedia Commons / CC BY-SA 2.0</p>
+      <div class="lead-story-copy">
+        <span class="story-label">ANÁLISE DE MODELO</span>
+        <h3><a href="/parafusadeira-dewalt-dcd777-vale-a-pena/">DeWalt DCD777 vale a pena?</a></h3>
+        <p>Ficha oficial brasileira, 65 Nm, duas velocidades e os pontos que realmente importam antes de escolher esse kit.</p>
+        <a class="story-link" href="/parafusadeira-dewalt-dcd777-vale-a-pena/">Ler análise <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+
+    <div class="story-grid">
+      <article class="story">
+        <a class="story-image" href="/bosch-ou-makita-parafusadeira/">
+          <img src="/images/bosch-makita-cc-1600.webp" alt="Ferramentas Bosch e Makita em comparação editorial" width="1600" height="739" loading="lazy" />
+        </a>
+        <div class="story-copy">
+          <span class="story-label">COMPARAÇÃO DE MARCAS</span>
+          <h3><a href="/bosch-ou-makita-parafusadeira/">Bosch ou Makita?</a></h3>
+          <p>Garantia, compatibilidade de baterias e amplitude de plataforma — sem escolher um vencedor universal.</p>
+          <a class="story-link" href="/bosch-ou-makita-parafusadeira/">Comparar marcas <span aria-hidden="true">→</span></a>
         </div>
-        <div class="card-compact-content">
-          <span class="card-category">GUIA DE DECISÃO</span>
-          <h3>12V ou 18V?</h3>
-          <p>Diferenças de torque, peso, autonomia e quando escolher cada voltagem.</p>
+      </article>
+
+      <article class="story">
+        <a class="story-image split-image" href="/parafusadeira-12v-ou-18v/">
+          <img src="/images/bosch-12v-cc-1600.webp" alt="Exemplo de ferramenta Bosch 12V" width="1600" height="1071" loading="lazy" />
+          <img src="/images/makita-lxt-18v-cc-1600.webp" alt="Exemplo de ferramenta Makita 18V" width="1200" height="1600" loading="lazy" />
+          <span class="versus" aria-hidden="true">12V / 18V</span>
+        </a>
+        <div class="story-copy">
+          <span class="story-label">GUIA DE DECISÃO</span>
+          <h3><a href="/parafusadeira-12v-ou-18v/">12V ou 18V?</a></h3>
+          <p>Compacidade, demanda de uso e ecossistema: como escolher a classe de tensão sem cair em números genéricos.</p>
+          <a class="story-link" href="/parafusadeira-12v-ou-18v/">Ver guia <span aria-hidden="true">→</span></a>
         </div>
-      </a>
+      </article>
     </div>
   </section>
 
   <section id="metodologia" class="methodology">
-    <h2>Como analisamos</h2>
-    <div class="methodology-steps">
-      <div class="step">
-        <div class="step-number">01</div>
-        <div class="step-content">
-          <h3>Especificações</h3>
-          <p>Coletamos dados oficiais de fabricantes, manuais técnicos e fontes verificáveis.</p>
-        </div>
+    <div class="methodology-inner">
+      <div class="method-intro">
+        <p class="section-kicker">NOSSO MÉTODO</p>
+        <h2>Clareza antes de certeza.</h2>
+        <p>O site separa o que vem de documentação oficial do que é interpretação editorial. Quando não há teste prático, isso é dito claramente.</p>
       </div>
-      <div class="step">
-        <div class="step-number">02</div>
-        <div class="step-content">
-          <h3>Comparação</h3>
-          <p>Analisamos diferenças relevantes com fontes citadas e dados objetivos.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-number">03</div>
-        <div class="step-content">
-          <h3>Decisão</h3>
-          <p>Mostramos para quem cada opção faz sentido, sem vencedor universal.</p>
-        </div>
-      </div>
+      <ol class="method-steps">
+        <li><span>01</span><div><strong>Coletamos</strong><p>Especificações, garantias, compatibilidade e documentação pública.</p></div></li>
+        <li><span>02</span><div><strong>Confrontamos</strong><p>O que muda entre modelos, marcas e classes de ferramenta.</p></div></li>
+        <li><span>03</span><div><strong>Traduzimos</strong><p>Para quem cada escolha faz sentido, sem inventar teste ou nota.</p></div></li>
+      </ol>
     </div>
-    <p class="methodology-disclaimer">Quando não testamos fisicamente um produto, deixamos isso explícito.</p>
   </section>
 
   <style>
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1.1fr;
-      gap: 3.5rem;
-      align-items: center;
-      margin-bottom: 5rem;
-      padding: 3rem 0;
-      background: var(--surface);
-      margin-left: -1.5rem;
-      margin-right: -1.5rem;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
+    .hero { background: var(--ink); color: var(--paper); border-bottom: 1px solid var(--line-dark); }
+    .hero-inner { max-width: var(--max); margin: 0 auto; padding: 4.75rem 1.5rem 4.25rem; display: grid; grid-template-columns: 1.02fr .98fr; gap: 4.25rem; align-items: center; }
+    .kicker, .section-kicker { margin: 0 0 1.15rem; color: var(--amber); font-size: .68rem; font-weight: 900; letter-spacing: .16em; }
+    .hero h1 { color: var(--paper); margin: 0; max-width: 12ch; font-size: clamp(2.7rem, 5.4vw, 5rem); }
+    .hero h1 span { color: #b6babd; font-weight: 650; }
+    .lead { max-width: 52ch; margin: 1.6rem 0 0; color: #c5c7c6; font-size: 1.08rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
+    .button { display: inline-flex; align-items: center; min-height: 46px; padding: 0 1.15rem; text-decoration: none; font-size: .82rem; font-weight: 850; letter-spacing: .04em; text-transform: uppercase; border: 1px solid transparent; }
+    .button-primary { background: var(--amber); color: var(--ink); }
+    .button-primary:hover { background: #f0b424; }
+    .button-ghost { border-color: #555a5e; color: var(--paper); }
+    .button-ghost:hover { border-color: var(--amber); }
+    .trust-line { margin: 2rem 0 0; color: #92979a; font-size: .75rem; letter-spacing: .025em; }
+    .trust-line b { color: var(--amber); padding: 0 .25rem; }
+
+    .hero-figure { margin: 0; position: relative; padding-left: 1.5rem; }
+    .hero-figure::before { content: ""; position: absolute; left: 0; top: 2.25rem; bottom: 3.2rem; width: 3px; background: var(--amber); }
+    .hero-figure img { width: 100%; aspect-ratio: 1.06 / 1; object-fit: cover; object-position: 50% 52%; display: block; filter: saturate(.88) contrast(1.05); }
+    .figure-index { position: absolute; z-index: 2; right: .8rem; top: .8rem; background: var(--amber); color: var(--ink); padding: .35rem .5rem; font: 850 .65rem/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .08em; }
+    figcaption { color: #7f8588; font-size: .64rem; line-height: 1.45; margin-top: .55rem; }
+
+    .principles { background: var(--paper-deep); border-bottom: 1px solid var(--line); }
+    .principles-inner { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem; display: grid; grid-template-columns: repeat(3, 1fr); }
+    .principles-inner > div { padding: 1.55rem 1.5rem 1.55rem 0; display: grid; grid-template-columns: auto 1fr; column-gap: .85rem; align-items: start; }
+    .principles-inner > div + div { border-left: 1px solid var(--line); padding-left: 1.5rem; }
+    .principles span { color: var(--amber-dark); font: 800 .66rem/1 ui-monospace, SFMono-Regular, Menlo, monospace; padding-top: .15rem; }
+    .principles strong { font-size: .92rem; }
+    .principles small { grid-column: 2; color: var(--muted); margin-top: .25rem; line-height: 1.4; }
+
+    .editorial-section { max-width: var(--max); margin: 0 auto; padding: 5rem 1.5rem 1rem; }
+    .section-heading { display: grid; grid-template-columns: 1fr .75fr; gap: 3rem; align-items: end; padding-bottom: 1.4rem; border-bottom: 2px solid var(--ink); margin-bottom: 2rem; }
+    .section-heading h2 { margin: 0; }
+    .section-heading p:last-child { margin: 0; font-size: .9rem; max-width: 50ch; justify-self: end; }
+
+    .lead-story { display: grid; grid-template-columns: 1.25fr .75fr; min-height: 430px; border-bottom: 1px solid var(--line); padding-bottom: 2.5rem; margin-bottom: 2.5rem; }
+    .lead-image { overflow: hidden; background: var(--ink-soft); }
+    .lead-image img { width: 100%; height: 100%; max-height: 480px; object-fit: cover; object-position: 50% 52%; display: block; transition: transform .25s ease; }
+    .lead-image:hover img, .story-image:hover img { transform: scale(1.015); }
+    .lead-story-copy { padding: 1.25rem 0 1.25rem 2.5rem; display: flex; flex-direction: column; justify-content: center; }
+    .story-label { color: var(--amber-dark); font-size: .64rem; font-weight: 900; letter-spacing: .14em; }
+    .lead-story h3 { font-size: clamp(1.8rem, 3.2vw, 3.2rem); margin: .8rem 0 1rem; }
+    .lead-story h3 a, .story h3 a { text-decoration: none; }
+    .lead-story p { font-size: 1rem; line-height: 1.7; }
+    .story-link { margin-top: .5rem; font-weight: 850; text-decoration: none; font-size: .82rem; text-transform: uppercase; letter-spacing: .05em; }
+    .story-link span { color: var(--amber-dark); padding-left: .25rem; }
+
+    .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    .story { border-bottom: 1px solid var(--line); padding-bottom: 2rem; }
+    .story-image { display: block; height: 285px; overflow: hidden; background: var(--ink-soft); position: relative; }
+    .story-image > img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .25s ease; }
+    .split-image { display: grid; grid-template-columns: 1fr 1fr; }
+    .split-image > img { width: 100%; height: 100%; object-fit: cover; min-width: 0; }
+    .versus { position: absolute; inset: 50% auto auto 50%; transform: translate(-50%, -50%); background: var(--ink); color: var(--paper); border-top: 3px solid var(--amber); padding: .55rem .7rem; font: 900 .67rem/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .1em; }
+    .story-copy { padding-top: 1.3rem; }
+    .story h3 { font-size: 1.65rem; margin: .55rem 0 .7rem; }
+    .story p { margin: 0 0 .9rem; line-height: 1.65; font-size: .92rem; }
+
+    .methodology { max-width: calc(var(--max) - 3rem); margin: 5rem auto 0; background: #2a3035; color: var(--paper); }
+    .methodology-inner { padding: 3.5rem; display: grid; grid-template-columns: .8fr 1.2fr; gap: 4rem; }
+    .method-intro h2 { color: var(--paper); margin: 0 0 1rem; }
+    .method-intro > p:last-child { color: #b8bdc0; margin: 0; }
+    .method-steps { margin: 0; padding: 0; list-style: none; border-top: 1px solid #596066; }
+    .method-steps li { display: grid; grid-template-columns: 56px 1fr; gap: 1rem; padding: 1.35rem 0; border-bottom: 1px solid #596066; }
+    .method-steps span { color: var(--amber); font: 800 .72rem/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .method-steps strong { display: block; color: var(--paper); margin-bottom: .25rem; }
+    .method-steps p { margin: 0; color: #aeb4b7; font-size: .87rem; }
+
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; padding-top: 3.25rem; }
+      .hero h1 { max-width: 15ch; }
+      .hero-figure { padding-left: 1rem; max-width: 720px; }
+      .section-heading { grid-template-columns: 1fr; gap: .8rem; }
+      .section-heading p:last-child { justify-self: start; }
+      .lead-story { grid-template-columns: 1fr; }
+      .lead-story-copy { padding: 1.5rem 0 0; }
+      .methodology-inner { grid-template-columns: 1fr; gap: 2rem; }
     }
 
-    .eyebrow {
-      font-size: 0.6875rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      color: var(--amber);
-      margin-bottom: 1.25rem;
-      text-transform: uppercase;
-    }
-
-    .hero-content h1 {
-      font-size: 2.5rem;
-      line-height: 1.15;
-      margin-top: 0;
-      margin-bottom: 1.25rem;
-      color: var(--ink);
-      font-weight: 800;
-      letter-spacing: -0.02em;
-    }
-
-    .hero-subtitle {
-      font-size: 1.0625rem;
-      line-height: 1.7;
-      color: var(--muted);
-      margin-bottom: 2rem;
-      max-width: 100%;
-    }
-
-    .hero-trust {
-      font-size: 0.8125rem;
-      color: var(--steel);
-      margin-top: 1.75rem;
-      padding-top: 1.75rem;
-      border-top: 2px solid var(--line);
-      font-weight: 500;
-    }
-
-    .hero-ctas {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .cta-primary,
-    .cta-secondary {
-      padding: 0.8125rem 1.625rem;
-      font-weight: 600;
-      border-radius: 4px;
-      transition: all 0.2s;
-      font-size: 0.9375rem;
-      border: 2px solid transparent;
-    }
-
-    .cta-primary {
-      background: var(--ink);
-      color: var(--paper);
-      border-color: var(--ink);
-    }
-
-    .cta-primary:hover {
-      background: transparent;
-      color: var(--ink);
-      text-decoration: none;
-    }
-
-    .cta-secondary {
-      background: transparent;
-      color: var(--ink);
-      border-color: var(--line);
-    }
-
-    .cta-secondary:hover {
-      border-color: var(--ink);
-      text-decoration: none;
-    }
-
-    .hero-visual {
-      display: flex;
-      flex-direction: column;
-      gap: 0.625rem;
-      position: relative;
-    }
-
-    .hero-visual img {
-      width: 100%;
-      height: auto;
-      border: 1px solid var(--line);
-      object-fit: cover;
-    }
-
-    .image-credit {
-      font-size: 0.6875rem;
-      color: var(--steel);
-      margin: 0;
-      line-height: 1.5;
-    }
-
-    .image-credit a {
-      color: var(--steel);
-      text-decoration: underline;
-      text-decoration-color: var(--amber);
-    }
-
-    .content-cards {
-      margin-bottom: 5rem;
-      padding-top: 1rem;
-    }
-
-    .content-cards h2 {
-      font-size: 1.875rem;
-      margin-bottom: 2.75rem;
-      margin-top: 0;
-      font-weight: 700;
-      padding-bottom: 1rem;
-      border-bottom: 2px solid var(--line);
-    }
-
-    .featured-card {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 3rem;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      padding: 0;
-      margin-bottom: 3rem;
-      overflow: hidden;
-    }
-
-    .featured-image {
-      position: relative;
-    }
-
-    .featured-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-    }
-
-    .image-credit-small {
-      font-size: 0.6875rem;
-      color: var(--steel);
-      position: absolute;
-      bottom: 0.5rem;
-      left: 0.5rem;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 0.25rem 0.5rem;
-      line-height: 1.3;
-    }
-
-    .featured-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 2.5rem 2.5rem 2.5rem 0;
-    }
-
-    .secondary-cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-    }
-
-    .card-compact {
-      display: block;
-      background: var(--surface);
-      border-top: 3px solid var(--amber);
-      border-left: 1px solid var(--line);
-      border-right: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-      padding: 0;
-      text-decoration: none;
-      color: inherit;
-      transition: all 0.2s;
-      overflow: hidden;
-    }
-
-    .card-compact:hover {
-      border-top-color: var(--ink);
-      text-decoration: none;
-    }
-
-    .card-compact-image {
-      position: relative;
-      height: 200px;
-      overflow: hidden;
-    }
-
-    .card-compact-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-    }
-
-    .image-credit-compact {
-      font-size: 0.625rem;
-      color: var(--steel);
-      position: absolute;
-      bottom: 0.375rem;
-      left: 0.5rem;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 0.1875rem 0.375rem;
-      line-height: 1.3;
-    }
-
-    .card-compact-content {
-      padding: 1.75rem 1.5rem;
-    }
-
-    .card-category {
-      display: inline-block;
-      font-size: 0.625rem;
-      font-weight: 700;
-      color: var(--ink);
-      background: transparent;
-      padding: 0;
-      margin-bottom: 0.625rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .featured-content h3,
-    .card-compact-content h3 {
-      margin-top: 0;
-      margin-bottom: 0.875rem;
-      font-size: 1.25rem;
-      color: var(--ink);
-      line-height: 1.3;
-      font-weight: 700;
-    }
-
-    .featured-content p,
-    .card-compact-content p {
-      color: var(--muted);
-      margin-bottom: 1.25rem;
-      font-size: 0.9375rem;
-      line-height: 1.65;
-    }
-
-    .card-cta {
-      color: var(--ink);
-      font-weight: 600;
-      font-size: 0.875rem;
-      text-decoration: none;
-      border-bottom: 2px solid var(--amber);
-      padding-bottom: 2px;
-    }
-
-    .card-cta:hover {
-      border-bottom-color: var(--ink);
-    }
-
-    .methodology {
-      background: var(--ink);
-      padding: 3.5rem 3rem;
-      margin-bottom: 3rem;
-      margin-left: -1.5rem;
-      margin-right: -1.5rem;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-
-    .methodology h2 {
-      margin-top: 0;
-      font-size: 1.875rem;
-      margin-bottom: 3rem;
-      color: var(--paper);
-      font-weight: 700;
-      padding-bottom: 1rem;
-      border-bottom: 2px solid var(--steel);
-    }
-
-    .methodology-steps {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 3rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .step {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-
-    .step-number {
-      font-size: 3rem;
-      font-weight: 800;
-      color: var(--amber);
-      line-height: 1;
-      font-variant-numeric: tabular-nums;
-    }
-
-    .step-content h3 {
-      margin-top: 0;
-      margin-bottom: 0.625rem;
-      font-size: 1.125rem;
-      color: var(--paper);
-      font-weight: 700;
-      letter-spacing: -0.01em;
-    }
-
-    .step-content p {
-      color: var(--steel);
-      font-size: 0.875rem;
-      margin: 0;
-      line-height: 1.65;
-    }
-
-    .methodology-disclaimer {
-      color: var(--steel);
-      font-size: 0.8125rem;
-      font-style: italic;
-      margin: 0;
-      padding-top: 2rem;
-      border-top: 1px solid var(--steel);
-      max-width: 100%;
-    }
-
-    @media (max-width: 1024px) {
-      .secondary-cards {
-        grid-template-columns: 1fr;
-      }
-
-      .methodology-steps {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .hero {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        padding: 1.5rem 0;
-        margin-bottom: 3rem;
-      }
-
-      .hero-content h1 {
-        font-size: 2rem;
-      }
-
-      .hero-subtitle {
-        font-size: 1rem;
-      }
-
-      .featured-card {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-      }
-
-      .card-compact {
-        grid-template-columns: 1fr;
-      }
-
-      .content-cards h2,
-      .methodology h2 {
-        font-size: 1.75rem;
-      }
-
-      .methodology {
-        padding: 2.5rem 1.5rem;
-      }
+    @media (max-width: 680px) {
+      .hero-inner { padding: 2.5rem 1rem 3rem; }
+      .hero h1 { font-size: clamp(2.35rem, 13vw, 3.6rem); }
+      .hero-actions { align-items: stretch; }
+      .button { justify-content: center; }
+      .principles-inner { grid-template-columns: 1fr; padding: 0 1rem; }
+      .principles-inner > div, .principles-inner > div + div { border-left: 0; border-bottom: 1px solid var(--line); padding: 1.15rem 0; }
+      .editorial-section { padding: 3.5rem 1rem 0; }
+      .story-grid { grid-template-columns: 1fr; }
+      .story-image { height: 240px; }
+      .methodology { margin: 3.5rem 1rem 0; }
+      .methodology-inner { padding: 2rem 1.25rem; }
     }
   </style>
 </BaseLayout>

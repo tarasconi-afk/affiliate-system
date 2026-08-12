@@ -1,12 +1,9 @@
 ---
 import type { PageMetadata } from '../../lib/types';
 import { buildCanonical } from '../../lib/seoHelpers';
+import { SITE } from '../../lib/site';
 
-interface Props {
-  metadata: PageMetadata;
-  slug: string;
-}
-
+interface Props { metadata: PageMetadata; slug: string; }
 const { metadata, slug } = Astro.props;
 const canonical = buildCanonical(slug);
 ---
@@ -15,26 +12,16 @@ const canonical = buildCanonical(slug);
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>{metadata.title}</title>
 <meta name="description" content={metadata.metaDescription} />
+{SITE.prelaunch && <meta name="robots" content="noindex, nofollow" />}
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link rel="canonical" href={canonical} />
-
-<!-- Open Graph -->
+<meta property="og:site_name" content={SITE.name} />
 <meta property="og:title" content={metadata.title} />
 <meta property="og:description" content={metadata.metaDescription} />
 <meta property="og:url" content={canonical} />
 <meta property="og:type" content="article" />
-
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={metadata.title} />
 <meta name="twitter:description" content={metadata.metaDescription} />
-
-<!-- Article metadata -->
-{metadata.publishedAt && (
-  <meta property="article:published_time" content={metadata.publishedAt} />
-)}
-{metadata.updatedAt && (
-  <meta property="article:modified_time" content={metadata.updatedAt} />
-)}
-{metadata.author && (
-  <meta property="article:author" content={metadata.author} />
-)}
+<meta property="article:published_time" content={metadata.publishedAt} />
+<meta property="article:modified_time" content={metadata.updatedAt} />

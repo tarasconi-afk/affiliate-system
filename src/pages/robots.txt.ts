@@ -1,18 +1,10 @@
 import type { APIRoute } from 'astro';
-
-const SITE_URL = import.meta.env.SITE || 'https://example.com';
-
-const robotsTxt = `
-User-agent: *
-Allow: /
-
-Sitemap: ${SITE_URL}/sitemap.xml
-`.trim();
+import { SITE } from '../lib/site';
 
 export const GET: APIRoute = () => {
-  return new Response(robotsTxt, {
-    headers: {
-      'Content-Type': 'text/plain; charset=utf-8',
-    },
-  });
+  const rules = SITE.prelaunch
+    ? `User-agent: *\nDisallow: /\n`
+    : `User-agent: *\nAllow: /\n\nSitemap: ${SITE.url}/sitemap.xml\n`;
+
+  return new Response(rules, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
 };

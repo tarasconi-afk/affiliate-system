@@ -1,158 +1,42 @@
 ---
 import type { Evidence } from '../lib/types';
-
-interface Props {
-  evidences: Evidence[];
-}
-
+interface Props { evidences: Evidence[]; }
 const { evidences } = Astro.props;
-
-const evidenceTypeLabels: Record<string, string> = {
-  'SPEC': 'Dados oficiais',
-  'DERIVED': 'Análise derivada',
-  'OBSERVATION': 'Observação',
-  'MEASUREMENT': 'Medição'
-};
+const labels: Record<string, string> = { SPEC: 'Fonte primária', DERIVED: 'Análise derivada', OBSERVATION: 'Observação', MEASUREMENT: 'Medição' };
 ---
 
-<section class="evidence-list">
-  <h2>Fontes e evidências</h2>
-  <div class="evidences">
-    {evidences.map((ev, index) => (
-      <div class="evidence-item" id={ev.id}>
-        <div class="evidence-header">
-          <span class="evidence-number">[{index + 1}]</span>
-          <span class="evidence-type">{evidenceTypeLabels[ev.evidence_type]}</span>
-        </div>
-        <p class="evidence-claim">{ev.claim}</p>
-        <div class="evidence-meta-info">
-          <div class="evidence-source">
-            {ev.source_url ? (
-              <a href={ev.source_url} target="_blank" rel="noopener noreferrer">
-                {ev.source_name}
-              </a>
-            ) : (
-              <span>{ev.source_name}</span>
-            )}
-          </div>
-          <div class="evidence-date">
-            Acessado em {new Date(ev.accessed_at).toLocaleDateString('pt-BR')}
-          </div>
-        </div>
-        {ev.notes && (
-          <div class="evidence-notes">
-            {ev.notes}
-          </div>
-        )}
-      </div>
-    ))}
+<section class="evidence-list" aria-labelledby="fontes-evidencias">
+  <div class="evidence-heading">
+    <div><p>TRANSPARÊNCIA</p><h2 id="fontes-evidencias">Fontes e evidências</h2></div>
+    <span>{evidences.length} referências</span>
   </div>
+  <ol>
+    {evidences.map((ev, index) => (
+      <li id={ev.id}>
+        <div class="evidence-index">[{index + 1}]</div>
+        <div class="evidence-content">
+          <div class="evidence-meta"><span>{labels[ev.evidence_type]}</span><time datetime={ev.accessed_at}>{new Date(ev.accessed_at).toLocaleDateString('pt-BR')}</time></div>
+          <p class="claim">{ev.claim}</p>
+          <p class="source">{ev.source_url ? <a href={ev.source_url} target="_blank" rel="noopener noreferrer">{ev.source_name}</a> : ev.source_name}</p>
+          {ev.notes && <p class="notes">{ev.notes}</p>}
+        </div>
+      </li>
+    ))}
+  </ol>
 </section>
 
 <style>
-  .evidence-list {
-    margin: 4rem 0 2rem;
-    padding: 2.5rem;
-    background-color: #fafbfc;
-    border-radius: 12px;
-    border-top: 3px solid #e5e7eb;
-  }
-
-  .evidence-list h2 {
-    margin-bottom: 2rem;
-    margin-top: 0;
-    font-size: 1.5rem;
-    color: #111827;
-  }
-
-  .evidences {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-  }
-
-  .evidence-item {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border: 1px solid #e5e7eb;
-  }
-
-  .evidence-header {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .evidence-number {
-    font-weight: 700;
-    color: #2563eb;
-    font-size: 0.95rem;
-  }
-
-  .evidence-type {
-    display: inline-block;
-    padding: 0.25rem 0.625rem;
-    background-color: #f3f4f6;
-    color: #4b5563;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    font-weight: 500;
-  }
-
-  .evidence-claim {
-    margin-bottom: 0.875rem;
-    color: #1f2937;
-    line-height: 1.6;
-    font-size: 0.95rem;
-  }
-
-  .evidence-meta-info {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    padding-top: 0.75rem;
-    border-top: 1px solid #f3f4f6;
-  }
-
-  .evidence-source {
-    font-size: 0.875rem;
-    color: #4b5563;
-  }
-
-  .evidence-source a {
-    color: #2563eb;
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  .evidence-source a:hover {
-    text-decoration: underline;
-  }
-
-  .evidence-date {
-    font-size: 0.8rem;
-    color: #9ca3af;
-  }
-
-  .evidence-notes {
-    margin-top: 0.75rem;
-    padding: 0.75rem;
-    background: #fef3c7;
-    border-radius: 4px;
-    font-size: 0.875rem;
-    color: #92400e;
-    line-height: 1.5;
-  }
-
-  @media (max-width: 768px) {
-    .evidence-list {
-      padding: 1.75rem;
-    }
-
-    .evidence-item {
-      padding: 1.25rem;
-    }
-  }
+  .evidence-list { margin: 5rem 0 1rem; padding-top: 1.4rem; border-top: 3px solid var(--ink); }
+  .evidence-heading { display: flex; justify-content: space-between; gap: 1rem; align-items: end; padding-bottom: 1.1rem; border-bottom: 1px solid var(--line); }
+  .evidence-heading p { margin: 0 0 .35rem; color: var(--amber-dark); font-size: .64rem; font-weight: 900; letter-spacing: .14em; }
+  .evidence-heading h2 { margin: 0; font-size: 1.55rem; }
+  .evidence-heading > span { color: var(--steel); font-size: .72rem; }
+  ol { list-style: none; margin: 0; padding: 0; }
+  li { display: grid; grid-template-columns: 52px 1fr; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
+  .evidence-index { color: var(--amber-dark); font: 800 .72rem/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
+  .evidence-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .6rem; color: var(--steel); font-size: .67rem; text-transform: uppercase; letter-spacing: .06em; }
+  .claim { margin: .35rem 0 .25rem; color: var(--ink); font-size: .92rem; line-height: 1.55; }
+  .source, .notes { margin: 0; font-size: .76rem; line-height: 1.5; }
+  .source a { color: var(--ink); font-weight: 700; }
+  .notes { margin-top: .45rem; color: var(--steel); }
 </style>

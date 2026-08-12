@@ -1,27 +1,19 @@
 ---
 import type { Breadcrumb } from '../../lib/types';
 import { buildCanonical } from '../../lib/seoHelpers';
+import { SITE } from '../../lib/site';
 
-interface Props {
-  breadcrumbs: Breadcrumb[];
-  currentSlug: string;
-}
-
+interface Props { breadcrumbs: Breadcrumb[]; currentSlug: string; }
 const { breadcrumbs, currentSlug } = Astro.props;
-const SITE_URL = import.meta.env.SITE || 'https://example.com';
-
 const schema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": breadcrumbs.map((crumb, index) => ({
-    "@type": "ListItem",
-    "position": index + 1,
-    "name": crumb.name,
-    "item": crumb.url
-      ? `${SITE_URL}${crumb.url}`
-      : (index === breadcrumbs.length - 1 ? buildCanonical(currentSlug) : undefined)
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbs.map((crumb, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: crumb.name,
+    item: crumb.url ? `${SITE.url}${crumb.url}` : (index === breadcrumbs.length - 1 ? buildCanonical(currentSlug) : undefined)
   }))
 };
 ---
-
-<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+<script is:inline type="application/ld+json" set:html={JSON.stringify(schema)}></script>
