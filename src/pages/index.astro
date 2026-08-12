@@ -32,9 +32,7 @@ import { SITE } from '../lib/site';
       </div>
 
       <figure class="hero-figure">
-        <div class="figure-index" aria-hidden="true">FC / 01</div>
         <img src="/images/dewalt-20v-cc-1600.webp" alt="Ferramenta DeWalt 20V sobre bancada" width="1400" height="1400" loading="eager" />
-        <figcaption>Imagem editorial ilustrativa. Foto: TaurusEmerald / Wikimedia Commons / CC BY-SA 4.0.</figcaption>
       </figure>
     </div>
   </section>
@@ -114,9 +112,9 @@ import { SITE } from '../lib/site';
 
   <style>
     .hero { background: var(--ink); color: var(--paper); border-bottom: 1px solid var(--line-dark); }
-    .hero-inner { max-width: var(--max); margin: 0 auto; padding: 4.75rem 1.5rem 4.25rem; display: grid; grid-template-columns: 1.02fr .98fr; gap: 4.25rem; align-items: center; }
+    .hero-inner { max-width: var(--max); margin: 0 auto; padding: 3.85rem 1.5rem 3.65rem; display: grid; grid-template-columns: 1.04fr .96fr; gap: 4rem; align-items: center; }
     .kicker, .section-kicker { margin: 0 0 1.15rem; color: var(--amber); font-size: .68rem; font-weight: 900; letter-spacing: .16em; }
-    .hero h1 { color: var(--paper); margin: 0; max-width: 12ch; font-size: clamp(2.7rem, 5.4vw, 5rem); }
+    .hero h1 { color: var(--paper); margin: 0; max-width: 13ch; font-size: clamp(2.7rem, 4.9vw, 4.55rem); text-wrap: balance; }
     .hero h1 span { color: #b6babd; font-weight: 650; }
     .lead { max-width: 52ch; margin: 1.6rem 0 0; color: #c5c7c6; font-size: 1.08rem; }
     .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
@@ -130,9 +128,7 @@ import { SITE } from '../lib/site';
 
     .hero-figure { margin: 0; position: relative; padding-left: 1.5rem; }
     .hero-figure::before { content: ""; position: absolute; left: 0; top: 2.25rem; bottom: 3.2rem; width: 3px; background: var(--amber); }
-    .hero-figure img { width: 100%; aspect-ratio: 1.06 / 1; object-fit: cover; object-position: 50% 52%; display: block; filter: saturate(.88) contrast(1.05); }
-    .figure-index { position: absolute; z-index: 2; right: .8rem; top: .8rem; background: var(--amber); color: var(--ink); padding: .35rem .5rem; font: 850 .65rem/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .08em; }
-    figcaption { color: #7f8588; font-size: .64rem; line-height: 1.45; margin-top: .55rem; }
+    .hero-figure img { width: 100%; aspect-ratio: 1.16 / 1; max-height: 660px; object-fit: cover; object-position: 50% 50%; display: block; filter: saturate(.88) contrast(1.05); }
 
     .principles { background: var(--paper-deep); border-bottom: 1px solid var(--line); }
     .principles-inner { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem; display: grid; grid-template-columns: repeat(3, 1fr); }

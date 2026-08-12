@@ -6,8 +6,8 @@ import { SITE } from '../lib/site';
   <div class="footer-grid">
     <div class="footer-brand">
       <a class="brand" href="/">
-        <img src="/brand/ferramenta-clara-mark.svg" alt="" width="38" height="38" />
-        <span>Ferramenta Clara</span>
+        <span class="brand-name"><span>Ferramenta</span><strong>Clara</strong></span>
+        <span class="brand-accent" aria-hidden="true"></span>
       </a>
       <p class="tagline">{SITE.tagline}</p>
       <p class="method">Comparações técnicas com fontes abertas. Quando não há teste prático, isso é informado de forma explícita.</p>
@@ -17,12 +17,13 @@ import { SITE } from '../lib/site';
       <span class="label">NAVEGAÇÃO</span>
       <a href="/#comparacoes">Comparações</a>
       <a href="/#metodologia">Metodologia</a>
+      <a href="/creditos/">Créditos</a>
     </div>
 
     <div class="footer-note">
       <span class="label">TRANSPARÊNCIA</span>
       <p>Conteúdo editorial independente. Links de afiliados, quando existirem, serão identificados.</p>
-      <p class="credits">Imagens licenciadas via Wikimedia Commons; créditos completos aparecem nas páginas em que são usadas.</p>
+      <p class="credits">Algumas imagens são usadas sob licenças Creative Commons. <a href="/creditos/">Ver autoria, fontes e licenças</a>.</p>
     </div>
   </div>
 
@@ -50,23 +51,25 @@ import { SITE } from '../lib/site';
   }
 
   .brand {
+    position: relative;
     display: inline-flex;
     align-items: center;
-    gap: .8rem;
     color: var(--paper);
     text-decoration: none;
-    font-size: 1.15rem;
-    font-weight: 850;
-    letter-spacing: -.02em;
+    padding-bottom: .45rem;
   }
 
-  .brand img { width: 38px; height: 38px; }
+  .brand-name { display: inline-flex; gap: .34rem; align-items: baseline; font-size: 1.15rem; letter-spacing: -.035em; line-height: 1; }
+  .brand-name span { font-weight: 560; color: #d4d2cc; }
+  .brand-name strong { font-weight: 900; color: var(--paper); }
+  .brand-accent { position: absolute; right: 0; bottom: 0; width: 2.25rem; height: 3px; background: var(--amber); }
+
   .tagline { color: var(--paper); font-weight: 750; margin: 1.25rem 0 .6rem; }
   .method, .footer-note p { color: #aeb2b5; max-width: 56ch; font-size: .88rem; line-height: 1.65; }
 
   .footer-nav { display: grid; align-content: start; gap: .65rem; }
   .footer-nav a { color: #d9d5cc; text-decoration: none; font-size: .9rem; }
-  .footer-nav a:hover { color: var(--amber); }
+  .footer-nav a:hover, .footer-note a:hover { color: var(--amber); }
 
   .label {
     color: var(--amber);
@@ -78,6 +81,7 @@ import { SITE } from '../lib/site';
 
   .footer-note p { margin: 0 0 .8rem; }
   .credits { font-size: .78rem !important; }
+  .credits a { color: #d9d5cc; }
 
   .footer-bottom {
     max-width: var(--max);

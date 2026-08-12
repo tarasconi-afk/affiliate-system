@@ -51,7 +51,7 @@ const updatedLabel = new Date(pageSpec.metadata.updatedAt).toLocaleDateString('p
       {pageSpec.type === 'model_review' && (
         <figure class="article-figure">
           <img src="/images/dewalt-20v-cc-1600.webp" alt="Ferramenta DeWalt 20V usada como imagem editorial ilustrativa" width="1400" height="1400" loading="eager" />
-          <figcaption><strong>Imagem ilustrativa.</strong> A foto mostra uma ferramenta DeWalt 20V; o modelo analisado é a DCD7771D2-BR. TaurusEmerald / Wikimedia Commons / CC BY-SA 4.0.</figcaption>
+          <figcaption><strong>Imagem ilustrativa.</strong> A foto mostra uma ferramenta DeWalt 20V; o modelo analisado é a DCD7771D2-BR.</figcaption>
         </figure>
       )}
 
@@ -59,7 +59,6 @@ const updatedLabel = new Date(pageSpec.metadata.updatedAt).toLocaleDateString('p
         <figure class="article-figure brand-figure">
           <img src="/images/bosch-makita-cc-1600.webp" alt="Ferramentas Bosch e Makita reunidas em uma comparação editorial" width="1600" height="739" loading="eager" />
           <span class="figure-label" aria-hidden="true">BOSCH / MAKITA</span>
-          <figcaption>Foto: Hendrikp111 / Wikimedia Commons / CC BY-SA 4.0.</figcaption>
         </figure>
       )}
 
@@ -67,7 +66,7 @@ const updatedLabel = new Date(pageSpec.metadata.updatedAt).toLocaleDateString('p
         <figure class="article-figure voltage-figure">
           <div class="voltage-image"><img src="/images/bosch-12v-cc-1600.webp" alt="Exemplo visual de ferramenta Bosch 12V" width="1600" height="1071" loading="eager" /><b>12V</b></div>
           <div class="voltage-image"><img src="/images/makita-lxt-18v-cc-1600.webp" alt="Exemplo visual de ferramenta Makita 18V" width="1200" height="1600" loading="eager" /><b>18V</b></div>
-          <figcaption>Exemplos visuais das categorias, não uma comparação direta entre esses dois modelos. Charles & Hudson / CC BY-SA 2.0; Santeri Viinamäki / CC BY-SA 4.0.</figcaption>
+          <figcaption>Exemplos visuais das categorias, não uma comparação direta entre esses dois modelos.</figcaption>
         </figure>
       )}
     </header>
@@ -175,7 +174,7 @@ const updatedLabel = new Date(pageSpec.metadata.updatedAt).toLocaleDateString('p
 
   .article-hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 4rem; align-items: center; padding: 3.5rem 0 3rem; border-bottom: 2px solid var(--ink); }
   .article-category, .block-label { margin: 0 0 1rem; color: var(--amber-dark); font-size: .66rem; font-weight: 900; letter-spacing: .15em; }
-  .article-hero h1 { margin: 0; font-size: clamp(2.4rem, 4.7vw, 4.6rem); max-width: 13ch; }
+  .article-hero h1 { margin: 0; font-size: clamp(2.4rem, 4.35vw, 4.2rem); max-width: 16ch; text-wrap: balance; overflow-wrap: normal; hyphens: none; }
   .article-subtitle { font-size: 1.06rem; line-height: 1.65; max-width: 54ch; margin: 1.25rem 0 0; }
   .method-note { margin-top: 1.6rem; padding-left: 1rem; border-left: 3px solid var(--amber); display: grid; gap: .2rem; max-width: 55ch; }
   .method-note strong { font-size: .78rem; }

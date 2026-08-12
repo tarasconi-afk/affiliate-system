@@ -1,0 +1,109 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../lib/site';
+const robots = SITE.prelaunch ? 'noindex, nofollow' : 'noindex, follow';
+---
+
+<BaseLayout title="Créditos de imagens — Ferramenta Clara">
+  <Fragment slot="head">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Créditos de imagens — Ferramenta Clara</title>
+    <meta name="description" content="Autoria, fontes e licenças das imagens de terceiros utilizadas pela Ferramenta Clara." />
+    <meta name="robots" content={robots} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href={`${SITE.url}/creditos/`} />
+  </Fragment>
+
+  <article class="credits-page">
+    <header>
+      <p class="kicker">TRANSPARÊNCIA</p>
+      <h1>Créditos de imagens</h1>
+      <p>Algumas fotografias usadas pela Ferramenta Clara são disponibilizadas por seus autores sob licenças Creative Commons. Abaixo estão autoria, fonte, licença e o tratamento aplicado no site.</p>
+    </header>
+
+    <div class="credits-list">
+      <section>
+        <span class="index">01</span>
+        <div>
+          <h2>DeWalt 20 Volt Max Cordless Drill</h2>
+          <dl>
+            <div><dt>Autor</dt><dd>TaurusEmerald</dd></div>
+            <div><dt>Fonte</dt><dd><a href="https://commons.wikimedia.org/wiki/File:DeWalt_20_Volt_Max_Cordless_Drill.jpg" rel="external noreferrer">Wikimedia Commons</a></dd></div>
+            <div><dt>Licença</dt><dd><a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="external noreferrer">CC BY-SA 4.0</a></dd></div>
+            <div><dt>Uso</dt><dd>Homepage e análise da DCD777, apenas como imagem ilustrativa de uma ferramenta DeWalt 20V.</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section>
+        <span class="index">02</span>
+        <div>
+          <h2>Akutrell Makita ja Bosch</h2>
+          <dl>
+            <div><dt>Autor</dt><dd>Hendrikp111</dd></div>
+            <div><dt>Fonte</dt><dd><a href="https://commons.wikimedia.org/wiki/File:Akutrell_Makita_ja_Bosch.jpg" rel="external noreferrer">Wikimedia Commons</a></dd></div>
+            <div><dt>Licença</dt><dd><a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="external noreferrer">CC BY-SA 4.0</a></dd></div>
+            <div><dt>Uso</dt><dd>Homepage e comparação Bosch ou Makita.</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section>
+        <span class="index">03</span>
+        <div>
+          <h2>Makita LXT drill</h2>
+          <dl>
+            <div><dt>Autor</dt><dd>Santeri Viinamäki</dd></div>
+            <div><dt>Fonte</dt><dd><a href="https://commons.wikimedia.org/wiki/File:Makita_LXT_drill.jpg" rel="external noreferrer">Wikimedia Commons</a></dd></div>
+            <div><dt>Licença</dt><dd><a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="external noreferrer">CC BY-SA 4.0</a></dd></div>
+            <div><dt>Uso</dt><dd>Exemplo visual de ferramenta 18V.</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section>
+        <span class="index">04</span>
+        <div>
+          <h2>Bosch 12V Max Lithium Ion Impact Driver</h2>
+          <dl>
+            <div><dt>Autor</dt><dd>Charles &amp; Hudson</dd></div>
+            <div><dt>Fonte</dt><dd><a href="https://commons.wikimedia.org/wiki/File:Bosch_12V_Max_Lithium_Ion_Impact_Driver_(5073183037).jpg" rel="external noreferrer">Wikimedia Commons</a></dd></div>
+            <div><dt>Licença</dt><dd><a href="https://creativecommons.org/licenses/by-sa/2.0/" rel="external noreferrer">CC BY-SA 2.0</a></dd></div>
+            <div><dt>Uso</dt><dd>Exemplo visual de ferramenta 12V.</dd></div>
+          </dl>
+        </div>
+      </section>
+    </div>
+
+    <aside class="treatment">
+      <h2>Tratamento aplicado</h2>
+      <p>Os arquivos originais são preservados para rastreabilidade. No site, as imagens podem ser redimensionadas, convertidas para WebP e enquadradas por CSS para adequação ao layout. Não removemos marcas presentes nas fotografias nem apresentamos uma imagem como um SKU específico quando isso não é comprovado pela fonte.</p>
+    </aside>
+  </article>
+</BaseLayout>
+
+<style>
+  .credits-page { max-width: 980px; margin: 0 auto; padding: 5rem 1.5rem 2rem; }
+  header { max-width: 720px; padding-bottom: 2.5rem; border-bottom: 2px solid var(--ink); }
+  .kicker { margin: 0 0 1rem; color: var(--amber-dark); font-size: .68rem; font-weight: 900; letter-spacing: .16em; }
+  h1 { margin: 0 0 1.2rem; font-size: clamp(2.6rem, 6vw, 4.6rem); }
+  header > p:last-child { margin: 0; font-size: 1.02rem; line-height: 1.75; }
+  .credits-list { margin-top: 1rem; }
+  .credits-list section { display: grid; grid-template-columns: 56px 1fr; gap: 1.3rem; padding: 2rem 0; border-bottom: 1px solid var(--line); }
+  .index { color: var(--amber-dark); font: 850 .72rem/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; }
+  h2 { margin: 0 0 1.1rem; font-size: 1.45rem; }
+  dl { margin: 0; }
+  dl > div { display: grid; grid-template-columns: 110px 1fr; gap: 1rem; padding: .5rem 0; }
+  dt { color: var(--steel); font-size: .75rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
+  dd { margin: 0; color: var(--muted); }
+  dd a { color: var(--ink); font-weight: 700; }
+  .treatment { margin: 3rem 0 0; padding: 2rem; background: var(--ink-soft); border-left: 5px solid var(--amber); }
+  .treatment h2 { color: var(--paper); }
+  .treatment p { margin: 0; color: #c8ccce; line-height: 1.75; }
+  @media (max-width: 560px) {
+    .credits-page { padding: 3rem 1rem 1rem; }
+    .credits-list section { grid-template-columns: 1fr; gap: .5rem; }
+    dl > div { grid-template-columns: 1fr; gap: .15rem; }
+  }
+</style>

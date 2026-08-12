@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="8" fill="#17191C"/>
-  <path fill="#F2EEE5" d="M12 12h31v8H20v10h18v8H20v14h-8z"/>
-  <path fill="#E3A008" d="M44 27h9v10h-9z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ferramenta Clara">
+  <rect width="64" height="64" rx="8" fill="#17191c"/>
+  <rect x="9" y="9" width="6" height="46" fill="#e3a008"/>
+  <path d="M23 16h27v7H31v9h16v7H31v16h-8z" fill="#f2eee5"/>
 </svg>

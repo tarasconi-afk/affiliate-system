@@ -16,4 +16,4 @@ Este arquivo documenta a proveniência dos assets fotográficos publicados pela 
 - Nenhuma fotografia é apresentada como um SKU específico quando isso não é comprovado pela fonte.
 - A página DCD777 declara explicitamente que a fotografia DeWalt é apenas ilustrativa.
 - A página 12V/18V declara explicitamente que as fotografias representam exemplos de categoria, não uma comparação direta entre aqueles dois modelos.
-- Atribuição de autor, Wikimedia Commons e licença permanece visível no site.
+- Atribuição de autor, fonte, licença e tratamento permanece disponível na página pública `/creditos/`, acessível pelo rodapé do site.
