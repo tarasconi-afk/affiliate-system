@@ -4,45 +4,54 @@ Este arquivo documenta a proveniência de todos os assets externos utilizados no
 
 ## Imagens de Produtos
 
-### DeWalt DCD777
-- **Arquivo local**: `public/images/dewalt-dcd777.webp`
-- **Fabricante**: DeWalt
-- **Produto/Modelo**: DCD7771D2-BR (Parafusadeira/Furadeira 20V MAX)
-- **Página fonte**: https://www.dewalt.com.br/produto/parafusadeiras-e-furadeiras/parafusadeiras-furadeiras/parafusadeirafuradeira-de-impacto-a-bateria-20v-max-brushless-bateria-20v-50ah-carregador-bivolt-dcd777d2-b2
-- **URL original do asset**: https://assets.dewalt.com.br/LAG/PRODUCT/IMAGES/HIRES/WHITEBG/DCD7771D2_K1_1680.webp
-- **Data**: 2026-08-11
-- **Onde é utilizado**: Homepage (hero section), página do produto DCD777
-- **Observação**: Imagem oficial do site brasileiro da DeWalt, modelo exato DCD7771D2-BR mencionado no conteúdo editorial
+### DeWalt 20V Cordless Drill
+- **Arquivo local**: `public/images/dewalt-20v-cc.jpg`
+- **Autor**: TaurusEmerald
+- **Licença**: CC BY-SA 4.0
+- **Fonte**: https://commons.wikimedia.org/wiki/File:DeWalt_20_Volt_Max_Cordless_Drill.jpg
+- **Data de download**: 2026-08-11
+- **Onde é utilizado**: Homepage (hero section), página do produto DCD777 (como imagem ilustrativa)
+- **Observação**: Imagem ilustrativa de ferramenta DeWalt 20V. NÃO é apresentada como foto específica da DCD7771D2-BR. Disclaimer explícito adicionado na página.
 
-### Bosch Professional (ilustração)
-- **Arquivo local**: `public/images/bosch-tool.svg`
-- **Fabricante**: Bosch Professional (representação visual)
-- **Produto/Modelo**: Ilustração representativa de ferramenta Bosch Professional
-- **Página fonte**: Criado internamente com cores oficiais da marca
-- **Data**: 2026-08-11
-- **Onde é utilizado**: Página de comparação Bosch vs Makita
-- **Observação**: Ilustração SVG criada internamente usando as cores corporativas da Bosch Professional. Não utiliza assets oficiais devido a limitações técnicas de acesso, mas representa visualmente a linha profissional Bosch discutida no artigo de forma neutra e profissional
+### Bosch and Makita Power Tools
+- **Arquivo local**: `public/images/bosch-makita-cc.jpg`
+- **Autor**: Hendrikp111
+- **Licença**: CC BY-SA 4.0
+- **Fonte**: https://commons.wikimedia.org/wiki/File:Akutrell_Makita_ja_Bosch.jpg
+- **Data de download**: 2026-08-11
+- **Onde é utilizado**: Homepage (card secundário), página de comparação Bosch vs Makita
+- **Observação**: Fotografia real mostrando ferramentas Bosch e Makita
 
-### Makita (ilustração)
-- **Arquivo local**: `public/images/makita-tool.svg`
-- **Fabricante**: Makita (representação visual)
-- **Produto/Modelo**: Ilustração representativa de ferramenta Makita
-- **Página fonte**: Criado internamente com cores oficiais da marca
-- **Data**: 2026-08-11
-- **Onde é utilizado**: Página de comparação Bosch vs Makita
-- **Observação**: Ilustração SVG criada internamente usando as cores corporativas da Makita. Não utiliza assets oficiais devido a limitações técnicas de acesso aos recursos da marca, mas representa visualmente a linha de produtos discutida no artigo de forma neutra e profissional
+### Makita LXT 18V Drill
+- **Arquivo local**: `public/images/makita-lxt-18v-cc.jpg`
+- **Autor**: Santeri Viinamäki
+- **Licença**: CC BY-SA 4.0
+- **Fonte**: https://commons.wikimedia.org/wiki/File:Makita_LXT_drill.jpg
+- **Descrição original**: Makita LXT DDF456RFE 18V
+- **Data de download**: 2026-08-11
+- **Onde é utilizado**: Página de comparação 12V vs 18V (como exemplo visual de ferramenta 18V)
+- **Observação**: Apresentada explicitamente como exemplo de categoria 18V, não como produto específico sendo comparado
 
-### Voltagem 12V e 18V (ilustrações)
-- **Arquivos locais**: `public/images/voltage-12v.svg`, `public/images/voltage-18v.svg`
-- **Tipo**: Ilustrações representativas criadas internamente
-- **Data**: 2026-08-11
-- **Onde são utilizadas**: Página de comparação 12V vs 18V
-- **Observação**: Ilustrações SVG criadas internamente para representar visualmente as diferenças entre ferramentas 12V (compactas) e 18V (potentes). Não representam produtos específicos, mas sim categorias de voltagem discutidas no artigo
+### Bosch 12V Impact Driver
+- **Arquivo local**: `public/images/bosch-12v-cc.jpg`
+- **Autor**: Charles & Hudson
+- **Licença**: CC BY-SA 2.0
+- **Fonte**: https://commons.wikimedia.org/wiki/File:Bosch_12V_Max_Lithium_Ion_Impact_Driver_(5073183037).jpg
+- **Data de download**: 2026-08-11
+- **Onde é utilizado**: Homepage (card secundário), página de comparação 12V vs 18V (como exemplo visual de ferramenta 12V)
+- **Observação**: Apresentada explicitamente como exemplo de categoria 12V, não como produto específico sendo comparado
+
+## Atribuições no Site
+
+Todas as fotografias incluem atribuição discreta com:
+- Nome do autor
+- Link para Wikimedia Commons
+- Tipo de licença (CC BY-SA 4.0 ou CC BY-SA 2.0)
 
 ## Observações Gerais
 
-- Imagem oficial do produto DeWalt DCD777 obtida diretamente do site brasileiro do fabricante
-- Ilustrações SVG para comparações de marcas e voltagens criadas internamente de forma neutra e profissional
-- Todas as ilustrações utilizam cores corporativas reconhecíveis das marcas para facilitar identificação visual
-- Nenhuma ilustração faz alegações enganosas sobre produtos específicos ou cria fotografias falsas
-- Imagens são utilizadas em contexto editorial para ilustrar comparações técnicas baseadas em especificações oficiais
+- Todas as imagens são de Wikimedia Commons com licenças Creative Commons compatíveis com uso editorial
+- Nenhuma fotografia é apresentada como representação exata de um SKU específico quando não o for
+- Disclaimers explícitos adicionados quando necessário (ex: DCD777 página)
+- Atribuições visíveis em todas as páginas onde as imagens aparecem
+- Imagens utilizadas em contexto editorial para ilustrar comparações técnicas baseadas em especificações oficiais
