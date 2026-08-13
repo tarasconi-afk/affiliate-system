@@ -3,8 +3,8 @@ import type { PageMetadata, Product } from '../../lib/types';
 import { buildCanonical } from '../../lib/seoHelpers';
 import { SITE } from '../../lib/site';
 
-interface Props { metadata: PageMetadata; slug: string; product?: Product; }
-const { metadata, slug, product } = Astro.props;
+interface Props { metadata: PageMetadata; slug: string; product?: Product; image?: string; }
+const { metadata, slug, product, image } = Astro.props;
 const canonical = buildCanonical(slug);
 const schema = {
   '@context': 'https://schema.org',
@@ -16,6 +16,7 @@ const schema = {
   dateModified: metadata.updatedAt,
   author: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url, logo: { '@type': 'ImageObject', url: `${SITE.url}/favicon.svg` } },
+  ...(image && { image }),
   ...(product && { about: { '@type': 'Product', name: product.name, brand: { '@type': 'Brand', name: product.brand } } })
 };
 ---

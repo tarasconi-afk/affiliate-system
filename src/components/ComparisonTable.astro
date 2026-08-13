@@ -1,18 +1,20 @@
 ---
 import type { ComparisonDimension, DecisionDimension } from '../lib/types';
-interface Props { dimensions: ComparisonDimension[] | DecisionDimension[]; label1: string; label2: string; }
-const { dimensions, label1, label2 } = Astro.props;
+import type { Evidence } from '../lib/types';
+import Sources from './Sources.astro';
+interface Props { dimensions: ComparisonDimension[] | DecisionDimension[]; label1: string; label2: string; evidences: Evidence[]; }
+const { dimensions, label1, label2, evidences } = Astro.props;
 ---
 
-<div class="comparison-wrapper" tabindex="0" aria-label="Tabela comparativa com rolagem horizontal em telas pequenas">
+<div class="comparison-wrapper" tabindex="0" role="region" aria-label="Tabela comparativa com rolagem horizontal em telas pequenas">
   <table class="comparison-table">
     <thead><tr><th>Critério</th><th>{label1}</th><th>{label2}</th></tr></thead>
     <tbody>
       {dimensions.map(dim => (
         <tr>
-          <th>{dim.label}</th>
-          <td class:list={{ winner: dim.winner === 1 }}><span>{'brand1' in dim ? dim.brand1 : dim.option1}</span>{dim.winner === 1 && <b aria-label="Vantagem neste critério">Vantagem</b>}</td>
-          <td class:list={{ winner: dim.winner === 2 }}><span>{'brand2' in dim ? dim.brand2 : dim.option2}</span>{dim.winner === 2 && <b aria-label="Vantagem neste critério">Vantagem</b>}</td>
+          <th>{dim.label}<Sources evidenceIds={dim.evidenceIds} evidences={evidences} /></th>
+          <td class:list={{ winner: dim.winner === 1 }}><span>{'brand1' in dim ? dim.brand1 : dim.option1}</span>{dim.winner === 1 && <b>Vantagem</b>}</td>
+          <td class:list={{ winner: dim.winner === 2 }}><span>{'brand2' in dim ? dim.brand2 : dim.option2}</span>{dim.winner === 2 && <b>Vantagem</b>}</td>
         </tr>
       ))}
     </tbody>

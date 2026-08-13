@@ -28,10 +28,52 @@
     "heading": "DeWalt DCD777 vale a pena? Análise técnica da DCD7771D2‑BR",
     "subheading": "Ficha oficial brasileira, pontos fortes e limites — sem alegar teste prático."
   },
+  "media": {
+    "items": [
+      {
+        "src": "/images/dewalt-20v-cc-1600.webp",
+        "alt": "Ferramenta DeWalt 20V usada como imagem editorial ilustrativa",
+        "width": 1400,
+        "height": 1400,
+        "aspectRatio": 1.08
+      }
+    ],
+    "captionLabel": "Imagem ilustrativa.",
+    "caption": "A foto mostra uma ferramenta DeWalt 20V; o modelo analisado é a DCD7771D2‑BR."
+  },
+  "quickAnswer": {
+    "text": "Pode valer a pena se você procura uma furadeira/parafusadeira sem função impacto e as especificações de 65 Nm, motor brushless, duas velocidades, mandril de 13 mm e kit com duas baterias de 2 Ah atendem à sua necessidade. Se o uso exige impacto, compare outro modelo: a ficha oficial da DCD7771D2‑BR não lista esse recurso.",
+    "evidenceIds": [
+      "ev_001",
+      "ev_002"
+    ]
+  },
+  "quickFacts": [
+    {
+      "label": "Torque",
+      "value": "65 Nm",
+      "evidenceIds": ["ev_001"]
+    },
+    {
+      "label": "Rotação",
+      "value": "0–500 / 0–1.750 RPM",
+      "evidenceIds": ["ev_001"]
+    },
+    {
+      "label": "Mandril",
+      "value": "13 mm",
+      "evidenceIds": ["ev_001"]
+    },
+    {
+      "label": "Motor",
+      "value": "Brushless",
+      "evidenceIds": ["ev_001"]
+    }
+  ],
   "specs": [
     {
       "label": "Tensão da plataforma",
-      "value": "20V MAX*",
+      "value": "20V MAX",
       "highlight": true,
       "evidenceIds": [
         "ev_001"
@@ -97,7 +139,7 @@
   "prosCons": {
     "pros": [
       {
-        "text": "Motor brushless e construção descrita pela DeWalt como leve e compacta.",
+        "text": "Motor brushless conforme a ficha oficial da DeWalt.",
         "evidenceIds": [
           "ev_001"
         ]

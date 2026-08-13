@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE } from '../lib/site';
+const socialImage = `${SITE.url}/images/dewalt-20v-cc-1600.webp`;
 ---
 
 <BaseLayout title="Ferramenta Clara — Dados claros para escolher melhor">
@@ -16,6 +17,11 @@ import { SITE } from '../lib/site';
     <meta property="og:description" content={SITE.description} />
     <meta property="og:url" content={`${SITE.url}/`} />
     <meta property="og:type" content="website" />
+    <meta property="og:image" content={socialImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ferramenta Clara — Dados claros para escolher melhor" />
+    <meta name="twitter:description" content={SITE.description} />
+    <meta name="twitter:image" content={socialImage} />
   </Fragment>
 
   <section class="hero" aria-labelledby="hero-title">

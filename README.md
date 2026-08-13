@@ -72,7 +72,7 @@ Todo claim factual deve ter evidência. Tipos suportados:
   "evidence_type": "SPEC",
   "claim": "Capacidade de 4.1 litros",
   "source_name": "Manual do fabricante",
-  "source_url": "https://example.com/manual.pdf",
+  "source_url": "https://example.invalid/manual.pdf",
   "accessed_at": "2026-08-11T20:00:00Z",
   "notes": "Página 3 do manual",
   "derived_from": ["ev_base"]  // Obrigatório e não-vazio se evidence_type = DERIVED
@@ -224,7 +224,8 @@ npm run build
 ```
 
 O build falhará se:
-- Evidências referenciadas não existirem
+- Evidências referenciadas por `evidenceIds` ou `derived_from` não existirem
+- IDs de evidência estiverem duplicados dentro da página
 - DERIVED não tiver `derived_from`
 - Timestamps forem inválidos
 - URLs estiverem malformadas
@@ -276,7 +277,7 @@ O canonical URL é gerado automaticamente:
 
 ```typescript
 // Não repita manualmente em cada JSON:
-"canonical": "https://example.com/slug"  // ❌
+"canonical": "https://example.invalid/slug"  // ❌
 
 // Use apenas o slug:
 "slug": "parafusadeira-dewalt-dcd777"    // ✅

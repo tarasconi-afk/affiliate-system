@@ -57,6 +57,7 @@ import { SITE } from '../lib/site';
     color: var(--paper);
     text-decoration: none;
     padding-bottom: .45rem;
+    min-height: 44px;
   }
 
   .brand-name { display: inline-flex; gap: .34rem; align-items: baseline; font-size: 1.15rem; letter-spacing: -.035em; line-height: 1; }
@@ -67,8 +68,8 @@ import { SITE } from '../lib/site';
   .tagline { color: var(--paper); font-weight: 750; margin: 1.25rem 0 .6rem; }
   .method, .footer-note p { color: #aeb2b5; max-width: 56ch; font-size: .88rem; line-height: 1.65; }
 
-  .footer-nav { display: grid; align-content: start; gap: .65rem; }
-  .footer-nav a { color: #d9d5cc; text-decoration: none; font-size: .9rem; }
+  .footer-nav { display: grid; align-content: start; gap: .35rem; }
+  .footer-nav a { color: #d9d5cc; text-decoration: none; font-size: .9rem; display: inline-flex; align-items: center; min-height: 40px; }
   .footer-nav a:hover, .footer-note a:hover { color: var(--amber); }
 
   .label {

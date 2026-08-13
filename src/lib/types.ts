@@ -55,6 +55,32 @@ export interface Monetization {
   disclaimer?: string;
 }
 
+export interface EditorialMediaItem {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  aspectRatio: number;
+  label?: string;
+}
+
+export interface EditorialMedia {
+  items: EditorialMediaItem[];
+  captionLabel?: string;
+  caption?: string;
+}
+
+export interface EvidencedText {
+  text: string;
+  evidenceIds: string[];
+}
+
+export interface QuickFact {
+  label: string;
+  value: string;
+  evidenceIds: string[];
+}
+
 // ============================================
 // MODEL REVIEW
 // ============================================
@@ -91,7 +117,11 @@ export interface ModelReviewPageSpec {
   hero: {
     heading: string;
     subheading: string;
+    methodNote?: string;
   };
+  media: EditorialMedia;
+  quickAnswer: EvidencedText;
+  quickFacts: QuickFact[];
   specs: SpecItem[];
   prosCons?: ProsCons;
   faq?: FAQ[];
@@ -132,7 +162,9 @@ export interface BrandComparePageSpec {
   hero: {
     heading: string;
     subheading: string;
+    methodNote?: string;
   };
+  media: EditorialMedia;
   brands: [BrandInfo, BrandInfo];
   comparison: {
     dimensions: ComparisonDimension[];
@@ -170,7 +202,9 @@ export interface DecisionComparePageSpec {
   hero: {
     heading: string;
     subheading: string;
+    methodNote?: string;
   };
+  media: EditorialMedia;
   options: [DecisionOption, DecisionOption];
   comparison: {
     dimensions: DecisionDimension[];

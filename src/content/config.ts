@@ -67,6 +67,32 @@ const verdictSchema = z.object({
   evidenceIds: z.array(z.string()).optional()
 });
 
+const mediaItemSchema = z.object({
+  src: z.string(),
+  alt: z.string(),
+  width: z.number().int().positive(),
+  height: z.number().int().positive(),
+  aspectRatio: z.number().positive(),
+  label: z.string().optional()
+});
+
+const editorialMediaSchema = z.object({
+  items: z.array(mediaItemSchema).min(1),
+  captionLabel: z.string().optional(),
+  caption: z.string().optional()
+});
+
+const evidencedTextSchema = z.object({
+  text: z.string(),
+  evidenceIds: z.array(z.string()).min(1)
+});
+
+const quickFactSchema = z.object({
+  label: z.string(),
+  value: z.string(),
+  evidenceIds: z.array(z.string()).min(1)
+});
+
 // ============================================
 // MODEL REVIEW SCHEMA
 // ============================================
@@ -96,8 +122,12 @@ const modelReviewSchema = z.object({
   product: productSchema,
   hero: z.object({
     heading: z.string(),
-    subheading: z.string()
+    subheading: z.string(),
+    methodNote: z.string().optional()
   }),
+  media: editorialMediaSchema,
+  quickAnswer: evidencedTextSchema,
+  quickFacts: z.array(quickFactSchema).min(1),
   specs: z.array(specItemSchema),
   prosCons: prosConsSchema.optional(),
   faq: z.array(faqSchema).optional(),
@@ -131,8 +161,10 @@ const brandCompareSchema = z.object({
   metadata: metadataSchema,
   hero: z.object({
     heading: z.string(),
-    subheading: z.string()
+    subheading: z.string(),
+    methodNote: z.string().optional()
   }),
+  media: editorialMediaSchema,
   brands: z.tuple([brandInfoSchema, brandInfoSchema]),
   comparison: z.object({
     dimensions: z.array(comparisonDimensionSchema)
@@ -169,8 +201,10 @@ const decisionCompareSchema = z.object({
   metadata: metadataSchema,
   hero: z.object({
     heading: z.string(),
-    subheading: z.string()
+    subheading: z.string(),
+    methodNote: z.string().optional()
   }),
+  media: editorialMediaSchema,
   options: z.tuple([decisionOptionSchema, decisionOptionSchema]),
   comparison: z.object({
     dimensions: z.array(decisionDimensionSchema)
@@ -185,13 +219,58 @@ const decisionCompareSchema = z.object({
 // COLLECTION DEFINITION
 // ============================================
 
+const pageSpecSchema = z.discriminatedUnion('type', [
+  modelReviewSchema,
+  brandCompareSchema,
+  decisionCompareSchema
+]).superRefine((page, ctx) => {
+  const evidenceIds = new Set<string>();
+
+  page.evidences.forEach((evidence, index) => {
+    if (evidenceIds.has(evidence.id)) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        path: ['evidences', index, 'id'],
+        message: `Page "${page.slug}": duplicate evidence id "${evidence.id}" at evidences.${index}.id`
+      });
+    }
+    evidenceIds.add(evidence.id);
+  });
+
+  const validateReferences = (value: unknown, path: Array<string | number> = []) => {
+    if (Array.isArray(value)) {
+      value.forEach((item, index) => validateReferences(item, [...path, index]));
+      return;
+    }
+
+    if (!value || typeof value !== 'object') return;
+
+    Object.entries(value).forEach(([key, child]) => {
+      const childPath = [...path, key];
+
+      if ((key === 'evidenceIds' || key === 'derived_from') && Array.isArray(child)) {
+        child.forEach((id, index) => {
+          if (typeof id === 'string' && !evidenceIds.has(id)) {
+            const referencePath = [...childPath, index];
+            ctx.addIssue({
+              code: z.ZodIssueCode.custom,
+              path: referencePath,
+              message: `Page "${page.slug}": unknown evidence id "${id}" at ${referencePath.join('.')}`
+            });
+          }
+        });
+      }
+
+      validateReferences(child, childPath);
+    });
+  };
+
+  validateReferences(page);
+});
+
 const pagesCollection = defineCollection({
   type: 'data',
-  schema: z.discriminatedUnion('type', [
-    modelReviewSchema,
-    brandCompareSchema,
-    decisionCompareSchema
-  ])
+  schema: pageSpecSchema
 });
 
 export const collections = {

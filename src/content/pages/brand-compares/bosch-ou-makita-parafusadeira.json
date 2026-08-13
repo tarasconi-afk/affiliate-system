@@ -22,6 +22,18 @@
     "heading": "Bosch ou Makita: qual ecossistema faz mais sentido?",
     "subheading": "Baterias, garantia e amplitude de plataforma comparadas com documentação oficial."
   },
+  "media": {
+    "items": [
+      {
+        "src": "/images/bosch-makita-cc-1600.webp",
+        "alt": "Ferramentas Bosch e Makita reunidas em uma comparação editorial",
+        "width": 1600,
+        "height": 739,
+        "aspectRatio": 1.35,
+        "label": "BOSCH / MAKITA"
+      }
+    ]
+  },
   "brands": [
     {
       "name": "Bosch",
@@ -72,11 +84,10 @@
       },
       {
         "label": "Assistência no Brasil",
-        "brand1": "Rede autorizada com localizador oficial de assistência.",
+        "brand1": "Não quantificado nas evidências atuais.",
         "brand2": "Makita informa mais de 1.700 assistências técnicas no território nacional.",
         "winner": 0,
         "evidenceIds": [
-          "ev_002",
           "ev_004"
         ]
       }

@@ -22,12 +22,12 @@ As interfaces TypeScript correspondentes e o tipo união `PageSpec` ficam em `sr
 - `src/content/pages/brand-compares/bosch-ou-makita-parafusadeira.json`
 - `src/content/pages/decision-compares/parafusadeira-12v-ou-18v.json`
 
-Cada PageSpec inclui metadados, conteúdo próprio do formato e uma lista de evidências. O schema preserva os tipos `SPEC`, `DERIVED`, `OBSERVATION` e `MEASUREMENT`; evidências `DERIVED` devem declarar `derived_from`. Campos editoriais relevantes referenciam evidências por `evidenceIds`.
+Cada PageSpec inclui metadados, mídia editorial, conteúdo próprio do formato e uma lista de evidências. Em análises de modelo, `quickAnswer` e `quickFacts` também vêm do PageSpec. O schema preserva os tipos `SPEC`, `DERIVED`, `OBSERVATION` e `MEASUREMENT`; o build falha para IDs duplicados ou referências inexistentes em `evidenceIds` e `derived_from`.
 
 ## Renderização e rotas
 
 - `src/pages/[...slug].astro`: rota dinâmica que lê a coleção `pages` em `getStaticPaths()` e gera um artigo estático por PageSpec.
-- `src/layouts/ArticleLayout.astro`: renderiza os três formatos editoriais e conecta tabelas, referências, evidências e metadados estruturados.
+- `src/layouts/ArticleLayout.astro`: renderer genérico dos três formatos, sem conteúdo específico de produto; conecta mídia, tabelas, referências, evidências e metadados estruturados.
 - `src/layouts/BaseLayout.astro`: estrutura HTML compartilhada, estilos globais, cabeçalho e rodapé.
 - `src/pages/index.astro`: homepage editorial com links para os três experimentos e explicação da metodologia.
 - `src/pages/creditos.astro`: página central de autoria, fonte, licença e tratamento das fotografias.
@@ -39,11 +39,11 @@ Cada PageSpec inclui metadados, conteúdo próprio do formato e uma lista de evi
 - Estrutura global: `src/components/Header.astro` e `src/components/Footer.astro`.
 - Comparações: `src/components/ComparisonTable.astro`.
 - Evidências e referências: `src/components/EvidenceList.astro` e `src/components/Sources.astro`.
-- SEO e dados estruturados: `src/components/seo/SEOHead.astro`, `src/components/seo/ArticleSchema.astro` e `src/components/seo/BreadcrumbSchema.astro`.
+- SEO e dados estruturados: `src/components/seo/SEOHead.astro`, `src/components/seo/ArticleSchema.astro` e `src/components/seo/BreadcrumbSchema.astro`. Os artigos usam a primeira mídia do PageSpec em `og:image`, `twitter:image` e no Article JSON-LD.
 - Canonical: `src/lib/seoHelpers.ts`, usando o domínio central de `src/lib/site.ts`.
 
 ## Assets e publicação
 
-Assets públicos ficam em `public/`, incluindo `public/favicon.svg` e fotografias em `public/images/`. O build gera arquivos estáticos; não há framework frontend adicional listado nas dependências e não foi observada lógica JavaScript cliente própria.
+Os JPGs originais para rastreabilidade ficam em `assets-source/images/` e não são publicados. Os WebPs usados em produção ficam em `public/images/`; `public/favicon.svg` também é público. O build gera arquivos estáticos, sem framework frontend adicional ou lógica JavaScript cliente própria.
 
-O estado de prelaunch é controlado por `SITE.prelaunch` em `src/lib/site.ts`, atualmente `true`. Nesse estado, homepage e artigos emitem `noindex, nofollow`, a página de créditos também permanece sem indexação e o `robots.txt` usa `Disallow: /`.
+O estado de prelaunch é controlado por `SITE.prelaunch` em `src/lib/site.ts`, atualmente `true`. Ele controla `noindex, nofollow` nas páginas e o bloqueio global `Disallow: /` em `robots.txt`.

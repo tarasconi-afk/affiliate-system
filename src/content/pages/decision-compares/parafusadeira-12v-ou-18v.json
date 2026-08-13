@@ -20,7 +20,29 @@
   },
   "hero": {
     "heading": "Parafusadeira 12V ou 18V: qual escolher?",
-    "subheading": "A tensão é só parte da decisão: compacidade, aplicação e plataforma de bateria também importam."
+    "subheading": "A tensão é só parte da decisão: compacidade, aplicação e plataforma de bateria também importam.",
+    "methodNote": "As fontes técnicas usadas neste guia são da Bosch; por isso as afirmações são tratadas como referência qualitativa, não como um retrato universal de todas as marcas do mercado."
+  },
+  "media": {
+    "items": [
+      {
+        "src": "/images/bosch-12v-cc-1600.webp",
+        "alt": "Exemplo visual de ferramenta Bosch 12V",
+        "width": 1600,
+        "height": 1071,
+        "aspectRatio": 1,
+        "label": "12V"
+      },
+      {
+        "src": "/images/makita-lxt-18v-cc-1600.webp",
+        "alt": "Exemplo visual de ferramenta Makita 18V",
+        "width": 1200,
+        "height": 1600,
+        "aspectRatio": 1,
+        "label": "18V"
+      }
+    ],
+    "caption": "Exemplos visuais das categorias, não uma comparação direta entre esses dois modelos."
   },
   "options": [
     {
