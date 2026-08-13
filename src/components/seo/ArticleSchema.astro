@@ -17,7 +17,7 @@ const schema = {
   author: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url, logo: { '@type': 'ImageObject', url: `${SITE.url}/favicon.svg` } },
   ...(image && { image }),
-  ...(product && { about: { '@type': 'Product', name: product.name, brand: { '@type': 'Brand', name: product.brand } } })
+  ...(product && { about: { '@type': 'Thing', name: product.name } })
 };
 ---
 <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)}></script>
