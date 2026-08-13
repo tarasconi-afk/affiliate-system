@@ -13,6 +13,8 @@ interface Props { pageSpec: PageSpec; }
 const { pageSpec } = Astro.props;
 const updatedLabel = new Date(pageSpec.metadata.updatedAt).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
 const socialImage = pageSpec.media.items[0] ? new URL(pageSpec.media.items[0].src, SITE.url).toString() : undefined;
+const contextualLinksAt = (placement: 'after_specs' | 'after_comparison' | 'after_verdict') =>
+  pageSpec.contextualLinks?.filter(link => link.placement === placement) ?? [];
 ---
 
 <BaseLayout title={pageSpec.metadata.title}>
@@ -92,6 +94,9 @@ const socialImage = pageSpec.media.items[0] ? new URL(pageSpec.media.items[0].sr
                 </tbody>
               </table>
             </div>
+            {contextualLinksAt('after_specs').map(link => (
+              <p class="contextual-link">{link.intro} <a href={link.href}>{link.anchorText}</a>{link.outro && ` ${link.outro}`}.</p>
+            ))}
           </section>
 
           {pageSpec.prosCons && (
@@ -118,9 +123,11 @@ const socialImage = pageSpec.media.items[0] ? new URL(pageSpec.media.items[0].sr
             </div>
           </section>
 
-          <section class="content-section"><h2>Comparação por critério</h2><ComparisonTable dimensions={pageSpec.comparison.dimensions} label1={pageSpec.brands[0].name} label2={pageSpec.brands[1].name} evidences={pageSpec.evidences} /></section>
+          <section class="content-section"><h2>Comparação por critério</h2><ComparisonTable dimensions={pageSpec.comparison.dimensions} label1={pageSpec.brands[0].name} label2={pageSpec.brands[1].name} evidences={pageSpec.evidences} />{contextualLinksAt('after_comparison').map(link => <p class="contextual-link">{link.intro} <a href={link.href}>{link.anchorText}</a>{link.outro && ` ${link.outro}`}.</p>)}</section>
 
           {pageSpec.verdict && <section class="verdict content-section"><p class="block-label">LEITURA EDITORIAL</p><h2>Como decidir</h2><p class="verdict-summary">{pageSpec.verdict.summary}{pageSpec.verdict.evidenceIds && <Sources evidenceIds={pageSpec.verdict.evidenceIds} evidences={pageSpec.evidences} />}</p><p>{pageSpec.verdict.recommendation}</p></section>}
+
+          {contextualLinksAt('after_verdict').map(link => <p class="contextual-link">{link.intro} <a href={link.href}>{link.anchorText}</a>{link.outro && ` ${link.outro}`}.</p>)}
 
           {pageSpec.faq && pageSpec.faq.length > 0 && <section class="faq content-section"><h2>Perguntas frequentes</h2>{pageSpec.faq.map(item => <div class="faq-item"><h3>{item.question}</h3><p>{item.answer}{item.evidenceIds && <Sources evidenceIds={item.evidenceIds} evidences={pageSpec.evidences} />}</p></div>)}</section>}
         </section>
@@ -137,9 +144,11 @@ const socialImage = pageSpec.media.items[0] ? new URL(pageSpec.media.items[0].sr
             </div>
           </section>
 
-          <section class="content-section"><h2>Comparação por critério</h2><ComparisonTable dimensions={pageSpec.comparison.dimensions} label1={pageSpec.options[0].name} label2={pageSpec.options[1].name} evidences={pageSpec.evidences} /></section>
+          <section class="content-section"><h2>Comparação por critério</h2><ComparisonTable dimensions={pageSpec.comparison.dimensions} label1={pageSpec.options[0].name} label2={pageSpec.options[1].name} evidences={pageSpec.evidences} />{contextualLinksAt('after_comparison').map(link => <p class="contextual-link">{link.intro} <a href={link.href}>{link.anchorText}</a>{link.outro && ` ${link.outro}`}.</p>)}</section>
 
           {pageSpec.verdict && <section class="verdict content-section"><p class="block-label">LEITURA EDITORIAL</p><h2>Como decidir</h2><p class="verdict-summary">{pageSpec.verdict.summary}{pageSpec.verdict.evidenceIds && <Sources evidenceIds={pageSpec.verdict.evidenceIds} evidences={pageSpec.evidences} />}</p><p>{pageSpec.verdict.recommendation}</p></section>}
+
+          {contextualLinksAt('after_verdict').map(link => <p class="contextual-link">{link.intro} <a href={link.href}>{link.anchorText}</a>{link.outro && ` ${link.outro}`}.</p>)}
 
           {pageSpec.faq && pageSpec.faq.length > 0 && <section class="faq content-section"><h2>Perguntas frequentes</h2>{pageSpec.faq.map(item => <div class="faq-item"><h3>{item.question}</h3><p>{item.answer}{item.evidenceIds && <Sources evidenceIds={item.evidenceIds} evidences={pageSpec.evidences} />}</p></div>)}</section>}
         </section>
@@ -181,6 +190,8 @@ const socialImage = pageSpec.media.items[0] ? new URL(pageSpec.media.items[0].sr
   .article-body { max-width: 920px; margin: 0 auto; padding-top: 3rem; }
   .content-section { margin: 4rem 0; }
   .content-section > h2, .faq > h2 { margin: 0 0 1.4rem; padding-bottom: .8rem; border-bottom: 1px solid var(--line); }
+  .contextual-link { margin: 1.25rem 0 0; color: var(--muted); line-height: 1.7; }
+  .contextual-link a { color: var(--ink); font-weight: 750; text-decoration-color: var(--amber-dark); text-underline-offset: .18em; }
 
   .quick-answer { margin: 0 0 3.5rem; background: var(--ink); color: var(--paper); padding: 2.2rem 2.4rem; border-top: 5px solid var(--amber); }
   .quick-answer .block-label { color: var(--amber); }

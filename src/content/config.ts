@@ -93,6 +93,14 @@ const quickFactSchema = z.object({
   evidenceIds: z.array(z.string()).min(1)
 });
 
+const contextualLinkSchema = z.object({
+  placement: z.enum(['after_specs', 'after_comparison', 'after_verdict']),
+  intro: z.string(),
+  anchorText: z.string(),
+  href: z.string().regex(/^\/[^?#]*\/$/, 'Contextual links must use an internal path with a trailing slash'),
+  outro: z.string().optional()
+});
+
 // ============================================
 // MODEL REVIEW SCHEMA
 // ============================================
@@ -129,6 +137,7 @@ const modelReviewSchema = z.object({
   quickAnswer: evidencedTextSchema,
   quickFacts: z.array(quickFactSchema).min(1),
   specs: z.array(specItemSchema),
+  contextualLinks: z.array(contextualLinkSchema).optional(),
   prosCons: prosConsSchema.optional(),
   faq: z.array(faqSchema).optional(),
   evidences: z.array(evidenceSchema),
@@ -169,6 +178,7 @@ const brandCompareSchema = z.object({
   comparison: z.object({
     dimensions: z.array(comparisonDimensionSchema)
   }),
+  contextualLinks: z.array(contextualLinkSchema).optional(),
   verdict: verdictSchema.optional(),
   faq: z.array(faqSchema).optional(),
   evidences: z.array(evidenceSchema),
@@ -209,6 +219,7 @@ const decisionCompareSchema = z.object({
   comparison: z.object({
     dimensions: z.array(decisionDimensionSchema)
   }),
+  contextualLinks: z.array(contextualLinkSchema).optional(),
   verdict: verdictSchema.optional(),
   faq: z.array(faqSchema).optional(),
   evidences: z.array(evidenceSchema),

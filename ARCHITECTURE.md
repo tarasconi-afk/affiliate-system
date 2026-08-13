@@ -24,6 +24,8 @@ As interfaces TypeScript correspondentes e o tipo união `PageSpec` ficam em `sr
 
 Cada PageSpec inclui metadados, mídia editorial, conteúdo próprio do formato e uma lista de evidências. Em análises de modelo, `quickAnswer` e `quickFacts` também vêm do PageSpec. O schema preserva os tipos `SPEC`, `DERIVED`, `OBSERVATION` e `MEASUREMENT`; o build falha para IDs duplicados ou referências inexistentes em `evidenceIds` e `derived_from`.
 
+PageSpecs também podem declarar `contextualLinks` com posição no conteúdo, texto de contexto, anchor e destino. O `ArticleLayout.astro` apenas renderiza essa estrutura: slugs específicos não ficam hardcoded no renderer, e futuras páginas podem adicionar links contextuais sem alterar o layout.
+
 ## Renderização e rotas
 
 - `src/pages/[...slug].astro`: rota dinâmica que lê a coleção `pages` em `getStaticPaths()` e gera um artigo estático por PageSpec.

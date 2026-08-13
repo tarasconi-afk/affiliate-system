@@ -81,6 +81,14 @@ export interface QuickFact {
   evidenceIds: string[];
 }
 
+export interface ContextualLink {
+  placement: 'after_specs' | 'after_comparison' | 'after_verdict';
+  intro: string;
+  anchorText: string;
+  href: string;
+  outro?: string;
+}
+
 // ============================================
 // MODEL REVIEW
 // ============================================
@@ -123,6 +131,7 @@ export interface ModelReviewPageSpec {
   quickAnswer: EvidencedText;
   quickFacts: QuickFact[];
   specs: SpecItem[];
+  contextualLinks?: ContextualLink[];
   prosCons?: ProsCons;
   faq?: FAQ[];
   evidences: Evidence[];
@@ -169,6 +178,7 @@ export interface BrandComparePageSpec {
   comparison: {
     dimensions: ComparisonDimension[];
   };
+  contextualLinks?: ContextualLink[];
   verdict?: Verdict;
   faq?: FAQ[];
   evidences: Evidence[];
@@ -209,6 +219,7 @@ export interface DecisionComparePageSpec {
   comparison: {
     dimensions: DecisionDimension[];
   };
+  contextualLinks?: ContextualLink[];
   verdict?: Verdict;
   faq?: FAQ[];
   evidences: Evidence[];

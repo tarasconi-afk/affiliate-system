@@ -116,6 +116,20 @@
       }
     ]
   },
+  "contextualLinks": [
+    {
+      "placement": "after_verdict",
+      "intro": "Para ver como esses critérios aparecem na avaliação de um modelo específico, consulte a",
+      "anchorText": "análise técnica da DeWalt DCD777",
+      "href": "/parafusadeira-dewalt-dcd777-vale-a-pena/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Depois de escolher a classe de tensão, compare",
+      "anchorText": "os ecossistemas Bosch e Makita",
+      "href": "/bosch-ou-makita-parafusadeira/"
+    }
+  ],
   "verdict": {
     "summary": "12V não é simplesmente “fraco” e 18V não é automaticamente “melhor”. A classe 12V prioriza compacidade; 18V oferece maior força disponível. O melhor ponto de partida é o tipo de trabalho e o ecossistema de bateria que você pretende manter.",
     "recommendation": "Escolha 12V se trabalha muito em espaços apertados ou valoriza uma ferramenta compacta. Escolha 18V se suas aplicações exigem mais força ou se você quer uma plataforma mais orientada a tarefas amplas. Compare o modelo específico antes de comprar.",

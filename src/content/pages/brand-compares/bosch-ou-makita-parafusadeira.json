@@ -93,6 +93,15 @@
       }
     ]
   },
+  "contextualLinks": [
+    {
+      "placement": "after_comparison",
+      "intro": "Se você ainda não definiu a classe de tensão, comece pelo",
+      "anchorText": "guia para escolher entre parafusadeiras 12V e 18V",
+      "href": "/parafusadeira-12v-ou-18v/",
+      "outro": "antes de comparar os ecossistemas"
+    }
+  ],
   "verdict": {
     "summary": "Não há vencedor universal. A decisão fica mais clara quando você compara o ecossistema de bateria que pretende manter, as condições de garantia do produto específico e a disponibilidade de assistência na sua região.",
     "recommendation": "Se você já possui baterias de uma das plataformas, permanecer no mesmo ecossistema costuma reduzir duplicação de carregadores e baterias. Em uma compra do zero, compare os modelos concretos que atendem ao seu uso antes de escolher apenas pela marca.",
