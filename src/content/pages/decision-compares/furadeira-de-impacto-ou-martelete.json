@@ -1,0 +1,427 @@
+{
+  "version": "1.0",
+  "type": "decision_compare",
+  "slug": "furadeira-de-impacto-ou-martelete",
+  "metadata": {
+    "title": "Furadeira de impacto ou martelete: o que muda na ficha?",
+    "metaDescription": "Compare furadeira de impacto e martelete pelos campos que os fabricantes declaram: encaixe, Joules, IPM, rotação e capacidades de perfuração.",
+    "publishedAt": "2026-08-17T21:22:39Z",
+    "updatedAt": "2026-08-17T21:22:39Z",
+    "author": "Ferramenta Clara",
+    "breadcrumbs": [
+      {
+        "name": "Início",
+        "url": "/"
+      },
+      {
+        "name": "Furadeira de impacto ou martelete"
+      }
+    ]
+  },
+  "hero": {
+    "heading": "Furadeira de impacto ou martelete: o que muda na ficha?",
+    "subheading": "Aprenda a reconhecer cada classe pela nomenclatura, pelo encaixe e pelos campos técnicos que aparecem na ficha do modelo.",
+    "methodNote": "A comparação resume somente os modelos oficiais consultados. Não é teste prático nem regra universal; a ficha do SKU específico sempre prevalece."
+  },
+  "media": {
+    "items": [
+      {
+        "src": "/images/rotary-hammer-combined-chuck-cc-1600.webp",
+        "alt": "Martelete com configuração combinada de encaixe SDS plus e mandril de três garras",
+        "width": 1600,
+        "height": 1028,
+        "aspectRatio": 1.556,
+        "label": "ENCAIXE"
+      }
+    ],
+    "captionLabel": "Imagem ilustrativa.",
+    "caption": "A foto mostra uma configuração combinada de SDS plus e mandril de três garras; não mostra necessariamente os modelos comparados neste guia."
+  },
+  "options": [
+    {
+      "name": "Furadeira/parafusadeira de impacto",
+      "description": "Na HP333DWYE consultada, impacto significa que, além de girar, a ferramenta declara batidas na direção da broca. A ficha usa mandril de aperto rápido — a parte que aperta e segura a broca — e publica capacidade em alvenaria, sem declarar energia por golpe em Joules.",
+      "evidenceIds": [
+        "ev_makita_hp333"
+      ]
+    },
+    {
+      "name": "Martelete / martelo perfurador",
+      "description": "Nos três martelos perfuradores consultados, as fichas combinam rotação, impactos e encaixe SDS plus, um sistema próprio de trava diferente do mandril de garras. Elas também declaram energia por golpe e capacidade em concreto; isso descreve estes SKUs, não todos os marteletes.",
+      "evidenceIds": [
+        "ev_makita_hr2470",
+        "ev_bosch_gbh224d",
+        "ev_bosch_gbh18v26d",
+        "ev_interface_signature",
+        "ev_joules_indicator"
+      ]
+    }
+  ],
+  "comparison": {
+    "dimensions": [
+      {
+        "label": "Interface / encaixe",
+        "option1": "HP333DWYE: mandril de aperto rápido, que aperta e segura a broca.",
+        "option2": "HR2470, GBH 2-24 D e GBH 18V-26 D: SDS plus, sistema próprio de trava. O rompedor HM0870C usa a variante SDS MAX, que não deve ser tratada como o mesmo encaixe.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_interface_signature"
+        ]
+      },
+      {
+        "label": "Energia por golpe",
+        "option1": "A ficha HP333DWYE não declara Joules.",
+        "option2": "HR2470 e GBH 2-24 D: 2,7 J; GBH 18V-26 D: 2,5 J; HM0870C: 11,4 J. Joule (J) mede a energia de cada golpe, não a quantidade de golpes por minuto.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_joules_indicator"
+        ]
+      },
+      {
+        "label": "Impactos por minuto",
+        "option1": "HP333DWYE: até 25.500 IPM. IPM indica quantas batidas ocorrem em um minuto.",
+        "option2": "Os martelos consultados vão de 1.100–2.650 a até 5.100 IPM. Esse campo mede frequência e não informa sozinho a energia de cada batida.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_ipm_nao_e_capacidade"
+        ]
+      },
+      {
+        "label": "Campo de material declarado",
+        "option1": "HP333DWYE: alvenaria 8 mm, aço 10 mm e madeira 21 mm; não declara concreto.",
+        "option2": "HR2470 e GBH 2-24 D: concreto 24 mm; GBH 18V-26 D: concreto 4–26 mm. Alvenaria e concreto são campos diferentes e não formam uma escala comparável.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_makita_hp333",
+          "ev_makita_hr2470",
+          "ev_bosch_gbh224d",
+          "ev_bosch_gbh18v26d"
+        ]
+      },
+      {
+        "label": "Fonte de energia",
+        "option1": "A HP333DWYE consultada usa bateria 12V.",
+        "option2": "Há martelos com fio e a bateria entre os modelos consultados: o GBH 18V-26 D é 18V. Fonte de energia não separa as classes.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_makita_hp333",
+          "ev_bosch_gbh18v26d",
+          "ev_watts_nao_e_limiar"
+        ]
+      },
+      {
+        "label": "Peso",
+        "option1": "HP333DWYE: “Peso: 1,3 kg”, sem qualificador equivalente ao modelo Bosch a bateria.",
+        "option2": "GBH 18V-26 D: “Peso sem bateria: 2,6 kg”; os modelos com fio trazem “Peso”. As definições não permitem comparação direta.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_peso_nao_comparavel"
+        ]
+      },
+      {
+        "label": "Nomenclatura / função declarada",
+        "option1": "Makita: Parafusadeira / Furadeira de Impacto.",
+        "option2": "As fichas usam Martelete Combinado, Martelo perfurador, Martelo perfurador a bateria e Martelo Rompedor. Só o GBH 18V-26 D declara perfuração, cinzelagem e Vario-Lock entre os modelos em que modos foram consultados.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_classes_martelo"
+        ]
+      }
+    ]
+  },
+  "taxonomyTable": {
+    "title": "As classes de martelo e o que cada ficha declara",
+    "intro": "A tabela resume apenas o que as fichas consultadas publicam. Campos ausentes não significam ausência de capacidade, e a ficha do modelo específico prevalece.",
+    "columns": {
+      "class": "Classe declarada",
+      "mechanism": "O que a ficha declara de mecanismo",
+      "interface": "Encaixe",
+      "application": "Perfuração declarada",
+      "caveat": "Limite da evidência"
+    },
+    "rows": [
+      {
+        "class": "Parafusadeira / Furadeira de Impacto — Makita HP333DWYE",
+        "mechanism": "Rotação de 0–1.700 / 0–450 rotações por minuto (RPM), que indicam quantas voltas a ferramenta dá; impactos de 0–25.500 / 0–6.750 IPM.",
+        "interface": "Mandril de aperto rápido.",
+        "application": "Alvenaria 8 mm, aço 10 mm e madeira 21 mm; não declara concreto.",
+        "caveat": "Não declara Joules, potência em W nem vibração.",
+        "evidenceIds": [
+          "ev_makita_hp333"
+        ]
+      },
+      {
+        "class": "Martelo perfurador / Martelete Combinado com fio — Makita HR2470 e Bosch GBH 2-24 D",
+        "mechanism": "Rotação, impactos e energia por golpe declarada: 2,7 J nos dois SKUs.",
+        "interface": "SDS plus.",
+        "application": "Concreto 24 mm nos dois SKUs; a HR2470 também declara metal 13 mm e madeira 32 mm.",
+        "caveat": "Não preencher campos ausentes; a ficha HR2470 não declara modos de operação.",
+        "evidenceIds": [
+          "ev_makita_hr2470",
+          "ev_bosch_gbh224d"
+        ]
+      },
+      {
+        "class": "Martelo perfurador a bateria — Bosch GBH 18V-26 D",
+        "mechanism": "Rotação 0–980 RPM, impactos 0–4.350 IPM, 2,5 J e modos declarados de perfuração, cinzelagem e Vario-Lock.",
+        "interface": "SDS plus.",
+        "application": "Concreto 4–26 mm.",
+        "caveat": "Peso de 2,6 kg sem bateria; não declara potência em W, aço ou madeira.",
+        "evidenceIds": [
+          "ev_bosch_gbh18v26d"
+        ]
+      },
+      {
+        "class": "Martelo Rompedor — Makita HM0870C",
+        "mechanism": "Impactos de 1.100–2.650 IPM e energia de 11,4 J; a ficha não declara rotação.",
+        "interface": "SDS MAX, variante diferente de SDS plus.",
+        "application": "Nenhuma capacidade de perfuração é declarada na ficha consultada.",
+        "caveat": "A classificação Martelo Rompedor vem do fabricante; a ausência dos campos não deve virar regra universal.",
+        "evidenceIds": [
+          "ev_makita_hm0870c"
+        ]
+      }
+    ]
+  },
+  "contextualLinks": [
+    {
+      "placement": "after_comparison",
+      "intro": "Se a dúvida ainda está dentro da classe de furadeiras e parafusadeiras, comece por",
+      "anchorText": "entender quando a ficha declara impacto ou não",
+      "href": "/parafusadeira-com-ou-sem-impacto/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Para ver uma ficha concreta sem função impacto declarada, consulte a",
+      "anchorText": "análise técnica da DeWalt DCD777",
+      "href": "/parafusadeira-dewalt-dcd777-vale-a-pena/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Se a classe já está definida e a próxima dúvida é a plataforma, veja",
+      "anchorText": "como escolher entre parafusadeiras 12V e 18V",
+      "href": "/parafusadeira-12v-ou-18v/"
+    }
+  ],
+  "verdict": {
+    "summary": "As fichas consultadas não separam as classes por um número isolado. Nome do produto, interface, forma de declarar impacto, energia por golpe quando fornecida, rotação e capacidade de perfuração formam um conjunto de sinais. Watts, IPM ou fonte de energia não funcionam como limiar universal.",
+    "recommendation": "Decida em sete passos: 1) leia a classificação do fabricante; 2) confira mandril, SDS plus ou SDS MAX; 3) compare apenas materiais e diâmetros com o mesmo nome; 4) veja se a ficha fornece energia por golpe; 5) não use IPM isoladamente como força; 6) preserve qualificadores como “peso sem bateria”; 7) na dúvida, siga a ficha do SKU específico.",
+    "evidenceIds": [
+      "ev_interface_signature",
+      "ev_joules_indicator",
+      "ev_ipm_nao_e_capacidade",
+      "ev_watts_nao_e_limiar",
+      "ev_classes_martelo",
+      "ev_peso_nao_comparavel"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Furadeira de impacto e martelete são a mesma coisa?",
+      "answer": "Nas fichas consultadas, não. A HP333DWYE é classificada como parafusadeira/furadeira de impacto, usa mandril e declara alvenaria. HR2470, GBH 2-24 D e GBH 18V-26 D recebem nomenclaturas de martelete ou martelo perfurador, usam SDS plus e declaram concreto e energia por golpe.",
+      "evidenceIds": [
+        "ev_makita_hp333",
+        "ev_makita_hr2470",
+        "ev_bosch_gbh224d",
+        "ev_bosch_gbh18v26d",
+        "ev_classes_martelo"
+      ]
+    },
+    {
+      "question": "Mais impactos por minuto significam mais força?",
+      "answer": "Não é uma conclusão sustentada pelos dados. IPM informa quantas batidas ocorrem por minuto, enquanto Joules informa a energia de cada golpe quando o fabricante publica esse campo. IPM não deve ser usado sozinho como medida de força.",
+      "evidenceIds": [
+        "ev_ipm_nao_e_capacidade",
+        "ev_joules_indicator"
+      ]
+    },
+    {
+      "question": "O que significa Joule em um martelete?",
+      "answer": "Joule (J) é uma medida da energia de cada golpe. Nos quatro martelos consultados, o campo varia de 2,5 J a 11,4 J; isso não permite afirmar que todo martelete publica Joules nem que modelos com o mesmo valor tenham desempenho equivalente.",
+      "evidenceIds": [
+        "ev_joules_indicator",
+        "ev_bosch_categoria_martelos"
+      ]
+    },
+    {
+      "question": "SDS plus e SDS MAX são iguais?",
+      "answer": "Não devem ser tratados como o mesmo encaixe. SDS plus aparece nos três martelos perfuradores consultados; SDS MAX aparece no martelo rompedor HM0870C. A interface do SKU específico deve ser confirmada antes de escolher o acessório.",
+      "evidenceIds": [
+        "ev_interface_signature"
+      ]
+    },
+    {
+      "question": "Todo martelete precisa ser ligado na tomada?",
+      "answer": "Não. A Bosch classifica o GBH 18V-26 D como martelo perfurador a bateria com SDS plus e declara tensão de 18,0 V. Portanto, fonte de energia não separa por si só as classes consultadas.",
+      "evidenceIds": [
+        "ev_bosch_gbh18v26d",
+        "ev_watts_nao_e_limiar"
+      ]
+    },
+    {
+      "question": "Posso comparar 8 mm de alvenaria com 24 mm de concreto?",
+      "answer": "Não como se fossem a mesma medição. A HP333DWYE declara alvenaria 8 mm, enquanto HR2470 e GBH 2-24 D declaram concreto 24 mm. Os nomes dos materiais são diferentes nas fichas e devem permanecer separados.",
+      "evidenceIds": [
+        "ev_makita_hp333",
+        "ev_makita_hr2470",
+        "ev_bosch_gbh224d"
+      ]
+    },
+    {
+      "question": "Como identificar a classe olhando a ficha?",
+      "answer": "Comece pela nomenclatura do fabricante. Depois confira interface, materiais e diâmetros declarados, rotação, impactos por minuto e energia por golpe quando houver. Esses sinais ajudam nos modelos consultados, mas não substituem a ficha do SKU específico.",
+      "evidenceIds": [
+        "ev_interface_signature",
+        "ev_classes_martelo"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_makita_hp333",
+      "evidence_type": "SPEC",
+      "claim": "A Makita classifica a HP333DWYE como parafusadeira/furadeira de impacto 12V CXT. A ficha declara mandril de aperto rápido, aço 10 mm, madeira 21 mm, alvenaria 8 mm, 0–1.700 / 0–450 RPM, 0–25.500 / 0–6.750 impactos por minuto, torque máximo 34 N.m, junta rígida 30 N.m, junta flexível 14 N.m, peso 1,3 kg e bateria 12V.",
+      "source_name": "Makita Brasil — HP333DWYE",
+      "source_url": "https://www.makita.com.br/catalogoFDetalhes.asp?codParamD=273",
+      "accessed_at": "2026-08-17T21:22:39Z",
+      "notes": "Fonte primária do SKU. N.m (newton-metro) é a unidade de torque usada pela fonte. A ficha declara alvenaria 8 mm; não declara concreto, energia em Joules, potência em W ou vibração."
+    },
+    {
+      "id": "ev_makita_hr2470",
+      "evidence_type": "SPEC",
+      "claim": "A Makita classifica a HR2470 como Martelete Combinado. A ficha declara SDS PLUS, 2,7 J, 800 W, 0–1.100 RPM, 0–4.500 impactos por minuto, concreto 24 mm, metal 13 mm, madeira 32 mm, peso 2,9 kg, vibração 15,5 m/s² e incerteza K de 1,5 m/s².",
+      "source_name": "Makita Brasil — HR2470",
+      "source_url": "https://makita.com.br/catalogoFDetalhes.asp?codParamD=704",
+      "accessed_at": "2026-08-17T21:22:39Z",
+      "notes": "Fonte primária do SKU. A ficha consultada não declara modos de operação; nenhum modo foi inferido do nome “Combinado”."
+    },
+    {
+      "id": "ev_bosch_gbh224d",
+      "evidence_type": "SPEC",
+      "claim": "A Bosch Professional classifica o PRO GBH 2-24 D como martelo perfurador com SDS plus. A ficha declara 820 W, 2,7 J, SDS plus, concreto 24 mm, 0–1.300 RPM, 0–5.100 impactos por minuto e peso 2,8 kg.",
+      "source_name": "Bosch Professional Brasil — GBH 2-24 D",
+      "source_url": "https://www.bosch-professional.com/br/pt/products/gbh-2-24-d-06112A02D5",
+      "accessed_at": "2026-08-17T21:22:39Z",
+      "notes": "Fonte primária do SKU. A página consultada não declara aço, madeira, vibração ou modos de operação."
+    },
+    {
+      "id": "ev_bosch_gbh18v26d",
+      "evidence_type": "SPEC",
+      "claim": "A Bosch Professional classifica o PRO GBH 18V-26 D como martelo perfurador a bateria com SDS plus. A ficha declara 18,0 V, SDS plus, 2,5 J, 0–980 RPM, 0–4.350 impactos por minuto, concreto 4–26 mm, peso sem bateria 2,6 kg, vibração de 16,7 m/s² em perfuração e 10,9 m/s² em cinzelamento, motor sem escovas e funções de perfuração, cinzelagem e Vario-Lock.",
+      "source_name": "Bosch Professional Brasil — GBH 18V-26 D",
+      "source_url": "https://www.bosch-professional.com/br/pt/products/gbh-18v-26-d-0611916001",
+      "accessed_at": "2026-08-17T21:22:39Z",
+      "notes": "Fonte primária do SKU. O peso é explicitamente “sem bateria”; a página não declara potência em W, aço ou madeira."
+    },
+    {
+      "id": "ev_makita_hm0870c",
+      "evidence_type": "SPEC",
+      "claim": "A Makita classifica a HM0870C como Martelo Rompedor. A ficha declara 1.100 W, 1.100–2.650 impactos por minuto, 11,4 J, SDS MAX, peso 5,1 kg, vibração 11,5 m/s², incerteza K de 1,5 m/s² e dimensões 449 × 109 × 230 mm.",
+      "source_name": "Makita Brasil — HM0870C",
+      "source_url": "https://www.makita.com.br/catalogoFDetalhes.asp?codParamD=740",
+      "accessed_at": "2026-08-17T21:22:39Z",
+      "notes": "Fonte primária do SKU. A ficha consultada não declara rotação, capacidade de perfuração em concreto, metal ou madeira, nem modos; essas ausências não definem a categoria por si sós."
+    },
+    {
+      "id": "ev_bosch_categoria_martelos",
+      "evidence_type": "SPEC",
+      "claim": "A Bosch Professional agrupa martelos perfuradores para perfurar e cinzelar. Na listagem consultada, há SKUs com energia de impacto exibida e ao menos um martelo perfurador a bateria cuja ficha resumida não mostra esse campo.",
+      "source_name": "Bosch Professional Brasil — categoria Martelos perfuradores",
+      "source_url": "https://www.bosch-professional.com/br/pt/martelos-perfuradores-131445-ocs-c/",
+      "accessed_at": "2026-08-17T21:22:39Z",
+      "notes": "Fonte primária de categoria usada apenas para escopo e limite de nomenclatura. Não substitui as fichas individuais nem transforma texto promocional em claim técnico."
+    },
+    {
+      "id": "ev_interface_signature",
+      "evidence_type": "DERIVED",
+      "claim": "Nos modelos consultados, a HP333DWYE usa mandril de aperto rápido; HR2470, GBH 2-24 D e GBH 18V-26 D usam SDS plus; HM0870C usa SDS MAX. A interface é um sinal útil para interpretar a classe nessas fichas, mas não é regra universal e não substitui a ficha do SKU.",
+      "source_name": "Leitura comparada das interfaces declaradas",
+      "accessed_at": "2026-08-17T21:22:39Z",
+      "derived_from": [
+        "ev_makita_hp333",
+        "ev_makita_hr2470",
+        "ev_bosch_gbh224d",
+        "ev_bosch_gbh18v26d",
+        "ev_makita_hm0870c"
+      ],
+      "notes": "SDS plus e SDS MAX permanecem identificados como variantes diferentes; não se afirma que todo martelete use SDS."
+    },
+    {
+      "id": "ev_joules_indicator",
+      "evidence_type": "DERIVED",
+      "claim": "Energia de impacto aparece nas fichas de HR2470 (2,7 J), GBH 2-24 D (2,7 J), GBH 18V-26 D (2,5 J) e HM0870C (11,4 J), mas não na HP333DWYE. Nos modelos consultados, Joules ajudam a interpretar a energia de cada golpe quando o fabricante fornece o campo; não são requisito universal de toda ficha de martelete.",
+      "source_name": "Leitura comparada dos campos de energia de impacto",
+      "accessed_at": "2026-08-17T21:22:39Z",
+      "derived_from": [
+        "ev_makita_hp333",
+        "ev_makita_hr2470",
+        "ev_bosch_gbh224d",
+        "ev_bosch_gbh18v26d",
+        "ev_makita_hm0870c",
+        "ev_bosch_categoria_martelos"
+      ],
+      "notes": "Não relaciona valores de Joules a aplicações nem presume desempenho equivalente entre SKUs."
+    },
+    {
+      "id": "ev_ipm_nao_e_capacidade",
+      "evidence_type": "DERIVED",
+      "claim": "Impactos por minuto medem frequência e não devem ser usados isoladamente como medida de força. A HP333DWYE chega a 25.500 IPM; os martelos consultados têm máximos entre 2.650 e 5.100 IPM, enquanto o HM0870C declara a maior energia por golpe do grupo, 11,4 J. Alvenaria e concreto permanecem campos diferentes.",
+      "source_name": "Leitura comparada de IPM e energia por golpe",
+      "accessed_at": "2026-08-17T21:22:39Z",
+      "derived_from": [
+        "ev_makita_hp333",
+        "ev_makita_hr2470",
+        "ev_bosch_gbh224d",
+        "ev_bosch_gbh18v26d",
+        "ev_makita_hm0870c"
+      ],
+      "notes": "Não afirma que mais ou menos IPM implique mais força e não compara alvenaria com concreto como a mesma escala."
+    },
+    {
+      "id": "ev_watts_nao_e_limiar",
+      "evidence_type": "DERIVED",
+      "claim": "Watts não fornecem um limiar universal para separar as classes consultadas: HP333DWYE e GBH 18V-26 D são modelos a bateria cujas fichas não declaram potência em W, enquanto HR2470, GBH 2-24 D e HM0870C declaram potência em W.",
+      "source_name": "Leitura comparada dos campos de alimentação e potência",
+      "accessed_at": "2026-08-17T21:22:39Z",
+      "derived_from": [
+        "ev_makita_hp333",
+        "ev_makita_hr2470",
+        "ev_bosch_gbh224d",
+        "ev_bosch_gbh18v26d",
+        "ev_makita_hm0870c"
+      ],
+      "notes": "Conclusão limitada à impossibilidade de usar W como regra universal; não compara desempenho."
+    },
+    {
+      "id": "ev_classes_martelo",
+      "evidence_type": "DERIVED",
+      "claim": "As fontes consultadas usam as classificações Parafusadeira/Furadeira de Impacto, Martelete Combinado, Martelo perfurador, Martelo perfurador a bateria e Martelo Rompedor. Somente a ficha GBH 18V-26 D declara perfuração, cinzelagem e Vario-Lock; campos ausentes nas outras fichas não foram preenchidos por inferência.",
+      "source_name": "Leitura comparada das nomenclaturas oficiais",
+      "accessed_at": "2026-08-17T21:22:39Z",
+      "derived_from": [
+        "ev_makita_hp333",
+        "ev_makita_hr2470",
+        "ev_bosch_gbh224d",
+        "ev_bosch_gbh18v26d",
+        "ev_makita_hm0870c",
+        "ev_bosch_categoria_martelos"
+      ],
+      "notes": "A classificação de cada fabricante e a ficha específica prevalecem; não se inferem modos do nome “Combinado”."
+    },
+    {
+      "id": "ev_peso_nao_comparavel",
+      "evidence_type": "DERIVED",
+      "claim": "Os pesos publicados não formam uma comparação direta porque as fichas usam definições diferentes. O GBH 18V-26 D declara 2,6 kg sem bateria; a HP333DWYE publica peso de 1,3 kg sem qualificador equivalente; HR2470, GBH 2-24 D e HM0870C publicam o campo “Peso”.",
+      "source_name": "Leitura comparada dos rótulos de peso",
+      "accessed_at": "2026-08-17T21:22:39Z",
+      "derived_from": [
+        "ev_makita_hp333",
+        "ev_makita_hr2470",
+        "ev_bosch_gbh224d",
+        "ev_bosch_gbh18v26d",
+        "ev_makita_hm0870c"
+      ],
+      "notes": "Os valores são preservados com os qualificadores das fontes e não recebem vencedor."
+    }
+  ]
+}

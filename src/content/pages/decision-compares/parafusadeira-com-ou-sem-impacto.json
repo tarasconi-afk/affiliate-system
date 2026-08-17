@@ -162,6 +162,12 @@
   "contextualLinks": [
     {
       "placement": "after_comparison",
+      "intro": "Se a comparação passa para outra classe de ferramenta, veja",
+      "anchorText": "o que muda entre furadeira de impacto e martelete",
+      "href": "/furadeira-de-impacto-ou-martelete/"
+    },
+    {
+      "placement": "after_comparison",
       "intro": "Para ver como a ausência de impacto aparece em uma ficha concreta, consulte a",
       "anchorText": "análise técnica da DeWalt DCD777",
       "href": "/parafusadeira-dewalt-dcd777-vale-a-pena/"
