@@ -1,0 +1,292 @@
+{
+  "version": "1.0",
+  "type": "decision_compare",
+  "slug": "bateria-parafusadeira-serve-em-outra-marca",
+  "metadata": {
+    "title": "Bateria de parafusadeira serve em outra marca? Como verificar",
+    "metaDescription": "Entenda quando uma bateria pode ser compartilhada entre ferramentas e marcas, usando declarações oficiais dos sistemas Bosch, Makita LXT e AMPShare.",
+    "publishedAt": "2026-08-17T18:28:47Z",
+    "updatedAt": "2026-08-17T18:28:47Z",
+    "author": "Ferramenta Clara",
+    "breadcrumbs": [
+      {
+        "name": "Início",
+        "url": "/"
+      },
+      {
+        "name": "Compatibilidade de baterias"
+      }
+    ]
+  },
+  "hero": {
+    "heading": "Bateria de parafusadeira serve em outra marca?",
+    "subheading": "Compatibilidade é uma declaração de plataforma, não uma conclusão segura baseada apenas na marca, na tensão ou na aparência.",
+    "methodNote": "Este guia compara somente escopos de compatibilidade publicados pelos fabricantes. A ficha da bateria e da ferramenta específicas sempre prevalece."
+  },
+  "media": {
+    "items": [
+      {
+        "src": "/images/bosch-makita-cc-1600.webp",
+        "alt": "Ferramentas Bosch e Makita usadas como imagem ilustrativa de marcas diferentes",
+        "width": 1600,
+        "height": 739,
+        "aspectRatio": 1.35,
+        "label": "PLATAFORMAS"
+      }
+    ],
+    "captionLabel": "Imagem ilustrativa.",
+    "caption": "A presença de ferramentas de marcas diferentes na mesma foto não demonstra compatibilidade entre baterias."
+  },
+  "options": [
+    {
+      "name": "Reaproveitar sua plataforma atual",
+      "description": "Identifique o nome exato do sistema na bateria e na ferramenta e procure a declaração oficial correspondente. Nas fontes consultadas, Bosch Professional 12V, Bosch Professional 18V e Makita LXT 18V descrevem o compartilhamento dentro de escopos nomeados.",
+      "evidenceIds": [
+        "ev_bosch_12v",
+        "ev_bosch_18v",
+        "ev_makita_lxt",
+        "ev_platform_scope"
+      ]
+    },
+    {
+      "name": "Trocar de plataforma",
+      "description": "Se a ferramenta desejada não aparece no sistema documentado para sua bateria, trate a escolha como outra plataforma até encontrar confirmação primária. Há exceções multimarcas, como AMPShare, mas somente para produtos integrados ao sistema.",
+      "evidenceIds": [
+        "ev_ampshare",
+        "ev_cross_brand_boundary"
+      ]
+    }
+  ],
+  "comparison": {
+    "dimensions": [
+      {
+        "label": "Ponto de partida",
+        "option1": "Registrar marca, tensão, nome da plataforma e identificação da bateria e da ferramenta.",
+        "option2": "Definir qual plataforma oficial inclui a ferramenta pretendida, sem presumir reaproveitamento.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_platform_scope"
+        ]
+      },
+      {
+        "label": "Evidência necessária",
+        "option1": "Declaração do fabricante incluindo bateria e ferramenta no mesmo sistema ou classe.",
+        "option2": "Declaração da nova plataforma; em sistema multimarcas, confirmação de que os produtos foram integrados.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_bosch_12v",
+          "ev_bosch_18v",
+          "ev_makita_lxt",
+          "ev_ampshare"
+        ]
+      },
+      {
+        "label": "Mesma marca",
+        "option1": "Não encerra a verificação: a Bosch publica escopos separados para Professional 12V e Professional 18V.",
+        "option2": "A decisão continua sendo de plataforma e produto específico, não apenas de logotipo.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_bosch_12v",
+          "ev_bosch_18v",
+          "ev_platform_scope"
+        ]
+      },
+      {
+        "label": "Outra marca",
+        "option1": "Só trate como compatível quando houver declaração explícita para o sistema e os produtos envolvidos.",
+        "option2": "AMPShare é um exemplo documentado de compatibilidade entre marcas para produtos integrados à aliança.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_ampshare",
+          "ev_cross_brand_boundary"
+        ]
+      }
+    ]
+  },
+  "taxonomyTable": {
+    "title": "O que cada plataforma declara",
+    "intro": "A tabela resume somente o escopo publicado nas fontes consultadas. Ela não converte silêncio documental em incompatibilidade comprovada.",
+    "columns": {
+      "class": "Plataforma / sistema",
+      "mechanism": "Compatibilidade declarada",
+      "interface": "Escopo documentado",
+      "application": "Como identificar",
+      "caveat": "Limite da evidência"
+    },
+    "rows": [
+      {
+        "class": "Bosch Professional 12V System",
+        "mechanism": "A Bosch declara baterias e carregadores 12V intercambiáveis com ferramentas da classe 12V.",
+        "interface": "Baterias, carregadores e ferramentas Bosch Professional da classe 12V.",
+        "application": "Confirmar a identificação Professional 12V na bateria, no carregador e na ferramenta.",
+        "caveat": "A fonte consultada não estende essa declaração a 18V ou a outras marcas.",
+        "evidenceIds": [
+          "ev_bosch_12v"
+        ]
+      },
+      {
+        "class": "Bosch Professional 18V System",
+        "mechanism": "A Bosch declara baterias e carregadores 18V compatíveis com ferramentas novas e existentes do sistema desde 2008.",
+        "interface": "Professional 18V System; a página também remete às ferramentas 18V integradas ao AMPShare.",
+        "application": "Confirmar Professional 18V System e, fora da Bosch, a integração ao AMPShare.",
+        "caveat": "A menção a outras marcas é limitada às ferramentas que pertencem à aliança AMPShare.",
+        "evidenceIds": [
+          "ev_bosch_18v",
+          "ev_ampshare"
+        ]
+      },
+      {
+        "class": "Makita LXT 18V",
+        "mechanism": "A Makita informa mais de 440 modelos da plataforma LXT compartilhando a mesma bateria 18V.",
+        "interface": "Modelos identificados pela fabricante como parte da plataforma 18V LXT.",
+        "application": "Confirmar a designação 18V LXT na documentação do modelo específico.",
+        "caveat": "A fonte não sustenta compatibilidade com outras marcas nem com outras plataformas Makita.",
+        "evidenceIds": [
+          "ev_makita_lxt"
+        ]
+      },
+      {
+        "class": "AMPShare",
+        "mechanism": "A Bosch declara compatibilidade entre baterias, carregadores e ferramentas integrados ao AMPShare, independentemente da marca.",
+        "interface": "Produtos pertencentes à aliança multimarcas e integrados ao sistema AMPShare.",
+        "application": "Procurar o rótulo AMPShare e confirmar o produto na documentação da marca participante.",
+        "caveat": "A declaração não abrange automaticamente todo produto das marcas participantes.",
+        "evidenceIds": [
+          "ev_ampshare"
+        ]
+      }
+    ]
+  },
+  "contextualLinks": [
+    {
+      "placement": "after_comparison",
+      "intro": "Para comparar duas plataformas já presentes neste guia, veja",
+      "anchorText": "como Bosch e Makita documentam seus ecossistemas",
+      "href": "/bosch-ou-makita-parafusadeira/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Se a dúvida começa pela classe de tensão, consulte",
+      "anchorText": "o guia de parafusadeiras 12V ou 18V",
+      "href": "/parafusadeira-12v-ou-18v/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Depois de definir a plataforma, confira também",
+      "anchorText": "a diferença entre parafusadeiras com e sem impacto",
+      "href": "/parafusadeira-com-ou-sem-impacto/"
+    }
+  ],
+  "verdict": {
+    "summary": "Uma bateria pode servir em ferramentas de outra marca quando existe um sistema multimarcas que declare essa compatibilidade para os produtos envolvidos. Fora de uma declaração assim, as fontes consultadas sustentam apenas os escopos nomeados por cada fabricante; isso não prova incompatibilidade universal, mas não autoriza presumir compatibilidade.",
+    "recommendation": "Verifique, nesta ordem, o nome da plataforma, a classe de tensão, a identificação da bateria e da ferramenta e a documentação oficial. Decida entre manter ou trocar de plataforma somente depois dessa confirmação, sem usar a marca isoladamente como atalho.",
+    "evidenceIds": [
+      "ev_platform_scope",
+      "ev_cross_brand_boundary"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Bateria de parafusadeira serve em outra marca?",
+      "answer": "Pode servir quando os fabricantes incluem explicitamente os produtos no mesmo sistema multimarcas. No AMPShare, a Bosch declara compatibilidade entre baterias, carregadores e ferramentas integrados à aliança, independentemente da marca. Essa declaração não deve ser extrapolada para produtos fora do sistema.",
+      "evidenceIds": [
+        "ev_ampshare",
+        "ev_cross_brand_boundary"
+      ]
+    },
+    {
+      "question": "Ter a mesma tensão é suficiente para confirmar compatibilidade?",
+      "answer": "A mesma tensão, sozinha, não é evidência suficiente nas fontes consultadas. As declarações são vinculadas a sistemas e classes nomeados, como Bosch Professional 12V, Bosch Professional 18V, Makita LXT 18V e AMPShare.",
+      "evidenceIds": [
+        "ev_bosch_12v",
+        "ev_bosch_18v",
+        "ev_makita_lxt",
+        "ev_ampshare",
+        "ev_platform_scope"
+      ]
+    },
+    {
+      "question": "Ser da mesma marca garante que a bateria serve?",
+      "answer": "A marca isolada não encerra a verificação. A Bosch, por exemplo, publica declarações separadas para as classes Professional 12V e Professional 18V. Confirme sempre a plataforma e o produto específico.",
+      "evidenceIds": [
+        "ev_bosch_12v",
+        "ev_bosch_18v",
+        "ev_platform_scope"
+      ]
+    },
+    {
+      "question": "Como verificar antes de escolher outra ferramenta?",
+      "answer": "Compare a identificação da bateria e da ferramenta com a página oficial da plataforma. Em alianças multimarcas, confirme também se o produto foi integrado e identificado como parte do sistema; o nome da marca, sozinho, não substitui essa checagem.",
+      "evidenceIds": [
+        "ev_ampshare",
+        "ev_platform_scope"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_bosch_12v",
+      "evidence_type": "SPEC",
+      "claim": "A Bosch Professional Brasil declara que qualquer bateria e carregador Bosch 12V pode ser combinado com ferramentas da classe Bosch Professional 12V.",
+      "source_name": "Bosch Professional Brasil — Sistema de baterias 12V",
+      "source_url": "https://www.bosch-professional.com/br/pt/sistema-de-baterias-12v-225588-ocs-c/",
+      "accessed_at": "2026-08-17T18:28:47Z",
+      "notes": "Fonte primária; a declaração é limitada à classe Bosch Professional 12V."
+    },
+    {
+      "id": "ev_bosch_18v",
+      "evidence_type": "SPEC",
+      "claim": "A Bosch Professional Brasil declara que baterias e carregadores 18V podem ser usados com ferramentas novas e existentes do Professional 18V System desde 2008; a página limita a extensão a outras marcas às ferramentas 18V da aliança AMPShare.",
+      "source_name": "Bosch Professional Brasil — Professional 18V System",
+      "source_url": "https://www.bosch-professional.com/br/pt/18v-cordless-system/",
+      "accessed_at": "2026-08-17T18:28:47Z",
+      "notes": "Fonte primária para o escopo Bosch Professional 18V e sua relação declarada com AMPShare."
+    },
+    {
+      "id": "ev_makita_lxt",
+      "evidence_type": "SPEC",
+      "claim": "A Makita Brasil informa que mais de 440 modelos da plataforma 18V LXT compartilham a mesma bateria 18V.",
+      "source_name": "Makita Brasil — Linha 18V LXT",
+      "source_url": "https://www.makita.com.br/lxt.asp",
+      "accessed_at": "2026-08-17T18:28:47Z",
+      "notes": "Fonte primária; o claim é limitado aos modelos identificados pela fabricante como parte da plataforma LXT 18V."
+    },
+    {
+      "id": "ev_ampshare",
+      "evidence_type": "SPEC",
+      "claim": "A Bosch Professional declara que baterias, carregadores e ferramentas integrados ao AMPShare são compatíveis independentemente da marca e orienta identificar os produtos pelo rótulo AMPShare e pela documentação das marcas participantes.",
+      "source_name": "Bosch Professional Brasil — AMPShare",
+      "source_url": "https://www.bosch-professional.com/br/pt/ampshare/landingpage.html",
+      "accessed_at": "2026-08-17T18:28:47Z",
+      "notes": "Fonte primária para a exceção multimarcas; não abrange automaticamente todos os produtos de uma marca participante."
+    },
+    {
+      "id": "ev_platform_scope",
+      "evidence_type": "DERIVED",
+      "claim": "Nas fontes consultadas, compatibilidade é descrita por plataforma, classe de tensão e inclusão do produto no sistema; compartilhar marca ou tensão, isoladamente, não é evidência suficiente para ampliar o escopo declarado.",
+      "source_name": "Leitura comparada das declarações oficiais de plataforma",
+      "accessed_at": "2026-08-17T18:28:47Z",
+      "derived_from": [
+        "ev_bosch_12v",
+        "ev_bosch_18v",
+        "ev_makita_lxt",
+        "ev_ampshare"
+      ],
+      "notes": "Síntese editorial dos limites explícitos das quatro fontes; não é teste de compatibilidade."
+    },
+    {
+      "id": "ev_cross_brand_boundary",
+      "evidence_type": "DERIVED",
+      "claim": "Entre as fontes consultadas, AMPShare sustenta compatibilidade entre marcas somente para produtos integrados ao sistema. As demais fontes documentam compatibilidade dentro de plataformas nomeadas; esse silêncio fora do escopo não demonstra incompatibilidade universal.",
+      "source_name": "Leitura comparada dos escopos Bosch, Makita LXT e AMPShare",
+      "accessed_at": "2026-08-17T18:28:47Z",
+      "derived_from": [
+        "ev_bosch_12v",
+        "ev_bosch_18v",
+        "ev_makita_lxt",
+        "ev_ampshare"
+      ],
+      "notes": "Conclusão conservadora: ausência de declaração não foi convertida em incompatibilidade comprovada."
+    }
+  ]
+}

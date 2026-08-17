@@ -5,7 +5,7 @@ Este arquivo documenta a proveniência dos assets fotográficos publicados pela 
 | Imagem publicada | Original preservado | Autor | Licença | Fonte | Uso |
 |---|---|---|---|---|---|
 | `public/images/dewalt-20v-cc-1600.webp` | `assets-source/images/dewalt-20v-cc.jpg` | TaurusEmerald | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:DeWalt_20_Volt_Max_Cordless_Drill.jpg | Homepage e análise DCD777, sempre como imagem ilustrativa de uma ferramenta DeWalt 20V. |
-| `public/images/bosch-makita-cc-1600.webp` | `assets-source/images/bosch-makita-cc.jpg` | Hendrikp111 | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Akutrell_Makita_ja_Bosch.jpg | Homepage e comparação Bosch/Makita. |
+| `public/images/bosch-makita-cc-1600.webp` | `assets-source/images/bosch-makita-cc.jpg` | Hendrikp111 | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Akutrell_Makita_ja_Bosch.jpg | Homepage, comparação Bosch/Makita e guia de compatibilidade de baterias, sempre como imagem ilustrativa de ferramentas de marcas diferentes. |
 | `public/images/makita-lxt-18v-cc-1600.webp` | `assets-source/images/makita-lxt-18v-cc.jpg` | Santeri Viinamäki | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Makita_LXT_drill.jpg | Exemplo visual de ferramenta 18V. |
 | `public/images/bosch-12v-cc-1600.webp` | `assets-source/images/bosch-12v-cc.jpg` | Charles & Hudson | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Bosch_12V_Max_Lithium_Ion_Impact_Driver_(5073183037).jpg | Exemplo visual de ferramenta 12V. |
 

@@ -100,6 +100,12 @@
       "anchorText": "guia para escolher entre parafusadeiras 12V e 18V",
       "href": "/parafusadeira-12v-ou-18v/",
       "outro": "antes de comparar os ecossistemas"
+    },
+    {
+      "placement": "after_comparison",
+      "intro": "Para entender quando uma bateria pode atravessar marcas ou deve permanecer no mesmo sistema, consulte",
+      "anchorText": "o guia de compatibilidade entre plataformas de bateria",
+      "href": "/bateria-parafusadeira-serve-em-outra-marca/"
     }
   ],
   "verdict": {
@@ -144,7 +150,7 @@
       "claim": "O Bosch Professional 18V System informa compatibilidade de baterias e carregadores de 18V com ferramentas novas e existentes do sistema desde 2008.",
       "source_name": "Bosch Professional Brasil — Professional 18V System",
       "source_url": "https://www.bosch-professional.com/br/pt/18v-cordless-system/",
-      "accessed_at": "2026-08-12T13:40:00Z",
+      "accessed_at": "2026-08-17T18:28:47Z",
       "notes": "Fonte primária para compatibilidade do ecossistema Bosch Professional 18V."
     },
     {
@@ -162,7 +168,7 @@
       "claim": "A plataforma Makita LXT 18V no Brasil declara mais de 440 modelos compartilhando a mesma bateria 18V.",
       "source_name": "Makita Brasil — Linha 18V LXT",
       "source_url": "https://www.makita.com.br/lxt.asp",
-      "accessed_at": "2026-08-12T13:40:00Z",
+      "accessed_at": "2026-08-17T18:28:47Z",
       "notes": "Fonte primária brasileira para amplitude declarada da plataforma LXT."
     },
     {

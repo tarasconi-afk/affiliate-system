@@ -134,6 +134,12 @@
       "intro": "Além da tensão, confira",
       "anchorText": "se a sua aplicação pede uma parafusadeira com impacto ou sem impacto",
       "href": "/parafusadeira-com-ou-sem-impacto/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Antes de reaproveitar uma bateria em outra ferramenta, veja",
+      "anchorText": "como verificar compatibilidade entre marcas e plataformas",
+      "href": "/bateria-parafusadeira-serve-em-outra-marca/"
     }
   ],
   "verdict": {
@@ -194,7 +200,7 @@
       "claim": "O sistema Bosch Professional 12V no Brasil destaca ferramentas pequenas para espaços estreitos e compatibilidade de baterias dentro da classe 12V.",
       "source_name": "Bosch Professional Brasil — Sistema de baterias 12V",
       "source_url": "https://www.bosch-professional.com/br/pt/sistema-de-baterias-12v-225588-ocs-c/",
-      "accessed_at": "2026-08-12T13:40:00Z",
+      "accessed_at": "2026-08-17T18:28:47Z",
       "notes": "Fonte primária para posicionamento e compatibilidade do sistema 12V usado como exemplo."
     },
     {
@@ -203,7 +209,7 @@
       "claim": "O sistema Bosch Professional 18V no Brasil oferece uma gama ampla e informa compatibilidade de baterias/carregadores dentro da classe 18V, incluindo compatibilidade desde 2008.",
       "source_name": "Bosch Professional Brasil — Professional 18V System",
       "source_url": "https://www.bosch-professional.com/br/pt/18v-cordless-system/",
-      "accessed_at": "2026-08-12T13:40:00Z",
+      "accessed_at": "2026-08-17T18:28:47Z",
       "notes": "Fonte primária para posicionamento e compatibilidade do sistema 18V usado como exemplo."
     }
   ]
