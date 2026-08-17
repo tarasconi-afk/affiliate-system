@@ -36,3 +36,10 @@ https://ferramentaclara.com.br
 5. Corrigir erros causados pela alteração.
 6. Mostrar resumo e arquivos modificados.
 7. Não fazer commit até receber autorização explícita.
+
+## Diversidade de imagens na homepage
+
+- Não repetir o mesmo `src` na homepage, nem reutilizar a imagem do hero em cards.
+- Cada artigo novo deve ter uma imagem própria na homepage.
+- Registrar origem e licença de novos assets em `IMAGES_REGISTRY.md` e `/creditos/`.
+- Executar `npm run qa:images` antes de qualquer commit que altere a homepage.
