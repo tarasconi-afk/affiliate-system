@@ -1,0 +1,56 @@
+---
+import type { Evidence, TaxonomyTable as TaxonomyTableData } from '../lib/types';
+import Sources from './Sources.astro';
+
+interface Props {
+  table: TaxonomyTableData;
+  evidences: Evidence[];
+}
+
+const { table, evidences } = Astro.props;
+const columns = [
+  ['class', table.columns.class],
+  ['mechanism', table.columns.mechanism],
+  ['interface', table.columns.interface],
+  ['application', table.columns.application],
+  ['caveat', table.columns.caveat]
+] as const;
+---
+
+<section class="taxonomy-section content-section" aria-labelledby="taxonomy-title">
+  <h2 id="taxonomy-title">{table.title}</h2>
+  {table.intro && <p class="taxonomy-intro">{table.intro}</p>}
+  <div class="taxonomy-wrapper" tabindex="0" role="region" aria-label={`${table.title}; tabela com rolagem horizontal em telas pequenas`}>
+    <table class="taxonomy-table">
+      <caption class="sr-only">{table.title}</caption>
+      <thead>
+        <tr>{columns.map(([, label]) => <th scope="col">{label}</th>)}</tr>
+      </thead>
+      <tbody>
+        {table.rows.map(row => (
+          <tr>
+            {columns.map(([key], index) => index === 0
+              ? <th scope="row">{row[key]}<Sources evidenceIds={row.evidenceIds} evidences={evidences} /></th>
+              : <td>{row[key]}</td>)}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<style>
+  .taxonomy-section { margin: 4rem 0; }
+  .taxonomy-section > h2 { margin: 0 0 1.4rem; padding-bottom: .8rem; border-bottom: 1px solid var(--line); }
+  .taxonomy-intro { max-width: 72ch; margin: -.35rem 0 1.25rem; line-height: 1.7; }
+  .taxonomy-wrapper { overflow-x: auto; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--line); }
+  .taxonomy-table { width: 100%; min-width: 920px; border-collapse: collapse; table-layout: fixed; }
+  .taxonomy-table th, .taxonomy-table td { padding: .9rem .8rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); line-height: 1.5; overflow-wrap: break-word; }
+  .taxonomy-table thead th { background: var(--ink); color: var(--paper); font-size: .68rem; text-transform: uppercase; letter-spacing: .06em; }
+  .taxonomy-table thead th:first-child { color: var(--amber); }
+  .taxonomy-table tbody th { width: 20%; color: var(--ink); font-size: .78rem; }
+  .taxonomy-table td { width: 20%; color: var(--muted); font-size: .8rem; }
+  .taxonomy-table tbody tr:nth-child(even) { background: rgba(255,255,255,.28); }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+  @media (max-width: 700px) { .taxonomy-wrapper { margin-right: -1rem; padding-right: 1rem; } }
+</style>

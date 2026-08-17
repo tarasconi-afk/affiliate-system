@@ -1,0 +1,298 @@
+{
+  "version": "1.0",
+  "type": "decision_compare",
+  "slug": "parafusadeira-com-ou-sem-impacto",
+  "metadata": {
+    "title": "Parafusadeira com impacto ou sem impacto: qual você precisa?",
+    "metaDescription": "Entenda o que a função impacto acrescenta, como identificá-la na ficha e como distinguir furadeira com percussão, impact driver e chave de impacto.",
+    "publishedAt": "2026-08-17T16:18:03Z",
+    "updatedAt": "2026-08-17T16:18:03Z",
+    "author": "Ferramenta Clara",
+    "breadcrumbs": [
+      {
+        "name": "Início",
+        "url": "/"
+      },
+      {
+        "name": "Com ou sem impacto"
+      }
+    ]
+  },
+  "hero": {
+    "heading": "Parafusadeira com impacto ou sem impacto: qual você precisa?",
+    "subheading": "Compare o que as fichas declaram e não confunda percussão para perfuração com outras classes de ferramenta.",
+    "methodNote": "A comparação principal usa duas ferramentas Makita 12V da mesma família. As conclusões valem para este par; a ficha do SKU específico prevalece."
+  },
+  "media": {
+    "items": [
+      {
+        "src": "/images/bosch-12v-cc-1600.webp",
+        "alt": "Parafusadeira de impacto Bosch 12V usada como imagem editorial ilustrativa",
+        "width": 1600,
+        "height": 1071,
+        "aspectRatio": 1.35,
+        "label": "IMPACT DRIVER"
+      }
+    ],
+    "captionLabel": "Imagem ilustrativa.",
+    "caption": "A foto exemplifica a classe parafusadeira de impacto; não mostra os modelos Makita DF333DWYE ou HP333DWYE comparados no texto."
+  },
+  "options": [
+    {
+      "name": "Sem impacto",
+      "description": "No exemplo consultado, a DF333DWYE é classificada como parafusadeira/furadeira e declara capacidades em aço e madeira, sem campos de alvenaria, concreto ou impactos por minuto. Isso descreve a ficha do modelo, não uma regra de inadequação universal.",
+      "evidenceIds": [
+        "ev_makita_df333"
+      ]
+    },
+    {
+      "name": "Com impacto / percussão",
+      "description": "No par comparado, a HP333DWYE é classificada como parafusadeira/furadeira de impacto e acrescenta capacidade declarada em alvenaria e duas faixas de impactos por minuto. Esses campos são indicadores úteis na ficha do modelo.",
+      "evidenceIds": [
+        "ev_makita_hp333"
+      ]
+    }
+  ],
+  "comparison": {
+    "dimensions": [
+      {
+        "label": "Nome na ficha",
+        "option1": "DF333DWYE: Parafusadeira / Furadeira.",
+        "option2": "HP333DWYE: Parafusadeira / Furadeira de Impacto.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_makita_df333",
+          "ev_makita_hp333"
+        ]
+      },
+      {
+        "label": "Capacidades declaradas",
+        "option1": "Aço: 10 mm; madeira: 21 mm. A ficha não traz alvenaria ou concreto.",
+        "option2": "Aço: 10 mm; madeira: 21 mm; alvenaria: 8 mm.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_makita_df333",
+          "ev_makita_hp333"
+        ]
+      },
+      {
+        "label": "Impactos por minuto",
+        "option1": "A ficha consultada não apresenta campo de impactos por minuto.",
+        "option2": "Alta: 0–25.500; baixa: 0–6.750 impactos por minuto.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_makita_df333",
+          "ev_makita_hp333"
+        ]
+      },
+      {
+        "label": "Rotação e torque de junta",
+        "option1": "0–1.700 / 0–450 RPM; junta rígida 30 Nm e flexível 14 Nm.",
+        "option2": "0–1.700 / 0–450 RPM; junta rígida 30 Nm e flexível 14 Nm.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_pair_comparison"
+        ]
+      },
+      {
+        "label": "Outras diferenças da ficha",
+        "option1": "1,1 kg; 179 × 66 × 212 mm.",
+        "option2": "1,3 kg; 193 × 66 × 229 mm; torque máximo declarado de 34 Nm.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_makita_df333",
+          "ev_makita_hp333"
+        ]
+      }
+    ]
+  },
+  "taxonomyTable": {
+    "title": "Quatro classes que não devem ser tratadas como sinônimos",
+    "intro": "Use esta tabela como mapa de leitura, não como regra universal. Nomes comerciais variam, algumas ferramentas combinam funções e a ficha do SKU específico prevalece.",
+    "columns": {
+      "class": "Classe",
+      "mechanism": "Como o impacto aparece na ficha",
+      "interface": "Interface",
+      "application": "Aplicação declarada",
+      "caveat": "O que não inferir"
+    },
+    "rows": [
+      {
+        "class": "Parafusadeira/furadeira sem impacto",
+        "mechanism": "Na DF333DWYE, a ficha não declara impactos por minuto.",
+        "interface": "Mandril de aperto rápido, com capacidade de 0,8–10 mm.",
+        "application": "Aço 10 mm e madeira 21 mm no modelo consultado.",
+        "caveat": "A ausência de impacto na ficha não demonstra fraqueza ou inadequação universal.",
+        "evidenceIds": [
+          "ev_makita_df333"
+        ]
+      },
+      {
+        "class": "Furadeira/parafusadeira com impacto ou percussão",
+        "mechanism": "Na HP333DWYE, a ficha traz seletor de funções e duas faixas de impactos por minuto.",
+        "interface": "Mandril de aperto rápido.",
+        "application": "Aço 10 mm, madeira 21 mm e alvenaria 8 mm no modelo consultado.",
+        "caveat": "A ficha não sustenta afirmar que esta classe substitui um martelete.",
+        "evidenceIds": [
+          "ev_makita_hp333"
+        ]
+      },
+      {
+        "class": "Parafusadeira de impacto / impact driver",
+        "mechanism": "Na TD110DWYE, a ficha declara 0–3.500 impactos por minuto e capacidades por tipo de parafuso.",
+        "interface": "Encaixe sextavado de 1/4 pol. no modelo consultado.",
+        "application": "Fixadores M4–M8, M5–M12 e M5–M10, conforme a classe declarada de cada parafuso.",
+        "caveat": "Este exemplo não sustenta a regra universal de que uma parafusadeira de impacto não fura.",
+        "evidenceIds": [
+          "ev_makita_td110"
+        ]
+      },
+      {
+        "class": "Chave de impacto / impact wrench",
+        "mechanism": "Na TW141DZ, a ficha declara 0–3.200 impactos por minuto e capacidades por tipo de parafuso.",
+        "interface": "Encaixe quadrado de 1/2 pol. no modelo consultado.",
+        "application": "Parafuso padrão M8–M16 e parafuso de máquina M6–M12.",
+        "caveat": "Não extrapole o encaixe deste SKU para todos os modelos ou marcas.",
+        "evidenceIds": [
+          "ev_makita_tw141"
+        ]
+      }
+    ]
+  },
+  "contextualLinks": [
+    {
+      "placement": "after_comparison",
+      "intro": "Para ver como a ausência de impacto aparece em uma ficha concreta, consulte a",
+      "anchorText": "análise técnica da DeWalt DCD777",
+      "href": "/parafusadeira-dewalt-dcd777-vale-a-pena/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Depois de definir a função, avalie também",
+      "anchorText": "se uma parafusadeira 12V ou 18V combina com o seu uso",
+      "href": "/parafusadeira-12v-ou-18v/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Se a próxima decisão for a plataforma de bateria, compare",
+      "anchorText": "os ecossistemas Bosch e Makita",
+      "href": "/bosch-ou-makita-parafusadeira/"
+    }
+  ],
+  "verdict": {
+    "summary": "Neste par, a função impacto acrescenta à ficha da HP333DWYE a capacidade em alvenaria e faixas de impactos por minuto, enquanto aço, madeira, rotações e torques de junta coincidem com a DF333DWYE. Há também diferenças de dimensões, peso e torque máximo declarado; portanto, impacto não é a única diferença entre os dois SKUs.",
+    "recommendation": "Se a aplicação inclui o material e a função declarados na ficha de um modelo com percussão, inclua essa classe na comparação. Se não inclui, não trate impacto como vantagem automática. Confirme sempre o nome, a interface e as capacidades do SKU específico.",
+    "evidenceIds": [
+      "ev_pair_comparison"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Como identificar a função impacto na ficha?",
+      "answer": "Nos modelos consultados, a classificação do produto, a presença de impactos por minuto e a capacidade declarada em alvenaria ajudam a identificar a percussão. São indicadores da ficha, não uma regra universal; confira sempre o SKU específico.",
+      "evidenceIds": [
+        "ev_makita_df333",
+        "ev_makita_hp333",
+        "ev_taxonomy_reading"
+      ]
+    },
+    {
+      "question": "Furadeira/parafusadeira com impacto é o mesmo que parafusadeira de impacto?",
+      "answer": "As fichas consultadas tratam essas classes de formas diferentes: a HP333DWYE combina furadeira, parafusadeira e impacto, usa mandril e declara alvenaria; a TD110DWYE é classificada como parafusadeira de impacto, usa encaixe sextavado de 1/4 pol. e declara capacidades por tipo de parafuso.",
+      "evidenceIds": [
+        "ev_makita_hp333",
+        "ev_makita_td110",
+        "ev_taxonomy_reading"
+      ]
+    },
+    {
+      "question": "Onde a DeWalt DCD777 se encaixa?",
+      "answer": "Na ficha brasileira consultada, a DCD7771D2-BR aparece como furadeira/parafusadeira com mandril de 13 mm e não lista função impacto. Nesta taxonomia, ela entra como exemplo de modelo sem impacto segundo a ficha, sem extrapolar essa leitura para toda a marca.",
+      "evidenceIds": [
+        "ev_dewalt_dcd777"
+      ]
+    },
+    {
+      "question": "Chave de impacto e parafusadeira de impacto são a mesma ferramenta?",
+      "answer": "Nos exemplos oficiais consultados, não: a TD110DWYE usa encaixe sextavado de 1/4 pol., enquanto a TW141DZ usa encaixe quadrado de 1/2 pol. e declara outras faixas de fixadores. A interface de cada SKU deve ser confirmada na própria ficha.",
+      "evidenceIds": [
+        "ev_makita_td110",
+        "ev_makita_tw141",
+        "ev_taxonomy_reading"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_makita_df333",
+      "evidence_type": "SPEC",
+      "claim": "A Makita classifica a DF333DWYE como parafusadeira/furadeira 12V CXT. A ficha declara aço 10 mm, madeira 21 mm, mandril 0,8–10 mm, 0–1.700 / 0–450 RPM, junta rígida 30 Nm, junta flexível 14 Nm, 1,1 kg e 179 × 66 × 212 mm; não apresenta campos de alvenaria, concreto ou impactos por minuto.",
+      "source_name": "Makita Brasil — DF333DWYE",
+      "source_url": "https://www.makita.com.br/catalogoFDetalhes.asp?codParamD=316",
+      "accessed_at": "2026-08-17T16:18:03Z",
+      "notes": "Fonte primária do modelo. A ausência mencionada se limita aos campos visíveis na ficha consultada."
+    },
+    {
+      "id": "ev_makita_hp333",
+      "evidence_type": "SPEC",
+      "claim": "A Makita classifica a HP333DWYE como parafusadeira/furadeira de impacto 12V CXT. A ficha declara aço 10 mm, madeira 21 mm, alvenaria 8 mm, 0–1.700 / 0–450 RPM, 0–25.500 / 0–6.750 impactos por minuto, torque máximo 34 Nm, junta rígida 30 Nm, junta flexível 14 Nm, 1,3 kg e 193 × 66 × 229 mm.",
+      "source_name": "Makita Brasil — HP333DWYE",
+      "source_url": "https://www.makita.com.br/catalogoFDetalhes.asp?codParamD=273",
+      "accessed_at": "2026-08-17T16:18:03Z",
+      "notes": "A variante com www foi verificada antes de padronizar o host."
+    },
+    {
+      "id": "ev_pair_comparison",
+      "evidence_type": "DERIVED",
+      "claim": "Nas fichas oficiais da Makita para DF333DWYE e HP333DWYE, a capacidade declarada em aço e madeira, as rotações e os torques de junta rígida/flexível coincidem. O modelo classificado como de impacto acrescenta capacidade declarada em alvenaria e impactos por minuto, além de outras diferenças de ficha.",
+      "source_name": "Comparação editorial das fichas Makita DF333DWYE e HP333DWYE",
+      "accessed_at": "2026-08-17T16:18:03Z",
+      "derived_from": [
+        "ev_makita_df333",
+        "ev_makita_hp333"
+      ],
+      "notes": "Comparação documental; não é teste prático e não afirma que impacto seja a única diferença."
+    },
+    {
+      "id": "ev_makita_td110",
+      "evidence_type": "SPEC",
+      "claim": "A Makita classifica a TD110DWYE como parafusadeira de impacto 12V CXT e declara encaixe sextavado de 1/4 pol., 0–3.500 impactos por minuto, 0–2.600 RPM e capacidades para parafusos de máquina M4–M8, padrão M5–M12 e de alta tensão M5–M10.",
+      "source_name": "Makita Brasil — TD110DWYE",
+      "source_url": "https://www.makita.com.br/catalogoFDetalhes.asp?codParamD=362",
+      "accessed_at": "2026-08-17T16:18:03Z",
+      "notes": "Fonte primária usada como exemplo de impact driver; não define todos os modelos da categoria."
+    },
+    {
+      "id": "ev_makita_tw141",
+      "evidence_type": "SPEC",
+      "claim": "A Makita classifica a TW141DZ como chave de impacto 12V CXT e declara encaixe quadrado de 1/2 pol., 0–3.200 impactos por minuto, 0–2.600 RPM, parafuso padrão M8–M16 e parafuso de máquina M6–M12.",
+      "source_name": "Makita Brasil — TW141DZ",
+      "source_url": "https://www.makita.com.br/catalogoFDetalhes.asp?codParamD=75",
+      "accessed_at": "2026-08-17T16:18:03Z",
+      "notes": "Fonte primária usada como exemplo de impact wrench; o encaixe não é extrapolado para outros SKUs."
+    },
+    {
+      "id": "ev_taxonomy_reading",
+      "evidence_type": "DERIVED",
+      "claim": "As fichas consultadas distinguem as quatro classes por combinação de nome do produto, campos de impacto, interface e aplicações declaradas. Como há modelos que combinam funções, a ficha do SKU específico prevalece sobre inferências feitas apenas a partir do nome comercial.",
+      "source_name": "Leitura comparada das fichas oficiais Makita",
+      "accessed_at": "2026-08-17T16:18:03Z",
+      "derived_from": [
+        "ev_makita_df333",
+        "ev_makita_hp333",
+        "ev_makita_td110",
+        "ev_makita_tw141"
+      ],
+      "notes": "Síntese editorial conservadora baseada somente nas fichas dos modelos citados."
+    },
+    {
+      "id": "ev_dewalt_dcd777",
+      "evidence_type": "SPEC",
+      "claim": "A ficha brasileira classifica a DCD7771D2-BR como furadeira/parafusadeira, declara mandril de 13 mm e não lista função impacto entre visão geral, funcionalidades e especificações consultadas.",
+      "source_name": "DeWalt Brasil — DCD7771D2-BR",
+      "source_url": "https://www.dewalt.com.br/pt-br/produto/dcd7771d2-br/parafusadeirafuradeira-12-13mm-20v-max",
+      "accessed_at": "2026-08-17T16:18:03Z",
+      "notes": "A ausência se refere à ficha consultada; não é uma alegação sobre toda a linha DeWalt."
+    }
+  ]
+}

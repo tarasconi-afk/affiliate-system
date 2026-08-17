@@ -204,6 +204,26 @@ const decisionDimensionSchema = z.object({
   evidenceIds: z.array(z.string()).min(1, "Decision dimensions must reference at least one evidence")
 });
 
+const taxonomyTableSchema = z.object({
+  title: z.string(),
+  intro: z.string().optional(),
+  columns: z.object({
+    class: z.string(),
+    mechanism: z.string(),
+    interface: z.string(),
+    application: z.string(),
+    caveat: z.string()
+  }),
+  rows: z.array(z.object({
+    class: z.string(),
+    mechanism: z.string(),
+    interface: z.string(),
+    application: z.string(),
+    caveat: z.string(),
+    evidenceIds: z.array(z.string()).min(1, "Taxonomy rows must reference at least one evidence")
+  })).min(1)
+});
+
 const decisionCompareSchema = z.object({
   version: z.literal('1.0'),
   type: z.literal('decision_compare'),
@@ -219,6 +239,7 @@ const decisionCompareSchema = z.object({
   comparison: z.object({
     dimensions: z.array(decisionDimensionSchema)
   }),
+  taxonomyTable: taxonomyTableSchema.optional(),
   contextualLinks: z.array(contextualLinkSchema).optional(),
   verdict: verdictSchema.optional(),
   faq: z.array(faqSchema).optional(),

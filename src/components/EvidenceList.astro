@@ -8,29 +8,46 @@ const labels: Record<string, string> = { SPEC: 'Fonte primária', DERIVED: 'Aná
 <section class="evidence-list" aria-labelledby="fontes-evidencias">
   <div class="evidence-heading">
     <div><p>TRANSPARÊNCIA</p><h2 id="fontes-evidencias">Fontes e evidências</h2></div>
-    <span>{evidences.length} referências</span>
   </div>
-  <ol>
-    {evidences.map((ev, index) => (
-      <li id={ev.id}>
-        <div class="evidence-index">[{index + 1}]</div>
-        <div class="evidence-content">
-          <div class="evidence-meta"><span>{labels[ev.evidence_type]}</span><time datetime={ev.accessed_at}>{new Date(ev.accessed_at).toLocaleDateString('pt-BR')}</time></div>
-          <p class="claim">{ev.claim}</p>
-          <p class="source">{ev.source_url ? <a href={ev.source_url} target="_blank" rel="noopener noreferrer">{ev.source_name}</a> : ev.source_name}</p>
-          {ev.notes && <p class="notes">{ev.notes}</p>}
-        </div>
-      </li>
-    ))}
-  </ol>
+  <details>
+    <summary>
+      <span class="summary-closed">Ver {evidences.length} fontes e evidências utilizadas</span>
+      <span class="summary-open">Ocultar {evidences.length} fontes e evidências utilizadas</span>
+      <span class="summary-icon" aria-hidden="true"></span>
+    </summary>
+    <ol>
+      {evidences.map((ev, index) => (
+        <li id={ev.id}>
+          <div class="evidence-index">[{index + 1}]</div>
+          <div class="evidence-content">
+            <div class="evidence-meta"><span>{labels[ev.evidence_type]}</span><time datetime={ev.accessed_at}>{new Date(ev.accessed_at).toLocaleDateString('pt-BR')}</time></div>
+            <p class="claim">{ev.claim}</p>
+            <p class="source">{ev.source_url ? <a href={ev.source_url} target="_blank" rel="noopener noreferrer">{ev.source_name}</a> : ev.source_name}</p>
+            {ev.notes && <p class="notes">{ev.notes}</p>}
+          </div>
+        </li>
+      ))}
+    </ol>
+  </details>
 </section>
 
 <style>
   .evidence-list { margin: 5rem 0 1rem; padding-top: 1.4rem; border-top: 3px solid var(--ink); }
-  .evidence-heading { display: flex; justify-content: space-between; gap: 1rem; align-items: end; padding-bottom: 1.1rem; border-bottom: 1px solid var(--line); }
+  .evidence-heading { padding-bottom: .8rem; }
   .evidence-heading p { margin: 0 0 .35rem; color: var(--amber-dark); font-size: .64rem; font-weight: 900; letter-spacing: .14em; }
   .evidence-heading h2 { margin: 0; font-size: 1.55rem; }
-  .evidence-heading > span { color: var(--steel); font-size: .72rem; }
+  details { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 48px; padding: .85rem 0; color: var(--ink); font-size: .82rem; font-weight: 800; cursor: pointer; }
+  summary::-webkit-details-marker { display: none; }
+  summary::marker { content: ""; }
+  summary:focus-visible { outline: 2px solid var(--amber-dark); outline-offset: 4px; }
+  .summary-open { display: none; }
+  details[open] .summary-closed { display: none; }
+  details[open] .summary-open { display: inline; }
+  .summary-icon { position: relative; flex: 0 0 1.75rem; width: 1.75rem; height: 1.75rem; border: 1px solid var(--line); background: var(--paper-deep); }
+  .summary-icon::before, .summary-icon::after { content: ""; position: absolute; inset: 50% auto auto 50%; width: .7rem; height: 2px; background: var(--ink); transform: translate(-50%, -50%); }
+  .summary-icon::after { transform: translate(-50%, -50%) rotate(90deg); transition: opacity .15s ease; }
+  details[open] .summary-icon::after { opacity: 0; }
   ol { list-style: none; margin: 0; padding: 0; }
   li { display: grid; grid-template-columns: 52px 1fr; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
   .evidence-index { color: var(--amber-dark); font: 800 .72rem/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }

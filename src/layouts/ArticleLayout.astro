@@ -4,6 +4,7 @@ import SEOHead from '../components/seo/SEOHead.astro';
 import ArticleSchema from '../components/seo/ArticleSchema.astro';
 import BreadcrumbSchema from '../components/seo/BreadcrumbSchema.astro';
 import ComparisonTable from '../components/ComparisonTable.astro';
+import TaxonomyTable from '../components/TaxonomyTable.astro';
 import EvidenceList from '../components/EvidenceList.astro';
 import Sources from '../components/Sources.astro';
 import type { PageSpec } from '../lib/types';
@@ -145,6 +146,8 @@ const contextualLinksAt = (placement: 'after_specs' | 'after_comparison' | 'afte
           </section>
 
           <section class="content-section"><h2>Comparação por critério</h2><ComparisonTable dimensions={pageSpec.comparison.dimensions} label1={pageSpec.options[0].name} label2={pageSpec.options[1].name} evidences={pageSpec.evidences} />{contextualLinksAt('after_comparison').map(link => <p class="contextual-link">{link.intro} <a href={link.href}>{link.anchorText}</a>{link.outro && ` ${link.outro}`}.</p>)}</section>
+
+          {pageSpec.taxonomyTable && <TaxonomyTable table={pageSpec.taxonomyTable} evidences={pageSpec.evidences} />}
 
           {pageSpec.verdict && <section class="verdict content-section"><p class="block-label">LEITURA EDITORIAL</p><h2>Como decidir</h2><p class="verdict-summary">{pageSpec.verdict.summary}{pageSpec.verdict.evidenceIds && <Sources evidenceIds={pageSpec.verdict.evidenceIds} evidences={pageSpec.evidences} />}</p><p>{pageSpec.verdict.recommendation}</p></section>}
 

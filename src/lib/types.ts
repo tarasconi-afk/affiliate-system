@@ -204,6 +204,26 @@ export interface DecisionDimension {
   evidenceIds: string[];
 }
 
+export interface TaxonomyTable {
+  title: string;
+  intro?: string;
+  columns: {
+    class: string;
+    mechanism: string;
+    interface: string;
+    application: string;
+    caveat: string;
+  };
+  rows: Array<{
+    class: string;
+    mechanism: string;
+    interface: string;
+    application: string;
+    caveat: string;
+    evidenceIds: string[];
+  }>;
+}
+
 export interface DecisionComparePageSpec {
   version: '1.0';
   type: 'decision_compare';
@@ -219,6 +239,7 @@ export interface DecisionComparePageSpec {
   comparison: {
     dimensions: DecisionDimension[];
   };
+  taxonomyTable?: TaxonomyTable;
   contextualLinks?: ContextualLink[];
   verdict?: Verdict;
   faq?: FAQ[];

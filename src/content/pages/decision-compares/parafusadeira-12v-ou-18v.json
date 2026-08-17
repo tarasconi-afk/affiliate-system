@@ -128,6 +128,12 @@
       "intro": "Depois de escolher a classe de tensão, compare",
       "anchorText": "os ecossistemas Bosch e Makita",
       "href": "/bosch-ou-makita-parafusadeira/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Além da tensão, confira",
+      "anchorText": "se a sua aplicação pede uma parafusadeira com impacto ou sem impacto",
+      "href": "/parafusadeira-com-ou-sem-impacto/"
     }
   ],
   "verdict": {
