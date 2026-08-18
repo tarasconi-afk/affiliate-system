@@ -6,7 +6,7 @@
     "title": "O que significa Nm em uma parafusadeira? Como comparar torque",
     "metaDescription": "Entenda o que significa Nm e por que torque máximo, junta rígida e junta flexível não devem ser comparados como se fossem o mesmo campo.",
     "publishedAt": "2026-08-18T19:16:10Z",
-    "updatedAt": "2026-08-18T19:16:10Z",
+    "updatedAt": "2026-08-18T21:47:32Z",
     "author": "Ferramenta Clara",
     "breadcrumbs": [
       {
@@ -185,6 +185,12 @@
       "intro": "Para entender como torque aparece ao lado da função da ferramenta, veja",
       "anchorText": "a diferença entre parafusadeiras com e sem impacto",
       "href": "/parafusadeira-com-ou-sem-impacto/"
+    },
+    {
+      "placement": "after_comparison",
+      "intro": "Tipo de motor e força de giro são campos diferentes. Para separar essas dimensões, compare",
+      "anchorText": "parafusadeiras brushless e com escovas de carvão",
+      "href": "/parafusadeira-brushless-ou-com-escovas/"
     },
     {
       "placement": "after_verdict",

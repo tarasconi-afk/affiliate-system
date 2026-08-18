@@ -1,0 +1,343 @@
+{
+  "version": "1.0",
+  "type": "decision_compare",
+  "slug": "parafusadeira-brushless-ou-com-escovas",
+  "metadata": {
+    "title": "Parafusadeira brushless ou com escovas: o que realmente muda?",
+    "metaDescription": "Entenda o que significa motor brushless, como funcionam as escovas de carvão e quais conclusões a ficha técnica realmente permite.",
+    "publishedAt": "2026-08-18T21:47:32Z",
+    "updatedAt": "2026-08-18T22:41:14Z",
+    "author": "Ferramenta Clara",
+    "breadcrumbs": [
+      {
+        "name": "Início",
+        "url": "/"
+      },
+      {
+        "name": "Brushless ou com escovas"
+      }
+    ]
+  },
+  "hero": {
+    "heading": "Parafusadeira brushless ou com escovas: o que realmente muda?",
+    "subheading": "Brushless significa motor sem escovas de carvão. Essa construção pode vir acompanhada de benefícios declarados pelo fabricante, mas o termo sozinho não informa torque, RPM nem torna uma ferramenta superior em todos os critérios.",
+    "methodNote": "Este guia compara a construção declarada e a forma como fabricantes descrevem seus produtos. Não é teste prático nem comparação de desempenho entre modelos."
+  },
+  "media": {
+    "items": [
+      {
+        "src": "/images/motor-brushes-cc-1600.webp",
+        "alt": "Escovas de motor de diferentes tamanhos sobre uma superfície clara",
+        "width": 1600,
+        "height": 756,
+        "aspectRatio": 2.116,
+        "label": "ESCOVAS DE MOTOR"
+      }
+    ],
+    "captionLabel": "Imagem ilustrativa.",
+    "caption": "A fotografia mostra escovas de motor de diferentes tamanhos; não representa um SKU nem demonstra desempenho ou durabilidade."
+  },
+  "options": [
+    {
+      "name": "Motor com escovas de carvão",
+      "description": "As escovas são peças internas do motor que conduzem energia ao circuito do rotor. A Bosch informa que elas se desgastam com o uso e podem precisar de substituição; isso não torna toda ferramenta com escovas inadequada.",
+      "evidenceIds": [
+        "ev_bosch_brushes",
+        "ev_no_universal_winner"
+      ]
+    },
+    {
+      "name": "Motor sem escovas (brushless)",
+      "description": "Na ficha, procure “brushless”, “sem escovas de carvão” ou “motor BL”. A Makita usa “motor BL” na página da DDF484Z e informa, na página dessa tecnologia, a inexistência de escova de carvão. A ficha ainda precisa ser lida para torque, RPM, funções e outras características.",
+      "evidenceIds": [
+        "ev_dewalt_dcd777",
+        "ev_makita_ddf484",
+        "ev_makita_motor_bl",
+        "ev_spec_fields_are_separate"
+      ]
+    }
+  ],
+  "comparison": {
+    "dimensions": [
+      {
+        "label": "O que muda no motor",
+        "option1": "Usa escovas de carvão como parte do sistema que conduz energia ao circuito do rotor.",
+        "option2": "É declarado sem escovas de carvão; a DeWalt apresenta “brushless” e “sem escovas” como equivalentes na ficha da DCD7771D2-BR.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_bosch_brushes",
+          "ev_dewalt_dcd777",
+          "ev_construction_difference"
+        ]
+      },
+      {
+        "label": "Como identificar na ficha",
+        "option1": "Procure menção a escovas de carvão, peças de reposição ou instruções de substituição no material do SKU.",
+        "option2": "Procure declaração explícita como “brushless”, “sem escovas de carvão” ou “motor BL”. A Makita documenta a inexistência de escova de carvão ao explicar sua tecnologia Motor BL. Se a ficha não disser, não conclua pela aparência.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_bosch_brushes",
+          "ev_dewalt_dcd777",
+          "ev_makita_ddf484",
+          "ev_makita_motor_bl",
+          "ev_identification_limit"
+        ]
+      },
+      {
+        "label": "Manutenção documentada",
+        "option1": "A Bosch descreve desgaste natural, inspeção e eventual substituição das escovas de carvão.",
+        "option2": "Não possui escovas de carvão para substituir; isso não significa que toda manutenção da ferramenta desaparece.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_bosch_brushes",
+          "ev_dewalt_dcd777",
+          "ev_maintenance_limit"
+        ]
+      },
+      {
+        "label": "O que os fabricantes afirmam",
+        "option1": "As fontes consultadas não fornecem uma regra geral de desempenho para todos os motores com escovas.",
+        "option2": "Em produtos de categorias diferentes, citados apenas como exemplos de comunicação, a Bosch atribui ao motor sem escovas da GSB 185-LI mais horas por carga e vida útil maior; a Makita atribui ao motor BL da DDF484Z maior autonomia e desempenho. São claims dos fabricantes para esses produtos, não uma comparação entre eles.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_bosch_gsb185",
+          "ev_makita_ddf484",
+          "ev_benefits_are_attributed"
+        ]
+      },
+      {
+        "label": "Torque e RPM",
+        "option1": "Não podem ser deduzidos apenas pela presença de escovas; torque é força de giro e RPM são rotações por minuto.",
+        "option2": "Também não são definidos pela palavra brushless. As fichas publicam construção do motor, torque e rotação como informações separadas.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_dewalt_dcd777",
+          "ev_bosch_gsb185",
+          "ev_makita_ddf484",
+          "ev_spec_fields_are_separate"
+        ]
+      },
+      {
+        "label": "Limite da conclusão",
+        "option1": "A presença de escovas não basta para classificar a ferramenta como ruim, doméstica ou menos potente.",
+        "option2": "Brushless não é selo automático de melhor ferramenta: função, torque, rotação, bateria e outros campos continuam dependendo do SKU.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_benefits_are_attributed",
+          "ev_spec_fields_are_separate",
+          "ev_no_universal_winner"
+        ]
+      }
+    ]
+  },
+  "contextualLinks": [
+    {
+      "placement": "after_comparison",
+      "intro": "Para ver um exemplo de ficha que declara motor brushless, consulte a",
+      "anchorText": "análise técnica da DeWalt DCD7771D2‑BR",
+      "href": "/parafusadeira-dewalt-dcd777-vale-a-pena/"
+    },
+    {
+      "placement": "after_comparison",
+      "intro": "Para separar construção do motor da força de giro, veja",
+      "anchorText": "como ler torque e Nm na ficha da parafusadeira",
+      "href": "/torque-nm-parafusadeira/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Se a decisão também envolve tensão e plataforma, entenda",
+      "anchorText": "como comparar parafusadeiras 12V e 18V",
+      "href": "/parafusadeira-12v-ou-18v/"
+    }
+  ],
+  "verdict": {
+    "heading": "Como interpretar a escolha",
+    "summary": "A diferença documentável é a construção: um sistema usa escovas de carvão e o outro não. As fontes também mostram que fabricantes atribuem benefícios ao brushless, mas não fornecem uma comparação comum que transforme esses claims em regra universal.",
+    "recommendation": "Leia primeiro o campo do motor e depois os demais dados do mesmo SKU. Trate autonomia, eficiência, vida útil ou desempenho como afirmação do fabricante quando não houver método comparável. Brushless descreve a construção do motor; não substitui a análise de torque, RPM, funções, bateria e adequação ao uso.",
+    "evidenceIds": [
+      "ev_construction_difference",
+      "ev_benefits_are_attributed",
+      "ev_spec_fields_are_separate",
+      "ev_no_universal_winner"
+    ]
+  },
+  "faq": [
+    {
+      "question": "O que significa brushless em uma parafusadeira?",
+      "answer": "Significa que o motor é construído sem escovas de carvão. A própria DeWalt usa “BRUSHLESS (sem escovas de carvão)” na ficha brasileira da DCD7771D2-BR.",
+      "evidenceIds": [
+        "ev_dewalt_dcd777"
+      ]
+    },
+    {
+      "question": "O que são escovas de carvão?",
+      "answer": "Segundo a Bosch, são peças do motor que conduzem energia ao circuito do rotor. Elas sofrem desgaste natural e podem precisar de inspeção ou substituição.",
+      "evidenceIds": [
+        "ev_bosch_brushes"
+      ]
+    },
+    {
+      "question": "Motor com escovas é ruim?",
+      "answer": "Não é uma conclusão sustentada pelas fontes consultadas. Elas documentam a presença, a função e o desgaste das escovas, mas não estabelecem que toda ferramenta com essa construção seja ruim ou inadequada.",
+      "evidenceIds": [
+        "ev_bosch_brushes",
+        "ev_no_universal_winner"
+      ]
+    },
+    {
+      "question": "Brushless dura mais ou dá mais autonomia?",
+      "answer": "A Bosch atribui mais horas de trabalho por carga e vida útil maior ao motor sem escovas da GSB 185-LI, enquanto a Makita atribui maior autonomia e desempenho ao motor BL da DDF484Z. Como as páginas não apresentam uma metodologia comum de comparação, esses benefícios permanecem claims dos fabricantes para os produtos citados, não uma promessa universal.",
+      "evidenceIds": [
+        "ev_bosch_gsb185",
+        "ev_makita_ddf484",
+        "ev_benefits_are_attributed"
+      ]
+    },
+    {
+      "question": "Brushless significa mais torque?",
+      "answer": "Não dá para concluir isso apenas pelo tipo de motor. Nas fichas consultadas, construção do motor e torque aparecem como informações distintas; compare o campo de torque do SKU e preserve a condição declarada.",
+      "evidenceIds": [
+        "ev_dewalt_dcd777",
+        "ev_bosch_gsb185",
+        "ev_makita_ddf484",
+        "ev_spec_fields_are_separate"
+      ]
+    },
+    {
+      "question": "Como saber se a parafusadeira é brushless?",
+      "answer": "Confirme na página ou no manual do SKU uma declaração explícita como “brushless”, “sem escovas de carvão” ou “motor BL”. A ausência desses termos em um resumo não prova, sozinha, qual é a construção.",
+      "evidenceIds": [
+        "ev_dewalt_dcd777",
+        "ev_makita_ddf484",
+        "ev_makita_motor_bl",
+        "ev_identification_limit"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_bosch_brushes",
+      "evidence_type": "SPEC",
+      "claim": "A Bosch Professional Brasil informa que escovas de carvão conduzem energia ao circuito do rotor do motor, são encontradas em ferramentas como furadeiras e parafusadeiras, sofrem desgaste natural e podem precisar de inspeção e substituição.",
+      "source_name": "Bosch Professional Brasil — Como trocar as escovas de carvão de sua parafusadeira Bosch",
+      "source_url": "https://www.bosch-professional.com/br/pt/blog/como-trocar-as-escovas-de-carvao-de-sua-parafusadeira-bosch/",
+      "accessed_at": "2026-08-18T21:47:32Z",
+      "notes": "Fonte primária do fabricante usada para função e desgaste das escovas; benefícios promocionais de manutenção não foram generalizados."
+    },
+    {
+      "id": "ev_dewalt_dcd777",
+      "evidence_type": "SPEC",
+      "claim": "A ficha brasileira da furadeira/parafusadeira DCD7771D2-BR declara motor BRUSHLESS, explica o termo como “sem escovas de carvão” e publica tipo de motor, torque e RPM em campos separados.",
+      "source_name": "DeWalt Brasil — DCD7771D2-BR",
+      "source_url": "https://www.dewalt.com.br/pt-br/produto/dcd7771d2-br/parafusadeirafuradeira-12-13mm-20v-max",
+      "accessed_at": "2026-08-18T21:47:32Z",
+      "notes": "Fonte primária brasileira em nível de SKU; usada como exemplo de identificação, não como representante universal de ferramentas brushless."
+    },
+    {
+      "id": "ev_bosch_gsb185",
+      "evidence_type": "SPEC",
+      "claim": "A Bosch Professional Brasil classifica a GSB 185-LI como parafusadeira/furadeira de impacto a bateria, declara motor sem escovas e atribui a ele alta eficiência, mais horas de trabalho por carga e vida útil mais longa da ferramenta; torque e rotação aparecem separadamente na ficha.",
+      "source_name": "Bosch Professional Brasil — GSB 185-LI",
+      "source_url": "https://www.bosch-professional.com/br/pt/products/gsb-185-li-06019K31E7",
+      "accessed_at": "2026-08-18T21:47:32Z",
+      "notes": "Benefícios registrados como claim do fabricante para este SKU; a página não foi usada para quantificar vantagem universal."
+    },
+    {
+      "id": "ev_makita_ddf484",
+      "evidence_type": "SPEC",
+      "claim": "A Makita Brasil classifica a DDF484Z como parafusadeira/furadeira 18V LXT, informa motor BL e atribui a ele maior autonomia e desempenho; torque e rotações são publicados separadamente na mesma ficha.",
+      "source_name": "Makita Brasil — DDF484Z",
+      "source_url": "https://www.makita.com.br/catalogoFDetalhes.asp?codParamD=304",
+      "accessed_at": "2026-08-18T21:47:32Z",
+      "notes": "Benefícios registrados como claim do fabricante para este SKU; BL só é tratado como sem escovas quando apoiado pelas demais fontes, não por expansão autônoma desta sigla."
+    },
+    {
+      "id": "ev_makita_motor_bl",
+      "evidence_type": "SPEC",
+      "claim": "A página institucional da tecnologia Motor BL da Makita informa a inexistência de escova de carvão nesse motor, documentando que a nomenclatura “Motor BL” identifica sua construção sem escovas.",
+      "source_name": "Makita Brasil — Motor BL",
+      "source_url": "https://www.makita.com.br/motorBL.asp",
+      "accessed_at": "2026-08-18T22:41:14Z",
+      "notes": "Fonte usada somente para documentar a nomenclatura e a ausência de escova de carvão. Claims promocionais quantitativos e generalizações de manutenção presentes na página não foram incorporados."
+    },
+    {
+      "id": "ev_construction_difference",
+      "evidence_type": "DERIVED",
+      "claim": "A diferença diretamente documentada é construtiva: motores com escovas usam escovas de carvão no sistema, enquanto uma ficha que declara brushless ou sem escovas informa a ausência desse componente.",
+      "source_name": "Leitura combinada da explicação Bosch sobre escovas e da ficha DeWalt DCD7771D2-BR",
+      "accessed_at": "2026-08-18T21:47:32Z",
+      "derived_from": [
+        "ev_bosch_brushes",
+        "ev_dewalt_dcd777"
+      ],
+      "notes": "Síntese limitada à construção declarada; não implica desempenho ou superioridade."
+    },
+    {
+      "id": "ev_benefits_are_attributed",
+      "evidence_type": "DERIVED",
+      "claim": "Bosch e Makita atribuem benefícios de eficiência, autonomia, vida útil ou desempenho a motores sem escovas em SKUs específicos, mas as páginas consultadas não apresentam metodologia comum que permita transformar esses claims em vantagem quantitativa universal.",
+      "source_name": "Leitura editorial das fichas Bosch GSB 185-LI e Makita DDF484Z",
+      "accessed_at": "2026-08-18T21:47:32Z",
+      "derived_from": [
+        "ev_bosch_gsb185",
+        "ev_makita_ddf484",
+        "ev_makita_motor_bl"
+      ],
+      "notes": "Os benefícios permanecem atribuídos aos fabricantes e aos produtos citados."
+    },
+    {
+      "id": "ev_spec_fields_are_separate",
+      "evidence_type": "DERIVED",
+      "claim": "Nas fichas consultadas, a construção do motor aparece separada de torque e rotações. Portanto, “brushless” não informa sozinho os valores desses campos nem permite comparar desempenho entre SKUs.",
+      "source_name": "Leitura comparada das fichas DeWalt DCD7771D2-BR, Bosch GSB 185-LI e Makita DDF484Z",
+      "accessed_at": "2026-08-18T21:47:32Z",
+      "derived_from": [
+        "ev_dewalt_dcd777",
+        "ev_bosch_gsb185",
+        "ev_makita_ddf484"
+      ],
+      "notes": "Síntese sobre estrutura das fichas; não compara valores de modelos ou classes diferentes."
+    },
+    {
+      "id": "ev_maintenance_limit",
+      "evidence_type": "DERIVED",
+      "claim": "A ausência de escovas elimina a necessidade de substituir esse componente específico, mas as fontes consultadas não sustentam descrever toda ferramenta brushless como livre de manutenção.",
+      "source_name": "Leitura combinada da documentação Bosch sobre escovas e das fichas de motores sem escovas",
+      "accessed_at": "2026-08-18T22:41:14Z",
+      "derived_from": [
+        "ev_bosch_brushes",
+        "ev_dewalt_dcd777",
+        "ev_bosch_gsb185"
+      ],
+      "notes": "Conclusão restrita ao componente documentado; não descreve os demais itens de manutenção."
+    },
+    {
+      "id": "ev_identification_limit",
+      "evidence_type": "DERIVED",
+      "claim": "A construção pode ser identificada quando a documentação do SKU declara escovas, brushless, sem escovas de carvão ou motor BL; a ausência desses termos em um resumo não basta para classificar o motor.",
+      "source_name": "Leitura das terminologias usadas nas fontes Bosch, DeWalt e Makita",
+      "accessed_at": "2026-08-18T22:41:14Z",
+      "derived_from": [
+        "ev_bosch_brushes",
+        "ev_dewalt_dcd777",
+        "ev_makita_ddf484",
+        "ev_makita_motor_bl"
+      ],
+      "notes": "Regra editorial conservadora para evitar inferência pela aparência ou por omissão da ficha."
+    },
+    {
+      "id": "ev_no_universal_winner",
+      "evidence_type": "DERIVED",
+      "claim": "As fontes consultadas não sustentam declarar um vencedor universal apenas pelo tipo de motor, porque documentam construção e claims de SKUs, não uma comparação controlada de todas as demais características entre ferramentas equivalentes.",
+      "source_name": "Síntese editorial do conjunto de fontes primárias consultadas",
+      "accessed_at": "2026-08-18T21:47:32Z",
+      "derived_from": [
+        "ev_bosch_brushes",
+        "ev_dewalt_dcd777",
+        "ev_bosch_gsb185",
+        "ev_makita_ddf484"
+      ],
+      "notes": "Ausência de base para conclusão universal; não é alegação de equivalência entre os modelos citados."
+    }
+  ]
+}

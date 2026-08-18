@@ -6,7 +6,7 @@
     "title": "DeWalt DCD777 vale a pena? Análise da DCD7771D2-BR",
     "metaDescription": "Análise técnica da DeWalt DCD7771D2-BR com ficha oficial brasileira: 65 Nm, motor brushless, duas velocidades, mandril de 13 mm e conteúdo do kit.",
     "publishedAt": "2026-08-11T21:00:00Z",
-    "updatedAt": "2026-08-18T15:02:42Z",
+    "updatedAt": "2026-08-18T21:47:32Z",
     "author": "Ferramenta Clara",
     "breadcrumbs": [
       {
@@ -142,6 +142,12 @@
       "intro": "Antes de comparar os 65 Nm desta ficha com outro modelo, entenda",
       "anchorText": "por que números de torque nem sempre são diretamente comparáveis",
       "href": "/torque-nm-parafusadeira/"
+    },
+    {
+      "placement": "after_specs",
+      "intro": "A ficha também declara motor brushless. Para entender o que esse termo informa — e o que não informa — compare",
+      "anchorText": "parafusadeiras brushless e com escovas de carvão",
+      "href": "/parafusadeira-brushless-ou-com-escovas/"
     },
     {
       "placement": "after_specs",
