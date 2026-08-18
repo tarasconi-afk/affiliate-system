@@ -19,7 +19,7 @@
    git checkout main
    ```
 
-4. Compare o `HEAD` com `HEAD.txt` e leia `current-state.json`.
+4. Compare o `HEAD` recuperado com `HEAD.txt` e com `source_commit` no `current-state.json` do mesmo snapshot. Os três valores devem ser idênticos.
 5. Prepare o ambiente:
 
    ```sh
@@ -29,6 +29,8 @@
 ## Recriar o backup
 
 Na raiz dedicada de recovery, mantenha `mirror/`, `snapshots/`, `logs/`, `state/` e `scripts/`. Configure `SOURCE_REPO`, se necessário, sem inserir credenciais no script ou no cron. Rode `daily-recovery.sh` manualmente antes de automatizar.
+
+`state/` contém o estado operacional mais recente, gerado a partir da ref efetivamente preservada. Cada snapshot contém uma cópia histórica própria. Arquivos versionados no Git documentam regras e instruções, não o estado corrente.
 
 ## Limites
 

@@ -29,4 +29,6 @@ Workflow: discovery → Claude red-team → Codex implementa → Claude audita �
 
 Monetização: OFF. Roadmap futuro: AdSense e afiliados. Publicação automática: OFF.
 
-Leia depois: `CURRENT_STATE.generated.md`, `PROJECT_RULES.md`, `RECOVERY_RUNBOOK.md`, `MONETIZATION_ROADMAP.md`, além de `AGENTS.md` e `ARCHITECTURE.md` na raiz do repositório.
+Leia depois: `PROJECT_RULES.md`, `RECOVERY_RUNBOOK.md`, `MONETIZATION_ROADMAP.md`, além de `AGENTS.md` e `ARCHITECTURE.md` na raiz do repositório.
+
+Regras e instruções ficam versionadas. Estado operacional é volátil: na VPS, leia `state/CURRENT_STATE.generated.md` e valide o `source_commit` em `state/current-state.json`. Para um backup histórico, confie na cópia de estado dentro do próprio snapshot e confirme que seu `source_commit` corresponde ao HEAD do bundle; não procure um `CURRENT_STATE` versionado no Git.

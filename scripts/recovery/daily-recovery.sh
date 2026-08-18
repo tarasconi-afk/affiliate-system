@@ -25,9 +25,19 @@ if ! flock -n 9; then
 fi
 
 "$SCRIPTS_ROOT/update-git-mirror.sh" "$SOURCE_REPO" "$MIRROR_PATH"
+node "$SCRIPTS_ROOT/generate-current-state.mjs" \
+  --repo "$MIRROR_PATH" \
+  --output "$STATE_SOURCE" \
+  --ref refs/heads/main
 snapshot="$("$SCRIPTS_ROOT/create-recovery-snapshot.sh" "$MIRROR_PATH" "$SNAPSHOTS_ROOT" "$STATE_SOURCE")"
 git -C "$MIRROR_PATH" bundle verify "$snapshot/affiliate-system.bundle" >/dev/null
 (cd "$snapshot" && sha256sum -c SHA256SUMS >/dev/null)
+snapshot_source="$(node -e 'const fs = require("fs"); process.stdout.write(JSON.parse(fs.readFileSync(process.argv[1], "utf8")).source_commit);' "$snapshot/current-state.json")"
+bundle_head="$(git bundle list-heads "$snapshot/affiliate-system.bundle" refs/heads/main | cut -d ' ' -f 1)"
+if [[ "$snapshot_source" != "$bundle_head" ]]; then
+  echo "snapshot source_commit does not match bundle main" >&2
+  exit 78
+fi
 
 if [[ -e "$RECOVERY_ROOT/latest" && ! -L "$RECOVERY_ROOT/latest" ]]; then
   echo "refusing to replace non-symlink latest" >&2

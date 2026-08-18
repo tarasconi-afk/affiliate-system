@@ -1,16 +1,40 @@
 #!/usr/bin/env node
 
 import { execFileSync } from 'node:child_process';
-import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { dirname, join, relative, resolve } from 'node:path';
+import { mkdirSync, writeFileSync } from 'node:fs';
+import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
-const repoRoot = resolve(scriptDir, '../..');
-const outputDir = join(repoRoot, 'docs/recovery');
+const defaults = {
+  repo: resolve(scriptDir, '../..'),
+  output: resolve(scriptDir, '../../docs/recovery'),
+  ref: 'HEAD',
+};
+
+function readArgs(argv) {
+  const options = { ...defaults };
+  for (let index = 0; index < argv.length; index += 2) {
+    const flag = argv[index];
+    const value = argv[index + 1];
+    if (!value || !['--repo', '--output', '--ref'].includes(flag)) {
+      throw new Error('usage: generate-current-state.mjs [--repo PATH] [--output PATH] [--ref REF]');
+    }
+    options[flag.slice(2)] = value;
+  }
+  return options;
+}
+
+const options = readArgs(process.argv.slice(2));
+const repoPath = resolve(options.repo);
+const outputDir = resolve(options.output);
 
 function git(...args) {
-  return execFileSync('git', args, { cwd: repoRoot, encoding: 'utf8' }).trim();
+  return execFileSync('git', ['-C', repoPath, ...args], { encoding: 'utf8' }).trim();
+}
+
+function readAtCommit(commit, path) {
+  return git('show', `${commit}:${path}`);
 }
 
 function sanitizeOrigin(value) {
@@ -26,104 +50,92 @@ function sanitizeOrigin(value) {
   }
 }
 
-function jsonFiles(root) {
-  return readdirSync(root, { withFileTypes: true }).flatMap((entry) => {
-    const path = join(root, entry.name);
-    if (entry.isDirectory()) return jsonFiles(path);
-    return entry.isFile() && entry.name.endsWith('.json') ? [path] : [];
-  });
-}
+const sourceCommit = git('rev-parse', `${options.ref}^{commit}`);
+const packageJson = JSON.parse(readAtCommit(sourceCommit, 'package.json'));
+const pagePaths = git('ls-tree', '-r', '--name-only', sourceCommit, '--', 'src/content/pages')
+  .split('\n')
+  .filter((path) => path.endsWith('.json'));
+const pages = pagePaths.map((path) => JSON.parse(readAtCommit(sourceCommit, path)));
+const slugs = pages.map((page) => page.slug).sort();
+const siteSource = readAtCommit(sourceCommit, 'src/lib/site.ts');
+const siteUrl = siteSource.match(/\burl:\s*['"]([^'"]+)['"]/)?.[1];
+if (!siteUrl) throw new Error('unable to derive site URL from src/lib/site.ts');
 
-const packageJson = JSON.parse(readFileSync(join(repoRoot, 'package.json'), 'utf8'));
-const pageFiles = jsonFiles(join(repoRoot, 'src/content/pages'));
-const pages = pageFiles.map((path) => ({
-  path: relative(repoRoot, path),
-  data: JSON.parse(readFileSync(path, 'utf8')),
-}));
-const slugs = pages.map(({ data }) => data.slug).sort();
-const siteUrl = 'https://ferramentaclara.com.br';
 const expectedSitemapUrls = [siteUrl + '/', ...slugs.map((slug) => `${siteUrl}/${slug}/`)];
-const sitemapPath = join(repoRoot, 'dist/sitemap.xml');
-const observedSitemapUrls = existsSync(sitemapPath)
-  ? [...readFileSync(sitemapPath, 'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1])
-  : [];
-const status = git('status', '--porcelain');
 const lastCommit = {
-  hash: git('log', '-1', '--format=%H'),
-  authored_at: git('log', '-1', '--format=%aI'),
-  subject: git('log', '-1', '--format=%s'),
+  hash: git('show', '-s', '--format=%H', sourceCommit),
+  authored_at: git('show', '-s', '--format=%aI', sourceCommit),
+  subject: git('show', '-s', '--format=%s', sourceCommit),
 };
 const qaCommands = [
   `npm run build (${packageJson.scripts?.build || 'missing'})`,
   `npm run qa:images (${packageJson.scripts?.['qa:images'] || 'missing'})`,
 ];
-const monetizationActive = pages.some(({ data }) => Boolean(data.monetization?.affiliateUrl));
+const monetizationActive = pages.some((page) => Boolean(page.monetization?.affiliateUrl));
+let packageManager = 'unknown';
+try {
+  git('cat-file', '-e', `${sourceCommit}:package-lock.json`);
+  packageManager = 'npm';
+} catch {
+  // No package lock is a valid observable state.
+}
 
 const state = {
   generated_at: new Date().toISOString(),
-  repo_state: {
-    branch: git('branch', '--show-current'),
-    head: git('rev-parse', 'HEAD'),
-    origin: sanitizeOrigin(git('remote', 'get-url', 'origin')),
-    clean: status.length === 0,
-    last_commit: lastCommit,
-    article_count: pages.length,
-    slugs,
-    node: process.version,
-    package_manager: existsSync(join(repoRoot, 'package-lock.json')) ? 'npm' : 'unknown',
-    qa_commands: qaCommands,
-    monetization_active: monetizationActive,
-    auto_publish: false,
-    sitemap: {
-      expected: expectedSitemapUrls,
-      observed_after_build: observedSitemapUrls,
-      matches_expected: observedSitemapUrls.length > 0 &&
-        JSON.stringify([...observedSitemapUrls].sort()) === JSON.stringify([...expectedSitemapUrls].sort()),
-    },
+  source_commit: sourceCommit,
+  source_ref: options.ref,
+  origin: sanitizeOrigin(git('remote', 'get-url', 'origin')),
+  last_commit: lastCommit,
+  article_count: pages.length,
+  slugs,
+  node: process.version,
+  package_manager: packageManager,
+  qa_known: qaCommands,
+  monetization_active: monetizationActive,
+  auto_publish: false,
+  sitemap: {
+    expected_url_count: expectedSitemapUrls.length,
+    expected_urls: expectedSitemapUrls,
+    observed_after_build: null,
+    note: 'Bare-repository runtime state records the sitemap expected from the preserved PageSpecs; build output is not inferred.',
   },
   external_services_state: {
     hostinger: 'not inspected by this repository script',
     vps: 'not inspected by this repository script',
     search_console: 'not inspected by this repository script',
-    note: 'External state must be verified directly with each provider.',
   },
 };
 
-const markdown = `# Estado atual gerado
+const markdown = `# Estado operacional do recovery
 
-Gerado em UTC: ${state.generated_at}
-
-## REPO STATE
-
-- Branch: \`${state.repo_state.branch}\`
-- HEAD: \`${state.repo_state.head}\`
-- Origin: \`${state.repo_state.origin}\`
-- Worktree limpa: ${state.repo_state.clean ? 'sim' : 'não'}
+- Gerado em UTC: ${state.generated_at}
+- Source commit: \`${state.source_commit}\`
+- Source ref: \`${state.source_ref}\`
+- Origin: \`${state.origin}\`
 - Último commit: \`${lastCommit.hash}\` — ${lastCommit.authored_at} — ${lastCommit.subject}
-- Artigos: ${state.repo_state.article_count}
-- Node: \`${state.repo_state.node}\`
-- Package manager: \`${state.repo_state.package_manager}\`
+- Artigos: ${state.article_count}
+- Node do gerador: \`${state.node}\`
+- Package manager: \`${state.package_manager}\`
 - Monetização ativa: ${monetizationActive ? 'sim' : 'não'}
 - Publicação automática: não
-- Sitemap observado após build: ${observedSitemapUrls.length ? `${observedSitemapUrls.length} URLs; ${state.repo_state.sitemap.matches_expected ? 'corresponde ao esperado' : 'difere do esperado'}` : 'não disponível'}
+- Sitemap esperado: ${expectedSitemapUrls.length} URLs
 
-### Slugs
+## Slugs
 
 ${slugs.map((slug) => `- \`/${slug}/\``).join('\n')}
 
-### QA
+## QA conhecido
 
 ${qaCommands.map((command) => `- \`${command}\``).join('\n')}
 
-## EXTERNAL SERVICES STATE
+## Sitemap esperado
 
-- Hostinger: não inspecionada por este script.
-- VPS: não inspecionada por este script.
-- Search Console: não inspecionado por este script.
+${expectedSitemapUrls.map((url) => `- \`${url}\``).join('\n')}
 
-Verifique estados externos diretamente nos respectivos provedores; este arquivo não os infere.
+Este estado foi derivado diretamente da ref preservada. Um mirror bare não possui worktree, portanto nenhum estado clean/dirty é inferido. Estados externos devem ser verificados nos respectivos provedores.
 `;
 
+mkdirSync(outputDir, { recursive: true });
 writeFileSync(join(outputDir, 'current-state.json'), `${JSON.stringify(state, null, 2)}\n`);
 writeFileSync(join(outputDir, 'CURRENT_STATE.generated.md'), markdown);
-console.log(`Generated recovery state for ${pages.length} articles.`);
+console.log(`Generated runtime state for ${pages.length} articles at ${sourceCommit}.`);

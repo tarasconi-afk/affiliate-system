@@ -24,3 +24,7 @@ pnpm-debug.log*
 *.swp
 *.swo
 *~
+
+# generated recovery state
+docs/recovery/CURRENT_STATE.generated.md
+docs/recovery/current-state.json

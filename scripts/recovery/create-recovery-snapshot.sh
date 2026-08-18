@@ -19,6 +19,13 @@ fi
   exit 66
 }
 
+mirror_head="$(git -C "$MIRROR_PATH" rev-parse refs/heads/main)"
+source_commit="$(node -e 'const fs = require("fs"); const state = JSON.parse(fs.readFileSync(process.argv[1], "utf8")); if (!/^[0-9a-f]{40}$/.test(state.source_commit || "")) process.exit(2); process.stdout.write(state.source_commit);' "$STATE_SOURCE/current-state.json")"
+if [[ "$source_commit" != "$mirror_head" ]]; then
+  echo "runtime state source_commit does not match mirror main" >&2
+  exit 67
+fi
+
 mkdir -p "$SNAPSHOTS_ROOT"
 timestamp="$(date -u +%Y%m%dT%H%M%SZ)"
 name="snapshot-${timestamp}-$$"
@@ -33,19 +40,25 @@ cleanup() {
 trap cleanup EXIT
 mkdir "$tmp"
 
-git -C "$MIRROR_PATH" rev-parse refs/heads/main > "$tmp/HEAD.txt"
+printf '%s\n' "$mirror_head" > "$tmp/HEAD.txt"
 git -C "$MIRROR_PATH" for-each-ref --format='%(objectname) %(refname)' | sort > "$tmp/refs.txt"
 git -C "$MIRROR_PATH" remote get-url origin > "$tmp/origin.txt"
 cp "$STATE_SOURCE/current-state.json" "$tmp/current-state.json"
 cp "$STATE_SOURCE/CURRENT_STATE.generated.md" "$tmp/CURRENT_STATE.generated.md"
 git -C "$MIRROR_PATH" bundle create "$tmp/affiliate-system.bundle" --all
 git -C "$MIRROR_PATH" bundle verify "$tmp/affiliate-system.bundle" >/dev/null
+bundle_head="$(git bundle list-heads "$tmp/affiliate-system.bundle" refs/heads/main | cut -d ' ' -f 1)"
+if [[ "$bundle_head" != "$source_commit" ]]; then
+  echo "bundle main does not match runtime state source_commit" >&2
+  exit 68
+fi
 
 {
   echo "snapshot=$name"
   echo "created_at_utc=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
   printf 'head='
   cat "$tmp/HEAD.txt"
+  echo "source_commit=$source_commit"
   echo "bundle=affiliate-system.bundle"
 } > "$tmp/manifest.txt"
 
