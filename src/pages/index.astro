@@ -219,6 +219,10 @@ const socialImage = `${SITE.url}/images/dewalt-20v-cc-1600.webp`;
     .method-steps strong { display: block; color: var(--paper); margin-bottom: .25rem; }
     .method-steps p { margin: 0; color: #aeb4b7; font-size: .87rem; }
 
+    @media (min-width: 681px) {
+      .story-grid > .story:nth-child(odd):last-child .story-image { height: clamp(320px, 32vw, 420px); }
+    }
+
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; padding-top: 3.25rem; }
       .hero h1 { max-width: 15ch; }
