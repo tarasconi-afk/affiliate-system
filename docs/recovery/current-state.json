@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-08-18T23:28:01.211Z",
+  "repo_state": {
+    "branch": "main",
+    "head": "7eead333650f1791442afef102a80f74efbb1c43",
+    "origin": "https://github.com/tarasconi-afk/affiliate-system.git",
+    "clean": false,
+    "last_commit": {
+      "hash": "7eead333650f1791442afef102a80f74efbb1c43",
+      "authored_at": "2026-08-18T19:44:38-03:00",
+      "subject": "feat: add brushless motor comparison guide"
+    },
+    "article_count": 8,
+    "slugs": [
+      "bateria-parafusadeira-serve-em-outra-marca",
+      "bosch-ou-makita-parafusadeira",
+      "furadeira-de-impacto-ou-martelete",
+      "parafusadeira-12v-ou-18v",
+      "parafusadeira-brushless-ou-com-escovas",
+      "parafusadeira-com-ou-sem-impacto",
+      "parafusadeira-dewalt-dcd777-vale-a-pena",
+      "torque-nm-parafusadeira"
+    ],
+    "node": "v22.23.2",
+    "package_manager": "npm",
+    "qa_commands": [
+      "npm run build (astro check && astro build)",
+      "npm run qa:images (node scripts/check-home-image-diversity.mjs)"
+    ],
+    "monetization_active": false,
+    "auto_publish": false,
+    "sitemap": {
+      "expected": [
+        "https://ferramentaclara.com.br/",
+        "https://ferramentaclara.com.br/bateria-parafusadeira-serve-em-outra-marca/",
+        "https://ferramentaclara.com.br/bosch-ou-makita-parafusadeira/",
+        "https://ferramentaclara.com.br/furadeira-de-impacto-ou-martelete/",
+        "https://ferramentaclara.com.br/parafusadeira-12v-ou-18v/",
+        "https://ferramentaclara.com.br/parafusadeira-brushless-ou-com-escovas/",
+        "https://ferramentaclara.com.br/parafusadeira-com-ou-sem-impacto/",
+        "https://ferramentaclara.com.br/parafusadeira-dewalt-dcd777-vale-a-pena/",
+        "https://ferramentaclara.com.br/torque-nm-parafusadeira/"
+      ],
+      "observed_after_build": [
+        "https://ferramentaclara.com.br/",
+        "https://ferramentaclara.com.br/bosch-ou-makita-parafusadeira/",
+        "https://ferramentaclara.com.br/bateria-parafusadeira-serve-em-outra-marca/",
+        "https://ferramentaclara.com.br/furadeira-de-impacto-ou-martelete/",
+        "https://ferramentaclara.com.br/parafusadeira-12v-ou-18v/",
+        "https://ferramentaclara.com.br/parafusadeira-brushless-ou-com-escovas/",
+        "https://ferramentaclara.com.br/parafusadeira-com-ou-sem-impacto/",
+        "https://ferramentaclara.com.br/torque-nm-parafusadeira/",
+        "https://ferramentaclara.com.br/parafusadeira-dewalt-dcd777-vale-a-pena/"
+      ],
+      "matches_expected": true
+    }
+  },
+  "external_services_state": {
+    "hostinger": "not inspected by this repository script",
+    "vps": "not inspected by this repository script",
+    "search_console": "not inspected by this repository script",
+    "note": "External state must be verified directly with each provider."
+  }
+}
