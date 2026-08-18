@@ -163,6 +163,12 @@
   "contextualLinks": [
     {
       "placement": "after_comparison",
+      "intro": "Para aprofundar um campo presente nas duas fichas Makita, veja",
+      "anchorText": "como comparar números de torque entre fichas",
+      "href": "/torque-nm-parafusadeira/"
+    },
+    {
+      "placement": "after_comparison",
       "intro": "Se a comparação passa para outra classe de ferramenta, veja",
       "anchorText": "o que muda entre furadeira de impacto e martelete",
       "href": "/furadeira-de-impacto-ou-martelete/"

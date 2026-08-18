@@ -139,6 +139,12 @@
   "contextualLinks": [
     {
       "placement": "after_specs",
+      "intro": "Antes de comparar os 65 Nm desta ficha com outro modelo, entenda",
+      "anchorText": "por que números de torque nem sempre são diretamente comparáveis",
+      "href": "/torque-nm-parafusadeira/"
+    },
+    {
+      "placement": "after_specs",
       "intro": "Para avaliar se esta classe de tensão combina com o seu tipo de uso, veja",
       "anchorText": "como escolher entre parafusadeiras 12V e 18V",
       "href": "/parafusadeira-12v-ou-18v/"

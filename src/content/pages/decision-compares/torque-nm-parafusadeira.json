@@ -1,0 +1,383 @@
+{
+  "version": "1.0",
+  "type": "decision_compare",
+  "slug": "torque-nm-parafusadeira",
+  "metadata": {
+    "title": "O que significa Nm em uma parafusadeira? Como comparar torque",
+    "metaDescription": "Entenda o que significa Nm e por que torque máximo, junta rígida e junta flexível não devem ser comparados como se fossem o mesmo campo.",
+    "publishedAt": "2026-08-18T19:16:10Z",
+    "updatedAt": "2026-08-18T19:16:10Z",
+    "author": "Ferramenta Clara",
+    "breadcrumbs": [
+      {
+        "name": "Início",
+        "url": "/"
+      },
+      {
+        "name": "Torque e Nm em parafusadeiras"
+      }
+    ]
+  },
+  "hero": {
+    "heading": "O que significa Nm em uma parafusadeira? Por que os números nem sempre são comparáveis",
+    "subheading": "Torque é a força de giro que a ferramenta aplica, não a velocidade; Nm (newton-metro) é a unidade usada para declará-lo. Antes de comparar o número, identifique se ele descreve junta rígida, junta flexível ou apenas um máximo sem condição declarada.",
+    "methodNote": "Este guia compara somente a forma como fabricantes publicam torque em fichas oficiais. Não é teste prático nem estabelece faixas de uso."
+  },
+  "media": {
+    "items": [
+      {
+        "src": "/images/cordless-drill-torque-cc-1600.webp",
+        "alt": "Furadeira parafusadeira sem fio vista de perto, usada como imagem ilustrativa de torque",
+        "width": 1600,
+        "height": 1037,
+        "aspectRatio": 1.544,
+        "label": "TORQUE"
+      }
+    ],
+    "captionLabel": "Imagem ilustrativa.",
+    "caption": "A fotografia mostra uma furadeira/parafusadeira sem fio e não demonstra os valores nem as condições de medição das fichas comparadas."
+  },
+  "options": [
+    {
+      "name": "Torque de junta rígida / duro",
+      "description": "É um campo condicionado: Bosch usa “duro” e Makita usa “junta rígida” nas fichas consultadas. Compare números somente quando o rótulo e a condição declarada forem equivalentes; as fontes não demonstram que os protocolos dos fabricantes são idênticos.",
+      "evidenceIds": [
+        "ev_bosch_gsr185",
+        "ev_makita_hp333",
+        "ev_makita_df333",
+        "ev_condition_labels"
+      ]
+    },
+    {
+      "name": "Torque de junta flexível / suave",
+      "description": "Também é um campo condicionado: Bosch usa “suave” e Makita usa “junta flexível”. Ele deve permanecer separado de torque duro/rígido e de um valor máximo sem condição declarada.",
+      "evidenceIds": [
+        "ev_bosch_gsr185",
+        "ev_makita_hp333",
+        "ev_makita_df333",
+        "ev_condition_labels",
+        "ev_fields_not_interchangeable"
+      ]
+    }
+  ],
+  "comparison": {
+    "dimensions": [
+      {
+        "label": "Condição identificada",
+        "option1": "Junta rígida ou duro, conforme o vocabulário da ficha.",
+        "option2": "Junta flexível, suave ou macio, conforme o vocabulário da ficha.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_condition_labels"
+        ]
+      },
+      {
+        "label": "Rótulo Bosch",
+        "option1": "Na GSR 185-LI, “Torque (suave/duro/máx.)”: duro é o segundo campo, 50 Nm.",
+        "option2": "Na GSR 185-LI, suave é o primeiro campo, 21 Nm.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_bosch_gsr185"
+        ]
+      },
+      {
+        "label": "Rótulo Makita",
+        "option1": "HP333DWYE e DF333DWYE: junta rígida de 30 N.m.",
+        "option2": "HP333DWYE e DF333DWYE: junta flexível de 14 N.m.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_makita_hp333",
+          "ev_makita_df333"
+        ]
+      },
+      {
+        "label": "Torque máximo",
+        "option1": "Não é outro nome para junta rígida: a HP333DWYE publica 34 N.m de máximo e 30 N.m de junta rígida.",
+        "option2": "Não é outro nome para junta flexível: na mesma ficha, o valor flexível é 14 N.m.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_makita_hp333",
+          "ev_maximum_is_separate"
+        ]
+      },
+      {
+        "label": "Comparação válida",
+        "option1": "Só há base para comparar quando o outro número também identifica uma condição equivalente e preserva o rótulo.",
+        "option2": "Se a ficha traz apenas “torque” ou “máximo” sem a mesma condição, a comparação fica inconclusiva.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_fields_not_interchangeable",
+          "ev_dewalt_not_mappable"
+        ]
+      }
+    ]
+  },
+  "taxonomyTable": {
+    "title": "Como o torque aparece nas fichas consultadas",
+    "intro": "A tabela preserva rótulo, ordem e unidade publicados. Ela não presume protocolo comum entre fabricantes e não converte campo ausente em zero.",
+    "columns": {
+      "class": "Modelo / ficha",
+      "mechanism": "Rótulo publicado",
+      "interface": "Valores e ordem",
+      "application": "Leitura possível",
+      "caveat": "Limite da evidência"
+    },
+    "rows": [
+      {
+        "class": "Bosch GSR 185-LI",
+        "mechanism": "Torque (suave/duro/máx.)",
+        "interface": "21/50/- Nm",
+        "application": "21 Nm suave; 50 Nm duro; o traço ocupa o campo máximo.",
+        "caveat": "A ficha não fornece um valor numérico para máximo e não documenta aqui um protocolo comparável ao de outra marca.",
+        "evidenceIds": [
+          "ev_bosch_gsr185"
+        ]
+      },
+      {
+        "class": "Bosch GO (3ª geração)",
+        "mechanism": "Torque, máx. (duro/macio)",
+        "interface": "5 / 2,5 Nm",
+        "application": "A própria Bosch apresenta duro antes de macio nesta ficha, em ordem diferente da GSR 185-LI.",
+        "caveat": "A ordem deve ser lida no rótulo do SKU; posição isolada não identifica a condição.",
+        "evidenceIds": [
+          "ev_bosch_go",
+          "ev_label_order_changes"
+        ]
+      },
+      {
+        "class": "Makita HP333DWYE",
+        "mechanism": "Torque máximo; junta rígida; junta flexível",
+        "interface": "34 N.m; 30 N.m; 14 N.m",
+        "application": "A ficha separa máximo das duas condições de junta.",
+        "caveat": "Os três campos não são intercambiáveis; a fonte não estabelece equivalência de protocolo com a Bosch.",
+        "evidenceIds": [
+          "ev_makita_hp333",
+          "ev_maximum_is_separate"
+        ]
+      },
+      {
+        "class": "Makita DF333DWYE",
+        "mechanism": "Junta rígida; junta flexível",
+        "interface": "30 N.m; 14 N.m",
+        "application": "A ficha publica as duas condições de junta sem um campo equivalente de torque máximo.",
+        "caveat": "Ausência do campo máximo não significa valor zero nem autoriza preenchê-lo por inferência.",
+        "evidenceIds": [
+          "ev_makita_df333",
+          "ev_maximum_is_separate"
+        ]
+      },
+      {
+        "class": "DeWalt DCD7771D2‑BR",
+        "mechanism": "65Nm de Torque; 15 posições",
+        "interface": "65 Nm, sem condição de junta nomeada no texto da ficha",
+        "application": "O número descreve o SKU segundo a DeWalt, mas não identifica campo suave/flexível ou duro/rígido.",
+        "caveat": "Não há base nessa ficha para mapear 65 Nm diretamente a um dos campos condicionados.",
+        "evidenceIds": [
+          "ev_dewalt_dcd777",
+          "ev_dewalt_not_mappable"
+        ]
+      }
+    ]
+  },
+  "contextualLinks": [
+    {
+      "placement": "after_comparison",
+      "intro": "Para entender como torque aparece ao lado da função da ferramenta, veja",
+      "anchorText": "a diferença entre parafusadeiras com e sem impacto",
+      "href": "/parafusadeira-com-ou-sem-impacto/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Para aplicar essa leitura a uma ficha com valor único, consulte a",
+      "anchorText": "análise técnica da DeWalt DCD7771D2‑BR",
+      "href": "/parafusadeira-dewalt-dcd777-vale-a-pena/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Se a ficha traz energia por golpe, não confunda as unidades: compare",
+      "anchorText": "Nm em parafusadeiras e Joules em marteletes",
+      "href": "/furadeira-de-impacto-ou-martelete/"
+    }
+  ],
+  "verdict": {
+    "summary": "Nm é a unidade apresentada para torque nas fichas consultadas, mas o número só ganha contexto com o rótulo do campo. Suave/flexível, duro/rígido e máximo aparecem como campos distintos; uma ficha com valor único sem condição nomeada não oferece base para mapeamento direto.",
+    "recommendation": "Leia em quatro passos: 1) copie o rótulo completo; 2) preserve a ordem indicada; 3) compare somente condições equivalentes; 4) se a condição ou o protocolo não estiverem declarados, registre a comparação como inconclusiva. Não use o maior número isolado para escolher uma ferramenta.",
+    "evidenceIds": [
+      "ev_condition_labels",
+      "ev_label_order_changes",
+      "ev_maximum_is_separate",
+      "ev_dewalt_not_mappable",
+      "ev_fields_not_interchangeable"
+    ]
+  },
+  "faq": [
+    {
+      "question": "O que significa Nm em uma parafusadeira?",
+      "answer": "Nm é a unidade impressa ao lado do torque nas fichas consultadas. Para interpretar o número, leia também a condição declarada: suave ou flexível, duro ou rígido, ou máximo. Sem esse rótulo, o número não informa sozinho qual campo está sendo apresentado.",
+      "evidenceIds": [
+        "ev_bosch_gsr185",
+        "ev_makita_hp333",
+        "ev_makita_df333",
+        "ev_dewalt_dcd777",
+        "ev_fields_not_interchangeable"
+      ]
+    },
+    {
+      "question": "Mais Nm significa que a parafusadeira é melhor?",
+      "answer": "As fontes não sustentam essa conclusão. Elas mostram números sob rótulos diferentes e não fornecem uma regra universal de qualidade. Primeiro identifique o campo e só compare condições equivalentes.",
+      "evidenceIds": [
+        "ev_fields_not_interchangeable"
+      ]
+    },
+    {
+      "question": "Torque máximo e torque de junta rígida são a mesma coisa?",
+      "answer": "Não na ficha da Makita HP333DWYE: ela publica torque máximo de 34 N.m e junta rígida de 30 N.m como campos separados. A DF333DWYE publica rígida e flexível sem um campo equivalente de máximo.",
+      "evidenceIds": [
+        "ev_makita_hp333",
+        "ev_makita_df333",
+        "ev_maximum_is_separate"
+      ]
+    },
+    {
+      "question": "A ordem dos números de torque é sempre a mesma?",
+      "answer": "Não nas páginas Bosch consultadas. A GSR 185-LI mostra suave/duro/máx., enquanto a Bosch GO de terceira geração mostra duro/macio. Leia o rótulo do SKU em vez de inferir a condição pela posição.",
+      "evidenceIds": [
+        "ev_bosch_gsr185",
+        "ev_bosch_go",
+        "ev_label_order_changes"
+      ]
+    },
+    {
+      "question": "Posso comparar os 65 Nm da DCD777 com o torque duro de outra parafusadeira?",
+      "answer": "A ficha brasileira da DCD7771D2‑BR publica 65Nm de torque, mas não nomeia uma condição de junta. Por isso, essa fonte não sustenta mapear diretamente o valor ao campo duro/rígido de outra ficha.",
+      "evidenceIds": [
+        "ev_dewalt_dcd777",
+        "ev_dewalt_not_mappable"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_bosch_gsr185",
+      "evidence_type": "SPEC",
+      "claim": "A página oficial brasileira da Bosch GSR 185-LI publica o campo “Torque (suave/duro/máx.)” com os valores “21/50/- Nm”, nessa ordem.",
+      "source_name": "Bosch Professional Brasil — GSR 185-LI",
+      "source_url": "https://www.bosch-professional.com/br/pt/products/gsr-185-li-06019K30E1",
+      "accessed_at": "2026-08-18T19:16:10Z",
+      "notes": "Fonte primária em nível de SKU; o traço foi preservado como publicado e não interpretado como zero."
+    },
+    {
+      "id": "ev_bosch_go",
+      "evidence_type": "SPEC",
+      "claim": "A página oficial brasileira da Bosch GO de terceira geração publica “Torque, máx. (duro/macio)” com os valores “5 / 2,5 Nm”, apresentando duro antes de macio.",
+      "source_name": "Bosch Professional Brasil — Bosch GO (3ª geração)",
+      "source_url": "https://www.bosch-professional.com/br/pt/products/bosch-go-gen3-06019H22E0",
+      "accessed_at": "2026-08-18T19:16:10Z",
+      "notes": "Fonte primária em nível de SKU usada para preservar a ordem específica do rótulo."
+    },
+    {
+      "id": "ev_bosch_category",
+      "evidence_type": "SPEC",
+      "claim": "A categoria oficial brasileira de furadeiras/parafusadeiras a bateria lista tanto campos no formato suave/duro/máx. quanto o campo duro/macio da Bosch GO, com ordens diferentes.",
+      "source_name": "Bosch Professional Brasil — Furadeiras/parafusadeiras a bateria",
+      "source_url": "https://www.bosch-professional.com/br/pt/furadeiras-parafusadeiras-a-bateria-131412-ocs-c/",
+      "accessed_at": "2026-08-18T19:16:10Z",
+      "notes": "Fonte primária de categoria usada apenas como apoio; os valores centrais vêm das páginas de SKU."
+    },
+    {
+      "id": "ev_makita_hp333",
+      "evidence_type": "SPEC",
+      "claim": "A página oficial da Makita HP333DWYE publica torque máximo de 34 N.m, junta rígida de 30 N.m e junta flexível de 14 N.m como três campos separados.",
+      "source_name": "Makita Brasil — HP333DWYE",
+      "source_url": "https://makita.com.br/catalogoFDetalhes.asp?codParamD=273",
+      "accessed_at": "2026-08-18T19:16:10Z",
+      "notes": "Fonte primária em nível de SKU; grafia N.m preservada na evidência."
+    },
+    {
+      "id": "ev_makita_df333",
+      "evidence_type": "SPEC",
+      "claim": "A página oficial da Makita DF333DWYE publica junta rígida de 30 N.m e junta flexível de 14 N.m, sem apresentar um campo equivalente de torque máximo na lista de especificações.",
+      "source_name": "Makita Brasil — DF333DWYE",
+      "source_url": "https://makita.com.br/catalogoFDetalhes.asp?codParamD=316",
+      "accessed_at": "2026-08-18T19:16:10Z",
+      "notes": "Fonte primária em nível de SKU; ausência refere-se somente à página consultada e não foi convertida em valor zero."
+    },
+    {
+      "id": "ev_dewalt_dcd777",
+      "evidence_type": "SPEC",
+      "claim": "A página oficial brasileira da DeWalt DCD7771D2-BR publica “65Nm de Torque, 15 posições” sem nomear condição de junta no texto da ficha.",
+      "source_name": "DeWalt Brasil — DCD7771D2-BR",
+      "source_url": "https://www.dewalt.com.br/pt-br/produto/dcd7771d2-br/parafusadeirafuradeira-12-13mm-20v-max",
+      "accessed_at": "2026-08-18T19:16:10Z",
+      "notes": "Fonte primária em nível de SKU; não se inferiu qual condição de torque corresponde ao valor."
+    },
+    {
+      "id": "ev_condition_labels",
+      "evidence_type": "DERIVED",
+      "claim": "Nas fichas consultadas, Bosch separa condições chamadas suave/duro ou duro/macio, enquanto Makita separa junta flexível/junta rígida. Os pares têm correspondência descritiva, mas as fontes não demonstram protocolo de ensaio idêntico entre fabricantes.",
+      "source_name": "Leitura comparada das fichas Bosch GSR 185-LI, Bosch GO, Makita HP333DWYE e DF333DWYE",
+      "accessed_at": "2026-08-18T19:16:10Z",
+      "derived_from": [
+        "ev_bosch_gsr185",
+        "ev_bosch_go",
+        "ev_makita_hp333",
+        "ev_makita_df333"
+      ],
+      "notes": "Síntese de nomenclatura; não afirma equivalência metrológica entre fabricantes."
+    },
+    {
+      "id": "ev_label_order_changes",
+      "evidence_type": "DERIVED",
+      "claim": "A ordem dos campos não é fixa nem mesmo nas páginas Bosch consultadas: a GSR 185-LI apresenta suave antes de duro, enquanto a Bosch GO de terceira geração apresenta duro antes de macio.",
+      "source_name": "Leitura comparada das páginas Bosch GSR 185-LI, Bosch GO e categoria de furadeiras/parafusadeiras",
+      "accessed_at": "2026-08-18T19:16:10Z",
+      "derived_from": [
+        "ev_bosch_gsr185",
+        "ev_bosch_go",
+        "ev_bosch_category"
+      ],
+      "notes": "Conclusão limitada às páginas consultadas; orienta ler o rótulo completo."
+    },
+    {
+      "id": "ev_maximum_is_separate",
+      "evidence_type": "DERIVED",
+      "claim": "Torque máximo não deve ser tratado como sinônimo de junta rígida: a HP333DWYE publica 34 N.m de máximo e 30 N.m de junta rígida, enquanto a DF333DWYE publica rígida e flexível sem campo equivalente de máximo.",
+      "source_name": "Leitura comparada das fichas Makita HP333DWYE e DF333DWYE",
+      "accessed_at": "2026-08-18T19:16:10Z",
+      "derived_from": [
+        "ev_makita_hp333",
+        "ev_makita_df333"
+      ],
+      "notes": "Conclusão sobre a estrutura das duas fichas, sem inferir método de ensaio."
+    },
+    {
+      "id": "ev_dewalt_not_mappable",
+      "evidence_type": "DERIVED",
+      "claim": "O valor único de 65 Nm publicado para a DCD7771D2-BR não pode ser mapeado diretamente a suave/flexível ou duro/rígido porque a ficha consultada não nomeia uma condição de junta.",
+      "source_name": "Leitura comparada da ficha DeWalt DCD7771D2-BR com fichas condicionadas Bosch e Makita",
+      "accessed_at": "2026-08-18T19:16:10Z",
+      "derived_from": [
+        "ev_dewalt_dcd777",
+        "ev_bosch_gsr185",
+        "ev_makita_hp333",
+        "ev_makita_df333"
+      ],
+      "notes": "Conclusão conservadora sobre ausência de rótulo; não contesta o valor declarado pela DeWalt."
+    },
+    {
+      "id": "ev_fields_not_interchangeable",
+      "evidence_type": "DERIVED",
+      "claim": "Números de torque só são diretamente comparáveis quando os rótulos e condições declaradas são equivalentes; as fontes consultadas não sustentam comparar isoladamente máximo, duro/rígido, suave/flexível ou um valor sem condição nomeada.",
+      "source_name": "Síntese editorial das fichas oficiais de torque consultadas",
+      "accessed_at": "2026-08-18T19:16:10Z",
+      "derived_from": [
+        "ev_bosch_gsr185",
+        "ev_bosch_go",
+        "ev_makita_hp333",
+        "ev_makita_df333",
+        "ev_dewalt_dcd777"
+      ],
+      "notes": "Regra editorial de comparabilidade; não estabelece desempenho, aplicação ou superioridade."
+    }
+  ]
+}

@@ -14,6 +14,7 @@ Este arquivo documenta a proveniência dos assets fotográficos publicados pela 
 | `public/images/dewalt-dcf885-impact-driver-cc-1600.webp` | `assets-source/images/dewalt-dcf885-impact-driver-cc.jpg` | Mark Hunter | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Dewalt_DCF885C2_Impact_Driver.jpg | Reserva editorial para conteúdo futuro sobre parafusadeiras de impacto DeWalt. |
 | `public/images/generic-impact-driver-pd-1600.webp` | `assets-source/images/generic-impact-driver-pd.png` | Hooperbloob | Domínio público | https://commons.wikimedia.org/wiki/File:ImpactDriverWithBits.png | Reserva editorial para conteúdo futuro sobre ferramenta manual de impacto e pontas. |
 | `public/images/rotary-hammer-combined-chuck-cc-1600.webp` | `assets-source/images/rotary-hammer-combined-chuck-cc.jpg` | Артём В. | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Перфоратор_с_комбинированным_патроном_SDS-plus-3-хкулачковый.jpg | Homepage e guia furadeira de impacto ou martelete, como imagem ilustrativa de uma configuração combinada SDS plus/mandril de três garras. |
+| `public/images/cordless-drill-torque-cc-1600.webp` | `assets-source/images/cordless-drill-torque-cc.jpg` | Tony Webster | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Cordless_Electric_Drill.jpg | Homepage e guia sobre torque/Nm, como imagem ilustrativa de uma furadeira/parafusadeira sem fio; não demonstra valores nem condições de medição. |
 
 ## Tratamento
 
