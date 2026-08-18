@@ -200,14 +200,13 @@
     }
   ],
   "verdict": {
-    "summary": "Nm é a unidade apresentada para torque nas fichas consultadas, mas o número só ganha contexto com o rótulo do campo. Suave/flexível, duro/rígido e máximo aparecem como campos distintos; uma ficha com valor único sem condição nomeada não oferece base para mapeamento direto.",
-    "recommendation": "Leia em quatro passos: 1) copie o rótulo completo; 2) preserve a ordem indicada; 3) compare somente condições equivalentes; 4) se a condição ou o protocolo não estiverem declarados, registre a comparação como inconclusiva. Não use o maior número isolado para escolher uma ferramenta.",
+    "heading": "Como ler o torque na ficha",
+    "summary": "Nm (newton-metro) é a unidade usada para declarar torque, a força de giro da ferramenta. Mas o número sozinho não basta: leia o nome completo do campo antes de comparar.",
+    "recommendation": "Compare rígido com rígido — também chamado de duro — e flexível com flexível — também chamado de suave ou macio. Torque máximo não é automaticamente torque rígido, e um valor único sem condição declarada não deve ser encaixado diretamente nesses campos. O maior número de Nm, isoladamente, não determina a melhor ferramenta.",
     "evidenceIds": [
       "ev_condition_labels",
-      "ev_label_order_changes",
       "ev_maximum_is_separate",
-      "ev_dewalt_not_mappable",
-      "ev_fields_not_interchangeable"
+      "ev_dewalt_not_mappable"
     ]
   },
   "faq": [

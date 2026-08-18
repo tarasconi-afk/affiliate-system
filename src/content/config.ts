@@ -62,6 +62,7 @@ const faqSchema = z.object({
 });
 
 const verdictSchema = z.object({
+  heading: z.string().optional(),
   summary: z.string(),
   recommendation: z.string(),
   evidenceIds: z.array(z.string()).optional()

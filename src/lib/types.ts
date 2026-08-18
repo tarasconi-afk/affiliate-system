@@ -158,6 +158,7 @@ export interface ComparisonDimension {
 }
 
 export interface Verdict {
+  heading?: string;
   summary: string;
   recommendation: string;
   evidenceIds?: string[];
