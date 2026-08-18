@@ -57,7 +57,7 @@ const socialImage = `${SITE.url}/images/dewalt-20v-cc-1600.webp`;
         <p class="section-kicker">CADERNO DE COMPARAÇÕES</p>
         <h2>Análises em destaque</h2>
       </div>
-      <p>Três formatos diferentes para testar a mesma promessa: ajudar a decidir com menos ruído e mais evidência.</p>
+      <p>Guias e comparações para ajudar a decidir com menos ruído e mais evidência.</p>
     </div>
 
     <article class="lead-story">
@@ -199,6 +199,7 @@ const socialImage = `${SITE.url}/images/dewalt-20v-cc-1600.webp`;
 
     .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
     .story { border-bottom: 1px solid var(--line); padding-bottom: 2rem; }
+    .story-grid > .story:nth-child(odd):last-child { grid-column: 1 / -1; }
     .story-image { display: block; height: 285px; overflow: hidden; background: var(--ink-soft); position: relative; }
     .story-image > img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .25s ease; }
     .split-image { display: grid; grid-template-columns: 1fr 1fr; }
