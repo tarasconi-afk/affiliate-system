@@ -6,7 +6,7 @@
     "title": "Bosch ou Makita? Comparação de baterias, garantia e ecossistema",
     "metaDescription": "Bosch ou Makita para parafusadeiras? Compare compatibilidade de baterias, garantia no Brasil e amplitude das plataformas profissionais com fontes oficiais.",
     "publishedAt": "2026-08-11T21:00:00Z",
-    "updatedAt": "2026-08-12T13:40:00Z",
+    "updatedAt": "2026-08-18T15:02:42Z",
     "author": "Ferramenta Clara",
     "breadcrumbs": [
       {
@@ -37,14 +37,14 @@
   "brands": [
     {
       "name": "Bosch",
-      "summary": "Faz mais sentido para quem valoriza o Professional 18V System: a Bosch informa compatibilidade de baterias e carregadores de 18V com ferramentas novas e existentes desde 2008.",
+      "summary": "Faz mais sentido considerar a Bosch quando você já usa ou pretende manter o Professional 18V System, nome da plataforma em que a fabricante declara compatibilidade de baterias e carregadores 18V com ferramentas novas e existentes desde 2008. Plataforma é o conjunto de baterias e ferramentas que o fabricante declara como parte do mesmo sistema.",
       "evidenceIds": [
         "ev_001"
       ]
     },
     {
       "name": "Makita",
-      "summary": "Faz mais sentido para quem busca amplitude dentro do LXT 18V: a Makita Brasil informa mais de 440 modelos compartilhando a mesma bateria da plataforma.",
+      "summary": "Faz mais sentido considerar a Makita quando você já usa ou pretende manter o LXT 18V. LXT é o nome da plataforma para a qual a Makita Brasil declara mais de 440 modelos compartilhando a mesma bateria 18V; esse número não prova, sozinho, que a plataforma seja melhor.",
       "evidenceIds": [
         "ev_003"
       ]
@@ -64,12 +64,13 @@
       },
       {
         "label": "Garantia no Brasil",
-        "brand1": "Bosch Professional: página brasileira informa 2 anos com registro no PRO360; linhas específicas podem ter condições diferentes.",
+        "brand1": "Bosch Professional: página brasileira informa 2 anos com registro no PRO360, portal/aplicativo usado para registrar ferramentas; linhas específicas podem ter condições diferentes.",
         "brand2": "Makita: 12 meses no total contra defeitos de material ou fabricação, conforme política brasileira.",
         "winner": 0,
         "evidenceIds": [
           "ev_002",
-          "ev_004"
+          "ev_004",
+          "ev_006"
         ]
       },
       {
@@ -84,11 +85,12 @@
       },
       {
         "label": "Assistência no Brasil",
-        "brand1": "Não quantificado nas evidências atuais.",
+        "brand1": "A Bosch oferece localizador oficial de assistência por CEP, local ou rua; a fonte não quantifica a rede nem garante atendimento em toda região.",
         "brand2": "Makita informa mais de 1.700 assistências técnicas no território nacional.",
         "winner": 0,
         "evidenceIds": [
-          "ev_004"
+          "ev_004",
+          "ev_005"
         ]
       }
     ]
@@ -109,19 +111,20 @@
     }
   ],
   "verdict": {
-    "summary": "Não há vencedor universal. A decisão fica mais clara quando você compara o ecossistema de bateria que pretende manter, as condições de garantia do produto específico e a disponibilidade de assistência na sua região.",
-    "recommendation": "Se você já possui baterias de uma das plataformas, permanecer no mesmo ecossistema costuma reduzir duplicação de carregadores e baterias. Em uma compra do zero, compare os modelos concretos que atendem ao seu uso antes de escolher apenas pela marca.",
+    "summary": "Não há vencedor universal: as fontes descrevem plataformas e políticas, não uma marca melhor para todo leitor. Leia cada linha como um critério de verificação e não transforme quantidade de modelos, garantia ou presença de localizador em vencedor automático.",
+    "recommendation": "Use este checklist: 1) identifique a plataforma de bateria que você já possui; 2) liste as ferramentas dessa plataforma que realmente pretende usar; 3) confira garantia e necessidade de registro para o produto específico; 4) consulte o localizador oficial e confirme o atendimento aplicável à sua localidade. Em uma compra do zero, compare os modelos concretos antes de escolher pela marca.",
     "evidenceIds": [
       "ev_001",
       "ev_002",
       "ev_003",
-      "ev_004"
+      "ev_004",
+      "ev_005"
     ]
   },
   "faq": [
     {
       "question": "Posso usar bateria Bosch em ferramenta Makita?",
-      "answer": "Não. Bosch Professional e Makita LXT são plataformas diferentes. A compatibilidade documentada por cada fabricante vale dentro do próprio sistema e da classe de tensão correspondente.",
+      "answer": "As fontes consultadas não sustentam o uso direto de uma bateria Bosch Professional em uma ferramenta Makita LXT. Cada fabricante documenta a compatibilidade dentro do próprio sistema e da classe correspondente; isso limita o que este guia pode afirmar, sem converter ausência de declaração em teste de incompatibilidade.",
       "evidenceIds": [
         "ev_001",
         "ev_003"
@@ -159,7 +162,7 @@
       "claim": "A página brasileira de garantia Bosch informa registro no PRO360 e 2 anos de garantia para a linha Bosch Professional, com condições específicas para outras linhas.",
       "source_name": "Bosch Professional Brasil — Garantia de produtos",
       "source_url": "https://www.bosch-professional.com/br/pt/servicos/garantia-de-produtos/",
-      "accessed_at": "2026-08-12T13:40:00Z",
+      "accessed_at": "2026-08-18T15:02:42Z",
       "notes": "As condições podem variar por linha e exigem observância das regras do fabricante."
     },
     {
@@ -179,6 +182,24 @@
       "source_url": "https://www.makita.com.br/servicos.asp",
       "accessed_at": "2026-08-12T13:40:00Z",
       "notes": "Garantia sujeita às condições publicadas pela Makita e à comprovação de compra."
+    },
+    {
+      "id": "ev_005",
+      "evidence_type": "SPEC",
+      "claim": "A Bosch Professional Brasil mantém um localizador oficial de assistência técnica com busca por CEP, local ou rua.",
+      "source_name": "Bosch Professional Brasil — Localizador de assistência técnica",
+      "source_url": "https://www.bosch-professional.com/br/pt/dealers/?expert=true",
+      "accessed_at": "2026-08-18T15:02:42Z",
+      "notes": "Fonte primária para a existência do localizador. Não informa quantidade total de postos nem garante disponibilidade em uma localidade específica."
+    },
+    {
+      "id": "ev_006",
+      "evidence_type": "SPEC",
+      "claim": "A Bosch Professional apresenta o PRO360 como portal e aplicativo para registrar e gerenciar ferramentas e informa garantia adicional sem custo mediante registro, sujeita às condições publicadas.",
+      "source_name": "Bosch Professional Brasil — PRO360",
+      "source_url": "https://www.bosch-professional.com/br/pt/pro360/",
+      "accessed_at": "2026-08-18T15:02:42Z",
+      "notes": "Fonte primária usada para explicar o que é o PRO360; a duração total da garantia permanece sustentada separadamente pela política de garantia."
     }
   ]
 }

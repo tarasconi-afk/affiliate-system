@@ -6,7 +6,7 @@
     "title": "Parafusadeira com impacto ou sem impacto: qual você precisa?",
     "metaDescription": "Entenda o que a função impacto acrescenta, como identificá-la na ficha e como distinguir furadeira com percussão, impact driver e chave de impacto.",
     "publishedAt": "2026-08-17T16:18:03Z",
-    "updatedAt": "2026-08-17T16:18:03Z",
+    "updatedAt": "2026-08-18T15:02:42Z",
     "author": "Ferramenta Clara",
     "breadcrumbs": [
       {
@@ -20,7 +20,7 @@
   },
   "hero": {
     "heading": "Parafusadeira com impacto ou sem impacto: qual você precisa?",
-    "subheading": "Compare o que as fichas declaram e não confunda percussão para perfuração com outras classes de ferramenta.",
+    "subheading": "Compare o que as fichas declaram e não confunda percussão — batidas na direção da broca — com outras classes de ferramenta.",
     "methodNote": "A comparação principal usa duas ferramentas Makita 12V da mesma família. As conclusões valem para este par; a ficha do SKU específico prevalece."
   },
   "media": {
@@ -47,7 +47,7 @@
     },
     {
       "name": "Com impacto / percussão",
-      "description": "No par comparado, a HP333DWYE é classificada como parafusadeira/furadeira de impacto e acrescenta capacidade declarada em alvenaria e duas faixas de impactos por minuto. Esses campos são indicadores úteis na ficha do modelo.",
+      "description": "No par comparado, a HP333DWYE é classificada como parafusadeira/furadeira de impacto ou percussão: além da rotação, a ficha declara batidas na direção da broca. Ela acrescenta capacidade declarada em alvenaria e duas faixas de impactos por minuto; esses campos são indicadores do modelo, não uma vantagem automática.",
       "evidenceIds": [
         "ev_makita_hp333"
       ]
@@ -78,17 +78,18 @@
       {
         "label": "Impactos por minuto",
         "option1": "A ficha consultada não apresenta campo de impactos por minuto.",
-        "option2": "Alta: 0–25.500; baixa: 0–6.750 impactos por minuto.",
+        "option2": "Alta: 0–25.500; baixa: 0–6.750 impactos por minuto. IPM indica quantas batidas ocorrem em um minuto e não mede sozinho a força aplicada.",
         "winner": 0,
         "evidenceIds": [
           "ev_makita_df333",
-          "ev_makita_hp333"
+          "ev_makita_hp333",
+          "ev_ipm_limit"
         ]
       },
       {
-        "label": "Rotação e torque de junta",
-        "option1": "0–1.700 / 0–450 RPM; junta rígida 30 Nm e flexível 14 Nm.",
-        "option2": "0–1.700 / 0–450 RPM; junta rígida 30 Nm e flexível 14 Nm.",
+        "label": "Rotação e torques de junta",
+        "option1": "0–1.700 / 0–450 RPM; RPM indica rotações por minuto. A ficha declara junta rígida 30 Nm e flexível 14 Nm; Nm é a unidade usada para torque. Junta rígida e flexível são formas distintas de registrar torque em condições diferentes, sem explicar aplicações universais para cada rótulo.",
+        "option2": "Os mesmos valores: 0–1.700 / 0–450 RPM, junta rígida 30 Nm e flexível 14 Nm.",
         "winner": 0,
         "evidenceIds": [
           "ev_pair_comparison"
@@ -120,7 +121,7 @@
       {
         "class": "Parafusadeira/furadeira sem impacto",
         "mechanism": "Na DF333DWYE, a ficha não declara impactos por minuto.",
-        "interface": "Mandril de aperto rápido, com capacidade de 0,8–10 mm.",
+        "interface": "Mandril de aperto rápido — a parte que segura a broca ou ponta — com capacidade de 0,8–10 mm.",
         "application": "Aço 10 mm e madeira 21 mm no modelo consultado.",
         "caveat": "A ausência de impacto na ficha não demonstra fraqueza ou inadequação universal.",
         "evidenceIds": [
@@ -187,7 +188,7 @@
   ],
   "verdict": {
     "summary": "Neste par, a função impacto acrescenta à ficha da HP333DWYE a capacidade em alvenaria e faixas de impactos por minuto, enquanto aço, madeira, rotações e torques de junta coincidem com a DF333DWYE. Há também diferenças de dimensões, peso e torque máximo declarado; portanto, impacto não é a única diferença entre os dois SKUs.",
-    "recommendation": "Se a aplicação inclui o material e a função declarados na ficha de um modelo com percussão, inclua essa classe na comparação. Se não inclui, não trate impacto como vantagem automática. Confirme sempre o nome, a interface e as capacidades do SKU específico.",
+    "recommendation": "Use este procedimento: 1) identifique a classe escrita na ficha; 2) verifique se há impacto e IPM declarados; 3) confira mandril ou outro encaixe; 4) compare somente materiais e campos com o mesmo nome; 5) se a dúvida passar para concreto, SDS — sistema de encaixe diferente do mandril — ou energia por golpe, siga para a comparação com marteletes. Não trate impacto como vantagem automática.",
     "evidenceIds": [
       "ev_pair_comparison"
     ]
@@ -225,6 +226,13 @@
         "ev_makita_td110",
         "ev_makita_tw141",
         "ev_taxonomy_reading"
+      ]
+    },
+    {
+      "question": "Mais IPM significa automaticamente mais força?",
+      "answer": "Não é uma conclusão sustentada pelas fichas consultadas. IPM informa a frequência das batidas, enquanto torque aparece em campos separados. Compare IPM com IPM e torque com torque, preservando as condições e os rótulos publicados para cada SKU.",
+      "evidenceIds": [
+        "ev_ipm_limit"
       ]
     }
   ],
@@ -299,6 +307,19 @@
       "source_url": "https://www.dewalt.com.br/pt-br/produto/dcd7771d2-br/parafusadeirafuradeira-12-13mm-20v-max",
       "accessed_at": "2026-08-17T16:18:03Z",
       "notes": "A ausência se refere à ficha consultada; não é uma alegação sobre toda a linha DeWalt."
+    },
+    {
+      "id": "ev_ipm_limit",
+      "evidence_type": "DERIVED",
+      "claim": "Nas fichas consultadas, impactos por minuto são publicados como contagem de batidas, enquanto torque aparece em campos separados. Por isso IPM não deve ser usado isoladamente como medida de força nem comparado com torque como se fosse o mesmo campo.",
+      "source_name": "Leitura comparada dos campos de impacto e torque nas fichas Makita",
+      "accessed_at": "2026-08-18T15:02:42Z",
+      "derived_from": [
+        "ev_makita_hp333",
+        "ev_makita_td110",
+        "ev_makita_tw141"
+      ],
+      "notes": "Síntese limitada à forma como as fichas separam os campos; não mede intensidade de impacto nem desempenho prático."
     }
   ]
 }

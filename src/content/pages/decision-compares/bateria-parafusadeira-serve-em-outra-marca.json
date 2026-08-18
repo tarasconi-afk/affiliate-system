@@ -6,7 +6,7 @@
     "title": "Bateria de parafusadeira serve em outra marca? Como verificar",
     "metaDescription": "Entenda quando uma bateria pode ser compartilhada entre ferramentas e marcas, usando declarações oficiais dos sistemas Bosch, Makita LXT e AMPShare.",
     "publishedAt": "2026-08-17T18:28:47Z",
-    "updatedAt": "2026-08-17T18:28:47Z",
+    "updatedAt": "2026-08-18T15:02:42Z",
     "author": "Ferramenta Clara",
     "breadcrumbs": [
       {
@@ -40,17 +40,18 @@
   "options": [
     {
       "name": "Reaproveitar sua plataforma atual",
-      "description": "Identifique o nome exato do sistema na bateria e na ferramenta e procure a declaração oficial correspondente. Nas fontes consultadas, Bosch Professional 12V, Bosch Professional 18V e Makita LXT 18V descrevem o compartilhamento dentro de escopos nomeados.",
+      "description": "Plataforma é o conjunto de baterias e ferramentas que o fabricante declara como parte do mesmo sistema. Identifique o nome exato na bateria e na ferramenta: Bosch Professional 12V, Bosch Professional 18V, Makita LXT 18V e DeWalt 20V MAX/POWERSTACK publicam compatibilidade dentro de escopos nomeados.",
       "evidenceIds": [
         "ev_bosch_12v",
         "ev_bosch_18v",
         "ev_makita_lxt",
+        "ev_dewalt_powerstack",
         "ev_platform_scope"
       ]
     },
     {
       "name": "Trocar de plataforma",
-      "description": "Se a ferramenta desejada não aparece no sistema documentado para sua bateria, trate a escolha como outra plataforma até encontrar confirmação primária. Há exceções multimarcas, como AMPShare, mas somente para produtos integrados ao sistema.",
+      "description": "Se a ferramenta desejada não aparece no sistema documentado para sua bateria, trate a escolha como outra plataforma até encontrar confirmação primária. AMPShare é uma aliança 18V entre marcas, mas a compatibilidade declarada vale somente para produtos integrados ao sistema.",
       "evidenceIds": [
         "ev_ampshare",
         "ev_cross_brand_boundary"
@@ -146,6 +147,16 @@
         ]
       },
       {
+        "class": "DeWalt 20V MAX / POWERSTACK",
+        "mechanism": "A DeWalt declara as baterias POWERSTACK compatíveis com todas as ferramentas e carregadores 20V MAX.",
+        "interface": "Baterias POWERSTACK e produtos identificados pela fabricante como parte do sistema 20V MAX.",
+        "application": "Confirmar 20V MAX e o modelo da bateria e da ferramenta na documentação oficial.",
+        "caveat": "A fonte consultada sustenta a declaração para baterias POWERSTACK; não autoriza estender o claim a outras marcas ou a toda família de bateria não citada.",
+        "evidenceIds": [
+          "ev_dewalt_powerstack"
+        ]
+      },
+      {
         "class": "AMPShare",
         "mechanism": "A Bosch declara compatibilidade entre baterias, carregadores e ferramentas integrados ao AMPShare, independentemente da marca.",
         "interface": "Produtos pertencentes à aliança multimarcas e integrados ao sistema AMPShare.",
@@ -175,11 +186,17 @@
       "intro": "Depois de definir a plataforma, confira também",
       "anchorText": "a diferença entre parafusadeiras com e sem impacto",
       "href": "/parafusadeira-com-ou-sem-impacto/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Para ver como a plataforma aparece no conteúdo de um kit específico, consulte a",
+      "anchorText": "análise técnica da DeWalt DCD7771D2‑BR",
+      "href": "/parafusadeira-dewalt-dcd777-vale-a-pena/"
     }
   ],
   "verdict": {
     "summary": "Uma bateria pode servir em ferramentas de outra marca quando existe um sistema multimarcas que declare essa compatibilidade para os produtos envolvidos. Fora de uma declaração assim, as fontes consultadas sustentam apenas os escopos nomeados por cada fabricante; isso não prova incompatibilidade universal, mas não autoriza presumir compatibilidade.",
-    "recommendation": "Verifique, nesta ordem, o nome da plataforma, a classe de tensão, a identificação da bateria e da ferramenta e a documentação oficial. Decida entre manter ou trocar de plataforma somente depois dessa confirmação, sem usar a marca isoladamente como atalho.",
+    "recommendation": "Verifique em quatro passos: 1) identifique o nome da plataforma; 2) confirme a tensão ou classe do sistema; 3) procure bateria e ferramenta explicitamente incluídas na documentação oficial; 4) não conclua compatibilidade apenas por marca, tensão ou aparência. Só então decida entre manter ou trocar de plataforma.",
     "evidenceIds": [
       "ev_platform_scope",
       "ev_cross_brand_boundary"
@@ -196,11 +213,12 @@
     },
     {
       "question": "Ter a mesma tensão é suficiente para confirmar compatibilidade?",
-      "answer": "A mesma tensão, sozinha, não é evidência suficiente nas fontes consultadas. As declarações são vinculadas a sistemas e classes nomeados, como Bosch Professional 12V, Bosch Professional 18V, Makita LXT 18V e AMPShare.",
+      "answer": "A mesma tensão, sozinha, não é evidência suficiente nas fontes consultadas. As declarações são vinculadas a sistemas e classes nomeados, como Bosch Professional 12V, Bosch Professional 18V, Makita LXT 18V, DeWalt 20V MAX/POWERSTACK e AMPShare.",
       "evidenceIds": [
         "ev_bosch_12v",
         "ev_bosch_18v",
         "ev_makita_lxt",
+        "ev_dewalt_powerstack",
         "ev_ampshare",
         "ev_platform_scope"
       ]
@@ -261,30 +279,41 @@
       "notes": "Fonte primária para a exceção multimarcas; não abrange automaticamente todos os produtos de uma marca participante."
     },
     {
+      "id": "ev_dewalt_powerstack",
+      "evidence_type": "SPEC",
+      "claim": "A DeWalt Brasil declara que as baterias POWERSTACK são compatíveis com todas as ferramentas e carregadores do sistema 20V MAX e apresenta compatibilidade com mais de 300 produtos do sistema.",
+      "source_name": "DeWalt Brasil — Baterias POWERSTACK 20V MAX",
+      "source_url": "https://www.dewalt.com.br/pt-br/produtos/sistemas/ferramentas-sem-fio/powerstack",
+      "accessed_at": "2026-08-18T15:02:42Z",
+      "notes": "Fonte primária estável usada somente para o escopo POWERSTACK/20V MAX. Não sustenta compatibilidade com outras marcas nem com plataformas DeWalt não citadas."
+    },
+    {
       "id": "ev_platform_scope",
       "evidence_type": "DERIVED",
       "claim": "Nas fontes consultadas, compatibilidade é descrita por plataforma, classe de tensão e inclusão do produto no sistema; compartilhar marca ou tensão, isoladamente, não é evidência suficiente para ampliar o escopo declarado.",
       "source_name": "Leitura comparada das declarações oficiais de plataforma",
-      "accessed_at": "2026-08-17T18:28:47Z",
+      "accessed_at": "2026-08-18T15:02:42Z",
       "derived_from": [
         "ev_bosch_12v",
         "ev_bosch_18v",
         "ev_makita_lxt",
-        "ev_ampshare"
+        "ev_ampshare",
+        "ev_dewalt_powerstack"
       ],
-      "notes": "Síntese editorial dos limites explícitos das quatro fontes; não é teste de compatibilidade."
+      "notes": "Síntese editorial dos limites explícitos das cinco fontes; não é teste de compatibilidade."
     },
     {
       "id": "ev_cross_brand_boundary",
       "evidence_type": "DERIVED",
       "claim": "Entre as fontes consultadas, AMPShare sustenta compatibilidade entre marcas somente para produtos integrados ao sistema. As demais fontes documentam compatibilidade dentro de plataformas nomeadas; esse silêncio fora do escopo não demonstra incompatibilidade universal.",
-      "source_name": "Leitura comparada dos escopos Bosch, Makita LXT e AMPShare",
-      "accessed_at": "2026-08-17T18:28:47Z",
+      "source_name": "Leitura comparada dos escopos Bosch, Makita LXT, DeWalt 20V MAX e AMPShare",
+      "accessed_at": "2026-08-18T15:02:42Z",
       "derived_from": [
         "ev_bosch_12v",
         "ev_bosch_18v",
         "ev_makita_lxt",
-        "ev_ampshare"
+        "ev_ampshare",
+        "ev_dewalt_powerstack"
       ],
       "notes": "Conclusão conservadora: ausência de declaração não foi convertida em incompatibilidade comprovada."
     }

@@ -6,7 +6,7 @@
     "title": "Parafusadeira 12V ou 18V? Como escolher sem comparar só números",
     "metaDescription": "12V ou 18V? Entenda diferenças de compacidade, força disponível, espaços de trabalho e ecossistema de bateria com referências oficiais.",
     "publishedAt": "2026-08-11T21:00:00Z",
-    "updatedAt": "2026-08-12T13:40:00Z",
+    "updatedAt": "2026-08-18T15:02:42Z",
     "author": "Ferramenta Clara",
     "breadcrumbs": [
       {
@@ -21,7 +21,7 @@
   "hero": {
     "heading": "Parafusadeira 12V ou 18V: qual escolher?",
     "subheading": "A tensão é só parte da decisão: compacidade, aplicação e plataforma de bateria também importam.",
-    "methodNote": "As fontes técnicas usadas neste guia são da Bosch; por isso as afirmações são tratadas como referência qualitativa, não como um retrato universal de todas as marcas do mercado."
+    "methodNote": "As fontes técnicas usadas são páginas oficiais da Bosch, da Makita e da DeWalt. Elas ajudam a interpretar plataformas e nomenclaturas, mas não formam um teste comparável de todos os modelos do mercado."
   },
   "media": {
     "items": [
@@ -47,18 +47,20 @@
   "options": [
     {
       "name": "12V",
-      "description": "Faz mais sentido quando compacidade, mobilidade e acesso a espaços apertados pesam mais na decisão. A própria Bosch Professional posiciona o sistema 12V como uma solução compacta para trabalhos em áreas restritas.",
+      "description": "V indica a tensão elétrica do sistema; esse número, sozinho, não determina desempenho. A classe 12V faz sentido entrar na comparação quando compacidade, mobilidade e acesso a espaços apertados pesam mais: Bosch Professional e Makita CXT descrevem suas plataformas 12V como compactas, sem transformar isso em regra universal.",
       "evidenceIds": [
         "ev_001",
-        "ev_002"
+        "ev_002",
+        "ev_004"
       ]
     },
     {
       "name": "18V",
-      "description": "Faz mais sentido quando a aplicação pede mais força disponível e uma plataforma voltada a tarefas mais amplas. A Bosch descreve 18V como capaz de entregar mais força, sem afirmar que seja sempre a melhor escolha.",
+      "description": "A classe 18V faz sentido entrar na comparação quando a aplicação pede mais força disponível ou quando a plataforma reúne as ferramentas que você pretende usar. A Bosch descreve mais força disponível; a Makita documenta amplitude no LXT 18V. Nenhuma dessas declarações torna 18V automaticamente melhor.",
       "evidenceIds": [
         "ev_001",
-        "ev_003"
+        "ev_003",
+        "ev_005"
       ]
     }
   ],
@@ -95,23 +97,27 @@
       },
       {
         "label": "Ecossistema de bateria",
-        "option1": "Baterias Bosch Professional 12V são intercambiáveis dentro da mesma classe de tensão.",
-        "option2": "Baterias Bosch Professional 18V são intercambiáveis dentro da mesma classe de tensão e compatíveis no sistema desde 2008.",
+        "option1": "Bosch Professional 12V e Makita CXT 12V documentam compartilhamento de bateria dentro de suas respectivas plataformas.",
+        "option2": "Bosch Professional 18V documenta compatibilidade no sistema desde 2008; Makita LXT declara mais de 440 modelos compartilhando a mesma bateria 18V.",
         "winner": 0,
         "evidenceIds": [
           "ev_002",
-          "ev_003"
+          "ev_003",
+          "ev_004",
+          "ev_005"
         ]
       },
       {
-        "label": "Critério de escolha",
-        "option1": "Quando leveza e acesso valem mais que capacidade máxima.",
-        "option2": "Quando demanda de trabalho e amplitude da plataforma pesam mais.",
+        "label": "Como verificar",
+        "option1": "Compare os modelos 12V concretos, o espaço de trabalho e as ferramentas incluídas na plataforma.",
+        "option2": "Compare os modelos 18V concretos, os campos equivalentes da ficha e as ferramentas incluídas na plataforma.",
         "winner": 0,
         "evidenceIds": [
           "ev_001",
           "ev_002",
-          "ev_003"
+          "ev_003",
+          "ev_004",
+          "ev_005"
         ]
       }
     ]
@@ -149,12 +155,14 @@
     }
   ],
   "verdict": {
-    "summary": "12V não é simplesmente “fraco” e 18V não é automaticamente “melhor”. A classe 12V prioriza compacidade; 18V oferece maior força disponível. O melhor ponto de partida é o tipo de trabalho e o ecossistema de bateria que você pretende manter.",
-    "recommendation": "Escolha 12V se trabalha muito em espaços apertados ou valoriza uma ferramenta compacta. Escolha 18V se suas aplicações exigem mais força ou se você quer uma plataforma mais orientada a tarefas amplas. Compare o modelo específico antes de comprar.",
+    "summary": "12V não é simplesmente “fraco” e 18V não é automaticamente “melhor”. As fontes mostram diferenças de posicionamento e de plataforma, mas não autorizam uma conclusão universal para todos os modelos.",
+    "recommendation": "Decida em três passos: 1) identifique o espaço e a tarefa que precisam ser atendidos; 2) compare campos equivalentes nas fichas dos modelos concretos, sem usar só a tensão; 3) confirme quais baterias e ferramentas pertencem à plataforma que você pretende manter.",
     "evidenceIds": [
       "ev_001",
       "ev_002",
-      "ev_003"
+      "ev_003",
+      "ev_004",
+      "ev_005"
     ]
   },
   "faq": [
@@ -174,7 +182,7 @@
     },
     {
       "question": "Posso usar a mesma bateria em 12V e 18V?",
-      "answer": "Não entre classes diferentes. Nos sistemas citados, a intercambialidade vale entre ferramentas da mesma classe de tensão: 12V com 12V e 18V com 18V.",
+      "answer": "As fontes consultadas só sustentam intercambialidade dentro da mesma plataforma e classe: 12V com 12V e 18V com 18V nos sistemas citados. Elas não autorizam presumir uso cruzado entre 12V e 18V; confirme a documentação da bateria e da ferramenta específicas.",
       "evidenceIds": [
         "ev_001",
         "ev_002",
@@ -183,10 +191,19 @@
     },
     {
       "question": "Só a voltagem permite prever autonomia?",
-      "answer": "Não. Autonomia depende também da capacidade da bateria, eficiência da ferramenta e carga de trabalho. Por isso este guia evita transformar 12V e 18V em faixas genéricas de duração sem um conjunto de medições comparáveis.",
+      "answer": "Não. Ah indica a capacidade declarada da bateria, mas nem V nem Ah permitem, sozinhos, prever exatamente quanto tempo uma ferramenta funcionará. Este guia não publica faixas de autonomia porque as fontes consultadas não oferecem medições comparáveis de duração para os modelos.",
       "evidenceIds": [
         "ev_002",
-        "ev_003"
+        "ev_003",
+        "ev_004",
+        "ev_005"
+      ]
+    },
+    {
+      "question": "20V MAX é automaticamente uma classe acima de 18V?",
+      "answer": "Não é uma conclusão autorizada pela nomenclatura. Na nota oficial da DeWalt Brasil, 20V MAX indica tensão máxima inicial de 20 volts, medida sem carga, e tensão nominal de 18 volts. Essa explicação vale para o sistema citado e não cria equivalência universal entre marcas.",
+      "evidenceIds": [
+        "ev_006"
       ]
     }
   ],
@@ -217,6 +234,33 @@
       "source_url": "https://www.bosch-professional.com/br/pt/18v-cordless-system/",
       "accessed_at": "2026-08-17T18:28:47Z",
       "notes": "Fonte primária para posicionamento e compatibilidade do sistema 18V usado como exemplo."
+    },
+    {
+      "id": "ev_004",
+      "evidence_type": "SPEC",
+      "claim": "A Makita Brasil descreve a plataforma 12V CXT como composta por modelos compactos e leves para variadas aplicações e informa que as ferramentas da linha compartilham a mesma bateria.",
+      "source_name": "Makita Brasil — Linha 12V CXT",
+      "source_url": "https://www.makita.com.br/cxt.asp",
+      "accessed_at": "2026-08-18T15:02:42Z",
+      "notes": "Fonte primária usada como segundo exemplo de fabricante. O texto promocional não é convertido em medição de desempenho."
+    },
+    {
+      "id": "ev_005",
+      "evidence_type": "SPEC",
+      "claim": "A Makita Brasil informa que a plataforma 18V LXT reúne mais de 440 modelos compartilhando a mesma bateria 18V.",
+      "source_name": "Makita Brasil — Linha 18V LXT",
+      "source_url": "https://www.makita.com.br/lxt.asp",
+      "accessed_at": "2026-08-18T15:02:42Z",
+      "notes": "Fonte primária usada para amplitude e compartilhamento declarados da plataforma; não prova desempenho superior nem comparação direta com 12V."
+    },
+    {
+      "id": "ev_006",
+      "evidence_type": "SPEC",
+      "claim": "A nota oficial do sistema DeWalt 20V MAX informa tensão máxima inicial de 20 volts, medida sem carga de trabalho, e tensão nominal de 18 volts.",
+      "source_name": "DeWalt Brasil — Sistema 20V MAX",
+      "source_url": "https://www.dewalt.com.br/pt-br/produtos/sistemas/ferramentas-sem-fio/20v",
+      "accessed_at": "2026-08-18T15:02:42Z",
+      "notes": "Usada somente para explicar a nomenclatura 20V MAX; não estabelece equivalência universal entre marcas."
     }
   ]
 }

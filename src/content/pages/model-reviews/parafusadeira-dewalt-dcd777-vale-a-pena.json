@@ -6,7 +6,7 @@
     "title": "DeWalt DCD777 vale a pena? Análise da DCD7771D2-BR",
     "metaDescription": "Análise técnica da DeWalt DCD7771D2-BR com ficha oficial brasileira: 65 Nm, motor brushless, duas velocidades, mandril de 13 mm e conteúdo do kit.",
     "publishedAt": "2026-08-11T21:00:00Z",
-    "updatedAt": "2026-08-12T13:40:00Z",
+    "updatedAt": "2026-08-18T15:02:42Z",
     "author": "Ferramenta Clara",
     "breadcrumbs": [
       {
@@ -42,7 +42,7 @@
     "caption": "A foto mostra uma ferramenta DeWalt 20V; o modelo analisado é a DCD7771D2‑BR."
   },
   "quickAnswer": {
-    "text": "Pode valer a pena se você procura uma furadeira/parafusadeira sem função impacto e as especificações de 65 Nm, motor brushless, duas velocidades, mandril de 13 mm e kit com duas baterias de 2 Ah atendem à sua necessidade. Se o uso exige impacto, compare outro modelo: a ficha oficial da DCD7771D2‑BR não lista esse recurso.",
+    "text": "Pode valer a pena se você procura uma furadeira/parafusadeira sem função impacto — recurso que acrescenta batidas na direção da broca — e se a ficha de 65 Nm de torque, ou força de giro, motor brushless (sem escovas de carvão), duas velocidades, mandril de 13 mm — a parte que segura a broca ou ponta — e duas baterias de 2 Ah atende à sua necessidade. Ah indica a capacidade declarada da bateria, mas não permite prever sozinho a autonomia. Se o uso exige impacto, compare outro modelo: a ficha oficial da DCD7771D2‑BR não lista esse recurso.",
     "evidenceIds": [
       "ev_001",
       "ev_002"
@@ -56,7 +56,7 @@
     },
     {
       "label": "Rotação",
-      "value": "0–500 / 0–1.750 RPM",
+      "value": "0–500 / 0–1.750 RPM (rotações por minuto)",
       "evidenceIds": ["ev_001"]
     },
     {
@@ -66,17 +66,17 @@
     },
     {
       "label": "Motor",
-      "value": "Brushless",
+      "value": "Brushless (sem escovas de carvão)",
       "evidenceIds": ["ev_001"]
     }
   ],
   "specs": [
     {
       "label": "Tensão da plataforma",
-      "value": "20V MAX",
+      "value": "20V MAX*: 20 V iniciais sem carga; tensão nominal de 18 V",
       "highlight": true,
       "evidenceIds": [
-        "ev_001"
+        "ev_003"
       ]
     },
     {
@@ -89,7 +89,7 @@
     },
     {
       "label": "Mandril",
-      "value": "1/2 pol. (13 mm), ajuste rápido",
+      "value": "1/2 pol. (13 mm), ajuste rápido; é a parte que segura a broca ou ponta",
       "highlight": false,
       "evidenceIds": [
         "ev_001"
@@ -97,7 +97,7 @@
     },
     {
       "label": "Velocidades",
-      "value": "2 faixas: 0–500 / 0–1.750 RPM",
+      "value": "2 faixas: 0–500 / 0–1.750 RPM (rotações por minuto)",
       "highlight": true,
       "evidenceIds": [
         "ev_001"
@@ -105,15 +105,15 @@
     },
     {
       "label": "Torque máximo",
-      "value": "65 Nm",
+      "value": "65 Nm; Nm é a unidade usada para indicar torque, ou força de giro",
       "highlight": true,
       "evidenceIds": [
         "ev_001"
       ]
     },
     {
-      "label": "Embreagem",
-      "value": "15 posições",
+      "label": "Embreagem (ajuste de torque)",
+      "value": "15 posições declaradas",
       "highlight": false,
       "evidenceIds": [
         "ev_001"
@@ -129,7 +129,7 @@
     },
     {
       "label": "Kit DCD7771D2-BR",
-      "value": "2 baterias 2,0 Ah + carregador bivolt + item de transporte",
+      "value": "2 baterias de 2,0 Ah (capacidade declarada) + carregador bivolt (duas tensões de alimentação) + item de transporte",
       "highlight": false,
       "evidenceIds": [
         "ev_001"
@@ -142,6 +142,12 @@
       "intro": "Para avaliar se esta classe de tensão combina com o seu tipo de uso, veja",
       "anchorText": "como escolher entre parafusadeiras 12V e 18V",
       "href": "/parafusadeira-12v-ou-18v/"
+    },
+    {
+      "placement": "after_specs",
+      "intro": "Como o kit inclui duas baterias, confirme também",
+      "anchorText": "como verificar a compatibilidade dentro de uma plataforma de bateria",
+      "href": "/bateria-parafusadeira-serve-em-outra-marca/"
     },
     {
       "placement": "after_specs",
@@ -159,13 +165,13 @@
   "prosCons": {
     "pros": [
       {
-        "text": "Motor brushless conforme a ficha oficial da DeWalt.",
+        "text": "Motor brushless, isto é, sem escovas de carvão, conforme a ficha oficial da DeWalt.",
         "evidenceIds": [
           "ev_001"
         ]
       },
       {
-        "text": "65 Nm e duas faixas de rotação (0–500 / 0–1.750 RPM) dão uma ficha versátil para fixação e perfuração.",
+        "text": "A ficha declara 65 Nm e duas faixas de rotação (0–500 / 0–1.750 RPM); esses números descrevem o modelo, mas não substituem medições de desempenho em uso real.",
         "evidenceIds": [
           "ev_001"
         ]
@@ -192,7 +198,7 @@
   "faq": [
     {
       "question": "Qual é o torque e a rotação da DCD7771D2-BR?",
-      "answer": "A página brasileira da DeWalt informa torque máximo de 65 Nm e duas faixas de velocidade: 0–500 e 0–1.750 RPM.",
+      "answer": "A página brasileira da DeWalt informa torque máximo de 65 Nm e duas faixas de velocidade: 0–500 e 0–1.750 RPM. Nm indica torque, ou força de giro; RPM indica quantas rotações ocorrem por minuto. Esses números devem ser comparados com campos equivalentes na ficha do outro modelo.",
       "evidenceIds": [
         "ev_001"
       ]
@@ -210,17 +216,32 @@
       "evidenceIds": [
         "ev_002"
       ]
+    },
+    {
+      "question": "Como ler a tabela da DCD777?",
+      "answer": "Comece pelo tipo de motor, torque declarado, faixas de rotação, mandril, conteúdo do kit e presença ou ausência de impacto. Esses campos ajudam a conferir se a ficha atende à sua necessidade, mas não medem autonomia, ergonomia ou desempenho prático.",
+      "evidenceIds": [
+        "ev_001",
+        "ev_002"
+      ]
+    },
+    {
+      "question": "O que significa 20V MAX* nesta ficha?",
+      "answer": "Na nota oficial da DeWalt Brasil, 20V MAX* indica tensão máxima inicial de 20 volts, medida sem carga de trabalho; a tensão nominal declarada é 18 volts. Essa nota explica a nomenclatura deste sistema e não cria uma regra universal de equivalência entre marcas.",
+      "evidenceIds": [
+        "ev_003"
+      ]
     }
   ],
   "evidences": [
     {
       "id": "ev_001",
       "evidence_type": "SPEC",
-      "claim": "Especificações e conteúdo do kit brasileiro DeWalt DCD7771D2-BR: brushless, 65 Nm, 0–500 / 0–1.750 RPM, mandril 13 mm, 15 posições, LED, duas baterias 2 Ah e carregador bivolt.",
+      "claim": "A DeWalt descreve a DCD7771D2-BR como leve e compacta e declara: motor brushless, 65 Nm, 0–500 / 0–1.750 RPM, mandril 13 mm, 15 posições, LED, duas baterias 2 Ah e carregador bivolt.",
       "source_name": "DeWalt Brasil — DCD7771D2-BR",
       "source_url": "https://www.dewalt.com.br/pt-br/produto/dcd7771d2-br/parafusadeirafuradeira-12-13mm-20v-max",
-      "accessed_at": "2026-08-12T13:40:00Z",
-      "notes": "Fonte primária brasileira usada para os dados do modelo e do kit."
+      "accessed_at": "2026-08-18T15:02:42Z",
+      "notes": "Fonte primária brasileira usada para os dados do modelo e do kit. A visão geral e as funcionalidades registram explicitamente construção/design leve e compacto."
     },
     {
       "id": "ev_002",
@@ -228,11 +249,20 @@
       "claim": "A ficha do DCD7771D2-BR não lista função impacto; a recomendação de comparar modelos de impacto para alvenaria é uma interpretação editorial do tipo de produto e dos recursos declarados.",
       "source_name": "Leitura da ficha oficial DeWalt DCD7771D2-BR",
       "source_url": "https://www.dewalt.com.br/pt-br/produto/dcd7771d2-br/parafusadeirafuradeira-12-13mm-20v-max",
-      "accessed_at": "2026-08-12T13:40:00Z",
+      "accessed_at": "2026-08-18T15:02:42Z",
       "derived_from": [
         "ev_001"
       ],
       "notes": "Não é alegação de teste prático."
+    },
+    {
+      "id": "ev_003",
+      "evidence_type": "SPEC",
+      "claim": "A nota oficial do sistema DeWalt 20V MAX informa que a tensão máxima inicial da bateria, medida sem carga de trabalho, é 20 volts e que a tensão nominal é 18 volts.",
+      "source_name": "DeWalt Brasil — Sistema 20V MAX",
+      "source_url": "https://www.dewalt.com.br/pt-br/produtos/sistemas/ferramentas-sem-fio/20v",
+      "accessed_at": "2026-08-18T15:02:42Z",
+      "notes": "Fonte primária usada somente para explicar o asterisco e a nomenclatura 20V MAX; não estabelece equivalência universal entre marcas."
     }
   ]
 }
