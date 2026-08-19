@@ -6,7 +6,7 @@ Leia este arquivo primeiro.
 
 Ferramenta Clara é um projeto pessoal que busca provar SEO orgânico evidence-first e automatizar progressivamente a produção sem sacrificar qualidade.
 
-Fase atual: primeiro checkpoint editorial, com 8 artigos publicados. O pipeline Codex → Claude já foi testado, mas toda publicação continua human-gated.
+Fase atual: primeiro checkpoint editorial pós-lançamento, com 8 artigos publicados, `prelaunch = false` e sitemap esperado de 9 URLs indexáveis (homepage + 8 artigos). O pipeline Codex → Claude já foi testado, mas toda publicação continua human-gated.
 
 Stack: Astro estático, PageSpecs JSON, Git, auto-deploy e conteúdo evidence-first.
 
@@ -28,6 +28,22 @@ Stack: Astro estático, PageSpecs JSON, Git, auto-deploy e conteúdo evidence-fi
 Workflow: discovery → Claude red-team → Codex implementa → Claude audita → Codex corrige apenas problemas seguros → commit → humano autoriza push → smoke test → Search Console.
 
 Monetização: OFF. Roadmap futuro: AdSense e afiliados. Publicação automática: OFF.
+
+## Estado operacional confirmado em 19/08/2026
+
+- Search Console está operacional; a baseline inicial registrou 12 impressões e 0 cliques, com várias páginas do cluster já recebendo impressões.
+- A coleta de Search Console via n8n foi testada e funcionou.
+- O alerta “Indexada, mas bloqueada pelo robots.txt” referia-se à homepage HTTP.
+- A produção foi verificada: homepage HTTP redireciona com `301` para HTTPS `200`; `robots.txt` HTTP redireciona com `301` para HTTPS `200`; o arquivo HTTPS contém `Allow: /`; o canonical da homepage aponta para HTTPS.
+- Nenhuma correção técnica foi necessária para esse alerta.
+
+## Pipeline autônomo
+
+O experimento Página 9 autônoma v1 terminou em `SAFE_STOP`, sem alterações e sem commit. Duas chamadas Claude de discovery ficaram sem stdout. O gate se comportou corretamente: nenhum candidato foi aprovado sem red-team independente.
+
+Gargalo atual: tornar o fluxo Codex → Claude previsível.
+
+Estratégia v2: um candidato por chamada, prompt pequeno, timeout explícito e retry limitado.
 
 Leia depois: `PROJECT_RULES.md`, `RECOVERY_RUNBOOK.md`, `MONETIZATION_ROADMAP.md`, além de `AGENTS.md` e `ARCHITECTURE.md` na raiz do repositório.
 
