@@ -6,7 +6,7 @@ Leia este arquivo primeiro.
 
 Ferramenta Clara é um projeto pessoal que busca provar SEO orgânico evidence-first e automatizar progressivamente a produção sem sacrificar qualidade.
 
-Fase atual: primeiro checkpoint editorial pós-lançamento, com 9 artigos publicados, `prelaunch = false` e sitemap de 10 URLs indexáveis (homepage + 9 artigos). O MVP editorial autônomo v0.1 foi validado end-to-end em produção, mas toda publicação continua human-gated.
+Fase atual: checkpoint editorial pós-lançamento, com 10 artigos publicados, `prelaunch = false` e sitemap de 11 URLs indexáveis (homepage + 10 artigos). O MVP editorial autônomo foi validado como repetível end-to-end em produção, mas toda publicação continua human-gated.
 
 Stack: Astro estático, PageSpecs JSON, Git, auto-deploy e conteúdo evidence-first.
 
@@ -37,12 +37,14 @@ Monetização: OFF. Roadmap futuro: AdSense e afiliados. Publicação automátic
 - A produção foi verificada: homepage HTTP redireciona com `301` para HTTPS `200`; `robots.txt` HTTP redireciona com `301` para HTTPS `200`; o arquivo HTTPS contém `Allow: /`; o canonical da homepage aponta para HTTPS.
 - Nenhuma correção técnica foi necessária para esse alerta.
 
-## Checkpoint autônomo v0.1 — 24/08/2026
+## Checkpoint de repetibilidade — 24/08/2026
 
-- Página 9 publicada: “Furadeira com fio ou a bateria”.
-- Commit publicado: `274e849a51400ba1aa2de033b952ccacceca4ca3`.
-- Produção recebeu status `PRODUCTION_PASS` no smoke completo; o sitemap contém 10 URLs indexáveis.
-- O workflow autônomo concluiu discovery, pesquisa, implementação, auditorias, QA e commit local.
+- Página 10 publicada: “Mandril 10 mm ou 13 mm”.
+- Commit publicado: `32c51f235a7b5bbe26e38116cf195c267806973e`.
+- Produção recebeu status `PRODUCTION_PASS` no smoke completo; o sitemap contém 11 URLs indexáveis.
+- O workflow concluiu discovery, feasibility, pesquisa/evidências, implementação, auditoria independente, correções seguras, auditoria final, QA e commit local com 0 intervenções humanas editoriais.
+- O Claude Bridge assíncrono user-local foi validado em uso real.
+- Custo Claude conhecido: discovery ~US$0.0443; audit #1 ~US$0.2409; audit #2 ~US$0.2268; total ~US$0.5120.
 - Push e publicação permaneceram sob gate humano; o push deste checkpoint foi realizado manualmente pelo humano.
 - No fechamento do checkpoint, `HEAD` e `origin/main` estavam sincronizados.
 

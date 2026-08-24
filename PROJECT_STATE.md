@@ -13,7 +13,7 @@ ferramentas elétricas e decisões de compra
 
 ## Fase atual
 
-Primeiro checkpoint editorial pós-lançamento, com 9 artigos publicados e indexação liberada.
+Checkpoint editorial pós-lançamento, com 10 artigos publicados e indexação liberada.
 
 ## Conteúdo publicado
 
@@ -26,8 +26,9 @@ Primeiro checkpoint editorial pós-lançamento, com 9 artigos publicados e index
 - O que significa Nm em uma parafusadeira
 - Parafusadeira brushless ou com escovas
 - Furadeira com fio ou a bateria
+- Mandril 10 mm ou 13 mm
 
-Sitemap em produção: homepage + 9 artigos = 10 URLs indexáveis. A página de créditos permanece fora dessa contagem.
+Sitemap em produção: homepage + 10 artigos = 11 URLs indexáveis. A página de créditos permanece fora dessa contagem.
 
 Prelaunch: `false`
 
@@ -58,6 +59,6 @@ Nenhuma correção técnica foi necessária.
 
 ## Automação editorial
 
-O MVP editorial autônomo v0.1 foi validado end-to-end em produção com a Página 9, “Furadeira com fio ou a bateria”. O workflow autônomo chegou ao commit local; push e publicação continuaram sob autorização e ação humana. A produção recebeu status `PRODUCTION_PASS` no smoke completo.
+O MVP editorial autônomo foi validado como repetível end-to-end com a Página 10, “Mandril 10 mm ou 13 mm”: discovery, feasibility, pesquisa/evidências, implementação, auditoria independente, correções seguras, auditoria final, QA e commit local foram concluídos sem intervenção humana editorial. O Claude Bridge assíncrono user-local foi validado em uso real. Push e publicação continuam sob gate humano; a produção recebeu status `PRODUCTION_PASS` no smoke completo.
 
 O site já possui uma V2/V2.1 de identidade visual. Não iniciar novo redesign completo sem decisão explícita.
