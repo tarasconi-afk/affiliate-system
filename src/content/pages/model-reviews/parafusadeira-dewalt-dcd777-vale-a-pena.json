@@ -163,6 +163,12 @@
     },
     {
       "placement": "after_specs",
+      "intro": "Para entender o que os 13 mm desta ficha representam, veja",
+      "anchorText": "como escolher entre mandril de 10 mm e 13 mm",
+      "href": "/mandril-10mm-ou-13mm/"
+    },
+    {
+      "placement": "after_specs",
       "intro": "Para interpretar corretamente a ausência desse recurso na ficha, entenda",
       "anchorText": "a diferença entre percussão, parafusadeira de impacto e chave de impacto",
       "href": "/parafusadeira-com-ou-sem-impacto/"
