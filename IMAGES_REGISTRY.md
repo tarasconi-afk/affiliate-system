@@ -16,6 +16,7 @@ Este arquivo documenta a proveniência dos assets fotográficos publicados pela 
 | `public/images/rotary-hammer-combined-chuck-cc-1600.webp` | `assets-source/images/rotary-hammer-combined-chuck-cc.jpg` | Артём В. | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Перфоратор_с_комбинированным_патроном_SDS-plus-3-хкулачковый.jpg | Homepage e guia furadeira de impacto ou martelete, como imagem ilustrativa de uma configuração combinada SDS plus/mandril de três garras. |
 | `public/images/cordless-drill-torque-cc-1600.webp` | `assets-source/images/cordless-drill-torque-cc.jpg` | Tony Webster | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Cordless_Electric_Drill.jpg | Homepage e guia sobre torque/Nm, como imagem ilustrativa de uma furadeira/parafusadeira sem fio; não demonstra valores nem condições de medição. |
 | `public/images/motor-brushes-cc-1600.webp` | `assets-source/images/motor-brushes-cc.jpg` | Afrsv | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Motor_brushes.jpg | Homepage e guia brushless ou com escovas, como detalhe ilustrativo de escovas de motor de diferentes tamanhos; não representa um SKU nem demonstra desempenho. |
+| `public/images/corded-drill-cc-1600.webp` | `assets-source/images/corded-drill-cc.jpg` | Eduardofelipec | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Furadeira_el%C3%A9trica_a_cabo.jpg | Homepage e guia furadeira com fio ou a bateria, como exemplo visual de furadeira com fio; não representa os SKUs citados nem demonstra desempenho. |
 
 ## Tratamento
 

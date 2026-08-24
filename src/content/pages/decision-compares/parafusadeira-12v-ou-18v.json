@@ -152,6 +152,12 @@
       "intro": "Quando a tensão já está definida, mas a classe ainda não, compare",
       "anchorText": "furadeira de impacto e martelete pela ficha técnica",
       "href": "/furadeira-de-impacto-ou-martelete/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Se a dúvida vem antes da classe de tensão, compare primeiro",
+      "anchorText": "furadeira com fio e a bateria pela condição de uso",
+      "href": "/furadeira-com-fio-ou-a-bateria/"
     }
   ],
   "verdict": {

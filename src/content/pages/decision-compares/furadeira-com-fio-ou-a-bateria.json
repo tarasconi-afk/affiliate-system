@@ -1,0 +1,298 @@
+{
+  "version": "1.0",
+  "type": "decision_compare",
+  "slug": "furadeira-com-fio-ou-a-bateria",
+  "metadata": {
+    "title": "Furadeira com fio ou a bateria? Como escolher",
+    "metaDescription": "Compare furadeira com fio e a bateria por tomada, mobilidade, sistema de energia e ficha técnica, sem confundir watts com volts.",
+    "publishedAt": "2026-08-19T16:45:26Z",
+    "updatedAt": "2026-08-19T16:45:26Z",
+    "author": "Ferramenta Clara",
+    "breadcrumbs": [
+      {
+        "name": "Início",
+        "url": "/"
+      },
+      {
+        "name": "Furadeira com fio ou a bateria"
+      }
+    ]
+  },
+  "hero": {
+    "heading": "Furadeira com fio ou a bateria: qual escolher?",
+    "subheading": "A fonte de energia muda a logística do trabalho, mas não define sozinha força, impacto ou capacidade.",
+    "methodNote": "Este guia combina documentação oficial da Bosch com definições do Sistema Internacional de Unidades. Duas fichas Bosch ilustram como os campos aparecem em SKUs reais; elas não formam um teste direto nem representam todos os modelos de cada categoria."
+  },
+  "media": {
+    "items": [
+      {
+        "src": "/images/corded-drill-cc-1600.webp",
+        "alt": "Furadeira elétrica com cabo de alimentação sobre uma bancada",
+        "width": 1600,
+        "height": 1200,
+        "aspectRatio": 1.3333333333,
+        "label": "COM FIO"
+      }
+    ],
+    "captionLabel": "Imagem ilustrativa",
+    "caption": "Exemplo visual de furadeira com fio; a fotografia não representa os SKUs citados no texto nem demonstra desempenho."
+  },
+  "options": [
+    {
+      "name": "Furadeira com fio",
+      "description": "Recebe energia da rede elétrica por cabo. A Bosch aponta esse formato para uso estacionário em oficina ou indústria; na ficha da GSB 13 RE, a alimentação aparece como potência nominal absorvida de 750 W e o modelo reúne velocidade variável e percussão.",
+      "evidenceIds": [
+        "ev_bosch_guide_corded",
+        "ev_bosch_gsb13"
+      ]
+    },
+    {
+      "name": "Furadeira a bateria",
+      "description": "Recebe energia de uma bateria compatível e dispensa a ligação contínua à tomada durante o uso. A Bosch destaca mobilidade e locais sem energia disponível; na ficha da GSB 18V-50, bateria, carregador e compatibilidade com o sistema 18V fazem parte da decisão.",
+      "evidenceIds": [
+        "ev_bosch_guide_cordless",
+        "ev_bosch_gsb18"
+      ]
+    }
+  ],
+  "comparison": {
+    "dimensions": [
+      {
+        "label": "Infraestrutura de energia",
+        "option1": "Depende de uma tomada compatível e do alcance seguro do cabo durante o uso.",
+        "option2": "Depende de uma bateria compatível carregada e, para recarga, do carregador correspondente.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_energy_dependency"
+        ]
+      },
+      {
+        "label": "Local e deslocamento",
+        "option1": "Entra melhor na decisão quando o trabalho é estacionário e há rede elétrica disponível.",
+        "option2": "Entra melhor na decisão quando mobilidade ou ausência de energia no local são requisitos reais.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_location_decision"
+        ]
+      },
+      {
+        "label": "Como ler a energia na ficha",
+        "option1": "A GSB 13 RE declara potência nominal absorvida em watts (W).",
+        "option2": "A GSB 18V-50 declara tensão da bateria em volts (V) e tipo de bateria; kits podem informar também a capacidade em Ah.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_bosch_gsb13",
+          "ev_bosch_gsb18",
+          "ev_watts_volts_not_equivalent"
+        ]
+      },
+      {
+        "label": "Sistema e itens necessários",
+        "option1": "A escolha envolve a ferramenta, a tomada disponível e as condições de uso do cabo.",
+        "option2": "A escolha envolve ferramenta, bateria, carregador e compatibilidade dentro da plataforma indicada pelo fabricante.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_energy_dependency",
+          "ev_bosch_gsb18"
+        ]
+      },
+      {
+        "label": "Funções e capacidades",
+        "option1": "O exemplo GSB 13 RE possui percussão, mandril de 1,5 a 13 mm e capacidades declaradas por material.",
+        "option2": "O exemplo GSB 18V-50 também possui percussão, mandril de 1,5 a 13 mm e capacidades declaradas por material.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_bosch_gsb13",
+          "ev_bosch_gsb18",
+          "ev_power_source_not_function"
+        ]
+      }
+    ]
+  },
+  "contextualLinks": [
+    {
+      "placement": "after_comparison",
+      "intro": "Se a opção a bateria fizer sentido, o próximo passo é",
+      "anchorText": "escolher entre plataformas 12V e 18V",
+      "href": "/parafusadeira-12v-ou-18v/"
+    },
+    {
+      "placement": "after_comparison",
+      "intro": "Antes de reaproveitar uma bateria, veja",
+      "anchorText": "como verificar compatibilidade entre ferramentas e marcas",
+      "href": "/bateria-parafusadeira-serve-em-outra-marca/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "A fonte de energia não resolve a dúvida sobre mecanismo; confira também",
+      "anchorText": "quando escolher furadeira de impacto ou martelete",
+      "href": "/furadeira-de-impacto-ou-martelete/"
+    }
+  ],
+  "verdict": {
+    "heading": "Escolha primeiro pela condição de uso, depois pelo SKU",
+    "summary": "Com fio e a bateria resolvem dependências diferentes: tomada e cabo de um lado; bateria, carregador e plataforma do outro. As fontes não sustentam um vencedor universal de força, autonomia ou durabilidade.",
+    "recommendation": "Mapeie onde a ferramenta será usada e se haverá tomada disponível. Depois compare, em modelos concretos, funções, mandril e capacidades para os materiais previstos. Não trate W, V ou Ah como uma disputa direta entre categorias.",
+    "evidenceIds": [
+      "ev_location_decision",
+      "ev_watts_volts_not_equivalent",
+      "ev_power_source_not_function",
+      "ev_no_universal_winner"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Furadeira com fio é sempre mais forte que furadeira a bateria?",
+      "answer": "As fontes consultadas não sustentam essa regra universal. A ficha da ferramenta com fio informa potência absorvida em W, enquanto a ferramenta a bateria informa tensão em V; essas unidades representam grandezas diferentes. Compare funções e capacidades de SKUs concretos em campos equivalentes.",
+      "evidenceIds": [
+        "ev_watts_volts_not_equivalent",
+        "ev_no_universal_winner"
+      ]
+    },
+    {
+      "question": "Posso comparar 750 W com 18 V para saber qual é melhor?",
+      "answer": "Não diretamente. No SI, watt é unidade de potência e volt é unidade de diferença de potencial elétrico. Os números não medem a mesma grandeza e, isolados, não autorizam ordenar o desempenho das duas ferramentas.",
+      "evidenceIds": [
+        "ev_bipm_units",
+        "ev_watts_volts_not_equivalent"
+      ]
+    },
+    {
+      "question": "A alimentação define se a furadeira tem impacto?",
+      "answer": "Não. As duas fichas usadas como exemplos — uma com fio e outra a bateria — declaram função de impacto. É preciso conferir o modo e as capacidades na ficha do modelo específico, sem inferir pela fonte de energia.",
+      "evidenceIds": [
+        "ev_bosch_gsb13",
+        "ev_bosch_gsb18",
+        "ev_power_source_not_function"
+      ]
+    },
+    {
+      "question": "Quanto dura a bateria de uma furadeira sem fio?",
+      "answer": "Este guia não publica uma autonomia genérica. A duração real depende do conjunto e das condições de trabalho, e as fontes reunidas não formam um teste comparável de autonomia. Consulte a documentação do kit e não transforme Ah em horas de uso.",
+      "evidenceIds": [
+        "ev_bosch_gsb18"
+      ]
+    },
+    {
+      "question": "Quando a furadeira a bateria é a escolha mais coerente?",
+      "answer": "Quando mobilidade ou ausência de energia no local forem requisitos reais, desde que o modelo concreto atenda às funções e capacidades necessárias e você confirme bateria, carregador e plataforma compatíveis.",
+      "evidenceIds": [
+        "ev_location_decision",
+        "ev_bosch_gsb18"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_bosch_guide_corded",
+      "evidence_type": "SPEC",
+      "claim": "A Bosch Professional Brasil indica a parafusadeira com cabo para uso estacionário, como em oficina ou indústria.",
+      "source_name": "Bosch Professional Brasil — Parafusadeira a bateria ou a cabo: qual é a melhor?",
+      "source_url": "https://www.bosch-professional.com/br/pt/blog/parafusadeira-a-bateria-ou-a-cabo-qual-e-a-melhor-/index.html",
+      "accessed_at": "2026-08-19T16:45:26Z",
+      "notes": "Orientação qualitativa do fabricante; não é teste comparativo nem regra universal de desempenho."
+    },
+    {
+      "id": "ev_bosch_guide_cordless",
+      "evidence_type": "SPEC",
+      "claim": "A Bosch Professional Brasil destaca mobilidade e uso onde não há energia elétrica disponível como razões para escolher uma ferramenta a bateria.",
+      "source_name": "Bosch Professional Brasil — Parafusadeira a bateria ou a cabo: qual é a melhor?",
+      "source_url": "https://www.bosch-professional.com/br/pt/blog/parafusadeira-a-bateria-ou-a-cabo-qual-e-a-melhor-/index.html",
+      "accessed_at": "2026-08-19T16:45:26Z",
+      "notes": "Orientação qualitativa do fabricante; claims promocionais sobre duração e produtividade não foram incorporados."
+    },
+    {
+      "id": "ev_bosch_gsb13",
+      "evidence_type": "SPEC",
+      "claim": "A ficha da furadeira de impacto com fio Bosch GSB 13 RE declara potência nominal absorvida de 750 W, mandril de 1,5 a 13 mm, velocidade variável, percussão e capacidades de perfuração por material.",
+      "source_name": "Bosch Professional Brasil — GSB 13 RE",
+      "source_url": "https://www.bosch-professional.com/br/pt/products/gsb-13re-06012B80Z0",
+      "accessed_at": "2026-08-19T16:45:26Z",
+      "notes": "Fonte primária em nível de SKU, usada como exemplo de ficha de ferramenta com fio; não representa toda a categoria."
+    },
+    {
+      "id": "ev_bosch_gsb18",
+      "evidence_type": "SPEC",
+      "claim": "A ficha da furadeira/parafusadeira de impacto a bateria Bosch GSB 18V-50 declara tensão de 18 V, bateria de íons de lítio, mandril de 1,5 a 13 mm, percussão, capacidades por material e compatibilidade com o Bosch Professional 18V System; kits listados incluem baterias e carregador.",
+      "source_name": "Bosch Professional Brasil — GSB 18V-50",
+      "source_url": "https://www.bosch-professional.com/br/pt/products/gsb-18v-50-06019H51E3",
+      "accessed_at": "2026-08-19T16:45:26Z",
+      "notes": "Fonte primária em nível de SKU. Itens do kit variam por versão; confirme o código comercial antes da compra."
+    },
+    {
+      "id": "ev_bipm_units",
+      "evidence_type": "SPEC",
+      "claim": "O Bureau Internacional de Pesos e Medidas define watt (W) como unidade de potência e volt (V) como unidade de diferença de potencial elétrico.",
+      "source_name": "BIPM — The International System of Units (SI Brochure, 9th edition)",
+      "source_url": "https://www.bipm.org/en/publications/si-brochure",
+      "accessed_at": "2026-08-19T16:45:26Z",
+      "notes": "Fonte metrológica primária para o significado das unidades; não mede o desempenho de uma ferramenta."
+    },
+    {
+      "id": "ev_energy_dependency",
+      "evidence_type": "DERIVED",
+      "claim": "A ferramenta com fio depende da rede elétrica e do alcance do cabo durante o uso; a ferramenta a bateria depende de bateria compatível carregada e do carregador para reposição de energia.",
+      "source_name": "Síntese das orientações e fichas oficiais Bosch",
+      "accessed_at": "2026-08-19T16:45:26Z",
+      "derived_from": [
+        "ev_bosch_guide_corded",
+        "ev_bosch_guide_cordless",
+        "ev_bosch_gsb13",
+        "ev_bosch_gsb18"
+      ],
+      "notes": "Diferença logística; não implica superioridade de desempenho."
+    },
+    {
+      "id": "ev_location_decision",
+      "evidence_type": "DERIVED",
+      "claim": "Uso estacionário com rede disponível e trabalho móvel ou sem energia no local são critérios distintos e sustentáveis para decidir entre as fontes de energia.",
+      "source_name": "Síntese editorial da orientação Bosch sobre ferramentas a cabo e a bateria",
+      "accessed_at": "2026-08-19T16:45:26Z",
+      "derived_from": [
+        "ev_bosch_guide_corded",
+        "ev_bosch_guide_cordless"
+      ],
+      "notes": "Regra condicional, não recomendação universal."
+    },
+    {
+      "id": "ev_watts_volts_not_equivalent",
+      "evidence_type": "DERIVED",
+      "claim": "Os 750 W da ferramenta com fio e os 18 V da ferramenta a bateria não podem ser comparados como números equivalentes, porque watt e volt representam grandezas diferentes.",
+      "source_name": "Leitura combinada das fichas Bosch e das definições do SI",
+      "accessed_at": "2026-08-19T16:45:26Z",
+      "derived_from": [
+        "ev_bosch_gsb13",
+        "ev_bosch_gsb18",
+        "ev_bipm_units"
+      ],
+      "notes": "Limite semântico da comparação; não afirma equivalência de desempenho."
+    },
+    {
+      "id": "ev_power_source_not_function",
+      "evidence_type": "DERIVED",
+      "claim": "A fonte de energia não determina sozinha a presença de percussão, o tamanho do mandril ou as capacidades por material, pois esses campos precisam ser verificados no SKU e aparecem nas duas fichas de exemplo.",
+      "source_name": "Leitura comparada das fichas Bosch GSB 13 RE e GSB 18V-50",
+      "accessed_at": "2026-08-19T16:45:26Z",
+      "derived_from": [
+        "ev_bosch_gsb13",
+        "ev_bosch_gsb18"
+      ],
+      "notes": "Conclusão restrita à necessidade de conferir o modelo; não afirma que todas as ferramentas oferecem as mesmas funções."
+    },
+    {
+      "id": "ev_no_universal_winner",
+      "evidence_type": "DERIVED",
+      "claim": "As fontes reunidas não sustentam declarar um vencedor universal de força, autonomia ou durabilidade apenas pela fonte de energia.",
+      "source_name": "Síntese editorial do conjunto de fontes primárias consultadas",
+      "accessed_at": "2026-08-19T16:45:26Z",
+      "derived_from": [
+        "ev_bosch_guide_corded",
+        "ev_bosch_guide_cordless",
+        "ev_bosch_gsb13",
+        "ev_bosch_gsb18",
+        "ev_bipm_units"
+      ],
+      "notes": "Limite de evidência: não houve teste controlado, avaliação de durabilidade nem medição de autonomia."
+    }
+  ]
+}
