@@ -2,7 +2,7 @@
 
 ## Visão geral
 
-O repositório é um site Astro 4 com TypeScript, configurado para geração estática (`output: 'static'`). O Astro renderiza páginas editoriais estruturadas; os dados editoriais ficam em PageSpecs JSON, não dentro de um CMS ou banco de dados representado neste repositório.
+O repositório é um site Astro 7 com TypeScript, configurado para geração estática (`output: 'static'`). O Astro renderiza páginas editoriais estruturadas; os dados editoriais ficam em PageSpecs JSON, não dentro de um CMS ou banco de dados representado neste repositório.
 
 - Configuração e scripts: `astro.config.mjs`, `package.json` e `tsconfig.json`.
 - Domínio de produção: `https://ferramentaclara.com.br`, definido em `astro.config.mjs` e `src/lib/site.ts`.
@@ -10,7 +10,7 @@ O repositório é um site Astro 4 com TypeScript, configurado para geração est
 
 ## Conteúdo e PageSpecs
 
-A Content Collection do tipo `data`, chamada `pages`, é definida em `src/content/config.ts`. Seu schema Zod usa uma união discriminada por `type` e valida três formatos de PageSpec:
+A coleção `pages` usa a Content Layer em `src/content.config.ts`, com loader `glob` para os JSONs em `src/content/pages/`. Seu schema Zod usa uma união discriminada por `type` e valida três formatos de PageSpec:
 
 - `model_review`
 - `brand_compare`

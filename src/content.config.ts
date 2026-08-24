@@ -1,4 +1,6 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { glob } from 'astro/loaders';
+import { z } from 'astro/zod';
 
 // ============================================
 // EVIDENCE SCHEMA
@@ -9,8 +11,8 @@ const evidenceSchema = z.object({
   evidence_type: z.enum(['SPEC', 'DERIVED', 'OBSERVATION', 'MEASUREMENT']),
   claim: z.string(),
   source_name: z.string(),
-  source_url: z.string().url().optional(),
-  accessed_at: z.string().datetime(),
+  source_url: z.url().optional(),
+  accessed_at: z.iso.datetime(),
   notes: z.string().optional(),
   derived_from: z.array(z.string()).optional()
 }).refine(data => {
@@ -35,8 +37,8 @@ const breadcrumbSchema = z.object({
 const metadataSchema = z.object({
   title: z.string(),
   metaDescription: z.string(),
-  publishedAt: z.string().datetime(),
-  updatedAt: z.string().datetime(),
+  publishedAt: z.iso.datetime(),
+  updatedAt: z.iso.datetime(),
   author: z.string().optional(),
   breadcrumbs: z.array(breadcrumbSchema)
 });
@@ -50,7 +52,7 @@ const productSchema = z.object({
 });
 
 const monetizationSchema = z.object({
-  affiliateUrl: z.string().url().optional(),
+  affiliateUrl: z.url().optional(),
   ctaText: z.string().optional(),
   disclaimer: z.string().optional()
 });
@@ -262,7 +264,7 @@ const pageSpecSchema = z.discriminatedUnion('type', [
   page.evidences.forEach((evidence, index) => {
     if (evidenceIds.has(evidence.id)) {
       ctx.addIssue({
-        code: z.ZodIssueCode.custom,
+        code: 'custom',
         path: ['evidences', index, 'id'],
         message: `Page "${page.slug}": duplicate evidence id "${evidence.id}" at evidences.${index}.id`
       });
@@ -286,7 +288,7 @@ const pageSpecSchema = z.discriminatedUnion('type', [
           if (typeof id === 'string' && !evidenceIds.has(id)) {
             const referencePath = [...childPath, index];
             ctx.addIssue({
-              code: z.ZodIssueCode.custom,
+              code: 'custom',
               path: referencePath,
               message: `Page "${page.slug}": unknown evidence id "${id}" at ${referencePath.join('.')}`
             });
@@ -302,7 +304,7 @@ const pageSpecSchema = z.discriminatedUnion('type', [
 });
 
 const pagesCollection = defineCollection({
-  type: 'data',
+  loader: glob({ pattern: '**/*.json', base: './src/content/pages' }),
   schema: pageSpecSchema
 });
 
