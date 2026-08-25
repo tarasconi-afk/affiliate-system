@@ -127,6 +127,12 @@
       "intro": "A fonte de energia não resolve a dúvida sobre mecanismo; confira também",
       "anchorText": "quando escolher furadeira de impacto ou martelete",
       "href": "/furadeira-de-impacto-ou-martelete/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Se a dúvida vem antes da alimentação, veja",
+      "anchorText": "como escolher entre furadeira e parafusadeira",
+      "href": "/furadeira-ou-parafusadeira/"
     }
   ],
   "verdict": {

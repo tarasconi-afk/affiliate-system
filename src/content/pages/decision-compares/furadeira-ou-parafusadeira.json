@@ -1,0 +1,187 @@
+{
+  "version": "1.0",
+  "type": "decision_compare",
+  "slug": "furadeira-ou-parafusadeira",
+  "metadata": {
+    "title": "Furadeira ou parafusadeira: qual escolher?",
+    "metaDescription": "Entenda quando priorizar furadeira ou parafusadeira pelos campos que a ficha declara, sem transformar dois SKUs em regra universal.",
+    "publishedAt": "2026-08-25T16:53:35Z",
+    "updatedAt": "2026-08-25T16:53:35Z",
+    "author": "Ferramenta Clara",
+    "breadcrumbs": [
+      {"name": "Início", "url": "/"},
+      {"name": "Furadeira ou parafusadeira"}
+    ]
+  },
+  "hero": {
+    "heading": "Furadeira ou parafusadeira: qual escolher?",
+    "subheading": "Escolha pela tarefa e pelos controles que o modelo declara. O nome da categoria, sozinho, não substitui a leitura da ficha.",
+    "methodNote": "Este guia usa dois SKUs apenas para mostrar como as funções aparecem em páginas oficiais: Bosch GBM 16-2 RE e Makita DF333DWYE. Não houve teste prático nem comparação direta de desempenho."
+  },
+  "media": {
+    "items": [
+      {
+        "src": "/images/cordless-screw-drill-cc0-1600.webp",
+        "alt": "Furadeira e parafusadeira sem fio usada como imagem ilustrativa",
+        "width": 1200,
+        "height": 1600,
+        "aspectRatio": 0.75,
+        "label": "FUNÇÃO"
+      }
+    ],
+    "captionLabel": "Imagem ilustrativa",
+    "caption": "Furadeira/parafusadeira sem fio Black & Decker; a fotografia não representa os SKUs citados nem demonstra capacidade, controle ou desempenho."
+  },
+  "options": [
+    {
+      "name": "Priorizar perfuração",
+      "description": "Procure capacidades declaradas para os materiais previstos e confira o mandril ou encaixe do SKU. No exemplo Bosch GBM 16-2 RE, a ficha classifica o modelo como furadeira e publica capacidades para madeira, aço e alumínio.",
+      "evidenceIds": ["ev_bosch_gbm16", "ev_task_fields"]
+    },
+    {
+      "name": "Priorizar parafusamento com controle",
+      "description": "Procure uma ficha que declare a função de parafusadeira e os controles necessários. No exemplo Makita DF333DWYE, a página identifica o modelo como parafusadeira/furadeira e lista 20 níveis de torque e duas velocidades mecânicas.",
+      "evidenceIds": ["ev_makita_df333", "ev_task_fields"]
+    }
+  ],
+  "comparison": {
+    "dimensions": [
+      {
+        "label": "Classificação na ficha",
+        "option1": "Bosch GBM 16-2 RE: furadeira.",
+        "option2": "Makita DF333DWYE: parafusadeira/furadeira.",
+        "winner": 0,
+        "evidenceIds": ["ev_bosch_gbm16", "ev_makita_df333"]
+      },
+      {
+        "label": "Perfuração documentada",
+        "option1": "Madeira 45 mm, aço 16 mm e alumínio 20 mm no SKU consultado.",
+        "option2": "Madeira 21 mm e aço 10 mm no SKU consultado.",
+        "winner": 0,
+        "evidenceIds": ["ev_bosch_gbm16", "ev_makita_df333", "ev_no_benchmark"]
+      },
+      {
+        "label": "Controle de aperto declarado",
+        "option1": "A página consultada não apresenta níveis de torque; isso não prova ausência física nem inadequação universal.",
+        "option2": "20 níveis de torque; junta rígida de 30 N·m e junta flexível de 14 N·m.",
+        "winner": 0,
+        "evidenceIds": ["ev_bosch_gbm16", "ev_makita_df333", "ev_documented_fields"]
+      },
+      {
+        "label": "Rotação publicada",
+        "option1": "0–1.100 rpm na primeira velocidade e 3.000 rpm na segunda.",
+        "option2": "0–450 rpm na baixa e 0–1.700 rpm na alta.",
+        "winner": 0,
+        "evidenceIds": ["ev_bosch_gbm16", "ev_makita_df333", "ev_no_benchmark"]
+      },
+      {
+        "label": "Fonte de energia no exemplo",
+        "option1": "Ferramenta com fio, com potência nominal absorvida de 800 W.",
+        "option2": "Ferramenta a bateria 12V CXT; o kit consultado inclui duas baterias de 1,5 Ah e carregador.",
+        "winner": 0,
+        "evidenceIds": ["ev_bosch_gbm16", "ev_makita_df333", "ev_no_benchmark"]
+      }
+    ]
+  },
+  "contextualLinks": [
+    {
+      "placement": "after_comparison",
+      "intro": "Se a dúvida envolve percussão, compare também",
+      "anchorText": "parafusadeira com ou sem impacto",
+      "href": "/parafusadeira-com-ou-sem-impacto/"
+    },
+    {
+      "placement": "after_comparison",
+      "intro": "Para interpretar os campos de aperto, veja",
+      "anchorText": "o que significa Nm em uma parafusadeira",
+      "href": "/torque-nm-parafusadeira/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Depois de definir a função, confira",
+      "anchorText": "como ler mandril de 10 mm ou 13 mm",
+      "href": "/mandril-10mm-ou-13mm/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "A fonte de energia é outra decisão; compare",
+      "anchorText": "furadeira com fio ou a bateria",
+      "href": "/furadeira-com-fio-ou-a-bateria/"
+    }
+  ],
+  "verdict": {
+    "heading": "Defina a tarefa antes de comparar números",
+    "summary": "Os dois exemplos publicam capacidades de perfuração, mas somente a ficha consultada da DF333DWYE declara a função de parafusadeira e níveis de torque. Essa diferença documental ajuda a localizar o controle procurado; não prova que uma categoria seja universalmente superior à outra.",
+    "recommendation": "Se a prioridade é furar, comece pelo material, pela capacidade declarada e pelo encaixe do acessório. Se você precisa parafusar repetidamente com ajuste de aperto, procure essa função e os níveis de torque na ficha do modelo. Em ambos os casos, compare SKUs concretos e campos de mesmo significado.",
+    "evidenceIds": ["ev_documented_fields", "ev_task_fields", "ev_no_benchmark"]
+  },
+  "faq": [
+    {
+      "question": "Parafusadeira também fura?",
+      "answer": "Alguns modelos combinam as duas funções. A DF333DWYE é classificada pela Makita como parafusadeira/furadeira e sua ficha publica capacidades de 10 mm em aço e 21 mm em madeira. Isso confirma o modelo consultado, não toda parafusadeira.",
+      "evidenceIds": ["ev_makita_df333", "ev_documented_fields"]
+    },
+    {
+      "question": "Toda furadeira serve para parafusar?",
+      "answer": "A página da GBM 16-2 RE declara rotação reversível, mas a classifica como furadeira e não apresenta níveis de torque. Esses dados não bastam para transformar o SKU em recomendação universal para parafusamento; confira a documentação do modelo e o controle exigido pela tarefa.",
+      "evidenceIds": ["ev_bosch_gbm16", "ev_documented_fields"]
+    },
+    {
+      "question": "Para montar móveis, qual função devo procurar?",
+      "answer": "Se a tarefa exige aperto repetido com ajuste por etapas, procure uma ficha que declare função de parafusadeira e níveis de torque. A DF333DWYE oferece um exemplo documentado, mas este guia não compara produtividade nem elege marca ou modelo.",
+      "evidenceIds": ["ev_makita_df333", "ev_task_fields", "ev_no_benchmark"]
+    },
+    {
+      "question": "A ferramenta com mais RPM é automaticamente melhor?",
+      "answer": "Não é uma conclusão sustentada por estas fontes. As rotações pertencem a SKUs com construções, alimentação e campos diferentes; sem teste comum, elas não formam um ranking de desempenho.",
+      "evidenceIds": ["ev_no_benchmark"]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_bosch_gbm16",
+      "evidence_type": "SPEC",
+      "claim": "A Bosch Professional Brasil classifica a GBM 16-2 RE como furadeira. A página declara rotação reversível, potência nominal absorvida de 800 W, 0–1.100 rpm na primeira velocidade, 3.000 rpm na segunda e capacidades de perfuração de 45 mm em madeira, 16 mm em aço e 20 mm em alumínio.",
+      "source_name": "Bosch Professional Brasil — PRO GBM 16-2 RE",
+      "source_url": "https://www.bosch-professional.com/br/pt/products/gbm-16-2-re-06011B80E0",
+      "accessed_at": "2026-08-25T16:53:35Z",
+      "notes": "Fonte primária em nível de SKU. A página não representa toda furadeira e não forma teste comparativo com a Makita DF333DWYE."
+    },
+    {
+      "id": "ev_makita_df333",
+      "evidence_type": "SPEC",
+      "claim": "A Makita Brasil classifica a DF333DWYE como parafusadeira/furadeira 12V CXT. A ficha declara 20 níveis de torque, duas velocidades mecânicas, mandril de aperto rápido, rotação reversível, capacidades de 10 mm em aço e 21 mm em madeira, 0–1.700 rpm em alta, 0–450 rpm em baixa, junta rígida de 30 N·m e junta flexível de 14 N·m; o kit consultado inclui duas baterias 12V 1,5 Ah e carregador.",
+      "source_name": "Makita Brasil — DF333DWYE",
+      "source_url": "https://www.makita.com.br/catalogoFDetalhes.asp?codParamD=316",
+      "accessed_at": "2026-08-25T16:53:35Z",
+      "notes": "Fonte primária em nível de SKU. Não representa toda parafusadeira/furadeira nem sustenta ranking de desempenho."
+    },
+    {
+      "id": "ev_documented_fields",
+      "evidence_type": "DERIVED",
+      "claim": "As duas páginas publicam capacidades de perfuração, mas somente a ficha consultada da DF333DWYE classifica o SKU também como parafusadeira e declara níveis de torque. A ausência desses campos na página da GBM 16-2 RE não prova ausência física nem inadequação universal.",
+      "source_name": "Leitura comparada das fichas Bosch GBM 16-2 RE e Makita DF333DWYE",
+      "accessed_at": "2026-08-25T16:53:35Z",
+      "derived_from": ["ev_bosch_gbm16", "ev_makita_df333"],
+      "notes": "Conclusão restrita aos campos visíveis nas duas fontes consultadas."
+    },
+    {
+      "id": "ev_task_fields",
+      "evidence_type": "DERIVED",
+      "claim": "Para uma decisão auditável, a tarefa de perfuração deve ser confrontada com capacidades por material e encaixe do SKU; quando o parafusamento exige ajuste por etapas, a ficha deve declarar a função e os níveis de torque procurados.",
+      "source_name": "Síntese editorial dos campos publicados nos dois SKUs",
+      "accessed_at": "2026-08-25T16:53:35Z",
+      "derived_from": ["ev_bosch_gbm16", "ev_makita_df333"],
+      "notes": "Procedimento de leitura, não afirmação de desempenho nem recomendação universal de produto."
+    },
+    {
+      "id": "ev_no_benchmark",
+      "evidence_type": "DERIVED",
+      "claim": "As fichas publicam campos diferentes e não constituem um teste comum; portanto, não sustentam ordenar desempenho, produtividade, durabilidade ou superioridade universal pelos valores de W, V, rpm, capacidade ou torque.",
+      "source_name": "Limite editorial das fichas Bosch e Makita consultadas",
+      "accessed_at": "2026-08-25T16:53:35Z",
+      "derived_from": ["ev_bosch_gbm16", "ev_makita_df333"],
+      "notes": "Preserva a não comparabilidade entre grandezas e SKUs sem ensaio compartilhado."
+    }
+  ]
+}

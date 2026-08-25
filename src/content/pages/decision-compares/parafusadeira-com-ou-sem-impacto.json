@@ -190,6 +190,12 @@
       "intro": "Se a próxima decisão for a plataforma de bateria, compare",
       "anchorText": "os ecossistemas Bosch e Makita",
       "href": "/bosch-ou-makita-parafusadeira/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Se a dúvida ainda é sobre a função principal, veja",
+      "anchorText": "como escolher entre furadeira e parafusadeira",
+      "href": "/furadeira-ou-parafusadeira/"
     }
   ],
   "verdict": {
