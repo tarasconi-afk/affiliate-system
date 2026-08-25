@@ -1,0 +1,245 @@
+{
+  "version": "1.0",
+  "type": "decision_compare",
+  "slug": "bateria-2ah-ou-4ah-parafusadeira",
+  "metadata": {
+    "title": "Bateria 2 Ah ou 4 Ah: qual escolher para a parafusadeira?",
+    "metaDescription": "Compare baterias de 2 Ah e 4 Ah pela capacidade, peso e dimensões em dois modelos Bosch 18V, sem transformar Ah em potência ou duração universal.",
+    "publishedAt": "2026-08-24T21:44:41Z",
+    "updatedAt": "2026-08-24T21:44:41Z",
+    "author": "Ferramenta Clara",
+    "breadcrumbs": [
+      {
+        "name": "Início",
+        "url": "/"
+      },
+      {
+        "name": "Bateria 2 Ah ou 4 Ah"
+      }
+    ]
+  },
+  "hero": {
+    "heading": "Bateria 2 Ah ou 4 Ah: qual escolher?",
+    "subheading": "Na mesma plataforma, capacidade, peso e dimensões podem mudar. Ah não substitui a verificação da tensão nem descreve sozinho a potência da ferramenta.",
+    "methodNote": "Este guia compara somente as baterias Bosch GBA 18V 2.0Ah e GBA 18V 4.0Ah pelas fichas oficiais brasileiras. Os resultados não representam todas as baterias de 2 Ah ou 4 Ah e não incluem teste prático."
+  },
+  "media": {
+    "items": [
+      {
+        "src": "/images/cordless-drill-spare-battery-cc-1600.webp",
+        "alt": "Furadeira sem fio ao lado de uma bateria sobressalente",
+        "width": 1200,
+        "height": 1600,
+        "aspectRatio": 0.75,
+        "label": "CAPACIDADE"
+      }
+    ],
+    "captionLabel": "Imagem ilustrativa",
+    "caption": "Furadeira e bateria de 14,4 V fotografadas juntas; a imagem não representa os modelos Bosch GBA 18V comparados nem demonstra autonomia, compatibilidade ou desempenho."
+  },
+  "options": [
+    {
+      "name": "Bateria de 2 Ah",
+      "description": "No exemplo Bosch GBA 18V 2.0Ah, a ficha declara 18 V, 2 Ah, peso de 0,35 kg e dimensões de 73 × 113 × 39 mm. É a opção menor e mais leve entre os dois SKUs consultados.",
+      "evidenceIds": [
+        "ev_bosch_gba_2ah",
+        "ev_weight_dimensions"
+      ]
+    },
+    {
+      "name": "Bateria de 4 Ah",
+      "description": "No exemplo Bosch GBA 18V 4.0Ah, a ficha declara 18 V, 4 Ah, peso de 0,6 kg e dimensões de 74 × 114 × 56 mm. A Bosch atribui à maior capacidade autonomia 100% superior à do modelo 18V 2.0Ah, sem informar nessa página uma duração em minutos.",
+      "evidenceIds": [
+        "ev_bosch_gba_4ah",
+        "ev_capacity_runtime_scope"
+      ]
+    }
+  ],
+  "comparison": {
+    "dimensions": [
+      {
+        "label": "Capacidade nominal no exemplo",
+        "option1": "Bosch GBA 18V 2.0Ah: 2 Ah.",
+        "option2": "Bosch GBA 18V 4.0Ah: 4 Ah.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_bosch_gba_2ah",
+          "ev_bosch_gba_4ah"
+        ]
+      },
+      {
+        "label": "Peso declarado",
+        "option1": "0,35 kg.",
+        "option2": "0,6 kg; 0,25 kg a mais neste par de SKUs.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_weight_dimensions"
+        ]
+      },
+      {
+        "label": "Dimensões declaradas (L × C × A)",
+        "option1": "73 × 113 × 39 mm.",
+        "option2": "74 × 114 × 56 mm; maior nas três medidas deste exemplo.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_weight_dimensions"
+        ]
+      },
+      {
+        "label": "Autonomia declarada",
+        "option1": "É o modelo de referência usado pela Bosch na comparação.",
+        "option2": "A fabricante declara autonomia 100% superior à do modelo 18V 2.0Ah por causa da maior capacidade.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_bosch_gba_4ah",
+          "ev_capacity_runtime_scope"
+        ]
+      },
+      {
+        "label": "Escopo de compatibilidade",
+        "option1": "Professional 18V System da Bosch e AMPShare Alliance.",
+        "option2": "O mesmo escopo é declarado para a GBA 18V 4.0Ah.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_bosch_gba_2ah",
+          "ev_bosch_gba_4ah",
+          "ev_same_platform"
+        ]
+      }
+    ]
+  },
+  "contextualLinks": [
+    {
+      "placement": "after_comparison",
+      "intro": "Antes de comparar capacidades, confirme",
+      "anchorText": "se a bateria pertence à plataforma da ferramenta",
+      "href": "/bateria-parafusadeira-serve-em-outra-marca/"
+    },
+    {
+      "placement": "after_comparison",
+      "intro": "Se a dúvida ainda é sobre a classe do sistema, veja",
+      "anchorText": "como escolher entre parafusadeira 12V e 18V",
+      "href": "/parafusadeira-12v-ou-18v/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Para decidir se a bateria faz sentido no fluxo de trabalho, compare também",
+      "anchorText": "furadeira com fio e a bateria",
+      "href": "/furadeira-com-fio-ou-a-bateria/"
+    }
+  ],
+  "verdict": {
+    "heading": "Compare capacidade sem ignorar peso e plataforma",
+    "summary": "Entre os dois modelos Bosch GBA 18V consultados, a bateria de 2 Ah é menor e 0,25 kg mais leve; a de 4 Ah tem o dobro da capacidade nominal e recebe da fabricante um claim de autonomia 100% superior ao modelo de 2 Ah. Isso não demonstra duração universal nem diferença de potência da ferramenta.",
+    "recommendation": "Primeiro confirme a plataforma e o modelo compatível. Depois decida se, no seu uso, o menor peso e volume do exemplo de 2 Ah ou a maior capacidade declarada do exemplo de 4 Ah é o critério mais relevante. Não converta o número em minutos de trabalho sem uma medição aplicável à ferramenta e à tarefa.",
+    "evidenceIds": [
+      "ev_same_platform",
+      "ev_weight_dimensions",
+      "ev_capacity_runtime_scope",
+      "ev_capacity_not_power"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Bateria de 4 Ah dura o dobro da de 2 Ah?",
+      "answer": "A Bosch declara autonomia 100% superior para a GBA 18V 4.0Ah em comparação com o modelo 18V 2.0Ah e atribui isso à maior capacidade. A página não informa uma duração em minutos nem condições de ensaio; portanto, o claim deve permanecer restrito a essa comparação oficial, sem virar regra universal para qualquer bateria ou aplicação.",
+      "evidenceIds": [
+        "ev_bosch_gba_4ah",
+        "ev_capacity_runtime_scope"
+      ]
+    },
+    {
+      "question": "Bateria de 4 Ah deixa a parafusadeira mais potente?",
+      "answer": "As duas fichas consultadas permitem comparar capacidade, tensão, peso, dimensões e compatibilidade, mas não medem a potência ou o torque de uma ferramenta. Esses dados não sustentam concluir que 4 Ah, sozinho, torna a parafusadeira mais potente.",
+      "evidenceIds": [
+        "ev_capacity_not_power"
+      ]
+    },
+    {
+      "question": "As baterias Bosch GBA 18V de 2 Ah e 4 Ah servem nas mesmas ferramentas?",
+      "answer": "As duas páginas oficiais declaram compatibilidade com as ferramentas e os carregadores do Bosch Professional 18V System e da AMPShare Alliance. Ainda assim, confirme a identificação da ferramenta e da bateria específicas antes de escolher.",
+      "evidenceIds": [
+        "ev_bosch_gba_2ah",
+        "ev_bosch_gba_4ah",
+        "ev_same_platform"
+      ]
+    },
+    {
+      "question": "Ah e V significam a mesma coisa?",
+      "answer": "Não. Nas fichas comparadas, as duas baterias são declaradas como 18 V, enquanto a capacidade muda de 2 Ah para 4 Ah. Tensão e capacidade aparecem como campos separados e não devem ser tratados como sinônimos.",
+      "evidenceIds": [
+        "ev_bosch_gba_2ah",
+        "ev_bosch_gba_4ah",
+        "ev_same_platform"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_bosch_gba_2ah",
+      "evidence_type": "SPEC",
+      "claim": "A página oficial brasileira da Bosch para a GBA 18V 2.0Ah declara tensão de 18,0 V, capacidade de 2 Ah, peso de 0,35 kg, dimensões de 73 × 113 × 39 mm e compatibilidade com ferramentas e carregadores do Bosch Professional 18V System e da AMPShare Alliance.",
+      "source_name": "Bosch Professional Brasil — PRO GBA 18V 2.0Ah",
+      "source_url": "https://www.bosch-professional.com/br/pt/products/gba-18v-2-0ah-1600Z00036",
+      "accessed_at": "2026-08-24T21:44:41Z",
+      "notes": "Fonte primária em nível de SKU; não representa toda bateria de 2 Ah nem confirma compatibilidade fora dos sistemas declarados."
+    },
+    {
+      "id": "ev_bosch_gba_4ah",
+      "evidence_type": "SPEC",
+      "claim": "A página oficial brasileira da Bosch para a GBA 18V 4.0Ah declara tensão de 18,0 V, capacidade de 4 Ah, peso de 0,6 kg, dimensões de 74 × 114 × 56 mm e compatibilidade com ferramentas e carregadores do Bosch Professional 18V System e da AMPShare Alliance. A fabricante também declara autonomia 100% superior ao modelo 18V 2.0Ah devido à maior capacidade.",
+      "source_name": "Bosch Professional Brasil — PRO GBA 18V 4.0Ah",
+      "source_url": "https://www.bosch-professional.com/br/pt/products/gba-18v-4-0ah-1600Z00038",
+      "accessed_at": "2026-08-24T21:44:41Z",
+      "notes": "Fonte primária em nível de SKU. O claim de autonomia é atribuído à fabricante; a página não apresenta duração em minutos nem condições de ensaio."
+    },
+    {
+      "id": "ev_same_platform",
+      "evidence_type": "DERIVED",
+      "claim": "Nos dois SKUs consultados, a tensão e o escopo de compatibilidade declarados são os mesmos, enquanto a capacidade muda de 2 Ah para 4 Ah; capacidade, tensão e plataforma são campos distintos da decisão.",
+      "source_name": "Leitura comparada das fichas Bosch GBA 18V 2.0Ah e 4.0Ah",
+      "accessed_at": "2026-08-24T21:44:41Z",
+      "derived_from": [
+        "ev_bosch_gba_2ah",
+        "ev_bosch_gba_4ah"
+      ],
+      "notes": "Comparação restrita aos modelos Bosch citados; não presume compatibilidade em outra plataforma."
+    },
+    {
+      "id": "ev_weight_dimensions",
+      "evidence_type": "DERIVED",
+      "claim": "No par comparado, a GBA 18V 2.0Ah é 0,25 kg mais leve e menor nas três dimensões declaradas que a GBA 18V 4.0Ah.",
+      "source_name": "Cálculo e leitura comparada das fichas Bosch GBA 18V",
+      "accessed_at": "2026-08-24T21:44:41Z",
+      "derived_from": [
+        "ev_bosch_gba_2ah",
+        "ev_bosch_gba_4ah"
+      ],
+      "notes": "Diferença aritmética e dimensional válida somente para os dois SKUs consultados."
+    },
+    {
+      "id": "ev_capacity_runtime_scope",
+      "evidence_type": "DERIVED",
+      "claim": "A capacidade nominal de 4 Ah é o dobro de 2 Ah. A Bosch associa essa diferença a autonomia 100% superior no modelo GBA 18V 4.0Ah em relação ao 18V 2.0Ah, mas a fonte não permite converter o claim em minutos de uso nem generalizá-lo para outras baterias, ferramentas ou tarefas.",
+      "source_name": "Leitura proporcional e limite do claim oficial Bosch",
+      "accessed_at": "2026-08-24T21:44:41Z",
+      "derived_from": [
+        "ev_bosch_gba_2ah",
+        "ev_bosch_gba_4ah"
+      ],
+      "notes": "Não é medição independente e não estima autonomia real."
+    },
+    {
+      "id": "ev_capacity_not_power",
+      "evidence_type": "DERIVED",
+      "claim": "As fichas consultadas não fornecem potência ou torque de ferramenta; portanto, os dados de capacidade, peso e dimensões dessas baterias não sustentam concluir que 4 Ah, sozinho, aumenta a potência de uma parafusadeira.",
+      "source_name": "Limite editorial das fichas Bosch GBA 18V consultadas",
+      "accessed_at": "2026-08-24T21:44:41Z",
+      "derived_from": [
+        "ev_bosch_gba_2ah",
+        "ev_bosch_gba_4ah"
+      ],
+      "notes": "Ausência de medição não foi convertida em afirmação sobre desempenho; o claim limita apenas o que estas fontes permitem concluir."
+    }
+  ]
+}
