@@ -4,9 +4,9 @@
   "slug": "torque-nm-parafusadeira",
   "metadata": {
     "title": "O que significa Nm em uma parafusadeira? Como comparar torque",
-    "metaDescription": "Entenda o que significa Nm e por que torque máximo, junta rígida e junta flexível não devem ser comparados como se fossem o mesmo campo.",
+    "metaDescription": "Nm (newton-metro) é a unidade usada para declarar torque. Veja como interpretar 30, 50 ou 65 Nm na ficha e quando os valores podem ser comparados.",
     "publishedAt": "2026-08-18T19:16:10Z",
-    "updatedAt": "2026-08-18T21:47:32Z",
+    "updatedAt": "2026-09-07T15:00:36Z",
     "author": "Ferramenta Clara",
     "breadcrumbs": [
       {
@@ -39,7 +39,7 @@
   },
   "options": [
     {
-      "name": "Torque de junta rígida / duro",
+      "name": "Campo de torque de junta rígida / duro",
       "description": "É um campo condicionado: Bosch usa “duro” e Makita usa “junta rígida” nas fichas consultadas. Compare números somente quando o rótulo e a condição declarada forem equivalentes; as fontes não demonstram que os protocolos dos fabricantes são idênticos.",
       "evidenceIds": [
         "ev_bosch_gsr185",
@@ -49,7 +49,7 @@
       ]
     },
     {
-      "name": "Torque de junta flexível / suave",
+      "name": "Campo de torque de junta flexível / suave",
       "description": "Também é um campo condicionado: Bosch usa “suave” e Makita usa “junta flexível”. Ele deve permanecer separado de torque duro/rígido e de um valor máximo sem condição declarada.",
       "evidenceIds": [
         "ev_bosch_gsr185",
@@ -258,6 +258,17 @@
       "evidenceIds": [
         "ev_dewalt_dcd777",
         "ev_dewalt_not_mappable"
+      ]
+    },
+    {
+      "question": "Como interpretar 30 Nm, 50 Nm ou 65 Nm em uma parafusadeira?",
+      "answer": "O número só faz sentido junto do rótulo da ficha. Nas fontes consultadas, 30 N.m aparece como junta rígida em modelos Makita, 50 Nm como torque duro na Bosch GSR 185-LI e 65 Nm como torque sem condição de junta nomeada na DeWalt DCD7771D2-BR. Por isso, a magnitude isolada não torna os três valores diretamente comparáveis.",
+      "evidenceIds": [
+        "ev_makita_hp333",
+        "ev_makita_df333",
+        "ev_bosch_gsr185",
+        "ev_dewalt_dcd777",
+        "ev_fields_not_interchangeable"
       ]
     }
   ],
