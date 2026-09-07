@@ -4,9 +4,9 @@
   "slug": "bateria-parafusadeira-serve-em-outra-marca",
   "metadata": {
     "title": "Bateria de parafusadeira serve em outra marca? Como verificar",
-    "metaDescription": "Entenda quando uma bateria pode ser compartilhada entre ferramentas e marcas, usando declarações oficiais dos sistemas Bosch, Makita LXT e AMPShare.",
+    "metaDescription": "Considere compatível só com declaração do fabricante no sistema. Marca ou tensão iguais não bastam: Bosch, Makita LXT, DeWalt 20V MAX/POWERSTACK e AMPShare.",
     "publishedAt": "2026-08-17T18:28:47Z",
-    "updatedAt": "2026-08-18T15:02:42Z",
+    "updatedAt": "2026-09-07T16:04:45Z",
     "author": "Ferramenta Clara",
     "breadcrumbs": [
       {
@@ -201,6 +201,7 @@
     }
   ],
   "verdict": {
+    "heading": "Como verificar se a bateria é compatível",
     "summary": "Uma bateria pode servir em ferramentas de outra marca quando existe um sistema multimarcas que declare essa compatibilidade para os produtos envolvidos. Fora de uma declaração assim, as fontes consultadas sustentam apenas os escopos nomeados por cada fabricante; isso não prova incompatibilidade universal, mas não autoriza presumir compatibilidade.",
     "recommendation": "Verifique em quatro passos: 1) identifique o nome da plataforma; 2) confirme a tensão ou classe do sistema; 3) procure bateria e ferramenta explicitamente incluídas na documentação oficial; 4) não conclua compatibilidade apenas por marca, tensão ou aparência. Só então decida entre manter ou trocar de plataforma.",
     "evidenceIds": [
@@ -243,6 +244,15 @@
       "answer": "Compare a identificação da bateria e da ferramenta com a página oficial da plataforma. Em alianças multimarcas, confirme também se o produto foi integrado e identificado como parte do sistema; o nome da marca, sozinho, não substitui essa checagem.",
       "evidenceIds": [
         "ev_ampshare",
+        "ev_platform_scope"
+      ]
+    },
+    {
+      "question": "A bateria encaixa na ferramenta: isso significa que é compatível?",
+      "answer": "Nas fontes consultadas, o critério publicado é a compatibilidade declarada pelo fabricante para o sistema aplicável, não o formato nem a aparência da bateria. A mesma marca também não encerra a verificação: a Bosch publica escopos separados para Professional 12V e Professional 18V. Confirme na documentação oficial se a bateria e a ferramenta pertencem ao mesmo sistema declarado.",
+      "evidenceIds": [
+        "ev_bosch_12v",
+        "ev_bosch_18v",
         "ev_platform_scope"
       ]
     }
