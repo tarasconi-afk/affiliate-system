@@ -1,0 +1,323 @@
+{
+  "version": "1.0",
+  "type": "decision_compare",
+  "slug": "nm-chave-de-impacto",
+  "metadata": {
+    "title": "O que significa Nm na chave de impacto? Como ler os valores",
+    "metaDescription": "Nm é a unidade do torque declarado. Nas fichas consultadas, aperto, arranque e reversão aparecem como campos distintos; leia o rótulo antes de comparar.",
+    "publishedAt": "2026-09-14T18:21:23Z",
+    "updatedAt": "2026-09-14T18:21:23Z",
+    "author": "Ferramenta Clara",
+    "breadcrumbs": [
+      {
+        "name": "Início",
+        "url": "/"
+      },
+      {
+        "name": "Nm em chave de impacto"
+      }
+    ]
+  },
+  "hero": {
+    "heading": "O que significa Nm em uma chave de impacto? Como ler os campos de torque",
+    "subheading": "Nm (newton-metro) é a unidade do torque declarado pelo fabricante. Nas fichas consultadas, ele pode aparecer em um campo único ou em campos separados, como aperto, arranque ou reversão; leia o rótulo antes de comparar.",
+    "methodNote": "Este guia compara somente fichas oficiais de fabricantes. Não é teste prático, não estabelece faixa universal de aplicação, não converte Nm em tamanho de parafuso e não equipara métodos de ensaio entre fabricantes."
+  },
+  "media": {
+    "items": [
+      {
+        "src": "/images/cordless-impact-wrench-ai-1600.webp",
+        "alt": "Ilustração gerada por IA de uma chave de impacto a bateria genérica com encaixe quadrado",
+        "width": 1536,
+        "height": 1024,
+        "aspectRatio": 1.5,
+        "label": "TORQUE"
+      }
+    ],
+    "captionLabel": "Ilustração editorial.",
+    "caption": "Ilustração gerada por IA de uma chave de impacto a bateria genérica. Não representa nenhum dos modelos citados e não demonstra valores, desempenho ou condições de medição das fichas comparadas."
+  },
+  "options": [
+    {
+      "name": "Minha ficha mostra um único valor de torque",
+      "description": "Torque é a grandeza tratada; o que varia nas fontes consultadas é como o fabricante declara esse torque na ficha. Na TW141DZ, a Makita publica um campo rotulado apenas “Torque”, com 145 N.m, sem nomear condição de aperto ou desaperto. Um valor único não informa por si qual condição foi declarada.",
+      "evidenceIds": [
+        "ev_makita_tw141dz",
+        "ev_labels_and_fields"
+      ]
+    },
+    {
+      "name": "Minha ficha mostra dois ou mais valores de torque",
+      "description": "Nas fichas Bosch e DeWalt consultadas, o torque é declarado em campos separados, cada um com rótulo próprio: “Torque, máx.” e “Torque de arranque, máx.” nas páginas Bosch; “Torque de aperto” e “Torque de reversão” na página DeWalt. Identifique o rótulo de cada número antes de usá-lo.",
+      "evidenceIds": [
+        "ev_bosch_gds400",
+        "ev_bosch_gds1000",
+        "ev_dewalt_dcf922b",
+        "ev_labels_and_fields"
+      ]
+    }
+  ],
+  "comparison": {
+    "dimensions": [
+      {
+        "label": "Quantos campos de torque a ficha traz",
+        "option1": "Um: na TW141DZ, a Makita publica somente “Torque”, com 145 N.m.",
+        "option2": "Dois ou mais: “Torque, máx.” e “Torque de arranque, máx.” na Bosch; “Torque de aperto” e “Torque de reversão” na DeWalt.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_makita_tw141dz",
+          "ev_bosch_gds400",
+          "ev_dewalt_dcf922b"
+        ]
+      },
+      {
+        "label": "Rótulo publicado",
+        "option1": "“Torque”, sem condição nomeada na ficha consultada.",
+        "option2": "Rótulos próprios de cada fabricante: “arranque” nas páginas Bosch, “reversão” na página DeWalt.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_labels_and_fields"
+        ]
+      },
+      {
+        "label": "Faixas de ajuste de torque",
+        "option1": "A ficha da TW141DZ não publica faixa de ajuste de torque.",
+        "option2": "Ter mais de um campo de torque não implica ter faixa de ajuste: a GDS 18V-1000 publica três campos “Faixa de ajuste do torque, mín./máx.”, com 0/350 Nm, 0/700 Nm e 0/1000 Nm por nível, enquanto a GDS 18V-400 e a DCF922B não publicam esse campo. A leitura vale para os SKUs consultados.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_makita_tw141dz",
+          "ev_bosch_gds1000",
+          "ev_bosch_gds400",
+          "ev_dewalt_dcf922b"
+        ]
+      },
+      {
+        "label": "Nm, RPM e IPM",
+        "option1": "Campos separados na TW141DZ: 0-2.600 r.p.m. e 0-3.200 i.p.m. são publicados ao lado do torque, não no lugar dele.",
+        "option2": "Também separados nas fichas Bosch. Na DCF922B, valores numéricos de rotações e de impactos por minuto não constam da ficha.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_metrics_separate",
+          "ev_dewalt_dcf922b"
+        ]
+      },
+      {
+        "label": "Comparação entre fabricantes",
+        "option1": "Compare primeiro o rótulo e a condição publicada; só depois o valor.",
+        "option2": "As fontes consultadas não estabelecem que campos com rótulos diferentes entre fabricantes usem a mesma condição ou protocolo. Por isso, não trate números de campos diferentes como diretamente equivalentes sem verificar a documentação.",
+        "winner": 0,
+        "evidenceIds": [
+          "ev_labels_and_fields"
+        ]
+      }
+    ]
+  },
+  "taxonomyTable": {
+    "title": "Como o torque aparece nas fichas consultadas",
+    "intro": "A tabela preserva os rótulos, os valores e as unidades publicados por cada fabricante. Ela não presume protocolo comum entre marcas e não converte campo ausente em zero.",
+    "columns": {
+      "class": "Modelo / ficha",
+      "mechanism": "Rótulos de torque publicados",
+      "interface": "Valores e unidade",
+      "application": "Outros campos da ficha",
+      "caveat": "Limite da evidência"
+    },
+    "rows": [
+      {
+        "class": "Makita TW141DZ",
+        "mechanism": "“Torque”, campo único",
+        "interface": "145 N.m",
+        "application": "0-2.600 r.p.m.; 0-3.200 i.p.m.; encaixe Quadrado 1/2\"; parafuso padrão M8-M16; parafuso máquina M6-M12.",
+        "caveat": "A ficha não publica segundo campo de torque nem faixa de ajuste. A leitura vale para este SKU e não foi estendida à linha Makita.",
+        "evidenceIds": [
+          "ev_makita_tw141dz"
+        ]
+      },
+      {
+        "class": "Bosch GDS 18V-400",
+        "mechanism": "“Torque, máx.” e “Torque de arranque, máx.”",
+        "interface": "400 Nm e 600 Nm",
+        "application": "0-2.500 r.p.m.; 0-3.700 i.p.m.; suporte da ferramenta 1/2'' Quadrado.",
+        "caveat": "A ficha não publica faixa de ajuste de torque. Os rótulos são os da Bosch e não foram equiparados aos de outras marcas.",
+        "evidenceIds": [
+          "ev_bosch_gds400"
+        ]
+      },
+      {
+        "class": "Bosch GDS 18V-1000",
+        "mechanism": "“Torque, máx.”, “Torque de arranque, máx.” e três “Faixa de ajuste do torque, mín./máx.” por nível",
+        "interface": "1.000 Nm; 1.600 Nm; 0/350, 0/700 e 0/1000 Nm",
+        "application": "0-1.750 r.p.m. e 0-2.600 i.p.m. no total, com valores publicados por nível; suporte da ferramenta 1/2'' Quadrado.",
+        "caveat": "As faixas por nível pertencem a este SKU e não são campo universal da linha Bosch.",
+        "evidenceIds": [
+          "ev_bosch_gds1000"
+        ]
+      },
+      {
+        "class": "DeWalt DCF922B",
+        "mechanism": "“Torque de aperto” e “Torque de reversão”; a mesma página traz “Torque máximo de fixação” e “Torque máximo de breakaway” em ft-lbs",
+        "interface": "406Nm e 610Nm; 300 ft-lbs e 450 ft-lbs",
+        "application": "Classificada como chave de impacto; a ficha não publica valores numéricos de rotações nem de impactos por minuto.",
+        "caveat": "Registramos que a página publica os dois pares de valores em unidades diferentes; nenhuma conversão entre unidades foi feita como afirmação editorial.",
+        "evidenceIds": [
+          "ev_dewalt_dcf922b"
+        ]
+      }
+    ]
+  },
+  "contextualLinks": [
+    {
+      "placement": "after_comparison",
+      "intro": "Para a leitura da unidade e o princípio geral de comparabilidade em fichas de parafusadeira, veja",
+      "anchorText": "o guia de Nm e torque em parafusadeiras",
+      "href": "/torque-nm-parafusadeira/"
+    },
+    {
+      "placement": "after_verdict",
+      "intro": "Se a dúvida ainda é qual classe de ferramenta você tem em mãos, consulte",
+      "anchorText": "a comparação entre ferramentas com e sem impacto",
+      "href": "/parafusadeira-com-ou-sem-impacto/"
+    }
+  ],
+  "verdict": {
+    "heading": "Como ler os campos de torque da sua ficha",
+    "summary": "Nm é a unidade do torque declarado. Torque é a grandeza tratada; o que varia nas fontes consultadas é como o fabricante declara esse torque na ficha: quantos campos publica, com que rótulos e sob quais condições. Por isso o número só é interpretável junto do rótulo que o acompanha.",
+    "recommendation": "Leia em quatro passos: 1) localize todos os campos de torque da ficha, não apenas o maior; 2) registre o rótulo exato de cada um; 3) confira a unidade, porque a mesma ficha pode publicar Nm e ft-lbs; 4) compare somente campos cujo rótulo e condição publicada sejam equivalentes. As fontes consultadas não estabelecem que campos com rótulos diferentes entre fabricantes usem a mesma condição ou protocolo, então não trate números de campos diferentes como diretamente equivalentes sem verificar a documentação.",
+    "evidenceIds": [
+      "ev_labels_and_fields",
+      "ev_metrics_separate"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Por que minha chave de impacto tem dois valores de torque?",
+      "answer": "Nas fichas Bosch e DeWalt consultadas, o fabricante publica campos separados, cada um com rótulo próprio: “Torque, máx.” e “Torque de arranque, máx.” na GDS 18V-400 e na GDS 18V-1000; “Torque de aperto” e “Torque de reversão” na DCF922B. Cada número pertence ao campo que o nomeia.",
+      "evidenceIds": [
+        "ev_bosch_gds400",
+        "ev_bosch_gds1000",
+        "ev_dewalt_dcf922b"
+      ]
+    },
+    {
+      "question": "Torque de aperto e torque de arranque são a mesma coisa?",
+      "answer": "Não trate esses rótulos como o mesmo campo. Nas fichas consultadas, a Bosch publica “Torque, máx.” e “Torque de arranque, máx.” como campos separados, enquanto a DeWalt publica “Torque de aperto” e “Torque de reversão”. As fontes não estabelecem equivalência de condição ou protocolo entre esses rótulos, portanto preserve a nomenclatura de cada fabricante ao comparar.",
+      "evidenceIds": [
+        "ev_bosch_gds400",
+        "ev_bosch_gds1000",
+        "ev_dewalt_dcf922b",
+        "ev_labels_and_fields"
+      ]
+    },
+    {
+      "question": "Posso comparar os Nm de duas marcas diferentes?",
+      "answer": "As fontes consultadas não estabelecem que campos com rótulos diferentes entre fabricantes usem a mesma condição ou protocolo. Por isso, não trate números de campos diferentes como diretamente equivalentes sem verificar a documentação. Identifique primeiro o rótulo de cada valor; só depois compare.",
+      "evidenceIds": [
+        "ev_labels_and_fields"
+      ]
+    },
+    {
+      "question": "Quantos Nm eu preciso?",
+      "answer": "Nas fontes consultadas, não foi encontrada uma conversão universal publicada de Nm para tamanho de fixador. Na TW141DZ, a Makita publica a capacidade de fixador como um campo próprio daquele SKU: parafuso padrão M8-M16 e parafuso máquina M6-M12. Verifique capacidade e aplicação na documentação do modelo e do fabricante.",
+      "evidenceIds": [
+        "ev_no_universal_fastener_conversion",
+        "ev_makita_tw141dz"
+      ]
+    },
+    {
+      "question": "Nm é a mesma coisa que RPM ou IPM?",
+      "answer": "Não são o mesmo campo. Na TW141DZ, a ficha publica 0-2.600 r.p.m. e 0-3.200 i.p.m. em campos separados do torque; nas fichas Bosch, rotação e número de impactos também têm campos próprios. Na DCF922B, valores numéricos de rotações e de impactos por minuto não constam da ficha.",
+      "evidenceIds": [
+        "ev_metrics_separate",
+        "ev_makita_tw141dz",
+        "ev_dewalt_dcf922b"
+      ]
+    },
+    {
+      "question": "Mais Nm significa uma chave de impacto melhor?",
+      "answer": "O número isolado não basta para comparar, porque antes é preciso identificar de qual campo ele vem e qual condição o fabricante publicou. Nas fichas consultadas, o mesmo modelo pode publicar mais de um valor de torque, e a GDS 18V-1000 chega a apresentar três faixas de ajuste, de 0/350 Nm a 0/1000 Nm.",
+      "evidenceIds": [
+        "ev_labels_and_fields",
+        "ev_bosch_gds1000"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_makita_tw141dz",
+      "evidence_type": "SPEC",
+      "claim": "A Makita Brasil classifica a TW141DZ como Chave de Impacto e publica um único campo rotulado “Torque” com o valor 145 N.m, sem nomear condição de aperto ou desaperto, ao lado de 0-2.600 rotações por minuto, 0-3.200 impactos por minuto, encaixe Quadrado 1/2\", parafuso padrão M8-M16 e parafuso máquina M6-M12.",
+      "source_name": "Makita Brasil — TW141DZ",
+      "source_url": "https://www.makita.com.br/catalogoFDetalhes.asp?codParamD=75",
+      "accessed_at": "2026-09-08T15:16:00Z",
+      "notes": "Fonte primária em nível de SKU; a grafia N.m foi preservada como publicada. A ficha não apresenta segundo campo de torque nem faixa de ajuste, e essa ausência não foi estendida a outros modelos."
+    },
+    {
+      "id": "ev_bosch_gds400",
+      "evidence_type": "SPEC",
+      "claim": "A Bosch Professional Brasil publica, para a GDS 18V-400, os campos “Torque, máx.” com 400 Nm e “Torque de arranque, máx.” com 600 Nm, além de “Nº de rotações em vazio” 0-2.500 r.p.m., “Número máx. de impactos” 0-3.700 i.p.m. e “Suporte da ferramenta” 1/2'' Quadrado.",
+      "source_name": "Bosch Professional Brasil — GDS 18V-400",
+      "source_url": "https://www.bosch-professional.com/br/pt/products/gds-18v-400-06019K00E0",
+      "accessed_at": "2026-09-08T15:16:00Z",
+      "notes": "Fonte primária em nível de SKU; rótulos preservados como publicados. A ficha não apresenta faixa de ajuste de torque."
+    },
+    {
+      "id": "ev_bosch_gds1000",
+      "evidence_type": "SPEC",
+      "claim": "A Bosch Professional Brasil publica, para a GDS 18V-1000, “Torque, máx.” com 1.000 Nm, “Torque de arranque, máx.” com 1.600 Nm e três campos “Faixa de ajuste do torque, mín./máx.” com 0/350 Nm, 0/700 Nm e 0/1000 Nm por nível, além de “Número máx. de impactos” 0-2.600 i.p.m., “Nº de rotações em vazio” 0-1.750 r.p.m. e “Suporte da ferramenta” 1/2'' Quadrado.",
+      "source_name": "Bosch Professional Brasil — GDS 18V-1000",
+      "source_url": "https://www.bosch-professional.com/br/pt/products/gds-18v-1000-06019J8300",
+      "accessed_at": "2026-09-08T15:16:00Z",
+      "notes": "Fonte primária em nível de SKU; as faixas de ajuste por nível pertencem a este modelo e não foram generalizadas para a linha."
+    },
+    {
+      "id": "ev_dewalt_dcf922b",
+      "evidence_type": "SPEC",
+      "claim": "A DeWalt Brasil classifica a DCF922B como chave de impacto e publica “Torque de aperto” 406Nm e “Torque de reversão” 610Nm; a mesma página apresenta ainda “Torque máximo de fixação” até 300 ft-lbs e “Torque máximo de breakaway” 450 ft-lbs. A ficha não apresenta valores numéricos de rotações por minuto nem de impactos por minuto.",
+      "source_name": "DeWalt Brasil — DCF922B",
+      "source_url": "https://www.dewalt.com.br/pt-br/produto/dcf922b/chave-de-impacto-de-12-13mm-20v-max-atomic-brushless-sem-bateria-e-carregador",
+      "accessed_at": "2026-09-08T15:16:00Z",
+      "notes": "Fonte primária em nível de SKU. Registramos que a página publica dois pares de valores em unidades diferentes; nenhuma conversão entre unidades foi realizada como afirmação editorial."
+    },
+    {
+      "id": "ev_labels_and_fields",
+      "evidence_type": "DERIVED",
+      "claim": "Nas quatro fichas consultadas, torque é a grandeza tratada, mas a forma de declará-lo varia: a quantidade de campos vai de um a cinco e os rótulos diferem entre fabricantes — “Torque” sozinho na Makita, “Torque, máx.” e “Torque de arranque, máx.” na Bosch, “Torque de aperto” e “Torque de reversão” na DeWalt. As fontes consultadas não estabelecem que campos com rótulos diferentes entre fabricantes usem a mesma condição ou protocolo.",
+      "source_name": "Leitura comparada das fichas oficiais Makita TW141DZ, Bosch GDS 18V-400, Bosch GDS 18V-1000 e DeWalt DCF922B",
+      "accessed_at": "2026-09-08T15:16:00Z",
+      "derived_from": [
+        "ev_makita_tw141dz",
+        "ev_bosch_gds400",
+        "ev_bosch_gds1000",
+        "ev_dewalt_dcf922b"
+      ],
+      "notes": "Síntese de nomenclatura e estrutura de campos; não afirma protocolo universal nem equivalência metrológica entre fabricantes."
+    },
+    {
+      "id": "ev_metrics_separate",
+      "evidence_type": "DERIVED",
+      "claim": "Nas fichas consultadas que publicam esses dados, rotação, número de impactos e torque ocupam campos separados: 0-2.600 r.p.m. e 0-3.200 i.p.m. na TW141DZ, 0-2.500 r.p.m. e 0-3.700 i.p.m. na GDS 18V-400, e valores por nível na GDS 18V-1000. Frequência de impactos e rotação, portanto, não são o mesmo campo que torque.",
+      "source_name": "Leitura comparada dos campos de rotação, impactos e torque nas fichas oficiais consultadas",
+      "accessed_at": "2026-09-08T15:16:00Z",
+      "derived_from": [
+        "ev_makita_tw141dz",
+        "ev_bosch_gds400",
+        "ev_bosch_gds1000"
+      ],
+      "notes": "Conclusão sobre a separação de campos nas fichas; não mede intensidade de impacto nem desempenho prático."
+    },
+    {
+      "id": "ev_no_universal_fastener_conversion",
+      "evidence_type": "DERIVED",
+      "claim": "Nas fontes consultadas, não foi encontrada uma conversão universal publicada de Nm para tamanho de fixador. Na TW141DZ, a Makita publica a capacidade de fixador como um campo próprio daquele SKU, com parafuso padrão M8-M16 e parafuso máquina M6-M12.",
+      "source_name": "Leitura comparada das quatro fichas oficiais consultadas quanto à presença de conversão publicada entre torque e fixador",
+      "accessed_at": "2026-09-08T15:16:00Z",
+      "derived_from": [
+        "ev_makita_tw141dz",
+        "ev_bosch_gds400",
+        "ev_bosch_gds1000",
+        "ev_dewalt_dcf922b"
+      ],
+      "notes": "Registro de ausência nas fontes consultadas. A ausência de fórmula publicada não foi convertida em impossibilidade física nem em recomendação de aplicação."
+    }
+  ]
+}

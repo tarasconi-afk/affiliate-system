@@ -1,6 +1,8 @@
-# Registro de imagens externas
+# Registro de imagens
 
-Este arquivo documenta a proveniência dos assets fotográficos publicados pela Ferramenta Clara.
+## Imagens externas
+
+Este arquivo documenta a proveniência dos assets visuais publicados pela Ferramenta Clara: fotografias de origem externa e ilustrações geradas internamente.
 
 | Imagem publicada | Original preservado | Autor | Licença | Fonte | Uso |
 |---|---|---|---|---|---|
@@ -21,6 +23,21 @@ Este arquivo documenta a proveniência dos assets fotográficos publicados pela 
 | `public/images/cordless-drill-spare-battery-cc-1600.webp` | `assets-source/images/cordless-drill-spare-battery-cc.jpg` | Abduldedysubhansyah | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:CORDLESS_DRILL.jpg | Homepage e guia bateria 2 Ah ou 4 Ah, como imagem ilustrativa de uma furadeira sem fio de 14,4 V com bateria sobressalente; não representa os modelos Bosch GBA 18V comparados nem demonstra autonomia, compatibilidade ou desempenho. |
 | `public/images/cordless-screw-drill-cc0-1600.webp` | `assets-source/images/cordless-screw-drill-cc0.jpg` | Fructibus | CC0 1.0 | https://commons.wikimedia.org/wiki/File:Cordless_electric_(screw)_drill.jpg | Homepage e guia furadeira ou parafusadeira, como imagem ilustrativa de uma furadeira/parafusadeira sem fio Black & Decker; não representa os SKUs citados nem demonstra capacidade, controle ou desempenho. |
 
+## Ilustrações geradas internamente
+
+Assets criados sob direção editorial da Ferramenta Clara. Não são obras de terceiros, não são fotografias e não representam SKUs reais.
+
+| Campo | Valor |
+|---|---|
+| Imagem publicada | `public/images/cordless-impact-wrench-ai-1600.webp` |
+| Original preservado | `assets-source/images/cordless-impact-wrench-ai.png` |
+| Origem | Gerada por ChatGPT/OpenAI sob direção editorial da Ferramenta Clara |
+| Data | 2026-09-08 |
+| Natureza | Ilustração gerada por IA; não é fotografia nem representação de SKU real |
+| Dimensões | 1536 × 1024 (original PNG preservado na mesma dimensão; sem upscale) |
+| Uso | Homepage e guia `/nm-chave-de-impacto/`, exclusivamente como ilustração genérica de uma chave de impacto a bateria. Não demonstra especificações, torque, desempenho ou condições de ensaio. |
+
+
 ## Tratamento
 
 - Os JPGs originais foram preservados para rastreabilidade.
@@ -28,4 +45,4 @@ Este arquivo documenta a proveniência dos assets fotográficos publicados pela 
 - Nenhuma fotografia é apresentada como um SKU específico quando isso não é comprovado pela fonte.
 - A página DCD777 declara explicitamente que a fotografia DeWalt é apenas ilustrativa.
 - A página 12V/18V declara explicitamente que as fotografias representam exemplos de categoria, não uma comparação direta entre aqueles dois modelos.
-- Atribuição de autor, fonte, licença e tratamento permanece disponível na página pública `/creditos/`, acessível pelo rodapé do site.
+- Para os assets externos, atribuição de autor, fonte, licença e tratamento permanece disponível na página pública `/creditos/`, acessível pelo rodapé do site. Ilustrações geradas internamente não são obras de terceiros e não exigem atribuição externa; sua proveniência é registrada neste arquivo e divulgada na legenda da própria página.
