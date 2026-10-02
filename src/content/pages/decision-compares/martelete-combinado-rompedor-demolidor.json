@@ -1,0 +1,262 @@
+{
+  "faq": [
+    {
+      "answer": "Não, os valores publicados não podem ser comparados diretamente sem uma condição de medição declarada.",
+      "question": "Posso comparar valores de energia de impacto entre martelete combinado e martelo rompedor demolidor?",
+      "evidenceIds": [
+        "ev_cr_7"
+      ]
+    }
+  ],
+  "hero": {
+    "heading": "Martelete combinado vs. martelo rompedor demolidor",
+    "methodNote": "A comparação considera apenas os modos de operação e valores declarados nas fichas oficiais dos modelos consultados.",
+    "subheading": "Diferenças de modos e valores publicados em fichas oficiais"
+  },
+  "slug": "martelete-combinado-rompedor-demolidor",
+  "type": "decision_compare",
+  "media": {
+    "items": [
+      {
+        "alt": "Martelete com mandril combinado, imagem ilustrativa de categoria",
+        "src": "/images/rotary-hammer-combined-chuck-cc-1600.webp",
+        "width": 1600,
+        "height": 1028,
+        "aspectRatio": 1.56
+      }
+    ],
+    "caption": "Fotografia ilustrativa de um martelete com mandril combinado; nao representa os SKUs especificos citados no texto.",
+    "captionLabel": "Imagem ilustrativa"
+  },
+  "options": [
+    {
+      "name": "Martelete combinado",
+      "description": "Modelos de martelete perfurador/rompedor apresentam modos de operação perfurador com impacto, sem impacto e rompedor.",
+      "evidenceIds": [
+        "ev_cr_5",
+        "ev_cr_6"
+      ]
+    },
+    {
+      "name": "Martelo rompedor demolidor",
+      "description": "Modelos de martelo rompedor e demolidor apresentam valores de energia de impacto e peso, com variação entre modelos.",
+      "evidenceIds": [
+        "ev_cr_1",
+        "ev_cr_2",
+        "ev_cr_3",
+        "ev_cr_4"
+      ]
+    }
+  ],
+  "verdict": {
+    "heading": "Resumo da comparação",
+    "summary": "Martelete combinado oferece modos de operação variados, enquanto martelo rompedor demolidor apresenta valores de energia de impacto e peso específicos por modelo. A escolha depende dos modos declarados e dos valores publicados, sem comparação direta entre marcas ou modelos.",
+    "evidenceIds": [
+      "ev_cr_5",
+      "ev_cr_6",
+      "ev_cr_1",
+      "ev_cr_2",
+      "ev_cr_3",
+      "ev_cr_4",
+      "ev_cr_7",
+      "ev_cr_8"
+    ],
+    "recommendation": "Consulte os modos de operação e valores publicados na ficha de cada modelo para decidir conforme a necessidade da tarefa."
+  },
+  "version": "1.0",
+  "metadata": {
+    "title": "Martelete combinado ou martelo rompedor demolidor: qual escolher?",
+    "updatedAt": "2026-10-02T17:31:16.151Z",
+    "breadcrumbs": [
+      {
+        "url": "/",
+        "name": "Início"
+      },
+      {
+        "name": "Martelete combinado ou martelo rompedor demolidor: qual escolher?"
+      }
+    ],
+    "publishedAt": "2026-10-02T17:31:16.151Z",
+    "metaDescription": "Compare as diferenças entre martelete combinado e martelo rompedor demolidor, com base nos modos de operação e valores publicados em fichas oficiais."
+  },
+  "evidences": [
+    {
+      "id": "ev_cr_1",
+      "claim": "O termo 'Martelo Rompedor Eletropneumático SDS MAX 10,5J / 6KG 1350W' aparece em ficha oficial da DEWALT para o modelo D25832K-B2.",
+      "source_url": "https://www.dewalt.com.br/pt-br/produto/d25832k-b2/martelo-rompedor-eletropneumatico-sds-max-105j-6kg-1350w-com-maleta-220v",
+      "accessed_at": "2026-10-02T12:28:27.448Z",
+      "source_name": "www.dewalt.com.br",
+      "evidence_type": "SPEC"
+    },
+    {
+      "id": "ev_cr_2",
+      "claim": "O termo 'Martelo Rompedor SDS MAX 1050W 7J 6Kg' aparece em ficha oficial da DEWALT para o modelo D25810K-B2.",
+      "source_url": "https://www.dewalt.com.br/pt-br/produto/d25810k-b2/martelo-rompedor-sds-max-1050w-7j-6kg",
+      "accessed_at": "2026-10-02T12:28:27.448Z",
+      "source_name": "www.dewalt.com.br",
+      "evidence_type": "SPEC"
+    },
+    {
+      "id": "ev_cr_3",
+      "claim": "O termo 'Martelo Demolidor' aparece em ficha oficial da DEWALT para o modelo D25966-B2.",
+      "source_url": "https://www.dewalt.com.br/pt-br/produto/d25966-b2/martelo-demolidor-hexagonal-15kg-1800w-41j",
+      "accessed_at": "2026-10-02T12:28:27.448Z",
+      "source_name": "www.dewalt.com.br",
+      "evidence_type": "SPEC"
+    },
+    {
+      "id": "ev_cr_4",
+      "claim": "O termo 'Martelo Demolidor' aparece em ficha oficial da DEWALT para o modelo D25899K-B2.",
+      "source_url": "https://www.dewalt.com.br/pt-br/produto/d25899k-b2/martelo-demolidor-eletropneumatico-sds-max-1500-watts-175j-220v",
+      "accessed_at": "2026-10-02T12:28:27.448Z",
+      "source_name": "www.dewalt.com.br",
+      "evidence_type": "SPEC"
+    },
+    {
+      "id": "ev_cr_5",
+      "claim": "O termo 'Martelete Perfurador' aparece em ficha oficial da DEWALT para o modelo D25134K-B2, com modos de operação perfurador com impacto, sem impacto e rompedor.",
+      "source_url": "https://www.dewalt.com.br/pt-br/produto/d25134k-b2/martelete-perfuradorrompedor-eletropneumatico-sds-plus-1-26mm-800w-220v",
+      "accessed_at": "2026-10-02T12:28:27.448Z",
+      "source_name": "www.dewalt.com.br",
+      "evidence_type": "SPEC"
+    },
+    {
+      "id": "ev_cr_6",
+      "claim": "O termo 'Martelete Perfurador' aparece em ficha oficial da DEWALT para o modelo DCH133M2-BR, com modos de operação perfurador com impacto, sem impacto e rompedor.",
+      "source_url": "https://www.dewalt.com.br/pt-br/produto/dch133m2-br/kit-martelete-perfuradorrompedor-sds-plus-1-26-mm-brushless-20v-max-li-ion-26-j",
+      "accessed_at": "2026-10-02T12:28:27.448Z",
+      "source_name": "www.dewalt.com.br",
+      "evidence_type": "SPEC"
+    },
+    {
+      "id": "ev_cr_7",
+      "claim": "Os valores publicados para martelete combinado rompedor demolidor não podem ser comparados diretamente entre fontes sem uma condição de medição declarada.",
+      "notes": "As fichas citam valores e modos, mas não detalham condições de medição comparáveis.",
+      "accessed_at": "2026-10-02T12:28:27.448Z",
+      "source_name": "derivado de: www.dewalt.com.br",
+      "derived_from": [
+        "ev_cr_1",
+        "ev_cr_2",
+        "ev_cr_3",
+        "ev_cr_4",
+        "ev_cr_5",
+        "ev_cr_6"
+      ],
+      "evidence_type": "DERIVED"
+    },
+    {
+      "id": "ev_cr_8",
+      "claim": "Um valor isolado de martelete combinado rompedor demolidor não autoriza concluir sobre outros modelos ou marcas da categoria.",
+      "notes": "Os valores e modos são específicos de cada ficha/modelo consultado.",
+      "accessed_at": "2026-10-02T12:28:27.448Z",
+      "source_name": "derivado de: www.dewalt.com.br",
+      "derived_from": [
+        "ev_cr_1",
+        "ev_cr_2",
+        "ev_cr_3",
+        "ev_cr_4",
+        "ev_cr_5",
+        "ev_cr_6"
+      ],
+      "evidence_type": "DERIVED"
+    }
+  ],
+  "comparison": {
+    "dimensions": [
+      {
+        "label": "Modos de operação",
+        "option1": "Martelete combinado pode operar como perfurador com impacto, sem impacto e rompedor.",
+        "option2": "Martelo rompedor demolidor opera como rompedor ou demolidor, sem modo perfurador.",
+        "evidenceIds": [
+          "ev_cr_5",
+          "ev_cr_6",
+          "ev_cr_1",
+          "ev_cr_2",
+          "ev_cr_3",
+          "ev_cr_4"
+        ]
+      },
+      {
+        "label": "Valores publicados",
+        "option1": "Martelete combinado apresenta valores específicos por modelo, sem condição de medição comparável.",
+        "option2": "Martelo rompedor demolidor apresenta valores de energia de impacto e peso, específicos por modelo.",
+        "evidenceIds": [
+          "ev_cr_5",
+          "ev_cr_6",
+          "ev_cr_1",
+          "ev_cr_2",
+          "ev_cr_3",
+          "ev_cr_4",
+          "ev_cr_7"
+        ]
+      }
+    ]
+  },
+  "editorialSections": [
+    {
+      "heading": "O que muda entre martelete combinado e martelo rompedor demolidor?",
+      "paragraphs": [
+        {
+          "text": "Martelete combinado oferece múltiplos modos de operação, enquanto martelo rompedor demolidor foca em romper ou demolir, com valores de energia de impacto e peso publicados para cada modelo.",
+          "evidenceIds": [
+            "ev_cr_5",
+            "ev_cr_6",
+            "ev_cr_1",
+            "ev_cr_2",
+            "ev_cr_3",
+            "ev_cr_4"
+          ]
+        }
+      ],
+      "editorial_function": "WHAT_IS_DIFFERENT"
+    },
+    {
+      "heading": "Por que essa diferença importa?",
+      "paragraphs": [
+        {
+          "text": "A presença de modos perfurador e rompedor no martelete combinado permite uso em diferentes tarefas, enquanto o martelo rompedor demolidor é indicado para trabalhos de demolição, conforme os valores publicados nas fichas.",
+          "evidenceIds": [
+            "ev_cr_5",
+            "ev_cr_6",
+            "ev_cr_1",
+            "ev_cr_2",
+            "ev_cr_3",
+            "ev_cr_4"
+          ]
+        }
+      ],
+      "editorial_function": "WHY_IT_MATTERS"
+    },
+    {
+      "heading": "Como decidir entre as opções?",
+      "paragraphs": [
+        {
+          "text": "A decisão deve considerar os modos de operação declarados e os valores publicados para cada modelo, sem comparar diretamente valores entre marcas ou modelos sem condição de medição declarada.",
+          "evidenceIds": [
+            "ev_cr_5",
+            "ev_cr_6",
+            "ev_cr_1",
+            "ev_cr_2",
+            "ev_cr_3",
+            "ev_cr_4",
+            "ev_cr_7"
+          ]
+        }
+      ],
+      "editorial_function": "HOW_TO_DECIDE"
+    },
+    {
+      "heading": "Limites da comparação",
+      "paragraphs": [
+        {
+          "text": "Os valores publicados não permitem concluir sobre desempenho entre modelos ou marcas, pois cada ficha apresenta dados específicos e sem condição de medição comparável.",
+          "evidenceIds": [
+            "ev_cr_7",
+            "ev_cr_8"
+          ]
+        }
+      ],
+      "editorial_function": "LIMITS_OF_COMPARISON"
+    }
+  ]
+}

@@ -227,6 +227,26 @@ const taxonomyTableSchema = z.object({
   })).min(1)
 });
 
+// FC_EDITORIAL_DEPTH_V1: camada editorial intermediaria entre "dados" (tabela,
+// options) e "resumo" (verdict/faq). Cada secao declara uma FUNCAO editorial
+// distinta (o que muda, por que importa, como decidir, limites) em vez de
+// repetir a mesma conclusao em formatos diferentes -- achado real do review
+// humano do candidato martelete-combinado-rompedor-demolidor (CONTENT_TOO_SHALLOW):
+// "quick decision, tabela, resumo e FAQ repetem quase a mesma informação".
+const editorialFunctionEnum = z.enum([
+  'WHAT_IS_DIFFERENT', 'WHY_IT_MATTERS', 'HOW_TO_DECIDE', 'LIMITS_OF_COMPARISON',
+  'WHAT_THE_SPECS_MEAN', 'WHO_IT_FITS', 'WHAT_TO_CHECK'
+]);
+const editorialParagraphSchema = z.object({
+  text: z.string(),
+  evidenceIds: z.array(z.string()).min(1, "Editorial paragraphs must reference at least one evidence")
+});
+const editorialSectionSchema = z.object({
+  editorial_function: editorialFunctionEnum,
+  heading: z.string(),
+  paragraphs: z.array(editorialParagraphSchema).min(1)
+});
+
 const decisionCompareSchema = z.object({
   version: z.literal('1.0'),
   type: z.literal('decision_compare'),
@@ -242,6 +262,7 @@ const decisionCompareSchema = z.object({
   comparison: z.object({
     dimensions: z.array(decisionDimensionSchema)
   }),
+  editorialSections: z.array(editorialSectionSchema).optional(),
   taxonomyTable: taxonomyTableSchema.optional(),
   contextualLinks: z.array(contextualLinkSchema).optional(),
   verdict: verdictSchema.optional(),

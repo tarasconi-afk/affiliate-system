@@ -149,6 +149,17 @@ const contextualLinksAt = (placement: 'after_specs' | 'after_comparison' | 'afte
 
           {pageSpec.taxonomyTable && <TaxonomyTable table={pageSpec.taxonomyTable} evidences={pageSpec.evidences} />}
 
+          {pageSpec.editorialSections && pageSpec.editorialSections.length > 0 && (
+            <section class="editorial-depth">
+              {pageSpec.editorialSections.map(sec => (
+                <section class="content-section editorial-depth-section">
+                  <h2>{sec.heading}</h2>
+                  {sec.paragraphs.map(p => <p>{p.text}<Sources evidenceIds={p.evidenceIds} evidences={pageSpec.evidences} /></p>)}
+                </section>
+              ))}
+            </section>
+          )}
+
           {pageSpec.verdict && <section class="verdict content-section"><p class="block-label">LEITURA EDITORIAL</p><h2>{pageSpec.verdict.heading ?? 'Como decidir'}</h2><p class="verdict-summary">{pageSpec.verdict.summary}{pageSpec.verdict.evidenceIds && <Sources evidenceIds={pageSpec.verdict.evidenceIds} evidences={pageSpec.evidences} />}</p><p>{pageSpec.verdict.recommendation}</p></section>}
 
           {contextualLinksAt('after_verdict').map(link => <p class="contextual-link">{link.intro} <a href={link.href}>{link.anchorText}</a>{link.outro && ` ${link.outro}`}.</p>)}

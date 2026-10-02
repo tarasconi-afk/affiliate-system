@@ -225,6 +225,16 @@ export interface TaxonomyTable {
   }>;
 }
 
+export type EditorialFunction =
+  | 'WHAT_IS_DIFFERENT' | 'WHY_IT_MATTERS' | 'HOW_TO_DECIDE' | 'LIMITS_OF_COMPARISON'
+  | 'WHAT_THE_SPECS_MEAN' | 'WHO_IT_FITS' | 'WHAT_TO_CHECK';
+
+export interface EditorialSection {
+  editorial_function: EditorialFunction;
+  heading: string;
+  paragraphs: Array<{ text: string; evidenceIds: string[] }>;
+}
+
 export interface DecisionComparePageSpec {
   version: '1.0';
   type: 'decision_compare';
@@ -240,6 +250,7 @@ export interface DecisionComparePageSpec {
   comparison: {
     dimensions: DecisionDimension[];
   };
+  editorialSections?: EditorialSection[];
   taxonomyTable?: TaxonomyTable;
   contextualLinks?: ContextualLink[];
   verdict?: Verdict;
