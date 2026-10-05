@@ -85,7 +85,7 @@ const RAW_EVENTS: Omit<SeasonalEvent, 'status'>[] = [
     ],
     preparedFromVerifiedSource: true,
     sourceNote: 'Tres fontes da propria Amazon divergem sobre a janela exata do evento (6-7/10 vs 5-11/10 vs 5/10-12/10). Nao escolhemos uma como "a data oficial" -- todas ficam registradas com sua propria evidencia. Comissao padrao Ferramentas/Construcao 8% e recompensa Prime R$9 sao regras publicas gerais do Programa de Associados, nao uma comissao promocional especial comprovada para este evento.',
-    seasonalLandingLink: null,
+    seasonalLandingLink: 'https://link.amazon/B09rgamjx',
   },
 ];
 

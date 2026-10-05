@@ -9,6 +9,7 @@ import EvidenceList from '../components/EvidenceList.astro';
 import Sources from '../components/Sources.astro';
 import type { PageSpec } from '../lib/types';
 import { SITE } from '../lib/site';
+import { SEASONAL_EVENTS } from '../lib/seasonal_events';
 
 interface Props { pageSpec: PageSpec; }
 const { pageSpec } = Astro.props;
@@ -16,6 +17,12 @@ const updatedLabel = new Date(pageSpec.metadata.updatedAt).toLocaleDateString('p
 const socialImage = pageSpec.media.items[0] ? new URL(pageSpec.media.items[0].src, SITE.url).toString() : undefined;
 const contextualLinksAt = (placement: 'after_specs' | 'after_comparison' | 'after_verdict') =>
   pageSpec.contextualLinks?.filter(link => link.placement === placement) ?? [];
+// CTA sazonal (ex.: Mega Oferta Amazon Prime): separado do Product Match e do
+// Prime signup/reward. Visibilidade controlada SOMENTE pelo status computado do
+// evento (ACTIVE/MIXED_SOURCES dentro da janela de pelo menos uma fonte) -- nunca
+// um texto fixo no conteudo, para nao precisar de deploy so pra tirar a frase
+// quando a campanha acabar.
+const activeSeasonalEvent = SEASONAL_EVENTS.find(ev => (ev.status === 'ACTIVE' || ev.status === 'MIXED_SOURCES') && ev.seasonalLandingLink);
 ---
 
 <BaseLayout title={pageSpec.metadata.title}>
@@ -188,6 +195,12 @@ const contextualLinksAt = (placement: 'after_specs' | 'after_comparison' | 'afte
           {pageSpec.monetization.disclaimer && <p>{pageSpec.monetization.disclaimer}</p>}
         </section>
       )}
+      {SITE.monetizationEnabled && activeSeasonalEvent && (
+        <section class="monetization monetization-seasonal" data-cta-event={activeSeasonalEvent.id} data-cta-page={pageSpec.slug}>
+          <a href={activeSeasonalEvent.seasonalLandingLink} target="_blank" rel="noopener noreferrer nofollow sponsored">Ver a Mega Oferta Amazon Prime</a>
+          <p class="fc-affiliate-disclosure">Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas.</p>
+        </section>
+      )}
       {SITE.monetizationEnabled && pageSpec.monetization?.primePromo?.enabled && pageSpec.monetization.primePromo.affiliateUrl && (
         <section class="monetization monetization-prime" data-cta-provider="amazon_prime" data-cta-page={pageSpec.slug}>
           <a href={pageSpec.monetization.primePromo.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">{pageSpec.monetization.primePromo.ctaText || 'Testar Amazon Prime grátis'}</a>
@@ -285,6 +298,7 @@ const contextualLinksAt = (placement: 'after_specs' | 'after_comparison' | 'afte
   .monetization a { display: inline-block; background: var(--ink); color: var(--paper); padding: .8rem 1rem; text-decoration: none; font-weight: 800; }
   .fc-affiliate-disclosure { margin-top: .6rem; font-size: .72rem; color: var(--steel); }
   .monetization-prime { border-style: dashed; }
+  .monetization-seasonal { border-style: dotted; }
 
   @media (max-width: 900px) {
     .article-hero { grid-template-columns: 1fr; gap: 2rem; padding-top: 2.5rem; }
