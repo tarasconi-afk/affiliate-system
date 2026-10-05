@@ -276,17 +276,37 @@
     }
   ],
   "monetization": {
-    "affiliateUrl": "https://www.amazon.com.br/dp/B099NZQHRB",
-    "ctaText": "Ver exemplo de parafusadeira classe 18V/20V MAX na Amazon",
-    "disclaimer": "Este é um exemplo de parafusadeira da classe 18V (nomenclatura 20V MAX da DeWalt), não a única opção dessa classe. Preço e estoque variam na Amazon.",
-    "match": {
-      "provider": "amazon",
-      "market": "BR",
-      "asin": "B099NZQHRB",
-      "matchType": "CATEGORY_REPRESENTATIVE",
-      "matchEvidence": "Reaproveita o mesmo ASIN verificado da candidate model_review (DeWalt DCD7771D2-BR) como exemplo real da classe 18V/20V MAX discutida nesta pagina de decisao -- nao finge ser a unica opcao da classe.",
-      "trackingSource": "fc_amazon_mop_sprint_v1",
-      "matchedAt": "2026-10-05T18:00:00.000Z"
-    }
+    "offers": [
+      {
+        "affiliateUrl": "https://www.amazon.com.br/dp/B076Y8DC6G?tag=ferramentaclara-20",
+        "ctaText": "Ver exemplo de parafusadeira classe 12V na Amazon",
+        "label": "12V",
+        "disclaimer": "Exemplo real de parafusadeira DeWalt 12V (DCD716D2), nao a unica opcao dessa classe. Preco e estoque variam na Amazon.",
+        "match": {
+          "provider": "amazon",
+          "market": "BR",
+          "asin": "B076Y8DC6G",
+          "matchType": "CATEGORY_REPRESENTATIVE",
+          "matchEvidence": "ASIN verificado via fetch em 2026-10-05: DeWalt DCD716D2, 12V, bivolt -- exemplo real da classe 12V discutida nesta pagina.",
+          "trackingSource": "fc_amazon_mop_sprint_v1",
+          "matchedAt": "2026-10-05T19:30:00.000Z"
+        }
+      },
+      {
+        "affiliateUrl": "https://www.amazon.com.br/dp/B099NZQHRB?tag=ferramentaclara-20",
+        "ctaText": "Ver exemplo de parafusadeira classe 18V (20V MAX) na Amazon",
+        "label": "18V",
+        "disclaimer": "Exemplo real de parafusadeira DeWalt 20V MAX (DCD7771D2). A propria DeWalt declara, em disclaimer oficial impresso nas embalagens e no site oficial, que a tensao nominal do sistema \"20V MAX\" e 18V (tensao maxima inicial sem carga e 20V); nao tratamos isso como presuncao nossa. Preco e estoque variam na Amazon.",
+        "match": {
+          "provider": "amazon",
+          "market": "BR",
+          "asin": "B099NZQHRB",
+          "matchType": "EXACT_FAMILY",
+          "matchEvidence": "Mesmo ASIN da candidate model_review, reaproveitado como exemplo da classe 18V -- enquadramento 20V MAX = nominal 18V respaldado por fonte primaria DeWalt (disclaimer oficial: 'Maximum initial battery voltage is 20 volts. Nominal voltage is 18.'), nao assumido sem evidencia.",
+          "trackingSource": "fc_amazon_mop_sprint_v1",
+          "matchedAt": "2026-10-05T19:30:00.000Z"
+        }
+      }
+    ]
   }
 }

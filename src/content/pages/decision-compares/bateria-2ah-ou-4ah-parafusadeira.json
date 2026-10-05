@@ -243,17 +243,37 @@
     }
   ],
   "monetization": {
-    "affiliateUrl": "https://www.amazon.com.br/dp/B07MR282ML",
-    "ctaText": "Ver bateria 4.0Ah de exemplo na Amazon",
-    "disclaimer": "Este é um exemplo de bateria 4.0Ah para a classe discutida nesta página, não uma recomendação de marca específica. Preço e estoque variam na Amazon.",
-    "match": {
-      "provider": "amazon",
-      "market": "BR",
-      "asin": "B07MR282ML",
-      "matchType": "CATEGORY_REPRESENTATIVE",
-      "matchEvidence": "ASIN verificado via busca+fetch em 2026-10-05: DeWalt DCB204, bateria 20V MAX XR 4.0Ah avulsa -- representa a classe '4Ah' comparada nesta pagina, nao um SKU unico que resolva a decisao 2Ah-vs-4Ah inteira.",
-      "trackingSource": "fc_amazon_mop_sprint_v1",
-      "matchedAt": "2026-10-05T18:00:00.000Z"
-    }
+    "offers": [
+      {
+        "affiliateUrl": "https://www.amazon.com.br/dp/B07ZJLBN5P?tag=ferramentaclara-20",
+        "ctaText": "Ver bateria DeWalt 2.0Ah (DCB203) na Amazon",
+        "label": "2.0Ah",
+        "disclaimer": "Exemplo real de bateria 2.0Ah da mesma plataforma DeWalt 20V MAX. Preco e estoque variam na Amazon.",
+        "match": {
+          "provider": "amazon",
+          "market": "BR",
+          "asin": "B07ZJLBN5P",
+          "matchType": "CATEGORY_REPRESENTATIVE",
+          "matchEvidence": "ASIN verificado via fetch em 2026-10-05: titulo confirma DCB203-B3, 2.0Ah, 20V MAX, mesma plataforma/familia da bateria 4.0Ah linkada ao lado.",
+          "trackingSource": "fc_amazon_mop_sprint_v1",
+          "matchedAt": "2026-10-05T19:30:00.000Z"
+        }
+      },
+      {
+        "affiliateUrl": "https://www.amazon.com.br/dp/B07MR282ML?tag=ferramentaclara-20",
+        "ctaText": "Ver bateria DeWalt 4.0Ah (DCB204) na Amazon",
+        "label": "4.0Ah",
+        "disclaimer": "Exemplo real de bateria 4.0Ah da mesma plataforma DeWalt 20V MAX. Preco e estoque variam na Amazon.",
+        "match": {
+          "provider": "amazon",
+          "market": "BR",
+          "asin": "B07MR282ML",
+          "matchType": "CATEGORY_REPRESENTATIVE",
+          "matchEvidence": "ASIN verificado via fetch em 2026-10-05: DeWalt DCB204, 4.0Ah, 20V MAX, mesma plataforma/familia da bateria 2.0Ah linkada ao lado -- par balanceado, nao enviesado para uma capacidade so.",
+          "trackingSource": "fc_amazon_mop_sprint_v1",
+          "matchedAt": "2026-10-05T19:30:00.000Z"
+        }
+      }
+    ]
   }
 }

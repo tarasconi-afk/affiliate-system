@@ -205,33 +205,33 @@
   "monetization": {
     "offers": [
       {
-        "affiliateUrl": "https://www.amazon.com.br/dp/B07GJQH11L",
-        "ctaText": "Ver kit Bosch GSR 180 LI 18V na Amazon",
+        "affiliateUrl": "https://www.amazon.com.br/dp/B07GJQH11L?tag=ferramentaclara-20",
+        "ctaText": "Ver kit Bosch GSR 180 LI 18V (2 baterias) na Amazon",
         "label": "Bosch",
-        "disclaimer": "Preço e estoque variam na Amazon.",
+        "disclaimer": "Kit real: 18V, 2 baterias, carregador e maleta. Preco e estoque variam na Amazon.",
         "match": {
           "provider": "amazon",
           "market": "BR",
           "asin": "B07GJQH11L",
           "matchType": "CATEGORY_REPRESENTATIVE",
-          "matchEvidence": "ASIN verificado via fetch em 2026-10-05: Bosch GSR 180 LI, kit 18V com 2 baterias + carregador + maleta.",
+          "matchEvidence": "ASIN verificado via fetch em 2026-10-05: Bosch GSR 180 LI, 18V, 2 baterias + carregador + maleta.",
           "trackingSource": "fc_amazon_mop_sprint_v1",
-          "matchedAt": "2026-10-05T18:00:00.000Z"
+          "matchedAt": "2026-10-05T19:30:00.000Z"
         }
       },
       {
-        "affiliateUrl": "https://www.amazon.com.br/dp/B0F258DSHY",
-        "ctaText": "Ver kit Makita DHP482 18V na Amazon",
+        "affiliateUrl": "https://www.amazon.com.br/dp/B0F258DSHY?tag=ferramentaclara-20",
+        "ctaText": "Ver kit Makita DHP482 18V (1 bateria) na Amazon",
         "label": "Makita",
-        "disclaimer": "Preço e estoque variam na Amazon.",
+        "disclaimer": "Kit real: 18V, 1 bateria, carregador e maleta -- configuracao diferente do kit Bosch ao lado (2 baterias); nao sao kits equivalentes, apenas exemplos reais de cada marca. Preco e estoque variam na Amazon.",
         "match": {
           "provider": "amazon",
           "market": "BR",
           "asin": "B0F258DSHY",
           "matchType": "CATEGORY_REPRESENTATIVE",
-          "matchEvidence": "ASIN verificado via busca em 2026-10-05: Makita DHP482Y002, kit 18V LXT com bateria 1.5Ah + carregador + maleta -- tier equivalente ao kit Bosch linkado nesta mesma pagina (tratamento balanceado).",
+          "matchEvidence": "ASIN verificado via busca em 2026-10-05: Makita DHP482Y002, 18V LXT, 1 bateria 1.5Ah + carregador + maleta. Configuracao DIFERENTE do kit Bosch (que tem 2 baterias) -- tratamento balanceado por marca, nao por especificacao identica.",
           "trackingSource": "fc_amazon_mop_sprint_v1",
-          "matchedAt": "2026-10-05T18:00:00.000Z"
+          "matchedAt": "2026-10-05T19:30:00.000Z"
         }
       }
     ]

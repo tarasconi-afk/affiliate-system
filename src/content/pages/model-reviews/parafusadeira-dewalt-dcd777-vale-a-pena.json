@@ -292,17 +292,17 @@
     }
   ],
   "monetization": {
-    "affiliateUrl": "https://www.amazon.com.br/dp/B099NZQHRB",
-    "ctaText": "Ver DeWalt DCD7771D2-BR na Amazon",
-    "disclaimer": "Preço, estoque e condições variam na Amazon e não são controlados pela Ferramenta Clara.",
+    "affiliateUrl": "https://www.amazon.com.br/dp/B099NZQHRB?tag=ferramentaclara-20",
+    "ctaText": "Ver DeWalt DCD7771D2 na Amazon",
+    "disclaimer": "O anuncio verificado na Amazon mostra o codigo de familia DCD7771D2 (2 baterias 2.0Ah, carregador bivolt, maleta); nao foi possivel confirmar o sufixo de SKU brasileiro \"-BR\" especificamente no anuncio. Preco e estoque variam na Amazon.",
     "match": {
       "provider": "amazon",
       "market": "BR",
       "asin": "B099NZQHRB",
-      "matchType": "EXACT_SKU",
-      "matchEvidence": "ASIN verificado via busca+fetch em 2026-10-05: titulo do anuncio Amazon confere modelo DCD7771D2 com 2 baterias 2.0Ah, carregador bivolt e maleta, igual ao product.model desta PageSpec (DeWalt DCD7771D2-BR).",
+      "matchType": "EXACT_FAMILY",
+      "matchEvidence": "Rebaixado de EXACT_SKU para EXACT_FAMILY em red-team (2026-10-05): o titulo do anuncio Amazon confirma \"DCD7771D2\" com a mesma configuracao (2 baterias 2.0Ah, carregador bivolt, maleta) do product.model desta PageSpec, mas NAO exibe o sufixo \"-BR\" que distingue o SKU varejista brasileiro especifico -- varios varejistas BR (nao Amazon) usam \"DCD7771D2-BR\" explicitamente, mas isso nao prova que o ASIN da Amazon seja essa variante exata.",
       "trackingSource": "fc_amazon_mop_sprint_v1",
-      "matchedAt": "2026-10-05T18:00:00.000Z"
+      "matchedAt": "2026-10-05T19:30:00.000Z"
     }
   }
 }
