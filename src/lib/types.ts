@@ -66,12 +66,32 @@ export interface PrimePromo {
   disclaimer?: string;
 }
 
+// MONETIZATION_CARD_V3: fonte de imagem do offer. AMAZON_SITESTRIPE_IMAGE
+// deliberadamente de fora do enum -- a conta real do projeto hoje so oferece
+// link (texto/completo) no SiteStripe, nao um asset de imagem utilizavel;
+// incluir a opcao seria convidar a usa-la antes de existir de verdade.
+export type ImageSourceType = 'AMAZON_API' | 'EDITORIAL_LOCAL' | 'PLACEHOLDER';
+
 export interface AffiliateOffer {
   affiliateUrl: string;
   ctaText?: string;
   disclaimer?: string;
   match?: AffiliateMatch;
   label?: string;
+  // MONETIZATION_CARD_V3 (opcionais, additive): nenhum PageSpec existente
+  // precisa preenche-los. Sem imageUrl, o card sempre renderiza o placeholder
+  // proprio -- nunca a imagem editorial da pagina como se fosse o SKU.
+  imageSourceType?: ImageSourceType;
+  imageUrl?: string;
+  imageAsin?: string;
+  enabled?: boolean;
+  // MONETIZATION_CARD_V3.1: uma linha curta e neutra para o card (ex.: "Kit
+  // 20V MAX mencionado nesta analise"). Distinto de `disclaimer`, que guarda
+  // a nota de auditoria/match mais longa (ex.: por que o matchType foi
+  // rebaixado, ou por que dois kits nao sao equivalentes) -- essa nota
+  // continua existindo e sendo exibida, só não ocupa mais o lugar da linha
+  // de contexto principal do card.
+  contextLine?: string;
 }
 
 export interface Monetization {
@@ -81,6 +101,20 @@ export interface Monetization {
   match?: AffiliateMatch;
   primePromo?: PrimePromo;
   offers?: AffiliateOffer[];
+  // MONETIZATION_CARD_V3.1: mesmos campos opcionais de AffiliateOffer, para o
+  // caso de 1 produto so (sem offers[]) poder usa-los tambem.
+  imageSourceType?: ImageSourceType;
+  imageUrl?: string;
+  imageAsin?: string;
+  enabled?: boolean;
+  contextLine?: string;
+  // MONETIZATION_PLACEMENT_V1: valores fechados, nao arbitrarios. Sem este
+  // campo, cada page_type usa sua posicao padrao ja decidida no design
+  // (model_review/decision_compare/brand_compare: logo apos
+  // specs/comparacao). 'after_faq' e a unica posicao alternativa aprovada --
+  // nunca grudada no Seasonal Banner, que continua sempre perto do
+  // fechamento, depois do Product Card nessa ordem.
+  placement?: 'after_specs' | 'after_comparison' | 'after_faq';
 }
 
 export interface EditorialMediaItem {

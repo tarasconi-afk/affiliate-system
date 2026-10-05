@@ -16,9 +16,9 @@ const labels: Record<string, string> = { SPEC: 'Fonte primária', DERIVED: 'Aná
       <span class="summary-icon" aria-hidden="true"></span>
     </summary>
     <ol>
-      {evidences.map((ev, index) => (
+      {evidences.map((ev) => (
         <li id={ev.id}>
-          <div class="evidence-index">[{index + 1}]</div>
+          <div class="evidence-marker" aria-hidden="true"></div>
           <div class="evidence-content">
             <div class="evidence-meta"><span>{labels[ev.evidence_type]}</span><time datetime={ev.accessed_at}>{new Date(ev.accessed_at).toLocaleDateString('pt-BR')}</time></div>
             <p class="claim">{ev.claim}</p>
@@ -49,8 +49,8 @@ const labels: Record<string, string> = { SPEC: 'Fonte primária', DERIVED: 'Aná
   .summary-icon::after { transform: translate(-50%, -50%) rotate(90deg); transition: opacity .15s ease; }
   details[open] .summary-icon::after { opacity: 0; }
   ol { list-style: none; margin: 0; padding: 0; }
-  li { display: grid; grid-template-columns: 52px 1fr; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
-  .evidence-index { color: var(--amber-dark); font: 800 .72rem/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
+  li { display: grid; grid-template-columns: 14px 1fr; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
+  .evidence-marker { width: 8px; height: 8px; margin-top: .4rem; background: var(--amber-dark); border-radius: 50%; }
   .evidence-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .6rem; color: var(--steel); font-size: .67rem; text-transform: uppercase; letter-spacing: .06em; }
   .claim { margin: .35rem 0 .25rem; color: var(--ink); font-size: .92rem; line-height: 1.55; }
   .source, .notes { margin: 0; font-size: .76rem; line-height: 1.5; }

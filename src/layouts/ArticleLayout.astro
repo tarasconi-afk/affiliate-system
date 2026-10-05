@@ -6,10 +6,11 @@ import BreadcrumbSchema from '../components/seo/BreadcrumbSchema.astro';
 import ComparisonTable from '../components/ComparisonTable.astro';
 import TaxonomyTable from '../components/TaxonomyTable.astro';
 import EvidenceList from '../components/EvidenceList.astro';
-import Sources from '../components/Sources.astro';
-import type { PageSpec } from '../lib/types';
+import SectionSources from '../components/SectionSources.astro';
+import MonetizationCard from '../components/MonetizationCard.astro';
+import type { AffiliateOffer, PageSpec } from '../lib/types';
 import { SITE } from '../lib/site';
-import { SEASONAL_EVENTS } from '../lib/seasonal_events';
+import { SEASONAL_EVENTS, getDisplayWindow } from '../lib/seasonal_events';
 
 interface Props { pageSpec: PageSpec; }
 const { pageSpec } = Astro.props;
@@ -18,13 +19,47 @@ const socialImage = pageSpec.media.items[0] ? new URL(pageSpec.media.items[0].sr
 const contextualLinksAt = (placement: 'after_specs' | 'after_comparison' | 'after_verdict') =>
   pageSpec.contextualLinks?.filter(link => link.placement === placement) ?? [];
 // CTA sazonal (ex.: Mega Oferta Amazon Prime): separado do Product Match e do
-// Prime signup/reward. Visibilidade controlada SOMENTE pelo status computado do
-// evento (ACTIVE/MIXED_SOURCES dentro da janela de pelo menos uma fonte) -- nunca
-// um texto fixo no conteudo, para nao precisar de deploy so pra tirar a frase
-// quando a campanha acabar.
+// Prime signup/reward. SEASONAL_RUNTIME_EXPIRY_V1: o markup e incluido sempre
+// que a pagina tem monetization + um evento com link -- a VISIBILIDADE real
+// (mostrar/ocultar) e decidida no NAVEGADOR, no carregamento da pagina, nunca
+// no momento do build (astro build roda uma vez so; o relogio do servidor de
+// build nao e o relogio do leitor no dia em que ele abre a pagina). Isso evita
+// precisar de um deploy so pra tirar a frase quando a campanha acabar, e evita
+// o oposto -- uma campanha baked-in como "sempre visivel" num build antigo.
 const activeSeasonalEvent = pageSpec.monetization
-  ? SEASONAL_EVENTS.find(ev => (ev.status === 'ACTIVE' || ev.status === 'MIXED_SOURCES') && ev.seasonalLandingLink)
+  ? SEASONAL_EVENTS.find(ev => ev.seasonalLandingLink)
   : undefined;
+const seasonalDisplayWindow = activeSeasonalEvent ? getDisplayWindow(activeSeasonalEvent) : undefined;
+
+// MONETIZATION_CARD_V3: um unico conjunto de offers alimenta o card, venha de
+// monetization.offers[] (2 produtos) ou do par affiliateUrl/ctaText do topo
+// (1 produto) -- a mesma logica que ja existia, so unificada antes de chegar
+// no componente.
+const productOffers: AffiliateOffer[] = pageSpec.monetization?.offers?.length
+  ? pageSpec.monetization.offers
+  : pageSpec.monetization?.affiliateUrl
+    ? [{
+        affiliateUrl: pageSpec.monetization.affiliateUrl,
+        ctaText: pageSpec.monetization.ctaText,
+        disclaimer: pageSpec.monetization.disclaimer,
+        match: pageSpec.monetization.match,
+        contextLine: pageSpec.monetization.contextLine,
+        imageUrl: pageSpec.monetization.imageUrl,
+        imageSourceType: pageSpec.monetization.imageSourceType,
+        imageAsin: pageSpec.monetization.imageAsin,
+        enabled: pageSpec.monetization.enabled,
+      }]
+    : [];
+const showProductCard = SITE.monetizationEnabled && productOffers.some((o) => o.enabled !== false);
+// MONETIZATION_PLACEMENT_V1: so 'after_faq' move o card para a posicao
+// alternativa aprovada; qualquer outro valor (ou ausencia) usa a posicao
+// padrao de cada page_type (logo apos specs/comparacao), decidida no design.
+const productPlacement = pageSpec.monetization?.placement;
+const showProductCardAtDefault = showProductCard && productPlacement !== 'after_faq';
+const showProductCardAfterFaq = showProductCard && productPlacement === 'after_faq';
+const showSeasonalCard = SITE.monetizationEnabled && !!activeSeasonalEvent;
+const showPrimePromo = SITE.monetizationEnabled && !!pageSpec.monetization?.primePromo?.enabled && !!pageSpec.monetization.primePromo.affiliateUrl;
+const showAnyMonetization = showProductCard || showSeasonalCard || showPrimePromo;
 ---
 
 <BaseLayout title={pageSpec.metadata.title}>
@@ -80,14 +115,16 @@ const activeSeasonalEvent = pageSpec.monetization
           <aside class="quick-answer" aria-labelledby="veredito-rapido">
             <p class="block-label">RESPOSTA CURTA</p>
             <h2 id="veredito-rapido">Veredito rápido</h2>
-            <p>{pageSpec.quickAnswer.text}<Sources evidenceIds={pageSpec.quickAnswer.evidenceIds} evidences={pageSpec.evidences} /></p>
+            <p>{pageSpec.quickAnswer.text}</p>
+            <SectionSources evidenceIds={pageSpec.quickAnswer.evidenceIds} evidences={pageSpec.evidences} />
           </aside>
 
           <section class="fact-strip" aria-labelledby="trinta-segundos">
             <div class="fact-strip-heading"><span>FC / DADOS</span><h2 id="trinta-segundos">Em 30 segundos</h2></div>
             <div class="facts">
-              {pageSpec.quickFacts.map(fact => <div><span>{fact.label}</span><strong>{fact.value}<Sources evidenceIds={fact.evidenceIds} evidences={pageSpec.evidences} /></strong></div>)}
+              {pageSpec.quickFacts.map(fact => <div><span>{fact.label}</span><strong>{fact.value}</strong></div>)}
             </div>
+            <SectionSources evidenceIds={pageSpec.quickFacts.flatMap(f => f.evidenceIds)} evidences={pageSpec.evidences} />
           </section>
 
           <section class="content-section">
@@ -98,27 +135,37 @@ const activeSeasonalEvent = pageSpec.monetization
                   {pageSpec.specs.map(spec => (
                     <tr class:list={{ highlight: spec.highlight }}>
                       <th>{spec.label}</th>
-                      <td>{spec.value}<Sources evidenceIds={spec.evidenceIds} evidences={pageSpec.evidences} /></td>
+                      <td>{spec.value}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
+            <SectionSources evidenceIds={pageSpec.specs.flatMap(s => s.evidenceIds)} evidences={pageSpec.evidences} />
             {contextualLinksAt('after_specs').map(link => (
               <p class="contextual-link">{link.intro} <a href={link.href}>{link.anchorText}</a>{link.outro && ` ${link.outro}`}.</p>
             ))}
           </section>
 
+          {showProductCardAtDefault && <MonetizationCard variant="product" offers={productOffers} />}
+
           {pageSpec.prosCons && (
             <section class="content-section pros-cons">
-              <div class="pros"><p class="block-label">PONTOS A FAVOR</p><h2>Onde faz sentido</h2><ul>{pageSpec.prosCons.pros.map(item => <li>{item.text}{item.evidenceIds && <Sources evidenceIds={item.evidenceIds} evidences={pageSpec.evidences} />}</li>)}</ul></div>
-              <div class="cons"><p class="block-label">ATENÇÃO</p><h2>O que considerar</h2><ul>{pageSpec.prosCons.cons.map(item => <li>{item.text}{item.evidenceIds && <Sources evidenceIds={item.evidenceIds} evidences={pageSpec.evidences} />}</li>)}</ul></div>
+              <div class="pros"><p class="block-label">PONTOS A FAVOR</p><h2>Onde faz sentido</h2><ul>{pageSpec.prosCons.pros.map(item => <li>{item.text}</li>)}</ul></div>
+              <div class="cons"><p class="block-label">ATENÇÃO</p><h2>O que considerar</h2><ul>{pageSpec.prosCons.cons.map(item => <li>{item.text}</li>)}</ul></div>
+              <SectionSources evidenceIds={[...pageSpec.prosCons.pros, ...pageSpec.prosCons.cons].flatMap(i => i.evidenceIds ?? [])} evidences={pageSpec.evidences} />
             </section>
           )}
 
           {pageSpec.faq && pageSpec.faq.length > 0 && (
-            <section class="faq content-section"><h2>Perguntas frequentes</h2>{pageSpec.faq.map(item => <div class="faq-item"><h3>{item.question}</h3><p>{item.answer}{item.evidenceIds && <Sources evidenceIds={item.evidenceIds} evidences={pageSpec.evidences} />}</p></div>)}</section>
+            <section class="faq content-section">
+              <h2>Perguntas frequentes</h2>
+              {pageSpec.faq.map(item => <div class="faq-item"><h3>{item.question}</h3><p>{item.answer}</p></div>)}
+              <SectionSources evidenceIds={pageSpec.faq.flatMap(f => f.evidenceIds ?? [])} evidences={pageSpec.evidences} />
+            </section>
           )}
+
+          {showProductCardAfterFaq && <MonetizationCard variant="product" offers={productOffers} />}
         </section>
       )}
 
@@ -128,18 +175,42 @@ const activeSeasonalEvent = pageSpec.monetization
             <p class="block-label">RESPOSTA PRIMEIRO</p>
             <h2 id="qual-marca">Qual faz mais sentido para você?</h2>
             <div class="decision-columns">
-              <div><span class="decision-name">{pageSpec.brands[0].name}</span><p>{pageSpec.brands[0].summary}{pageSpec.brands[0].evidenceIds && <Sources evidenceIds={pageSpec.brands[0].evidenceIds} evidences={pageSpec.evidences} />}</p></div>
-              <div><span class="decision-name">{pageSpec.brands[1].name}</span><p>{pageSpec.brands[1].summary}{pageSpec.brands[1].evidenceIds && <Sources evidenceIds={pageSpec.brands[1].evidenceIds} evidences={pageSpec.evidences} />}</p></div>
+              <div><span class="decision-name">{pageSpec.brands[0].name}</span><p>{pageSpec.brands[0].summary}</p></div>
+              <div><span class="decision-name">{pageSpec.brands[1].name}</span><p>{pageSpec.brands[1].summary}</p></div>
             </div>
+            <SectionSources evidenceIds={[...(pageSpec.brands[0].evidenceIds ?? []), ...(pageSpec.brands[1].evidenceIds ?? [])]} evidences={pageSpec.evidences} />
           </section>
 
-          <section class="content-section"><h2>Comparação por critério</h2><ComparisonTable dimensions={pageSpec.comparison.dimensions} label1={pageSpec.brands[0].name} label2={pageSpec.brands[1].name} evidences={pageSpec.evidences} />{contextualLinksAt('after_comparison').map(link => <p class="contextual-link">{link.intro} <a href={link.href}>{link.anchorText}</a>{link.outro && ` ${link.outro}`}.</p>)}</section>
+          <section class="content-section">
+            <h2>Comparação por critério</h2>
+            <ComparisonTable dimensions={pageSpec.comparison.dimensions} label1={pageSpec.brands[0].name} label2={pageSpec.brands[1].name} evidences={pageSpec.evidences} />
+            <SectionSources evidenceIds={pageSpec.comparison.dimensions.flatMap(d => d.evidenceIds)} evidences={pageSpec.evidences} />
+            {contextualLinksAt('after_comparison').map(link => <p class="contextual-link">{link.intro} <a href={link.href}>{link.anchorText}</a>{link.outro && ` ${link.outro}`}.</p>)}
+          </section>
 
-          {pageSpec.verdict && <section class="verdict content-section"><p class="block-label">LEITURA EDITORIAL</p><h2>{pageSpec.verdict.heading ?? 'Como decidir'}</h2><p class="verdict-summary">{pageSpec.verdict.summary}{pageSpec.verdict.evidenceIds && <Sources evidenceIds={pageSpec.verdict.evidenceIds} evidences={pageSpec.evidences} />}</p><p>{pageSpec.verdict.recommendation}</p></section>}
+          {showProductCardAtDefault && <MonetizationCard variant="product" offers={productOffers} />}
+
+          {pageSpec.verdict && (
+            <section class="verdict content-section">
+              <p class="block-label">LEITURA EDITORIAL</p>
+              <h2>{pageSpec.verdict.heading ?? 'Como decidir'}</h2>
+              <p class="verdict-summary">{pageSpec.verdict.summary}</p>
+              <p>{pageSpec.verdict.recommendation}</p>
+              <SectionSources evidenceIds={pageSpec.verdict.evidenceIds ?? []} evidences={pageSpec.evidences} />
+            </section>
+          )}
 
           {contextualLinksAt('after_verdict').map(link => <p class="contextual-link">{link.intro} <a href={link.href}>{link.anchorText}</a>{link.outro && ` ${link.outro}`}.</p>)}
 
-          {pageSpec.faq && pageSpec.faq.length > 0 && <section class="faq content-section"><h2>Perguntas frequentes</h2>{pageSpec.faq.map(item => <div class="faq-item"><h3>{item.question}</h3><p>{item.answer}{item.evidenceIds && <Sources evidenceIds={item.evidenceIds} evidences={pageSpec.evidences} />}</p></div>)}</section>}
+          {pageSpec.faq && pageSpec.faq.length > 0 && (
+            <section class="faq content-section">
+              <h2>Perguntas frequentes</h2>
+              {pageSpec.faq.map(item => <div class="faq-item"><h3>{item.question}</h3><p>{item.answer}</p></div>)}
+              <SectionSources evidenceIds={pageSpec.faq.flatMap(f => f.evidenceIds ?? [])} evidences={pageSpec.evidences} />
+            </section>
+          )}
+
+          {showProductCardAfterFaq && <MonetizationCard variant="product" offers={productOffers} />}
         </section>
       )}
 
@@ -149,12 +220,20 @@ const activeSeasonalEvent = pageSpec.monetization
             <p class="block-label">DECISÃO RÁPIDA</p>
             <h2 id="escolha-rapida">Escolha em 10 segundos</h2>
             <div class="decision-columns">
-              <div><span class="decision-name">{pageSpec.options[0].name}</span><p>{pageSpec.options[0].description}{pageSpec.options[0].evidenceIds && <Sources evidenceIds={pageSpec.options[0].evidenceIds} evidences={pageSpec.evidences} />}</p></div>
-              <div><span class="decision-name">{pageSpec.options[1].name}</span><p>{pageSpec.options[1].description}{pageSpec.options[1].evidenceIds && <Sources evidenceIds={pageSpec.options[1].evidenceIds} evidences={pageSpec.evidences} />}</p></div>
+              <div><span class="decision-name">{pageSpec.options[0].name}</span><p>{pageSpec.options[0].description}</p></div>
+              <div><span class="decision-name">{pageSpec.options[1].name}</span><p>{pageSpec.options[1].description}</p></div>
             </div>
+            <SectionSources evidenceIds={[...(pageSpec.options[0].evidenceIds ?? []), ...(pageSpec.options[1].evidenceIds ?? [])]} evidences={pageSpec.evidences} />
           </section>
 
-          <section class="content-section"><h2>Comparação por critério</h2><ComparisonTable dimensions={pageSpec.comparison.dimensions} label1={pageSpec.options[0].name} label2={pageSpec.options[1].name} evidences={pageSpec.evidences} />{contextualLinksAt('after_comparison').map(link => <p class="contextual-link">{link.intro} <a href={link.href}>{link.anchorText}</a>{link.outro && ` ${link.outro}`}.</p>)}</section>
+          <section class="content-section">
+            <h2>Comparação por critério</h2>
+            <ComparisonTable dimensions={pageSpec.comparison.dimensions} label1={pageSpec.options[0].name} label2={pageSpec.options[1].name} evidences={pageSpec.evidences} />
+            <SectionSources evidenceIds={pageSpec.comparison.dimensions.flatMap(d => d.evidenceIds)} evidences={pageSpec.evidences} />
+            {contextualLinksAt('after_comparison').map(link => <p class="contextual-link">{link.intro} <a href={link.href}>{link.anchorText}</a>{link.outro && ` ${link.outro}`}.</p>)}
+          </section>
+
+          {showProductCardAtDefault && <MonetizationCard variant="product" offers={productOffers} />}
 
           {pageSpec.taxonomyTable && <TaxonomyTable table={pageSpec.taxonomyTable} evidences={pageSpec.evidences} />}
 
@@ -163,52 +242,57 @@ const activeSeasonalEvent = pageSpec.monetization
               {pageSpec.editorialSections.map(sec => (
                 <section class="content-section editorial-depth-section">
                   <h2>{sec.heading}</h2>
-                  {sec.paragraphs.map(p => <p>{p.text}<Sources evidenceIds={p.evidenceIds} evidences={pageSpec.evidences} /></p>)}
+                  {sec.paragraphs.map(p => <p>{p.text}</p>)}
+                  <SectionSources evidenceIds={sec.paragraphs.flatMap(p => p.evidenceIds)} evidences={pageSpec.evidences} />
                 </section>
               ))}
             </section>
           )}
 
-          {pageSpec.verdict && <section class="verdict content-section"><p class="block-label">LEITURA EDITORIAL</p><h2>{pageSpec.verdict.heading ?? 'Como decidir'}</h2><p class="verdict-summary">{pageSpec.verdict.summary}{pageSpec.verdict.evidenceIds && <Sources evidenceIds={pageSpec.verdict.evidenceIds} evidences={pageSpec.evidences} />}</p><p>{pageSpec.verdict.recommendation}</p></section>}
+          {pageSpec.verdict && (
+            <section class="verdict content-section">
+              <p class="block-label">LEITURA EDITORIAL</p>
+              <h2>{pageSpec.verdict.heading ?? 'Como decidir'}</h2>
+              <p class="verdict-summary">{pageSpec.verdict.summary}</p>
+              <p>{pageSpec.verdict.recommendation}</p>
+              <SectionSources evidenceIds={pageSpec.verdict.evidenceIds ?? []} evidences={pageSpec.evidences} />
+            </section>
+          )}
 
           {contextualLinksAt('after_verdict').map(link => <p class="contextual-link">{link.intro} <a href={link.href}>{link.anchorText}</a>{link.outro && ` ${link.outro}`}.</p>)}
 
-          {pageSpec.faq && pageSpec.faq.length > 0 && <section class="faq content-section"><h2>Perguntas frequentes</h2>{pageSpec.faq.map(item => <div class="faq-item"><h3>{item.question}</h3><p>{item.answer}{item.evidenceIds && <Sources evidenceIds={item.evidenceIds} evidences={pageSpec.evidences} />}</p></div>)}</section>}
+          {pageSpec.faq && pageSpec.faq.length > 0 && (
+            <section class="faq content-section">
+              <h2>Perguntas frequentes</h2>
+              {pageSpec.faq.map(item => <div class="faq-item"><h3>{item.question}</h3><p>{item.answer}</p></div>)}
+              <SectionSources evidenceIds={pageSpec.faq.flatMap(f => f.evidenceIds ?? [])} evidences={pageSpec.evidences} />
+            </section>
+          )}
+
+          {showProductCardAfterFaq && <MonetizationCard variant="product" offers={productOffers} />}
         </section>
+      )}
+
+      {showSeasonalCard && (
+        <MonetizationCard
+          variant="seasonal"
+          seasonalHref={activeSeasonalEvent!.seasonalLandingLink!}
+          windowStartsAt={seasonalDisplayWindow!.startsAt}
+          windowEndsAt={seasonalDisplayWindow!.endsAt}
+        />
       )}
 
       <EvidenceList evidences={pageSpec.evidences} />
 
-      {SITE.monetizationEnabled && pageSpec.monetization?.offers && pageSpec.monetization.offers.length > 0 && (
-        <section class="monetization monetization-offers" data-cta-page={pageSpec.slug}>
-          {pageSpec.monetization.offers.map(offer => (
-            <div class="monetization-offer" data-cta-provider={offer.match?.provider} data-cta-match-type={offer.match?.matchType} data-cta-asin={offer.match?.asin}>
-              <a href={offer.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">{offer.ctaText || 'Ver opções de compra'}</a>
-              {offer.disclaimer && <p>{offer.disclaimer}</p>}
-            </div>
-          ))}
-          <p class="fc-affiliate-disclosure">Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas.</p>
-        </section>
-      )}
-      {SITE.monetizationEnabled && !pageSpec.monetization?.offers?.length && pageSpec.monetization?.affiliateUrl && (
-        <section class="monetization" data-cta-provider={pageSpec.monetization.match?.provider} data-cta-match-type={pageSpec.monetization.match?.matchType} data-cta-asin={pageSpec.monetization.match?.asin} data-cta-page={pageSpec.slug}>
-          <a href={pageSpec.monetization.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">{pageSpec.monetization.ctaText || 'Ver opções de compra'}</a>
-          <p class="fc-affiliate-disclosure">Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas.</p>
-          {pageSpec.monetization.disclaimer && <p>{pageSpec.monetization.disclaimer}</p>}
-        </section>
-      )}
-      {SITE.monetizationEnabled && activeSeasonalEvent && (
-        <section class="monetization monetization-seasonal" data-cta-event={activeSeasonalEvent.id} data-cta-page={pageSpec.slug}>
-          <a href={activeSeasonalEvent.seasonalLandingLink} target="_blank" rel="noopener noreferrer nofollow sponsored">Ver a Mega Oferta Amazon Prime</a>
-          <p class="fc-affiliate-disclosure">Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas.</p>
-        </section>
-      )}
-      {SITE.monetizationEnabled && pageSpec.monetization?.primePromo?.enabled && pageSpec.monetization.primePromo.affiliateUrl && (
+      {showPrimePromo && (
         <section class="monetization monetization-prime" data-cta-provider="amazon_prime" data-cta-page={pageSpec.slug}>
-          <a href={pageSpec.monetization.primePromo.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">{pageSpec.monetization.primePromo.ctaText || 'Testar Amazon Prime grátis'}</a>
-          <p class="fc-affiliate-disclosure">Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas.</p>
-          {pageSpec.monetization.primePromo.disclaimer && <p>{pageSpec.monetization.primePromo.disclaimer}</p>}
+          <a href={pageSpec.monetization!.primePromo!.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">{pageSpec.monetization!.primePromo!.ctaText || 'Testar Amazon Prime grátis'}</a>
+          {pageSpec.monetization!.primePromo!.disclaimer && <p>{pageSpec.monetization!.primePromo!.disclaimer}</p>}
         </section>
+      )}
+
+      {showAnyMonetization && (
+        <p class="fc-affiliate-disclosure fc-affiliate-disclosure-page">Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas.</p>
       )}
     </div>
   </article>
@@ -296,11 +380,11 @@ const activeSeasonalEvent = pageSpec.monetization
   .faq-item h3 { margin: 0 0 .55rem; font-size: 1.08rem; letter-spacing: -.015em; }
   .faq-item p { margin: 0; line-height: 1.7; }
 
-  .monetization { margin: 4rem 0; padding: 1.5rem; border: 1px solid var(--line); }
+  .monetization { margin: 3rem 0; padding: 1.5rem; border: 1px solid var(--line); }
   .monetization a { display: inline-block; background: var(--ink); color: var(--paper); padding: .8rem 1rem; text-decoration: none; font-weight: 800; }
   .fc-affiliate-disclosure { margin-top: .6rem; font-size: .72rem; color: var(--steel); }
+  .fc-affiliate-disclosure-page { margin: 1rem 0 2rem; text-align: center; }
   .monetization-prime { border-style: dashed; }
-  .monetization-seasonal { border-style: dotted; }
 
   @media (max-width: 900px) {
     .article-hero { grid-template-columns: 1fr; gap: 2rem; padding-top: 2.5rem; }

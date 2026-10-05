@@ -257,7 +257,8 @@
           "matchEvidence": "ASIN verificado via fetch em 2026-10-05: titulo confirma DCB203-B3, 2.0Ah, 20V MAX, mesma plataforma/familia da bateria 4.0Ah linkada ao lado.",
           "trackingSource": "fc_amazon_mop_sprint_v1",
           "matchedAt": "2026-10-05T19:30:00.000Z"
-        }
+        },
+        "contextLine": "Bateria 2.0Ah DCB203 — mesma plataforma 20V MAX"
       },
       {
         "affiliateUrl": "https://www.amazon.com.br/dp/B07MR282ML?tag=ferramentaclara-20",
@@ -272,7 +273,8 @@
           "matchEvidence": "ASIN verificado via fetch em 2026-10-05: DeWalt DCB204, 4.0Ah, 20V MAX, mesma plataforma/familia da bateria 2.0Ah linkada ao lado -- par balanceado, nao enviesado para uma capacidade so.",
           "trackingSource": "fc_amazon_mop_sprint_v1",
           "matchedAt": "2026-10-05T19:30:00.000Z"
-        }
+        },
+        "contextLine": "Bateria 4.0Ah DCB204 — mesma plataforma 20V MAX"
       }
     ]
   }

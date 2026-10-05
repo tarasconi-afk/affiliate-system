@@ -90,3 +90,17 @@ const RAW_EVENTS: Omit<SeasonalEvent, 'status'>[] = [
 ];
 
 export const SEASONAL_EVENTS: SeasonalEvent[] = RAW_EVENTS.map((ev) => ({ ...ev, status: computeWindowStatus(ev.windows) }));
+
+// SEASONAL_RUNTIME_EXPIRY_V1: a janela "oficial" nao existe (3 fontes
+// divergem -- ver MULTI_SOURCE_WINDOW_V1 acima). getDisplayWindow() devolve o
+// ENVELOPE MAIS LARGO que cobre todas as fontes (inicio mais cedo, fim mais
+// tarde) -- nunca apresentado como "a data oficial", apenas usado para decidir
+// quando o elemento deve aparecer/desaparecer no NAVEGADOR DO LEITOR, nao no
+// momento do build. `status` acima continua existindo só para fins de
+// prioridade/ordenação interna; a visibilidade real do CTA sazonal nunca mais
+// depende dele.
+export function getDisplayWindow(ev: SeasonalEvent): { startsAt: string; endsAt: string } {
+  const starts = ev.windows.map((w) => new Date(w.startsAt).getTime());
+  const ends = ev.windows.map((w) => new Date(w.endsAt).getTime());
+  return { startsAt: new Date(Math.min(...starts)).toISOString(), endsAt: new Date(Math.max(...ends)).toISOString() };
+}

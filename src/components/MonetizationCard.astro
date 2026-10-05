@@ -1,0 +1,127 @@
+---
+// MONETIZATION_CARD_V3.1: componente unico para 1 ou 2 produtos (slots) e para
+// o banner sazonal -- native commerce card editorial, nunca um ad-unit
+// generico nem um placeholder de desenvolvimento. Card de produto e banner
+// sazonal nunca ficam colados um no outro (controlado por placement em
+// ArticleLayout, nao aqui).
+import type { AffiliateOffer } from '../lib/types';
+
+interface ProductProps {
+  variant: 'product';
+  offers: AffiliateOffer[]; // 1 ou 2
+}
+interface SeasonalProps {
+  variant: 'seasonal';
+  seasonalHref: string;
+  seasonalLabel?: string;
+  // SEASONAL_RUNTIME_EXPIRY_V1: envelope mais largo entre as fontes
+  // divergentes (ver getDisplayWindow em lib/seasonal_events.ts). O card nasce
+  // `hidden` no HTML e só aparece se o relogio do NAVEGADOR estiver dentro
+  // desta janela -- fail-closed se JS falhar ou a janela ja tiver passado.
+  windowStartsAt: string;
+  windowEndsAt: string;
+}
+type Props = ProductProps | SeasonalProps;
+
+const props = Astro.props;
+const offers = props.variant === 'product' ? props.offers.filter((o) => o.enabled !== false) : [];
+---
+
+{props.variant === 'product' && offers.length > 0 && (
+  <section class:list={['mc-card', 'mc-product', { 'mc-two': offers.length === 2 }]} aria-label="Onde comprar">
+    <p class="mc-eyebrow">NA AMAZON</p>
+    <div class="mc-slots">
+      {offers.map((offer) => (
+        <div class="mc-slot" data-cta-provider={offer.match?.provider} data-cta-match-type={offer.match?.matchType} data-cta-asin={offer.match?.asin}>
+          <div class="mc-thumb" aria-hidden="true">
+            {offer.imageUrl
+              ? <img src={offer.imageUrl} alt="" loading="lazy" />
+              : (
+                <svg class="mc-placeholder-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="4" width="40" height="40" rx="4" stroke="currentColor" stroke-width="1.5" opacity=".35" />
+                  <path d="M18 30l10-10M24 16l8 8-4 4-8-8 4-4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <circle cx="17" cy="31" r="2.5" stroke="currentColor" stroke-width="2" />
+                </svg>
+              )}
+          </div>
+          <div class="mc-copy">
+            <p class="mc-name">{offer.label ?? 'Ver na Amazon'}</p>
+            {offer.contextLine && <p class="mc-context">{offer.contextLine}</p>}
+            <a class="mc-cta" href={offer.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">{offer.ctaText || 'Ver na Amazon →'}</a>
+            {offer.disclaimer && <details class="mc-audit-note"><summary>Detalhe do match</summary><p>{offer.disclaimer}</p></details>}
+          </div>
+        </div>
+      ))}
+    </div>
+    <p class="mc-micro-disclosure">* Link de afiliado.</p>
+  </section>
+)}
+
+{props.variant === 'seasonal' && (
+  <section class="mc-card mc-seasonal" hidden data-seasonal-starts={props.windowStartsAt} data-seasonal-ends={props.windowEndsAt} aria-label="Oferta sazonal">
+    <div class="mc-seasonal-body">
+      <p class="mc-eyebrow">MEGA OFERTA AMAZON</p>
+      <p class="mc-seasonal-copy">{props.seasonalLabel ?? 'Confira as ofertas da campanha atual na Amazon.'}</p>
+      <a class="mc-cta mc-cta-outline" href={props.seasonalHref} target="_blank" rel="noopener noreferrer nofollow sponsored">Ver ofertas →</a>
+    </div>
+    <p class="mc-micro-disclosure">* Link de afiliado.</p>
+  </section>
+)}
+
+{props.variant === 'seasonal' && (
+  <script is:inline define:vars={{ starts: props.windowStartsAt, ends: props.windowEndsAt }}>
+    // SEASONAL_RUNTIME_EXPIRY_V1: unica fonte de verdade sobre mostrar/ocultar
+    // o CTA sazonal e o relogio do navegador NO MOMENTO EM QUE A PAGINA E
+    // ABERTA, nunca o build. Fail-closed: qualquer excecao aqui dentro deixa o
+    // elemento no estado `hidden` em que ele nasceu no HTML.
+    try {
+      var el = document.currentScript.previousElementSibling;
+      var now = new Date();
+      var start = new Date(starts);
+      var end = new Date(ends);
+      if (now >= start && now <= end) {
+        el.hidden = false;
+      }
+    } catch (e) { /* fail-closed: permanece hidden */ }
+  </script>
+)}
+
+<style>
+  .mc-card { margin: 3rem 0; padding: 1.4rem 1.5rem; background: var(--paper-deep); border-top: 3px solid var(--amber); }
+  [hidden] { display: none !important; }
+  .mc-eyebrow { margin: 0 0 .7rem; color: var(--amber-dark); font-size: .62rem; font-weight: 900; letter-spacing: .14em; }
+
+  .mc-slots { display: grid; grid-template-columns: 1fr; gap: 1.1rem; }
+  .mc-two .mc-slots { grid-template-columns: 1fr 1fr; }
+  .mc-slot { display: grid; grid-template-columns: 72px 1fr; gap: 1rem; align-items: start; }
+  .mc-thumb { width: 72px; height: 72px; display: flex; align-items: center; justify-content: center; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; color: var(--steel); }
+  .mc-thumb img { width: 100%; height: 100%; object-fit: cover; }
+  .mc-placeholder-icon { width: 34px; height: 34px; }
+  .mc-copy { display: grid; gap: .35rem; min-width: 0; }
+  .mc-name { margin: 0; font-weight: 800; font-size: .92rem; color: var(--ink); line-height: 1.3; }
+  .mc-context { margin: 0; font-size: .78rem; color: var(--muted); line-height: 1.4; }
+  .mc-cta { display: inline-block; width: max-content; margin-top: .15rem; background: var(--ink); color: var(--paper); padding: .55rem .85rem; font-size: .8rem; font-weight: 800; text-decoration: none; }
+  .mc-cta:hover { background: var(--amber-dark); }
+  .mc-cta-outline { background: transparent; color: var(--ink); border: 2px solid var(--ink); }
+  .mc-cta-outline:hover { background: var(--ink); color: var(--paper); }
+
+  .mc-audit-note { margin-top: .3rem; font-size: .68rem; color: var(--steel); }
+  .mc-audit-note summary { cursor: pointer; list-style: none; font-weight: 700; }
+  .mc-audit-note summary::-webkit-details-marker { display: none; }
+  .mc-audit-note summary::before { content: '＋ '; color: var(--amber-dark); }
+  .mc-audit-note[open] summary::before { content: '－ '; }
+  .mc-audit-note p { margin: .3rem 0 0; line-height: 1.5; }
+
+  .mc-seasonal { background: linear-gradient(135deg, var(--paper-deep), var(--paper)); border-top-color: var(--amber); }
+  .mc-seasonal-body { display: grid; gap: .6rem; }
+  .mc-seasonal-copy { margin: 0; font-size: .95rem; line-height: 1.55; color: var(--muted); max-width: 52ch; }
+
+  .mc-micro-disclosure { margin: 1.1rem 0 0; font-size: .68rem; color: var(--steel); }
+
+  @media (max-width: 700px) {
+    .mc-two .mc-slots { grid-template-columns: 1fr; }
+    .mc-slot { grid-template-columns: 56px 1fr; }
+    .mc-thumb { width: 56px; height: 56px; }
+    .mc-placeholder-icon { width: 26px; height: 26px; }
+  }
+</style>

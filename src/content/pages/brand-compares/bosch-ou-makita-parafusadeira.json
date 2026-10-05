@@ -217,7 +217,8 @@
           "matchEvidence": "ASIN verificado via fetch em 2026-10-05: Bosch GSR 180 LI, 18V, 2 baterias + carregador + maleta.",
           "trackingSource": "fc_amazon_mop_sprint_v1",
           "matchedAt": "2026-10-05T19:30:00.000Z"
-        }
+        },
+        "contextLine": "Kit Bosch GSR 180 LI 18V, 2 baterias"
       },
       {
         "affiliateUrl": "https://www.amazon.com.br/dp/B0F258DSHY?tag=ferramentaclara-20",
@@ -232,7 +233,8 @@
           "matchEvidence": "ASIN verificado via busca em 2026-10-05: Makita DHP482Y002, 18V LXT, 1 bateria 1.5Ah + carregador + maleta. Configuracao DIFERENTE do kit Bosch (que tem 2 baterias) -- tratamento balanceado por marca, nao por especificacao identica.",
           "trackingSource": "fc_amazon_mop_sprint_v1",
           "matchedAt": "2026-10-05T19:30:00.000Z"
-        }
+        },
+        "contextLine": "Kit Makita DHP482 18V, 1 bateria"
       }
     ]
   }

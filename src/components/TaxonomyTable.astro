@@ -1,6 +1,6 @@
 ---
 import type { Evidence, TaxonomyTable as TaxonomyTableData } from '../lib/types';
-import Sources from './Sources.astro';
+import SectionSources from './SectionSources.astro';
 
 interface Props {
   table: TaxonomyTableData;
@@ -15,6 +15,7 @@ const columns = [
   ['application', table.columns.application],
   ['caveat', table.columns.caveat]
 ] as const;
+const sectionEvidenceIds = table.rows.flatMap((r) => r.evidenceIds);
 ---
 
 <section class="taxonomy-section content-section" aria-labelledby="taxonomy-title">
@@ -30,13 +31,14 @@ const columns = [
         {table.rows.map(row => (
           <tr>
             {columns.map(([key], index) => index === 0
-              ? <th scope="row">{row[key]}<Sources evidenceIds={row.evidenceIds} evidences={evidences} /></th>
+              ? <th scope="row">{row[key]}</th>
               : <td>{row[key]}</td>)}
           </tr>
         ))}
       </tbody>
     </table>
   </div>
+  <SectionSources evidenceIds={sectionEvidenceIds} evidences={evidences} />
 </section>
 
 <style>

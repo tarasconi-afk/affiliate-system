@@ -73,7 +73,13 @@ const affiliateOfferSchema = z.object({
   ctaText: z.string().optional(),
   disclaimer: z.string().optional(),
   match: affiliateMatchSchema.optional(),
-  label: z.string().optional()
+  label: z.string().optional(),
+  // MONETIZATION_CARD_V3 (additive, todos opcionais -- PageSpecs existentes nao mudam)
+  imageSourceType: z.enum(['AMAZON_API', 'EDITORIAL_LOCAL', 'PLACEHOLDER']).optional(),
+  imageUrl: z.url().optional(),
+  imageAsin: z.string().optional(),
+  enabled: z.boolean().optional(),
+  contextLine: z.string().max(80).optional()
 });
 
 const monetizationSchema = z.object({
@@ -85,7 +91,13 @@ const monetizationSchema = z.object({
   // offers[]: usado quando mais de um CTA e necessario (ex.: brand_compare
   // com tratamento balanceado entre as duas marcas). Quando presente,
   // substitui o par affiliateUrl/ctaText/disclaimer do topo na renderizacao.
-  offers: z.array(affiliateOfferSchema).optional()
+  offers: z.array(affiliateOfferSchema).optional(),
+  imageSourceType: z.enum(['AMAZON_API', 'EDITORIAL_LOCAL', 'PLACEHOLDER']).optional(),
+  imageUrl: z.url().optional(),
+  imageAsin: z.string().optional(),
+  enabled: z.boolean().optional(),
+  contextLine: z.string().max(80).optional(),
+  placement: z.enum(['after_specs', 'after_comparison', 'after_faq']).optional()
 });
 
 const faqSchema = z.object({

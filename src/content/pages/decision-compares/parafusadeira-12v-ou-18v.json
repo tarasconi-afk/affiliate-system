@@ -290,7 +290,8 @@
           "matchEvidence": "ASIN verificado via fetch em 2026-10-05: DeWalt DCD716D2, 12V, bivolt -- exemplo real da classe 12V discutida nesta pagina.",
           "trackingSource": "fc_amazon_mop_sprint_v1",
           "matchedAt": "2026-10-05T19:30:00.000Z"
-        }
+        },
+        "contextLine": "Parafusadeira DeWalt 12V (DCD716D2)"
       },
       {
         "affiliateUrl": "https://www.amazon.com.br/dp/B099NZQHRB?tag=ferramentaclara-20",
@@ -305,7 +306,8 @@
           "matchEvidence": "Mesmo ASIN da candidate model_review, reaproveitado como exemplo da classe 18V -- enquadramento 20V MAX = nominal 18V respaldado por fonte primaria DeWalt (disclaimer oficial: 'Maximum initial battery voltage is 20 volts. Nominal voltage is 18.'), nao assumido sem evidencia.",
           "trackingSource": "fc_amazon_mop_sprint_v1",
           "matchedAt": "2026-10-05T19:30:00.000Z"
-        }
+        },
+        "contextLine": "Parafusadeira DeWalt 20V MAX, nominal 18V (DCD7771D2)"
       }
     ]
   }
