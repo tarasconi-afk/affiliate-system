@@ -37,14 +37,14 @@
   "brands": [
     {
       "name": "Bosch",
-      "summary": "Faz mais sentido considerar a Bosch quando você já usa ou pretende manter o Professional 18V System, nome da plataforma em que a fabricante declara compatibilidade de baterias e carregadores 18V com ferramentas novas e existentes desde 2008. Plataforma é o conjunto de baterias e ferramentas que o fabricante declara como parte do mesmo sistema.",
+      "summary": "Escolha Bosch se você já tem (ou pretende comprar) ferramentas ou baterias do Professional 18V System — a Bosch declara compatibilidade com esse sistema desde 2008, então uma bateria nova deve funcionar nas ferramentas antigas da mesma linha, e vice-versa.",
       "evidenceIds": [
         "ev_001"
       ]
     },
     {
       "name": "Makita",
-      "summary": "Faz mais sentido considerar a Makita quando você já usa ou pretende manter o LXT 18V. LXT é o nome da plataforma para a qual a Makita Brasil declara mais de 440 modelos compartilhando a mesma bateria 18V; esse número não prova, sozinho, que a plataforma seja melhor.",
+      "summary": "Escolha Makita se você já tem (ou pretende comprar) ferramentas do sistema LXT 18V — a Makita Brasil declara mais de 440 modelos que compartilham a mesma bateria. Isso mostra que o sistema é amplo, mas não prova sozinho que seja melhor.",
       "evidenceIds": [
         "ev_003"
       ]

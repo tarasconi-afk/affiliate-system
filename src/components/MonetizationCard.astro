@@ -73,12 +73,16 @@ function slotAriaLabel(offer: AffiliateOffer): string {
 
 {props.variant === 'seasonal' && (
   <section class="mc-card mc-seasonal" hidden data-seasonal-starts={props.windowStartsAt} data-seasonal-ends={props.windowEndsAt} aria-label="Oferta sazonal">
+    <svg class="mc-seasonal-icon" aria-hidden="true" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="32" cy="32" r="31" stroke="var(--amber)" stroke-width="1.5" opacity=".5" />
+      <path d="M32 14l4.2 12.9H50L38.9 34.5 43.1 47.4 32 39.9 20.9 47.4 25.1 34.5 14 26.9H27.8L32 14z" fill="var(--amber)" opacity=".9" />
+    </svg>
     <div class="mc-seasonal-body">
       <p class="mc-eyebrow mc-eyebrow-light">MEGA OFERTA PRIME</p>
       <p class="mc-seasonal-copy">{props.seasonalLabel ?? 'Confira as ofertas da campanha atual na Amazon.'}</p>
       <a class="mc-cta mc-cta-outline" href={props.seasonalHref} target="_blank" rel="noopener noreferrer nofollow sponsored">Ver ofertas →</a>
+      <p class="mc-micro-disclosure mc-micro-disclosure-light">* Link de afiliado.</p>
     </div>
-    <p class="mc-micro-disclosure mc-micro-disclosure-light">* Link de afiliado.</p>
   </section>
 )}
 
@@ -151,7 +155,9 @@ function slotAriaLabel(offer: AffiliateOffer): string {
   .mc-seasonal {
     background: var(--ink); border-color: var(--ink); border-top-color: var(--amber);
     box-shadow: 0 6px 20px rgba(0, 0, 0, .18);
+    display: grid; grid-template-columns: 64px 1fr; gap: 1.5rem; align-items: center;
   }
+  .mc-seasonal-icon { width: 56px; height: 56px; }
   .mc-eyebrow-light { color: var(--amber); }
   .mc-seasonal-body { display: grid; gap: .7rem; }
   .mc-seasonal-copy { margin: 0; font-size: 1rem; line-height: 1.55; color: #d5d7d6; max-width: 52ch; }
@@ -164,5 +170,7 @@ function slotAriaLabel(offer: AffiliateOffer): string {
     .mc-two .mc-slots { grid-template-columns: 1fr; gap: 2rem; }
     .mc-thumb { width: 112px; height: 112px; }
     .mc-two .mc-thumb { width: 112px; height: 112px; }
+    .mc-seasonal { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+    .mc-seasonal-icon { width: 44px; height: 44px; }
   }
 </style>

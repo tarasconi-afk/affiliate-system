@@ -40,7 +40,7 @@
   "options": [
     {
       "name": "Bateria de 2 Ah",
-      "description": "No exemplo Bosch GBA 18V 2.0Ah, a ficha declara 18 V, 2 Ah, peso de 0,35 kg e dimensões de 73 × 113 × 39 mm. É a opção menor e mais leve entre os dois SKUs consultados.",
+      "description": "Escolha 2 Ah se você quer a bateria mais leve e compacta: no exemplo Bosch GBA 18V, ela pesa 0,35 kg (73 × 113 × 39 mm) contra 0,6 kg da versão 4 Ah. Boa para tarefas curtas, uso ocasional ou trabalho prolongado acima da cabeça, onde o peso extra pesa na mão.",
       "evidenceIds": [
         "ev_bosch_gba_2ah",
         "ev_weight_dimensions"
@@ -48,7 +48,7 @@
     },
     {
       "name": "Bateria de 4 Ah",
-      "description": "No exemplo Bosch GBA 18V 4.0Ah, a ficha declara 18 V, 4 Ah, peso de 0,6 kg e dimensões de 74 × 114 × 56 mm. A Bosch atribui à maior capacidade autonomia 100% superior à do modelo 18V 2.0Ah, sem informar nessa página uma duração em minutos.",
+      "description": "Escolha 4 Ah se você quer passar mais tempo trabalhando sem trocar ou recarregar a bateria: a Bosch declara autonomia 100% maior que a versão 2 Ah (sem informar quantos minutos exatamente). Em troca, ela é mais pesada e um pouco maior — 0,6 kg contra 0,35 kg.",
       "evidenceIds": [
         "ev_bosch_gba_4ah",
         "ev_capacity_runtime_scope"

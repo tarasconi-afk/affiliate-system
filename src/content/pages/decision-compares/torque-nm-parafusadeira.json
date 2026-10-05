@@ -40,7 +40,7 @@
   "options": [
     {
       "name": "Campo de torque de junta rígida / duro",
-      "description": "É um campo condicionado: Bosch usa “duro” e Makita usa “junta rígida” nas fichas consultadas. Compare números somente quando o rótulo e a condição declarada forem equivalentes; as fontes não demonstram que os protocolos dos fabricantes são idênticos.",
+      "description": "Compare o torque \"duro\" (rótulo da Bosch) ou \"junta rígida\" (rótulo da Makita) SOMENTE com outro produto que declare a mesma condição de teste — as marcas não garantem que testam do mesmo jeito, então esse número sozinho não é comparável entre marcas diferentes.",
       "evidenceIds": [
         "ev_bosch_gsr185",
         "ev_makita_hp333",
@@ -50,7 +50,7 @@
     },
     {
       "name": "Campo de torque de junta flexível / suave",
-      "description": "Também é um campo condicionado: Bosch usa “suave” e Makita usa “junta flexível”. Ele deve permanecer separado de torque duro/rígido e de um valor máximo sem condição declarada.",
+      "description": "Torque \"suave\" (Bosch) ou \"junta flexível\" (Makita) é outra medida, para outro tipo de parafuso — não compare esse valor com o torque duro/rígido nem com o \"torque máximo\" sem condição declarada: são três números diferentes que não se substituem.",
       "evidenceIds": [
         "ev_bosch_gsr185",
         "ev_makita_hp333",
