@@ -274,5 +274,19 @@
       "accessed_at": "2026-08-18T15:02:42Z",
       "notes": "Usada somente para explicar a nomenclatura 20V MAX; não estabelece equivalência universal entre marcas."
     }
-  ]
+  ],
+  "monetization": {
+    "affiliateUrl": "https://www.amazon.com.br/dp/B099NZQHRB",
+    "ctaText": "Ver exemplo de parafusadeira classe 18V/20V MAX na Amazon",
+    "disclaimer": "Este é um exemplo de parafusadeira da classe 18V (nomenclatura 20V MAX da DeWalt), não a única opção dessa classe. Preço e estoque variam na Amazon.",
+    "match": {
+      "provider": "amazon",
+      "market": "BR",
+      "asin": "B099NZQHRB",
+      "matchType": "CATEGORY_REPRESENTATIVE",
+      "matchEvidence": "Reaproveita o mesmo ASIN verificado da candidate model_review (DeWalt DCD7771D2-BR) como exemplo real da classe 18V/20V MAX discutida nesta pagina de decisao -- nao finge ser a unica opcao da classe.",
+      "trackingSource": "fc_amazon_mop_sprint_v1",
+      "matchedAt": "2026-10-05T18:00:00.000Z"
+    }
+  }
 }

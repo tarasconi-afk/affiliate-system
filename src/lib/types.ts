@@ -49,10 +49,38 @@ export interface Product {
 // MONETIZATION (optional)
 // ============================================
 
+export interface AffiliateMatch {
+  provider?: string;
+  market?: string;
+  asin?: string;
+  matchType?: 'EXACT_SKU' | 'EXACT_FAMILY' | 'CATEGORY_REPRESENTATIVE' | 'RELATED_ACCESSORY';
+  matchEvidence?: string;
+  trackingSource?: string;
+  matchedAt?: string;
+}
+
+export interface PrimePromo {
+  enabled?: boolean;
+  ctaText?: string;
+  affiliateUrl?: string;
+  disclaimer?: string;
+}
+
+export interface AffiliateOffer {
+  affiliateUrl: string;
+  ctaText?: string;
+  disclaimer?: string;
+  match?: AffiliateMatch;
+  label?: string;
+}
+
 export interface Monetization {
   affiliateUrl?: string;
   ctaText?: string;
   disclaimer?: string;
+  match?: AffiliateMatch;
+  primePromo?: PrimePromo;
+  offers?: AffiliateOffer[];
 }
 
 export interface EditorialMediaItem {

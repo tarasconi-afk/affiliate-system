@@ -170,7 +170,31 @@ const contextualLinksAt = (placement: 'after_specs' | 'after_comparison' | 'afte
 
       <EvidenceList evidences={pageSpec.evidences} />
 
-      {pageSpec.monetization?.affiliateUrl && <section class="monetization"><a href={pageSpec.monetization.affiliateUrl} target="_blank" rel="noopener noreferrer">{pageSpec.monetization.ctaText || 'Ver opções de compra'}</a>{pageSpec.monetization.disclaimer && <p>{pageSpec.monetization.disclaimer}</p>}</section>}
+      {SITE.monetizationEnabled && pageSpec.monetization?.offers && pageSpec.monetization.offers.length > 0 && (
+        <section class="monetization monetization-offers" data-cta-page={pageSpec.slug}>
+          {pageSpec.monetization.offers.map(offer => (
+            <div class="monetization-offer" data-cta-provider={offer.match?.provider} data-cta-match-type={offer.match?.matchType} data-cta-asin={offer.match?.asin}>
+              <a href={offer.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">{offer.ctaText || 'Ver opções de compra'}</a>
+              {offer.disclaimer && <p>{offer.disclaimer}</p>}
+            </div>
+          ))}
+          <p class="fc-affiliate-disclosure">Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas.</p>
+        </section>
+      )}
+      {SITE.monetizationEnabled && !pageSpec.monetization?.offers?.length && pageSpec.monetization?.affiliateUrl && (
+        <section class="monetization" data-cta-provider={pageSpec.monetization.match?.provider} data-cta-match-type={pageSpec.monetization.match?.matchType} data-cta-asin={pageSpec.monetization.match?.asin} data-cta-page={pageSpec.slug}>
+          <a href={pageSpec.monetization.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">{pageSpec.monetization.ctaText || 'Ver opções de compra'}</a>
+          <p class="fc-affiliate-disclosure">Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas.</p>
+          {pageSpec.monetization.disclaimer && <p>{pageSpec.monetization.disclaimer}</p>}
+        </section>
+      )}
+      {SITE.monetizationEnabled && pageSpec.monetization?.primePromo?.enabled && pageSpec.monetization.primePromo.affiliateUrl && (
+        <section class="monetization monetization-prime" data-cta-provider="amazon_prime" data-cta-page={pageSpec.slug}>
+          <a href={pageSpec.monetization.primePromo.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">{pageSpec.monetization.primePromo.ctaText || 'Testar Amazon Prime grátis'}</a>
+          <p class="fc-affiliate-disclosure">Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas.</p>
+          {pageSpec.monetization.primePromo.disclaimer && <p>{pageSpec.monetization.primePromo.disclaimer}</p>}
+        </section>
+      )}
     </div>
   </article>
 </BaseLayout>
@@ -259,6 +283,8 @@ const contextualLinksAt = (placement: 'after_specs' | 'after_comparison' | 'afte
 
   .monetization { margin: 4rem 0; padding: 1.5rem; border: 1px solid var(--line); }
   .monetization a { display: inline-block; background: var(--ink); color: var(--paper); padding: .8rem 1rem; text-decoration: none; font-weight: 800; }
+  .fc-affiliate-disclosure { margin-top: .6rem; font-size: .72rem; color: var(--steel); }
+  .monetization-prime { border-style: dashed; }
 
   @media (max-width: 900px) {
     .article-hero { grid-template-columns: 1fr; gap: 2rem; padding-top: 2.5rem; }

@@ -201,5 +201,39 @@
       "accessed_at": "2026-08-18T15:02:42Z",
       "notes": "Fonte primária usada para explicar o que é o PRO360; a duração total da garantia permanece sustentada separadamente pela política de garantia."
     }
-  ]
+  ],
+  "monetization": {
+    "offers": [
+      {
+        "affiliateUrl": "https://www.amazon.com.br/dp/B07GJQH11L",
+        "ctaText": "Ver kit Bosch GSR 180 LI 18V na Amazon",
+        "label": "Bosch",
+        "disclaimer": "Preço e estoque variam na Amazon.",
+        "match": {
+          "provider": "amazon",
+          "market": "BR",
+          "asin": "B07GJQH11L",
+          "matchType": "CATEGORY_REPRESENTATIVE",
+          "matchEvidence": "ASIN verificado via fetch em 2026-10-05: Bosch GSR 180 LI, kit 18V com 2 baterias + carregador + maleta.",
+          "trackingSource": "fc_amazon_mop_sprint_v1",
+          "matchedAt": "2026-10-05T18:00:00.000Z"
+        }
+      },
+      {
+        "affiliateUrl": "https://www.amazon.com.br/dp/B0F258DSHY",
+        "ctaText": "Ver kit Makita DHP482 18V na Amazon",
+        "label": "Makita",
+        "disclaimer": "Preço e estoque variam na Amazon.",
+        "match": {
+          "provider": "amazon",
+          "market": "BR",
+          "asin": "B0F258DSHY",
+          "matchType": "CATEGORY_REPRESENTATIVE",
+          "matchEvidence": "ASIN verificado via busca em 2026-10-05: Makita DHP482Y002, kit 18V LXT com bateria 1.5Ah + carregador + maleta -- tier equivalente ao kit Bosch linkado nesta mesma pagina (tratamento balanceado).",
+          "trackingSource": "fc_amazon_mop_sprint_v1",
+          "matchedAt": "2026-10-05T18:00:00.000Z"
+        }
+      }
+    ]
+  }
 }

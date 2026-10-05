@@ -52,22 +52,30 @@
     {
       "label": "Torque",
       "value": "65 Nm",
-      "evidenceIds": ["ev_001"]
+      "evidenceIds": [
+        "ev_001"
+      ]
     },
     {
       "label": "Rotação",
       "value": "0–500 / 0–1.750 RPM (rotações por minuto)",
-      "evidenceIds": ["ev_001"]
+      "evidenceIds": [
+        "ev_001"
+      ]
     },
     {
       "label": "Mandril",
       "value": "13 mm",
-      "evidenceIds": ["ev_001"]
+      "evidenceIds": [
+        "ev_001"
+      ]
     },
     {
       "label": "Motor",
       "value": "Brushless (sem escovas de carvão)",
-      "evidenceIds": ["ev_001"]
+      "evidenceIds": [
+        "ev_001"
+      ]
     }
   ],
   "specs": [
@@ -282,5 +290,19 @@
       "accessed_at": "2026-08-18T15:02:42Z",
       "notes": "Fonte primária usada somente para explicar o asterisco e a nomenclatura 20V MAX; não estabelece equivalência universal entre marcas."
     }
-  ]
+  ],
+  "monetization": {
+    "affiliateUrl": "https://www.amazon.com.br/dp/B099NZQHRB",
+    "ctaText": "Ver DeWalt DCD7771D2-BR na Amazon",
+    "disclaimer": "Preço, estoque e condições variam na Amazon e não são controlados pela Ferramenta Clara.",
+    "match": {
+      "provider": "amazon",
+      "market": "BR",
+      "asin": "B099NZQHRB",
+      "matchType": "EXACT_SKU",
+      "matchEvidence": "ASIN verificado via busca+fetch em 2026-10-05: titulo do anuncio Amazon confere modelo DCD7771D2 com 2 baterias 2.0Ah, carregador bivolt e maleta, igual ao product.model desta PageSpec (DeWalt DCD7771D2-BR).",
+      "trackingSource": "fc_amazon_mop_sprint_v1",
+      "matchedAt": "2026-10-05T18:00:00.000Z"
+    }
+  }
 }

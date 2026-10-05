@@ -51,10 +51,41 @@ const productSchema = z.object({
   imageUrl: z.string().optional()
 });
 
+const affiliateMatchSchema = z.object({
+  provider: z.string().optional(),
+  market: z.string().optional(),
+  asin: z.string().optional(),
+  matchType: z.enum(['EXACT_SKU', 'EXACT_FAMILY', 'CATEGORY_REPRESENTATIVE', 'RELATED_ACCESSORY']).optional(),
+  matchEvidence: z.string().optional(),
+  trackingSource: z.string().optional(),
+  matchedAt: z.iso.datetime().optional()
+});
+
+const primePromoSchema = z.object({
+  enabled: z.boolean().optional(),
+  ctaText: z.string().optional(),
+  affiliateUrl: z.url().optional(),
+  disclaimer: z.string().optional()
+});
+
+const affiliateOfferSchema = z.object({
+  affiliateUrl: z.url(),
+  ctaText: z.string().optional(),
+  disclaimer: z.string().optional(),
+  match: affiliateMatchSchema.optional(),
+  label: z.string().optional()
+});
+
 const monetizationSchema = z.object({
   affiliateUrl: z.url().optional(),
   ctaText: z.string().optional(),
-  disclaimer: z.string().optional()
+  disclaimer: z.string().optional(),
+  match: affiliateMatchSchema.optional(),
+  primePromo: primePromoSchema.optional(),
+  // offers[]: usado quando mais de um CTA e necessario (ex.: brand_compare
+  // com tratamento balanceado entre as duas marcas). Quando presente,
+  // substitui o par affiliateUrl/ctaText/disclaimer do topo na renderizacao.
+  offers: z.array(affiliateOfferSchema).optional()
 });
 
 const faqSchema = z.object({
