@@ -291,7 +291,8 @@
           "trackingSource": "fc_amazon_mop_sprint_v1",
           "matchedAt": "2026-10-05T19:30:00.000Z"
         },
-        "contextLine": "Parafusadeira DeWalt 12V (DCD716D2)"
+        "contextLine": "Parafusadeira DeWalt 12V (DCD716D2)",
+        "imageSourceType": "PLACEHOLDER"
       },
       {
         "affiliateUrl": "https://www.amazon.com.br/dp/B099NZQHRB?tag=ferramentaclara-20",
@@ -307,7 +308,9 @@
           "trackingSource": "fc_amazon_mop_sprint_v1",
           "matchedAt": "2026-10-05T19:30:00.000Z"
         },
-        "contextLine": "Parafusadeira DeWalt 20V MAX, nominal 18V (DCD7771D2)"
+        "contextLine": "DeWalt 20V MAX, nominal 18V",
+        "imageSourceType": "EDITORIAL_LOCAL",
+        "imageUrl": "/images/dewalt-20v-cc-1600.webp"
       }
     ]
   }

@@ -258,7 +258,8 @@
           "trackingSource": "fc_amazon_mop_sprint_v1",
           "matchedAt": "2026-10-05T19:30:00.000Z"
         },
-        "contextLine": "Bateria 2.0Ah DCB203 — mesma plataforma 20V MAX"
+        "contextLine": "Bateria 2.0Ah DCB203 (20V MAX)",
+        "imageSourceType": "PLACEHOLDER"
       },
       {
         "affiliateUrl": "https://www.amazon.com.br/dp/B07MR282ML?tag=ferramentaclara-20",
@@ -274,7 +275,8 @@
           "trackingSource": "fc_amazon_mop_sprint_v1",
           "matchedAt": "2026-10-05T19:30:00.000Z"
         },
-        "contextLine": "Bateria 4.0Ah DCB204 — mesma plataforma 20V MAX"
+        "contextLine": "Bateria 4.0Ah DCB204 (20V MAX)",
+        "imageSourceType": "PLACEHOLDER"
       }
     ]
   }

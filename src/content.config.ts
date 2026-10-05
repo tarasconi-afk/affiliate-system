@@ -76,7 +76,7 @@ const affiliateOfferSchema = z.object({
   label: z.string().optional(),
   // MONETIZATION_CARD_V3 (additive, todos opcionais -- PageSpecs existentes nao mudam)
   imageSourceType: z.enum(['AMAZON_API', 'EDITORIAL_LOCAL', 'PLACEHOLDER']).optional(),
-  imageUrl: z.url().optional(),
+  imageUrl: z.string().regex(/^\/images\/[a-zA-Z0-9_-]+\.(webp|jpg|jpeg|png|svg)$/).optional(), // root-relative path em public/images, nao URL absoluta
   imageAsin: z.string().optional(),
   enabled: z.boolean().optional(),
   contextLine: z.string().max(80).optional()
@@ -93,7 +93,7 @@ const monetizationSchema = z.object({
   // substitui o par affiliateUrl/ctaText/disclaimer do topo na renderizacao.
   offers: z.array(affiliateOfferSchema).optional(),
   imageSourceType: z.enum(['AMAZON_API', 'EDITORIAL_LOCAL', 'PLACEHOLDER']).optional(),
-  imageUrl: z.url().optional(),
+  imageUrl: z.string().regex(/^\/images\/[a-zA-Z0-9_-]+\.(webp|jpg|jpeg|png|svg)$/).optional(), // root-relative path em public/images, nao URL absoluta
   imageAsin: z.string().optional(),
   enabled: z.boolean().optional(),
   contextLine: z.string().max(80).optional(),

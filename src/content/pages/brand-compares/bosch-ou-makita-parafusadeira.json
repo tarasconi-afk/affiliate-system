@@ -218,7 +218,8 @@
           "trackingSource": "fc_amazon_mop_sprint_v1",
           "matchedAt": "2026-10-05T19:30:00.000Z"
         },
-        "contextLine": "Kit Bosch GSR 180 LI 18V, 2 baterias"
+        "contextLine": "Kit Bosch GSR 180 LI 18V, 2 baterias",
+        "imageSourceType": "PLACEHOLDER"
       },
       {
         "affiliateUrl": "https://www.amazon.com.br/dp/B0F258DSHY?tag=ferramentaclara-20",
@@ -234,7 +235,9 @@
           "trackingSource": "fc_amazon_mop_sprint_v1",
           "matchedAt": "2026-10-05T19:30:00.000Z"
         },
-        "contextLine": "Kit Makita DHP482 18V, 1 bateria"
+        "contextLine": "Kit Makita DHP482 18V, 1 bateria",
+        "imageSourceType": "EDITORIAL_LOCAL",
+        "imageUrl": "/images/makita-lxt-18v-cc-1600.webp"
       }
     ]
   }
