@@ -22,7 +22,9 @@ const contextualLinksAt = (placement: 'after_specs' | 'after_comparison' | 'afte
 // evento (ACTIVE/MIXED_SOURCES dentro da janela de pelo menos uma fonte) -- nunca
 // um texto fixo no conteudo, para nao precisar de deploy so pra tirar a frase
 // quando a campanha acabar.
-const activeSeasonalEvent = SEASONAL_EVENTS.find(ev => (ev.status === 'ACTIVE' || ev.status === 'MIXED_SOURCES') && ev.seasonalLandingLink);
+const activeSeasonalEvent = pageSpec.monetization
+  ? SEASONAL_EVENTS.find(ev => (ev.status === 'ACTIVE' || ev.status === 'MIXED_SOURCES') && ev.seasonalLandingLink)
+  : undefined;
 ---
 
 <BaseLayout title={pageSpec.metadata.title}>

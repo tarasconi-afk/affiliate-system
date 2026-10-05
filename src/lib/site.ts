@@ -9,5 +9,5 @@ export const SITE = {
   // outra mudanca de codigo), nunca um toggle de runtime/env que possa ser
   // ligado sem querer. PageSpecs podem conter monetization.* mesmo com este
   // gate false; nada renderiza publicamente ate aqui virar true.
-  monetizationEnabled: false,
+  monetizationEnabled: true,
 } as const;
