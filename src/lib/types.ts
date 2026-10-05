@@ -70,11 +70,16 @@ export interface PrimePromo {
 // deliberadamente de fora do enum -- a conta real do projeto hoje so oferece
 // link (texto/completo) no SiteStripe, nao um asset de imagem utilizavel;
 // incluir a opcao seria convidar a usa-la antes de existir de verdade.
-// AMAZON_HUMAN_SOURCED: foto real do produto, obtida pelo PROPRIO humano via
-// mecanismo oficial (ex.: SiteStripe 'Imagem' na conta de Associado aprovada),
-// nunca por scraping automatizado da pagina da Amazon. Diferente de
-// EDITORIAL_LOCAL: nao leva o rotulo "Imagem ilustrativa" porque E a foto do
-// SKU, nao uma foto generica reaproveitada.
+// AMAZON_HUMAN_SOURCED: foto real do produto. NAO HA, HOJE, mecanismo oficial
+// disponivel para obte-la -- o SiteStripe desta conta so oferece link (nao
+// imagem) e a Creators API continua NOT_ELIGIBLE_YET (conta sem aprovacao +
+// sem 10 vendas qualificadas/30d). Este tipo existe para quando um mecanismo
+// oficial do Programa de Associados passar a oferecer imagem (API aprovada ou
+// outro recurso futuro da conta) -- a infraestrutura de ingestao (validacao +
+// persistencia local + registro de proveniencia) ja esta pronta, so falta a
+// fonte oficial. Nunca por scraping automatizado da pagina da Amazon. Diferente
+// de EDITORIAL_LOCAL: nao leva o rotulo "Imagem ilustrativa" porque E a foto
+// do SKU, nao uma foto generica reaproveitada.
 export type ImageSourceType = 'AMAZON_API' | 'AMAZON_HUMAN_SOURCED' | 'EDITORIAL_LOCAL' | 'PLACEHOLDER';
 
 export interface AffiliateOffer {

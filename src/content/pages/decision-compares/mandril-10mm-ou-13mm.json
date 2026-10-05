@@ -40,7 +40,7 @@
   "options": [
     {
       "name": "Mandril com capacidade até 10 mm",
-      "description": "Na ficha da Makita DF333, a faixa declarada do mandril de aperto rápido é de 0,8 a 10 mm. Essa informação delimita as hastes que o mandril pode prender nesse SKU; não define sozinha o diâmetro de furação nem o desempenho da ferramenta.",
+      "description": "O mandril (peça que prende a broca ou ponta) de até 10 mm aceita hastes de até 10 mm de diâmetro — no exemplo Makita DF333, de 0,8 a 10 mm. Importante: isso não é a capacidade de furação da ferramenta (quanto ela fura em cada material) — essa mesma Makita, com mandril de 10 mm, perfura até 21 mm em madeira.",
       "evidenceIds": [
         "ev_makita_df333",
         "ev_capacity_not_hole"
@@ -48,7 +48,7 @@
     },
     {
       "name": "Mandril com capacidade até 13 mm",
-      "description": "Na ficha da Bosch GSB 18V-50, a amplitude de aperto declarada é de 1,5 a 13 mm. O limite superior é maior que no exemplo de 10 mm, mas a escolha ainda exige conferir a faixa completa e os demais campos do modelo.",
+      "description": "O mandril de até 13 mm aceita hastes maiores — no exemplo Bosch GSB 18V-50, de 1,5 a 13 mm. Útil para brocas ou pontas com haste mais grossa. O limite inferior também é um pouco maior que o da Makita (1,5 mm contra 0,8 mm), então pontas muito finas podem não encaixar.",
       "evidenceIds": [
         "ev_bosch_gsb18",
         "ev_range_comparison"

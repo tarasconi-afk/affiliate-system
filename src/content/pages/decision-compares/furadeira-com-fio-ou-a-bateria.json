@@ -40,7 +40,7 @@
   "options": [
     {
       "name": "Furadeira com fio",
-      "description": "Recebe energia da rede elétrica por cabo. A Bosch aponta esse formato para uso estacionário em oficina ou indústria; na ficha da GSB 13 RE, a alimentação aparece como potência nominal absorvida de 750 W e o modelo reúne velocidade variável e percussão.",
+      "description": "Escolha com fio se o uso é fixo — oficina, bancada, um lugar com tomada por perto: é a recomendação da própria Bosch para esse formato. Exemplo: Bosch GSB 13 RE, 750 W, mandril de 1,5 a 13 mm, velocidade variável e percussão (função de impacto).",
       "evidenceIds": [
         "ev_bosch_guide_corded",
         "ev_bosch_gsb13"
@@ -48,7 +48,7 @@
     },
     {
       "name": "Furadeira a bateria",
-      "description": "Recebe energia de uma bateria compatível e dispensa a ligação contínua à tomada durante o uso. A Bosch destaca mobilidade e locais sem energia disponível; na ficha da GSB 18V-50, bateria, carregador e compatibilidade com o sistema 18V fazem parte da decisão.",
+      "description": "Escolha a bateria se você precisa se mover ou trabalhar onde não tem tomada: a Bosch recomenda esse formato por mobilidade. Exemplo: Bosch GSB 18V-50, 18 V, mandril de 1,5 a 13 mm, percussão, compatível com o Professional 18V System; já vem com bateria e carregador.",
       "evidenceIds": [
         "ev_bosch_guide_cordless",
         "ev_bosch_gsb18"
