@@ -41,18 +41,12 @@
     {
       "name": "Priorizar perfuração",
       "description": "Escolha uma furadeira se o foco é fazer furos: a Bosch GBM 16-2 RE, classificada como furadeira, declara 800 W, duas velocidades (0–1.100 e 0–3.000 RPM) e capacidades de 45 mm em madeira, 16 mm em aço e 20 mm em alumínio. Confira sempre a capacidade por material do produto que você for comparar.",
-      "evidenceIds": [
-        "ev_bosch_gbm16",
-        "ev_task_fields"
-      ]
+      "evidenceIds": ["ev_bosch_gbm16", "ev_task_fields"]
     },
     {
       "name": "Priorizar parafusamento com controle",
       "description": "Escolha uma parafusadeira/furadeira se você também quer apertar parafusos com controle de força: a Makita DF333DWYE declara 20 níveis de torque (ajuste fino para não danificar o parafuso ou a peça), duas velocidades, e também fura: 10 mm em aço, 21 mm em madeira. Vem com duas baterias 12V e carregador.",
-      "evidenceIds": [
-        "ev_makita_df333",
-        "ev_task_fields"
-      ]
+      "evidenceIds": ["ev_makita_df333", "ev_task_fields"]
     }
   ],
   "comparison": {
@@ -62,54 +56,35 @@
         "option1": "Bosch GBM 16-2 RE: furadeira.",
         "option2": "Makita DF333DWYE: parafusadeira/furadeira.",
         "winner": 0,
-        "evidenceIds": [
-          "ev_bosch_gbm16",
-          "ev_makita_df333"
-        ]
+        "evidenceIds": ["ev_bosch_gbm16", "ev_makita_df333"]
       },
       {
         "label": "Capacidade de furo",
         "option1": "Madeira 45 mm, aço 16 mm e alumínio 20 mm no modelo consultado.",
         "option2": "Madeira 21 mm e aço 10 mm no modelo consultado.",
         "winner": 0,
-        "evidenceIds": [
-          "ev_bosch_gbm16",
-          "ev_makita_df333",
-          "ev_no_benchmark"
-        ]
+        "evidenceIds": ["ev_bosch_gbm16", "ev_makita_df333", "ev_no_benchmark"]
       },
       {
         "label": "Controle ao parafusar",
         "option1": "A página consultada não apresenta níveis de torque; isso não prova ausência física nem inadequação universal.",
         "option2": "20 níveis de torque; junta rígida de 30 N·m e junta flexível de 14 N·m.",
         "winner": 0,
-        "evidenceIds": [
-          "ev_bosch_gbm16",
-          "ev_makita_df333",
-          "ev_documented_fields"
-        ]
+        "evidenceIds": ["ev_bosch_gbm16", "ev_makita_df333", "ev_documented_fields"]
       },
       {
         "label": "Velocidade",
         "option1": "0–1.100 rpm na primeira velocidade e 3.000 rpm na segunda.",
         "option2": "0–450 rpm na baixa e 0–1.700 rpm na alta.",
         "winner": 0,
-        "evidenceIds": [
-          "ev_bosch_gbm16",
-          "ev_makita_df333",
-          "ev_no_benchmark"
-        ]
+        "evidenceIds": ["ev_bosch_gbm16", "ev_makita_df333", "ev_no_benchmark"]
       },
       {
         "label": "Como é alimentada",
         "option1": "Ferramenta com fio, com potência nominal absorvida de 800 W.",
         "option2": "Ferramenta a bateria 12V CXT; o kit consultado inclui duas baterias de 1,5 Ah e carregador.",
         "winner": 0,
-        "evidenceIds": [
-          "ev_bosch_gbm16",
-          "ev_makita_df333",
-          "ev_no_benchmark"
-        ]
+        "evidenceIds": ["ev_bosch_gbm16", "ev_makita_df333", "ev_no_benchmark"]
       }
     ]
   },
@@ -143,44 +118,28 @@
     "heading": "Defina a tarefa antes de comparar números",
     "summary": "Os dois exemplos publicam capacidades de perfuração, mas somente a ficha consultada da DF333DWYE declara a função de parafusadeira e níveis de torque. Essa diferença documental ajuda a localizar o controle procurado; não prova que uma categoria seja universalmente superior à outra.",
     "recommendation": "Se a prioridade é furar, comece pelo material, pela capacidade declarada e pelo encaixe do acessório. Se você precisa parafusar repetidamente com ajuste de aperto, procure essa função e os níveis de torque na ficha do modelo. Em ambos os casos, compare modelos concretos e campos de mesmo significado.",
-    "evidenceIds": [
-      "ev_documented_fields",
-      "ev_task_fields",
-      "ev_no_benchmark"
-    ]
+    "evidenceIds": ["ev_documented_fields", "ev_task_fields", "ev_no_benchmark"]
   },
   "faq": [
     {
       "question": "Parafusadeira também fura?",
       "answer": "Alguns modelos combinam as duas funções. A DF333DWYE é classificada pela Makita como parafusadeira/furadeira e sua ficha publica capacidades de 10 mm em aço e 21 mm em madeira. Isso confirma o modelo consultado, não toda parafusadeira.",
-      "evidenceIds": [
-        "ev_makita_df333",
-        "ev_documented_fields"
-      ]
+      "evidenceIds": ["ev_makita_df333", "ev_documented_fields"]
     },
     {
       "question": "Toda furadeira serve para parafusar?",
       "answer": "A página da GBM 16-2 RE declara rotação reversível, mas a classifica como furadeira e não apresenta níveis de torque. Esses dados não bastam para transformar o modelo em recomendação universal para parafusamento; confira a documentação do modelo e o controle exigido pela tarefa.",
-      "evidenceIds": [
-        "ev_bosch_gbm16",
-        "ev_documented_fields"
-      ]
+      "evidenceIds": ["ev_bosch_gbm16", "ev_documented_fields"]
     },
     {
       "question": "Para montar móveis, qual função devo procurar?",
       "answer": "Se a tarefa exige aperto repetido com ajuste por etapas, procure uma ficha que declare função de parafusadeira e níveis de torque. A DF333DWYE oferece um exemplo documentado, mas este guia não compara produtividade nem elege marca ou modelo.",
-      "evidenceIds": [
-        "ev_makita_df333",
-        "ev_task_fields",
-        "ev_no_benchmark"
-      ]
+      "evidenceIds": ["ev_makita_df333", "ev_task_fields", "ev_no_benchmark"]
     },
     {
       "question": "A ferramenta com mais RPM é automaticamente melhor?",
       "answer": "Não é uma conclusão sustentada por estas fontes. As rotações pertencem a modelos com construções, alimentação e campos diferentes; sem teste comum, elas não formam um ranking de desempenho.",
-      "evidenceIds": [
-        "ev_no_benchmark"
-      ]
+      "evidenceIds": ["ev_no_benchmark"]
     }
   ],
   "evidences": [
@@ -208,10 +167,7 @@
       "claim": "As duas páginas publicam capacidades de perfuração, mas somente a ficha consultada da DF333DWYE classifica o modelo também como parafusadeira e declara níveis de torque. A ausência desses campos na página da GBM 16-2 RE não prova ausência física nem inadequação universal.",
       "source_name": "Leitura comparada das fichas Bosch GBM 16-2 RE e Makita DF333DWYE",
       "accessed_at": "2026-08-25T16:53:35Z",
-      "derived_from": [
-        "ev_bosch_gbm16",
-        "ev_makita_df333"
-      ],
+      "derived_from": ["ev_bosch_gbm16", "ev_makita_df333"],
       "notes": "Conclusão restrita aos campos visíveis nas duas fontes consultadas."
     },
     {
@@ -220,10 +176,7 @@
       "claim": "Para uma decisão auditável, a tarefa de perfuração deve ser confrontada com capacidades por material e encaixe do modelo; quando o parafusamento exige ajuste por etapas, a ficha deve declarar a função e os níveis de torque procurados.",
       "source_name": "Síntese editorial dos campos publicados nos dois modelos",
       "accessed_at": "2026-08-25T16:53:35Z",
-      "derived_from": [
-        "ev_bosch_gbm16",
-        "ev_makita_df333"
-      ],
+      "derived_from": ["ev_bosch_gbm16", "ev_makita_df333"],
       "notes": "Procedimento de leitura, não afirmação de desempenho nem recomendação universal de produto."
     },
     {
@@ -232,10 +185,7 @@
       "claim": "As fichas publicam campos diferentes e não constituem um teste comum; portanto, não sustentam ordenar desempenho, produtividade, durabilidade ou superioridade universal pelos valores de W, V, rpm, capacidade ou torque.",
       "source_name": "Limite editorial das fichas Bosch e Makita consultadas",
       "accessed_at": "2026-08-25T16:53:35Z",
-      "derived_from": [
-        "ev_bosch_gbm16",
-        "ev_makita_df333"
-      ],
+      "derived_from": ["ev_bosch_gbm16", "ev_makita_df333"],
       "notes": "Preserva a não comparabilidade entre grandezas e modelos sem ensaio compartilhado."
     }
   ]
