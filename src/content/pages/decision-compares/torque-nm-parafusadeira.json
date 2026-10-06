@@ -40,7 +40,7 @@
   "options": [
     {
       "name": "Campo de torque de junta rígida / duro",
-      "description": "Compare o torque \"duro\" (rótulo da Bosch) ou \"junta rígida\" (rótulo da Makita) SOMENTE com outro produto que declare a mesma condição de teste — as marcas não garantem que testam do mesmo jeito, então esse número sozinho não é comparável entre marcas diferentes.",
+      "description": "Compare o torque \"duro\" (rótulo da Bosch) ou \"junta rígida\" (rótulo da Makita) SOMENTE com outro produto que declare a mesma condição de teste. As marcas não garantem que testam do mesmo jeito, então esse número sozinho não é comparável entre marcas diferentes.",
       "evidenceIds": [
         "ev_bosch_gsr185",
         "ev_makita_hp333",
@@ -50,7 +50,7 @@
     },
     {
       "name": "Campo de torque de junta flexível / suave",
-      "description": "Torque \"suave\" (Bosch) ou \"junta flexível\" (Makita) é outra medida, para outro tipo de parafuso — não compare esse valor com o torque duro/rígido nem com o \"torque máximo\" sem condição declarada: são três números diferentes que não se substituem.",
+      "description": "Torque \"suave\" (Bosch) ou \"junta flexível\" (Makita) é outra medida, para outro tipo de parafuso. Não compare esse valor com o torque duro/rígido nem com o \"torque máximo\" sem condição declarada: são três números diferentes que não se substituem.",
       "evidenceIds": [
         "ev_bosch_gsr185",
         "ev_makita_hp333",
@@ -138,7 +138,7 @@
         "mechanism": "Torque, máx. (duro/macio)",
         "interface": "5 / 2,5 Nm",
         "application": "A própria Bosch apresenta duro antes de macio nesta ficha, em ordem diferente da GSR 185-LI.",
-        "caveat": "A ordem deve ser lida no rótulo do SKU; posição isolada não identifica a condição.",
+        "caveat": "A ordem deve ser lida no rótulo do modelo; posição isolada não identifica a condição.",
         "evidenceIds": [
           "ev_bosch_go",
           "ev_label_order_changes"
@@ -170,7 +170,7 @@
         "class": "DeWalt DCD7771D2‑BR",
         "mechanism": "65Nm de Torque; 15 posições",
         "interface": "65 Nm, sem condição de junta nomeada no texto da ficha",
-        "application": "O número descreve o SKU segundo a DeWalt, mas não identifica campo suave/flexível ou duro/rígido.",
+        "application": "O número descreve o modelo segundo a DeWalt, mas não identifica campo suave/flexível ou duro/rígido.",
         "caveat": "Não há base nessa ficha para mapear 65 Nm diretamente a um dos campos condicionados.",
         "evidenceIds": [
           "ev_dewalt_dcd777",
@@ -208,7 +208,7 @@
   "verdict": {
     "heading": "Como ler o torque na ficha",
     "summary": "Nm (newton-metro) é a unidade usada para declarar torque, a força de giro da ferramenta. Mas o número sozinho não basta: leia o nome completo do campo antes de comparar.",
-    "recommendation": "Compare rígido com rígido — também chamado de duro — e flexível com flexível — também chamado de suave ou macio. Torque máximo não é automaticamente torque rígido, e um valor único sem condição declarada não deve ser encaixado diretamente nesses campos. O maior número de Nm, isoladamente, não determina a melhor ferramenta.",
+    "recommendation": "Compare rígido com rígido (também chamado de duro) e flexível com flexível (também chamado de suave ou macio). Torque máximo não é automaticamente torque rígido, e um valor único sem condição declarada não deve ser encaixado diretamente nesses campos. O maior número de Nm, isoladamente, não determina a melhor ferramenta.",
     "evidenceIds": [
       "ev_condition_labels",
       "ev_maximum_is_separate",
@@ -245,7 +245,7 @@
     },
     {
       "question": "A ordem dos números de torque é sempre a mesma?",
-      "answer": "Não nas páginas Bosch consultadas. A GSR 185-LI mostra suave/duro/máx., enquanto a Bosch GO de terceira geração mostra duro/macio. Leia o rótulo do SKU em vez de inferir a condição pela posição.",
+      "answer": "Não nas páginas Bosch consultadas. A GSR 185-LI mostra suave/duro/máx., enquanto a Bosch GO de terceira geração mostra duro/macio. Leia o rótulo do modelo em vez de inferir a condição pela posição.",
       "evidenceIds": [
         "ev_bosch_gsr185",
         "ev_bosch_go",
@@ -280,7 +280,7 @@
       "source_name": "Bosch Professional Brasil — GSR 185-LI",
       "source_url": "https://www.bosch-professional.com/br/pt/products/gsr-185-li-06019K30E1",
       "accessed_at": "2026-08-18T19:16:10Z",
-      "notes": "Fonte primária em nível de SKU; o traço foi preservado como publicado e não interpretado como zero."
+      "notes": "Fonte primária em nível de modelo; o traço foi preservado como publicado e não interpretado como zero."
     },
     {
       "id": "ev_bosch_go",
@@ -289,7 +289,7 @@
       "source_name": "Bosch Professional Brasil — Bosch GO (3ª geração)",
       "source_url": "https://www.bosch-professional.com/br/pt/products/bosch-go-gen3-06019H22E0",
       "accessed_at": "2026-08-18T19:16:10Z",
-      "notes": "Fonte primária em nível de SKU usada para preservar a ordem específica do rótulo."
+      "notes": "Fonte primária em nível de modelo usada para preservar a ordem específica do rótulo."
     },
     {
       "id": "ev_bosch_category",
@@ -298,7 +298,7 @@
       "source_name": "Bosch Professional Brasil — Furadeiras/parafusadeiras a bateria",
       "source_url": "https://www.bosch-professional.com/br/pt/furadeiras-parafusadeiras-a-bateria-131412-ocs-c/",
       "accessed_at": "2026-08-18T19:16:10Z",
-      "notes": "Fonte primária de categoria usada apenas como apoio; os valores centrais vêm das páginas de SKU."
+      "notes": "Fonte primária de categoria usada apenas como apoio; os valores centrais vêm das páginas de modelo."
     },
     {
       "id": "ev_makita_hp333",
@@ -307,7 +307,7 @@
       "source_name": "Makita Brasil — HP333DWYE",
       "source_url": "https://makita.com.br/catalogoFDetalhes.asp?codParamD=273",
       "accessed_at": "2026-08-18T19:16:10Z",
-      "notes": "Fonte primária em nível de SKU; grafia N.m preservada na evidência."
+      "notes": "Fonte primária em nível de modelo; grafia N.m preservada na evidência."
     },
     {
       "id": "ev_makita_df333",
@@ -316,7 +316,7 @@
       "source_name": "Makita Brasil — DF333DWYE",
       "source_url": "https://makita.com.br/catalogoFDetalhes.asp?codParamD=316",
       "accessed_at": "2026-08-18T19:16:10Z",
-      "notes": "Fonte primária em nível de SKU; ausência refere-se somente à página consultada e não foi convertida em valor zero."
+      "notes": "Fonte primária em nível de modelo; ausência refere-se somente à página consultada e não foi convertida em valor zero."
     },
     {
       "id": "ev_dewalt_dcd777",
@@ -325,7 +325,7 @@
       "source_name": "DeWalt Brasil — DCD7771D2-BR",
       "source_url": "https://www.dewalt.com.br/pt-br/produto/dcd7771d2-br/parafusadeirafuradeira-12-13mm-20v-max",
       "accessed_at": "2026-08-18T19:16:10Z",
-      "notes": "Fonte primária em nível de SKU; não se inferiu qual condição de torque corresponde ao valor."
+      "notes": "Fonte primária em nível de modelo; não se inferiu qual condição de torque corresponde ao valor."
     },
     {
       "id": "ev_condition_labels",

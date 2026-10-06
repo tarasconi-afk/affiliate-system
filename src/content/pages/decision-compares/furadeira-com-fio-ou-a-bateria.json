@@ -21,7 +21,7 @@
   "hero": {
     "heading": "Furadeira com fio ou a bateria: qual escolher?",
     "subheading": "A fonte de energia muda a logística do trabalho, mas não define sozinha força, impacto ou capacidade.",
-    "methodNote": "Este guia combina documentação oficial da Bosch com definições do Sistema Internacional de Unidades. Duas fichas Bosch ilustram como os campos aparecem em SKUs reais; elas não formam um teste direto nem representam todos os modelos de cada categoria."
+    "methodNote": "Este guia combina documentação oficial da Bosch com definições do Sistema Internacional de Unidades. Duas fichas Bosch ilustram como os campos aparecem em modelos reais; elas não formam um teste direto nem representam todos os modelos de cada categoria."
   },
   "media": {
     "items": [
@@ -35,12 +35,12 @@
       }
     ],
     "captionLabel": "Imagem ilustrativa",
-    "caption": "Exemplo visual de furadeira com fio; a fotografia não representa os SKUs citados no texto nem demonstra desempenho."
+    "caption": "Exemplo visual de furadeira com fio; a fotografia não representa os modelos citados no texto nem demonstra desempenho."
   },
   "options": [
     {
       "name": "Furadeira com fio",
-      "description": "Escolha com fio se o uso é fixo — oficina, bancada, um lugar com tomada por perto: é a recomendação da própria Bosch para esse formato. Exemplo: Bosch GSB 13 RE, 750 W, mandril de 1,5 a 13 mm, velocidade variável e percussão (função de impacto).",
+      "description": "Escolha com fio se o uso é fixo: oficina, bancada, um lugar com tomada por perto. é a recomendação da própria Bosch para esse formato. Exemplo: Bosch GSB 13 RE, 750 W, mandril de 1,5 a 13 mm, velocidade variável e percussão (função de impacto).",
       "evidenceIds": [
         "ev_bosch_guide_corded",
         "ev_bosch_gsb13"
@@ -76,7 +76,7 @@
         ]
       },
       {
-        "label": "Como ler a energia na ficha",
+        "label": "Como ler a energia",
         "option1": "A GSB 13 RE declara potência nominal absorvida em watts (W).",
         "option2": "A GSB 18V-50 declara tensão da bateria em volts (V) e tipo de bateria; kits podem informar também a capacidade em Ah.",
         "winner": 0,
@@ -136,7 +136,7 @@
     }
   ],
   "verdict": {
-    "heading": "Escolha primeiro pela condição de uso, depois pelo SKU",
+    "heading": "Escolha primeiro pela condição de uso, depois pelo modelo",
     "summary": "Com fio e a bateria resolvem dependências diferentes: tomada e cabo de um lado; bateria, carregador e plataforma do outro. As fontes não sustentam um vencedor universal de força, autonomia ou durabilidade.",
     "recommendation": "Mapeie onde a ferramenta será usada e se haverá tomada disponível. Depois compare, em modelos concretos, funções, mandril e capacidades para os materiais previstos. Não trate W, V ou Ah como uma disputa direta entre categorias.",
     "evidenceIds": [
@@ -149,7 +149,7 @@
   "faq": [
     {
       "question": "Furadeira com fio é sempre mais forte que furadeira a bateria?",
-      "answer": "As fontes consultadas não sustentam essa regra universal. A ficha da ferramenta com fio informa potência absorvida em W, enquanto a ferramenta a bateria informa tensão em V; essas unidades representam grandezas diferentes. Compare funções e capacidades de SKUs concretos em campos equivalentes.",
+      "answer": "As fontes consultadas não sustentam essa regra universal. A ficha da ferramenta com fio informa potência absorvida em W, enquanto a ferramenta a bateria informa tensão em V; essas unidades representam grandezas diferentes. Compare funções e capacidades de modelos concretos em campos equivalentes.",
       "evidenceIds": [
         "ev_watts_volts_not_equivalent",
         "ev_no_universal_winner"
@@ -165,7 +165,7 @@
     },
     {
       "question": "A alimentação define se a furadeira tem impacto?",
-      "answer": "Não. As duas fichas usadas como exemplos — uma com fio e outra a bateria — declaram função de impacto. É preciso conferir o modo e as capacidades na ficha do modelo específico, sem inferir pela fonte de energia.",
+      "answer": "Não. As duas fichas usadas como exemplo (uma com fio e outra a bateria) declaram função de impacto. É preciso conferir o modo e as capacidades na ficha do modelo específico, sem inferir pela fonte de energia.",
       "evidenceIds": [
         "ev_bosch_gsb13",
         "ev_bosch_gsb18",
@@ -214,7 +214,7 @@
       "source_name": "Bosch Professional Brasil — GSB 13 RE",
       "source_url": "https://www.bosch-professional.com/br/pt/products/gsb-13re-06012B80Z0",
       "accessed_at": "2026-08-19T16:45:26Z",
-      "notes": "Fonte primária em nível de SKU, usada como exemplo de ficha de ferramenta com fio; não representa toda a categoria."
+      "notes": "Fonte primária em nível de modelo, usada como exemplo de ficha de ferramenta com fio; não representa toda a categoria."
     },
     {
       "id": "ev_bosch_gsb18",
@@ -223,7 +223,7 @@
       "source_name": "Bosch Professional Brasil — GSB 18V-50",
       "source_url": "https://www.bosch-professional.com/br/pt/products/gsb-18v-50-06019H51E3",
       "accessed_at": "2026-08-19T16:45:26Z",
-      "notes": "Fonte primária em nível de SKU. Itens do kit variam por versão; confirme o código comercial antes da compra."
+      "notes": "Fonte primária em nível de modelo. Itens do kit variam por versão; confirme o código comercial antes da compra."
     },
     {
       "id": "ev_bipm_units",
@@ -276,7 +276,7 @@
     {
       "id": "ev_power_source_not_function",
       "evidence_type": "DERIVED",
-      "claim": "A fonte de energia não determina sozinha a presença de percussão, o tamanho do mandril ou as capacidades por material, pois esses campos precisam ser verificados no SKU e aparecem nas duas fichas de exemplo.",
+      "claim": "A fonte de energia não determina sozinha a presença de percussão, o tamanho do mandril ou as capacidades por material, pois esses campos precisam ser verificados no modelo e aparecem nas duas fichas de exemplo.",
       "source_name": "Leitura comparada das fichas Bosch GSB 13 RE e GSB 18V-50",
       "accessed_at": "2026-08-19T16:45:26Z",
       "derived_from": [

@@ -40,7 +40,7 @@
   "options": [
     {
       "name": "Reaproveitar sua plataforma atual",
-      "description": "Escolha reaproveitar se a bateria nova é da MESMA marca e MESMA linha/tensão que você já tem. As fabricantes garantem isso: Bosch Professional 12V funciona com qualquer ferramenta Bosch Professional 12V; Bosch 18V funciona com ferramentas do Professional 18V System desde 2008; Makita LXT 18V tem mais de 440 modelos compartilhando a mesma bateria; DeWalt POWERSTACK funciona com mais de 300 produtos do sistema 20V MAX. Ter a mesma marca não basta — confira também o nome da linha (ex. \"Professional 18V System\", \"LXT 18V\") na bateria e na ferramenta.",
+      "description": "Escolha reaproveitar se a bateria nova é da MESMA marca e MESMA linha/tensão que você já tem. As fabricantes garantem isso: Bosch Professional 12V funciona com qualquer ferramenta Bosch Professional 12V; Bosch 18V funciona com ferramentas do Professional 18V System desde 2008; Makita LXT 18V tem mais de 440 modelos compartilhando a mesma bateria; DeWalt POWERSTACK funciona com mais de 300 produtos do sistema 20V MAX. Ter a mesma marca não basta: confira também o nome da linha (ex. \"Professional 18V System\", \"LXT 18V\") na bateria e na ferramenta.",
       "evidenceIds": [
         "ev_bosch_12v",
         "ev_bosch_18v",
@@ -51,7 +51,7 @@
     },
     {
       "name": "Trocar de plataforma",
-      "description": "Escolha trocar de plataforma se a ferramenta que você quer não é da mesma linha da sua bateria atual. A única exceção documentada entre marcas diferentes é o AMPShare — uma aliança da Bosch em que baterias, carregadores e ferramentas de marcas participantes funcionam entre si, desde que tragam o selo AMPShare. Fora isso, não existe garantia de compatibilidade entre marcas diferentes.",
+      "description": "Escolha trocar de plataforma se a ferramenta que você quer não é da mesma linha da sua bateria atual. A única exceção documentada entre marcas diferentes é o AMPShare (uma aliança da Bosch em que baterias, carregadores e ferramentas de marcas participantes funcionam entre si, desde que tragam o selo AMPShare). Fora isso, não existe garantia de compatibilidade entre marcas diferentes.",
       "evidenceIds": [
         "ev_ampshare",
         "ev_cross_brand_boundary"

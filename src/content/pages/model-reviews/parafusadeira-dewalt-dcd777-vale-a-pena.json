@@ -26,7 +26,7 @@
   },
   "hero": {
     "heading": "DeWalt DCD777 vale a pena? Análise técnica da DCD7771D2‑BR",
-    "subheading": "Ficha oficial brasileira, pontos fortes e limites — sem alegar teste prático."
+    "subheading": "Informações oficiais da DeWalt no Brasil, pontos fortes e limites, sem alegar teste prático."
   },
   "media": {
     "items": [
@@ -42,7 +42,7 @@
     "caption": "A foto mostra uma ferramenta DeWalt 20V; o modelo analisado é a DCD7771D2‑BR."
   },
   "quickAnswer": {
-    "text": "Vale a pena se você quer uma furadeira/parafusadeira SEM função de impacto (sem as batidas que ajudam a furar concreto ou soltar parafuso travado), com motor brushless (sem escovas de carvão), torque de 65 Nm (a força de giro que ela aplica), duas velocidades e mandril de 13 mm (abertura que prende a broca ou ponta). Vem com duas baterias de 2 Ah — número que indica a capacidade declarada da bateria, não quanto tempo ela dura na prática. Se você precisa de função de impacto, este modelo não é para você: a ficha oficial da DCD7771D2-BR não lista esse recurso.",
+    "text": "Vale a pena se você quer uma furadeira/parafusadeira SEM função de impacto (sem as batidas que ajudam a furar concreto ou soltar parafuso travado), com motor brushless (sem escovas de carvão), torque de 65 Nm (a força de giro que ela aplica), duas velocidades e mandril de 13 mm (abertura que prende a broca ou ponta). Vem com duas baterias de 2 Ah (número que indica a capacidade da bateria, não quanto tempo ela dura na prática). Se você precisa de função de impacto, este modelo não é para você: a ficha oficial da DCD7771D2-BR não lista esse recurso.",
     "evidenceIds": [
       "ev_001",
       "ev_002"
@@ -121,7 +121,7 @@
     },
     {
       "label": "Embreagem (ajuste de torque)",
-      "value": "15 posições declaradas",
+      "value": "15 posições",
       "highlight": false,
       "evidenceIds": [
         "ev_001"
@@ -137,7 +137,7 @@
     },
     {
       "label": "Kit DCD7771D2-BR",
-      "value": "2 baterias de 2,0 Ah (capacidade declarada) + carregador bivolt (duas tensões de alimentação) + item de transporte",
+      "value": "2 baterias de 2,0 Ah + carregador bivolt (duas tensões de alimentação) + item de transporte",
       "highlight": false,
       "evidenceIds": [
         "ev_001"
@@ -153,7 +153,7 @@
     },
     {
       "placement": "after_specs",
-      "intro": "A ficha também declara motor brushless. Para entender o que esse termo informa — e o que não informa — compare",
+      "intro": "O motor é brushless. Para entender o que esse termo explica (e o que não explica), compare",
       "anchorText": "parafusadeiras brushless e com escovas de carvão",
       "href": "/parafusadeira-brushless-ou-com-escovas/"
     },
@@ -191,19 +191,19 @@
   "prosCons": {
     "pros": [
       {
-        "text": "Motor brushless, isto é, sem escovas de carvão, conforme a ficha oficial da DeWalt.",
+        "text": "Motor brushless, ou seja, sem escovas de carvão, conforme a DeWalt.",
         "evidenceIds": [
           "ev_001"
         ]
       },
       {
-        "text": "A ficha declara 65 Nm e duas faixas de rotação (0–500 / 0–1.750 RPM); esses números descrevem o modelo, mas não substituem medições de desempenho em uso real.",
+        "text": "65 Nm de torque e duas faixas de rotação (0–500 / 0–1.750 RPM). Esses números descrevem o modelo, não substituem medir o desempenho no uso real.",
         "evidenceIds": [
           "ev_001"
         ]
       },
       {
-        "text": "O kit brasileiro DCD7771D2-BR inclui duas baterias de 2,0 Ah e carregador bivolt.",
+        "text": "O kit brasileiro inclui duas baterias de 2,0 Ah e carregador bivolt.",
         "evidenceIds": [
           "ev_001"
         ]
@@ -211,41 +211,41 @@
     ],
     "cons": [
       {
-        "text": "A ficha oficial deste modelo não lista função impacto; para alvenaria frequente, vale comparar com uma furadeira/parafusadeira com percussão.",
+        "text": "Não tem função impacto. Para alvenaria frequente, vale comparar com uma furadeira/parafusadeira com percussão.",
         "evidenceIds": [
           "ev_002"
         ]
       },
       {
-        "text": "A ficha técnica não substitui medições independentes de autonomia, ergonomia ou desempenho em uso real."
+        "text": "As informações oficiais não substituem medições independentes de autonomia, ergonomia ou desempenho no uso real."
       }
     ]
   },
   "faq": [
     {
       "question": "Qual é o torque e a rotação da DCD7771D2-BR?",
-      "answer": "A página brasileira da DeWalt informa torque máximo de 65 Nm e duas faixas de velocidade: 0–500 e 0–1.750 RPM. Nm indica torque, ou força de giro; RPM indica quantas rotações ocorrem por minuto. Esses números devem ser comparados com campos equivalentes na ficha do outro modelo.",
+      "answer": "A DeWalt informa torque máximo de 65 Nm e duas faixas de velocidade: 0–500 e 0–1.750 RPM. Nm é a unidade do torque (força de giro); RPM é quantas rotações por minuto. Compare sempre com o mesmo campo na ficha do outro modelo.",
       "evidenceIds": [
         "ev_001"
       ]
     },
     {
       "question": "O kit DCD7771D2-BR vem com bateria e carregador?",
-      "answer": "Sim. A configuração brasileira listada pela DeWalt inclui duas baterias de 2,0 Ah, carregador bivolt e item de transporte.",
+      "answer": "Sim. A configuração brasileira inclui duas baterias de 2,0 Ah, carregador bivolt e item de transporte.",
       "evidenceIds": [
         "ev_001"
       ]
     },
     {
       "question": "A DCD777 tem função impacto?",
-      "answer": "A ficha oficial consultada apresenta a DCD7771D2-BR como furadeira/parafusadeira e não lista função impacto. Se o foco for perfuração frequente em alvenaria, compare também modelos que tragam impacto explicitamente na ficha.",
+      "answer": "Não. A DCD7771D2-BR é furadeira/parafusadeira, sem função impacto. Se o foco for perfuração frequente em alvenaria, compare também modelos com impacto.",
       "evidenceIds": [
         "ev_002"
       ]
     },
     {
       "question": "Como ler a tabela da DCD777?",
-      "answer": "Comece pelo tipo de motor, torque declarado, faixas de rotação, mandril, conteúdo do kit e presença ou ausência de impacto. Esses campos ajudam a conferir se a ficha atende à sua necessidade, mas não medem autonomia, ergonomia ou desempenho prático.",
+      "answer": "Comece pelo tipo de motor, torque, faixas de rotação, mandril, o que vem no kit e se tem impacto ou não. Isso ajuda a ver se o modelo atende sua necessidade, mas não mede autonomia, ergonomia ou desempenho prático.",
       "evidenceIds": [
         "ev_001",
         "ev_002"
@@ -253,7 +253,7 @@
     },
     {
       "question": "O que significa 20V MAX* nesta ficha?",
-      "answer": "Na nota oficial da DeWalt Brasil, 20V MAX* indica tensão máxima inicial de 20 volts, medida sem carga de trabalho; a tensão nominal declarada é 18 volts. Essa nota explica a nomenclatura deste sistema e não cria uma regra universal de equivalência entre marcas.",
+      "answer": "20V MAX* é o nome da DeWalt para esse sistema de bateria: 20 volts é a tensão máxima inicial, medida sem carga; a tensão nominal (de trabalho) é 18 volts. Essa conta vale para esse sistema específico, não é uma regra entre marcas diferentes.",
       "evidenceIds": [
         "ev_003"
       ]
@@ -294,13 +294,13 @@
   "monetization": {
     "affiliateUrl": "https://www.amazon.com.br/dp/B099NZQHRB?tag=ferramentaclara-20",
     "ctaText": "Ver DeWalt DCD7771D2 na Amazon",
-    "disclaimer": "O anuncio verificado na Amazon mostra o codigo de familia DCD7771D2 (2 baterias 2.0Ah, carregador bivolt, maleta); nao foi possivel confirmar o sufixo de SKU brasileiro \"-BR\" especificamente no anuncio. Preco e estoque variam na Amazon.",
+    "disclaimer": "O anuncio verificado na Amazon mostra o codigo de familia DCD7771D2 (2 baterias 2.0Ah, carregador bivolt, maleta); nao foi possivel confirmar o sufixo de modelo brasileiro \"-BR\" especificamente no anuncio. Preco e estoque variam na Amazon.",
     "match": {
       "provider": "amazon",
       "market": "BR",
       "asin": "B099NZQHRB",
       "matchType": "EXACT_FAMILY",
-      "matchEvidence": "Rebaixado de EXACT_SKU para EXACT_FAMILY em red-team (2026-10-05): o titulo do anuncio Amazon confirma \"DCD7771D2\" com a mesma configuracao (2 baterias 2.0Ah, carregador bivolt, maleta) do product.model desta PageSpec, mas NAO exibe o sufixo \"-BR\" que distingue o SKU varejista brasileiro especifico -- varios varejistas BR (nao Amazon) usam \"DCD7771D2-BR\" explicitamente, mas isso nao prova que o ASIN da Amazon seja essa variante exata.",
+      "matchEvidence": "Rebaixado de EXACT_SKU para EXACT_FAMILY em red-team (2026-10-05): o titulo do anuncio Amazon confirma \"DCD7771D2\" com a mesma configuracao (2 baterias 2.0Ah, carregador bivolt, maleta) do product.model desta PageSpec, mas NAO exibe o sufixo \"-BR\" que distingue o modelo varejista brasileiro especifico -- varios varejistas BR (nao Amazon) usam \"DCD7771D2-BR\" explicitamente, mas isso nao prova que o ASIN da Amazon seja essa variante exata.",
       "trackingSource": "fc_amazon_mop_sprint_v1",
       "matchedAt": "2026-10-05T19:30:00.000Z"
     },

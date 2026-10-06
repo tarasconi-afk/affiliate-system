@@ -21,7 +21,7 @@
   "hero": {
     "heading": "Mandril 10 mm ou 13 mm: qual escolher?",
     "subheading": "O número informa o limite da faixa de aperto declarada, não a potência da ferramenta nem o diâmetro do furo.",
-    "methodNote": "Este guia compara campos de fichas oficiais da Makita, Bosch e DeWalt. Os SKUs servem como exemplos concretos de leitura; não representam todos os mandris de 10 mm ou 13 mm e não foram submetidos a teste prático."
+    "methodNote": "Este guia compara campos de fichas oficiais da Makita, Bosch e DeWalt. Os modelos servem como exemplos concretos de leitura; não representam todos os mandris de 10 mm ou 13 mm e não foram submetidos a teste prático."
   },
   "media": {
     "items": [
@@ -35,12 +35,12 @@
       }
     ],
     "captionLabel": "Imagem ilustrativa",
-    "caption": "Close de um mandril com chave; a fotografia não identifica capacidade de 10 mm ou 13 mm, SKU nem desempenho."
+    "caption": "Close de um mandril com chave; a fotografia não identifica capacidade de 10 mm ou 13 mm, modelo nem desempenho."
   },
   "options": [
     {
       "name": "Mandril com capacidade até 10 mm",
-      "description": "O mandril (peça que prende a broca ou ponta) de até 10 mm aceita hastes de até 10 mm de diâmetro — no exemplo Makita DF333, de 0,8 a 10 mm. Importante: isso não é a capacidade de furação da ferramenta (quanto ela fura em cada material) — essa mesma Makita, com mandril de 10 mm, perfura até 21 mm em madeira.",
+      "description": "O mandril (peça que prende a broca ou ponta) de até 10 mm aceita hastes de até 10 mm de diâmetro, como no exemplo Makita DF333 (0,8 a 10 mm). Importante: isso não é a capacidade de furação da ferramenta. Essa mesma Makita, com mandril de 10 mm, perfura até 21 mm em madeira.",
       "evidenceIds": [
         "ev_makita_df333",
         "ev_capacity_not_hole"
@@ -48,7 +48,7 @@
     },
     {
       "name": "Mandril com capacidade até 13 mm",
-      "description": "O mandril de até 13 mm aceita hastes maiores — no exemplo Bosch GSB 18V-50, de 1,5 a 13 mm. Útil para brocas ou pontas com haste mais grossa. O limite inferior também é um pouco maior que o da Makita (1,5 mm contra 0,8 mm), então pontas muito finas podem não encaixar.",
+      "description": "O mandril de até 13 mm aceita hastes maiores, como no exemplo Bosch GSB 18V-50 (1,5 a 13 mm). Útil para brocas ou pontas com haste mais grossa. O limite inferior também é um pouco maior que o da Makita (1,5 mm contra 0,8 mm), então pontas muito finas podem não encaixar.",
       "evidenceIds": [
         "ev_bosch_gsb18",
         "ev_range_comparison"
@@ -58,38 +58,20 @@
   "comparison": {
     "dimensions": [
       {
-        "label": "Faixa oficial no exemplo",
-        "option1": "Makita DF333: 0,8 a 10 mm.",
-        "option2": "Bosch GSB 18V-50: 1,5 a 13 mm.",
+        "label": "Tamanho de haste aceito",
+        "option1": "0,8 a 10 mm (Makita DF333).",
+        "option2": "1,5 a 13 mm (Bosch GSB 18V-50): aceita hastes maiores, mas não as mais finas que a Makita aceita.",
         "winner": 0,
         "evidenceIds": [
           "ev_makita_df333",
-          "ev_bosch_gsb18"
-        ]
-      },
-      {
-        "label": "Maior haste dentro da faixa citada",
-        "option1": "Até 10 mm no SKU usado como exemplo.",
-        "option2": "Até 13 mm no SKU usado como exemplo.",
-        "winner": 0,
-        "evidenceIds": [
+          "ev_bosch_gsb18",
           "ev_range_comparison"
         ]
       },
       {
-        "label": "Limite inferior",
-        "option1": "O exemplo começa em 0,8 mm.",
-        "option2": "O exemplo começa em 1,5 mm.",
-        "winner": 0,
-        "evidenceIds": [
-          "ev_makita_df333",
-          "ev_bosch_gsb18"
-        ]
-      },
-      {
-        "label": "Diâmetro de furação",
-        "option1": "Não é sinônimo do tamanho do mandril: a DF333 declara mandril até 10 mm e capacidade de 21 mm em madeira.",
-        "option2": "Consulte separadamente a capacidade por material; o rótulo de 13 mm não basta para definir o furo possível.",
+        "label": "O mandril define o tamanho do furo?",
+        "option1": "Não: a DF333 tem mandril até 10 mm, mas perfura até 21 mm em madeira.",
+        "option2": "Não: confira a capacidade por material separadamente, o 13 mm não define o furo.",
         "winner": 0,
         "evidenceIds": [
           "ev_makita_df333",
@@ -97,9 +79,9 @@
         ]
       },
       {
-        "label": "Potência, torque e impacto",
-        "option1": "O limite de 10 mm não determina esses atributos.",
-        "option2": "O limite de 13 mm também não determina esses atributos.",
+        "label": "Isso diz algo sobre potência ou impacto?",
+        "option1": "Não.",
+        "option2": "Não.",
         "winner": 0,
         "evidenceIds": [
           "ev_chuck_not_performance"
@@ -130,7 +112,7 @@
   "verdict": {
     "heading": "Escolha pela haste que precisa ser presa",
     "summary": "Entre os exemplos consultados, o mandril de 13 mm aceita uma haste máxima maior, enquanto o de 10 mm tem um limite inferior menor. Isso não torna uma opção universalmente melhor e não demonstra diferença de potência, torque ou capacidade de furação.",
-    "recommendation": "Liste os acessórios que pretende usar e confira se o diâmetro da haste cabe entre o mínimo e o máximo declarados pelo fabricante do SKU. Se a dúvida for sobre o diâmetro do furo, consulte a capacidade por material em um campo separado.",
+    "recommendation": "Liste os acessórios que pretende usar e confira se o diâmetro da haste cabe entre o mínimo e o máximo declarados pelo fabricante do modelo. Se a dúvida for sobre o diâmetro do furo, consulte a capacidade por material em um campo separado.",
     "evidenceIds": [
       "ev_range_comparison",
       "ev_capacity_not_hole",
@@ -148,7 +130,7 @@
     },
     {
       "question": "Mandril de 13 mm significa furadeira mais potente?",
-      "answer": "Não é possível concluir isso pelo mandril. As fichas consultadas tratam faixa de aperto e outros atributos como campos separados; compare torque, potência, impacto e capacidades no SKU concreto, sem transformar 10 mm ou 13 mm em indicador de desempenho.",
+      "answer": "Não é possível concluir isso pelo mandril. As fichas consultadas tratam faixa de aperto e outros atributos como campos separados; compare torque, potência, impacto e capacidades no modelo concreto, sem transformar 10 mm ou 13 mm em indicador de desempenho.",
       "evidenceIds": [
         "ev_chuck_not_performance"
       ]
@@ -163,7 +145,7 @@
     },
     {
       "question": "Basta olhar o valor máximo do mandril?",
-      "answer": "Não. Confira a faixa completa. Nos exemplos, a Makita DF333 declara 0,8 a 10 mm e a Bosch GSB 18V-50 declara 1,5 a 13 mm; portanto, o limite mínimo também difere entre os SKUs.",
+      "answer": "Não. Confira a faixa completa. Nos exemplos, a Makita DF333 declara 0,8 a 10 mm e a Bosch GSB 18V-50 declara 1,5 a 13 mm; portanto, o limite mínimo também difere entre os modelos.",
       "evidenceIds": [
         "ev_makita_df333",
         "ev_bosch_gsb18"
@@ -171,7 +153,7 @@
     },
     {
       "question": "Qual é o mandril da DeWalt DCD7771D2-BR?",
-      "answer": "A página oficial brasileira identifica a DCD7771D2-BR como furadeira/parafusadeira de 1/2 pol. (13 mm) e descreve mandril de ajuste rápido. Essa especificação vale para esse SKU e não define sozinha desempenho ou adequação ao seu uso.",
+      "answer": "A página oficial brasileira identifica a DCD7771D2-BR como furadeira/parafusadeira de 1/2 pol. (13 mm) e descreve mandril de ajuste rápido. Essa especificação vale para esse modelo e não define sozinha desempenho ou adequação ao seu uso.",
       "evidenceIds": [
         "ev_dewalt_dcd777",
         "ev_chuck_not_performance"
@@ -186,7 +168,7 @@
       "source_name": "Makita Brasil — DF333DWYE",
       "source_url": "https://www.makita.com.br/catalogoFDetalhes.asp?codParamD=316",
       "accessed_at": "2026-08-24T19:40:06Z",
-      "notes": "Fonte primária em nível de SKU. Os valores não representam todos os modelos com mandril de 10 mm."
+      "notes": "Fonte primária em nível de modelo. Os valores não representam todos os modelos com mandril de 10 mm."
     },
     {
       "id": "ev_bosch_gsb18",
@@ -195,7 +177,7 @@
       "source_name": "Bosch Professional Brasil — GSB 18V-50",
       "source_url": "https://www.bosch-professional.com/br/pt/products/gsb-18v-50-06019H51E3",
       "accessed_at": "2026-08-24T19:40:06Z",
-      "notes": "Fonte primária em nível de SKU. A faixa não representa todos os modelos com mandril de 13 mm."
+      "notes": "Fonte primária em nível de modelo. A faixa não representa todos os modelos com mandril de 13 mm."
     },
     {
       "id": "ev_dewalt_dcd777",
@@ -204,7 +186,7 @@
       "source_name": "DeWalt Brasil — DCD7771D2-BR",
       "source_url": "https://www.dewalt.com.br/pt-br/produto/dcd7771d2-br/parafusadeirafuradeira-12-13mm-20v-max",
       "accessed_at": "2026-08-24T19:40:06Z",
-      "notes": "Fonte primária em nível de SKU, usada somente como exemplo adicional de especificação de 13 mm."
+      "notes": "Fonte primária em nível de modelo, usada somente como exemplo adicional de especificação de 13 mm."
     },
     {
       "id": "ev_range_comparison",
@@ -216,7 +198,7 @@
         "ev_makita_df333",
         "ev_bosch_gsb18"
       ],
-      "notes": "Comparação restrita aos SKUs citados; não generaliza as faixas de todos os mandris de 10 mm ou 13 mm."
+      "notes": "Comparação restrita aos modelos citados; não generaliza as faixas de todos os mandris de 10 mm ou 13 mm."
     },
     {
       "id": "ev_capacity_not_hole",
@@ -232,7 +214,7 @@
     {
       "id": "ev_chuck_not_performance",
       "evidence_type": "DERIVED",
-      "claim": "O limite do mandril não sustenta sozinho conclusões sobre potência, torque, impacto ou desempenho, pois as páginas oficiais apresentam a especificação do mandril ao lado de outros atributos do SKU, sem estabelecer essa equivalência.",
+      "claim": "O limite do mandril não sustenta sozinho conclusões sobre potência, torque, impacto ou desempenho, pois as páginas oficiais apresentam a especificação do mandril ao lado de outros atributos do modelo, sem estabelecer essa equivalência.",
       "source_name": "Síntese editorial das fichas oficiais Makita, Bosch e DeWalt",
       "accessed_at": "2026-08-24T19:40:06Z",
       "derived_from": [

@@ -20,8 +20,8 @@
   },
   "hero": {
     "heading": "Parafusadeira com impacto ou sem impacto: qual você precisa?",
-    "subheading": "Compare o que as fichas declaram e não confunda percussão — batidas na direção da broca — com outras classes de ferramenta.",
-    "methodNote": "A comparação principal usa duas ferramentas Makita 12V da mesma família. As conclusões valem para este par; a ficha do SKU específico prevalece."
+    "subheading": "Compare o que as informações oficiais declaram e não confunda percussão (batidas na direção da broca) com outras classes de ferramenta.",
+    "methodNote": "A comparação principal usa duas ferramentas Makita 12V da mesma família. As conclusões valem para este par; a ficha do modelo específico prevalece."
   },
   "media": {
     "items": [
@@ -56,7 +56,7 @@
   "comparison": {
     "dimensions": [
       {
-        "label": "Nome na ficha",
+        "label": "Tipo de ferramenta",
         "option1": "DF333DWYE: Parafusadeira / Furadeira.",
         "option2": "HP333DWYE: Parafusadeira / Furadeira de Impacto.",
         "winner": 0,
@@ -66,7 +66,7 @@
         ]
       },
       {
-        "label": "Capacidades declaradas",
+        "label": "O que ela perfura",
         "option1": "Aço: 10 mm; madeira: 21 mm. A ficha não traz alvenaria ou concreto.",
         "option2": "Aço: 10 mm; madeira: 21 mm; alvenaria: 8 mm.",
         "winner": 0,
@@ -96,7 +96,7 @@
         ]
       },
       {
-        "label": "Outras diferenças da ficha",
+        "label": "Outras diferenças",
         "option1": "1,1 kg; 179 × 66 × 212 mm.",
         "option2": "1,3 kg; 193 × 66 × 229 mm; torque máximo declarado de 34 Nm.",
         "winner": 0,
@@ -109,7 +109,7 @@
   },
   "taxonomyTable": {
     "title": "Quatro classes que não devem ser tratadas como sinônimos",
-    "intro": "Use esta tabela como mapa de leitura, não como regra universal. Nomes comerciais variam, algumas ferramentas combinam funções e a ficha do SKU específico prevalece.",
+    "intro": "Use esta tabela como mapa de leitura, não como regra universal. Nomes comerciais variam, algumas ferramentas combinam funções e a ficha do modelo específico prevalece.",
     "columns": {
       "class": "Classe",
       "mechanism": "Como o impacto aparece na ficha",
@@ -121,7 +121,7 @@
       {
         "class": "Parafusadeira/furadeira sem impacto",
         "mechanism": "Na DF333DWYE, a ficha não declara impactos por minuto.",
-        "interface": "Mandril de aperto rápido — a parte que segura a broca ou ponta — com capacidade de 0,8–10 mm.",
+        "interface": "Mandril de aperto rápido (a parte que segura a broca ou ponta), capacidade de 0,8-10 mm.",
         "application": "Aço 10 mm e madeira 21 mm no modelo consultado.",
         "caveat": "A ausência de impacto na ficha não demonstra fraqueza ou inadequação universal.",
         "evidenceIds": [
@@ -153,7 +153,7 @@
         "mechanism": "Na TW141DZ, a ficha declara 0–3.200 impactos por minuto e capacidades por tipo de parafuso.",
         "interface": "Encaixe quadrado de 1/2 pol. no modelo consultado.",
         "application": "Parafuso padrão M8–M16 e parafuso de máquina M6–M12.",
-        "caveat": "Não extrapole o encaixe deste SKU para todos os modelos ou marcas.",
+        "caveat": "Não extrapole o encaixe deste modelo para todos os modelos ou marcas.",
         "evidenceIds": [
           "ev_makita_tw141"
         ]
@@ -199,8 +199,8 @@
     }
   ],
   "verdict": {
-    "summary": "Neste par, a função impacto acrescenta à ficha da HP333DWYE a capacidade em alvenaria e faixas de impactos por minuto, enquanto aço, madeira, rotações e torques de junta coincidem com a DF333DWYE. Há também diferenças de dimensões, peso e torque máximo declarado; portanto, impacto não é a única diferença entre os dois SKUs.",
-    "recommendation": "Use este procedimento: 1) identifique a classe escrita na ficha; 2) verifique se há impacto e IPM declarados; 3) confira mandril ou outro encaixe; 4) compare somente materiais e campos com o mesmo nome; 5) se a dúvida passar para concreto, SDS — sistema de encaixe diferente do mandril — ou energia por golpe, siga para a comparação com marteletes. Não trate impacto como vantagem automática.",
+    "summary": "Neste par, a função impacto acrescenta à ficha da HP333DWYE a capacidade em alvenaria e faixas de impactos por minuto, enquanto aço, madeira, rotações e torques de junta coincidem com a DF333DWYE. Há também diferenças de dimensões, peso e torque máximo declarado; portanto, impacto não é a única diferença entre os dois modelos.",
+    "recommendation": "Use este procedimento: 1) identifique a classe escrita na ficha; 2) verifique se há impacto e IPM declarados; 3) confira mandril ou outro encaixe; 4) compare somente materiais e campos com o mesmo nome; 5) se a dúvida passar para concreto, SDS (sistema de encaixe diferente do mandril) ou energia por golpe, siga para a comparação com marteletes. Não trate impacto como vantagem automática.",
     "evidenceIds": [
       "ev_pair_comparison"
     ]
@@ -208,7 +208,7 @@
   "faq": [
     {
       "question": "Como identificar a função impacto na ficha?",
-      "answer": "Nos modelos consultados, a classificação do produto, a presença de impactos por minuto e a capacidade declarada em alvenaria ajudam a identificar a percussão. São indicadores da ficha, não uma regra universal; confira sempre o SKU específico.",
+      "answer": "Nos modelos consultados, a classificação do produto, a presença de impactos por minuto e a capacidade declarada em alvenaria ajudam a identificar a percussão. São indicadores da ficha, não uma regra universal; confira sempre o modelo específico.",
       "evidenceIds": [
         "ev_makita_df333",
         "ev_makita_hp333",
@@ -233,7 +233,7 @@
     },
     {
       "question": "Chave de impacto e parafusadeira de impacto são a mesma ferramenta?",
-      "answer": "Nos exemplos oficiais consultados, não: a TD110DWYE usa encaixe sextavado de 1/4 pol., enquanto a TW141DZ usa encaixe quadrado de 1/2 pol. e declara outras faixas de fixadores. A interface de cada SKU deve ser confirmada na própria ficha.",
+      "answer": "Nos exemplos oficiais consultados, não: a TD110DWYE usa encaixe sextavado de 1/4 pol., enquanto a TW141DZ usa encaixe quadrado de 1/2 pol. e declara outras faixas de fixadores. A interface de cada modelo deve ser confirmada na própria ficha.",
       "evidenceIds": [
         "ev_makita_td110",
         "ev_makita_tw141",
@@ -242,7 +242,7 @@
     },
     {
       "question": "Mais IPM significa automaticamente mais força?",
-      "answer": "Não é uma conclusão sustentada pelas fichas consultadas. IPM informa a frequência das batidas, enquanto torque aparece em campos separados. Compare IPM com IPM e torque com torque, preservando as condições e os rótulos publicados para cada SKU.",
+      "answer": "Não é uma conclusão sustentada pelas fichas consultadas. IPM informa a frequência das batidas, enquanto torque aparece em campos separados. Compare IPM com IPM e torque com torque, preservando as condições e os rótulos publicados para cada modelo.",
       "evidenceIds": [
         "ev_ipm_limit"
       ]
@@ -295,12 +295,12 @@
       "source_name": "Makita Brasil — TW141DZ",
       "source_url": "https://www.makita.com.br/catalogoFDetalhes.asp?codParamD=75",
       "accessed_at": "2026-08-17T16:18:03Z",
-      "notes": "Fonte primária usada como exemplo de impact wrench; o encaixe não é extrapolado para outros SKUs."
+      "notes": "Fonte primária usada como exemplo de impact wrench; o encaixe não é extrapolado para outros modelos."
     },
     {
       "id": "ev_taxonomy_reading",
       "evidence_type": "DERIVED",
-      "claim": "As fichas consultadas distinguem as quatro classes por combinação de nome do produto, campos de impacto, interface e aplicações declaradas. Como há modelos que combinam funções, a ficha do SKU específico prevalece sobre inferências feitas apenas a partir do nome comercial.",
+      "claim": "As fichas consultadas distinguem as quatro classes por combinação de nome do produto, campos de impacto, interface e aplicações declaradas. Como há modelos que combinam funções, a ficha do modelo específico prevalece sobre inferências feitas apenas a partir do nome comercial.",
       "source_name": "Leitura comparada das fichas oficiais Makita",
       "accessed_at": "2026-08-17T16:18:03Z",
       "derived_from": [

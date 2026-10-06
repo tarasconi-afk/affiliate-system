@@ -21,7 +21,7 @@
   "hero": {
     "heading": "Furadeira de impacto ou martelete: o que muda na ficha?",
     "subheading": "Aprenda a reconhecer cada classe pela nomenclatura, pelo encaixe e pelos campos técnicos que aparecem na ficha do modelo.",
-    "methodNote": "A comparação resume somente os modelos oficiais consultados. Não é teste prático nem regra universal; a ficha do SKU específico sempre prevalece."
+    "methodNote": "A comparação resume somente os modelos oficiais consultados. Não é teste prático nem regra universal; a ficha do modelo específico sempre prevalece."
   },
   "media": {
     "items": [
@@ -40,14 +40,14 @@
   "options": [
     {
       "name": "Furadeira/parafusadeira de impacto",
-      "description": "Na HP333DWYE consultada, impacto significa que, além de girar, a ferramenta declara batidas na direção da broca. A ficha usa mandril de aperto rápido — a parte que aperta e segura a broca — e publica capacidade em alvenaria, sem declarar energia por golpe em Joules.",
+      "description": "Na HP333DWYE consultada, impacto significa que, além de girar, a ferramenta declara batidas na direção da broca. A ficha usa mandril de aperto rápido (a parte que aperta e segura a broca) e publica capacidade em alvenaria, sem declarar energia por golpe em Joules.",
       "evidenceIds": [
         "ev_makita_hp333"
       ]
     },
     {
       "name": "Martelete / martelo perfurador",
-      "description": "Nos três martelos perfuradores consultados, as fichas combinam rotação, impactos e encaixe SDS plus, um sistema próprio de trava diferente do mandril de garras. Elas também declaram energia por golpe e capacidade em concreto; isso descreve estes SKUs, não todos os marteletes.",
+      "description": "Nos três martelos perfuradores consultados, as fichas combinam rotação, impactos e encaixe SDS plus, um sistema próprio de trava diferente do mandril de garras. Elas também declaram energia por golpe e capacidade em concreto; isso descreve estes modelos, não todos os marteletes.",
       "evidenceIds": [
         "ev_makita_hr2470",
         "ev_bosch_gbh224d",
@@ -87,7 +87,7 @@
         ]
       },
       {
-        "label": "Campo de material declarado",
+        "label": "Material e capacidade",
         "option1": "HP333DWYE: alvenaria 8 mm, aço 10 mm e madeira 21 mm; não declara concreto.",
         "option2": "HR2470 e GBH 2-24 D: concreto 24 mm; GBH 18V-26 D: concreto 4–26 mm. Alvenaria e concreto são campos diferentes e não formam uma escala comparável.",
         "winner": 0,
@@ -119,7 +119,7 @@
         ]
       },
       {
-        "label": "Nomenclatura / função declarada",
+        "label": "Como o fabricante chama o produto",
         "option1": "Makita: Parafusadeira / Furadeira de Impacto.",
         "option2": "As fichas usam Martelete Combinado, Martelo perfurador, Martelo perfurador a bateria e Martelo Rompedor. Só o GBH 18V-26 D declara perfuração, cinzelagem e Vario-Lock entre os modelos em que modos foram consultados.",
         "winner": 0,
@@ -141,7 +141,7 @@
     },
     "rows": [
       {
-        "class": "Parafusadeira / Furadeira de Impacto — Makita HP333DWYE",
+        "class": "Parafusadeira/furadeira de impacto (Makita HP333DWYE)",
         "mechanism": "Rotação de 0–1.700 / 0–450 rotações por minuto (RPM), que indicam quantas voltas a ferramenta dá; impactos de 0–25.500 / 0–6.750 IPM.",
         "interface": "Mandril de aperto rápido.",
         "application": "Alvenaria 8 mm, aço 10 mm e madeira 21 mm; não declara concreto.",
@@ -151,10 +151,10 @@
         ]
       },
       {
-        "class": "Martelo perfurador / Martelete Combinado com fio — Makita HR2470 e Bosch GBH 2-24 D",
-        "mechanism": "Rotação, impactos e energia por golpe declarada: 2,7 J nos dois SKUs.",
+        "class": "Martelo perfurador/martelete combinado com fio (Makita HR2470 e Bosch GBH 2-24 D)",
+        "mechanism": "Rotação, impactos e energia por golpe declarada: 2,7 J nos dois modelos.",
         "interface": "SDS plus.",
-        "application": "Concreto 24 mm nos dois SKUs; a HR2470 também declara metal 13 mm e madeira 32 mm.",
+        "application": "Concreto 24 mm nos dois modelos; a HR2470 também declara metal 13 mm e madeira 32 mm.",
         "caveat": "Não preencher campos ausentes; a ficha HR2470 não declara modos de operação.",
         "evidenceIds": [
           "ev_makita_hr2470",
@@ -162,7 +162,7 @@
         ]
       },
       {
-        "class": "Martelo perfurador a bateria — Bosch GBH 18V-26 D",
+        "class": "Martelo perfurador a bateria (Bosch GBH 18V-26 D)",
         "mechanism": "Rotação 0–980 RPM, impactos 0–4.350 IPM, 2,5 J e modos declarados de perfuração, cinzelagem e Vario-Lock.",
         "interface": "SDS plus.",
         "application": "Concreto 4–26 mm.",
@@ -172,7 +172,7 @@
         ]
       },
       {
-        "class": "Martelo Rompedor — Makita HM0870C",
+        "class": "Martelo rompedor (Makita HM0870C)",
         "mechanism": "Impactos de 1.100–2.650 IPM e energia de 11,4 J; a ficha não declara rotação.",
         "interface": "SDS MAX, variante diferente de SDS plus.",
         "application": "Nenhuma capacidade de perfuração é declarada na ficha consultada.",
@@ -205,7 +205,7 @@
   ],
   "verdict": {
     "summary": "As fichas consultadas não separam as classes por um número isolado. Nome do produto, interface, forma de declarar impacto, energia por golpe quando fornecida, rotação e capacidade de perfuração formam um conjunto de sinais. Watts, IPM ou fonte de energia não funcionam como limiar universal.",
-    "recommendation": "Decida em sete passos: 1) leia a classificação do fabricante; 2) confira mandril, SDS plus ou SDS MAX; 3) compare apenas materiais e diâmetros com o mesmo nome; 4) veja se a ficha fornece energia por golpe; 5) não use IPM isoladamente como força; 6) preserve qualificadores como “peso sem bateria”; 7) na dúvida, siga a ficha do SKU específico.",
+    "recommendation": "Decida em sete passos: 1) leia a classificação do fabricante; 2) confira mandril, SDS plus ou SDS MAX; 3) compare apenas materiais e diâmetros com o mesmo nome; 4) veja se a ficha fornece energia por golpe; 5) não use IPM isoladamente como força; 6) preserve qualificadores como “peso sem bateria”; 7) na dúvida, siga a ficha do modelo específico.",
     "evidenceIds": [
       "ev_interface_signature",
       "ev_joules_indicator",
@@ -245,7 +245,7 @@
     },
     {
       "question": "SDS plus e SDS MAX são iguais?",
-      "answer": "Não devem ser tratados como o mesmo encaixe. SDS plus aparece nos três martelos perfuradores consultados; SDS MAX aparece no martelo rompedor HM0870C. A interface do SKU específico deve ser confirmada antes de escolher o acessório.",
+      "answer": "Não devem ser tratados como o mesmo encaixe. SDS plus aparece nos três martelos perfuradores consultados; SDS MAX aparece no martelo rompedor HM0870C. A interface do modelo específico deve ser confirmada antes de escolher o acessório.",
       "evidenceIds": [
         "ev_interface_signature"
       ]
@@ -269,7 +269,7 @@
     },
     {
       "question": "Como identificar a classe olhando a ficha?",
-      "answer": "Comece pela nomenclatura do fabricante. Depois confira interface, materiais e diâmetros declarados, rotação, impactos por minuto e energia por golpe quando houver. Esses sinais ajudam nos modelos consultados, mas não substituem a ficha do SKU específico.",
+      "answer": "Comece pela nomenclatura do fabricante. Depois confira interface, materiais e diâmetros declarados, rotação, impactos por minuto e energia por golpe quando houver. Esses sinais ajudam nos modelos consultados, mas não substituem a ficha do modelo específico.",
       "evidenceIds": [
         "ev_interface_signature",
         "ev_classes_martelo"
@@ -284,7 +284,7 @@
       "source_name": "Makita Brasil — HP333DWYE",
       "source_url": "https://www.makita.com.br/catalogoFDetalhes.asp?codParamD=273",
       "accessed_at": "2026-08-17T21:22:39Z",
-      "notes": "Fonte primária do SKU. N.m (newton-metro) é a unidade de torque usada pela fonte. A ficha declara alvenaria 8 mm; não declara concreto, energia em Joules, potência em W ou vibração."
+      "notes": "Fonte primária do modelo. N.m (newton-metro) é a unidade de torque usada pela fonte. A ficha declara alvenaria 8 mm; não declara concreto, energia em Joules, potência em W ou vibração."
     },
     {
       "id": "ev_makita_hr2470",
@@ -293,7 +293,7 @@
       "source_name": "Makita Brasil — HR2470",
       "source_url": "https://makita.com.br/catalogoFDetalhes.asp?codParamD=704",
       "accessed_at": "2026-08-17T21:22:39Z",
-      "notes": "Fonte primária do SKU. A ficha consultada não declara modos de operação; nenhum modo foi inferido do nome “Combinado”."
+      "notes": "Fonte primária do modelo. A ficha consultada não declara modos de operação; nenhum modo foi inferido do nome “Combinado”."
     },
     {
       "id": "ev_bosch_gbh224d",
@@ -302,7 +302,7 @@
       "source_name": "Bosch Professional Brasil — GBH 2-24 D",
       "source_url": "https://www.bosch-professional.com/br/pt/products/gbh-2-24-d-06112A02D5",
       "accessed_at": "2026-08-17T21:22:39Z",
-      "notes": "Fonte primária do SKU. A página consultada não declara aço, madeira, vibração ou modos de operação."
+      "notes": "Fonte primária do modelo. A página consultada não declara aço, madeira, vibração ou modos de operação."
     },
     {
       "id": "ev_bosch_gbh18v26d",
@@ -311,7 +311,7 @@
       "source_name": "Bosch Professional Brasil — GBH 18V-26 D",
       "source_url": "https://www.bosch-professional.com/br/pt/products/gbh-18v-26-d-0611916001",
       "accessed_at": "2026-08-17T21:22:39Z",
-      "notes": "Fonte primária do SKU. O peso é explicitamente “sem bateria”; a página não declara potência em W, aço ou madeira."
+      "notes": "Fonte primária do modelo. O peso é explicitamente “sem bateria”; a página não declara potência em W, aço ou madeira."
     },
     {
       "id": "ev_makita_hm0870c",
@@ -320,12 +320,12 @@
       "source_name": "Makita Brasil — HM0870C",
       "source_url": "https://www.makita.com.br/catalogoFDetalhes.asp?codParamD=740",
       "accessed_at": "2026-08-17T21:22:39Z",
-      "notes": "Fonte primária do SKU. A ficha consultada não declara rotação, capacidade de perfuração em concreto, metal ou madeira, nem modos; essas ausências não definem a categoria por si sós."
+      "notes": "Fonte primária do modelo. A ficha consultada não declara rotação, capacidade de perfuração em concreto, metal ou madeira, nem modos; essas ausências não definem a categoria por si sós."
     },
     {
       "id": "ev_bosch_categoria_martelos",
       "evidence_type": "SPEC",
-      "claim": "A Bosch Professional agrupa martelos perfuradores para perfurar e cinzelar. Na listagem consultada, há SKUs com energia de impacto exibida e ao menos um martelo perfurador a bateria cuja ficha resumida não mostra esse campo.",
+      "claim": "A Bosch Professional agrupa martelos perfuradores para perfurar e cinzelar. Na listagem consultada, há modelos com energia de impacto exibida e ao menos um martelo perfurador a bateria cuja ficha resumida não mostra esse campo.",
       "source_name": "Bosch Professional Brasil — categoria Martelos perfuradores",
       "source_url": "https://www.bosch-professional.com/br/pt/martelos-perfuradores-131445-ocs-c/",
       "accessed_at": "2026-08-17T21:22:39Z",
@@ -334,7 +334,7 @@
     {
       "id": "ev_interface_signature",
       "evidence_type": "DERIVED",
-      "claim": "Nos modelos consultados, a HP333DWYE usa mandril de aperto rápido; HR2470, GBH 2-24 D e GBH 18V-26 D usam SDS plus; HM0870C usa SDS MAX. A interface é um sinal útil para interpretar a classe nessas fichas, mas não é regra universal e não substitui a ficha do SKU.",
+      "claim": "Nos modelos consultados, a HP333DWYE usa mandril de aperto rápido; HR2470, GBH 2-24 D e GBH 18V-26 D usam SDS plus; HM0870C usa SDS MAX. A interface é um sinal útil para interpretar a classe nessas fichas, mas não é regra universal e não substitui a ficha do modelo.",
       "source_name": "Leitura comparada das interfaces declaradas",
       "accessed_at": "2026-08-17T21:22:39Z",
       "derived_from": [
@@ -360,7 +360,7 @@
         "ev_makita_hm0870c",
         "ev_bosch_categoria_martelos"
       ],
-      "notes": "Não relaciona valores de Joules a aplicações nem presume desempenho equivalente entre SKUs."
+      "notes": "Não relaciona valores de Joules a aplicações nem presume desempenho equivalente entre modelos."
     },
     {
       "id": "ev_ipm_nao_e_capacidade",

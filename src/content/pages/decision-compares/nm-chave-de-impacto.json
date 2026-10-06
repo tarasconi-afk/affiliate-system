@@ -60,7 +60,7 @@
   "comparison": {
     "dimensions": [
       {
-        "label": "Quantos campos de torque a ficha traz",
+        "label": "Quantos números de torque aparecem",
         "option1": "Um: na TW141DZ, a Makita publica somente “Torque”, com 145 N.m.",
         "option2": "Dois ou mais: “Torque, máx.” e “Torque de arranque, máx.” na Bosch; “Torque de aperto” e “Torque de reversão” na DeWalt.",
         "winner": 0,
@@ -71,7 +71,7 @@
         ]
       },
       {
-        "label": "Rótulo publicado",
+        "label": "Nome do campo",
         "option1": "“Torque”, sem condição nomeada na ficha consultada.",
         "option2": "Rótulos próprios de cada fabricante: “arranque” nas páginas Bosch, “reversão” na página DeWalt.",
         "winner": 0,
@@ -82,7 +82,7 @@
       {
         "label": "Faixas de ajuste de torque",
         "option1": "A ficha da TW141DZ não publica faixa de ajuste de torque.",
-        "option2": "Ter mais de um campo de torque não implica ter faixa de ajuste: a GDS 18V-1000 publica três campos “Faixa de ajuste do torque, mín./máx.”, com 0/350 Nm, 0/700 Nm e 0/1000 Nm por nível, enquanto a GDS 18V-400 e a DCF922B não publicam esse campo. A leitura vale para os SKUs consultados.",
+        "option2": "Ter mais de um campo de torque não implica ter faixa de ajuste: a GDS 18V-1000 publica três campos “Faixa de ajuste do torque, mín./máx.”, com 0/350 Nm, 0/700 Nm e 0/1000 Nm por nível, enquanto a GDS 18V-400 e a DCF922B não publicam esse campo. A leitura vale para os modelos consultados.",
         "winner": 0,
         "evidenceIds": [
           "ev_makita_tw141dz",
@@ -128,7 +128,7 @@
         "mechanism": "“Torque”, campo único",
         "interface": "145 N.m",
         "application": "0-2.600 r.p.m.; 0-3.200 i.p.m.; encaixe Quadrado 1/2\"; parafuso padrão M8-M16; parafuso máquina M6-M12.",
-        "caveat": "A ficha não publica segundo campo de torque nem faixa de ajuste. A leitura vale para este SKU e não foi estendida à linha Makita.",
+        "caveat": "A ficha não publica segundo campo de torque nem faixa de ajuste. A leitura vale para este modelo e não foi estendida à linha Makita.",
         "evidenceIds": [
           "ev_makita_tw141dz"
         ]
@@ -148,7 +148,7 @@
         "mechanism": "“Torque, máx.”, “Torque de arranque, máx.” e três “Faixa de ajuste do torque, mín./máx.” por nível",
         "interface": "1.000 Nm; 1.600 Nm; 0/350, 0/700 e 0/1000 Nm",
         "application": "0-1.750 r.p.m. e 0-2.600 i.p.m. no total, com valores publicados por nível; suporte da ferramenta 1/2'' Quadrado.",
-        "caveat": "As faixas por nível pertencem a este SKU e não são campo universal da linha Bosch.",
+        "caveat": "As faixas por nível pertencem a este modelo e não são campo universal da linha Bosch.",
         "evidenceIds": [
           "ev_bosch_gds1000"
         ]
@@ -217,7 +217,7 @@
     },
     {
       "question": "Quantos Nm eu preciso?",
-      "answer": "Nas fontes consultadas, não foi encontrada uma conversão universal publicada de Nm para tamanho de fixador. Na TW141DZ, a Makita publica a capacidade de fixador como um campo próprio daquele SKU: parafuso padrão M8-M16 e parafuso máquina M6-M12. Verifique capacidade e aplicação na documentação do modelo e do fabricante.",
+      "answer": "Nas fontes consultadas, não foi encontrada uma conversão universal publicada de Nm para tamanho de fixador. Na TW141DZ, a Makita publica a capacidade de fixador como um campo próprio daquele modelo: parafuso padrão M8-M16 e parafuso máquina M6-M12. Verifique capacidade e aplicação na documentação do modelo e do fabricante.",
       "evidenceIds": [
         "ev_no_universal_fastener_conversion",
         "ev_makita_tw141dz"
@@ -249,7 +249,7 @@
       "source_name": "Makita Brasil — TW141DZ",
       "source_url": "https://www.makita.com.br/catalogoFDetalhes.asp?codParamD=75",
       "accessed_at": "2026-09-08T15:16:00Z",
-      "notes": "Fonte primária em nível de SKU; a grafia N.m foi preservada como publicada. A ficha não apresenta segundo campo de torque nem faixa de ajuste, e essa ausência não foi estendida a outros modelos."
+      "notes": "Fonte primária em nível de modelo; a grafia N.m foi preservada como publicada. A ficha não apresenta segundo campo de torque nem faixa de ajuste, e essa ausência não foi estendida a outros modelos."
     },
     {
       "id": "ev_bosch_gds400",
@@ -258,7 +258,7 @@
       "source_name": "Bosch Professional Brasil — GDS 18V-400",
       "source_url": "https://www.bosch-professional.com/br/pt/products/gds-18v-400-06019K00E0",
       "accessed_at": "2026-09-08T15:16:00Z",
-      "notes": "Fonte primária em nível de SKU; rótulos preservados como publicados. A ficha não apresenta faixa de ajuste de torque."
+      "notes": "Fonte primária em nível de modelo; rótulos preservados como publicados. A ficha não apresenta faixa de ajuste de torque."
     },
     {
       "id": "ev_bosch_gds1000",
@@ -267,7 +267,7 @@
       "source_name": "Bosch Professional Brasil — GDS 18V-1000",
       "source_url": "https://www.bosch-professional.com/br/pt/products/gds-18v-1000-06019J8300",
       "accessed_at": "2026-09-08T15:16:00Z",
-      "notes": "Fonte primária em nível de SKU; as faixas de ajuste por nível pertencem a este modelo e não foram generalizadas para a linha."
+      "notes": "Fonte primária em nível de modelo; as faixas de ajuste por nível pertencem a este modelo e não foram generalizadas para a linha."
     },
     {
       "id": "ev_dewalt_dcf922b",
@@ -276,12 +276,12 @@
       "source_name": "DeWalt Brasil — DCF922B",
       "source_url": "https://www.dewalt.com.br/pt-br/produto/dcf922b/chave-de-impacto-de-12-13mm-20v-max-atomic-brushless-sem-bateria-e-carregador",
       "accessed_at": "2026-09-08T15:16:00Z",
-      "notes": "Fonte primária em nível de SKU. Registramos que a página publica dois pares de valores em unidades diferentes; nenhuma conversão entre unidades foi realizada como afirmação editorial."
+      "notes": "Fonte primária em nível de modelo. Registramos que a página publica dois pares de valores em unidades diferentes; nenhuma conversão entre unidades foi realizada como afirmação editorial."
     },
     {
       "id": "ev_labels_and_fields",
       "evidence_type": "DERIVED",
-      "claim": "Nas quatro fichas consultadas, torque é a grandeza tratada, mas a forma de declará-lo varia: a quantidade de campos vai de um a cinco e os rótulos diferem entre fabricantes — “Torque” sozinho na Makita, “Torque, máx.” e “Torque de arranque, máx.” na Bosch, “Torque de aperto” e “Torque de reversão” na DeWalt. As fontes consultadas não estabelecem que campos com rótulos diferentes entre fabricantes usem a mesma condição ou protocolo.",
+      "claim": "Nas quatro fichas consultadas, torque é a grandeza tratada, mas a forma de declará-lo varia: a quantidade de campos vai de um a cinco e os rótulos diferem entre fabricantes: “Torque” sozinho na Makita, “Torque, máx.” e “Torque de arranque, máx.” na Bosch, “Torque de aperto” e “Torque de reversão” na DeWalt. As fontes consultadas não estabelecem que campos com rótulos diferentes entre fabricantes usem a mesma condição ou protocolo.",
       "source_name": "Leitura comparada das fichas oficiais Makita TW141DZ, Bosch GDS 18V-400, Bosch GDS 18V-1000 e DeWalt DCF922B",
       "accessed_at": "2026-09-08T15:16:00Z",
       "derived_from": [
@@ -308,7 +308,7 @@
     {
       "id": "ev_no_universal_fastener_conversion",
       "evidence_type": "DERIVED",
-      "claim": "Nas fontes consultadas, não foi encontrada uma conversão universal publicada de Nm para tamanho de fixador. Na TW141DZ, a Makita publica a capacidade de fixador como um campo próprio daquele SKU, com parafuso padrão M8-M16 e parafuso máquina M6-M12.",
+      "claim": "Nas fontes consultadas, não foi encontrada uma conversão universal publicada de Nm para tamanho de fixador. Na TW141DZ, a Makita publica a capacidade de fixador como um campo próprio daquele modelo, com parafuso padrão M8-M16 e parafuso máquina M6-M12.",
       "source_name": "Leitura comparada das quatro fichas oficiais consultadas quanto à presença de conversão publicada entre torque e fixador",
       "accessed_at": "2026-09-08T15:16:00Z",
       "derived_from": [
