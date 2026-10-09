@@ -1,0 +1,224 @@
+{
+  "faq": [],
+  "hero": {
+    "heading": "Bosch GSB 185-LI vale a pena?",
+    "methodNote": "Análise baseada exclusivamente em especificações oficiais da Bosch para a GSB 185-LI. Não há dados de teste prático, autonomia real ou avaliações de terceiros.",
+    "subheading": "Torque máximo de 50 Nm (ficha técnica), motor brushless e design compacto para trabalhos em espaços apertados."
+  },
+  "slug": "bosch-185-li-gsb",
+  "type": "model_review",
+  "media": {
+    "items": [
+      {
+        "src": "/images/cordless-drill-driver-editorial-ai-1600.webp",
+        "alt": "Furadeira/parafusadeira de impacto a bateria, ilustração editorial genérica",
+        "width": 1600,
+        "height": 807,
+        "aspectRatio": 1.98
+      }
+    ],
+    "captionLabel": "Imagem editorial ilustrativa.",
+    "caption": "Imagem editorial ilustrativa de uma furadeira/parafusadeira de impacto a bateria; não representa necessariamente o modelo Bosch GSB 185-LI analisado."
+  },
+  "specs": [
+    {
+      "label": "Tipo",
+      "value": "Furadeira/parafusadeira de impacto a bateria",
+      "evidenceIds": [
+        "ev_cr_1"
+      ]
+    },
+    {
+      "label": "Voltagem",
+      "value": "18,0 V",
+      "evidenceIds": [
+        "ev_cr_1"
+      ]
+    },
+    {
+      "label": "Torque máximo",
+      "value": "50 Nm",
+      "evidenceIds": [
+        "ev_cr_1"
+      ]
+    },
+    {
+      "label": "Configurações de torque",
+      "value": "20+2",
+      "evidenceIds": [
+        "ev_cr_1"
+      ]
+    },
+    {
+      "label": "Peso sem bateria",
+      "value": "0,89 kg",
+      "evidenceIds": [
+        "ev_cr_1"
+      ]
+    },
+    {
+      "label": "Tipo de bateria",
+      "value": "Íons de lítio",
+      "evidenceIds": [
+        "ev_cr_1"
+      ]
+    },
+    {
+      "label": "Amplitude de aperto",
+      "value": "1,5 a 13 mm",
+      "evidenceIds": [
+        "ev_cr_1"
+      ]
+    },
+    {
+      "label": "Número máximo de impactos",
+      "value": "27.000 i.p.m.",
+      "evidenceIds": [
+        "ev_cr_1"
+      ]
+    },
+    {
+      "label": "Número de rotações em vazio",
+      "value": "0–500 / 0–1.900 r.p.m.",
+      "evidenceIds": [
+        "ev_cr_1"
+      ]
+    },
+    {
+      "label": "Kit (variante)",
+      "value": "Opções com bateria GBA 18V 2.0Ah, carregador GAL 18V-20 Professional, mala de transporte e conjunto de 23 pontas",
+      "evidenceIds": [
+        "ev_cr_3"
+      ]
+    }
+  ],
+  "product": {
+    "name": "Bosch GSB 185-LI",
+    "brand": "Bosch"
+  },
+  "version": "1.0",
+  "metadata": {
+    "title": "Bosch GSB 185-LI: análise técnica e para quem faz sentido",
+    "updatedAt": "2026-10-08T23:56:26.815Z",
+    "breadcrumbs": [
+      {
+        "url": "/",
+        "name": "Início"
+      },
+      {
+        "name": "Bosch GSB 185-LI: análise técnica e para quem faz sentido"
+      }
+    ],
+    "publishedAt": "2026-10-08T23:56:26.815Z",
+    "metaDescription": "Veja o que a Bosch GSB 185-LI realmente oferece: torque máximo de 50 Nm (ficha técnica), motor brushless, peso sem bateria de 0,89 kg e dimensões compactas. Entenda para quem esse modelo faz sentido e os limites do que a ficha permite concluir."
+  },
+  "prosCons": {
+    "cons": [
+      {
+        "text": "A ficha técnica não permite concluir sobre durabilidade real, autonomia, desempenho em campo ou custo-benefício.",
+        "evidenceIds": [
+          "ev_cr_4"
+        ]
+      }
+    ],
+    "pros": [
+      {
+        "text": "Torque máximo de 50 Nm segundo ficha técnica, com motor brushless e design compacto.",
+        "evidenceIds": [
+          "ev_cr_1"
+        ]
+      },
+      {
+        "text": "Peso sem bateria de 0,89 kg, facilitando o uso em mobilidade.",
+        "evidenceIds": [
+          "ev_cr_1"
+        ]
+      }
+    ]
+  },
+  "evidences": [
+    {
+      "id": "ev_cr_1",
+      "claim": "A Bosch GSB 185-LI é uma furadeira/parafusadeira de impacto a bateria, com voltagem de 18,0 V, torque máximo de 50 Nm, configurações de torque 20+2, peso sem bateria de 0,89 kg, tipo de bateria íons de lítio, amplitude de aperto de 1,5 a 13 mm, número máximo de impactos de 27.000 i.p.m., e número de rotações em vazio de 0–500 / 0–1.900 r.p.m.",
+      "notes": "Os valores citados são específicos para a variante GSB 185-LI conforme ficha técnica oficial.",
+      "source_url": "https://www.bosch-professional.com/br/pt/products/gsb-185-li-06019K31E3",
+      "accessed_at": "2026-10-08T23:55:16.929Z",
+      "source_name": "www.bosch-professional.com",
+      "evidence_type": "SPEC"
+    },
+    {
+      "id": "ev_cr_2",
+      "claim": "A Bosch GSB 185-LI é uma furadeira/parafusadeira de impacto compacta, parte da linha profissional da Bosch, equipada com motor brushless, torque máximo de até 65 Nm, comprimento de 17,7 cm, indicada para trabalhos em espaços apertados e projetos que exigem mobilidade.",
+      "notes": "O torque máximo de 65 Nm e comprimento de 17,7 cm são valores declarados na fonte oficial, mas podem variar conforme variante ou condição de medição.",
+      "source_url": "https://www.bosch-professional.com/br/pt/blog/gsb-185-li-a-prova/",
+      "accessed_at": "2026-10-08T23:55:16.929Z",
+      "source_name": "www.bosch-professional.com",
+      "evidence_type": "SPEC"
+    },
+    {
+      "id": "ev_cr_3",
+      "claim": "A Bosch GSB 185-LI possui variantes de kit, incluindo opções com bateria GBA 18V 2.0Ah, carregador GAL 18V-20 Professional, mala de transporte e conjunto de 23 pontas de perfuração e parafusamento com suporte.",
+      "notes": "A variante citada refere-se ao código de pedido 0 601 9K3 1E8.",
+      "source_url": "https://www.bosch-professional.com/br/pt/products/gsb-185-li-06019K31E3",
+      "accessed_at": "2026-10-08T23:55:16.929Z",
+      "source_name": "www.bosch-professional.com",
+      "evidence_type": "SPEC"
+    },
+    {
+      "id": "ev_cr_4",
+      "claim": "Os valores publicados na ficha técnica oficial da Bosch GSB 185-LI não permitem concluir sobre durabilidade real, autonomia real, desempenho comparativo, custo-benefício ou teste prático, pois não há dados de uso em campo, avaliações de terceiros ou condições de teste detalhadas.",
+      "notes": "A ficha técnica oficial apresenta apenas especificações declaradas pelo fabricante, sem evidência de teste prático, durabilidade, autonomia real ou comparação com outros modelos.",
+      "accessed_at": "2026-10-08T23:55:16.929Z",
+      "source_name": "derivado de: www.bosch-professional.com",
+      "derived_from": [
+        "ev_cr_1",
+        "ev_cr_2"
+      ],
+      "evidence_type": "DERIVED"
+    }
+  ],
+  "quickFacts": [
+    {
+      "label": "Voltagem",
+      "value": "18,0 V",
+      "evidenceIds": [
+        "ev_cr_1"
+      ]
+    },
+    {
+      "label": "Torque máximo",
+      "value": "50 Nm",
+      "evidenceIds": [
+        "ev_cr_1"
+      ]
+    },
+    {
+      "label": "Configurações de torque",
+      "value": "20+2",
+      "evidenceIds": [
+        "ev_cr_1"
+      ]
+    },
+    {
+      "label": "Peso sem bateria",
+      "value": "0,89 kg",
+      "evidenceIds": [
+        "ev_cr_1"
+      ]
+    },
+    {
+      "label": "Amplitude de aperto",
+      "value": "1,5 a 13 mm",
+      "evidenceIds": [
+        "ev_cr_1"
+      ]
+    }
+  ],
+  "quickAnswer": {
+    "text": "A Bosch GSB 185-LI faz sentido para quem busca uma furadeira/parafusadeira de impacto compacta, com torque máximo de 50 Nm (ficha técnica), motor brushless e peso sem bateria de 0,89 kg, indicada para trabalhos em espaços apertados e mobilidade. Porém, a ficha técnica não permite concluir sobre durabilidade, autonomia real ou desempenho em campo.",
+    "evidenceIds": [
+      "ev_cr_1",
+      "ev_cr_4"
+    ]
+  }
+}

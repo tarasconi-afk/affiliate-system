@@ -37,6 +37,16 @@ Assets criados sob direção editorial da Ferramenta Clara. Não são obras de t
 | Dimensões | 1536 × 1024 (original PNG preservado na mesma dimensão; sem upscale) |
 | Uso | Homepage e guia `/nm-chave-de-impacto/`, exclusivamente como ilustração genérica de uma chave de impacto a bateria. Não demonstra especificações, torque, desempenho ou condições de ensaio. |
 
+| Campo | Valor |
+|---|---|
+| Imagem publicada | `public/images/cordless-drill-driver-editorial-ai-1600.webp` |
+| Original preservado | `assets-source/images/cordless-drill-driver-editorial-ai.png` |
+| Origem | Gerada por ChatGPT/OpenAI sob direção editorial da Ferramenta Clara |
+| Data | 2026-10-08 |
+| Natureza | Ilustração gerada por IA; não é fotografia nem representação de SKU real |
+| Dimensões | Original 1766 × 891; publicada redimensionada para 1600 × 807 (sem marca, sem logotipo real legível) |
+| Uso | Análise de modelo `/bosch-185-li-gsb/` (e reserva editorial para futuras páginas de furadeira/parafusadeira a bateria sem imagem de marca própria disponível), exclusivamente como ilustração genérica de uma furadeira/parafusadeira de impacto a bateria. Não representa nenhum SKU específico, não demonstra especificações, torque, desempenho ou condições de ensaio. |
+
 
 ## Tratamento
 
