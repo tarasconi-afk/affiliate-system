@@ -179,7 +179,7 @@ const modelReviewSchema = z.object({
     subheading: z.string(),
     methodNote: z.string().optional()
   }),
-  media: editorialMediaSchema,
+  media: editorialMediaSchema.optional(),
   quickAnswer: evidencedTextSchema,
   quickFacts: z.array(quickFactSchema).min(1),
   specs: z.array(specItemSchema),
@@ -219,7 +219,7 @@ const brandCompareSchema = z.object({
     subheading: z.string(),
     methodNote: z.string().optional()
   }),
-  media: editorialMediaSchema,
+  media: editorialMediaSchema.optional(),
   brands: z.tuple([brandInfoSchema, brandInfoSchema]),
   comparison: z.object({
     dimensions: z.array(comparisonDimensionSchema)
@@ -300,7 +300,7 @@ const decisionCompareSchema = z.object({
     subheading: z.string(),
     methodNote: z.string().optional()
   }),
-  media: editorialMediaSchema,
+  media: editorialMediaSchema.optional(),
   options: z.tuple([decisionOptionSchema, decisionOptionSchema]),
   comparison: z.object({
     dimensions: z.array(decisionDimensionSchema)

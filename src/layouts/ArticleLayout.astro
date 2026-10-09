@@ -15,7 +15,7 @@ import { SEASONAL_EVENTS, getDisplayWindow } from '../lib/seasonal_events';
 interface Props { pageSpec: PageSpec; }
 const { pageSpec } = Astro.props;
 const updatedLabel = new Date(pageSpec.metadata.updatedAt).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
-const socialImage = pageSpec.media.items[0] ? new URL(pageSpec.media.items[0].src, SITE.url).toString() : undefined;
+const socialImage = pageSpec.media?.items?.[0] ? new URL(pageSpec.media.items[0].src, SITE.url).toString() : undefined;
 const contextualLinksAt = (placement: 'after_specs' | 'after_comparison' | 'after_verdict') =>
   pageSpec.contextualLinks?.filter(link => link.placement === placement) ?? [];
 // CTA sazonal (ex.: Mega Oferta Amazon Prime): separado do Product Match e do
@@ -98,15 +98,17 @@ const showAnyMonetization = showProductCard || showSeasonalCard || showPrimeProm
         </div>
       </div>
 
-      <figure class:list={['article-figure', { 'media-grid': pageSpec.media.items.length > 1 }] }>
-        {pageSpec.media.items.map(item => (
-          <div class="media-item">
-            <img src={item.src} alt={item.alt} width={item.width} height={item.height} loading="eager" style={`aspect-ratio: ${item.aspectRatio}`} />
-            {item.label && <b aria-hidden="true">{item.label}</b>}
-          </div>
-        ))}
-        {(pageSpec.media.captionLabel || pageSpec.media.caption) && <figcaption>{pageSpec.media.captionLabel && <strong>{pageSpec.media.captionLabel}</strong>} {pageSpec.media.caption}</figcaption>}
-      </figure>
+      {pageSpec.media && pageSpec.media.items.length > 0 && (
+        <figure class:list={['article-figure', { 'media-grid': pageSpec.media.items.length > 1 }] }>
+          {pageSpec.media.items.map(item => (
+            <div class="media-item">
+              <img src={item.src} alt={item.alt} width={item.width} height={item.height} loading="eager" style={`aspect-ratio: ${item.aspectRatio}`} />
+              {item.label && <b aria-hidden="true">{item.label}</b>}
+            </div>
+          ))}
+          {(pageSpec.media.captionLabel || pageSpec.media.caption) && <figcaption>{pageSpec.media.captionLabel && <strong>{pageSpec.media.captionLabel}</strong>} {pageSpec.media.caption}</figcaption>}
+        </figure>
+      )}
     </header>
 
     <div class="article-body">

@@ -199,7 +199,7 @@ export interface ModelReviewPageSpec {
     subheading: string;
     methodNote?: string;
   };
-  media: EditorialMedia;
+  media?: EditorialMedia;
   quickAnswer: EvidencedText;
   quickFacts: QuickFact[];
   specs: SpecItem[];
@@ -246,7 +246,7 @@ export interface BrandComparePageSpec {
     subheading: string;
     methodNote?: string;
   };
-  media: EditorialMedia;
+  media?: EditorialMedia;
   brands: [BrandInfo, BrandInfo];
   comparison: {
     dimensions: ComparisonDimension[];
@@ -317,7 +317,7 @@ export interface DecisionComparePageSpec {
     subheading: string;
     methodNote?: string;
   };
-  media: EditorialMedia;
+  media?: EditorialMedia;
   options: [DecisionOption, DecisionOption];
   comparison: {
     dimensions: DecisionDimension[];
