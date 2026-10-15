@@ -1,0 +1,356 @@
+{
+  "faq": [],
+  "hero": {
+    "heading": "Makita DHP482Z: parafusadeira/furadeira de impacto 18V LXT (ferramenta avulsa, sem bateria)",
+    "methodNote": "A análise considera apenas as especificações declaradas na ficha oficial do fabricante para o modelo DHP482Z, ferramenta avulsa, sem bateria.",
+    "subheading": "Características técnicas, capacidades e limites do que a ficha oficial sustenta"
+  },
+  "slug": "makita-dhp482z-ferramenta-avulsa-bateria-parafusadeira-furadeira-impacto-v",
+  "type": "model_review",
+  "media": {
+    "items": [
+      {
+        "src": "/images/cordless-drill-driver-editorial-ai-1600.webp",
+        "width": 1600,
+        "height": 807,
+        "aspectRatio": 1.98,
+        "alt": "Furadeira/parafusadeira sem fio genérica usada como imagem editorial ilustrativa; não representa necessariamente o modelo Makita DHP482Z"
+      }
+    ],
+    "caption": "Imagem editorial ilustrativa gerada por IA de uma furadeira/parafusadeira sem fio genérica; não representa necessariamente o modelo Makita DHP482Z nem demonstra suas especificações ou desempenho.",
+    "captionLabel": "Imagem editorial ilustrativa."
+  },
+  "specs": [
+    {
+      "label": "Tipo",
+      "value": "Parafusadeira/furadeira de impacto 18V LXT, ferramenta avulsa, sem bateria",
+      "evidenceIds": [
+        "ev_cr_1"
+      ]
+    },
+    {
+      "label": "Motor",
+      "value": "4 pólos",
+      "evidenceIds": [
+        "ev_cr_2"
+      ]
+    },
+    {
+      "label": "Níveis de torque",
+      "value": "21",
+      "evidenceIds": [
+        "ev_cr_2"
+      ]
+    },
+    {
+      "label": "Velocidades mecânicas",
+      "value": "2",
+      "evidenceIds": [
+        "ev_cr_2"
+      ]
+    },
+    {
+      "label": "Velocidade variável",
+      "value": "Sim",
+      "evidenceIds": [
+        "ev_cr_2"
+      ]
+    },
+    {
+      "label": "Rotação reversível",
+      "value": "Sim",
+      "evidenceIds": [
+        "ev_cr_2"
+      ]
+    },
+    {
+      "label": "Freio instantâneo",
+      "value": "Sim",
+      "evidenceIds": [
+        "ev_cr_2"
+      ]
+    },
+    {
+      "label": "Mandril de aperto rápido",
+      "value": "Sim",
+      "evidenceIds": [
+        "ev_cr_2"
+      ]
+    },
+    {
+      "label": "Iluminação de trabalho",
+      "value": "Sim",
+      "evidenceIds": [
+        "ev_cr_2"
+      ]
+    },
+    {
+      "label": "Resistente à água e poeira (XPT)",
+      "value": "Sim",
+      "evidenceIds": [
+        "ev_cr_2"
+      ]
+    },
+    {
+      "label": "Torque máximo",
+      "value": "64 N.m",
+      "evidenceIds": [
+        "ev_cr_3"
+      ]
+    },
+    {
+      "label": "Torque junta rígida",
+      "value": "62 N.m",
+      "evidenceIds": [
+        "ev_cr_3"
+      ]
+    },
+    {
+      "label": "Torque junta flexível",
+      "value": "36 N.m",
+      "evidenceIds": [
+        "ev_cr_3"
+      ]
+    },
+    {
+      "label": "Rotações por minuto (baixa)",
+      "value": "0-600",
+      "evidenceIds": [
+        "ev_cr_3"
+      ]
+    },
+    {
+      "label": "Rotações por minuto (alta)",
+      "value": "0-1.900",
+      "evidenceIds": [
+        "ev_cr_3"
+      ]
+    },
+    {
+      "label": "Impactos por minuto (baixa)",
+      "value": "0-900",
+      "evidenceIds": [
+        "ev_cr_3"
+      ]
+    },
+    {
+      "label": "Impactos por minuto (alta)",
+      "value": "0-28.500",
+      "evidenceIds": [
+        "ev_cr_3"
+      ]
+    },
+    {
+      "label": "Capacidade de perfuração (concreto)",
+      "value": "13mm",
+      "evidenceIds": [
+        "ev_cr_3"
+      ]
+    },
+    {
+      "label": "Capacidade de perfuração (madeira)",
+      "value": "38mm",
+      "evidenceIds": [
+        "ev_cr_3"
+      ]
+    },
+    {
+      "label": "Capacidade de perfuração (metal)",
+      "value": "13mm",
+      "evidenceIds": [
+        "ev_cr_3"
+      ]
+    },
+    {
+      "label": "Dimensões",
+      "value": "198 x 79 x 187mm",
+      "evidenceIds": [
+        "ev_cr_3"
+      ]
+    },
+    {
+      "label": "Peso (sem bateria)",
+      "value": "1,16kg",
+      "evidenceIds": [
+        "ev_cr_3"
+      ]
+    },
+    {
+      "label": "Bateria",
+      "value": "18V LXT (não acompanha bateria, carregador e maleta)",
+      "evidenceIds": [
+        "ev_cr_1",
+        "ev_cr_4"
+      ]
+    }
+  ],
+  "product": {
+    "name": "Makita DHP482Z",
+    "brand": "Makita"
+  },
+  "version": "1.0",
+  "metadata": {
+    "title": "Makita DHP482Z (ferramenta avulsa, sem bateria): parafusadeira/furadeira de impacto 18V LXT – análise técnica",
+    "updatedAt": "2026-10-15T00:39:38.417Z",
+    "breadcrumbs": [
+      {
+        "url": "/",
+        "name": "Início"
+      },
+      {
+        "name": "Makita DHP482Z (ferramenta avulsa, sem bateria): parafusadeira/furadeira de impacto 18V LXT – análise técnica"
+      }
+    ],
+    "publishedAt": "2026-10-15T00:39:38.417Z",
+    "metaDescription": "Ficha técnica da Makita DHP482Z: parafusadeira/furadeira de impacto 18V LXT, ferramenta avulsa, sem bateria. Veja características, capacidades, limitações e o que a ficha oficial permite concluir."
+  },
+  "prosCons": {
+    "cons": [
+      {
+        "text": "A ficha técnica oficial não permite concluir sobre durabilidade real, autonomia real, desempenho comparativo, custo-benefício ou teste prático.",
+        "evidenceIds": [
+          "ev_cr_5"
+        ]
+      },
+      {
+        "text": "Não acompanha bateria, carregador e maleta.",
+        "evidenceIds": [
+          "ev_cr_4"
+        ]
+      }
+    ],
+    "pros": [
+      {
+        "text": "Possui motor 4 pólos, 21 níveis de torque, 2 velocidades mecânicas, velocidade variável, rotação reversível, freio instantâneo, mandril de aperto rápido, iluminação de trabalho e resistência à água e poeira com tecnologia XPT.",
+        "evidenceIds": [
+          "ev_cr_2"
+        ]
+      },
+      {
+        "text": "Torque máximo declarado de 64 N.m, com capacidades de perfuração de até 38mm em madeira, 13mm em concreto e metal.",
+        "evidenceIds": [
+          "ev_cr_3"
+        ]
+      }
+    ]
+  },
+  "evidences": [
+    {
+      "id": "ev_cr_1",
+      "claim": "A Makita DHP482Z é uma parafusadeira/furadeira de impacto 18V LXT, ferramenta avulsa, sem bateria, conforme ficha oficial do fabricante.",
+      "notes": "A afirmação está limitada ao modelo DHP482Z, ferramenta avulsa, sem bateria, conforme descrito na ficha oficial.",
+      "source_url": "https://www.makita.com.br/catalogoFDetalhes.asp?codParamD=264",
+      "accessed_at": "2026-10-15T00:38:20.566Z",
+      "source_name": "www.makita.com.br",
+      "evidence_type": "SPEC"
+    },
+    {
+      "id": "ev_cr_2",
+      "claim": "A ficha oficial do fabricante lista as seguintes especificações técnicas para a Makita DHP482Z: Motor 4 pólos, 21 níveis de torque, 2 velocidades mecânicas, velocidade variável, rotação reversível, freio instantâneo, mandril de aperto rápido, iluminação de trabalho, resistente à água e poeira com tecnologia XPT.",
+      "notes": "Apenas as características listadas literalmente na ficha oficial estão incluídas.",
+      "source_url": "https://www.makita.com.br/catalogoFDetalhes.asp?codParamD=264",
+      "accessed_at": "2026-10-15T00:38:20.566Z",
+      "source_name": "www.makita.com.br",
+      "evidence_type": "SPEC"
+    },
+    {
+      "id": "ev_cr_3",
+      "claim": "A ficha oficial do fabricante informa as seguintes grandezas para a Makita DHP482Z: rotações por minuto (baixa: 0-600, alta: 0-1.900), impactos por minuto (baixa: 0-900, alta: 0-28.500), torque máximo 64 N.m, junta rígida 62 N.m, junta flexível 36 N.m, capacidades (concreto: 13mm, madeira: 38mm, metal: 13mm), dimensões 198 x 79 x 187mm, peso 1,16kg (sem bateria), bateria 18V.",
+      "notes": "Valores e unidades são transcritos exatamente como aparecem na ficha oficial.",
+      "source_url": "https://www.makita.com.br/catalogoFDetalhes.asp?codParamD=264",
+      "accessed_at": "2026-10-15T00:38:20.566Z",
+      "source_name": "www.makita.com.br",
+      "evidence_type": "SPEC"
+    },
+    {
+      "id": "ev_cr_4",
+      "claim": "A ficha oficial do fabricante declara que a Makita DHP482Z não acompanha bateria, carregador e maleta.",
+      "notes": "Afirmação limitada ao conteúdo literal da ficha oficial.",
+      "source_url": "https://www.makita.com.br/catalogoFDetalhes.asp?codParamD=264",
+      "accessed_at": "2026-10-15T00:38:20.566Z",
+      "source_name": "www.makita.com.br",
+      "evidence_type": "SPEC"
+    },
+    {
+      "id": "ev_cr_5",
+      "claim": "A ficha técnica oficial da Makita DHP482Z não permite concluir sobre durabilidade real, autonomia real, desempenho comparativo, custo-benefício ou teste prático.",
+      "notes": "A ficha apresenta apenas especificações técnicas declaradas pelo fabricante, sem dados de teste prático, durabilidade, autonomia real ou comparativos.",
+      "accessed_at": "2026-10-15T00:38:20.566Z",
+      "source_name": "derivado de: www.makita.com.br",
+      "derived_from": [
+        "ev_cr_2",
+        "ev_cr_3"
+      ],
+      "evidence_type": "DERIVED"
+    }
+  ],
+  "quickFacts": [
+    {
+      "label": "Motor",
+      "value": "4 pólos",
+      "evidenceIds": [
+        "ev_cr_2"
+      ]
+    },
+    {
+      "label": "Níveis de torque",
+      "value": "21",
+      "evidenceIds": [
+        "ev_cr_2"
+      ]
+    },
+    {
+      "label": "Velocidades mecânicas",
+      "value": "2",
+      "evidenceIds": [
+        "ev_cr_2"
+      ]
+    },
+    {
+      "label": "Torque máximo",
+      "value": "64 N.m",
+      "evidenceIds": [
+        "ev_cr_3"
+      ]
+    },
+    {
+      "label": "Torque junta rígida",
+      "value": "62 N.m",
+      "evidenceIds": [
+        "ev_cr_3"
+      ]
+    }
+  ],
+  "quickAnswer": {
+    "text": "A Makita DHP482Z é uma parafusadeira/furadeira de impacto 18V LXT, ferramenta avulsa, sem bateria, conforme ficha oficial. A ficha técnica apresenta motor 4 pólos, 21 níveis de torque, 2 velocidades mecânicas, velocidade variável, rotação reversível, freio instantâneo, mandril de aperto rápido, iluminação de trabalho e resistência à água e poeira com tecnologia XPT. Os valores declarados incluem torque máximo de 64 N.m, rotações por minuto (baixa: 0-600, alta: 0-1.900), impactos por minuto (baixa: 0-900, alta: 0-28.500), capacidades de perfuração (concreto: 13mm, madeira: 38mm, metal: 13mm), dimensões 198 x 79 x 187mm e peso 1,16kg (sem bateria). A ficha não permite concluir sobre durabilidade real, autonomia, desempenho prático ou custo-benefício.",
+    "evidenceIds": [
+      "ev_cr_1",
+      "ev_cr_2",
+      "ev_cr_3",
+      "ev_cr_4",
+      "ev_cr_5"
+    ]
+  },
+  "monetization": {
+    "offers": [
+      {
+        "label": "Makita",
+        "match": {
+          "asin": "B0F258DSHY",
+          "market": "BR",
+          "provider": "amazon",
+          "matchType": "CATEGORY_REPRESENTATIVE",
+          "matchedAt": "2026-10-05T19:30:00.000Z",
+          "matchEvidence": "ASIN verificado via busca em 2026-10-05: Makita DHP482Y002, 18V LXT, 1 bateria 1.5Ah + carregador + maleta. Configuracao DIFERENTE do kit Bosch -- tratamento balanceado por marca, nao por especificacao identica.",
+          "trackingSource": "fc_amazon_mop_sprint_v1"
+        },
+        "ctaText": "Ver kit Makita DHP482 18V (1 bateria) na Amazon",
+        "imageUrl": "/images/makita-lxt-18v-cc-1600.webp",
+        "disclaimer": "Kit real: 18V, 1 bateria, carregador e maleta -- configuracao diferente do kit Bosch (2 baterias); nao sao kits equivalentes, apenas exemplos reais de cada marca. Preco e estoque variam na Amazon.",
+        "contextLine": "Kit Makita DHP482 18V, 1 bateria",
+        "affiliateUrl": "https://www.amazon.com.br/dp/B0F258DSHY?tag=ferramentaclara-20",
+        "imageSourceType": "EDITORIAL_LOCAL"
+      }
+    ]
+  }
+}
