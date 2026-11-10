@@ -5,10 +5,11 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro preview --host 0.0.0.0 --port 3000",
-    "build": "astro check && astro build",
+    "build": "node scripts/publicar-release.mjs",
     "qa:images": "node scripts/check-home-image-diversity.mjs",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "build:astro-v1": "astro check && astro build"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",

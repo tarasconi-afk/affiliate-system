@@ -1,0 +1,768 @@
+{
+  "commit": "bc929d410d36d2c1b864b39626d80202530b4bc9",
+  "gerado_em": "2026-11-10T14:31:20.973Z",
+  "node": "22.23.2",
+  "ambiente": {
+    "SITE_INDEXABLE": "true",
+    "SITE_OFERTAS": "publicar",
+    "FC_AFFILIATE_TAG": "definida"
+  },
+  "destino": "conteúdo do ZIP (= site/dist) na RAIZ pública do ferramentaclara.com.br, substituindo o dist/ do V1",
+  "passos": [
+    {
+      "estado": "PASS",
+      "msg": "SITE_INDEXABLE=true (build público; sem isso o robots bloqueia o site inteiro)"
+    },
+    {
+      "estado": "PASS",
+      "msg": "SITE_SHOW_DRAFTS ausente (é a prévia)"
+    },
+    {
+      "estado": "PASS",
+      "msg": "SITE_OFERTAS ausente, \"desligado\" ou \"publicar\" (demonstração é só da prévia): publicar"
+    },
+    {
+      "estado": "PASS",
+      "msg": "FC_AFFILIATE_TAG com tag real (confirmada pelo dono) para SITE_OFERTAS=publicar"
+    },
+    {
+      "estado": "PASS",
+      "msg": "sem FC_FEEDBACK_DIR/FC_ROOT (o release usa os vereditos reais do commit)"
+    },
+    {
+      "estado": "PASS",
+      "msg": "Node 22.23.2 >= 22.22.0"
+    },
+    {
+      "estado": "PASS",
+      "msg": "árvore limpa (o artefato tem de ser exatamente um commit)"
+    },
+    {
+      "estado": "PASS",
+      "msg": "repositório do V1 para a paridade (/Users/mauricio.tarasconi/Downloads/Ferramentas/affiliate-system)"
+    },
+    {
+      "estado": "PASS",
+      "msg": "checkout limpo de bc929d4 + npm ci"
+    },
+    {
+      "estado": "PASS",
+      "msg": "npm run build (typecheck + validate + site)"
+    },
+    {
+      "estado": "PASS",
+      "msg": "saída em site/dist (é ESTE diretório que vai para a raiz pública)"
+    },
+    {
+      "estado": "PASS",
+      "msg": "código de /Users/mauricio.tarasconi/Downloads/Ferramentas/ferramenta-clara-motor (8d5285d) idêntico ao do artefato, fora os dados"
+    },
+    {
+      "estado": "PASS",
+      "msg": "testes no código (793 passed | 1 skipped (794))"
+    },
+    {
+      "estado": "PASS",
+      "msg": "qa:acervo --release (PASS 14 · FAIL 0 · SKIPPED 0 · NOT VERIFIED 0)"
+    },
+    {
+      "estado": "PASS",
+      "msg": "qa:previa no artefato (27 páginas · 0 erro(s))"
+    },
+    {
+      "estado": "PASS",
+      "msg": "qa:candidato no artefato (PASS 8 · FAIL 0)"
+    },
+    {
+      "estado": "PASS",
+      "msg": "robots.txt libera e aponta o sitemap do domínio"
+    },
+    {
+      "estado": "PASS",
+      "msg": "nada de prévia nem demonstração no artefato"
+    },
+    {
+      "estado": "PASS",
+      "msg": "rotas internas ausentes"
+    },
+    {
+      "estado": "PASS",
+      "msg": "institucionais publicadas (sobre, contato, privacidade, como trabalhamos)"
+    },
+    {
+      "estado": "PASS",
+      "msg": "nenhum arquivo sensível no artefato"
+    }
+  ],
+  "scripts_executaveis_no_html": 18,
+  "donos_das_urls": {
+    "bateria-2ah-ou-4ah-parafusadeira": "nativa (approve)",
+    "bateria-parafusadeira-serve-em-outra-marca": "nativa (approve)",
+    "bosch-185-li-gsb": "nativa (approve)",
+    "bosch-ou-makita-parafusadeira": "nativa (approve)",
+    "furadeira-com-fio-ou-a-bateria": "nativa (approve)",
+    "furadeira-de-impacto-ou-martelete": "acervo V1",
+    "furadeira-ou-parafusadeira": "nativa (approve)",
+    "makita-dhp482z-ferramenta-avulsa-bateria-parafusadeira-furadeira-impacto-v": "nativa (approve)",
+    "mandril-10mm-ou-13mm": "nativa (approve)",
+    "martelete-combinado-rompedor-demolidor": "nativa (approve)",
+    "nm-chave-de-impacto": "nativa (approve)",
+    "parafusadeira-12v-ou-18v": "nativa (approve)",
+    "parafusadeira-brushless-ou-com-escovas": "nativa (approve)",
+    "parafusadeira-com-ou-sem-impacto": "acervo V1",
+    "parafusadeira-dewalt-dcd777-vale-a-pena": "nativa (approve)",
+    "torque-nm-parafusadeira": "nativa (approve)"
+  },
+  "ofertas_publicadas": [
+    "/parafusadeira-dewalt-dcd777-vale-a-pena/ B099NZQHRB"
+  ],
+  "sitemap_urls": 22,
+  "artefato": {
+    "arquivo": "ferramenta-clara-v2-bc929d4.zip",
+    "sha256": "d4625e83fb66afe88ee427c97776a15c7209a8f06645214a71a8fe6f67ff50ed",
+    "arquivos": 128
+  },
+  "arquivos": [
+    {
+      "caminho": "_astro/BaseLayout.w_t_qFT4.css",
+      "sha256": "f3c02cc69a509d585bb214b03cf3bdc48bbbb7e8aea1dfe86f0c82b270273ee0",
+      "bytes": 6379
+    },
+    {
+      "caminho": "_astro/GuideCards.COhoxKQM.css",
+      "sha256": "b7d0b3668ab7b8fc9b8922f36b1c10ac1eae1c4ccef8fca2bb34566621aeb690",
+      "bytes": 7898
+    },
+    {
+      "caminho": "_astro/_..Cv6KpRtK.css",
+      "sha256": "90b311eba71ffd67554b5529c84bf8018c89b27b74b6f8e2c9ce29a15850ea4b",
+      "bytes": 25133
+    },
+    {
+      "caminho": "_astro/_slug_.CH4-R-79.css",
+      "sha256": "2014f086e6eff3be6d03d2cbb0a0533bea04b144fd32d29b78c4637b5bc4e053",
+      "bytes": 42569
+    },
+    {
+      "caminho": "_astro/bateria.BTeIyyH6.webp",
+      "sha256": "647478e262f245f3bdf736fd7c3238644e955b1ea17d32f7ae58d9ed3c01a704",
+      "bytes": 220936
+    },
+    {
+      "caminho": "_astro/broca.CnRQRLqF.webp",
+      "sha256": "417cc91f2dd439b6748686d66696ce860688b4f08503ca5b1c523d5268a16edf",
+      "bytes": 43338
+    },
+    {
+      "caminho": "_astro/esmerilhadeira.Dgh9ePpx.webp",
+      "sha256": "13773e7289321d0949f9130a73b38bc39bae331a44341fe06e32defeb0bab7c2",
+      "bytes": 157642
+    },
+    {
+      "caminho": "_astro/index.DH7H4-JL.css",
+      "sha256": "d0342ad212d2d7676ee5c73a012d98cd2a8399a915fc137f81045ac34cfeb6bb",
+      "bytes": 12987
+    },
+    {
+      "caminho": "_astro/pagina-bateria-2ah-ou-4ah-parafusadeira.CV-jyMeo_1EOwuu.avif",
+      "sha256": "661eeef9bf3842faabe7b1d55327637ecc095b0c8ec87bccea3a4a8f1a79e06b",
+      "bytes": 31653
+    },
+    {
+      "caminho": "_astro/pagina-bateria-2ah-ou-4ah-parafusadeira.CV-jyMeo_1WiGVm.avif",
+      "sha256": "4dd18800aca583f57e600fa66924e90b036937a8af22f60e708a3e911d36d199",
+      "bytes": 50768
+    },
+    {
+      "caminho": "_astro/pagina-bateria-2ah-ou-4ah-parafusadeira.CV-jyMeo_BrF8E.webp",
+      "sha256": "fde0e5fd354894ea14b00e2ea46a286c6eb7ea6fde2ccf78c2184223770b4ebc",
+      "bytes": 57074
+    },
+    {
+      "caminho": "_astro/pagina-bateria-2ah-ou-4ah-parafusadeira.CV-jyMeo_ZDp9Vv.avif",
+      "sha256": "cd7db59e8572ce3010b0c2313df81f3eab25f8f0135f58db102ccdaca097a53c",
+      "bytes": 18066
+    },
+    {
+      "caminho": "_astro/pagina-bateria-2ah-ou-4ah-parafusadeira.CV-jyMeo_ZFtOYb.webp",
+      "sha256": "47c25ed8c0da59db6138e068b305b3d6b41eb715fc24a566345a53305dff4010",
+      "bytes": 33114
+    },
+    {
+      "caminho": "_astro/pagina-bateria-2ah-ou-4ah-parafusadeira.CV-jyMeo_Zf72eW.webp",
+      "sha256": "4ba33ea9da937c21fd6a23cf9f5a4bb1a3630aa63d4cbae5482aabe8e98e61c0",
+      "bytes": 96732
+    },
+    {
+      "caminho": "_astro/pagina-bateria-2ah-ou-4ah-parafusadeira.CV-jyMeo_d4dED.webp",
+      "sha256": "61e90157c4f7e6ba0782da745aca4a464f29f55e7293ff79778c6b23258d522b",
+      "bytes": 14712
+    },
+    {
+      "caminho": "_astro/pagina-bateria-2ah-ou-4ah-parafusadeira.CV-jyMeo_f8SHj.avif",
+      "sha256": "98cd8077cd59e3b930cfc8ea9fe9ac67c08a09d87f36f739f380615f4ef77f9c",
+      "bytes": 8178
+    },
+    {
+      "caminho": "_astro/pagina-broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua.Bx_abaDb_1xQ0dS.webp",
+      "sha256": "f4e69e20e8321882275989abce3d69d692afd5788659073330c3d720f7b02c3b",
+      "bytes": 12442
+    },
+    {
+      "caminho": "_astro/pagina-broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua.Bx_abaDb_T2mWM.webp",
+      "sha256": "8979c6c2b3b5ab03f1e91120c7fcb31855689dd6e176dbe496d71be568ba6e73",
+      "bytes": 28466
+    },
+    {
+      "caminho": "_astro/pagina-broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua.Bx_abaDb_Z17ntqn.avif",
+      "sha256": "69226862b7a05aebb7bf0ce7d295244447be0ec58ba38454531e538ff028ee1d",
+      "bytes": 7146
+    },
+    {
+      "caminho": "_astro/pagina-broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua.Bx_abaDb_Z1A8nam.webp",
+      "sha256": "58388146977ed768d7469a246ef64bbb4f37400673c529420ea7043e7ea60917",
+      "bytes": 83146
+    },
+    {
+      "caminho": "_astro/pagina-broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua.Bx_abaDb_Z1Lc6Gt.avif",
+      "sha256": "0413f9a54729790091e59e30f77f2b16da753a4ec0f8e9ee03605a5786184dca",
+      "bytes": 17014
+    },
+    {
+      "caminho": "_astro/pagina-broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua.Bx_abaDb_Z1mgynF.avif",
+      "sha256": "e93ec19400569d0e1e8489e271fc883fda5743024c76fda057a750d7f75ff9bb",
+      "bytes": 29814
+    },
+    {
+      "caminho": "_astro/pagina-broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua.Bx_abaDb_Z7BufB.avif",
+      "sha256": "1f0f0a178f77938e96aa3264f281c788ef2d40a3d4416184f665b6c8dd3feddf",
+      "bytes": 47716
+    },
+    {
+      "caminho": "_astro/pagina-broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua.Bx_abaDb_dTbXv.webp",
+      "sha256": "523460defcd5cbf393211294d2477e7bcabea8a231cd02c616edc64372cbe05e",
+      "bytes": 49640
+    },
+    {
+      "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_231G0S.avif",
+      "sha256": "462637fd61f0cc0b5e37e6b4c598b5a344a60784add0c72a8a2e0183879ec490",
+      "bytes": 10345
+    },
+    {
+      "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_Z1AErYz.webp",
+      "sha256": "2537bca328e83c5e4d3fb2cab2633d9a4dabf485d36176ed0f2280ec1d160f99",
+      "bytes": 151396
+    },
+    {
+      "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_Z1CHXzw.webp",
+      "sha256": "45f9d4539d6a6908118882a13f41cfeaa11c5488db8f93152189bbf9aae6177f",
+      "bytes": 20768
+    },
+    {
+      "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_Z27xfY5.avif",
+      "sha256": "01efbfb8cea0b4ecf5f716ecb82be526e796cf9988bf73ee65064d96d22998b7",
+      "bytes": 24705
+    },
+    {
+      "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_Z2nkP8g.webp",
+      "sha256": "202b47337e96b45e293713d2130ad716f2dd5ec186f617b32f13272b6f38d9d9",
+      "bytes": 88746
+    },
+    {
+      "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_Z2vnD7.avif",
+      "sha256": "6b2bd727d4204484a3e616f5b217a88718bbd770ea602e9947d6ece45a13d1f8",
+      "bytes": 46316
+    },
+    {
+      "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_ZI5LKy.webp",
+      "sha256": "589b8b499ea1e54b6cac739a6116caa08786cbc56c327bb857aa15d54fad43e0",
+      "bytes": 47992
+    },
+    {
+      "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_ZcNv85.avif",
+      "sha256": "ee7a0b021ca6310b934b383a91e9a7081a89b0b6238c2f6afa3cec8d4e78598e",
+      "bytes": 75858
+    },
+    {
+      "caminho": "_astro/pagina-furadeira-ou-parafusadeira.whaN1tOk_1Si8TJ.webp",
+      "sha256": "a725a55a961b72b6909528ad2593edecaff5dc1b8c4d6d374b862edd4c1bd6e4",
+      "bytes": 27488
+    },
+    {
+      "caminho": "_astro/pagina-furadeira-ou-parafusadeira.whaN1tOk_29xlAs.webp",
+      "sha256": "445b0998b2847851bd417e55caaab44dd29e4891943ec41d1703aecd263edb78",
+      "bytes": 13038
+    },
+    {
+      "caminho": "_astro/pagina-furadeira-ou-parafusadeira.whaN1tOk_2ghEWG.avif",
+      "sha256": "426c5f4c67d0172e12f61400fde52d314340f2dd66ef0e143f943cbb204e2015",
+      "bytes": 25349
+    },
+    {
+      "caminho": "_astro/pagina-furadeira-ou-parafusadeira.whaN1tOk_Z1akC9X.avif",
+      "sha256": "864e6e07afc249c8eea5c6bfbe48a439791671be5c69a02a7d8500f8712abd49",
+      "bytes": 7139
+    },
+    {
+      "caminho": "_astro/pagina-furadeira-ou-parafusadeira.whaN1tOk_Z1prYCI.webp",
+      "sha256": "a4ff6a4be6a38d449685ff0a69c1f8b123b14e35f9ab8c7a26e0136613dda80e",
+      "bytes": 45542
+    },
+    {
+      "caminho": "_astro/pagina-furadeira-ou-parafusadeira.whaN1tOk_Z1qzOPG.avif",
+      "sha256": "ea248a99c4d32201399000fe824db25d105dc54f087809263ec452b836ff36f8",
+      "bytes": 15275
+    },
+    {
+      "caminho": "_astro/pagina-furadeira-ou-parafusadeira.whaN1tOk_Z2hQteg.avif",
+      "sha256": "081cd467186590e532ec4b70a21d5ea45b178859ffa076afc43169c54ab1ca1c",
+      "bytes": 40379
+    },
+    {
+      "caminho": "_astro/pagina-furadeira-ou-parafusadeira.whaN1tOk_rvd5w.webp",
+      "sha256": "cb3203cff0101f70816e75d1c74561d9b879c96cab43e947027090d3c3b839d2",
+      "bytes": 71480
+    },
+    {
+      "caminho": "_astro/pagina-velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma.B0bUiGsm_3kCwa.webp",
+      "sha256": "7859493cc8731cdc506227cace924a43fc04f03d2797514c9abdcb5bde7ef4fa",
+      "bytes": 127110
+    },
+    {
+      "caminho": "_astro/pagina-velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma.B0bUiGsm_FgSmd.webp",
+      "sha256": "c7e7a5d61055bf9110d489da098d08713502069f627711baadb78bda20c725a4",
+      "bytes": 18178
+    },
+    {
+      "caminho": "_astro/pagina-velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma.B0bUiGsm_Z1kXHpj.avif",
+      "sha256": "d40a63759a4e16b0c7b2726a9d5aed163f08a8455d0ba86b5be6390d6d8d4690",
+      "bytes": 70272
+    },
+    {
+      "caminho": "_astro/pagina-velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma.B0bUiGsm_Z2hfge4.avif",
+      "sha256": "e022b28a3801da1847f8c6d92f53c03c9eca3032444d11fc99172d5af5d82145",
+      "bytes": 10107
+    },
+    {
+      "caminho": "_astro/pagina-velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma.B0bUiGsm_Z2rlODB.avif",
+      "sha256": "99edebdb8c7df20853cd5d743885ac0a69541149e2e659fc4522c1168c9bf892",
+      "bytes": 23474
+    },
+    {
+      "caminho": "_astro/pagina-velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma.B0bUiGsm_kVsHE.avif",
+      "sha256": "013576882eae7419cabc95bebbc1b22a631140748e0b027c6301092bf5009a62",
+      "bytes": 42670
+    },
+    {
+      "caminho": "_astro/pagina-velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma.B0bUiGsm_vajVF.webp",
+      "sha256": "e34eb42a57981cc60ef3541f519f4a4d3e68479c8bb98355e95631976f533fbc",
+      "bytes": 42816
+    },
+    {
+      "caminho": "_astro/pagina-velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma.B0bUiGsm_xGJpt.webp",
+      "sha256": "8e9622a0bc06ca54ee31130fa516646d13ab32367c6001937995e4fed3aa2456",
+      "bytes": 73858
+    },
+    {
+      "caminho": "_astro/parafusadeira.DdrNjT3D.webp",
+      "sha256": "60237c24499643bacb35e77811df07bcf8586d4485130834d410bd6a803cf65c",
+      "bytes": 102716
+    },
+    {
+      "caminho": "bateria-2ah-ou-4ah-parafusadeira/index.html",
+      "sha256": "37efb2b391cc81bf3cefe27ef3dd5d576e12eae4656a80ba2c6a64d32b396647",
+      "bytes": 25515
+    },
+    {
+      "caminho": "bateria-parafusadeira-serve-em-outra-marca/index.html",
+      "sha256": "d20235c4f38c53634fe9795302c56625d99c0ea38c54b7f142489327f786dd92",
+      "bytes": 43847
+    },
+    {
+      "caminho": "bosch-185-li-gsb/index.html",
+      "sha256": "6cdbfc861c77d52e29029232aa720124896f8820682f5ca365abd2a24a035159",
+      "bytes": 27720
+    },
+    {
+      "caminho": "bosch-ou-makita-parafusadeira/index.html",
+      "sha256": "6171de809c60a3cbd6acf4fd9539eee66c88ed7da4ba10cc344c4dd34c88e9a0",
+      "bytes": 29387
+    },
+    {
+      "caminho": "broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua/index.html",
+      "sha256": "6b53fe0aa7b7cff7346b5f2d4e19cbfe779467b4fc7c32f2dc4ff5f45058c1e7",
+      "bytes": 24514
+    },
+    {
+      "caminho": "como-trabalhamos/index.html",
+      "sha256": "d31a8fee4406175180cc4dff914c5e5eef04641f7654183dc6f00ea466ddbde1",
+      "bytes": 6085
+    },
+    {
+      "caminho": "contato/index.html",
+      "sha256": "46c63257c9e9f7723a12f43d454fc2646079e5fdf78cbe608f747bddcbdd953f",
+      "bytes": 4812
+    },
+    {
+      "caminho": "creditos/index.html",
+      "sha256": "f577575293d9a8703b310ca3cf577ecaa4e102db8e4ed5bb872aa98816223913",
+      "bytes": 32149
+    },
+    {
+      "caminho": "esmerilhadeira-ou-lixadeira/index.html",
+      "sha256": "e0c8d9f0006fc0f0e43b042036ba7bad1f15abebc2d3eb7078e93cdccee6843e",
+      "bytes": 34092
+    },
+    {
+      "caminho": "favicon.svg",
+      "sha256": "2843bac003b34dc836981e03b3741a612cedf2d40483b72946bf2038fd464387",
+      "bytes": 284
+    },
+    {
+      "caminho": "furadeira-com-fio-ou-a-bateria/index.html",
+      "sha256": "26c62d19fd9f7718a07e89ea5fccf90da4b91c010241969a0e5ec241b30af750",
+      "bytes": 32818
+    },
+    {
+      "caminho": "furadeira-de-impacto-ou-martelete/index.html",
+      "sha256": "bd66c60e7ec6264c6d4f516fa540ae5050f82e0274babe76fd7bd91c6b4a1473",
+      "bytes": 42007
+    },
+    {
+      "caminho": "furadeira-ou-parafusadeira/index.html",
+      "sha256": "756c57e46529ace9b9d8aefa001178b251fc2cac5c350be9eae848c5089fc7b7",
+      "bytes": 29555
+    },
+    {
+      "caminho": "guias/index.html",
+      "sha256": "86fe917588d730868351b8708323a29f01b283d3aa5a2a23cfe8770e67a7fbd1",
+      "bytes": 24883
+    },
+    {
+      "caminho": "images/bosch-12v-cc-1600.webp",
+      "sha256": "0ed72866101aa59445603a6c8986cd50b07dfa49c74d1ac7102cc73e1c3f11a4",
+      "bytes": 48400
+    },
+    {
+      "caminho": "images/bosch-12v-cc-800.webp",
+      "sha256": "8d745be8d099e4006a7960b56fb42bf45d59ab3d6564b79b736818f48324850f",
+      "bytes": 16082
+    },
+    {
+      "caminho": "images/bosch-makita-cc-1600.webp",
+      "sha256": "3bfb3642061d9b2edf3c367e5560fdcf6024be0b7cdcb763703ea44949ee7870",
+      "bytes": 84734
+    },
+    {
+      "caminho": "images/bosch-makita-cc-800.webp",
+      "sha256": "29122fe423661e9e52f63055acd5d4b2d92056f1c4139cedefa3fbfe319440b2",
+      "bytes": 22170
+    },
+    {
+      "caminho": "images/corded-drill-cc-1600.webp",
+      "sha256": "53d8b8fba0a23a0d420eb3fa6289028644964821747d59ec5def1800f4c74b13",
+      "bytes": 138336
+    },
+    {
+      "caminho": "images/corded-drill-cc-800.webp",
+      "sha256": "0d38f724d2cba1550293b612ab644b6869e427796a851d044182c2b92952ac9d",
+      "bytes": 27782
+    },
+    {
+      "caminho": "images/cordless-drill-driver-editorial-ai-1600.webp",
+      "sha256": "bf50d4a47d47028f8fa91fc18400eecfcb84d9d845a7fe80a00d70d78ebe0641",
+      "bytes": 105818
+    },
+    {
+      "caminho": "images/cordless-drill-driver-editorial-ai-800.webp",
+      "sha256": "bd459054971def10148afefa5d0c69310f398d958bc29330953df4ee5c0375fb",
+      "bytes": 34478
+    },
+    {
+      "caminho": "images/cordless-drill-spare-battery-cc-1600.webp",
+      "sha256": "647478e262f245f3bdf736fd7c3238644e955b1ea17d32f7ae58d9ed3c01a704",
+      "bytes": 220936
+    },
+    {
+      "caminho": "images/cordless-drill-spare-battery-cc-800.webp",
+      "sha256": "e6f5423ef12f203aed9d6602281031957662e887f68543073bd13207dc4a3126",
+      "bytes": 73334
+    },
+    {
+      "caminho": "images/cordless-drill-torque-cc-1600.webp",
+      "sha256": "423ec777e32f044861d3a00b3e65197a4d43ba970776c231f9e79c1bd28f52eb",
+      "bytes": 111402
+    },
+    {
+      "caminho": "images/cordless-drill-torque-cc-800.webp",
+      "sha256": "bcfbc4dba9e16e8ca82f3ece77b4367cc89ed24d710331ff1e242870fd26e94b",
+      "bytes": 33712
+    },
+    {
+      "caminho": "images/cordless-impact-wrench-ai-1600.webp",
+      "sha256": "bcedd13d4c357419e8065811e7d47bfc614af9febbf7b5c27764ebdf06b4b3a9",
+      "bytes": 107068
+    },
+    {
+      "caminho": "images/cordless-impact-wrench-ai-800.webp",
+      "sha256": "0bd7fbf1f582600954308e0a4df76d16e7fd191aa89ae09149f0fa5d24dc2880",
+      "bytes": 30884
+    },
+    {
+      "caminho": "images/cordless-screw-drill-cc0-1600.webp",
+      "sha256": "068bdf4786e69a0fe0c888411b34ea05e60b9e5daf8ba4857a250457057b1f54",
+      "bytes": 285988
+    },
+    {
+      "caminho": "images/cordless-screw-drill-cc0-800.webp",
+      "sha256": "444245d3451c557aded3717b234c0920b9137fc70e53c85e85a17c498b687dde",
+      "bytes": 46542
+    },
+    {
+      "caminho": "images/demolition-hammer-pd-1600.webp",
+      "sha256": "6a2aff289ba6cf833e16d57efdb164a4ecebf87e73a4b83435a133f573200a2e",
+      "bytes": 186792
+    },
+    {
+      "caminho": "images/demolition-hammer-pd-800.webp",
+      "sha256": "a2985cfc3fe3c2bb26308d3d9c3ff1200ef9ce231ff46272d02c8f12912d1852",
+      "bytes": 112478
+    },
+    {
+      "caminho": "images/dewalt-20v-cc-1600.webp",
+      "sha256": "efbd9684a06ca6c3d55c00613891a92f1e98f7a77751d55ecd1de5347ae1036f",
+      "bytes": 220294
+    },
+    {
+      "caminho": "images/dewalt-20v-cc-800.webp",
+      "sha256": "2a6698965d1e375bd86c2c2edb86e0540597b090949210c7e0bba40c287678a4",
+      "bytes": 70144
+    },
+    {
+      "caminho": "images/dewalt-dcd985-combi-drill-cc-1600.webp",
+      "sha256": "4bd3243d508a18a4bc9ac733f5fc4cf9b01011e3eefacfb1ebf14b920896a3a1",
+      "bytes": 96922
+    },
+    {
+      "caminho": "images/dewalt-dcd985-combi-drill-cc-800.webp",
+      "sha256": "0f9e2f282be1c3987ef398983597599e56dbce58b7d289da6860ebeeafed88db",
+      "bytes": 31882
+    },
+    {
+      "caminho": "images/dewalt-dcf885-impact-driver-cc-1600.webp",
+      "sha256": "504a47b34d1950d559b8151d16115796baff3cead58bff5f8716a97b9ca3fef8",
+      "bytes": 168868
+    },
+    {
+      "caminho": "images/dewalt-dcf885-impact-driver-cc-800.webp",
+      "sha256": "12dd36006eebf2988918b5eacad7dadd8948b1f531f61dadaa98b23897e4fc1f",
+      "bytes": 49336
+    },
+    {
+      "caminho": "images/drill-chuck-close-up-cc-1600.webp",
+      "sha256": "fe838bd45d31e8e8169ab7ee24b34e1fcafdfc50475ddae89948e01eb35744e1",
+      "bytes": 52360
+    },
+    {
+      "caminho": "images/drill-chuck-close-up-cc-800.webp",
+      "sha256": "7e071d8aa34079113f83b4b1a97efbd9bc35112d221828e8c3afea27956b054f",
+      "bytes": 27524
+    },
+    {
+      "caminho": "images/drywall-screwgun-cc-1600.webp",
+      "sha256": "f6d61f054faf358873227bf3fadda971b4778e3abfca2c0c72dce9c7ace08131",
+      "bytes": 169574
+    },
+    {
+      "caminho": "images/drywall-screwgun-cc-800.webp",
+      "sha256": "94ce1fbd8023d3e2ebbaa70c7eaebf588fca846588982071b7ba8139becef669",
+      "bytes": 44946
+    },
+    {
+      "caminho": "images/generic-impact-driver-pd-1600.webp",
+      "sha256": "8090384af88a36aa7431564c44c0ce381ab1b406b19362ba5f2eefa54d835f7b",
+      "bytes": 106134
+    },
+    {
+      "caminho": "images/generic-impact-driver-pd-800.webp",
+      "sha256": "9cc3f3ec96be6bbd952c964626d71d974dec7476d2b801c2ccfa0be2dc9f6260",
+      "bytes": 19088
+    },
+    {
+      "caminho": "images/keyless-drill-chuck-cc-1600.webp",
+      "sha256": "5abca0b65048b9158af26c15aa8687d49dfc25f9fc178623fca339bb886cb24d",
+      "bytes": 47674
+    },
+    {
+      "caminho": "images/keyless-drill-chuck-cc-800.webp",
+      "sha256": "6ee0634081f7251d9bb650824f5fd12cd2c1e97452b48985082a243c62c112bf",
+      "bytes": 15418
+    },
+    {
+      "caminho": "images/makita-18v-drill-cc-1600.webp",
+      "sha256": "06b24cd761c2177f0c73d166e30ec2eff6e2238b8983bb792be0fca311732e8d",
+      "bytes": 61700
+    },
+    {
+      "caminho": "images/makita-18v-drill-cc-800.webp",
+      "sha256": "5c8041db216b229d65b06cb39fc79e5fcdafc23e870c1e5e650244172472be32",
+      "bytes": 34768
+    },
+    {
+      "caminho": "images/makita-battery-charging-cc-1600.webp",
+      "sha256": "49527219b8200eab6b2370b2ee699210b971d1f67458bf0153ce28e782439c12",
+      "bytes": 135054
+    },
+    {
+      "caminho": "images/makita-battery-charging-cc-800.webp",
+      "sha256": "363690ee184f00985481bfa373149d263b1fb3a70bdcc7a6b60300d1f777057a",
+      "bytes": 36186
+    },
+    {
+      "caminho": "images/makita-dhp453-cc-1600.webp",
+      "sha256": "d6fac8d7c77b5e0f40fc0911ee15fd12f656a42caa7e4873dd645f3005704b3f",
+      "bytes": 96420
+    },
+    {
+      "caminho": "images/makita-dhp453-cc-800.webp",
+      "sha256": "f999f2231ee89b11d22f0ac2a4e004e8de152e476c66b02ea9fe40d4e7d9eb61",
+      "bytes": 25598
+    },
+    {
+      "caminho": "images/makita-lxt-18v-cc-1600.webp",
+      "sha256": "832343b6e230cc19aa1218bbc8383bff5b3c9c3bd2977f838372c5350346ebc8",
+      "bytes": 123094
+    },
+    {
+      "caminho": "images/makita-lxt-18v-cc-800.webp",
+      "sha256": "38d012bf4b3011514ff0df3509f7c9966b120f992a718fba6d32f26ba733303a",
+      "bytes": 49780
+    },
+    {
+      "caminho": "images/motor-brushes-cc-1600.webp",
+      "sha256": "49eabebcd8c8ae891f44199c8a2095c0e044aebff47b837587ba4b01c413b68f",
+      "bytes": 120414
+    },
+    {
+      "caminho": "images/motor-brushes-cc-800.webp",
+      "sha256": "23f7122f5e146967944fbf5b5130bcfaa7dad00f022ad4be96da6963665d764b",
+      "bytes": 23336
+    },
+    {
+      "caminho": "images/random-orbit-sander-pd-1600.webp",
+      "sha256": "80e859888e0e800d17ae9a2b8691238a49ae79bce46450ca2a7fb7b6f1227cae",
+      "bytes": 73350
+    },
+    {
+      "caminho": "images/random-orbit-sander-pd-800.webp",
+      "sha256": "e6b832e68ad5e8d7abd3b5a4c7b6a81cae4620f345cf0b9866a987bcc0e4de50",
+      "bytes": 22242
+    },
+    {
+      "caminho": "images/rotary-hammer-combined-chuck-cc-1600.webp",
+      "sha256": "4b32f7fcce231303e2211808e3aea9bf3f1aef44c3936304c8ccf107c7267bc4",
+      "bytes": 39186
+    },
+    {
+      "caminho": "images/rotary-hammer-combined-chuck-cc-800.webp",
+      "sha256": "dd7b8a5203a293200962e18808899364df89777a5b4f0d1ad028ae6134318bdd",
+      "bytes": 13940
+    },
+    {
+      "caminho": "images/ryobi-impact-driver-cc-1600.webp",
+      "sha256": "15f2daa04d1ba10354c8922943bb449214f5f01d37e9408fc5c0c8bf0b12d97f",
+      "bytes": 222898
+    },
+    {
+      "caminho": "images/ryobi-impact-driver-cc-800.webp",
+      "sha256": "b7cbd1bc5eb58f5b2eaf910f00fa8152a7b063a6bb57b4bcb9b8482b65faa057",
+      "bytes": 28478
+    },
+    {
+      "caminho": "images/tile-drill-bit-cc-480.webp",
+      "sha256": "a3885569eea722f3628db253354d09164a289437484b03d82e358bd5222e8fba",
+      "bytes": 18142
+    },
+    {
+      "caminho": "index.html",
+      "sha256": "7afd6ba7e48937772d6423ba3e614a6d6d96d16a74d15bf171944fa76d886276",
+      "bytes": 37604
+    },
+    {
+      "caminho": "makita-dhp482z-ferramenta-avulsa-bateria-parafusadeira-furadeira-impacto-v/index.html",
+      "sha256": "db516979406786329def452735bd684ebeffbee78a67fb1f8c8f2223cec85f9a",
+      "bytes": 28549
+    },
+    {
+      "caminho": "mandril-10mm-ou-13mm/index.html",
+      "sha256": "a5ed444390aba6eb36e7644dc82961ec58ef453cd53bcd98a8f769b41bd6c8df",
+      "bytes": 27819
+    },
+    {
+      "caminho": "martelete-combinado-rompedor-demolidor/index.html",
+      "sha256": "6815e4e46085d6abb1bf6c54cec65bd5b07d1b87cd1a0b77b79ee8d174465d52",
+      "bytes": 38484
+    },
+    {
+      "caminho": "nm-chave-de-impacto/index.html",
+      "sha256": "9e6968ad39d17c80d2f3dcd7232d9b910938dc714bec0014750acfba3d7fa7ca",
+      "bytes": 44022
+    },
+    {
+      "caminho": "parafusadeira-12v-ou-18v/index.html",
+      "sha256": "1cdd65c03d0c5feb0ae0843b5ac86cb6e2669db7385f43771bc552d93f41b903",
+      "bytes": 36334
+    },
+    {
+      "caminho": "parafusadeira-brushless-ou-com-escovas/index.html",
+      "sha256": "f95af1325029a541b01f12fe1dada6ef6171187d38f785e30f4f5402317d51fc",
+      "bytes": 35587
+    },
+    {
+      "caminho": "parafusadeira-com-ou-sem-impacto/index.html",
+      "sha256": "1a19ef9e3eff0bb53343ba316c913e22e4e6542e0d8881ba0ccbf41887e03ba0",
+      "bytes": 33367
+    },
+    {
+      "caminho": "parafusadeira-dewalt-dcd777-vale-a-pena/index.html",
+      "sha256": "5da588e080178735a05f6d5e4461d4f3b612240bf53063336b2faeea62f05ad1",
+      "bytes": 31616
+    },
+    {
+      "caminho": "parafusadeira-para-drywall-precisa-de-uma-especifica/index.html",
+      "sha256": "df9a934c48bad4673fc445dd8594ca658f2f2a30a9f778a8ed3ac50352482422",
+      "bytes": 29547
+    },
+    {
+      "caminho": "privacidade/index.html",
+      "sha256": "453be495b6fcd865bd63b68a14d9fb758c42bd564be804d218cc4e1d83712a8c",
+      "bytes": 5893
+    },
+    {
+      "caminho": "robots.txt",
+      "sha256": "181b1c7b4d51bd3e6a342c01cf5e572bfd0f48ce49f79a0adc48dbef26122ee6",
+      "bytes": 75
+    },
+    {
+      "caminho": "sitemap.xml",
+      "sha256": "097bcdde7b7b84d0fd603efe0734806bc57ccefdce7cfa6e1c2845765fa69220",
+      "bytes": 2704
+    },
+    {
+      "caminho": "sobre/index.html",
+      "sha256": "c8408047137e5ab44c09f88b7c4e00b3b3793084f140b81fd961abd732a0289f",
+      "bytes": 5572
+    },
+    {
+      "caminho": "torque-nm-parafusadeira/index.html",
+      "sha256": "f8072bb991e229b447fe0318566dbdec520387f99661fc130491b352501b14af",
+      "bytes": 43907
+    },
+    {
+      "caminho": "velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma/index.html",
+      "sha256": "202a7e811e14260629671987eb06c0db7eda62b0ddbf61afca9697a4a6428ff1",
+      "bytes": 30181
+    }
+  ],
+  "rollback": "republicar o V1 a partir de 642004d (ou o ZIP do V1 gerado por scripts/artefato-v1.sh); ver docs/V2-DEPLOY.md"
+}
