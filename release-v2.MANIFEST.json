@@ -1,6 +1,6 @@
 {
-  "commit": "8be476d05dc89131ff1f21e01bcafe81449316be",
-  "gerado_em": "2026-11-11T16:41:40.088Z",
+  "commit": "65ce13a46a1d762a31e4f6099c7c393d16e795d4",
+  "gerado_em": "2026-11-11T19:35:05.347Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -43,11 +43,11 @@
     },
     {
       "estado": "PASS",
-      "msg": "disco livre na pasta temporária: 33.5 GB (mínimo 3)"
+      "msg": "disco livre na pasta temporária: 80.0 GB (mínimo 3)"
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de 8be476d + npm ci"
+      "msg": "checkout limpo de 65ce13a + npm ci"
     },
     {
       "estado": "PASS",
@@ -83,6 +83,14 @@
     },
     {
       "estado": "PASS",
+      "msg": "Política de Privacidade coerente com o contador (contador ligado)"
+    },
+    {
+      "estado": "PASS",
+      "msg": "nenhum código interno visível no texto"
+    },
+    {
+      "estado": "PASS",
       "msg": "rotas internas ausentes"
     },
     {
@@ -114,15 +122,17 @@
     "torque-nm-parafusadeira": "nativa (approve)"
   },
   "ofertas_publicadas": [
+    "/broca-ideal-para-furar-ferro/ B00TX9V56C",
+    "/broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua/ B00TX9V56C",
     "/esmerilhadeira-ou-lixadeira/ B08DGZTHV9",
     "/parafusadeira-dewalt-dcd777-vale-a-pena/ B099NZQHRB",
     "/parafusadeira-para-drywall-precisa-de-uma-especifica/ B00FAM1V7E"
   ],
   "sitemap_urls": 27,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-8be476d.zip",
-    "sha256": "8a142a5fb03d85551567c8c0e04bc8e2896ab2f69c6acbce06e5cfda827db17b",
-    "arquivos": 137
+    "arquivo": "ferramenta-clara-v2-65ce13a.zip",
+    "sha256": "1c80550ee9cf40e854f3054ee4b8d76ee605fc634d0e43a2e2d6be3bc0a4ce6e",
+    "arquivos": 144
   },
   "arquivos": [
     {
@@ -151,9 +161,44 @@
       "bytes": 220936
     },
     {
-      "caminho": "_astro/broca.CnRQRLqF.webp",
-      "sha256": "417cc91f2dd439b6748686d66696ce860688b4f08503ca5b1c523d5268a16edf",
-      "bytes": 43338
+      "caminho": "_astro/broca.CnRQRLqF_2tYgwJ.avif",
+      "sha256": "9ec50024377f981e3f0d1e9a595dd65c7698b5e6b010f90057b87aaf6960f46d",
+      "bytes": 13983
+    },
+    {
+      "caminho": "_astro/broca.CnRQRLqF_Z10Dkya.webp",
+      "sha256": "8b837126a921c19daa8ffa1318583c0b9c516df057249b22234d3a9b2c9826de",
+      "bytes": 5850
+    },
+    {
+      "caminho": "_astro/broca.CnRQRLqF_Z1gNRFi.webp",
+      "sha256": "8d3b932f715e33ef38b6e7dae3ece03dbb8b348ddbb0a7769055d3e0b9a31d95",
+      "bytes": 23556
+    },
+    {
+      "caminho": "_astro/broca.CnRQRLqF_ZHFHLy.webp",
+      "sha256": "a607dde166ce157910510ba12eeaf57f9b4b09a64fc70009bd6462dc00109346",
+      "bytes": 13148
+    },
+    {
+      "caminho": "_astro/broca.CnRQRLqF_ZgfIRK.avif",
+      "sha256": "65108fd8b951661e38b195f5d16f2f4b6858d9727bf711449eb0ca82928b3f08",
+      "bytes": 7897
+    },
+    {
+      "caminho": "_astro/broca.CnRQRLqF_ZhWi28.webp",
+      "sha256": "81dc586c44e5022ec13f6b830b4515ebd36ad7a5b0c8b54c5dc1ec2a16542b96",
+      "bytes": 39598
+    },
+    {
+      "caminho": "_astro/broca.CnRQRLqF_ZsxVeB.avif",
+      "sha256": "121ba539672aaf6908c780811f0adc2e14bfc69adbd2617745a5836173aed756",
+      "bytes": 23043
+    },
+    {
+      "caminho": "_astro/broca.CnRQRLqF_ZydlEm.avif",
+      "sha256": "6bd3f3ce267f9c46e114a796c578f989fe7bdb7edaaa64f6ecf3212745f27f0e",
+      "bytes": 3454
     },
     {
       "caminho": "_astro/esmerilhadeira.Dgh9ePpx.webp",
@@ -161,9 +206,9 @@
       "bytes": 157642
     },
     {
-      "caminho": "_astro/index.DH7H4-JL.css",
-      "sha256": "d0342ad212d2d7676ee5c73a012d98cd2a8399a915fc137f81045ac34cfeb6bb",
-      "bytes": 12987
+      "caminho": "_astro/index.DhzYEzhC.css",
+      "sha256": "627a12ed84bcb9de7c96ed2b2da40caff7ede4cb304b6411c5c9551e6df25e38",
+      "bytes": 13997
     },
     {
       "caminho": "_astro/pagina-bateria-2ah-ou-4ah-parafusadeira.CV-jyMeo_1EOwuu.avif",
@@ -432,18 +477,18 @@
     },
     {
       "caminho": "broca-ideal-para-furar-ferro/index.html",
-      "sha256": "1e750f04dedf39ef3d5c920a030e06e486d2740446a9d761293a0efa65dc3f3d",
-      "bytes": 38462
+      "sha256": "3f7e5b923b65eb648c024d44677e851553a7aca92ab1225f1bee5ad07e1d5748",
+      "bytes": 37812
     },
     {
       "caminho": "broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua/index.html",
-      "sha256": "3715da7f056e825f3a52b2801e5d7ac99487642fe5ab5f08a05cfb9d0246e8c3",
-      "bytes": 26883
+      "sha256": "6978f2f64897d4a5fddbcdc6f4034360be9d77132460373d7a01e392dbfca33e",
+      "bytes": 29745
     },
     {
       "caminho": "como-trabalhamos/index.html",
-      "sha256": "8e0edd1b689e35265ce84b0ca0579da3f03905a94c5eafaffc1f531063c51b53",
-      "bytes": 6809
+      "sha256": "ce7fdadaccd3ea501cfa8a6b15e306a697cad1cfcfff7fed91f6b495b88a7fbb",
+      "bytes": 6959
     },
     {
       "caminho": "contato/index.html",
@@ -482,8 +527,8 @@
     },
     {
       "caminho": "guias/index.html",
-      "sha256": "2dca01545d42121b55cf9239623b139d5156127c7b227e93bc519a5e02030986",
-      "bytes": 27268
+      "sha256": "57cac595075df04fcef0e4d75a3330297b6e7a66b511e8a6ee863bc1238b73fe",
+      "bytes": 32740
     },
     {
       "caminho": "images/bosch-12v-cc-1600.webp",
@@ -732,8 +777,8 @@
     },
     {
       "caminho": "index.html",
-      "sha256": "da55cdb68f6c0be13a551bef23163998f8f81cb931d1d715d15bca66eb52d57a",
-      "bytes": 40440
+      "sha256": "7b55ae3820e2a5207a7de8d68d9d73e3eb3dd590e71ccc6ec2d502006ce5aca8",
+      "bytes": 43583
     },
     {
       "caminho": "makita-dhp482z-ferramenta-avulsa-bateria-parafusadeira-furadeira-impacto-v/index.html",
@@ -777,13 +822,13 @@
     },
     {
       "caminho": "parafusadeira-para-drywall-precisa-de-uma-especifica/index.html",
-      "sha256": "e5d5489c7794e485a16ba73d4e6644e2bdae7d5dce77d63a91c1c5c95055579e",
-      "bytes": 35264
+      "sha256": "30bfffdb1f6af9b6cf19c36164899add16fe8b2a47d4e0dff963533db8fa0c4a",
+      "bytes": 35254
     },
     {
       "caminho": "privacidade/index.html",
-      "sha256": "f6c0c71d81af19d2ab67def35777a06669acd15e392bbc0dba4db9dd708da9d7",
-      "bytes": 6617
+      "sha256": "1c00ef54fae4a57af5c534d93184f1d2bccacba151e2050dff253e23d2a0142a",
+      "bytes": 7923
     },
     {
       "caminho": "robots.txt",
@@ -807,8 +852,8 @@
     },
     {
       "caminho": "velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma/index.html",
-      "sha256": "2008d6c91400368ab2b2c9337d33af015a085d287073267444c2e70300a7534f",
-      "bytes": 32550
+      "sha256": "e4dcc9cb22ce223669f1f85ddddb39fe7694f6698a4538f49c755cae5b741628",
+      "bytes": 32540
     }
   ],
   "rollback": "republicar o V1 a partir de 642004d (ou o ZIP do V1 gerado por scripts/artefato-v1.sh); ver docs/V2-DEPLOY.md"
