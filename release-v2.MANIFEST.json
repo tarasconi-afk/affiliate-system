@@ -1,6 +1,6 @@
 {
-  "commit": "c256ed9786eaca7daab5685964e021a54c0e74e9",
-  "gerado_em": "2026-11-11T15:36:32.069Z",
+  "commit": "8be476d05dc89131ff1f21e01bcafe81449316be",
+  "gerado_em": "2026-11-11T16:41:40.088Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -39,15 +39,15 @@
     },
     {
       "estado": "PASS",
-      "msg": "repositório do V1 para a paridade (/Users/mauricio.tarasconi/Downloads/Ferramentas/affiliate-system)"
+      "msg": "repositório do V1 para a paridade (/var/lib/fc-lab/publicacao/site)"
     },
     {
       "estado": "PASS",
-      "msg": "disco livre na pasta temporária: 77.4 GB (mínimo 3)"
+      "msg": "disco livre na pasta temporária: 33.5 GB (mínimo 3)"
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de c256ed9 + npm ci"
+      "msg": "checkout limpo de 8be476d + npm ci"
     },
     {
       "estado": "PASS",
@@ -59,11 +59,7 @@
     },
     {
       "estado": "PASS",
-      "msg": "código de /private/tmp/claude-503/-Users-mauricio-tarasconi-Downloads-Ferramentas-affiliate-system/a028b914-9691-49d8-92a6-d87ab3b2287f/scratchpad/fcux (e83753f) idêntico ao do artefato, fora os dados"
-    },
-    {
-      "estado": "PASS",
-      "msg": "testes no código (831 passed | 1 skipped (832))"
+      "msg": "testes: pulados por --sem-testes"
     },
     {
       "estado": "PASS",
@@ -124,8 +120,8 @@
   ],
   "sitemap_urls": 27,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-c256ed9.zip",
-    "sha256": "0b5b661f9d0019fb158c3feed8939360a81467070b6f72493f2e2432f6431d4b",
+    "arquivo": "ferramenta-clara-v2-8be476d.zip",
+    "sha256": "8a142a5fb03d85551567c8c0e04bc8e2896ab2f69c6acbce06e5cfda827db17b",
     "arquivos": 137
   },
   "arquivos": [
@@ -171,28 +167,28 @@
     },
     {
       "caminho": "_astro/pagina-bateria-2ah-ou-4ah-parafusadeira.CV-jyMeo_1EOwuu.avif",
-      "sha256": "661eeef9bf3842faabe7b1d55327637ecc095b0c8ec87bccea3a4a8f1a79e06b",
-      "bytes": 31653
+      "sha256": "c1ec173a0c2aa1840ab3f7e1236151b0cd6119bbb5ad142844704f0e5a530324",
+      "bytes": 31259
     },
     {
       "caminho": "_astro/pagina-bateria-2ah-ou-4ah-parafusadeira.CV-jyMeo_1WiGVm.avif",
-      "sha256": "4dd18800aca583f57e600fa66924e90b036937a8af22f60e708a3e911d36d199",
-      "bytes": 50768
+      "sha256": "11f8fdc0f91eb301a7e3e1cf8eaa9e60d06272d09e6900ac726e488fbb3f6f0b",
+      "bytes": 50632
     },
     {
       "caminho": "_astro/pagina-bateria-2ah-ou-4ah-parafusadeira.CV-jyMeo_BrF8E.webp",
-      "sha256": "fde0e5fd354894ea14b00e2ea46a286c6eb7ea6fde2ccf78c2184223770b4ebc",
-      "bytes": 57074
+      "sha256": "d805f57614505f1aa1ec564bc655a321c9ed7246253c78b1e7071b3876708f08",
+      "bytes": 57070
     },
     {
       "caminho": "_astro/pagina-bateria-2ah-ou-4ah-parafusadeira.CV-jyMeo_ZDp9Vv.avif",
-      "sha256": "cd7db59e8572ce3010b0c2313df81f3eab25f8f0135f58db102ccdaca097a53c",
-      "bytes": 18066
+      "sha256": "4955e5307c3702bb3bd764a3b5468f6cea766d97913a514c619931b7da7e0b0f",
+      "bytes": 17769
     },
     {
       "caminho": "_astro/pagina-bateria-2ah-ou-4ah-parafusadeira.CV-jyMeo_ZFtOYb.webp",
-      "sha256": "47c25ed8c0da59db6138e068b305b3d6b41eb715fc24a566345a53305dff4010",
-      "bytes": 33114
+      "sha256": "575f419627d957077e72324e46cbe26a1b6216a80fc122d9e5f9a22c6a02f00d",
+      "bytes": 33100
     },
     {
       "caminho": "_astro/pagina-bateria-2ah-ou-4ah-parafusadeira.CV-jyMeo_Zf72eW.webp",
@@ -201,43 +197,43 @@
     },
     {
       "caminho": "_astro/pagina-bateria-2ah-ou-4ah-parafusadeira.CV-jyMeo_d4dED.webp",
-      "sha256": "61e90157c4f7e6ba0782da745aca4a464f29f55e7293ff79778c6b23258d522b",
-      "bytes": 14712
+      "sha256": "7ca116a5ca4b36d4b800398023b4f89a693d45e946bac14bbcea8f1997134b45",
+      "bytes": 14694
     },
     {
       "caminho": "_astro/pagina-bateria-2ah-ou-4ah-parafusadeira.CV-jyMeo_f8SHj.avif",
-      "sha256": "98cd8077cd59e3b930cfc8ea9fe9ac67c08a09d87f36f739f380615f4ef77f9c",
-      "bytes": 8178
+      "sha256": "60c8b22e9fae2315f9ff293a245cc6c7a94aec33d3d7c75f061093aa9f9ac057",
+      "bytes": 8123
     },
     {
       "caminho": "_astro/pagina-broca-ideal-para-furar-ferro.DG7w7A0k_1ByH1a.avif",
-      "sha256": "b370ab4be53262a9577cfdddae91276ab7e65a84048c1b74916320cdd60be351",
-      "bytes": 73723
+      "sha256": "6a7498369fc446cc86c0b110af88b19891f4524a4280bb380a093855dcc12d49",
+      "bytes": 73558
     },
     {
       "caminho": "_astro/pagina-broca-ideal-para-furar-ferro.DG7w7A0k_1Un4L8.avif",
-      "sha256": "98105126b4881240753f2ef94ed353a26c828fc63af1e9612af2f854513478cc",
-      "bytes": 26045
+      "sha256": "e239ee99e1dffdb6aecab223d09e30188346a26a3ade1c65c7d5b2f2a5413a25",
+      "bytes": 25822
     },
     {
       "caminho": "_astro/pagina-broca-ideal-para-furar-ferro.DG7w7A0k_1yVTTn.webp",
-      "sha256": "932aec0f8e5af68f62bf30ceb4ad65617fb1673a3c625a5809b5a7245c0e0e40",
-      "bytes": 81366
+      "sha256": "561e3a297f74c2b96728528197bd7ea07edb7cd1ec82b3486cfc813182ad7a6c",
+      "bytes": 81310
     },
     {
       "caminho": "_astro/pagina-broca-ideal-para-furar-ferro.DG7w7A0k_50r5m.avif",
-      "sha256": "29c118023d1af7425dd1c7a3b74b23acaee10fb50d234f53f45860548dacd808",
-      "bytes": 11213
+      "sha256": "b6113ddefd88ae66c4b30e7e0a8a9e1470cb274f465bfd1e6af8245099b05a8e",
+      "bytes": 11150
     },
     {
       "caminho": "_astro/pagina-broca-ideal-para-furar-ferro.DG7w7A0k_Z27oh34.avif",
-      "sha256": "07e3c243df34e3294806117f0c192874ea40f46365e3a54f7b885b4c3f6ff4aa",
-      "bytes": 47408
+      "sha256": "6bfba79e298d6efd813056551507872040a09a24c027a6d9e14a6092662f672b",
+      "bytes": 47021
     },
     {
       "caminho": "_astro/pagina-broca-ideal-para-furar-ferro.DG7w7A0k_Z2fO0oM.webp",
-      "sha256": "221d61f457896bf33914096dbec472ff8feae54dc166d4f1d85f1794251e6ab4",
-      "bytes": 20030
+      "sha256": "b0e0df75c8588ba6c176cde2ad96223e80a7850c6a80e99039559c126f30ad6e",
+      "bytes": 19974
     },
     {
       "caminho": "_astro/pagina-broca-ideal-para-furar-ferro.DG7w7A0k_ZOex6B.webp",
@@ -246,23 +242,23 @@
     },
     {
       "caminho": "_astro/pagina-broca-ideal-para-furar-ferro.DG7w7A0k_ZprmI1.webp",
-      "sha256": "e964da278623b427a3954f4e338dbb2ef8e1771370dafbecf4fef73f5d7cf1d3",
-      "bytes": 45656
+      "sha256": "88ebb4f016872a33250288bee871321897b457a26a34b81ed8a9be2663890430",
+      "bytes": 45664
     },
     {
       "caminho": "_astro/pagina-broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua.Bx_abaDb_1xQ0dS.webp",
-      "sha256": "f4e69e20e8321882275989abce3d69d692afd5788659073330c3d720f7b02c3b",
-      "bytes": 12442
+      "sha256": "176375326c6e3e05ebfaa383bb7c098e5f06e8a4311f31c2a887e9749c6563d6",
+      "bytes": 12446
     },
     {
       "caminho": "_astro/pagina-broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua.Bx_abaDb_T2mWM.webp",
-      "sha256": "8979c6c2b3b5ab03f1e91120c7fcb31855689dd6e176dbe496d71be568ba6e73",
-      "bytes": 28466
+      "sha256": "526852c83368a694a90c37565bd84916e06c1fb135828712af1a8c7fe7283c55",
+      "bytes": 28546
     },
     {
       "caminho": "_astro/pagina-broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua.Bx_abaDb_Z17ntqn.avif",
-      "sha256": "69226862b7a05aebb7bf0ce7d295244447be0ec58ba38454531e538ff028ee1d",
-      "bytes": 7146
+      "sha256": "8a7b79e71b3869872300fbb864bfff188900b177fe58008d0874c4a7eca15021",
+      "bytes": 7041
     },
     {
       "caminho": "_astro/pagina-broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua.Bx_abaDb_Z1A8nam.webp",
@@ -271,28 +267,28 @@
     },
     {
       "caminho": "_astro/pagina-broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua.Bx_abaDb_Z1Lc6Gt.avif",
-      "sha256": "0413f9a54729790091e59e30f77f2b16da753a4ec0f8e9ee03605a5786184dca",
-      "bytes": 17014
+      "sha256": "a238b459f4c52019d956450c4d2b729950364bdfdb56d5bf0717384ff40155c5",
+      "bytes": 16710
     },
     {
       "caminho": "_astro/pagina-broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua.Bx_abaDb_Z1mgynF.avif",
-      "sha256": "e93ec19400569d0e1e8489e271fc883fda5743024c76fda057a750d7f75ff9bb",
-      "bytes": 29814
+      "sha256": "7e0cfed264c9c3fd51aba942ad72426591693fb376d1a362963338009e49e4fa",
+      "bytes": 29500
     },
     {
       "caminho": "_astro/pagina-broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua.Bx_abaDb_Z7BufB.avif",
-      "sha256": "1f0f0a178f77938e96aa3264f281c788ef2d40a3d4416184f665b6c8dd3feddf",
-      "bytes": 47716
+      "sha256": "25212427cb0fe504522e0877bf1a6586fe00367e242e6bbf3602181d1e9b1b4b",
+      "bytes": 47120
     },
     {
       "caminho": "_astro/pagina-broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua.Bx_abaDb_dTbXv.webp",
-      "sha256": "523460defcd5cbf393211294d2477e7bcabea8a231cd02c616edc64372cbe05e",
-      "bytes": 49640
+      "sha256": "9cdef45bb280804d9a21112edeaae0eb997d61f20ce278fc9e79a7deb958a477",
+      "bytes": 49608
     },
     {
       "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_231G0S.avif",
-      "sha256": "462637fd61f0cc0b5e37e6b4c598b5a344a60784add0c72a8a2e0183879ec490",
-      "bytes": 10345
+      "sha256": "18c31358f84c77794dff09c29115d732ad73015798c9475e87b85e552b227573",
+      "bytes": 10195
     },
     {
       "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_Z1AErYz.webp",
@@ -301,68 +297,68 @@
     },
     {
       "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_Z1CHXzw.webp",
-      "sha256": "45f9d4539d6a6908118882a13f41cfeaa11c5488db8f93152189bbf9aae6177f",
-      "bytes": 20768
+      "sha256": "461ac8444f12c0ee82bb1f8abdc989f27153fc78dc6588f588c4251a3527a07c",
+      "bytes": 20760
     },
     {
       "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_Z27xfY5.avif",
-      "sha256": "01efbfb8cea0b4ecf5f716ecb82be526e796cf9988bf73ee65064d96d22998b7",
-      "bytes": 24705
+      "sha256": "e5b29432c6c7f8e810d6ab1cc5964c28ea0994859ab0a213e67290d3e4262967",
+      "bytes": 24495
     },
     {
       "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_Z2nkP8g.webp",
-      "sha256": "202b47337e96b45e293713d2130ad716f2dd5ec186f617b32f13272b6f38d9d9",
-      "bytes": 88746
+      "sha256": "2cab5f2fda4064d9faf6f449782d97481164f32ec2750858afd7b5645510b122",
+      "bytes": 88802
     },
     {
       "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_Z2vnD7.avif",
-      "sha256": "6b2bd727d4204484a3e616f5b217a88718bbd770ea602e9947d6ece45a13d1f8",
-      "bytes": 46316
+      "sha256": "e05f99cd331ca9b621a07d5af8d552ca31c0e6398a9ab1ccaad15e5dd69a25c7",
+      "bytes": 45869
     },
     {
       "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_ZI5LKy.webp",
-      "sha256": "589b8b499ea1e54b6cac739a6116caa08786cbc56c327bb857aa15d54fad43e0",
-      "bytes": 47992
+      "sha256": "3e6116580fb4d733f96f5055d634bbfdbe9938770009dc172aea9d80755f2f41",
+      "bytes": 48058
     },
     {
       "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_ZcNv85.avif",
-      "sha256": "ee7a0b021ca6310b934b383a91e9a7081a89b0b6238c2f6afa3cec8d4e78598e",
-      "bytes": 75858
+      "sha256": "a7d348b314714322dd0a48b143c1256c3161a0b95955f6b14ec4e0978675c949",
+      "bytes": 75249
     },
     {
       "caminho": "_astro/pagina-furadeira-ou-parafusadeira.whaN1tOk_1Si8TJ.webp",
-      "sha256": "a725a55a961b72b6909528ad2593edecaff5dc1b8c4d6d374b862edd4c1bd6e4",
-      "bytes": 27488
+      "sha256": "6a883867bcf83fb8051e42e92070e89548364d3780e155b8b6d421fe4f75babd",
+      "bytes": 27448
     },
     {
       "caminho": "_astro/pagina-furadeira-ou-parafusadeira.whaN1tOk_29xlAs.webp",
-      "sha256": "445b0998b2847851bd417e55caaab44dd29e4891943ec41d1703aecd263edb78",
-      "bytes": 13038
+      "sha256": "b27b3dc5988aebdc74badbc2f7fcb4af84c47d7c3bdaa1c4b926602adf17edc7",
+      "bytes": 13052
     },
     {
       "caminho": "_astro/pagina-furadeira-ou-parafusadeira.whaN1tOk_2ghEWG.avif",
-      "sha256": "426c5f4c67d0172e12f61400fde52d314340f2dd66ef0e143f943cbb204e2015",
-      "bytes": 25349
+      "sha256": "3a132ab92220b9efa10533019d539f36d20e212cca426aa6e5769856e573a786",
+      "bytes": 24910
     },
     {
       "caminho": "_astro/pagina-furadeira-ou-parafusadeira.whaN1tOk_Z1akC9X.avif",
-      "sha256": "864e6e07afc249c8eea5c6bfbe48a439791671be5c69a02a7d8500f8712abd49",
-      "bytes": 7139
+      "sha256": "95bd1da19e2208d266f486e9242d2d2edbc673fc0e04663b5f7adf4d1f362e54",
+      "bytes": 6980
     },
     {
       "caminho": "_astro/pagina-furadeira-ou-parafusadeira.whaN1tOk_Z1prYCI.webp",
-      "sha256": "a4ff6a4be6a38d449685ff0a69c1f8b123b14e35f9ab8c7a26e0136613dda80e",
-      "bytes": 45542
+      "sha256": "fb03080289f08993ff3956a1a9811325fd32df9bf950fc358c8235e9c61b5664",
+      "bytes": 45476
     },
     {
       "caminho": "_astro/pagina-furadeira-ou-parafusadeira.whaN1tOk_Z1qzOPG.avif",
-      "sha256": "ea248a99c4d32201399000fe824db25d105dc54f087809263ec452b836ff36f8",
-      "bytes": 15275
+      "sha256": "0811f117051d717478c4e7e9db700f74b50f96b4cbb258ddea209bad942f0102",
+      "bytes": 15029
     },
     {
       "caminho": "_astro/pagina-furadeira-ou-parafusadeira.whaN1tOk_Z2hQteg.avif",
-      "sha256": "081cd467186590e532ec4b70a21d5ea45b178859ffa076afc43169c54ab1ca1c",
-      "bytes": 40379
+      "sha256": "1131b0974290a92366fd69406ec52459cde4704285cdd9bd58173d3338fe8c54",
+      "bytes": 40011
     },
     {
       "caminho": "_astro/pagina-furadeira-ou-parafusadeira.whaN1tOk_rvd5w.webp",
@@ -376,38 +372,38 @@
     },
     {
       "caminho": "_astro/pagina-velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma.B0bUiGsm_FgSmd.webp",
-      "sha256": "c7e7a5d61055bf9110d489da098d08713502069f627711baadb78bda20c725a4",
-      "bytes": 18178
+      "sha256": "c8981dbe7f4c975ef471c6a3d3301efe75fcea9dfcffa24e16faff24f039b73d",
+      "bytes": 18244
     },
     {
       "caminho": "_astro/pagina-velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma.B0bUiGsm_Z1kXHpj.avif",
-      "sha256": "d40a63759a4e16b0c7b2726a9d5aed163f08a8455d0ba86b5be6390d6d8d4690",
-      "bytes": 70272
+      "sha256": "4bc08a67a8aa501a3763589ba8c2db4d6dbd6bd24a648b4bb1685eeba75674fa",
+      "bytes": 70170
     },
     {
       "caminho": "_astro/pagina-velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma.B0bUiGsm_Z2hfge4.avif",
-      "sha256": "e022b28a3801da1847f8c6d92f53c03c9eca3032444d11fc99172d5af5d82145",
-      "bytes": 10107
+      "sha256": "072d33438931374bc18bf133170dcf07f0c9a3d1a3d9cb38434cf019d0a02ea9",
+      "bytes": 9989
     },
     {
       "caminho": "_astro/pagina-velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma.B0bUiGsm_Z2rlODB.avif",
-      "sha256": "99edebdb8c7df20853cd5d743885ac0a69541149e2e659fc4522c1168c9bf892",
-      "bytes": 23474
+      "sha256": "ac7e27b635d73aa0e32930127acdcc7ce608f5e013ecb184ec11f5e62c928d9c",
+      "bytes": 23215
     },
     {
       "caminho": "_astro/pagina-velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma.B0bUiGsm_kVsHE.avif",
-      "sha256": "013576882eae7419cabc95bebbc1b22a631140748e0b027c6301092bf5009a62",
-      "bytes": 42670
+      "sha256": "27d181a085f5600ddc6d4afc0c289e27120c50478beb2b9c3018b266e9e367a6",
+      "bytes": 42364
     },
     {
       "caminho": "_astro/pagina-velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma.B0bUiGsm_vajVF.webp",
-      "sha256": "e34eb42a57981cc60ef3541f519f4a4d3e68479c8bb98355e95631976f533fbc",
-      "bytes": 42816
+      "sha256": "9d6eeeef96e55003b9c38a8179567c88c10b3cd0d8f09662c64f992345666e13",
+      "bytes": 42744
     },
     {
       "caminho": "_astro/pagina-velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma.B0bUiGsm_xGJpt.webp",
-      "sha256": "8e9622a0bc06ca54ee31130fa516646d13ab32367c6001937995e4fed3aa2456",
-      "bytes": 73858
+      "sha256": "0f163b6ecca73e02407c64c166990b0d0bb61bc877365847fe2293760832a243",
+      "bytes": 73810
     },
     {
       "caminho": "_astro/parafusadeira.DdrNjT3D.webp",
