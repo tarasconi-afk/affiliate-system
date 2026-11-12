@@ -1,6 +1,6 @@
 {
-  "commit": "d60b5fb138db3ef9d8ec7554fa56ce74337bd7b6",
-  "gerado_em": "2026-11-11T20:32:53.343Z",
+  "commit": "2beccb7f8944c6f15a83967cc1fa2378e2bb19b0",
+  "gerado_em": "2026-11-12T10:32:15.134Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -43,11 +43,11 @@
     },
     {
       "estado": "PASS",
-      "msg": "disco livre na pasta temporária: 79.9 GB (mínimo 3)"
+      "msg": "disco livre na pasta temporária: 79.3 GB (mínimo 3)"
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de d60b5fb + npm ci"
+      "msg": "checkout limpo de 2beccb7 + npm ci"
     },
     {
       "estado": "PASS",
@@ -130,8 +130,8 @@
   ],
   "sitemap_urls": 27,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-d60b5fb.zip",
-    "sha256": "45c0fbf25c9e2a16f2c3bac4e66e45f9590d068b7f290f645b0b15fc6a2e138a",
+    "arquivo": "ferramenta-clara-v2-2beccb7.zip",
+    "sha256": "3a67597bbe906e60f1f49927862943994bc8cc410131909173f91cced0e9c83a",
     "arquivos": 144
   },
   "arquivos": [
