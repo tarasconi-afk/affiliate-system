@@ -1,6 +1,6 @@
 {
-  "commit": "9532729c38b91e4c22f3c7b57bafd495f5af5f52",
-  "gerado_em": "2026-11-12T15:25:36.112Z",
+  "commit": "c14b15f3cf128be07604ec056b97d03aa4b338c6",
+  "gerado_em": "2026-11-12T15:30:24.683Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -47,7 +47,7 @@
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de 9532729 + npm ci"
+      "msg": "checkout limpo de c14b15f + npm ci"
     },
     {
       "estado": "PASS",
@@ -140,9 +140,9 @@
   ],
   "sitemap_urls": 30,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-9532729.zip",
-    "sha256": "1c5120e196d0316b973e5371c242be814b875872db842aa4183745880dc51d42",
-    "arquivos": 217
+    "arquivo": "ferramenta-clara-v2-c14b15f.zip",
+    "sha256": "9d122c4369fc6193b4de801316a732170783331e1a203087c8651709bc7e37a6",
+    "arquivos": 218
   },
   "arquivos": [
     {
@@ -699,6 +699,11 @@
       "caminho": "_astro/pagina-lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher.BIqI6stn.webp",
       "sha256": "b3e2b555e24c8545b406c817be6eff6fef191c75d8bb576ef59b5c427c31cd89",
       "bytes": 253054
+    },
+    {
+      "caminho": "_astro/pagina-parafusadeira-com-ou-sem-impacto.CHCf4p2w.webp",
+      "sha256": "dad89c8554b24a3e7bbd836b9c63451868a66612e72991700c7ea24e6de182d4",
+      "bytes": 81700
     },
     {
       "caminho": "_astro/pagina-qual-serra-circular-comprar.12lH7feY_1IjGOn.avif",
