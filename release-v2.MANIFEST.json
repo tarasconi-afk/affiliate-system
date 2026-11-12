@@ -1,6 +1,6 @@
 {
-  "commit": "2beccb7f8944c6f15a83967cc1fa2378e2bb19b0",
-  "gerado_em": "2026-11-12T10:32:15.134Z",
+  "commit": "14d6c24c8f67c74b02fe4fbed1eacf4d1d9e9705",
+  "gerado_em": "2026-11-12T12:09:31.678Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -43,11 +43,11 @@
     },
     {
       "estado": "PASS",
-      "msg": "disco livre na pasta temporária: 79.3 GB (mínimo 3)"
+      "msg": "disco livre na pasta temporária: 79.2 GB (mínimo 3)"
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de 2beccb7 + npm ci"
+      "msg": "checkout limpo de 14d6c24 + npm ci"
     },
     {
       "estado": "PASS",
@@ -102,7 +102,7 @@
       "msg": "nenhum arquivo sensível no artefato"
     }
   ],
-  "scripts_executaveis_no_html": 46,
+  "scripts_executaveis_no_html": 47,
   "donos_das_urls": {
     "bateria-2ah-ou-4ah-parafusadeira": "nativa (approve)",
     "bateria-parafusadeira-serve-em-outra-marca": "nativa (approve)",
@@ -114,7 +114,7 @@
     "makita-dhp482z-ferramenta-avulsa-bateria-parafusadeira-furadeira-impacto-v": "nativa (approve)",
     "mandril-10mm-ou-13mm": "nativa (approve)",
     "martelete-combinado-rompedor-demolidor": "nativa (approve)",
-    "nm-chave-de-impacto": "acervo V1",
+    "nm-chave-de-impacto": "nativa (approve)",
     "parafusadeira-12v-ou-18v": "nativa (approve)",
     "parafusadeira-brushless-ou-com-escovas": "nativa (approve)",
     "parafusadeira-com-ou-sem-impacto": "acervo V1",
@@ -130,8 +130,8 @@
   ],
   "sitemap_urls": 27,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-2beccb7.zip",
-    "sha256": "3a67597bbe906e60f1f49927862943994bc8cc410131909173f91cced0e9c83a",
+    "arquivo": "ferramenta-clara-v2-14d6c24.zip",
+    "sha256": "22a45adfca526469c30f12b3c77cd22957d00fc415f92cb65ba58b69e8ddbaaf",
     "arquivos": 144
   },
   "arquivos": [
@@ -527,8 +527,8 @@
     },
     {
       "caminho": "guias/index.html",
-      "sha256": "57cac595075df04fcef0e4d75a3330297b6e7a66b511e8a6ee863bc1238b73fe",
-      "bytes": 32740
+      "sha256": "23c2cd69d3dd75fc9eed784992aa3671d30f240aa5643da7564d70d0bfff404d",
+      "bytes": 32847
     },
     {
       "caminho": "images/bosch-12v-cc-1600.webp",
@@ -777,8 +777,8 @@
     },
     {
       "caminho": "index.html",
-      "sha256": "325af7efd497f727f203a6884afa8f0f764d6f872375d2f3550f041ba90a7aa6",
-      "bytes": 43591
+      "sha256": "3570c79eecef9738e76125c314560ea5346ed5d067f5eeffb2df361a4343b004",
+      "bytes": 43689
     },
     {
       "caminho": "makita-dhp482z-ferramenta-avulsa-bateria-parafusadeira-furadeira-impacto-v/index.html",
@@ -797,8 +797,8 @@
     },
     {
       "caminho": "nm-chave-de-impacto/index.html",
-      "sha256": "0de94a5bfa02c0bc3dbd150cf01f0d271d34e2e3b264b26d02c9ee772743ff86",
-      "bytes": 36926
+      "sha256": "bf62529e07fb7fa9a233b0602213ff9f0ecc45128d37d67d4a8863297674a086",
+      "bytes": 44504
     },
     {
       "caminho": "parafusadeira-12v-ou-18v/index.html",
@@ -837,8 +837,8 @@
     },
     {
       "caminho": "sitemap.xml",
-      "sha256": "5e1cfefa2dd8ccece3eebb47285fc0498c52fbfc719824b5120a9470ba2053e9",
-      "bytes": 3095
+      "sha256": "a09569f8544e7f88b61ee84b1423f94f9893f9ab83677b349bc3a24781469731",
+      "bytes": 3085
     },
     {
       "caminho": "sobre/index.html",
