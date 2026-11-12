@@ -1,6 +1,6 @@
 {
-  "commit": "c14b15f3cf128be07604ec056b97d03aa4b338c6",
-  "gerado_em": "2026-11-12T15:30:24.683Z",
+  "commit": "da831e34f89d10b4e2103858d430a397aa462a36",
+  "gerado_em": "2026-11-12T15:36:02.445Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -47,7 +47,7 @@
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de c14b15f + npm ci"
+      "msg": "checkout limpo de da831e3 + npm ci"
     },
     {
       "estado": "PASS",
@@ -67,7 +67,7 @@
     },
     {
       "estado": "PASS",
-      "msg": "qa:previa no artefato (31 páginas · 0 erro(s))"
+      "msg": "qa:previa no artefato (35 páginas · 0 erro(s))"
     },
     {
       "estado": "PASS",
@@ -102,7 +102,7 @@
       "msg": "nenhum arquivo sensível no artefato"
     }
   ],
-  "scripts_executaveis_no_html": 53,
+  "scripts_executaveis_no_html": 62,
   "donos_das_urls": {
     "bateria-2ah-ou-4ah-parafusadeira": "nativa (approve)",
     "bateria-parafusadeira-serve-em-outra-marca": "nativa (approve)",
@@ -117,7 +117,7 @@
     "nm-chave-de-impacto": "nativa (approve)",
     "parafusadeira-12v-ou-18v": "nativa (approve)",
     "parafusadeira-brushless-ou-com-escovas": "nativa (approve)",
-    "parafusadeira-com-ou-sem-impacto": "acervo V1",
+    "parafusadeira-com-ou-sem-impacto": "nativa (approve)",
     "parafusadeira-dewalt-dcd777-vale-a-pena": "nativa (approve)",
     "torque-nm-parafusadeira": "nativa (approve)"
   },
@@ -126,11 +126,16 @@
     "/bateria-parafusadeira-serve-em-outra-marca/ B00FAM1V7E",
     "/bosch-ou-makita-parafusadeira/ B00FAM1V7E",
     "/broca-ideal-para-furar-ferro/ B00TX9V56C",
+    "/broca-ideal-para-furar-parede/ B00TX9V56C",
+    "/broca-ideal-para-furar-parede/ B076KPXF6P",
     "/broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua/ B00TX9V56C",
     "/como-escolher-furadeira/ B00FAM1V7E",
     "/como-escolher-furadeira/ B076KPXF6P",
+    "/como-escolher-furadeira-para-concreto/ B076KPXF6P",
     "/esmerilhadeira-ou-lixadeira/ B08DGZTHV9",
+    "/esmerilhadeira-qual-a-melhor/ B08DGZTHV9",
     "/furadeira-com-fio-ou-a-bateria/ B00FAM1V7E",
+    "/lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher/ B08K41BLXM",
     "/mandril-10mm-ou-13mm/ B00FAM1V7E",
     "/martelete-combinado-rompedor-demolidor/ B076B93CHK",
     "/nm-chave-de-impacto/ B0DY2P9F8Q",
@@ -138,11 +143,11 @@
     "/parafusadeira-dewalt-dcd777-vale-a-pena/ B099NZQHRB",
     "/parafusadeira-para-drywall-precisa-de-uma-especifica/ B00FAM1V7E"
   ],
-  "sitemap_urls": 30,
+  "sitemap_urls": 34,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-c14b15f.zip",
-    "sha256": "9d122c4369fc6193b4de801316a732170783331e1a203087c8651709bc7e37a6",
-    "arquivos": 218
+    "arquivo": "ferramenta-clara-v2-da831e3.zip",
+    "sha256": "0a6ca63633ed72535c0380a60a2daf18b548578103bcad5311caebe45fd24919",
+    "arquivos": 257
   },
   "arquivos": [
     {
@@ -441,9 +446,44 @@
       "bytes": 45664
     },
     {
-      "caminho": "_astro/pagina-broca-ideal-para-furar-parede.B4gdt86u.webp",
-      "sha256": "695c45efd491c59db6cda306e426c0f5ce6d93f4d46a497ec61c44a1296a8d57",
-      "bytes": 127760
+      "caminho": "_astro/pagina-broca-ideal-para-furar-parede.B4gdt86u_1BeCdB.webp",
+      "sha256": "c1ce89bd7c4a6618bd12902b58ec18ee0fbf600869150ffe9205d57144f4e0b1",
+      "bytes": 46418
+    },
+    {
+      "caminho": "_astro/pagina-broca-ideal-para-furar-parede.B4gdt86u_1qXcBx.webp",
+      "sha256": "754b3831ed2e9c15c2ff5e2cdd23de88ccef9fd8990788151dfc0ebecab4122c",
+      "bytes": 22548
+    },
+    {
+      "caminho": "_astro/pagina-broca-ideal-para-furar-parede.B4gdt86u_2wq3O1.avif",
+      "sha256": "38f90fa2ae1555dac9f50ab801f7ae440c1a616f80110c6c095bd0d629313adf",
+      "bytes": 39877
+    },
+    {
+      "caminho": "_astro/pagina-broca-ideal-para-furar-parede.B4gdt86u_5BNGf.webp",
+      "sha256": "790f02a02a69ec800498f46fc5b4d553a4558c79d594b41a9738e468555a4e4d",
+      "bytes": 76456
+    },
+    {
+      "caminho": "_astro/pagina-broca-ideal-para-furar-parede.B4gdt86u_Ryf87.webp",
+      "sha256": "b85b116e23b5325f9757daa5d1bb3dc8bedbd2dea8fc4948163e6181643a1aaf",
+      "bytes": 119574
+    },
+    {
+      "caminho": "_astro/pagina-broca-ideal-para-furar-parede.B4gdt86u_Z256yIP.avif",
+      "sha256": "c71513eb040cd050abb8b0d5f3609cc7dc3866cac75179a721922802575b8204",
+      "bytes": 23402
+    },
+    {
+      "caminho": "_astro/pagina-broca-ideal-para-furar-parede.B4gdt86u_Z2fmYkT.avif",
+      "sha256": "bd5c5ba05f0f0e96f6443fb181b5864c9c2e09c6c184ba2a1d5f4cd7160f5352",
+      "bytes": 11746
+    },
+    {
+      "caminho": "_astro/pagina-broca-ideal-para-furar-parede.B4gdt86u_dAKMY.avif",
+      "sha256": "6269368b95be65aaeee323e104fd2e77b9c96088e4c42270f0f3fecfc5989af9",
+      "bytes": 60982
     },
     {
       "caminho": "_astro/pagina-broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua.Bx_abaDb_1xQ0dS.webp",
@@ -486,9 +526,44 @@
       "bytes": 49608
     },
     {
-      "caminho": "_astro/pagina-como-escolher-furadeira-para-concreto.hN62jtxp.webp",
-      "sha256": "862a443440768979d26faf5e5c9e2a97a48cda1ebabf0da56951d8917de2485d",
-      "bytes": 103002
+      "caminho": "_astro/pagina-como-escolher-furadeira-para-concreto.hN62jtxp_17O451.webp",
+      "sha256": "0c7707e0e7bd43b47eb69db7e0ff6579ef1750ca4a354e654707cd138de5ab48",
+      "bytes": 14606
+    },
+    {
+      "caminho": "_astro/pagina-como-escolher-furadeira-para-concreto.hN62jtxp_1TVbUo.webp",
+      "sha256": "e3e4c7e59a1a5da1554e4b9aab113b0916341c058d4125fba77bd4180d973b7d",
+      "bytes": 32582
+    },
+    {
+      "caminho": "_astro/pagina-como-escolher-furadeira-para-concreto.hN62jtxp_2siBRi.webp",
+      "sha256": "005d264db2db805ba6d1c6ef9c0155bf6a027d8828ad05c38c4635fc15a483be",
+      "bytes": 56982
+    },
+    {
+      "caminho": "_astro/pagina-como-escolher-furadeira-para-concreto.hN62jtxp_Z1ESvH.avif",
+      "sha256": "67d538bc0fb3821a510386748cf989b88243cb2e151a4cc10d59242f47625ff4",
+      "bytes": 53045
+    },
+    {
+      "caminho": "_astro/pagina-como-escolher-furadeira-para-concreto.hN62jtxp_Z2nqkhv.webp",
+      "sha256": "aa66ea08e76b4b505fb230350526eb4494ee5d7dcd6cf3571cd12c1027e5c37d",
+      "bytes": 95128
+    },
+    {
+      "caminho": "_astro/pagina-como-escolher-furadeira-para-concreto.hN62jtxp_Z59Ku0.avif",
+      "sha256": "5cedc8a4bf55b680c5015f385bba55d2b8caf14c399ce459f2cacefee995e4a0",
+      "bytes": 33932
+    },
+    {
+      "caminho": "_astro/pagina-como-escolher-furadeira-para-concreto.hN62jtxp_ZAfKJg.avif",
+      "sha256": "51715a6d807b6cfdbf11fcabb00a2af980a82a1f4ac3fbe5d9f770652bd6d854",
+      "bytes": 8816
+    },
+    {
+      "caminho": "_astro/pagina-como-escolher-furadeira-para-concreto.hN62jtxp_bQm67.avif",
+      "sha256": "a9351d9b9cdac96ae8f6857d02c6c9ad0427d5c0b7e022386e20f025ffbd960b",
+      "bytes": 19652
     },
     {
       "caminho": "_astro/pagina-como-escolher-furadeira.C35rqQwQ_11v3At.avif",
@@ -611,9 +686,44 @@
       "bytes": 75249
     },
     {
-      "caminho": "_astro/pagina-esmerilhadeira-qual-a-melhor.ByMQXhuj.webp",
-      "sha256": "1865705aed39a1315f9b1d9e0c0a3b694ef23098550558b4320e55ca4b7daee8",
-      "bytes": 267196
+      "caminho": "_astro/pagina-esmerilhadeira-qual-a-melhor.ByMQXhuj_23Munw.webp",
+      "sha256": "19ea57488571a0d779bc71b2c0195e9e71bca5b7ee853fad0084a0992660cdbf",
+      "bytes": 66938
+    },
+    {
+      "caminho": "_astro/pagina-esmerilhadeira-qual-a-melhor.ByMQXhuj_29vIW8.webp",
+      "sha256": "9a414d2277ce8e3de46bb0ca6bf7166346627a602fc9653e8179270c3f944efc",
+      "bytes": 133074
+    },
+    {
+      "caminho": "_astro/pagina-esmerilhadeira-qual-a-melhor.ByMQXhuj_2c8w3U.avif",
+      "sha256": "4203360039fb3bcf8b5a385722eca360ccd3943819a21a0403326120b4e85e2a",
+      "bytes": 125848
+    },
+    {
+      "caminho": "_astro/pagina-esmerilhadeira-qual-a-melhor.ByMQXhuj_Z1wOs0j.avif",
+      "sha256": "435418a322055ef19cdeaad9b1ff47270bb381c30859550a74e899864807cd82",
+      "bytes": 66929
+    },
+    {
+      "caminho": "_astro/pagina-esmerilhadeira-qual-a-melhor.ByMQXhuj_Z2vVOC2.avif",
+      "sha256": "dee2d3e4c3f7a9f14608ce079ed814921b293c7cbb73aca7c6e11f124ba9a68b",
+      "bytes": 12339
+    },
+    {
+      "caminho": "_astro/pagina-esmerilhadeira-qual-a-melhor.ByMQXhuj_ZFzbVg.avif",
+      "sha256": "56825265164e65b0066ac78386f5afda01b01ad02c52ed10fec168c5c311d01b",
+      "bytes": 31507
+    },
+    {
+      "caminho": "_astro/pagina-esmerilhadeira-qual-a-melhor.ByMQXhuj_ZeEI3Q.webp",
+      "sha256": "243f23d076bdd3f3a7e0f948b590ebbd4311b945549cfe6a7348decaa0966118",
+      "bytes": 254382
+    },
+    {
+      "caminho": "_astro/pagina-esmerilhadeira-qual-a-melhor.ByMQXhuj_dpQGK.webp",
+      "sha256": "d8d06a1be50aff1318a66a5e903a333c4f3c1d1bfa5c124eed70321fc7915c5b",
+      "bytes": 25386
     },
     {
       "caminho": "_astro/pagina-furadeira-com-fio-ou-a-bateria.BUAqhLtl_149mCq.webp",
@@ -696,14 +806,84 @@
       "bytes": 71480
     },
     {
-      "caminho": "_astro/pagina-lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher.BIqI6stn.webp",
-      "sha256": "b3e2b555e24c8545b406c817be6eff6fef191c75d8bb576ef59b5c427c31cd89",
-      "bytes": 253054
+      "caminho": "_astro/pagina-lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher.BIqI6stn_1RANQv.avif",
+      "sha256": "8207308c6ed5e1b816a9ac5a2269322dd6da71ee176e4d0429c3d6bfe8e841f2",
+      "bytes": 30654
     },
     {
-      "caminho": "_astro/pagina-parafusadeira-com-ou-sem-impacto.CHCf4p2w.webp",
-      "sha256": "dad89c8554b24a3e7bbd836b9c63451868a66612e72991700c7ea24e6de182d4",
-      "bytes": 81700
+      "caminho": "_astro/pagina-lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher.BIqI6stn_2aygzm.avif",
+      "sha256": "7b75415467cb0035d2b197839bafff74bec692d83ae63519af8373917a660476",
+      "bytes": 122185
+    },
+    {
+      "caminho": "_astro/pagina-lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher.BIqI6stn_2r9aBo.webp",
+      "sha256": "66181c9f5bc73032b7fc0a3980017f1c22312cdfae1165d7f7d378ab41721b6f",
+      "bytes": 241318
+    },
+    {
+      "caminho": "_astro/pagina-lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher.BIqI6stn_Z1BpyAf.webp",
+      "sha256": "5b4cfb75a7d703c5ba60f5f90b7183bee67f6eca8ebe7e11407052609298ffdd",
+      "bytes": 59206
+    },
+    {
+      "caminho": "_astro/pagina-lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher.BIqI6stn_Z2j7Nqz.avif",
+      "sha256": "53a986277115e075fa3e04f33305d6c9c701261aace85ec087553bb8aecc6b55",
+      "bytes": 10832
+    },
+    {
+      "caminho": "_astro/pagina-lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher.BIqI6stn_ZHW34o.webp",
+      "sha256": "a432db31dd485df25bf137ffed0bf1451a6c994f047df446afb8c080a4620c81",
+      "bytes": 21706
+    },
+    {
+      "caminho": "_astro/pagina-lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher.BIqI6stn_ZVHcme.webp",
+      "sha256": "34bb88257046b585ba037e746774003a82d88b33081178d5ba3660918af14058",
+      "bytes": 121666
+    },
+    {
+      "caminho": "_astro/pagina-lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher.BIqI6stn_vNFxw.avif",
+      "sha256": "396282b6826391fd5b52cbb9f1a92e120d0cb64217e1ea13956fb9f7b4b81307",
+      "bytes": 65988
+    },
+    {
+      "caminho": "_astro/pagina-parafusadeira-com-ou-sem-impacto.CHCf4p2w_1vFqIx.webp",
+      "sha256": "adff7d24d0807ebcacce986808d5844c174b6900ea7ba34b2dcf71223c414a1b",
+      "bytes": 75284
+    },
+    {
+      "caminho": "_astro/pagina-parafusadeira-com-ou-sem-impacto.CHCf4p2w_2nf979.webp",
+      "sha256": "c8c7df689d2fc67eb86b387897a451b8d76693453b33e870951dfdb2f19fd0ca",
+      "bytes": 50018
+    },
+    {
+      "caminho": "_astro/pagina-parafusadeira-com-ou-sem-impacto.CHCf4p2w_Z1Dz8kW.avif",
+      "sha256": "679bbeb504ccf7ab9f88463cf51f05b2378135fef626ad7850c6a0b44cc87292",
+      "bytes": 29635
+    },
+    {
+      "caminho": "_astro/pagina-parafusadeira-com-ou-sem-impacto.CHCf4p2w_Z1m5WT5.avif",
+      "sha256": "012df2fbaaffc477c9449bb27682db3d06bd079c0aeadd20760b9673f6c103f9",
+      "bytes": 44551
+    },
+    {
+      "caminho": "_astro/pagina-parafusadeira-com-ou-sem-impacto.CHCf4p2w_ZpUEcE.avif",
+      "sha256": "c31af71d0ce9dc4bd47dab62e3511d8b758f0135a8b138d195f11cb8217467aa",
+      "bytes": 17548
+    },
+    {
+      "caminho": "_astro/pagina-parafusadeira-com-ou-sem-impacto.CHCf4p2w_Zs0kfk.webp",
+      "sha256": "ca27001128fcdfdfe570033d608886dcadacb1e0a7db00d84acfcab17f994b03",
+      "bytes": 31090
+    },
+    {
+      "caminho": "_astro/pagina-parafusadeira-com-ou-sem-impacto.CHCf4p2w_qxIou.webp",
+      "sha256": "924eeab82f41084cdeda758350578768a47e27d9211685f31153a3db8c8ea640",
+      "bytes": 15888
+    },
+    {
+      "caminho": "_astro/pagina-parafusadeira-com-ou-sem-impacto.CHCf4p2w_sCora.avif",
+      "sha256": "c11175a428ad85ab5936b90f950f6910d6a34b331090869ef114aa77b2fc69bd",
+      "bytes": 8922
     },
     {
       "caminho": "_astro/pagina-qual-serra-circular-comprar.12lH7feY_1IjGOn.avif",
@@ -842,18 +1022,28 @@
     },
     {
       "caminho": "broca-ideal-para-furar-ferro/index.html",
-      "sha256": "4ad15f3c0dfb2f093dfc55965a34b30414c4b43ea77c5f6c1cac24a86da881b0",
-      "bytes": 41607
+      "sha256": "4bc479900ac41979102a0ec8dc1f9f1dbb8847ea941a70ff614560d377aa93af",
+      "bytes": 41801
+    },
+    {
+      "caminho": "broca-ideal-para-furar-parede/index.html",
+      "sha256": "d438d595e8401e87beaf09b74c9df27c601f141e59bb89f8d4482fb20d2fbab7",
+      "bytes": 52905
     },
     {
       "caminho": "broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua/index.html",
-      "sha256": "e1d83937a6d68ff0bc608eb5258e690890b29b0eddefbb2aece1c04c59db763a",
-      "bytes": 33544
+      "sha256": "96d31ae23148bed6ba6891d989025d588941e2db57b097d71574ca478c9fdaef",
+      "bytes": 33738
     },
     {
       "caminho": "como-escolher-furadeira/index.html",
-      "sha256": "4fcd61fae7f96d6073eed739ec22cccec2b6119e05f170550e24d043da1cf2a2",
-      "bytes": 47759
+      "sha256": "a6aa54c72ad70988e9bb4fe7a186de50d3979908a6da99d80db63b8103178631",
+      "bytes": 49068
+    },
+    {
+      "caminho": "como-escolher-furadeira-para-concreto/index.html",
+      "sha256": "c1e5b4433dca6e3fe03ed7d5db9048342d31c94cca5d1145f138cbed852f17dc",
+      "bytes": 38609
     },
     {
       "caminho": "como-escolher-serra-tico-tico/index.html",
@@ -872,13 +1062,18 @@
     },
     {
       "caminho": "creditos/index.html",
-      "sha256": "1999200e6ca735b8744d8079e65c2e3bc8a0051291e08d4b9b22edae121bc46d",
-      "bytes": 32873
+      "sha256": "d3cda392abe3f19a16b90c9e677a807ed140bcbd6b0810d44423f1440b87d743",
+      "bytes": 33909
     },
     {
       "caminho": "esmerilhadeira-ou-lixadeira/index.html",
-      "sha256": "328a3a4245a531d503187afaa3e54ed769b7265b8d91a8fbf5e561e19193f42c",
-      "bytes": 41339
+      "sha256": "61c7c6ac6a4840485f05e086fa864cb0ec820be423939f1b85e53c46502ea56b",
+      "bytes": 45426
+    },
+    {
+      "caminho": "esmerilhadeira-qual-a-melhor/index.html",
+      "sha256": "dd3212c2cd7f78ae4c3c2e2524b3ddf435307895973bf77782c01ee72a67fce4",
+      "bytes": 45807
     },
     {
       "caminho": "favicon.svg",
@@ -902,8 +1097,8 @@
     },
     {
       "caminho": "guias/index.html",
-      "sha256": "5a9e669c20ac859f4c9c903e0465d06f5c227029750f77e1e1e9b7cf526c1c54",
-      "bytes": 43149
+      "sha256": "8cb36ece9f156460753cb021c6269b6d383d051e447e8d1f7b480e346cbd86de",
+      "bytes": 52224
     },
     {
       "caminho": "images/bosch-12v-cc-1600.webp",
@@ -1152,8 +1347,13 @@
     },
     {
       "caminho": "index.html",
-      "sha256": "9003a5df44ed7b9cf8960eec5c21149463dc3cc2c0b623a1faece5b8588066eb",
-      "bytes": 50719
+      "sha256": "35f0632964e9fe42ab0b023b99363e187a7815c7642675e46dc9fa5f1d92cc27",
+      "bytes": 60652
+    },
+    {
+      "caminho": "lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher/index.html",
+      "sha256": "2bc420d938041b7964560855ad4240201b5d0353c38209d9f897b63fcd2fbce0",
+      "bytes": 42984
     },
     {
       "caminho": "makita-dhp482z-ferramenta-avulsa-bateria-parafusadeira-furadeira-impacto-v/index.html",
@@ -1167,13 +1367,13 @@
     },
     {
       "caminho": "martelete-combinado-rompedor-demolidor/index.html",
-      "sha256": "605df278cb3062baa8a47266d6b47f4a676ef75f1da33f0e7726b2bff3b8950a",
-      "bytes": 39498
+      "sha256": "de125409d3e492a85766705acec3a2a9e842e31d9142995109f5cf3e69336595",
+      "bytes": 43317
     },
     {
       "caminho": "nm-chave-de-impacto/index.html",
-      "sha256": "398eb232b724a99c9fa4f47c0e6495a13f1901f65dcf56eebdcc8594a2a5ecd6",
-      "bytes": 48702
+      "sha256": "9a98779a7a9d78fdf71f20cdd3469525c7826bfa0503bf6caa7dc7c4faa6565e",
+      "bytes": 47064
     },
     {
       "caminho": "parafusadeira-12v-ou-18v/index.html",
@@ -1187,8 +1387,8 @@
     },
     {
       "caminho": "parafusadeira-com-ou-sem-impacto/index.html",
-      "sha256": "f7618d8a991f1ef908418eca16cb1d35ab4d45926d09bd1f2f9adbbbb2b2f394",
-      "bytes": 34091
+      "sha256": "b93ec604f0faaee125036a2754ad38e1a1a5c10547153830e9a3ba190ebbcddd",
+      "bytes": 45246
     },
     {
       "caminho": "parafusadeira-dewalt-dcd777-vale-a-pena/index.html",
@@ -1217,8 +1417,8 @@
     },
     {
       "caminho": "sitemap.xml",
-      "sha256": "5cad296de32c0620337a0982c0477c08997af90d0b3e5984a99987f25f0312dc",
-      "bytes": 3422
+      "sha256": "6fe01e740f6ea790849111d63f4968da1ec222d18c358af277bb7934443575da",
+      "bytes": 3909
     },
     {
       "caminho": "sobre/index.html",
@@ -1227,8 +1427,8 @@
     },
     {
       "caminho": "torque-nm-parafusadeira/index.html",
-      "sha256": "8e49e4b6c1e5313961a81c50c2c655e4a62700d13aaea7417eae11a829bbb528",
-      "bytes": 49382
+      "sha256": "191509b97bc59570a1efd216d9d1e0d8297df0baf7f07957720be9cb52c7e5bd",
+      "bytes": 47500
     },
     {
       "caminho": "velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma/index.html",
