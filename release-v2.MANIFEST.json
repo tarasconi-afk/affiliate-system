@@ -1,6 +1,6 @@
 {
-  "commit": "da831e34f89d10b4e2103858d430a397aa462a36",
-  "gerado_em": "2026-11-12T15:36:02.445Z",
+  "commit": "c53dca150d3709319c16d94a8f2be9b636fbb403",
+  "gerado_em": "2026-11-13T10:33:18.257Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -43,11 +43,11 @@
     },
     {
       "estado": "PASS",
-      "msg": "disco livre na pasta temporária: 78.5 GB (mínimo 3)"
+      "msg": "disco livre na pasta temporária: 77.6 GB (mínimo 3)"
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de da831e3 + npm ci"
+      "msg": "checkout limpo de c53dca1 + npm ci"
     },
     {
       "estado": "PASS",
@@ -145,9 +145,9 @@
   ],
   "sitemap_urls": 34,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-da831e3.zip",
-    "sha256": "0a6ca63633ed72535c0380a60a2daf18b548578103bcad5311caebe45fd24919",
-    "arquivos": 257
+    "arquivo": "ferramenta-clara-v2-c53dca1.zip",
+    "sha256": "9f0193ee70c92835abe909381e4bdb1bee85f75fa56e56b6869d7e296b35aba2",
+    "arquivos": 253
   },
   "arquivos": [
     {
@@ -166,9 +166,9 @@
       "bytes": 25133
     },
     {
-      "caminho": "_astro/_slug_.DTDXY6X4.css",
-      "sha256": "669d94e262221e75273eb0b0efa85655ba0a4b640b946e60f42a9bd592022376",
-      "bytes": 43409
+      "caminho": "_astro/_slug_.eIBrZVBS.css",
+      "sha256": "d175c2f50718b65bb757b0e44f48342043e02d123afe98aa7c27e569914444db",
+      "bytes": 43449
     },
     {
       "caminho": "_astro/bateria.BTeIyyH6.webp",
@@ -364,46 +364,6 @@
       "caminho": "_astro/pagina-bosch-185-li-gsb.CafsZ8y2_gFVzP.avif",
       "sha256": "8dad0abb892c2b277c6b45c7eb5491bc177e591e320cd20e4bf435f50caf69b3",
       "bytes": 43702
-    },
-    {
-      "caminho": "_astro/pagina-bosch-ou-makita-parafusadeira.BJOdnUVw_1rR749.webp",
-      "sha256": "1d1083ae38f444a94854b68a3dc79e306f028643bf00ef8c63b44d0c92116cbc",
-      "bytes": 65510
-    },
-    {
-      "caminho": "_astro/pagina-bosch-ou-makita-parafusadeira.BJOdnUVw_1zQ4aS.avif",
-      "sha256": "5a876b2f56d6bb9d993a6b1c63a2513411f3cadebde0ee4d821c2e8a934d6411",
-      "bytes": 59576
-    },
-    {
-      "caminho": "_astro/pagina-bosch-ou-makita-parafusadeira.BJOdnUVw_2eNxv1.webp",
-      "sha256": "d0fc8f14ccac39419f78b8b732b6c5d112b21730e13d77547e77249e86e7b1bb",
-      "bytes": 107024
-    },
-    {
-      "caminho": "_astro/pagina-bosch-ou-makita-parafusadeira.BJOdnUVw_Z1WdaIH.webp",
-      "sha256": "2a0d5028ef9ffad999725debaa5e4b880cb9dfd768728e67d7af708e52ecd1d3",
-      "bytes": 39340
-    },
-    {
-      "caminho": "_astro/pagina-bosch-ou-makita-parafusadeira.BJOdnUVw_Z1bvLC1.avif",
-      "sha256": "48763072c3c6561dbc5e7a8aab4da5aee3aeae0fda7bb1a68a9d04b8b9d4d850",
-      "bytes": 37804
-    },
-    {
-      "caminho": "_astro/pagina-bosch-ou-makita-parafusadeira.BJOdnUVw_Z27tAkL.webp",
-      "sha256": "d4cdb918b3b68c03c92259be75c02fb6f1a2244691ce137f4acc6dc4f8e919a6",
-      "bytes": 19004
-    },
-    {
-      "caminho": "_astro/pagina-bosch-ou-makita-parafusadeira.BJOdnUVw_ZICDth.avif",
-      "sha256": "a9a374fddb8dc32209495d32b97be3587811f115c8d96f68007ee13964b3b1fa",
-      "bytes": 10203
-    },
-    {
-      "caminho": "_astro/pagina-bosch-ou-makita-parafusadeira.BJOdnUVw_ZymdRd.avif",
-      "sha256": "929829ad020e090f9029d2e9c03d610929139d75cd1acda8acf6a5965bbc692c",
-      "bytes": 21464
     },
     {
       "caminho": "_astro/pagina-broca-ideal-para-furar-ferro.DG7w7A0k_1ByH1a.avif",
@@ -971,6 +931,26 @@
       "bytes": 102716
     },
     {
+      "caminho": "_astro/produto-b00004udju.DOqn5Wmv.webp",
+      "sha256": "8163ec7e0880ac7aa0e0a524801fe769b29baedc776fe95b86839beaef0d4eac",
+      "bytes": 152122
+    },
+    {
+      "caminho": "_astro/produto-b00fam1v7e.aMrg6zA3.webp",
+      "sha256": "b443a5be1d586bd1137bb9a449deec500c70f11bfe87598037fe09024974df7e",
+      "bytes": 106824
+    },
+    {
+      "caminho": "_astro/produto-b00tx9v56c.Dl1_IVpO.webp",
+      "sha256": "1e99fec85728b0d67c8f6f353194284f149e0156516553396c68e16913242267",
+      "bytes": 124092
+    },
+    {
+      "caminho": "_astro/produto-b076b93chk.C-MIcCA9.webp",
+      "sha256": "0def52965fab84d2da88468772b884450977ec140e8a434b26830b9aeed4fa03",
+      "bytes": 187486
+    },
+    {
       "caminho": "_astro/serra_circular.BXYxtsgz.webp",
       "sha256": "fbc44f970cc47c6e40ea2fc5e6c14ced003cf593d781ad6f80ee5fb58d129f3f",
       "bytes": 234696
@@ -1002,62 +982,62 @@
     },
     {
       "caminho": "bateria-2ah-ou-4ah-parafusadeira/index.html",
-      "sha256": "3a8ef8d44c126a25579244bf65424ac9d634248747dbe9d807d7ce65d08ab904",
-      "bytes": 34917
+      "sha256": "d8bc56268e506dbba13d3bc00c831413e53085e7020da74cf00d3e93e2a75513",
+      "bytes": 33833
     },
     {
       "caminho": "bateria-parafusadeira-serve-em-outra-marca/index.html",
-      "sha256": "8f29b971788efa267282af4f3d641e5b508733ef8d8b3f4f8407ea2dec864839",
-      "bytes": 51640
+      "sha256": "4914bd931d9c0e6a6ef3e30b8afb70a7fb3d9421ef3ddb4bfc652cb53feeb225",
+      "bytes": 51755
     },
     {
       "caminho": "bosch-185-li-gsb/index.html",
-      "sha256": "196d768c06e01fec2f6788ba3620bc1a788ad68f438a39b06f39d86654425400",
-      "bytes": 34274
+      "sha256": "437a7876b5edec504b603977edd31a402252ab19935977b615551e0425513b34",
+      "bytes": 33075
     },
     {
       "caminho": "bosch-ou-makita-parafusadeira/index.html",
-      "sha256": "b0836ae29a7482b32805baae7ae0dc4c1e90eb16ba1c043e3daa43a4a0ed27ec",
-      "bytes": 37282
+      "sha256": "364026f2ef8e569feb9bbecfeb2ba687f3983747798f029169c5f25381c051ef",
+      "bytes": 36546
     },
     {
       "caminho": "broca-ideal-para-furar-ferro/index.html",
-      "sha256": "4bc479900ac41979102a0ec8dc1f9f1dbb8847ea941a70ff614560d377aa93af",
-      "bytes": 41801
+      "sha256": "1d5b8c9c2cb4ccf3231f07cef1f7ef5ba624b2ff688490784759de8045bb3c30",
+      "bytes": 41916
     },
     {
       "caminho": "broca-ideal-para-furar-parede/index.html",
-      "sha256": "d438d595e8401e87beaf09b74c9df27c601f141e59bb89f8d4482fb20d2fbab7",
-      "bytes": 52905
+      "sha256": "612c780cbf33033fc766a30526c400d629a043b50fd50c3bc393d55ec17778c8",
+      "bytes": 54294
     },
     {
       "caminho": "broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua/index.html",
-      "sha256": "96d31ae23148bed6ba6891d989025d588941e2db57b097d71574ca478c9fdaef",
-      "bytes": 33738
+      "sha256": "567438e0b65520801adf59b6dbe4cc0c003cbc0bcf70ba39a93c9aa090e7d126",
+      "bytes": 33853
     },
     {
       "caminho": "como-escolher-furadeira/index.html",
-      "sha256": "a6aa54c72ad70988e9bb4fe7a186de50d3979908a6da99d80db63b8103178631",
-      "bytes": 49068
+      "sha256": "bc0a2f68fab1b8d62e71f0e7fd3d64e993b2b65e2dee2aa7488b62e2cd38e8cb",
+      "bytes": 50456
     },
     {
       "caminho": "como-escolher-furadeira-para-concreto/index.html",
-      "sha256": "c1e5b4433dca6e3fe03ed7d5db9048342d31c94cca5d1145f138cbed852f17dc",
-      "bytes": 38609
+      "sha256": "4ffc14989b65aa573ca4f16274f8a56c94e548c1cc0124f445bc8ead7480a283",
+      "bytes": 39871
     },
     {
       "caminho": "como-escolher-serra-tico-tico/index.html",
-      "sha256": "73117b0f8b2b05f7b4aba5a8a100fb30c6c35bc9332c1ef91c7cb220154f0ceb",
-      "bytes": 38383
+      "sha256": "3b29c5e644be34a49343e2771b3d3f5cb7b6b012d7d356ac4750e76f776b1f8b",
+      "bytes": 40148
     },
     {
       "caminho": "como-trabalhamos/index.html",
-      "sha256": "ce7fdadaccd3ea501cfa8a6b15e306a697cad1cfcfff7fed91f6b495b88a7fbb",
+      "sha256": "a34c0722a2ab65a1025608e87c4c22249ab98516f66492ac91887d5eb60fd807",
       "bytes": 6959
     },
     {
       "caminho": "contato/index.html",
-      "sha256": "4b72c87c006fe6c3724261a4d03ed367754028aecb2c970ede4899daa10a4b82",
+      "sha256": "598bc28f5526bc1cb040e23b77b50972b34496bcc37479056a5815ffc3eb2e30",
       "bytes": 5536
     },
     {
@@ -1067,13 +1047,13 @@
     },
     {
       "caminho": "esmerilhadeira-ou-lixadeira/index.html",
-      "sha256": "61c7c6ac6a4840485f05e086fa864cb0ec820be423939f1b85e53c46502ea56b",
-      "bytes": 45426
+      "sha256": "ca0e8a0a043be2e24b1f6056c2c40eb66547da37ab2fafadf814c42b0f314b07",
+      "bytes": 45507
     },
     {
       "caminho": "esmerilhadeira-qual-a-melhor/index.html",
-      "sha256": "dd3212c2cd7f78ae4c3c2e2524b3ddf435307895973bf77782c01ee72a67fce4",
-      "bytes": 45807
+      "sha256": "216c9793d2d04613daa83849e61d29606890f6fa7c136e1db647694fb131a4d0",
+      "bytes": 45844
     },
     {
       "caminho": "favicon.svg",
@@ -1082,8 +1062,8 @@
     },
     {
       "caminho": "furadeira-com-fio-ou-a-bateria/index.html",
-      "sha256": "8a52fd6b56114793bd0a3ea4fca95919108a56a9a3320907a15b6237174d950a",
-      "bytes": 39365
+      "sha256": "cfba79ed525b13961eb1fb8826d6a4aeec3dfd5a9f8a7a4ce5c3e158bc265b39",
+      "bytes": 39480
     },
     {
       "caminho": "furadeira-de-impacto-ou-martelete/index.html",
@@ -1092,13 +1072,13 @@
     },
     {
       "caminho": "furadeira-ou-parafusadeira/index.html",
-      "sha256": "99da5eb1b4ee43fc37abda5d1f38e31f0b274e2500245dd5807158ee778fe32a",
+      "sha256": "f680619d4b160006b2c56cb2324d761dc6bb10dd36b1d61888655ec18db35252",
       "bytes": 31448
     },
     {
       "caminho": "guias/index.html",
-      "sha256": "8cb36ece9f156460753cb021c6269b6d383d051e447e8d1f7b480e346cbd86de",
-      "bytes": 52224
+      "sha256": "6d81e8d0c318a815d074171532743eda539a4e0ca5e8275ff43a8ba5c4fc0c64",
+      "bytes": 51059
     },
     {
       "caminho": "images/bosch-12v-cc-1600.webp",
@@ -1352,63 +1332,63 @@
     },
     {
       "caminho": "lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher/index.html",
-      "sha256": "2bc420d938041b7964560855ad4240201b5d0353c38209d9f897b63fcd2fbce0",
-      "bytes": 42984
+      "sha256": "3219c9a7f0ed0404892aebd687718f69fc91d692a11cfc27aa728fbf980073e9",
+      "bytes": 44290
     },
     {
       "caminho": "makita-dhp482z-ferramenta-avulsa-bateria-parafusadeira-furadeira-impacto-v/index.html",
-      "sha256": "445ca21ad6e3e3998b28de25116a10fd15c57e03ffbaa96749e8987b9df1e9c2",
-      "bytes": 33958
+      "sha256": "20bc22cbe914841503d54cf617226ad9e7233f80a476a4e9f2b7dda8c91ddbc5",
+      "bytes": 32759
     },
     {
       "caminho": "mandril-10mm-ou-13mm/index.html",
-      "sha256": "9f093783c907f0653018b160849acc8125f90e087e7639798122ebfc3afb3c42",
-      "bytes": 35684
+      "sha256": "0e963b254e0da84c9b91849a6e4d2f37fbf9ecbf5e6794a0371f95e884e62f26",
+      "bytes": 35799
     },
     {
       "caminho": "martelete-combinado-rompedor-demolidor/index.html",
-      "sha256": "de125409d3e492a85766705acec3a2a9e842e31d9142995109f5cf3e69336595",
-      "bytes": 43317
+      "sha256": "b318a679c7669821e70f61504309a0c98e3e57b4bcf9ecaa57e1c4669c54eccf",
+      "bytes": 43432
     },
     {
       "caminho": "nm-chave-de-impacto/index.html",
-      "sha256": "9a98779a7a9d78fdf71f20cdd3469525c7826bfa0503bf6caa7dc7c4faa6565e",
-      "bytes": 47064
+      "sha256": "07a4a82dea37893de3f0e4b89f169d1fbfd5959c2e3f175c52306e6acb368ef7",
+      "bytes": 47145
     },
     {
       "caminho": "parafusadeira-12v-ou-18v/index.html",
-      "sha256": "45b41d91d771b1e4a2607cd0a72d2244ce8b6653cbf39221ef791edfaed4fb1c",
-      "bytes": 42053
+      "sha256": "fb6f73a2bca6cf9d77580ffae21b1233ff504f2884111b3d7a708e6e8d0e4983",
+      "bytes": 42168
     },
     {
       "caminho": "parafusadeira-brushless-ou-com-escovas/index.html",
-      "sha256": "e67af26a1692f18b936c16423ba7b1c3901ce8b72cb0ac56bad355d961fc1065",
-      "bytes": 41166
+      "sha256": "6d90d43550fff5de89de1ff54cf3e04b96d93e86c518c524759c061de5cb145c",
+      "bytes": 39967
     },
     {
       "caminho": "parafusadeira-com-ou-sem-impacto/index.html",
-      "sha256": "b93ec604f0faaee125036a2754ad38e1a1a5c10547153830e9a3ba190ebbcddd",
-      "bytes": 45246
+      "sha256": "cde7546f21d89cd822d832d30113361b0fd0b73afe7edb4472dedc4551aa4fd5",
+      "bytes": 47021
     },
     {
       "caminho": "parafusadeira-dewalt-dcd777-vale-a-pena/index.html",
-      "sha256": "cd3703deb1422b1a15dc3968a31ce33b7e812c8997c06b2d0fd2a3385ece902b",
-      "bytes": 35418
+      "sha256": "d358b27008a5a123dad449c799d9fc40165b62c08c345d867d0a68fbce9b6f0a",
+      "bytes": 34197
     },
     {
       "caminho": "parafusadeira-para-drywall-precisa-de-uma-especifica/index.html",
-      "sha256": "1b515a940efc7e7e85a1733317b3b1d47ffe28d378335390629d2c38b9bf1fcb",
-      "bytes": 38569
+      "sha256": "fe13220783f1fbfc892d0578be75155854917848d2dfc818e03e3b01b319acb2",
+      "bytes": 37348
     },
     {
       "caminho": "privacidade/index.html",
-      "sha256": "1c00ef54fae4a57af5c534d93184f1d2bccacba151e2050dff253e23d2a0142a",
+      "sha256": "a0a01e141a440ef293db75109a3fb5c2c5fbb3ca624c454dd9022a4bc8a55738",
       "bytes": 7923
     },
     {
       "caminho": "qual-serra-circular-comprar/index.html",
-      "sha256": "cf905f938ad3de5f3b29ca3a460d66fd8f976aaba83520a3f605ff9c83599ccd",
-      "bytes": 43968
+      "sha256": "72fca9ffba02766d7419d7c8f9b482d0bc1b1de77eee76ddb0ad5146b61a4fd6",
+      "bytes": 45740
     },
     {
       "caminho": "robots.txt",
@@ -1422,18 +1402,18 @@
     },
     {
       "caminho": "sobre/index.html",
-      "sha256": "cf3ee69bf078ad7f0376eee2c14744182042554a0d2cc661183694b6d25f4f69",
+      "sha256": "44260cf417470c6679c42a35c585be7d25c2a21cc9b006a5b899a7143732b7c3",
       "bytes": 6296
     },
     {
       "caminho": "torque-nm-parafusadeira/index.html",
-      "sha256": "191509b97bc59570a1efd216d9d1e0d8297df0baf7f07957720be9cb52c7e5bd",
+      "sha256": "dcea79c633de5cf0a65d02414e0f22ea95f45f9d9d706db49f0561191b209568",
       "bytes": 47500
     },
     {
       "caminho": "velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma/index.html",
-      "sha256": "de9bedaa07f65df2403a28b88262817353c44e9855398bd6fd39aa2588355afa",
-      "bytes": 36935
+      "sha256": "9b4799fb7411b435a89bf8bbf58bb2616c689c6b9b1b40edd541ae9eb4f3f612",
+      "bytes": 35736
     }
   ],
   "rollback": "republicar o V1 a partir de 642004d (ou o ZIP do V1 gerado por scripts/artefato-v1.sh); ver docs/V2-DEPLOY.md"
