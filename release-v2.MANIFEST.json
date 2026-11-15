@@ -1,6 +1,6 @@
 {
-  "commit": "69a0f02e5590c3ee9cf24e4ff0871a72ed6fc9c9",
-  "gerado_em": "2026-11-14T10:33:24.300Z",
+  "commit": "374281cd021b7d5ae39cf079e7915c3a474e0fc6",
+  "gerado_em": "2026-11-15T10:33:10.591Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -43,11 +43,11 @@
     },
     {
       "estado": "PASS",
-      "msg": "disco livre na pasta temporária: 76.6 GB (mínimo 3)"
+      "msg": "disco livre na pasta temporária: 75.6 GB (mínimo 3)"
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de 69a0f02 + npm ci"
+      "msg": "checkout limpo de 374281c + npm ci"
     },
     {
       "estado": "PASS",
@@ -145,9 +145,9 @@
   ],
   "sitemap_urls": 34,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-69a0f02.zip",
-    "sha256": "108aeaa49a630f52918ba6826128a3816fef1192d23ac0deb1c424b38d940b18",
-    "arquivos": 257
+    "arquivo": "ferramenta-clara-v2-374281c.zip",
+    "sha256": "a15c1f9b14451ac26e8ee6baf03ad79eda2d8c6bb73ef3fa1127e3f5bc258bc2",
+    "arquivos": 258
   },
   "arquivos": [
     {
@@ -484,6 +484,11 @@
       "caminho": "_astro/pagina-broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua.Bx_abaDb_dTbXv.webp",
       "sha256": "9cdef45bb280804d9a21112edeaae0eb997d61f20ce278fc9e79a7deb958a477",
       "bytes": 49608
+    },
+    {
+      "caminho": "_astro/pagina-chave-de-impacto-ou-parafusadeira-qual-escolher.UN_RuGz-.webp",
+      "sha256": "64c7e248fb57797dca26514137b376ffa527eb81428b23c6df085c4c3340ea27",
+      "bytes": 147706
     },
     {
       "caminho": "_astro/pagina-como-escolher-furadeira-para-concreto.hN62jtxp_17O451.webp",
