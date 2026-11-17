@@ -1,6 +1,6 @@
 {
-  "commit": "374281cd021b7d5ae39cf079e7915c3a474e0fc6",
-  "gerado_em": "2026-11-15T10:33:10.591Z",
+  "commit": "3c17e4f9892116ece52ed46052ac9733a3751a1d",
+  "gerado_em": "2026-11-17T10:33:28.956Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -43,11 +43,11 @@
     },
     {
       "estado": "PASS",
-      "msg": "disco livre na pasta temporária: 75.6 GB (mínimo 3)"
+      "msg": "disco livre na pasta temporária: 73.5 GB (mínimo 3)"
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de 374281c + npm ci"
+      "msg": "checkout limpo de 3c17e4f + npm ci"
     },
     {
       "estado": "PASS",
@@ -145,9 +145,9 @@
   ],
   "sitemap_urls": 34,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-374281c.zip",
-    "sha256": "a15c1f9b14451ac26e8ee6baf03ad79eda2d8c6bb73ef3fa1127e3f5bc258bc2",
-    "arquivos": 258
+    "arquivo": "ferramenta-clara-v2-3c17e4f.zip",
+    "sha256": "c0101c5254693a32ef9ceaf8aa01a09fc3afb22f61cfc75b8cca51265fb3bc4b",
+    "arquivos": 261
   },
   "arquivos": [
     {
@@ -851,6 +851,11 @@
       "bytes": 8922
     },
     {
+      "caminho": "_astro/pagina-parafusadeira-para-montar-moveis-como-escolher.CfViON9l.webp",
+      "sha256": "3e45183ef50eb23a50997258027dfb9e42fda5f0478b4e150b173367fc8ce3ca",
+      "bytes": 104420
+    },
+    {
       "caminho": "_astro/pagina-qual-serra-circular-comprar.12lH7feY_1IjGOn.avif",
       "sha256": "f247c895cf87c738f7974af5317f8fa8b9a34418d293d04a86520434400e7c87",
       "bytes": 8526
@@ -889,6 +894,16 @@
       "caminho": "_astro/pagina-qual-serra-circular-comprar.12lH7feY_Z3fNkX.avif",
       "sha256": "d1f0c194785cee35fe1a8fb2a888b00a97f6f0e805bea06acc7c378c4c79b0ae",
       "bytes": 51252
+    },
+    {
+      "caminho": "_astro/pagina-serra-marmore-tamanhos-e-diferencas.CbLYix6C.webp",
+      "sha256": "bd3544d73d70d753707ee329ef74aadadd026abf802b2d64738c2282704eb0cb",
+      "bytes": 80236
+    },
+    {
+      "caminho": "_astro/pagina-tipos-de-disco-para-serra-marmore-como-escolher.D7cFg-jY.webp",
+      "sha256": "55d5ebbf0ba268a27f1cf21d1450463167073b119fbe0ea1b00993ff78e5a796",
+      "bytes": 143946
     },
     {
       "caminho": "_astro/pagina-velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma.B0bUiGsm_3kCwa.webp",
