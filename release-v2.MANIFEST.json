@@ -1,6 +1,6 @@
 {
-  "commit": "52bfcbe476f0d0ac3cccbd9059013d3a70385ebd",
-  "gerado_em": "2026-11-18T12:34:20.854Z",
+  "commit": "7ce81247c4ca6da65f90ce34c92f81bc5731aa1b",
+  "gerado_em": "2026-11-18T12:44:47.718Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -47,7 +47,7 @@
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de 52bfcbe + npm ci"
+      "msg": "checkout limpo de 7ce8124 + npm ci"
     },
     {
       "estado": "PASS",
@@ -122,27 +122,18 @@
     "torque-nm-parafusadeira": "nativa (approve)"
   },
   "ofertas_publicadas": [
-    "/bateria-parafusadeira-serve-em-outra-marca/ B00FAM1V7E",
-    "/bosch-ou-makita-parafusadeira/ B00FAM1V7E",
     "/broca-ideal-para-furar-ferro/ B00TX9V56C",
-    "/broca-ideal-para-furar-parede/ B00TX9V56C",
-    "/broca-ideal-para-furar-parede/ B076KPXF6P",
-    "/broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua/ B00TX9V56C",
-    "/como-escolher-furadeira/ B00FAM1V7E",
     "/como-escolher-furadeira/ B076KPXF6P",
     "/como-escolher-furadeira-para-concreto/ B076KPXF6P",
-    "/furadeira-com-fio-ou-a-bateria/ B00FAM1V7E",
-    "/mandril-10mm-ou-13mm/ B00FAM1V7E",
     "/martelete-combinado-rompedor-demolidor/ B076B93CHK",
     "/nm-chave-de-impacto/ B0DY2P9F8Q",
-    "/parafusadeira-12v-ou-18v/ B00FAM1V7E",
     "/parafusadeira-dewalt-dcd777-vale-a-pena/ B099NZQHRB",
     "/parafusadeira-para-drywall-precisa-de-uma-especifica/ B00FAM1V7E"
   ],
   "sitemap_urls": 37,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-52bfcbe.zip",
-    "sha256": "c07d85bc6ed4c3a569fbc4a20c26a8d2361cbbd1f73dbfaa4b48fa3bdb197eb4",
+    "arquivo": "ferramenta-clara-v2-7ce8124.zip",
+    "sha256": "bbf95f68b35af144e7fd0dc6c69595c727a5a55af7eaa12eb43d7cd89ed21927",
     "arquivos": 285
   },
   "arquivos": [
@@ -1128,8 +1119,8 @@
     },
     {
       "caminho": "bateria-parafusadeira-serve-em-outra-marca/index.html",
-      "sha256": "e1808f037d2cccd193c393baf24f1bfe89c695f08a0436dc453265fc40ed5fe5",
-      "bytes": 52120
+      "sha256": "0f8e0f5f802c3a656f78fc6fbbb8e3b3b85ef22ba80fe1424d3f11b6a312dbcf",
+      "bytes": 49314
     },
     {
       "caminho": "bosch-185-li-gsb/index.html",
@@ -1138,8 +1129,8 @@
     },
     {
       "caminho": "bosch-ou-makita-parafusadeira/index.html",
-      "sha256": "738e64fc9200a3db1b2ab50ad7ba0dfc45c2a5b8d23a3418fcb6cb340ba16ffe",
-      "bytes": 36832
+      "sha256": "fe34c894c3e88f46b1d6ddd0942a6461296f1a21601e2db7d1efa0ddd56273e0",
+      "bytes": 34026
     },
     {
       "caminho": "broca-ideal-para-furar-ferro/index.html",
@@ -1148,13 +1139,13 @@
     },
     {
       "caminho": "broca-ideal-para-furar-parede/index.html",
-      "sha256": "55fd90b12b60480d3c22c0878b84321c08f726ec8228448f94025fc5233c702d",
-      "bytes": 54294
+      "sha256": "dd764ffe356998294075b2ca12b7d934247d50894c6273880411fc8881a6d3e0",
+      "bytes": 50895
     },
     {
       "caminho": "broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua/index.html",
-      "sha256": "94640fcd85a0889a320972b16d5afb57aea932fdc64d33749bacd38f7b73c0f4",
-      "bytes": 33853
+      "sha256": "a928483239e82ac2eb11b38c899f74f2ac1839e65a7831f23812948b166d2449",
+      "bytes": 31428
     },
     {
       "caminho": "chave-de-impacto-ou-parafusadeira-qual-escolher/index.html",
@@ -1163,8 +1154,8 @@
     },
     {
       "caminho": "como-escolher-furadeira/index.html",
-      "sha256": "c8d34e7e9d2b3e79c93b730127970f68eb6d2929932b8f5abab43a7ec7b15406",
-      "bytes": 50456
+      "sha256": "5ef71748ae7ec34b886ccc890d7111d5a159bd0c48795cac90cab97ad865ec33",
+      "bytes": 47789
     },
     {
       "caminho": "como-escolher-furadeira-para-concreto/index.html",
@@ -1208,8 +1199,8 @@
     },
     {
       "caminho": "furadeira-com-fio-ou-a-bateria/index.html",
-      "sha256": "36c2b4cc233f792ac9cc5f97cc611000dc846c7ef3e1013c282be8eec1fc7a54",
-      "bytes": 39704
+      "sha256": "e7cd3d96095def0f8e51880581a9ad66cc59bba3a60ac55e55508bde7f7f9dd3",
+      "bytes": 36898
     },
     {
       "caminho": "furadeira-de-impacto-ou-martelete/index.html",
@@ -1488,8 +1479,8 @@
     },
     {
       "caminho": "mandril-10mm-ou-13mm/index.html",
-      "sha256": "69800b9d743e1c0da490af191a9b5ca4cb4da87940fed8dd249c810d8319d5b9",
-      "bytes": 36108
+      "sha256": "47441b27ee7eb60ea409175b43f1e57e452595391f46e61fd1684701de481959",
+      "bytes": 33302
     },
     {
       "caminho": "martelete-combinado-rompedor-demolidor/index.html",
@@ -1503,8 +1494,8 @@
     },
     {
       "caminho": "parafusadeira-12v-ou-18v/index.html",
-      "sha256": "bcc75e0120d412589bd9decb26d991e36844282bcc4e93ae027feb633ab86aa7",
-      "bytes": 42168
+      "sha256": "a283a362762e0b87d968d63ef10661c5635197daec56dfcfcdcd20a7b7a1281b",
+      "bytes": 39362
     },
     {
       "caminho": "parafusadeira-brushless-ou-com-escovas/index.html",
