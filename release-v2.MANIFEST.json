@@ -1,6 +1,6 @@
 {
-  "commit": "7ce81247c4ca6da65f90ce34c92f81bc5731aa1b",
-  "gerado_em": "2026-11-18T12:44:47.718Z",
+  "commit": "9d84dd1d83371f561b5da6490633a418094fca0c",
+  "gerado_em": "2026-11-19T10:33:55.953Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -43,11 +43,11 @@
     },
     {
       "estado": "PASS",
-      "msg": "disco livre na pasta temporária: 72.7 GB (mínimo 3)"
+      "msg": "disco livre na pasta temporária: 71.8 GB (mínimo 3)"
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de 7ce8124 + npm ci"
+      "msg": "checkout limpo de 9d84dd1 + npm ci"
     },
     {
       "estado": "PASS",
@@ -132,9 +132,9 @@
   ],
   "sitemap_urls": 37,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-7ce8124.zip",
-    "sha256": "bbf95f68b35af144e7fd0dc6c69595c727a5a55af7eaa12eb43d7cd89ed21927",
-    "arquivos": 285
+    "arquivo": "ferramenta-clara-v2-9d84dd1.zip",
+    "sha256": "5d8fd3794c924d8a006c7d35dd48b7536d753896d6d09bde34cc47c85f5dd2db",
+    "arquivos": 286
   },
   "arquivos": [
     {
@@ -231,6 +231,11 @@
       "caminho": "_astro/martelete.YyB5WeC8.webp",
       "sha256": "39ce13ef480293dee0e9f88ad6f8afd0b6e90469e787e1c6f9d4038db2554755",
       "bytes": 179304
+    },
+    {
+      "caminho": "_astro/outro.BkPu2Hjv.webp",
+      "sha256": "bb56ba2d9bafc8c6825d6cf70b9567142391b959243659d6a91087a93085f072",
+      "bytes": 125284
     },
     {
       "caminho": "_astro/pagina-bateria-2ah-ou-4ah-parafusadeira.CV-jyMeo_1EOwuu.avif",
@@ -1134,7 +1139,7 @@
     },
     {
       "caminho": "broca-ideal-para-furar-ferro/index.html",
-      "sha256": "9d7ae03869db15efa926a58e39a680420b4c3f09a4993e5af20be635c90e3669",
+      "sha256": "4f734aefbe23967515262c6563b72edb5b69675b08e74ffae27d3eca0669958a",
       "bytes": 41916
     },
     {
