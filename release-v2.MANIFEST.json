@@ -1,6 +1,6 @@
 {
-  "commit": "9d84dd1d83371f561b5da6490633a418094fca0c",
-  "gerado_em": "2026-11-19T10:33:55.953Z",
+  "commit": "09f7979a80992e4d8bb15d19cfdd02117f923804",
+  "gerado_em": "2026-11-20T10:34:05.107Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -43,11 +43,11 @@
     },
     {
       "estado": "PASS",
-      "msg": "disco livre na pasta temporária: 71.8 GB (mínimo 3)"
+      "msg": "disco livre na pasta temporária: 71.0 GB (mínimo 3)"
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de 9d84dd1 + npm ci"
+      "msg": "checkout limpo de 09f7979 + npm ci"
     },
     {
       "estado": "PASS",
@@ -67,7 +67,7 @@
     },
     {
       "estado": "PASS",
-      "msg": "qa:previa no artefato (38 páginas · 0 erro(s))"
+      "msg": "qa:previa no artefato (39 páginas · 0 erro(s))"
     },
     {
       "estado": "PASS",
@@ -102,7 +102,7 @@
       "msg": "nenhum arquivo sensível no artefato"
     }
   ],
-  "scripts_executaveis_no_html": 68,
+  "scripts_executaveis_no_html": 70,
   "donos_das_urls": {
     "bateria-2ah-ou-4ah-parafusadeira": "nativa (approve)",
     "bateria-parafusadeira-serve-em-outra-marca": "nativa (approve)",
@@ -123,18 +123,20 @@
   },
   "ofertas_publicadas": [
     "/broca-ideal-para-furar-ferro/ B00TX9V56C",
-    "/como-escolher-furadeira/ B076KPXF6P",
-    "/como-escolher-furadeira-para-concreto/ B076KPXF6P",
-    "/martelete-combinado-rompedor-demolidor/ B076B93CHK",
-    "/nm-chave-de-impacto/ B0DY2P9F8Q",
+    "/broca-ideal-para-furar-ferro/ B083DMSXSK",
+    "/broca-ideal-para-furar-parede/ B07JK2YZTY",
+    "/broca-ideal-para-furar-parede/ B083DMSXSK",
+    "/broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua/ B083DMSXSK",
+    "/como-escolher-furadeira/ B07JK2YZTY",
+    "/como-escolher-furadeira-para-concreto/ B07JK2YZTY",
     "/parafusadeira-dewalt-dcd777-vale-a-pena/ B099NZQHRB",
     "/parafusadeira-para-drywall-precisa-de-uma-especifica/ B00FAM1V7E"
   ],
-  "sitemap_urls": 37,
+  "sitemap_urls": 38,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-9d84dd1.zip",
-    "sha256": "5d8fd3794c924d8a006c7d35dd48b7536d753896d6d09bde34cc47c85f5dd2db",
-    "arquivos": 286
+    "arquivo": "ferramenta-clara-v2-09f7979.zip",
+    "sha256": "ab0b2f7ef158aa51a6ec803d38c670c1ee9fd0b6e50f668d4452808e6435c4c7",
+    "arquivos": 296
   },
   "arquivos": [
     {
@@ -958,9 +960,44 @@
       "bytes": 51252
     },
     {
-      "caminho": "_astro/pagina-serra-marmore-tamanhos-e-diferencas.CbLYix6C.webp",
-      "sha256": "bd3544d73d70d753707ee329ef74aadadd026abf802b2d64738c2282704eb0cb",
-      "bytes": 80236
+      "caminho": "_astro/pagina-serra-marmore-tamanhos-e-diferencas.CbLYix6C_1tkrnI.avif",
+      "sha256": "04078c940c9944f967b035a351d0b00b44f0eb93a3627000cbb047a87d9c16ca",
+      "bytes": 40592
+    },
+    {
+      "caminho": "_astro/pagina-serra-marmore-tamanhos-e-diferencas.CbLYix6C_2rGwCW.webp",
+      "sha256": "20564355163456cad287ee1efb4b9920db2b8d3bf29b0d96559a36c790d82de4",
+      "bytes": 22270
+    },
+    {
+      "caminho": "_astro/pagina-serra-marmore-tamanhos-e-diferencas.CbLYix6C_67yXX.avif",
+      "sha256": "e248ebb9f57287ef8be2a4f7f82dd7f50e3100909c219cfe408bbcca31c2fb6e",
+      "bytes": 5799
+    },
+    {
+      "caminho": "_astro/pagina-serra-marmore-tamanhos-e-diferencas.CbLYix6C_Z1GFw6p.webp",
+      "sha256": "16005769ccff48691716a34c1d044fbd8e4b0f45acc0be49a33789ee03dcb86c",
+      "bytes": 41090
+    },
+    {
+      "caminho": "_astro/pagina-serra-marmore-tamanhos-e-diferencas.CbLYix6C_Z1RLQAV.webp",
+      "sha256": "9522222435a486381c2ab10b84258a5eaaa99f399cd36e603ec3409729a381f9",
+      "bytes": 75008
+    },
+    {
+      "caminho": "_astro/pagina-serra-marmore-tamanhos-e-diferencas.CbLYix6C_Z26mv7x.webp",
+      "sha256": "fb0796eef35f9f7d95dfd2c52ede87f34c7464ab973d46b875ecd8020e0b306f",
+      "bytes": 9922
+    },
+    {
+      "caminho": "_astro/pagina-serra-marmore-tamanhos-e-diferencas.CbLYix6C_Zq0w4t.avif",
+      "sha256": "70708163a8e3ea598633a1b66d4b4ce0bf01974785c24c99e4a01d29d546ca13",
+      "bytes": 12150
+    },
+    {
+      "caminho": "_astro/pagina-serra-marmore-tamanhos-e-diferencas.CbLYix6C_x1byc.avif",
+      "sha256": "da0b03011aa38c5f73307f342c012ed46066a09ca7faca71366eae243bd754fd",
+      "bytes": 22917
     },
     {
       "caminho": "_astro/pagina-tipos-de-disco-para-serra-marmore-como-escolher.D7cFg-jY_2kuA8.avif",
@@ -1073,6 +1110,16 @@
       "bytes": 147240
     },
     {
+      "caminho": "_astro/produto-b07jk2yzty.B_mr9UzG.webp",
+      "sha256": "35c31ef8f3b482831535ec74ffdec5dd10bf86520c8e76ed27cd0ab9bc1d8132",
+      "bytes": 132112
+    },
+    {
+      "caminho": "_astro/produto-b083dmsxsk.BmpTGWv7.webp",
+      "sha256": "37dae4ffdaa862735ff9acc5e5abae7f083acb7414fae82368fcf50670aefea0",
+      "bytes": 119766
+    },
+    {
       "caminho": "_astro/produto-b08dgzthv9.mKP90tYz.webp",
       "sha256": "f612912001f082429216021717ed439200f9fb463e73fce79fb1498b049a42df",
       "bytes": 157722
@@ -1139,38 +1186,38 @@
     },
     {
       "caminho": "broca-ideal-para-furar-ferro/index.html",
-      "sha256": "4f734aefbe23967515262c6563b72edb5b69675b08e74ffae27d3eca0669958a",
-      "bytes": 41916
+      "sha256": "86e026e39b2fc46a6d783946baf9f7042a423bfaabc40ca5a19fc58e060a2471",
+      "bytes": 44033
     },
     {
       "caminho": "broca-ideal-para-furar-parede/index.html",
-      "sha256": "dd764ffe356998294075b2ca12b7d934247d50894c6273880411fc8881a6d3e0",
-      "bytes": 50895
+      "sha256": "474204fc3fd165b4565d9f594be917fda3d33080bff8166368d97080ccfd6ac5",
+      "bytes": 55812
     },
     {
       "caminho": "broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua/index.html",
-      "sha256": "a928483239e82ac2eb11b38c899f74f2ac1839e65a7831f23812948b166d2449",
-      "bytes": 31428
+      "sha256": "ede66a7f59b9dd91d7d4e62f72ad6c09ab40f587712b29b1038c9bc48ea3db5d",
+      "bytes": 33771
     },
     {
       "caminho": "chave-de-impacto-ou-parafusadeira-qual-escolher/index.html",
-      "sha256": "8b09ba8eb2823f54296e7b119768c4ebb6cdd8189012eb94866986c50124e130",
+      "sha256": "3480133b91d8d9438146d7fa149b0b4d854722d3df830f96e134b9ddb78f767e",
       "bytes": 55563
     },
     {
       "caminho": "como-escolher-furadeira/index.html",
-      "sha256": "5ef71748ae7ec34b886ccc890d7111d5a159bd0c48795cac90cab97ad865ec33",
-      "bytes": 47789
+      "sha256": "50891d58af86406149b459400ea8a18fc4556e9530a0b048da1c7af71c556dbe",
+      "bytes": 49476
     },
     {
       "caminho": "como-escolher-furadeira-para-concreto/index.html",
-      "sha256": "b6795cdb5dacd82817570e08a88debf58df59354a85d493f8fa0ffb530bb4e1a",
-      "bytes": 39955
+      "sha256": "189c38858cd50b18afa8b9e22d04f7b75ea2698c031aac2b6eccf50cf3772af8",
+      "bytes": 41642
     },
     {
       "caminho": "como-escolher-serra-tico-tico/index.html",
-      "sha256": "81035f987d6912df36ec95f20302b8303f7b525a0dbcbae17e9df63b907ee9e6",
-      "bytes": 42232
+      "sha256": "46822bcb2ff99ae17f67a82db4a54cc73e2ec3269ab10a71bf481d9e38863864",
+      "bytes": 44133
     },
     {
       "caminho": "como-trabalhamos/index.html",
@@ -1189,8 +1236,8 @@
     },
     {
       "caminho": "esmerilhadeira-ou-lixadeira/index.html",
-      "sha256": "4376752abfe37d4dd6c2a96dbb9a0865eac8fa27274ef8ab0a4afb50e1bb21ad",
-      "bytes": 44197
+      "sha256": "d08599f421f52c8d9345bf28c913ed2192bc97317944e770c9c0294f12a97921",
+      "bytes": 44296
     },
     {
       "caminho": "esmerilhadeira-qual-a-melhor/index.html",
@@ -1219,8 +1266,8 @@
     },
     {
       "caminho": "guias/index.html",
-      "sha256": "1ae6704b63bce68b43169ebbfedbcde63b5b59ce175c7b5d755c22a9031c7af0",
-      "bytes": 57389
+      "sha256": "f6d5e5bf4da1db21d1ca29aad699e272994a33a256ec892e10baea5e004029e4",
+      "bytes": 59323
     },
     {
       "caminho": "images/bosch-12v-cc-1600.webp",
@@ -1469,8 +1516,8 @@
     },
     {
       "caminho": "index.html",
-      "sha256": "c9b5419aaefe1d91729959dccf6913513a7e2c947df6d859b277b53c4395bb8a",
-      "bytes": 68413
+      "sha256": "c6abdae3620827d8557fc72f2c8baf1563285233a3d74c1d6d9ecc80c3ce8566",
+      "bytes": 70791
     },
     {
       "caminho": "lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher/index.html",
@@ -1489,13 +1536,13 @@
     },
     {
       "caminho": "martelete-combinado-rompedor-demolidor/index.html",
-      "sha256": "8d9f053885139add2c1499643a6556dbcd167846c9883f33375e31d9799e15e8",
-      "bytes": 43432
+      "sha256": "245fa859484325f066f029e4377b0f46b3776d9c7e0900160a42ffdc0ae89689",
+      "bytes": 42286
     },
     {
       "caminho": "nm-chave-de-impacto/index.html",
-      "sha256": "a1f7bd9736e4e5b370b91d685b76e94d3d0e1eea25ce38b2fa7b1130a99d4786",
-      "bytes": 47209
+      "sha256": "7ba1be2682b7727a633829f0be6815c8c12c93d331adb4bb679da77fba50cdd9",
+      "bytes": 46092
     },
     {
       "caminho": "parafusadeira-12v-ou-18v/index.html",
@@ -1534,8 +1581,8 @@
     },
     {
       "caminho": "qual-serra-circular-comprar/index.html",
-      "sha256": "409664e588bf57078ccf2e93c64a065f96745f21f1da684997cddee0b20ce4a9",
-      "bytes": 47824
+      "sha256": "d08fafe56ff2d9c4b6e6c0e3441c8a0f7fc1ce1e216146d0cd2901f10f9c8a27",
+      "bytes": 49821
     },
     {
       "caminho": "robots.txt",
@@ -1543,9 +1590,14 @@
       "bytes": 75
     },
     {
+      "caminho": "serra-marmore-tamanhos-e-diferencas/index.html",
+      "sha256": "2caec774beeadbe566e26043a86e75190dd132225858b86cf10fe0df8f4ad8ea",
+      "bytes": 33979
+    },
+    {
       "caminho": "sitemap.xml",
-      "sha256": "8627c31ba042d5ad60d7476b1a308bc5eac7813316344ff7a2b2e09fca5d283c",
-      "bytes": 4307
+      "sha256": "004e3ceb3a958dd10c97e3379ffd714f22933a9e2494ce7cf8bc67c9c84eb317",
+      "bytes": 4428
     },
     {
       "caminho": "sobre/index.html",
@@ -1554,8 +1606,8 @@
     },
     {
       "caminho": "tipos-de-disco-para-serra-marmore-como-escolher/index.html",
-      "sha256": "cad9c78851016aa2eeaecb100d27436e1850c946213e422eabdbf839209b888c",
-      "bytes": 44452
+      "sha256": "a1fbf68c45d3d68d225eb13bee490f530998a3c2458024676d3d503e3c7326ca",
+      "bytes": 44647
     },
     {
       "caminho": "torque-nm-parafusadeira/index.html",
