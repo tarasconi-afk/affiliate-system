@@ -1,6 +1,6 @@
 {
-  "commit": "09f7979a80992e4d8bb15d19cfdd02117f923804",
-  "gerado_em": "2026-11-20T10:34:05.107Z",
+  "commit": "a01eff395e61982a5eda276ca306bb34cdb5b22d",
+  "gerado_em": "2026-11-21T10:34:00.155Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -43,11 +43,11 @@
     },
     {
       "estado": "PASS",
-      "msg": "disco livre na pasta temporária: 71.0 GB (mínimo 3)"
+      "msg": "disco livre na pasta temporária: 70.4 GB (mínimo 3)"
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de 09f7979 + npm ci"
+      "msg": "checkout limpo de a01eff3 + npm ci"
     },
     {
       "estado": "PASS",
@@ -129,14 +129,16 @@
     "/broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua/ B083DMSXSK",
     "/como-escolher-furadeira/ B07JK2YZTY",
     "/como-escolher-furadeira-para-concreto/ B07JK2YZTY",
+    "/esmerilhadeira-ou-lixadeira/ B0BRYJ2JW5",
+    "/esmerilhadeira-qual-a-melhor/ B0BRYJ2JW5",
     "/parafusadeira-dewalt-dcd777-vale-a-pena/ B099NZQHRB",
     "/parafusadeira-para-drywall-precisa-de-uma-especifica/ B00FAM1V7E"
   ],
   "sitemap_urls": 38,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-09f7979.zip",
-    "sha256": "ab0b2f7ef158aa51a6ec803d38c670c1ee9fd0b6e50f668d4452808e6435c4c7",
-    "arquivos": 296
+    "arquivo": "ferramenta-clara-v2-a01eff3.zip",
+    "sha256": "4a573142a2e87676e4004c84914fdcf2f2ec3cab63e600486dbb772325dcd0e1",
+    "arquivos": 297
   },
   "arquivos": [
     {
@@ -1130,6 +1132,11 @@
       "bytes": 125010
     },
     {
+      "caminho": "_astro/produto-b0bryj2jw5.CK4sCI6_.webp",
+      "sha256": "ac072f37d23e86290fe1948cac0153f863ed1718f3dab4af3e5d596b7b5db089",
+      "bytes": 127570
+    },
+    {
       "caminho": "_astro/produto-b0dy2p9f8q.RiiN-_D-.webp",
       "sha256": "b9b00d0551879fb2f358673280e7437db67971c840417c88ed2c86e8d5a771f7",
       "bytes": 128740
@@ -1236,13 +1243,13 @@
     },
     {
       "caminho": "esmerilhadeira-ou-lixadeira/index.html",
-      "sha256": "d08599f421f52c8d9345bf28c913ed2192bc97317944e770c9c0294f12a97921",
-      "bytes": 44296
+      "sha256": "cff62508daec82c14d2da76c4d1d6b0b9f8cfb321ee62c18552d697f3600eee1",
+      "bytes": 45415
     },
     {
       "caminho": "esmerilhadeira-qual-a-melhor/index.html",
-      "sha256": "67986c8ad1bc7a66c24851ee9a5bb5b2f8319d845433eb0fbbbad5f6fab4bf8f",
-      "bytes": 46150
+      "sha256": "144d2924a1ed985f7489b3694a07b9006dd9b93028a6fc4599bd6f546e17f844",
+      "bytes": 47269
     },
     {
       "caminho": "favicon.svg",
