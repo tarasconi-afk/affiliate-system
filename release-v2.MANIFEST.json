@@ -1,6 +1,6 @@
 {
-  "commit": "a01eff395e61982a5eda276ca306bb34cdb5b22d",
-  "gerado_em": "2026-11-21T10:34:00.155Z",
+  "commit": "5c34568c6f2068993205292bdbad01ee65d9c763",
+  "gerado_em": "2026-11-23T10:34:03.330Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -43,11 +43,11 @@
     },
     {
       "estado": "PASS",
-      "msg": "disco livre na pasta temporária: 70.4 GB (mínimo 3)"
+      "msg": "disco livre na pasta temporária: 68.9 GB (mínimo 3)"
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de a01eff3 + npm ci"
+      "msg": "checkout limpo de 5c34568 + npm ci"
     },
     {
       "estado": "PASS",
@@ -130,15 +130,18 @@
     "/como-escolher-furadeira/ B07JK2YZTY",
     "/como-escolher-furadeira-para-concreto/ B07JK2YZTY",
     "/esmerilhadeira-ou-lixadeira/ B0BRYJ2JW5",
+    "/esmerilhadeira-ou-lixadeira/ B0BZWMTYYL",
     "/esmerilhadeira-qual-a-melhor/ B0BRYJ2JW5",
+    "/esmerilhadeira-qual-a-melhor/ B0BZWMTYYL",
     "/parafusadeira-dewalt-dcd777-vale-a-pena/ B099NZQHRB",
-    "/parafusadeira-para-drywall-precisa-de-uma-especifica/ B00FAM1V7E"
+    "/parafusadeira-para-drywall-precisa-de-uma-especifica/ B00FAM1V7E",
+    "/qual-serra-circular-comprar/ B07HFZ21PT"
   ],
   "sitemap_urls": 38,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-a01eff3.zip",
-    "sha256": "4a573142a2e87676e4004c84914fdcf2f2ec3cab63e600486dbb772325dcd0e1",
-    "arquivos": 297
+    "arquivo": "ferramenta-clara-v2-5c34568.zip",
+    "sha256": "69a171ee7122ac5308b3051deba9082e23c4f6993965b919b39d2b0df26aef60",
+    "arquivos": 300
   },
   "arquivos": [
     {
@@ -682,6 +685,11 @@
       "bytes": 75249
     },
     {
+      "caminho": "_astro/pagina-esmerilhadeira-para-que-serve.B7_7Zlao.webp",
+      "sha256": "9f7afb88a5101e78084dfa195ac570c3b83f1565f993bb507ca7f4d69c3f045a",
+      "bytes": 143888
+    },
+    {
       "caminho": "_astro/pagina-esmerilhadeira-qual-a-melhor.ByMQXhuj_23Munw.webp",
       "sha256": "19ea57488571a0d779bc71b2c0195e9e71bca5b7ee853fad0084a0992660cdbf",
       "bytes": 66938
@@ -1112,6 +1120,11 @@
       "bytes": 147240
     },
     {
+      "caminho": "_astro/produto-b07hfz21pt.Xu0v5mg6.webp",
+      "sha256": "7375da2a02e1dc374d89bb6f47332afeb5a951343b4d7cdb517914a23a43619f",
+      "bytes": 169478
+    },
+    {
       "caminho": "_astro/produto-b07jk2yzty.B_mr9UzG.webp",
       "sha256": "35c31ef8f3b482831535ec74ffdec5dd10bf86520c8e76ed27cd0ab9bc1d8132",
       "bytes": 132112
@@ -1135,6 +1148,11 @@
       "caminho": "_astro/produto-b0bryj2jw5.CK4sCI6_.webp",
       "sha256": "ac072f37d23e86290fe1948cac0153f863ed1718f3dab4af3e5d596b7b5db089",
       "bytes": 127570
+    },
+    {
+      "caminho": "_astro/produto-b0bzwmtyyl.BCeVSYek.webp",
+      "sha256": "8538a5b91d7cace6cac6c86361526d1f47beb3f3818c2551a8e687be395e3bda",
+      "bytes": 161936
     },
     {
       "caminho": "_astro/produto-b0dy2p9f8q.RiiN-_D-.webp",
@@ -1243,13 +1261,13 @@
     },
     {
       "caminho": "esmerilhadeira-ou-lixadeira/index.html",
-      "sha256": "cff62508daec82c14d2da76c4d1d6b0b9f8cfb321ee62c18552d697f3600eee1",
-      "bytes": 45415
+      "sha256": "49e7ee54af1f808200caa3c934d74fe62739959824298fe319327865fea1c703",
+      "bytes": 46393
     },
     {
       "caminho": "esmerilhadeira-qual-a-melhor/index.html",
-      "sha256": "144d2924a1ed985f7489b3694a07b9006dd9b93028a6fc4599bd6f546e17f844",
-      "bytes": 47269
+      "sha256": "cc8b5c8b9147b406565773febf4c6cdde80821b77e833771e9580c31b9674277",
+      "bytes": 48247
     },
     {
       "caminho": "favicon.svg",
@@ -1588,8 +1606,8 @@
     },
     {
       "caminho": "qual-serra-circular-comprar/index.html",
-      "sha256": "d08fafe56ff2d9c4b6e6c0e3441c8a0f7fc1ce1e216146d0cd2901f10f9c8a27",
-      "bytes": 49821
+      "sha256": "f7c3ef12879c1f60429aaace69ab7994aabb5d146a1dcf6a9f4c76b0f82711da",
+      "bytes": 50947
     },
     {
       "caminho": "robots.txt",
