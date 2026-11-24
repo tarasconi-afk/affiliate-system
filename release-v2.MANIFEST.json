@@ -1,6 +1,6 @@
 {
-  "commit": "653fc2dc92901b9af9929a63b349cb1905fa2c89",
-  "gerado_em": "2026-11-24T11:48:07.276Z",
+  "commit": "c8d3855aefd27b9cc43016e4688e570db05990b7",
+  "gerado_em": "2026-11-24T12:50:11.638Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -43,11 +43,11 @@
     },
     {
       "estado": "PASS",
-      "msg": "disco livre na pasta temporária: 67.9 GB (mínimo 3)"
+      "msg": "disco livre na pasta temporária: 67.8 GB (mínimo 3)"
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de 653fc2d + npm ci"
+      "msg": "checkout limpo de c8d3855 + npm ci"
     },
     {
       "estado": "PASS",
@@ -213,9 +213,6 @@
     "/tipos-de-disco-para-serra-marmore-como-escolher/ B093G21YJ8",
     "/torque-nm-parafusadeira/ B07MMBKG7C",
     "/torque-nm-parafusadeira/ B0DRVGCVPD",
-    "/torque-nm-parafusadeira/ B00I3PODXE",
-    "/torque-nm-parafusadeira/ B076YGD5BZ",
-    "/torque-nm-parafusadeira/ B0F2JMYPQ9",
     "/velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma/ B07MMBKG7C",
     "/velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma/ B00I3PODXE",
     "/velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma/ B076YGD5BZ",
@@ -223,8 +220,8 @@
   ],
   "sitemap_urls": 42,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-653fc2d.zip",
-    "sha256": "b75788c4a1a13ce9a07dc3c88321a5913e5d67204881613b27e1c214362b330d",
+    "arquivo": "ferramenta-clara-v2-c8d3855.zip",
+    "sha256": "e9338665dcc06b23dd9473db0b38752ae8bad2d419e11949c3d7f4b4e41093f7",
     "arquivos": 333
   },
   "arquivos": [
@@ -1430,8 +1427,8 @@
     },
     {
       "caminho": "black-friday/index.html",
-      "sha256": "a11d7a53342d8b6f2d3be5781ecef14afc8e507991ab8b80a339264d7026d1a5",
-      "bytes": 11852
+      "sha256": "7237fde58ecd869ca39ac73b19a869be9dbbc3ffbbde3537c13b1e4bdc9f63a4",
+      "bytes": 11861
     },
     {
       "caminho": "bosch-185-li-gsb/index.html",
@@ -1460,8 +1457,8 @@
     },
     {
       "caminho": "chave-de-impacto-ou-parafusadeira-qual-escolher/index.html",
-      "sha256": "ff34a3ae4f5e954f4fb4580e2bc0189f21897558fb0555ea722453625bc37259",
-      "bytes": 68441
+      "sha256": "8b11895b5d6a1adcf7f611f17c54bb5428c6f6fef00dd1a3ac1dca313bcf834c",
+      "bytes": 68455
     },
     {
       "caminho": "como-escolher-furadeira/index.html",
@@ -1535,8 +1532,8 @@
     },
     {
       "caminho": "guias/index.html",
-      "sha256": "52c0c691a5e61f5ced2e91fb4d8d8c5b57c4ca6f60dacb0ccd57b9cde236057b",
-      "bytes": 64858
+      "sha256": "874056ebcc3f7f8ec7fdded1f883652127d7d64bba6cbc2abc2849b9be709544",
+      "bytes": 64867
     },
     {
       "caminho": "images/bosch-12v-cc-1600.webp",
@@ -1785,7 +1782,7 @@
     },
     {
       "caminho": "index.html",
-      "sha256": "d8c42750ec14a4db60b6a1c2428eda755ad7a6d0e2f4256a0de395c5d5f1d0f6",
+      "sha256": "b9e7b2806891c61928dc1031a089c8a404f76ae92bd120f8f4e480bb1a42de0f",
       "bytes": 78942
     },
     {
@@ -1865,7 +1862,7 @@
     },
     {
       "caminho": "sitemap.xml",
-      "sha256": "21b603af6639c336e5f1ca5983b22d7d7dfa383b8537dbe6f09e67314caac0af",
+      "sha256": "c42feebb851703737e700fab443998b353b249af1ad1900376908acfddaa5b85",
       "bytes": 4836
     },
     {
@@ -1885,8 +1882,8 @@
     },
     {
       "caminho": "torque-nm-parafusadeira/index.html",
-      "sha256": "13afae4839773e54068f084c93fd04022a63d852d73ae63cdbea2ba3ffaac7b3",
-      "bytes": 60843
+      "sha256": "218dac043c07ce300cf37f02d5a6ddc17b8136fd1debc9e59a61d3c230b8f405",
+      "bytes": 53203
     },
     {
       "caminho": "velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma/index.html",
