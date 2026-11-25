@@ -1,6 +1,6 @@
 {
-  "commit": "88ccf46f8f1895973963a5dccc67988f7d5b0859",
-  "gerado_em": "2026-11-25T11:36:22.476Z",
+  "commit": "487797dd11fa6bfb98b436d3425cf2b4e3498bc4",
+  "gerado_em": "2026-11-25T11:57:58.016Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -47,7 +47,7 @@
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de 88ccf46 + npm ci"
+      "msg": "checkout limpo de 487797d + npm ci"
     },
     {
       "estado": "PASS",
@@ -67,7 +67,7 @@
     },
     {
       "estado": "PASS",
-      "msg": "qa:previa no artefato (44 páginas · 0 erro(s))"
+      "msg": "qa:previa no artefato (45 páginas · 0 erro(s))"
     },
     {
       "estado": "PASS",
@@ -102,7 +102,7 @@
       "msg": "nenhum arquivo sensível no artefato"
     }
   ],
-  "scripts_executaveis_no_html": 79,
+  "scripts_executaveis_no_html": 81,
   "donos_das_urls": {
     "bateria-2ah-ou-4ah-parafusadeira": "nativa (approve)",
     "bateria-parafusadeira-serve-em-outra-marca": "nativa (approve)",
@@ -186,6 +186,12 @@
     "/parafusadeira-para-montar-moveis-como-escolher/ B07MMBKG7C",
     "/parafusadeira-para-montar-moveis-como-escolher/ B00I3PODXE",
     "/parafusadeira-para-montar-moveis-como-escolher/ B0GWLZYG3B",
+    "/qual-disco-de-corte-para-ceramica/ B01FXEWXGQ",
+    "/qual-disco-de-corte-para-ceramica/ B0BRYJ2JW5",
+    "/qual-disco-de-corte-para-ceramica/ B0BZWMTYYL",
+    "/qual-disco-de-corte-para-ceramica/ B0GLFFPG1C",
+    "/qual-disco-de-corte-para-ceramica/ B076ZQZ8F5",
+    "/qual-disco-de-corte-para-ceramica/ B093G21YJ8",
     "/qual-serra-circular-comprar/ B07HFZ21PT",
     "/serra-marmore-tamanhos-e-diferencas/ B076ZQZ8F5",
     "/serra-marmore-tamanhos-e-diferencas/ B093G21YJ8",
@@ -205,11 +211,11 @@
     "/velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma/ B07MMBKG7C",
     "/velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma/ B00I3PODXE"
   ],
-  "sitemap_urls": 43,
+  "sitemap_urls": 44,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-88ccf46.zip",
-    "sha256": "15988e7450d562c88ce6a68cb52334f441c1cd69c1ff179c0d787f9b21964723",
-    "arquivos": 348
+    "arquivo": "ferramenta-clara-v2-487797d.zip",
+    "sha256": "d172c940027584049da7f9b3ae5166cbd6673b3af225d3c4bc8aca81dc9370ef",
+    "arquivos": 357
   },
   "arquivos": [
     {
@@ -1073,6 +1079,46 @@
       "bytes": 35092
     },
     {
+      "caminho": "_astro/pagina-qual-disco-de-corte-para-ceramica.uDhIn5TU_10Fp0f.webp",
+      "sha256": "326d32138624b9926e672fde49e4f82e056e7c8701a34e71ef2d5575006b7bfb",
+      "bytes": 20044
+    },
+    {
+      "caminho": "_astro/pagina-qual-disco-de-corte-para-ceramica.uDhIn5TU_243gm5.avif",
+      "sha256": "ad50239246b94652b28fd46c2b85a0a2c13db70c423f2988d7062e81e1804f83",
+      "bytes": 10240
+    },
+    {
+      "caminho": "_astro/pagina-qual-disco-de-corte-para-ceramica.uDhIn5TU_Z1eivoc.avif",
+      "sha256": "7b36b4e8e15d5019f3aab54ebe6c19dd7045f588c43da549fd37e45cd87e3184",
+      "bytes": 27207
+    },
+    {
+      "caminho": "_astro/pagina-qual-disco-de-corte-para-ceramica.uDhIn5TU_Z22f6jR.webp",
+      "sha256": "33630405804d3f956481c45f636389b61be4c49d4b1b498d21430dbac4f61416",
+      "bytes": 220872
+    },
+    {
+      "caminho": "_astro/pagina-qual-disco-de-corte-para-ceramica.uDhIn5TU_Z2hFmK2.webp",
+      "sha256": "13b5a4c9aca6cdd7f8db4bccb557d42b8c226092fb409267268ca38cacee5766",
+      "bytes": 57598
+    },
+    {
+      "caminho": "_astro/pagina-qual-disco-de-corte-para-ceramica.uDhIn5TU_Z2q9FHH.avif",
+      "sha256": "42bcea088ad87fa61af8be25cc59343cc5bb9622e305eaca4bc4d4045bb1b562",
+      "bytes": 58533
+    },
+    {
+      "caminho": "_astro/pagina-qual-disco-de-corte-para-ceramica.uDhIn5TU_aeXLD.avif",
+      "sha256": "12f43e5ea0c4fb057feee4676721c383b3b2158bf5dca5499ca89298262844f1",
+      "bytes": 107310
+    },
+    {
+      "caminho": "_astro/pagina-qual-disco-de-corte-para-ceramica.uDhIn5TU_rBHTU.webp",
+      "sha256": "3b35d09e4e7d437681847bc8203db1018f3b4c364815e9ae31c081482901984b",
+      "bytes": 120204
+    },
+    {
       "caminho": "_astro/pagina-qual-serra-circular-comprar.12lH7feY_1IjGOn.avif",
       "sha256": "f247c895cf87c738f7974af5317f8fa8b9a34418d293d04a86520434400e7c87",
       "bytes": 8526
@@ -1529,8 +1575,8 @@
     },
     {
       "caminho": "como-escolher-serra-tico-tico/index.html",
-      "sha256": "0e06372566edce81519c3f5def7cf8b1119f75827f0ecde32fe61da8b4c6b080",
-      "bytes": 46447
+      "sha256": "ff58c08fe6079f861afd838f329ce64b4ac97e2b6cd45fb397b59c7fcdbcad8f",
+      "bytes": 46423
     },
     {
       "caminho": "como-trabalhamos/index.html",
@@ -1549,18 +1595,18 @@
     },
     {
       "caminho": "disco-de-corte-diferencas-entre-tipos/index.html",
-      "sha256": "1a9ba94fa2862c638196164de50bfe664544d7a8e7c09e9cb73a904442bee46e",
-      "bytes": 55682
+      "sha256": "0b384283c1ff34363b7e409be16c74cc8f48faeed5bf2232d90aecdbe60f114a",
+      "bytes": 55632
     },
     {
       "caminho": "esmerilhadeira-ou-lixadeira/index.html",
-      "sha256": "b270c4fdad01ce1268f1aae1fb60f3dbb2bf2b79658a3e90e4687523440c61c5",
-      "bytes": 51622
+      "sha256": "b557eeaef4eaaa3825329ab46fcc9a2dbdc0657a9052a06c85b8aecb5ae67e43",
+      "bytes": 51572
     },
     {
       "caminho": "esmerilhadeira-para-que-serve/index.html",
-      "sha256": "50fdb3befd2137ea26fe2cb4d52aaecabd0b154ad0e7fc5730d767a09072dc17",
-      "bytes": 51572
+      "sha256": "1b5d54d873ff828aac6727fc447c84ef62fcbf7742f34343fcebcc2b145b321a",
+      "bytes": 51522
     },
     {
       "caminho": "esmerilhadeira-qual-a-melhor/index.html",
@@ -1589,8 +1635,8 @@
     },
     {
       "caminho": "guias/index.html",
-      "sha256": "c91f29da19ed78a959a1356a27354d35899503cf06eb4100eb250d2fa50a8fdb",
-      "bytes": 66693
+      "sha256": "6941319a445787039f7686b1deb8a14780b3fa01605734df107f5c37d4200032",
+      "bytes": 68552
     },
     {
       "caminho": "images/bosch-12v-cc-1600.webp",
@@ -1839,8 +1885,8 @@
     },
     {
       "caminho": "index.html",
-      "sha256": "a13a2f54eb13e7adca6b4a9d1f1b6f7bd1ea6292b1e5955689c7951648558d72",
-      "bytes": 81235
+      "sha256": "486af9529a9324e8589419dc5989eb082720464770f3524e3503d721491a8050",
+      "bytes": 83563
     },
     {
       "caminho": "lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher/index.html",
@@ -1869,8 +1915,8 @@
     },
     {
       "caminho": "parafusadeira-12v-ou-18v/index.html",
-      "sha256": "a15f02dbe3d526384d2ac1255ffd24973cd409059fce26efb78d7781900dacbc",
-      "bytes": 51236
+      "sha256": "1338e6e5fea63c6d89c3271517d6574b10d6aa361b815392825fadf7424c8377",
+      "bytes": 51216
     },
     {
       "caminho": "parafusadeira-brushless-ou-com-escovas/index.html",
@@ -1903,6 +1949,11 @@
       "bytes": 8729
     },
     {
+      "caminho": "qual-disco-de-corte-para-ceramica/index.html",
+      "sha256": "390df165933c851795652962f7beaeb2567128042e1926fef59dbfa9eb3b6deb",
+      "bytes": 50994
+    },
+    {
       "caminho": "qual-serra-circular-comprar/index.html",
       "sha256": "555d6a5070f85d1645afb85be34a8ef19440da7c3e443d34af82e6581e076ab4",
       "bytes": 52177
@@ -1914,13 +1965,13 @@
     },
     {
       "caminho": "serra-marmore-tamanhos-e-diferencas/index.html",
-      "sha256": "a905f4c2b90f81ed2e994c8e9ea2f3cfb56bd7b82ab829cc7fb82a3ac0c48af9",
-      "bytes": 37583
+      "sha256": "77dd5d22064b94e97bea4a2a3712257fa95daad7ad4ba93347cb0cc93fda22d4",
+      "bytes": 37578
     },
     {
       "caminho": "sitemap.xml",
-      "sha256": "3c549d1d4a31a569c27eee3eb485f9bc763969c941584820f754d4a2a9cc259a",
-      "bytes": 4948
+      "sha256": "140fcc270e542b810a57ca66930af6013c1d844de83cd9f61f565cc4a7ec7b23",
+      "bytes": 5067
     },
     {
       "caminho": "sobre/index.html",
@@ -1929,8 +1980,8 @@
     },
     {
       "caminho": "tamanhos-de-disco-de-corte/index.html",
-      "sha256": "314d4f35ada0d60ded36f7c16f337273379f35ee444bb3cb32d9b6acba86b81d",
-      "bytes": 42519
+      "sha256": "ff9306d32eecda336ea058944ab70c980cf0ebe3294cdead2be6cdbf91244c51",
+      "bytes": 42469
     },
     {
       "caminho": "tipos-de-brocas/index.html",
@@ -1939,8 +1990,8 @@
     },
     {
       "caminho": "tipos-de-disco-para-serra-marmore-como-escolher/index.html",
-      "sha256": "87256bfb4b6f9b0bc04dcc826a7b6449f9bae88ff8a7c344a2e6bea6a3f31c99",
-      "bytes": 48349
+      "sha256": "55351641f516f0639f6bf24b74e417de12bcb58dd07c0d6650c748a913846c3e",
+      "bytes": 48344
     },
     {
       "caminho": "torque-nm-parafusadeira/index.html",
