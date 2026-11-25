@@ -1,6 +1,6 @@
 {
-  "commit": "58df2d593295e014710c164cc26a642210080ef6",
-  "gerado_em": "2026-11-25T10:34:41.854Z",
+  "commit": "88ccf46f8f1895973963a5dccc67988f7d5b0859",
+  "gerado_em": "2026-11-25T11:36:22.476Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -47,7 +47,7 @@
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de 58df2d5 + npm ci"
+      "msg": "checkout limpo de 88ccf46 + npm ci"
     },
     {
       "estado": "PASS",
@@ -67,7 +67,7 @@
     },
     {
       "estado": "PASS",
-      "msg": "qa:previa no artefato (43 páginas · 0 erro(s))"
+      "msg": "qa:previa no artefato (44 páginas · 0 erro(s))"
     },
     {
       "estado": "PASS",
@@ -102,7 +102,7 @@
       "msg": "nenhum arquivo sensível no artefato"
     }
   ],
-  "scripts_executaveis_no_html": 77,
+  "scripts_executaveis_no_html": 79,
   "donos_das_urls": {
     "bateria-2ah-ou-4ah-parafusadeira": "nativa (approve)",
     "bateria-parafusadeira-serve-em-outra-marca": "nativa (approve)",
@@ -189,6 +189,11 @@
     "/qual-serra-circular-comprar/ B07HFZ21PT",
     "/serra-marmore-tamanhos-e-diferencas/ B076ZQZ8F5",
     "/serra-marmore-tamanhos-e-diferencas/ B093G21YJ8",
+    "/tamanhos-de-disco-de-corte/ B01FXEWXGQ",
+    "/tamanhos-de-disco-de-corte/ B0BRYJ2JW5",
+    "/tamanhos-de-disco-de-corte/ B0BZWMTYYL",
+    "/tamanhos-de-disco-de-corte/ B0GLFFPG1C",
+    "/tamanhos-de-disco-de-corte/ B093G21YJ8",
     "/tipos-de-brocas/ B083DMSXSK",
     "/tipos-de-brocas/ B00TX9V56C",
     "/tipos-de-brocas/ B07JK2YZTY",
@@ -200,11 +205,11 @@
     "/velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma/ B07MMBKG7C",
     "/velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma/ B00I3PODXE"
   ],
-  "sitemap_urls": 42,
+  "sitemap_urls": 43,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-58df2d5.zip",
-    "sha256": "71b1e620ed8250ca7b8854d7bef7c9932e20fa5e2eab054f4238b66cd7df23c5",
-    "arquivos": 340
+    "arquivo": "ferramenta-clara-v2-88ccf46.zip",
+    "sha256": "15988e7450d562c88ce6a68cb52334f441c1cd69c1ff179c0d787f9b21964723",
+    "arquivos": 348
   },
   "arquivos": [
     {
@@ -1148,9 +1153,44 @@
       "bytes": 22917
     },
     {
-      "caminho": "_astro/pagina-tamanhos-de-disco-de-corte.c5ZShDAo.webp",
-      "sha256": "e80e5a7fc239b9a08254b365aa2ba28df4e7cc5913e7b67510c1848f5da6ea87",
-      "bytes": 232306
+      "caminho": "_astro/pagina-tamanhos-de-disco-de-corte.c5ZShDAo_1wmpUO.avif",
+      "sha256": "bbdd6e977fd8bf08f15a4dd827fc1393682970086f6bac61a2ad2d09f75dc327",
+      "bytes": 54704
+    },
+    {
+      "caminho": "_astro/pagina-tamanhos-de-disco-de-corte.c5ZShDAo_23ppxN.avif",
+      "sha256": "41ecb7ab5ab215d2ed31a28422f743cb2dcb6cf4427dad9c5fc4325e1c7e0ebf",
+      "bytes": 122284
+    },
+    {
+      "caminho": "_astro/pagina-tamanhos-de-disco-de-corte.c5ZShDAo_Z1X3OV0.webp",
+      "sha256": "249ba3c550a194885fcf38f5bad6c1289b39494badd2dc6696a20e9e341ec2b2",
+      "bytes": 11852
+    },
+    {
+      "caminho": "_astro/pagina-tamanhos-de-disco-de-corte.c5ZShDAo_Z29neEA.webp",
+      "sha256": "855ce6cad6679c628a6c6b03e581d55c8871fdfbc27a00bc3bf6ab1b7bd6b6f3",
+      "bytes": 95684
+    },
+    {
+      "caminho": "_astro/pagina-tamanhos-de-disco-de-corte.c5ZShDAo_Z2ej2BI.webp",
+      "sha256": "1950a11a9fc821ed5e6b10fe3a1e57d9a49e8763418aa4b4d6870c6f4ca6bc77",
+      "bytes": 41602
+    },
+    {
+      "caminho": "_astro/pagina-tamanhos-de-disco-de-corte.c5ZShDAo_ZcJERu.avif",
+      "sha256": "e9cf459c93e598af4363f86cb126d0aa3ddc15277a498a29183dfd9dcda27272",
+      "bytes": 6433
+    },
+    {
+      "caminho": "_astro/pagina-tamanhos-de-disco-de-corte.c5ZShDAo_Zhp1Vl.webp",
+      "sha256": "afcc943c205ba0a9f42bfa20f885572fa63fb812f4984dc06706fbf7b7c50be8",
+      "bytes": 221328
+    },
+    {
+      "caminho": "_astro/pagina-tamanhos-de-disco-de-corte.c5ZShDAo_ZsYRyd.avif",
+      "sha256": "781bb724c3648e22a820a708ec520b8725ff04ccfac1460a5dbcfa9d5c860946",
+      "bytes": 19383
     },
     {
       "caminho": "_astro/pagina-tipos-de-brocas.DVJBTtVe_1HB6m6.webp",
@@ -1509,18 +1549,18 @@
     },
     {
       "caminho": "disco-de-corte-diferencas-entre-tipos/index.html",
-      "sha256": "32fa3fcaebd5b2000593d376c722fba189c32074b99b444678435c3eca7c372c",
-      "bytes": 55942
+      "sha256": "1a9ba94fa2862c638196164de50bfe664544d7a8e7c09e9cb73a904442bee46e",
+      "bytes": 55682
     },
     {
       "caminho": "esmerilhadeira-ou-lixadeira/index.html",
-      "sha256": "abed9cd1a7ac1d5f089b4b214402f06666bbfba19eb6a57816b453861a882cc3",
-      "bytes": 51882
+      "sha256": "b270c4fdad01ce1268f1aae1fb60f3dbb2bf2b79658a3e90e4687523440c61c5",
+      "bytes": 51622
     },
     {
       "caminho": "esmerilhadeira-para-que-serve/index.html",
-      "sha256": "dda8b77477f8dc203de838afa47c278f89ac6553b4d7cd8b7170aef839e80091",
-      "bytes": 51832
+      "sha256": "50fdb3befd2137ea26fe2cb4d52aaecabd0b154ad0e7fc5730d767a09072dc17",
+      "bytes": 51572
     },
     {
       "caminho": "esmerilhadeira-qual-a-melhor/index.html",
@@ -1549,8 +1589,8 @@
     },
     {
       "caminho": "guias/index.html",
-      "sha256": "874056ebcc3f7f8ec7fdded1f883652127d7d64bba6cbc2abc2849b9be709544",
-      "bytes": 64867
+      "sha256": "c91f29da19ed78a959a1356a27354d35899503cf06eb4100eb250d2fa50a8fdb",
+      "bytes": 66693
     },
     {
       "caminho": "images/bosch-12v-cc-1600.webp",
@@ -1799,8 +1839,8 @@
     },
     {
       "caminho": "index.html",
-      "sha256": "b9e7b2806891c61928dc1031a089c8a404f76ae92bd120f8f4e480bb1a42de0f",
-      "bytes": 78942
+      "sha256": "a13a2f54eb13e7adca6b4a9d1f1b6f7bd1ea6292b1e5955689c7951648558d72",
+      "bytes": 81235
     },
     {
       "caminho": "lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher/index.html",
@@ -1834,8 +1874,8 @@
     },
     {
       "caminho": "parafusadeira-brushless-ou-com-escovas/index.html",
-      "sha256": "f51ae3d2e9c70e5443ee02aa02049e971efa752b479aac8f2d68ff1c2b44bdcc",
-      "bytes": 46673
+      "sha256": "94fbbfe2f109c08f8688771b34f386cfc9a6b4f2c5a589f25b0336da154ca43d",
+      "bytes": 46794
     },
     {
       "caminho": "parafusadeira-com-ou-sem-impacto/index.html",
@@ -1879,13 +1919,18 @@
     },
     {
       "caminho": "sitemap.xml",
-      "sha256": "c42feebb851703737e700fab443998b353b249af1ad1900376908acfddaa5b85",
-      "bytes": 4836
+      "sha256": "3c549d1d4a31a569c27eee3eb485f9bc763969c941584820f754d4a2a9cc259a",
+      "bytes": 4948
     },
     {
       "caminho": "sobre/index.html",
       "sha256": "ceaf9346a60abe353c1323bb55ce2ae586fccf7ab604e72f96242182e9625457",
       "bytes": 7102
+    },
+    {
+      "caminho": "tamanhos-de-disco-de-corte/index.html",
+      "sha256": "314d4f35ada0d60ded36f7c16f337273379f35ee444bb3cb32d9b6acba86b81d",
+      "bytes": 42519
     },
     {
       "caminho": "tipos-de-brocas/index.html",
