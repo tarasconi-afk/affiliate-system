@@ -1,6 +1,6 @@
 {
-  "commit": "cbc4313c2faec339470b5f7e28e03ca464e6fe03",
-  "gerado_em": "2026-11-25T12:48:48.970Z",
+  "commit": "53582da5516d0c78a741abc37dacf754b98b8290",
+  "gerado_em": "2026-11-26T10:35:09.020Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -43,11 +43,11 @@
     },
     {
       "estado": "PASS",
-      "msg": "disco livre na pasta temporária: 66.9 GB (mínimo 3)"
+      "msg": "disco livre na pasta temporária: 66.2 GB (mínimo 3)"
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de cbc4313 + npm ci"
+      "msg": "checkout limpo de 53582da + npm ci"
     },
     {
       "estado": "PASS",
@@ -231,9 +231,9 @@
   ],
   "sitemap_urls": 45,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-cbc4313.zip",
-    "sha256": "fadbe12b41f808edf029d2ce36c08a3c15187029fa16087cc59c7c4f8018a681",
-    "arquivos": 366
+    "arquivo": "ferramenta-clara-v2-53582da.zip",
+    "sha256": "9b8b842a3f06833e7572bb5f77b6f0834163a87a25faa2eeff1076f6623ffff6",
+    "arquivos": 368
   },
   "arquivos": [
     {
@@ -1177,6 +1177,11 @@
       "bytes": 51252
     },
     {
+      "caminho": "_astro/pagina-serra-de-esquadria-ou-serra-de-bancada-qual-escolher.CUzzRIcp.webp",
+      "sha256": "01f007335b87439504f766a309678a0736d19d587fe44054d313d05f35e51619",
+      "bytes": 126674
+    },
+    {
       "caminho": "_astro/pagina-serra-marmore-tamanhos-e-diferencas.CbLYix6C_1tkrnI.avif",
       "sha256": "04078c940c9944f967b035a351d0b00b44f0eb93a3627000cbb047a87d9c16ca",
       "bytes": 40592
@@ -1537,6 +1542,11 @@
       "bytes": 128740
     },
     {
+      "caminho": "_astro/produto-b0f2jmypq9.CJif9m3c.webp",
+      "sha256": "e785f9ffcfb30d375cd03b00811944e1e2499f63cd161f18a850cf51bca678f8",
+      "bytes": 107652
+    },
+    {
       "caminho": "_astro/produto-b0glffpg1c.BbEaJOr9.webp",
       "sha256": "d606c2513b9b050510c9f1bdbe15ec043fa1746200e31d74f25d9cc76ffe90a0",
       "bytes": 138916
@@ -1603,7 +1613,7 @@
     },
     {
       "caminho": "broca-ideal-para-furar-ferro/index.html",
-      "sha256": "a3644a12b29897196068adba9cc2ac087f49ac6ad15a8596e95de233d2b40387",
+      "sha256": "622aa9b6bcb7c8c15ced9c6de66a6ceb583151ec17d640d67be402c477a43a86",
       "bytes": 45338
     },
     {
@@ -1633,8 +1643,8 @@
     },
     {
       "caminho": "como-escolher-serra-tico-tico/index.html",
-      "sha256": "718e5584a1c2ad805df78f77864509c5bed1eaf1181b003215d056bbb2f98c65",
-      "bytes": 46770
+      "sha256": "5e4c5e20cedc4d937370b1fe55434c1340ebfcd29bd81b37ef9a3e7c02adfdaa",
+      "bytes": 46851
     },
     {
       "caminho": "como-trabalhamos/index.html",
@@ -1653,22 +1663,22 @@
     },
     {
       "caminho": "disco-de-corte-diferencas-entre-tipos/index.html",
-      "sha256": "99b29677f5d6b6f3b233217018655708ccb2569d39a9763affed4eab8853e2e4",
+      "sha256": "f467a6da7929f0a55f3899d7cf36ee18bbdf746a84006530d67ca6847c4fd200",
       "bytes": 55979
     },
     {
       "caminho": "esmerilhadeira-ou-lixadeira/index.html",
-      "sha256": "451cadf837d9fb37dceb2088321a92769ba0f98536ec6243c55d102465b42bf5",
+      "sha256": "e8752bc8f00fb4fc7c9c51c4ff3cbc982fe0ed01f114a4873a5b1d3836005240",
       "bytes": 51919
     },
     {
       "caminho": "esmerilhadeira-para-que-serve/index.html",
-      "sha256": "459b8a040ffe0c5ca9b090fe95187c29941c9171f2dffe840383b5d4c589b8d3",
+      "sha256": "b512b4af982ffb64dffc44e14f5713d87e280d5f8e13e1d1ef5be95ec2cc3570",
       "bytes": 51869
     },
     {
       "caminho": "esmerilhadeira-qual-a-melhor/index.html",
-      "sha256": "daeb8b9d1aa422d2a186bab65956d0d64d91870f1f46691b04e67963ff89896f",
+      "sha256": "4c42fcfb8c2856e0647b56f0e909b5e72f44bbc3f184bbad66ee91dd55c3f200",
       "bytes": 52886
     },
     {
@@ -2008,8 +2018,8 @@
     },
     {
       "caminho": "qual-disco-de-corte-para-ceramica/index.html",
-      "sha256": "2a51ec7f6176019f7754886c097641e1180400e7091e4a1030e914de62559cce",
-      "bytes": 51341
+      "sha256": "ed057d123aee88592b5aff1d060a5e976ae92fe25fe1420f46cce2a8555d7ac3",
+      "bytes": 52560
     },
     {
       "caminho": "qual-serra-circular-comprar/index.html",
@@ -2023,7 +2033,7 @@
     },
     {
       "caminho": "serra-marmore-tamanhos-e-diferencas/index.html",
-      "sha256": "f3a36fd1df09efc90fec5f593c3b670329bb14cf1154521168111b296bd884a6",
+      "sha256": "35e100ba90bef37b6fdb843d34bc6510b2d19c1bdd97b9cb28edbae3128ac669",
       "bytes": 37925
     },
     {
@@ -2038,23 +2048,23 @@
     },
     {
       "caminho": "tamanhos-de-disco-de-corte/index.html",
-      "sha256": "f9a69d0e3d80c210065b2db89254b3c864556232f5f5701f0f4d01ac8468a4af",
-      "bytes": 42816
+      "sha256": "1f69a823f54b13076fea6ab3e3001bf00a46d61d19b2caab0bae4a5f29199f9a",
+      "bytes": 43986
     },
     {
       "caminho": "tipos-de-brocas/index.html",
-      "sha256": "3b7e06330082367b3a341212be3fac608ec0e989c41a9b18c9ec8a67b8fd6fb0",
+      "sha256": "ca706d6791097c95cb68f4934cdfb9a700bdc13e363302c8a21ddc05e527f844",
       "bytes": 61182
     },
     {
       "caminho": "tipos-de-disco-para-serra-marmore-como-escolher/index.html",
-      "sha256": "b00ca3d9c5f011d1faea2c56a51178b9a9af52a73c5a56b0fa03d3ba6c4a1fba",
+      "sha256": "d773f04e01da244624dd233ff7ca553371b785f8e660bc4933cc246a97ef3afb",
       "bytes": 48691
     },
     {
       "caminho": "tipos-de-serra-sabre/index.html",
-      "sha256": "298cc74bffc7b32c9d6fb8c37ec50fbab95856e0227f05cb0e1d77c5719b4318",
-      "bytes": 54083
+      "sha256": "64e790c6212cfcfd8c82458bbcf74cec8cdc253b7e2a7c2f2c3e0312922b9fc4",
+      "bytes": 55809
     },
     {
       "caminho": "torque-nm-parafusadeira/index.html",
