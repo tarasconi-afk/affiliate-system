@@ -1,6 +1,6 @@
 {
-  "commit": "bb7d6d5d81a95a1536250caf73d1b22403c7cd98",
-  "gerado_em": "2026-11-27T14:57:33.239Z",
+  "commit": "e3a123c3462e20d1357c6263cafa36b33887b923",
+  "gerado_em": "2026-11-27T19:42:04.169Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -43,11 +43,11 @@
     },
     {
       "estado": "PASS",
-      "msg": "disco livre na pasta temporária: 65.3 GB (mínimo 3)"
+      "msg": "disco livre na pasta temporária: 65.2 GB (mínimo 3)"
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de bb7d6d5 + npm ci"
+      "msg": "checkout limpo de e3a123c + npm ci"
     },
     {
       "estado": "PASS",
@@ -185,9 +185,6 @@
     "/parafusadeira-12v-ou-18v/ B07MMBKG7C",
     "/parafusadeira-12v-ou-18v/ B076Y8DC6G",
     "/parafusadeira-12v-ou-18v/ B099NZQHRB",
-    "/parafusadeira-12v-ou-18v/ B00I3PODXE",
-    "/parafusadeira-12v-ou-18v/ B076YGD5BZ",
-    "/parafusadeira-12v-ou-18v/ B0F2JMYPQ9",
     "/parafusadeira-brushless-ou-com-escovas/ B07MMBKG7C",
     "/parafusadeira-brushless-ou-com-escovas/ B00I3PODXE",
     "/parafusadeira-brushless-ou-com-escovas/ B076YGD5BZ",
@@ -237,9 +234,9 @@
   ],
   "sitemap_urls": 47,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-bb7d6d5.zip",
-    "sha256": "9bf22fcc5dfdd82224f26c967e301aabb8b1ecc0d6ad19da5851dac4249000cd",
-    "arquivos": 386
+    "arquivo": "ferramenta-clara-v2-e3a123c.zip",
+    "sha256": "d33f34acfc7601d19fc303ab5ca9f0b63636d2d804415b32b5807b5e17c3a9be",
+    "arquivos": 387
   },
   "arquivos": [
     {
@@ -821,6 +818,11 @@
       "caminho": "_astro/pagina-disco-de-corte-para-ferro-qual-escolher.uZT8Kvxt_kvpVU.avif",
       "sha256": "e28c66ffadf9d4b70f7eea743ecdd720cf175f625a8f1dd5bd9c6057d2037062",
       "bytes": 39105
+    },
+    {
+      "caminho": "_astro/pagina-esmerilhadeira-a-bateria-vale-a-pena.D914_kwW.webp",
+      "sha256": "72df8d91b4e6ed7ef6d48e5b8a980a2001e2920b35c2b36b2f03984103e69d4f",
+      "bytes": 264906
     },
     {
       "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_231G0S.avif",
@@ -1754,8 +1756,8 @@
     },
     {
       "caminho": "disco-de-corte-para-ferro-qual-escolher/index.html",
-      "sha256": "2e06efbb7628b22936d74d1ad3146c009eeabce2b132911a91ead7c7107fd444",
-      "bytes": 41326
+      "sha256": "824a1f0162250a93c77c47901faa6b0767909fa66fb2ae33c4b7398dc347c13e",
+      "bytes": 42320
     },
     {
       "caminho": "esmerilhadeira-ou-lixadeira/index.html",
@@ -1794,8 +1796,8 @@
     },
     {
       "caminho": "guias/index.html",
-      "sha256": "380b8a6687bdb2adb51d0709327ef87d7bbdb9a6adafe0d1e9b1da0132fb08b0",
-      "bytes": 74363
+      "sha256": "e196260d8405507c6ae544e77bddc25cbea9f808ea333960a3a6823e08b0ae48",
+      "bytes": 74382
     },
     {
       "caminho": "images/bosch-12v-cc-1600.webp",
@@ -2044,7 +2046,7 @@
     },
     {
       "caminho": "index.html",
-      "sha256": "fca4c508e26bc1eda97261bc8278b9ab7e088f4acf28e8b3f8c2ac8cbdf5967d",
+      "sha256": "253f7f5fc7635a7f7a6952ee2acf25d3d3f3c9362aa6097c8daba5d911e08a53",
       "bytes": 90890
     },
     {
@@ -2069,13 +2071,13 @@
     },
     {
       "caminho": "nm-chave-de-impacto/index.html",
-      "sha256": "6774968eb591fb115e46a033bf5806251b354cf7be8a47096336d64fde92fc2e",
-      "bytes": 49003
+      "sha256": "b88792d94fc04d63f35b9f732bba2d61ce22dd5a786d7b6d51d240f7c17a299f",
+      "bytes": 49099
     },
     {
       "caminho": "parafusadeira-12v-ou-18v/index.html",
-      "sha256": "6b8f194918ecb286e5d9eae33f6a56330e4b4ef74c9288a11d6db030088690c5",
-      "bytes": 56688
+      "sha256": "4b410be140c5f19ec666475ddc93b962abb9e25b861753f662831c5065b9ec58",
+      "bytes": 49050
     },
     {
       "caminho": "parafusadeira-brushless-ou-com-escovas/index.html",
@@ -2129,12 +2131,12 @@
     },
     {
       "caminho": "serra-tico-tico-ou-serra-sabre-qual-escolher/index.html",
-      "sha256": "f61360d4b471afbac0d4791be05010750c7de5b66c174cd6be2b72fc6d4f9ac4",
-      "bytes": 38991
+      "sha256": "b037a42cbd521b448222349bbec393fef4c753b9e49f9269435fa8745b539bce",
+      "bytes": 40166
     },
     {
       "caminho": "sitemap.xml",
-      "sha256": "0eee3dd2f78f7b8d3fe2a45a1bf9d05e9bcba927ed3af7980a8550eae3b42204",
+      "sha256": "e0399588f8f965ed0a5a4b2d146692d8d0c8e007f7bc1ecd1127ad6d35b44330",
       "bytes": 5428
     },
     {
@@ -2164,8 +2166,8 @@
     },
     {
       "caminho": "torque-nm-parafusadeira/index.html",
-      "sha256": "40c09255f2982df8d1aceead853138ba258f99e1ca2dcc0105afbd8d8d10fb9a",
-      "bytes": 53550
+      "sha256": "b57801c6c7fc4540dfdd2d40b81e807eec39e93318a112a1b6c9144f0d70400c",
+      "bytes": 53810
     },
     {
       "caminho": "velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma/index.html",
