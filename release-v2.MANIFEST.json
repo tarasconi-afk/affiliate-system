@@ -1,6 +1,6 @@
 {
-  "commit": "53582da5516d0c78a741abc37dacf754b98b8290",
-  "gerado_em": "2026-11-26T10:35:09.020Z",
+  "commit": "a0564a3ca4e72051f5990ab4bff564f434fb9f41",
+  "gerado_em": "2026-11-27T10:35:24.343Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -43,11 +43,11 @@
     },
     {
       "estado": "PASS",
-      "msg": "disco livre na pasta temporária: 66.2 GB (mínimo 3)"
+      "msg": "disco livre na pasta temporária: 65.4 GB (mínimo 3)"
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de 53582da + npm ci"
+      "msg": "checkout limpo de a0564a3 + npm ci"
     },
     {
       "estado": "PASS",
@@ -231,9 +231,9 @@
   ],
   "sitemap_urls": 45,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-53582da.zip",
-    "sha256": "9b8b842a3f06833e7572bb5f77b6f0834163a87a25faa2eeff1076f6623ffff6",
-    "arquivos": 368
+    "arquivo": "ferramenta-clara-v2-a0564a3.zip",
+    "sha256": "a5899f25f47382792328afd2ebf0b2ec41f5c91e6acef94ab4d5d77784554da6",
+    "arquivos": 369
   },
   "arquivos": [
     {
@@ -775,6 +775,11 @@
       "caminho": "_astro/pagina-disco-de-corte-diferencas-entre-tipos.CNxJgFV5_rjSz9.webp",
       "sha256": "57ae067194443dddcbbf10b97520e47d1c0974b79a474b9a9ced3a0d06cbd4e8",
       "bytes": 12500
+    },
+    {
+      "caminho": "_astro/pagina-disco-de-corte-para-ferro-qual-escolher.uZT8Kvxt.webp",
+      "sha256": "811f68c1247cbd8ecf6bfa48d8bb174fa3bc8cf87151fb949635375e51e41088",
+      "bytes": 135766
     },
     {
       "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_231G0S.avif",
@@ -1613,17 +1618,17 @@
     },
     {
       "caminho": "broca-ideal-para-furar-ferro/index.html",
-      "sha256": "622aa9b6bcb7c8c15ced9c6de66a6ceb583151ec17d640d67be402c477a43a86",
+      "sha256": "a28503c73b6708fe5b3f5825a9eba985f2d75100af5e2cb466e63d885fe4a43d",
       "bytes": 45338
     },
     {
       "caminho": "broca-ideal-para-furar-parede/index.html",
-      "sha256": "781299a3928d1651336d3220aa685a9d06aa4559e09a04da3cc38d808f9248c5",
+      "sha256": "e777acefc15c83e8629c370c0913eb68936b1facd34d57375039805c2ce5d679",
       "bytes": 59561
     },
     {
       "caminho": "broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua/index.html",
-      "sha256": "8f80c86e1b00c92c2e4ba1a64827420ffae8be266728c82e941425ac67799dfd",
+      "sha256": "05d9f7535556a96184efa837047359d08b7b80898cf7eee79709dcc5a0293fc3",
       "bytes": 35076
     },
     {
@@ -2053,7 +2058,7 @@
     },
     {
       "caminho": "tipos-de-brocas/index.html",
-      "sha256": "ca706d6791097c95cb68f4934cdfb9a700bdc13e363302c8a21ddc05e527f844",
+      "sha256": "b7cba6205bb2e80e4692150a52276e5007c6691099dffd3d581da4a6f2cf958b",
       "bytes": 61182
     },
     {
