@@ -1,6 +1,6 @@
 {
-  "commit": "367222bff20a43e2cd93ca2c4e71105b04a0be59",
-  "gerado_em": "2026-11-27T14:38:20.649Z",
+  "commit": "bb7d6d5d81a95a1536250caf73d1b22403c7cd98",
+  "gerado_em": "2026-11-27T14:57:33.239Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -47,7 +47,7 @@
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de 367222b + npm ci"
+      "msg": "checkout limpo de bb7d6d5 + npm ci"
     },
     {
       "estado": "PASS",
@@ -237,8 +237,8 @@
   ],
   "sitemap_urls": 47,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-367222b.zip",
-    "sha256": "6e888358ac3fdce4ded2e8af1a86d70d4fd06a89e12b053568f626d9cf3cdd23",
+    "arquivo": "ferramenta-clara-v2-bb7d6d5.zip",
+    "sha256": "9bf22fcc5dfdd82224f26c967e301aabb8b1ecc0d6ad19da5851dac4249000cd",
     "arquivos": 386
   },
   "arquivos": [
@@ -1684,8 +1684,8 @@
     },
     {
       "caminho": "black-friday/index.html",
-      "sha256": "8e5ce646703791eb529653b7ea6c6553cbe4e7cc216cd873898d74e1dee9c118",
-      "bytes": 12045
+      "sha256": "05ec2b3bc0f28434d94fc977c8c895078456dcb4c2726f7ccda06b82856d3828",
+      "bytes": 12054
     },
     {
       "caminho": "bosch-185-li-gsb/index.html",
@@ -1699,18 +1699,18 @@
     },
     {
       "caminho": "broca-ideal-para-furar-ferro/index.html",
-      "sha256": "a28503c73b6708fe5b3f5825a9eba985f2d75100af5e2cb466e63d885fe4a43d",
-      "bytes": 45338
+      "sha256": "5f832fcf83357c10ccf77fe8a8ef660f09feef1fdef187a80dfdb0150f8a9e19",
+      "bytes": 45461
     },
     {
       "caminho": "broca-ideal-para-furar-parede/index.html",
-      "sha256": "61cad717cdc2467639a667d06dc279ac090754f5a88c832d39d47f2d379f8dad",
-      "bytes": 59561
+      "sha256": "749419964e49e75a8a3e5f3f0c3f6ed0e09ae676a106bce37afc53f3c8e12d9b",
+      "bytes": 59585
     },
     {
       "caminho": "broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua/index.html",
-      "sha256": "05d9f7535556a96184efa837047359d08b7b80898cf7eee79709dcc5a0293fc3",
-      "bytes": 35076
+      "sha256": "fe3eb2294baeb7dbf18ab0c9e7433497f7b8c0cc2dee8daf3a41aec5c8c6b77c",
+      "bytes": 35100
     },
     {
       "caminho": "chave-de-impacto-ou-parafusadeira-qual-escolher/index.html",
@@ -1794,8 +1794,8 @@
     },
     {
       "caminho": "guias/index.html",
-      "sha256": "a478974a279857a247fce07ac85090281435b9086d9f406a26bf217acc4c8df2",
-      "bytes": 74354
+      "sha256": "380b8a6687bdb2adb51d0709327ef87d7bbdb9a6adafe0d1e9b1da0132fb08b0",
+      "bytes": 74363
     },
     {
       "caminho": "images/bosch-12v-cc-1600.webp",
@@ -2044,8 +2044,8 @@
     },
     {
       "caminho": "index.html",
-      "sha256": "9a63d691359d13461f63b17fa980bde89cfa5e0eb00bebe8b03afc62958e96a8",
-      "bytes": 90866
+      "sha256": "fca4c508e26bc1eda97261bc8278b9ab7e088f4acf28e8b3f8c2ac8cbdf5967d",
+      "bytes": 90890
     },
     {
       "caminho": "lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher/index.html",
@@ -2134,7 +2134,7 @@
     },
     {
       "caminho": "sitemap.xml",
-      "sha256": "a8ddb03a8723be57621118697eb760ae681b314a8b081b37522514d936c41c58",
+      "sha256": "0eee3dd2f78f7b8d3fe2a45a1bf9d05e9bcba927ed3af7980a8550eae3b42204",
       "bytes": 5428
     },
     {
@@ -2149,8 +2149,8 @@
     },
     {
       "caminho": "tipos-de-brocas/index.html",
-      "sha256": "079ce948317a4aa550ad863b3c340c61575fd2124b14eccc3f4dbbae4d8f391f",
-      "bytes": 61182
+      "sha256": "dac22efca8be530720a497f5ac306eb6ade8a2f5943ecd983ff0633a2ee738d6",
+      "bytes": 61206
     },
     {
       "caminho": "tipos-de-disco-para-serra-marmore-como-escolher/index.html",
