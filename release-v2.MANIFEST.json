@@ -1,6 +1,6 @@
 {
-  "commit": "926a742127a39da6e3b3a20e9601e8ebab029eac",
-  "gerado_em": "2026-11-27T14:28:36.461Z",
+  "commit": "367222bff20a43e2cd93ca2c4e71105b04a0be59",
+  "gerado_em": "2026-11-27T14:38:20.649Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -47,7 +47,7 @@
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de 926a742 + npm ci"
+      "msg": "checkout limpo de 367222b + npm ci"
     },
     {
       "estado": "PASS",
@@ -67,7 +67,7 @@
     },
     {
       "estado": "PASS",
-      "msg": "qa:previa no artefato (47 páginas · 0 erro(s))"
+      "msg": "qa:previa no artefato (48 páginas · 0 erro(s))"
     },
     {
       "estado": "PASS",
@@ -102,7 +102,7 @@
       "msg": "nenhum arquivo sensível no artefato"
     }
   ],
-  "scripts_executaveis_no_html": 85,
+  "scripts_executaveis_no_html": 87,
   "donos_das_urls": {
     "bateria-2ah-ou-4ah-parafusadeira": "nativa (approve)",
     "bateria-parafusadeira-serve-em-outra-marca": "nativa (approve)",
@@ -216,6 +216,7 @@
     "/qual-serra-circular-comprar/ B07HFZ21PT",
     "/serra-marmore-tamanhos-e-diferencas/ B076ZQZ8F5",
     "/serra-marmore-tamanhos-e-diferencas/ B093G21YJ8",
+    "/serra-tico-tico-ou-serra-sabre-qual-escolher/ B076KPD1DX",
     "/tamanhos-de-disco-de-corte/ B01FXEWXGQ",
     "/tamanhos-de-disco-de-corte/ B0BRYJ2JW5",
     "/tamanhos-de-disco-de-corte/ B0BZWMTYYL",
@@ -234,11 +235,11 @@
     "/velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma/ B076YGD5BZ",
     "/velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma/ B0F2JMYPQ9"
   ],
-  "sitemap_urls": 46,
+  "sitemap_urls": 47,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-926a742.zip",
-    "sha256": "a5cd217f896acc60328e001b5108d865058fffdace03d000653898e1b3a7b61e",
-    "arquivos": 377
+    "arquivo": "ferramenta-clara-v2-367222b.zip",
+    "sha256": "6e888358ac3fdce4ded2e8af1a86d70d4fd06a89e12b053568f626d9cf3cdd23",
+    "arquivos": 386
   },
   "arquivos": [
     {
@@ -1267,6 +1268,46 @@
       "bytes": 22917
     },
     {
+      "caminho": "_astro/pagina-serra-tico-tico-ou-serra-sabre-qual-escolher.BAuzenvx_20CX6p.webp",
+      "sha256": "7c527d787f889b9344a84c7d26bb9084312b00293c9bcae69b4adce5a432d02f",
+      "bytes": 62526
+    },
+    {
+      "caminho": "_astro/pagina-serra-tico-tico-ou-serra-sabre-qual-escolher.BAuzenvx_XiYQS.avif",
+      "sha256": "23c86c76b18a7e4e133d17efce59ce4cd885488cf36406bce895c1d2da55d206",
+      "bytes": 54356
+    },
+    {
+      "caminho": "_astro/pagina-serra-tico-tico-ou-serra-sabre-qual-escolher.BAuzenvx_Z1Xnl91.avif",
+      "sha256": "e7b3ab7facad1238a73e71d075d96242773b0b1275deeb02bcfa05bde4672147",
+      "bytes": 20903
+    },
+    {
+      "caminho": "_astro/pagina-serra-tico-tico-ou-serra-sabre-qual-escolher.BAuzenvx_Z22Y5HA.webp",
+      "sha256": "a6fb9d2f7b37afae2b416b46d6f8baf8cc75075f594d66c08aacb592aed8880a",
+      "bytes": 37924
+    },
+    {
+      "caminho": "_astro/pagina-serra-tico-tico-ou-serra-sabre-qual-escolher.BAuzenvx_ZE4Cay.avif",
+      "sha256": "3c0914394684820acbcc53d84ebbc1db271dfebfe8b3acf5b6ba336142d5b106",
+      "bytes": 10253
+    },
+    {
+      "caminho": "_astro/pagina-serra-tico-tico-ou-serra-sabre-qual-escolher.BAuzenvx_ZIFmJ8.webp",
+      "sha256": "097ebff57de124e919ca5bc1d753a43ead3196ea2b5471581d5a2b0ef4eb9c0d",
+      "bytes": 19306
+    },
+    {
+      "caminho": "_astro/pagina-serra-tico-tico-ou-serra-sabre-qual-escolher.BAuzenvx_ZIS18J.avif",
+      "sha256": "c1e106be222a7f5e71491bb5938ba0ba411218ec4e910954a588c7f7fd2c9f02",
+      "bytes": 35855
+    },
+    {
+      "caminho": "_astro/pagina-serra-tico-tico-ou-serra-sabre-qual-escolher.BAuzenvx_ZkNPlq.webp",
+      "sha256": "24f0f54e1bd529555cfd85e4d92439083527924f0ee1b5ffa3f845aba35600a1",
+      "bytes": 95782
+    },
+    {
       "caminho": "_astro/pagina-tamanhos-de-disco-de-corte.c5ZShDAo_1wmpUO.avif",
       "sha256": "bbdd6e977fd8bf08f15a4dd827fc1393682970086f6bac61a2ad2d09f75dc327",
       "bytes": 54704
@@ -1688,8 +1729,8 @@
     },
     {
       "caminho": "como-escolher-serra-tico-tico/index.html",
-      "sha256": "72c49650ed4dc0ad0213ab285522fa737b6aa3fd56f22e1dce44d842829d5785",
-      "bytes": 46979
+      "sha256": "46abe0f438d0ebf2a58dc7d730bfabbd2304d20b3bab93769d7bafb589a13d42",
+      "bytes": 47168
     },
     {
       "caminho": "como-trabalhamos/index.html",
@@ -1753,8 +1794,8 @@
     },
     {
       "caminho": "guias/index.html",
-      "sha256": "5c06be1785c24612bb3c64ed2a858cdefdc0638abb0c2580b1d888897a5bfee2",
-      "bytes": 72287
+      "sha256": "a478974a279857a247fce07ac85090281435b9086d9f406a26bf217acc4c8df2",
+      "bytes": 74354
     },
     {
       "caminho": "images/bosch-12v-cc-1600.webp",
@@ -2003,8 +2044,8 @@
     },
     {
       "caminho": "index.html",
-      "sha256": "93aea3029fe686c27bd842e6b80cfacbef7ca349bf33d6513c8e4b5f613022f8",
-      "bytes": 88333
+      "sha256": "9a63d691359d13461f63b17fa980bde89cfa5e0eb00bebe8b03afc62958e96a8",
+      "bytes": 90866
     },
     {
       "caminho": "lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher/index.html",
@@ -2087,9 +2128,14 @@
       "bytes": 38076
     },
     {
+      "caminho": "serra-tico-tico-ou-serra-sabre-qual-escolher/index.html",
+      "sha256": "f61360d4b471afbac0d4791be05010750c7de5b66c174cd6be2b72fc6d4f9ac4",
+      "bytes": 38991
+    },
+    {
       "caminho": "sitemap.xml",
-      "sha256": "e46e428ba997ac69d50118f3ed81b7824bc01b36ff757967fb4a901b6402f239",
-      "bytes": 5298
+      "sha256": "a8ddb03a8723be57621118697eb760ae681b314a8b081b37522514d936c41c58",
+      "bytes": 5428
     },
     {
       "caminho": "sobre/index.html",
@@ -2113,8 +2159,8 @@
     },
     {
       "caminho": "tipos-de-serra-sabre/index.html",
-      "sha256": "aa7683b260f213a77bdfe904729075cf0cae5cfaa4e90577c9b6a74e5d1b997c",
-      "bytes": 55932
+      "sha256": "b7065a102c24cddc9c621c83cc08592725f8cbce911a218c14ea720336ec1bcf",
+      "bytes": 56149
     },
     {
       "caminho": "torque-nm-parafusadeira/index.html",
