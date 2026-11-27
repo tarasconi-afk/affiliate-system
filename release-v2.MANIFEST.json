@@ -1,6 +1,6 @@
 {
-  "commit": "a0564a3ca4e72051f5990ab4bff564f434fb9f41",
-  "gerado_em": "2026-11-27T10:35:24.343Z",
+  "commit": "926a742127a39da6e3b3a20e9601e8ebab029eac",
+  "gerado_em": "2026-11-27T14:28:36.461Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -43,11 +43,11 @@
     },
     {
       "estado": "PASS",
-      "msg": "disco livre na pasta temporária: 65.4 GB (mínimo 3)"
+      "msg": "disco livre na pasta temporária: 65.3 GB (mínimo 3)"
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de a0564a3 + npm ci"
+      "msg": "checkout limpo de 926a742 + npm ci"
     },
     {
       "estado": "PASS",
@@ -67,7 +67,7 @@
     },
     {
       "estado": "PASS",
-      "msg": "qa:previa no artefato (46 páginas · 0 erro(s))"
+      "msg": "qa:previa no artefato (47 páginas · 0 erro(s))"
     },
     {
       "estado": "PASS",
@@ -102,7 +102,7 @@
       "msg": "nenhum arquivo sensível no artefato"
     }
   ],
-  "scripts_executaveis_no_html": 83,
+  "scripts_executaveis_no_html": 85,
   "donos_das_urls": {
     "bateria-2ah-ou-4ah-parafusadeira": "nativa (approve)",
     "bateria-parafusadeira-serve-em-outra-marca": "nativa (approve)",
@@ -148,6 +148,11 @@
     "/disco-de-corte-diferencas-entre-tipos/ B0BZWMTYYL",
     "/disco-de-corte-diferencas-entre-tipos/ B0GLFFPG1C",
     "/disco-de-corte-diferencas-entre-tipos/ B093G21YJ8",
+    "/disco-de-corte-para-ferro-qual-escolher/ B01FXEWXGQ",
+    "/disco-de-corte-para-ferro-qual-escolher/ B0BRYJ2JW5",
+    "/disco-de-corte-para-ferro-qual-escolher/ B0BZWMTYYL",
+    "/disco-de-corte-para-ferro-qual-escolher/ B0GLFFPG1C",
+    "/disco-de-corte-para-ferro-qual-escolher/ B093G21YJ8",
     "/esmerilhadeira-ou-lixadeira/ B01FXEWXGQ",
     "/esmerilhadeira-ou-lixadeira/ B0BRYJ2JW5",
     "/esmerilhadeira-ou-lixadeira/ B0BZWMTYYL",
@@ -229,11 +234,11 @@
     "/velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma/ B076YGD5BZ",
     "/velocidade-1-ou-2-da-parafusadeira-quando-usar-cada-uma/ B0F2JMYPQ9"
   ],
-  "sitemap_urls": 45,
+  "sitemap_urls": 46,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-a0564a3.zip",
-    "sha256": "a5899f25f47382792328afd2ebf0b2ec41f5c91e6acef94ab4d5d77784554da6",
-    "arquivos": 369
+    "arquivo": "ferramenta-clara-v2-926a742.zip",
+    "sha256": "a5cd217f896acc60328e001b5108d865058fffdace03d000653898e1b3a7b61e",
+    "arquivos": 377
   },
   "arquivos": [
     {
@@ -777,9 +782,44 @@
       "bytes": 12500
     },
     {
-      "caminho": "_astro/pagina-disco-de-corte-para-ferro-qual-escolher.uZT8Kvxt.webp",
-      "sha256": "811f68c1247cbd8ecf6bfa48d8bb174fa3bc8cf87151fb949635375e51e41088",
-      "bytes": 135766
+      "caminho": "_astro/pagina-disco-de-corte-para-ferro-qual-escolher.uZT8Kvxt_1DnAMH.avif",
+      "sha256": "ee25a8003013fcdf514578df33e30c6fec1805313f587fd7141844026e0f3b05",
+      "bytes": 67345
+    },
+    {
+      "caminho": "_astro/pagina-disco-de-corte-para-ferro-qual-escolher.uZT8Kvxt_1hHyQ6.webp",
+      "sha256": "71bc712fb93a832d997bdc586b6fd215fcc5dea60faf49b1b104bae3a9d302b4",
+      "bytes": 37114
+    },
+    {
+      "caminho": "_astro/pagina-disco-de-corte-para-ferro-qual-escolher.uZT8Kvxt_2sgtcG.webp",
+      "sha256": "8b7b852e45b51e1466fe7342e53ee2534775b0f59d9fb287aa885db38af4a798",
+      "bytes": 14784
+    },
+    {
+      "caminho": "_astro/pagina-disco-de-corte-para-ferro-qual-escolher.uZT8Kvxt_Z1qI8c2.avif",
+      "sha256": "ac765659e05976fae8d8bcd30812dc794fb3ff057c3bc4b7ef6aeb6f4b9773a0",
+      "bytes": 20190
+    },
+    {
+      "caminho": "_astro/pagina-disco-de-corte-para-ferro-qual-escolher.uZT8Kvxt_Z1wi9mT.webp",
+      "sha256": "657d62cf68a318f436c6c17df390febf41284e3df5e9142ec1e9635efd591f68",
+      "bytes": 70098
+    },
+    {
+      "caminho": "_astro/pagina-disco-de-corte-para-ferro-qual-escolher.uZT8Kvxt_ZfBKgq.webp",
+      "sha256": "c061e973ef95e1fe787e8838edfbba63de2a32393fcbb797d4470a104d075176",
+      "bytes": 123488
+    },
+    {
+      "caminho": "_astro/pagina-disco-de-corte-para-ferro-qual-escolher.uZT8Kvxt_ZgadPr.avif",
+      "sha256": "cbabda5e758aa0c16819e2abd2666b5ef113c47efe8ee2776fe5a9fde0f40f02",
+      "bytes": 8484
+    },
+    {
+      "caminho": "_astro/pagina-disco-de-corte-para-ferro-qual-escolher.uZT8Kvxt_kvpVU.avif",
+      "sha256": "e28c66ffadf9d4b70f7eea743ecdd720cf175f625a8f1dd5bd9c6057d2037062",
+      "bytes": 39105
     },
     {
       "caminho": "_astro/pagina-esmerilhadeira-ou-lixadeira.C46tWfmf_231G0S.avif",
@@ -1603,7 +1643,7 @@
     },
     {
       "caminho": "black-friday/index.html",
-      "sha256": "a373aa1676dbfbe8db5d34d273e58a66b9e4234326e192f8e3b8d2162facbccb",
+      "sha256": "8e5ce646703791eb529653b7ea6c6553cbe4e7cc216cd873898d74e1dee9c118",
       "bytes": 12045
     },
     {
@@ -1623,7 +1663,7 @@
     },
     {
       "caminho": "broca-ideal-para-furar-parede/index.html",
-      "sha256": "e777acefc15c83e8629c370c0913eb68936b1facd34d57375039805c2ce5d679",
+      "sha256": "61cad717cdc2467639a667d06dc279ac090754f5a88c832d39d47f2d379f8dad",
       "bytes": 59561
     },
     {
@@ -1638,18 +1678,18 @@
     },
     {
       "caminho": "como-escolher-furadeira/index.html",
-      "sha256": "899cb468f97922337494c0ea1931ea50e3b5148891789d70fe6c330ec290a8cc",
+      "sha256": "9d00b397129de1a7cafddf26fdef7268f37e6f26e54464ee78c24f13ba984bfc",
       "bytes": 63843
     },
     {
       "caminho": "como-escolher-furadeira-para-concreto/index.html",
-      "sha256": "cde009c6785f2f5a8769f5cb09a903302b17fc3a068d8082a5172352fd8002af",
+      "sha256": "72d47b890d4e223193d27c67ef2a3d2a331b5ecd79521004b15c5b7ab6794c45",
       "bytes": 42977
     },
     {
       "caminho": "como-escolher-serra-tico-tico/index.html",
-      "sha256": "5e4c5e20cedc4d937370b1fe55434c1340ebfcd29bd81b37ef9a3e7c02adfdaa",
-      "bytes": 46851
+      "sha256": "72c49650ed4dc0ad0213ab285522fa737b6aa3fd56f22e1dce44d842829d5785",
+      "bytes": 46979
     },
     {
       "caminho": "como-trabalhamos/index.html",
@@ -1668,18 +1708,23 @@
     },
     {
       "caminho": "disco-de-corte-diferencas-entre-tipos/index.html",
-      "sha256": "f467a6da7929f0a55f3899d7cf36ee18bbdf746a84006530d67ca6847c4fd200",
-      "bytes": 55979
+      "sha256": "95683834559e6ee30fe557fdc2e108e89c6ddf3b586d73923350daa52d30ee62",
+      "bytes": 56134
+    },
+    {
+      "caminho": "disco-de-corte-para-ferro-qual-escolher/index.html",
+      "sha256": "2e06efbb7628b22936d74d1ad3146c009eeabce2b132911a91ead7c7107fd444",
+      "bytes": 41326
     },
     {
       "caminho": "esmerilhadeira-ou-lixadeira/index.html",
-      "sha256": "e8752bc8f00fb4fc7c9c51c4ff3cbc982fe0ed01f114a4873a5b1d3836005240",
-      "bytes": 51919
+      "sha256": "d9cbfce2f9cfca1b8fc6b2132cc6aaaf9928e8bd399d60bb5633420fa27c5514",
+      "bytes": 52074
     },
     {
       "caminho": "esmerilhadeira-para-que-serve/index.html",
-      "sha256": "b512b4af982ffb64dffc44e14f5713d87e280d5f8e13e1d1ef5be95ec2cc3570",
-      "bytes": 51869
+      "sha256": "0920c87265bebe5f24f8dd100b864e8022c71782f550ca06d98125df60e31dab",
+      "bytes": 52024
     },
     {
       "caminho": "esmerilhadeira-qual-a-melhor/index.html",
@@ -1708,8 +1753,8 @@
     },
     {
       "caminho": "guias/index.html",
-      "sha256": "6fc131943dd1ef6cf62b4ec30c678b56df2a9b9dfa6896f2161f6f2af98d5b52",
-      "bytes": 70292
+      "sha256": "5c06be1785c24612bb3c64ed2a858cdefdc0638abb0c2580b1d888897a5bfee2",
+      "bytes": 72287
     },
     {
       "caminho": "images/bosch-12v-cc-1600.webp",
@@ -1958,8 +2003,8 @@
     },
     {
       "caminho": "index.html",
-      "sha256": "1c90ae7bf139eb352f770b08174919ab806b8c150e1570a06c67ee6b3863728f",
-      "bytes": 85873
+      "sha256": "93aea3029fe686c27bd842e6b80cfacbef7ca349bf33d6513c8e4b5f613022f8",
+      "bytes": 88333
     },
     {
       "caminho": "lixadeira-orbital-roto-orbital-ou-treme-treme-qual-escolher/index.html",
@@ -2023,13 +2068,13 @@
     },
     {
       "caminho": "qual-disco-de-corte-para-ceramica/index.html",
-      "sha256": "ed057d123aee88592b5aff1d060a5e976ae92fe25fe1420f46cce2a8555d7ac3",
-      "bytes": 52560
+      "sha256": "3e427f8ae55ed4a06d5561551f658827a85e3555d31d25ef8bffe15dbb775258",
+      "bytes": 52638
     },
     {
       "caminho": "qual-serra-circular-comprar/index.html",
-      "sha256": "751d7b3ec4b41f733b7ad1b00aa0cfad581b285c6f2f31d5ab5a5b51bf643fe0",
-      "bytes": 52524
+      "sha256": "f12d3ea6542e54926471c7bd09b005ef95519e82025929fc9ab47d15c7363fb5",
+      "bytes": 52647
     },
     {
       "caminho": "robots.txt",
@@ -2038,13 +2083,13 @@
     },
     {
       "caminho": "serra-marmore-tamanhos-e-diferencas/index.html",
-      "sha256": "35e100ba90bef37b6fdb843d34bc6510b2d19c1bdd97b9cb28edbae3128ac669",
-      "bytes": 37925
+      "sha256": "d836ee6387a72eacc08e4c673e810a90f489d96fbdd09a5ef1eb30a95778d607",
+      "bytes": 38076
     },
     {
       "caminho": "sitemap.xml",
-      "sha256": "853dc6edabc2fd2b4839657dc451ef791f825b373468d03c500370209e4eb894",
-      "bytes": 5173
+      "sha256": "e46e428ba997ac69d50118f3ed81b7824bc01b36ff757967fb4a901b6402f239",
+      "bytes": 5298
     },
     {
       "caminho": "sobre/index.html",
@@ -2053,23 +2098,23 @@
     },
     {
       "caminho": "tamanhos-de-disco-de-corte/index.html",
-      "sha256": "1f69a823f54b13076fea6ab3e3001bf00a46d61d19b2caab0bae4a5f29199f9a",
-      "bytes": 43986
+      "sha256": "67e477278754adac69de52905cbfb3f06e98a232b7a5cc21e46257cd60b62da6",
+      "bytes": 44114
     },
     {
       "caminho": "tipos-de-brocas/index.html",
-      "sha256": "b7cba6205bb2e80e4692150a52276e5007c6691099dffd3d581da4a6f2cf958b",
+      "sha256": "079ce948317a4aa550ad863b3c340c61575fd2124b14eccc3f4dbbae4d8f391f",
       "bytes": 61182
     },
     {
       "caminho": "tipos-de-disco-para-serra-marmore-como-escolher/index.html",
-      "sha256": "d773f04e01da244624dd233ff7ca553371b785f8e660bc4933cc246a97ef3afb",
-      "bytes": 48691
+      "sha256": "cf8827d03800cb1f14c233ac0120220bc3e04f06156012a7653c39f2600bb4e1",
+      "bytes": 48842
     },
     {
       "caminho": "tipos-de-serra-sabre/index.html",
-      "sha256": "64e790c6212cfcfd8c82458bbcf74cec8cdc253b7e2a7c2f2c3e0312922b9fc4",
-      "bytes": 55809
+      "sha256": "aa7683b260f213a77bdfe904729075cf0cae5cfaa4e90577c9b6a74e5d1b997c",
+      "bytes": 55932
     },
     {
       "caminho": "torque-nm-parafusadeira/index.html",
