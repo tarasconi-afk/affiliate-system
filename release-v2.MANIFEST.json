@@ -1,6 +1,6 @@
 {
-  "commit": "e3a123c3462e20d1357c6263cafa36b33887b923",
-  "gerado_em": "2026-11-27T19:42:04.169Z",
+  "commit": "bad911385411418b3dca91aaa3e38d5d6424f6ef",
+  "gerado_em": "2026-11-28T10:35:12.075Z",
   "node": "22.23.2",
   "ambiente": {
     "SITE_INDEXABLE": "true",
@@ -43,11 +43,11 @@
     },
     {
       "estado": "PASS",
-      "msg": "disco livre na pasta temporária: 65.2 GB (mínimo 3)"
+      "msg": "disco livre na pasta temporária: 64.4 GB (mínimo 3)"
     },
     {
       "estado": "PASS",
-      "msg": "checkout limpo de e3a123c + npm ci"
+      "msg": "checkout limpo de bad9113 + npm ci"
     },
     {
       "estado": "PASS",
@@ -127,6 +127,7 @@
     "/broca-ideal-para-furar-ferro/ B083DMSXSK",
     "/broca-ideal-para-furar-ferro/ B00TX9V56C",
     "/broca-ideal-para-furar-parede/ B083DMSXSK",
+    "/broca-ideal-para-furar-parede/ B084BJWNV6",
     "/broca-ideal-para-furar-parede/ B07JK2YZTY",
     "/broca-ideal-para-furar-parede/ B0GWLZYG3B",
     "/broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua/ B083DMSXSK",
@@ -136,11 +137,12 @@
     "/chave-de-impacto-ou-parafusadeira-qual-escolher/ B076YGD5BZ",
     "/chave-de-impacto-ou-parafusadeira-qual-escolher/ B0F2JMYPQ9",
     "/como-escolher-furadeira/ B07MMBKG7C",
+    "/como-escolher-furadeira/ B084BJWNV6",
     "/como-escolher-furadeira/ B07JK2YZTY",
     "/como-escolher-furadeira/ B00I3PODXE",
     "/como-escolher-furadeira/ B076YGD5BZ",
     "/como-escolher-furadeira/ B0F2JMYPQ9",
-    "/como-escolher-furadeira/ B0GWLZYG3B",
+    "/como-escolher-furadeira-para-concreto/ B084BJWNV6",
     "/como-escolher-furadeira-para-concreto/ B07JK2YZTY",
     "/como-escolher-serra-tico-tico/ B076KPD1DX",
     "/disco-de-corte-diferencas-entre-tipos/ B01FXEWXGQ",
@@ -220,6 +222,7 @@
     "/tamanhos-de-disco-de-corte/ B0GLFFPG1C",
     "/tamanhos-de-disco-de-corte/ B093G21YJ8",
     "/tipos-de-brocas/ B083DMSXSK",
+    "/tipos-de-brocas/ B084BJWNV6",
     "/tipos-de-brocas/ B00TX9V56C",
     "/tipos-de-brocas/ B07JK2YZTY",
     "/tipos-de-brocas/ B0GWLZYG3B",
@@ -234,9 +237,9 @@
   ],
   "sitemap_urls": 47,
   "artefato": {
-    "arquivo": "ferramenta-clara-v2-e3a123c.zip",
-    "sha256": "d33f34acfc7601d19fc303ab5ca9f0b63636d2d804415b32b5807b5e17c3a9be",
-    "arquivos": 387
+    "arquivo": "ferramenta-clara-v2-bad9113.zip",
+    "sha256": "ebe7255146b64b8a93ea1a4c5bda721d89823e8526f3d67dcd620201272c6fc0",
+    "arquivos": 388
   },
   "arquivos": [
     {
@@ -1590,6 +1593,11 @@
       "bytes": 119766
     },
     {
+      "caminho": "_astro/produto-b084bjwnv6.CxhuQhIL.webp",
+      "sha256": "1e3fdeb27b01e247c01581b51f94c354d5508d50a97356af29d0fae35a54f348",
+      "bytes": 86974
+    },
+    {
       "caminho": "_astro/produto-b08dgzthv9.mKP90tYz.webp",
       "sha256": "f612912001f082429216021717ed439200f9fb463e73fce79fb1498b049a42df",
       "bytes": 157722
@@ -1706,8 +1714,8 @@
     },
     {
       "caminho": "broca-ideal-para-furar-parede/index.html",
-      "sha256": "749419964e49e75a8a3e5f3f0c3f6ed0e09ae676a106bce37afc53f3c8e12d9b",
-      "bytes": 59585
+      "sha256": "ab673590a0d1e9966c9c9632535bfef21c9b5180154d86a6a50c5c39e58737c8",
+      "bytes": 62120
     },
     {
       "caminho": "broca-para-porcelanato-diamantada-ou-videa-com-ou-sem-agua/index.html",
@@ -1721,13 +1729,13 @@
     },
     {
       "caminho": "como-escolher-furadeira/index.html",
-      "sha256": "9d00b397129de1a7cafddf26fdef7268f37e6f26e54464ee78c24f13ba984bfc",
-      "bytes": 63843
+      "sha256": "db80a5732979b71965acd13ef18072d3c84870bdfb2b2b6d874f99683acd955f",
+      "bytes": 63807
     },
     {
       "caminho": "como-escolher-furadeira-para-concreto/index.html",
-      "sha256": "72d47b890d4e223193d27c67ef2a3d2a331b5ecd79521004b15c5b7ab6794c45",
-      "bytes": 42977
+      "sha256": "c3fbdf25df19891b8e21952ce9b0831b9e087f4f57b89b33413b722fcf6107b2",
+      "bytes": 45512
     },
     {
       "caminho": "como-escolher-serra-tico-tico/index.html",
@@ -2151,8 +2159,8 @@
     },
     {
       "caminho": "tipos-de-brocas/index.html",
-      "sha256": "dac22efca8be530720a497f5ac306eb6ade8a2f5943ecd983ff0633a2ee738d6",
-      "bytes": 61206
+      "sha256": "0d0180c0ff7a2cebd6960bf9fb1b4fe03da60da417ac3bf1f57803bff16b681d",
+      "bytes": 63741
     },
     {
       "caminho": "tipos-de-disco-para-serra-marmore-como-escolher/index.html",
